@@ -1,0 +1,1426 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.4260090000000005
+  },
+  {
+   "id": "context",
+   "start": 4.776009,
+   "end": 13.605238
+  },
+  {
+   "id": "d0",
+   "start": 13.955238,
+   "end": 17.751383
+  },
+  {
+   "id": "d1",
+   "start": 18.101383,
+   "end": 24.521904999999997
+  },
+  {
+   "id": "d2",
+   "start": 24.871904999999998,
+   "end": 31.410906999999998
+  },
+  {
+   "id": "d3",
+   "start": 31.760906999999996,
+   "end": 39.639002
+  },
+  {
+   "id": "d4",
+   "start": 39.989002,
+   "end": 47.731882
+  },
+  {
+   "id": "d5",
+   "start": 48.081882,
+   "end": 55.014218
+  },
+  {
+   "id": "d6",
+   "start": 55.364218,
+   "end": 70.641225
+  }
+ ],
+ "words": [
+  {
+   "text": "Pourquoi",
+   "start": 0.0,
+   "end": 0.28,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 0.28,
+   "end": 0.52,
+   "segment": "hook"
+  },
+  {
+   "text": "pape",
+   "start": 0.52,
+   "end": 0.8,
+   "segment": "hook"
+  },
+  {
+   "text": "Jules",
+   "start": 0.8,
+   "end": 1.12,
+   "segment": "hook"
+  },
+  {
+   "text": "II",
+   "start": 1.12,
+   "end": 1.3,
+   "segment": "hook"
+  },
+  {
+   "text": "a-t-il",
+   "start": 1.3,
+   "end": 1.82,
+   "segment": "hook"
+  },
+  {
+   "text": "fait",
+   "start": 1.82,
+   "end": 2.0,
+   "segment": "hook"
+  },
+  {
+   "text": "peindre",
+   "start": 2.0,
+   "end": 2.3,
+   "segment": "hook"
+  },
+  {
+   "text": "des",
+   "start": 2.3,
+   "end": 2.5,
+   "segment": "hook"
+  },
+  {
+   "text": "philosophes",
+   "start": 2.5,
+   "end": 3.02,
+   "segment": "hook"
+  },
+  {
+   "text": "grecs",
+   "start": 3.02,
+   "end": 3.4,
+   "segment": "hook"
+  },
+  {
+   "text": "dans",
+   "start": 3.4,
+   "end": 3.56,
+   "segment": "hook"
+  },
+  {
+   "text": "sa",
+   "start": 3.56,
+   "end": 3.7,
+   "segment": "hook"
+  },
+  {
+   "text": "bibliothèque",
+   "start": 3.7,
+   "end": 4.28,
+   "segment": "hook"
+  },
+  {
+   "text": "?",
+   "start": 4.28,
+   "end": 4.4260090000000005,
+   "segment": "hook"
+  },
+  {
+   "text": "En",
+   "start": 4.776009,
+   "end": 4.896009,
+   "segment": "context"
+  },
+  {
+   "text": "1508,",
+   "start": 4.896009,
+   "end": 5.516009,
+   "segment": "context"
+  },
+  {
+   "text": "il",
+   "start": 5.956009,
+   "end": 6.056009,
+   "segment": "context"
+  },
+  {
+   "text": "confie",
+   "start": 6.056009,
+   "end": 6.396009,
+   "segment": "context"
+  },
+  {
+   "text": "ses",
+   "start": 6.396009,
+   "end": 6.496009,
+   "segment": "context"
+  },
+  {
+   "text": "murs",
+   "start": 6.496009,
+   "end": 6.736009,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 6.736009,
+   "end": 6.856009,
+   "segment": "context"
+  },
+  {
+   "text": "Raphaël.",
+   "start": 6.856009,
+   "end": 7.416009000000001,
+   "segment": "context"
+  },
+  {
+   "text": "Un",
+   "start": 7.776009,
+   "end": 8.016009,
+   "segment": "context"
+  },
+  {
+   "text": "mur",
+   "start": 8.016009,
+   "end": 8.316009000000001,
+   "segment": "context"
+  },
+  {
+   "text": "par",
+   "start": 8.316009000000001,
+   "end": 8.536009,
+   "segment": "context"
+  },
+  {
+   "text": "grand",
+   "start": 8.536009,
+   "end": 8.776009,
+   "segment": "context"
+  },
+  {
+   "text": "savoir",
+   "start": 8.776009,
+   "end": 9.116009,
+   "segment": "context"
+  },
+  {
+   "text": ":",
+   "start": 9.116009,
+   "end": 9.366009,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 9.696009,
+   "end": 9.796009,
+   "segment": "context"
+  },
+  {
+   "text": "poésie,",
+   "start": 9.796009,
+   "end": 10.316009000000001,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 10.656009000000001,
+   "end": 10.756009,
+   "segment": "context"
+  },
+  {
+   "text": "foi,",
+   "start": 10.756009,
+   "end": 10.996009,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 11.496009,
+   "end": 11.596009,
+   "segment": "context"
+  },
+  {
+   "text": "justice…",
+   "start": 11.596009,
+   "end": 11.876009,
+   "segment": "context"
+  },
+  {
+   "text": "et",
+   "start": 11.876009,
+   "end": 12.556009,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 12.556009,
+   "end": 12.936009,
+   "segment": "context"
+  },
+  {
+   "text": "philosophie.",
+   "start": 12.936009,
+   "end": 13.576009,
+   "segment": "context"
+  },
+  {
+   "text": "Sur",
+   "start": 13.955238,
+   "end": 14.095238,
+   "segment": "d0"
+  },
+  {
+   "text": "celui-ci,",
+   "start": 14.095238,
+   "end": 14.555238,
+   "segment": "d0"
+  },
+  {
+   "text": "Raphaël",
+   "start": 14.835238,
+   "end": 15.315237999999999,
+   "segment": "d0"
+  },
+  {
+   "text": "réunit",
+   "start": 15.315237999999999,
+   "end": 15.695238,
+   "segment": "d0"
+  },
+  {
+   "text": "les",
+   "start": 15.695238,
+   "end": 15.975238,
+   "segment": "d0"
+  },
+  {
+   "text": "plus",
+   "start": 15.975238,
+   "end": 16.155238,
+   "segment": "d0"
+  },
+  {
+   "text": "grands",
+   "start": 16.155238,
+   "end": 16.475238,
+   "segment": "d0"
+  },
+  {
+   "text": "penseurs",
+   "start": 16.475238,
+   "end": 16.975238,
+   "segment": "d0"
+  },
+  {
+   "text": "de",
+   "start": 16.975238,
+   "end": 17.075238,
+   "segment": "d0"
+  },
+  {
+   "text": "l'Antiquité.",
+   "start": 17.075238,
+   "end": 17.615237999999998,
+   "segment": "d0"
+  },
+  {
+   "text": "Au",
+   "start": 18.101383,
+   "end": 18.241383,
+   "segment": "d1"
+  },
+  {
+   "text": "centre,",
+   "start": 18.241383,
+   "end": 18.481382999999997,
+   "segment": "d1"
+  },
+  {
+   "text": "Platon",
+   "start": 18.801382999999998,
+   "end": 19.201383,
+   "segment": "d1"
+  },
+  {
+   "text": "tient",
+   "start": 19.201383,
+   "end": 19.421383,
+   "segment": "d1"
+  },
+  {
+   "text": "son",
+   "start": 19.421383,
+   "end": 19.601383,
+   "segment": "d1"
+  },
+  {
+   "text": "Timée",
+   "start": 19.601383,
+   "end": 19.921383,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 19.921383,
+   "end": 20.221383,
+   "segment": "d1"
+  },
+  {
+   "text": "pointe",
+   "start": 20.221383,
+   "end": 20.541383,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 20.541383,
+   "end": 20.601383,
+   "segment": "d1"
+  },
+  {
+   "text": "ciel",
+   "start": 20.601383,
+   "end": 20.781382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 20.781382999999998,
+   "end": 21.031382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "pour",
+   "start": 21.481382999999997,
+   "end": 21.621382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "lui,",
+   "start": 21.621382999999998,
+   "end": 21.781382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 22.061383,
+   "end": 22.161382999999997,
+   "segment": "d1"
+  },
+  {
+   "text": "vérité",
+   "start": 22.161382999999997,
+   "end": 22.461382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "se",
+   "start": 22.461382999999998,
+   "end": 22.561383,
+   "segment": "d1"
+  },
+  {
+   "text": "trouve",
+   "start": 22.561383,
+   "end": 22.801382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "par",
+   "start": 22.801382999999998,
+   "end": 23.081383,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 23.081383,
+   "end": 23.241383,
+   "segment": "d1"
+  },
+  {
+   "text": "pensée,",
+   "start": 23.241383,
+   "end": 23.621382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "pas",
+   "start": 23.901383,
+   "end": 24.001382999999997,
+   "segment": "d1"
+  },
+  {
+   "text": "par",
+   "start": 24.001382999999997,
+   "end": 24.141382999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "les",
+   "start": 24.141382999999998,
+   "end": 24.261383,
+   "segment": "d1"
+  },
+  {
+   "text": "yeux.",
+   "start": 24.261383,
+   "end": 24.401383,
+   "segment": "d1"
+  },
+  {
+   "text": "Son",
+   "start": 24.871904999999998,
+   "end": 25.071904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "élève",
+   "start": 25.071904999999997,
+   "end": 25.391904999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "Aristote",
+   "start": 25.391904999999998,
+   "end": 25.791905,
+   "segment": "d2"
+  },
+  {
+   "text": "tient",
+   "start": 25.791905,
+   "end": 26.111904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "son",
+   "start": 26.111904999999997,
+   "end": 26.291905,
+   "segment": "d2"
+  },
+  {
+   "text": "Éthique",
+   "start": 26.291905,
+   "end": 26.711904999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 26.711904999999998,
+   "end": 26.991905,
+   "segment": "d2"
+  },
+  {
+   "text": "montre",
+   "start": 26.991905,
+   "end": 27.211904999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 27.211904999999998,
+   "end": 27.431904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "terre",
+   "start": 27.431904999999997,
+   "end": 27.651905,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 27.651905,
+   "end": 27.901905,
+   "segment": "d2"
+  },
+  {
+   "text": "lui",
+   "start": 28.211904999999998,
+   "end": 28.491905,
+   "segment": "d2"
+  },
+  {
+   "text": "cherche",
+   "start": 28.491905,
+   "end": 28.891904999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 28.891904999999998,
+   "end": 29.031905,
+   "segment": "d2"
+  },
+  {
+   "text": "vérité",
+   "start": 29.031905,
+   "end": 29.431904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "en",
+   "start": 29.431904999999997,
+   "end": 29.611905,
+   "segment": "d2"
+  },
+  {
+   "text": "observant",
+   "start": 29.611905,
+   "end": 30.251904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 30.251904999999997,
+   "end": 30.351905,
+   "segment": "d2"
+  },
+  {
+   "text": "monde",
+   "start": 30.351905,
+   "end": 30.571904999999997,
+   "segment": "d2"
+  },
+  {
+   "text": "qui",
+   "start": 30.571904999999997,
+   "end": 30.711904999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "l'entoure.",
+   "start": 30.711904999999998,
+   "end": 31.131904999999996,
+   "segment": "d2"
+  },
+  {
+   "text": "À",
+   "start": 31.760906999999996,
+   "end": 31.900906999999997,
+   "segment": "d3"
+  },
+  {
+   "text": "gauche,",
+   "start": 31.900906999999997,
+   "end": 32.120906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "Socrate,",
+   "start": 32.460907,
+   "end": 32.92090699999999,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 33.180907,
+   "end": 33.300906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "maître",
+   "start": 33.300906999999995,
+   "end": 33.500907,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 33.500907,
+   "end": 33.620906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "Platon.",
+   "start": 33.620906999999995,
+   "end": 33.900907,
+   "segment": "d3"
+  },
+  {
+   "text": "Il",
+   "start": 34.160906999999995,
+   "end": 34.340906999999994,
+   "segment": "d3"
+  },
+  {
+   "text": "compte",
+   "start": 34.340906999999994,
+   "end": 34.56090699999999,
+   "segment": "d3"
+  },
+  {
+   "text": "ses",
+   "start": 34.56090699999999,
+   "end": 34.700906999999994,
+   "segment": "d3"
+  },
+  {
+   "text": "arguments",
+   "start": 34.700906999999994,
+   "end": 34.960907,
+   "segment": "d3"
+  },
+  {
+   "text": "sur",
+   "start": 34.960907,
+   "end": 35.140907,
+   "segment": "d3"
+  },
+  {
+   "text": "ses",
+   "start": 35.140907,
+   "end": 35.280907,
+   "segment": "d3"
+  },
+  {
+   "text": "doigts",
+   "start": 35.280907,
+   "end": 35.780907,
+   "segment": "d3"
+  },
+  {
+   "text": ":",
+   "start": 35.780907,
+   "end": 35.800906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 35.800906999999995,
+   "end": 35.940906999999996,
+   "segment": "d3"
+  },
+  {
+   "text": "n'a",
+   "start": 35.940906999999996,
+   "end": 36.06090699999999,
+   "segment": "d3"
+  },
+  {
+   "text": "jamais",
+   "start": 36.06090699999999,
+   "end": 36.220907,
+   "segment": "d3"
+  },
+  {
+   "text": "rien",
+   "start": 36.220907,
+   "end": 36.420907,
+   "segment": "d3"
+  },
+  {
+   "text": "écrit,",
+   "start": 36.420907,
+   "end": 36.620906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 37.020906999999994,
+   "end": 37.120906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "passait",
+   "start": 37.120906999999995,
+   "end": 37.420907,
+   "segment": "d3"
+  },
+  {
+   "text": "ses",
+   "start": 37.420907,
+   "end": 37.500907,
+   "segment": "d3"
+  },
+  {
+   "text": "journées",
+   "start": 37.500907,
+   "end": 37.820907,
+   "segment": "d3"
+  },
+  {
+   "text": "à",
+   "start": 37.820907,
+   "end": 37.920907,
+   "segment": "d3"
+  },
+  {
+   "text": "questionner",
+   "start": 37.920907,
+   "end": 38.420907,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 38.420907,
+   "end": 38.520906999999994,
+   "segment": "d3"
+  },
+  {
+   "text": "passants",
+   "start": 38.520906999999994,
+   "end": 38.840906999999994,
+   "segment": "d3"
+  },
+  {
+   "text": "dans",
+   "start": 38.840906999999994,
+   "end": 38.940906999999996,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 38.940906999999996,
+   "end": 39.040907,
+   "segment": "d3"
+  },
+  {
+   "text": "rues",
+   "start": 39.040907,
+   "end": 39.160906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "d'Athènes.",
+   "start": 39.160906999999995,
+   "end": 39.480906999999995,
+   "segment": "d3"
+  },
+  {
+   "text": "Et",
+   "start": 39.989002,
+   "end": 40.149001999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "lui,",
+   "start": 40.149001999999996,
+   "end": 40.289001999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "seul,",
+   "start": 40.289001999999996,
+   "end": 40.869002,
+   "segment": "d4"
+  },
+  {
+   "text": "à",
+   "start": 41.289001999999996,
+   "end": 41.389002,
+   "segment": "d4"
+  },
+  {
+   "text": "moitié",
+   "start": 41.389002,
+   "end": 41.669002,
+   "segment": "d4"
+  },
+  {
+   "text": "nu,",
+   "start": 41.669002,
+   "end": 41.829002,
+   "segment": "d4"
+  },
+  {
+   "text": "vautré",
+   "start": 42.169002,
+   "end": 42.489002,
+   "segment": "d4"
+  },
+  {
+   "text": "en",
+   "start": 42.489002,
+   "end": 42.609002,
+   "segment": "d4"
+  },
+  {
+   "text": "plein",
+   "start": 42.609002,
+   "end": 42.749002,
+   "segment": "d4"
+  },
+  {
+   "text": "milieu",
+   "start": 42.749002,
+   "end": 42.929002,
+   "segment": "d4"
+  },
+  {
+   "text": "des",
+   "start": 42.929002,
+   "end": 43.069002,
+   "segment": "d4"
+  },
+  {
+   "text": "marches",
+   "start": 43.069002,
+   "end": 43.649001999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "?",
+   "start": 43.649001999999996,
+   "end": 43.689002,
+   "segment": "d4"
+  },
+  {
+   "text": "C'est",
+   "start": 43.689002,
+   "end": 43.889002,
+   "segment": "d4"
+  },
+  {
+   "text": "Diogène.",
+   "start": 43.889002,
+   "end": 44.309002,
+   "segment": "d4"
+  },
+  {
+   "text": "Il",
+   "start": 44.669002,
+   "end": 44.849002,
+   "segment": "d4"
+  },
+  {
+   "text": "vivait",
+   "start": 44.849002,
+   "end": 45.089002,
+   "segment": "d4"
+  },
+  {
+   "text": "dans",
+   "start": 45.089002,
+   "end": 45.169002,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 45.169002,
+   "end": 45.349002,
+   "segment": "d4"
+  },
+  {
+   "text": "jarre",
+   "start": 45.349002,
+   "end": 45.849002,
+   "segment": "d4"
+  },
+  {
+   "text": "et",
+   "start": 45.849002,
+   "end": 45.929002,
+   "segment": "d4"
+  },
+  {
+   "text": "méprisait",
+   "start": 45.929002,
+   "end": 46.369002,
+   "segment": "d4"
+  },
+  {
+   "text": "le",
+   "start": 46.369002,
+   "end": 46.449002,
+   "segment": "d4"
+  },
+  {
+   "text": "luxe",
+   "start": 46.449002,
+   "end": 46.869002,
+   "segment": "d4"
+  },
+  {
+   "text": "comme",
+   "start": 46.869002,
+   "end": 46.969002,
+   "segment": "d4"
+  },
+  {
+   "text": "les",
+   "start": 46.969002,
+   "end": 47.069002,
+   "segment": "d4"
+  },
+  {
+   "text": "convenances.",
+   "start": 47.069002,
+   "end": 47.569002,
+   "segment": "d4"
+  },
+  {
+   "text": "Devant,",
+   "start": 48.081882,
+   "end": 48.281882,
+   "segment": "d5"
+  },
+  {
+   "text": "isolé,",
+   "start": 48.661882,
+   "end": 49.041882,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 49.281882,
+   "end": 49.381882,
+   "segment": "d5"
+  },
+  {
+   "text": "tête",
+   "start": 49.381882,
+   "end": 49.581882,
+   "segment": "d5"
+  },
+  {
+   "text": "dans",
+   "start": 49.581882,
+   "end": 49.761882,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 49.761882,
+   "end": 49.841882,
+   "segment": "d5"
+  },
+  {
+   "text": "main",
+   "start": 49.841882,
+   "end": 50.001882,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 50.001882,
+   "end": 50.251882,
+   "segment": "d5"
+  },
+  {
+   "text": "Héraclite,",
+   "start": 50.321882,
+   "end": 50.821882,
+   "segment": "d5"
+  },
+  {
+   "text": "qu'on",
+   "start": 51.141882,
+   "end": 51.341882,
+   "segment": "d5"
+  },
+  {
+   "text": "surnommait",
+   "start": 51.341882,
+   "end": 51.681882,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 51.681882,
+   "end": 52.021882,
+   "segment": "d5"
+  },
+  {
+   "text": "philosophe",
+   "start": 52.021882,
+   "end": 52.561882,
+   "segment": "d5"
+  },
+  {
+   "text": "qui",
+   "start": 52.561882,
+   "end": 52.641882,
+   "segment": "d5"
+  },
+  {
+   "text": "pleure,",
+   "start": 52.641882,
+   "end": 53.121882,
+   "segment": "d5"
+  },
+  {
+   "text": "parce",
+   "start": 53.261882,
+   "end": 53.401882,
+   "segment": "d5"
+  },
+  {
+   "text": "que",
+   "start": 53.401882,
+   "end": 53.521882,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 53.521882,
+   "end": 53.621882,
+   "segment": "d5"
+  },
+  {
+   "text": "folie",
+   "start": 53.621882,
+   "end": 53.881882,
+   "segment": "d5"
+  },
+  {
+   "text": "des",
+   "start": 53.881882,
+   "end": 53.961882,
+   "segment": "d5"
+  },
+  {
+   "text": "hommes",
+   "start": 53.961882,
+   "end": 54.161882,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 54.161882,
+   "end": 54.281882,
+   "segment": "d5"
+  },
+  {
+   "text": "désespérait.",
+   "start": 54.281882,
+   "end": 54.881882,
+   "segment": "d5"
+  },
+  {
+   "text": "Et",
+   "start": 55.364218,
+   "end": 55.524218,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 55.524218,
+   "end": 55.864218,
+   "segment": "d6"
+  },
+  {
+   "text": "réponse",
+   "start": 55.864218,
+   "end": 56.124218,
+   "segment": "d6"
+  },
+  {
+   "text": "à",
+   "start": 56.124218,
+   "end": 56.344218,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 56.344218,
+   "end": 56.444218,
+   "segment": "d6"
+  },
+  {
+   "text": "question",
+   "start": 56.444218,
+   "end": 56.664218,
+   "segment": "d6"
+  },
+  {
+   "text": "du",
+   "start": 56.664218,
+   "end": 56.804218,
+   "segment": "d6"
+  },
+  {
+   "text": "début",
+   "start": 56.804218,
+   "end": 57.004218,
+   "segment": "d6"
+  },
+  {
+   "text": "est",
+   "start": 57.004218,
+   "end": 57.384218000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "juste",
+   "start": 57.384218000000004,
+   "end": 57.604218,
+   "segment": "d6"
+  },
+  {
+   "text": "en",
+   "start": 57.604218,
+   "end": 57.764218,
+   "segment": "d6"
+  },
+  {
+   "text": "face.",
+   "start": 57.764218,
+   "end": 58.044218,
+   "segment": "d6"
+  },
+  {
+   "text": "Sur",
+   "start": 58.564218000000004,
+   "end": 58.744218000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "l'autre",
+   "start": 58.744218000000004,
+   "end": 58.964218,
+   "segment": "d6"
+  },
+  {
+   "text": "mur,",
+   "start": 58.964218,
+   "end": 59.204218,
+   "segment": "d6"
+  },
+  {
+   "text": "Raphaël",
+   "start": 59.684218,
+   "end": 60.004218,
+   "segment": "d6"
+  },
+  {
+   "text": "a",
+   "start": 60.004218,
+   "end": 60.164218,
+   "segment": "d6"
+  },
+  {
+   "text": "peint",
+   "start": 60.164218,
+   "end": 60.324218,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 60.324218,
+   "end": 60.444218,
+   "segment": "d6"
+  },
+  {
+   "text": "foi",
+   "start": 60.444218,
+   "end": 60.724218,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 60.724218,
+   "end": 60.974218,
+   "segment": "d6"
+  },
+  {
+   "text": "le",
+   "start": 61.164218,
+   "end": 61.284218,
+   "segment": "d6"
+  },
+  {
+   "text": "Christ,",
+   "start": 61.284218,
+   "end": 61.484218,
+   "segment": "d6"
+  },
+  {
+   "text": "les",
+   "start": 61.844218,
+   "end": 62.044218,
+   "segment": "d6"
+  },
+  {
+   "text": "saints,",
+   "start": 62.044218,
+   "end": 62.284218,
+   "segment": "d6"
+  },
+  {
+   "text": "l'Église.",
+   "start": 62.644218,
+   "end": 63.104218,
+   "segment": "d6"
+  },
+  {
+   "text": "Pour",
+   "start": 63.684218,
+   "end": 63.804218,
+   "segment": "d6"
+  },
+  {
+   "text": "le",
+   "start": 63.804218,
+   "end": 63.904218,
+   "segment": "d6"
+  },
+  {
+   "text": "pape,",
+   "start": 63.904218,
+   "end": 64.124218,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 64.424218,
+   "end": 64.50421800000001,
+   "segment": "d6"
+  },
+  {
+   "text": "religion",
+   "start": 64.50421800000001,
+   "end": 64.804218,
+   "segment": "d6"
+  },
+  {
+   "text": "et",
+   "start": 64.804218,
+   "end": 65.00421800000001,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 65.00421800000001,
+   "end": 65.104218,
+   "segment": "d6"
+  },
+  {
+   "text": "philosophie",
+   "start": 65.104218,
+   "end": 65.544218,
+   "segment": "d6"
+  },
+  {
+   "text": "ne",
+   "start": 65.544218,
+   "end": 65.664218,
+   "segment": "d6"
+  },
+  {
+   "text": "s'opposent",
+   "start": 65.664218,
+   "end": 66.064218,
+   "segment": "d6"
+  },
+  {
+   "text": "pas",
+   "start": 66.064218,
+   "end": 66.204218,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 66.204218,
+   "end": 66.454218,
+   "segment": "d6"
+  },
+  {
+   "text": "ce",
+   "start": 66.604218,
+   "end": 66.72421800000001,
+   "segment": "d6"
+  },
+  {
+   "text": "sont",
+   "start": 66.72421800000001,
+   "end": 66.884218,
+   "segment": "d6"
+  },
+  {
+   "text": "deux",
+   "start": 66.884218,
+   "end": 67.304218,
+   "segment": "d6"
+  },
+  {
+   "text": "chemins",
+   "start": 67.304218,
+   "end": 67.744218,
+   "segment": "d6"
+  },
+  {
+   "text": "vers",
+   "start": 67.744218,
+   "end": 68.00421800000001,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 68.00421800000001,
+   "end": 68.144218,
+   "segment": "d6"
+  },
+  {
+   "text": "même",
+   "start": 68.144218,
+   "end": 68.344218,
+   "segment": "d6"
+  },
+  {
+   "text": "vérité.",
+   "start": 68.344218,
+   "end": 68.784218,
+   "segment": "d6"
+  },
+  {
+   "text": "Voilà",
+   "start": 69.084218,
+   "end": 69.324218,
+   "segment": "d6"
+  },
+  {
+   "text": "ce",
+   "start": 69.324218,
+   "end": 69.784218,
+   "segment": "d6"
+  },
+  {
+   "text": "qui",
+   "start": 69.784218,
+   "end": 69.864218,
+   "segment": "d6"
+  },
+  {
+   "text": "répond",
+   "start": 69.864218,
+   "end": 70.104218,
+   "segment": "d6"
+  },
+  {
+   "text": "à",
+   "start": 70.104218,
+   "end": 70.184218,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 70.184218,
+   "end": 70.244218,
+   "segment": "d6"
+  },
+  {
+   "text": "question",
+   "start": 70.244218,
+   "end": 70.484218,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 70.484218,
+   "end": 70.641225,
+   "segment": "d6"
+  }
+ ]
+}

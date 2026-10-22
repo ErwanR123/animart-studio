@@ -1,0 +1,38 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Dans ce tableau de Norman Rockwell, tout un quartier court vers ce soldat. Alors pourquoi lui ne bouge pas, et nous tourne le dos ?"
+    },
+    {
+      "id": "context",
+      "text": "Mai 1945. La guerre est finie en Europe, et un jeune soldat rentre enfin chez lui.",
+      "say": "Mai mille neuf cent quarante-cinq. La guerre est finie en Europe, et un jeune soldat rentre enfin chez lui."
+    },
+    {
+      "id": "d0",
+      "text": "Dans sa cour d'immeuble, c'est l'explosion de joie."
+    },
+    {
+      "id": "d1",
+      "text": "Sa mère se jette vers lui, les bras grands ouverts. Son petit frère dévale l'escalier, et même le chien fonce vers lui."
+    },
+    {
+      "id": "d2",
+      "text": "Les voisins se penchent aux fenêtres, les gamins s'arrêtent de jouer dans l'arbre."
+    },
+    {
+      "id": "d3",
+      "text": "Et lui ? Planté là, immobile. Pendant que la vie continuait ici, lui était au front. Il a vu des choses que personne dans cette cour ne pourra jamais imaginer."
+    },
+    {
+      "id": "d4",
+      "text": "Eux fêtent son retour. Mais lui, dans sa tête, n'est pas encore vraiment rentré."
+    },
+    {
+      "id": "d5",
+      "text": "Et son visage, Rockwell nous le cache exprès. En 1945, des millions de familles attendaient encore un fils, un mari, un frère. Sans visage, ce soldat devenait le leur : chaque mère qui ouvrait le journal y voyait son fils.",
+      "say": "Et son visage, Rockwell nous le cache exprès. En mille neuf cent quarante-cinq, des millions de familles attendaient encore un fils, un mari, un frère. Sans visage, ce soldat devenait le leur : chaque mère qui ouvrait le journal y voyait son fils."
+    }
+  ]
+}

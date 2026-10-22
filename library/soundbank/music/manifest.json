@@ -1,0 +1,28 @@
+[
+  {
+    "id": "gentle_harpsichord_and_pizzicato_strings_56d608",
+    "file": "gentle_harpsichord_and_pizzicato_strings_56d608.mp3",
+    "description": "Gentle harpsichord and pizzicato strings, Rococo character, lilting and playful, major key — light and warm",
+    "prompt": "Delicate harpsichord with light pizzicato strings — a lilting, playful Rococo miniature in a major key, unhurried tempo, decorative ornaments. Warm, conspiratorial, faintly comic. Quiet under dialogue.",
+    "artwork": "The Swing",
+    "created_at": "2026-07-03",
+    "registers": [
+      "warm_mischief"
+    ],
+    "energy": "calm",
+    "family": "early_acoustic"
+  },
+  {
+    "id": "solo_viola_da_gamba_slow_falling_phrase__116681",
+    "file": "solo_viola_da_gamba_slow_falling_phrase__116681.mp3",
+    "description": "Solo viola da gamba, slow falling phrase, unresolved and sparse — intimate dramatic tension",
+    "prompt": "Sparse solo viola da gamba, very slow, playing a single repeated falling phrase — no harmony, no resolution. Renaissance-adjacent timbre, intimate and unresolved, as if the instrument itself is waiting.",
+    "artwork": "The Head of John the Baptist",
+    "created_at": "2026-07-04",
+    "registers": [
+      "dramatic_tension"
+    ],
+    "energy": "calm",
+    "family": "early_acoustic"
+  }
+]

@@ -1,0 +1,1055 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 7.665351000000001
+  },
+  {
+   "id": "context",
+   "start": 8.015351,
+   "end": 14.10229
+  },
+  {
+   "id": "d0",
+   "start": 14.452290000000001,
+   "end": 16.675805
+  },
+  {
+   "id": "d1",
+   "start": 17.025805000000002,
+   "end": 23.032948
+  },
+  {
+   "id": "d2",
+   "start": 23.382948000000003,
+   "end": 27.244286000000002
+  },
+  {
+   "id": "d3",
+   "start": 27.594286000000004,
+   "end": 36.663334000000006
+  },
+  {
+   "id": "d4",
+   "start": 37.013334,
+   "end": 41.477461
+  },
+  {
+   "id": "d5",
+   "start": 41.827461,
+   "end": 55.007461
+  }
+ ],
+ "words": [
+  {
+   "text": "Dans",
+   "start": 0.0,
+   "end": 0.16,
+   "segment": "hook"
+  },
+  {
+   "text": "ce",
+   "start": 0.16,
+   "end": 0.34,
+   "segment": "hook"
+  },
+  {
+   "text": "tableau",
+   "start": 0.34,
+   "end": 0.74,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 0.74,
+   "end": 0.84,
+   "segment": "hook"
+  },
+  {
+   "text": "Norman",
+   "start": 0.84,
+   "end": 1.08,
+   "segment": "hook"
+  },
+  {
+   "text": "Rockwell,",
+   "start": 1.08,
+   "end": 1.62,
+   "segment": "hook"
+  },
+  {
+   "text": "tout",
+   "start": 1.98,
+   "end": 2.08,
+   "segment": "hook"
+  },
+  {
+   "text": "un",
+   "start": 2.08,
+   "end": 2.34,
+   "segment": "hook"
+  },
+  {
+   "text": "quartier",
+   "start": 2.34,
+   "end": 2.92,
+   "segment": "hook"
+  },
+  {
+   "text": "court",
+   "start": 2.92,
+   "end": 3.36,
+   "segment": "hook"
+  },
+  {
+   "text": "vers",
+   "start": 3.36,
+   "end": 3.66,
+   "segment": "hook"
+  },
+  {
+   "text": "ce",
+   "start": 3.66,
+   "end": 3.8,
+   "segment": "hook"
+  },
+  {
+   "text": "soldat.",
+   "start": 3.8,
+   "end": 4.4,
+   "segment": "hook"
+  },
+  {
+   "text": "Alors",
+   "start": 4.4,
+   "end": 4.58,
+   "segment": "hook"
+  },
+  {
+   "text": "pourquoi",
+   "start": 4.98,
+   "end": 5.32,
+   "segment": "hook"
+  },
+  {
+   "text": "lui",
+   "start": 5.32,
+   "end": 5.6,
+   "segment": "hook"
+  },
+  {
+   "text": "ne",
+   "start": 5.6,
+   "end": 5.8,
+   "segment": "hook"
+  },
+  {
+   "text": "bouge",
+   "start": 5.8,
+   "end": 6.1,
+   "segment": "hook"
+  },
+  {
+   "text": "pas,",
+   "start": 6.1,
+   "end": 6.3,
+   "segment": "hook"
+  },
+  {
+   "text": "et",
+   "start": 6.3,
+   "end": 6.72,
+   "segment": "hook"
+  },
+  {
+   "text": "nous",
+   "start": 6.72,
+   "end": 6.84,
+   "segment": "hook"
+  },
+  {
+   "text": "tourne",
+   "start": 6.84,
+   "end": 7.26,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 7.26,
+   "end": 7.36,
+   "segment": "hook"
+  },
+  {
+   "text": "dos",
+   "start": 7.36,
+   "end": 7.52,
+   "segment": "hook"
+  },
+  {
+   "text": "?",
+   "start": 7.52,
+   "end": 7.665351000000001,
+   "segment": "hook"
+  },
+  {
+   "text": "Mai",
+   "start": 8.015351,
+   "end": 8.275351,
+   "segment": "context"
+  },
+  {
+   "text": "1945.",
+   "start": 8.275351,
+   "end": 9.355351,
+   "segment": "context"
+  },
+  {
+   "text": "La",
+   "start": 10.335351000000001,
+   "end": 10.435351,
+   "segment": "context"
+  },
+  {
+   "text": "guerre",
+   "start": 10.435351,
+   "end": 10.595351,
+   "segment": "context"
+  },
+  {
+   "text": "est",
+   "start": 10.595351,
+   "end": 10.755351000000001,
+   "segment": "context"
+  },
+  {
+   "text": "finie",
+   "start": 10.755351000000001,
+   "end": 11.015351,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 11.015351,
+   "end": 11.115351,
+   "segment": "context"
+  },
+  {
+   "text": "Europe,",
+   "start": 11.115351,
+   "end": 11.395351000000002,
+   "segment": "context"
+  },
+  {
+   "text": "et",
+   "start": 11.715351000000002,
+   "end": 11.815351,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 11.815351,
+   "end": 11.955351,
+   "segment": "context"
+  },
+  {
+   "text": "jeune",
+   "start": 11.955351,
+   "end": 12.155351,
+   "segment": "context"
+  },
+  {
+   "text": "soldat",
+   "start": 12.155351,
+   "end": 12.615351,
+   "segment": "context"
+  },
+  {
+   "text": "rentre",
+   "start": 12.615351,
+   "end": 13.215351000000002,
+   "segment": "context"
+  },
+  {
+   "text": "enfin",
+   "start": 13.215351000000002,
+   "end": 13.595351,
+   "segment": "context"
+  },
+  {
+   "text": "chez",
+   "start": 13.595351,
+   "end": 13.835351000000001,
+   "segment": "context"
+  },
+  {
+   "text": "lui.",
+   "start": 13.835351000000001,
+   "end": 14.015351,
+   "segment": "context"
+  },
+  {
+   "text": "Dans",
+   "start": 14.452290000000001,
+   "end": 14.552290000000001,
+   "segment": "d0"
+  },
+  {
+   "text": "sa",
+   "start": 14.552290000000001,
+   "end": 14.692290000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "cour",
+   "start": 14.692290000000002,
+   "end": 14.81229,
+   "segment": "d0"
+  },
+  {
+   "text": "d'immeuble,",
+   "start": 14.81229,
+   "end": 15.172290000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "c'est",
+   "start": 15.372290000000001,
+   "end": 15.592290000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "l'explosion",
+   "start": 15.592290000000002,
+   "end": 16.052290000000003,
+   "segment": "d0"
+  },
+  {
+   "text": "de",
+   "start": 16.052290000000003,
+   "end": 16.33229,
+   "segment": "d0"
+  },
+  {
+   "text": "joie.",
+   "start": 16.33229,
+   "end": 16.592290000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "Sa",
+   "start": 17.025805000000002,
+   "end": 17.385805,
+   "segment": "d1"
+  },
+  {
+   "text": "mère",
+   "start": 17.385805,
+   "end": 17.565805,
+   "segment": "d1"
+  },
+  {
+   "text": "se",
+   "start": 17.565805,
+   "end": 17.765805,
+   "segment": "d1"
+  },
+  {
+   "text": "jette",
+   "start": 17.765805,
+   "end": 18.065805,
+   "segment": "d1"
+  },
+  {
+   "text": "vers",
+   "start": 18.065805,
+   "end": 18.185805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "lui,",
+   "start": 18.185805000000002,
+   "end": 18.425805,
+   "segment": "d1"
+  },
+  {
+   "text": "les",
+   "start": 18.605805000000004,
+   "end": 18.705805,
+   "segment": "d1"
+  },
+  {
+   "text": "bras",
+   "start": 18.705805,
+   "end": 18.885805,
+   "segment": "d1"
+  },
+  {
+   "text": "grands",
+   "start": 18.885805,
+   "end": 19.145805000000003,
+   "segment": "d1"
+  },
+  {
+   "text": "ouverts.",
+   "start": 19.145805000000003,
+   "end": 19.525805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "Son",
+   "start": 19.865805,
+   "end": 20.025805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "petit",
+   "start": 20.025805000000002,
+   "end": 20.205805,
+   "segment": "d1"
+  },
+  {
+   "text": "frère",
+   "start": 20.205805,
+   "end": 20.545805,
+   "segment": "d1"
+  },
+  {
+   "text": "dévale",
+   "start": 20.545805,
+   "end": 20.865805,
+   "segment": "d1"
+  },
+  {
+   "text": "l'escalier,",
+   "start": 20.865805,
+   "end": 21.345805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 21.645805000000003,
+   "end": 21.805805000000003,
+   "segment": "d1"
+  },
+  {
+   "text": "même",
+   "start": 21.805805000000003,
+   "end": 21.925805000000004,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 21.925805000000004,
+   "end": 22.085805,
+   "segment": "d1"
+  },
+  {
+   "text": "chien",
+   "start": 22.085805,
+   "end": 22.405805,
+   "segment": "d1"
+  },
+  {
+   "text": "fonce",
+   "start": 22.405805,
+   "end": 22.705805,
+   "segment": "d1"
+  },
+  {
+   "text": "vers",
+   "start": 22.705805,
+   "end": 22.845805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "lui.",
+   "start": 22.845805000000002,
+   "end": 23.005805000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "Les",
+   "start": 23.382948000000003,
+   "end": 23.782948,
+   "segment": "d2"
+  },
+  {
+   "text": "voisins",
+   "start": 23.782948,
+   "end": 24.182948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "se",
+   "start": 24.182948000000003,
+   "end": 24.362948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "penchent",
+   "start": 24.362948000000003,
+   "end": 24.662948000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "aux",
+   "start": 24.662948000000004,
+   "end": 24.722948000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "fenêtres,",
+   "start": 24.722948000000002,
+   "end": 25.142948000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 25.422948,
+   "end": 25.522948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "gamins",
+   "start": 25.522948000000003,
+   "end": 25.882948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "s'arrêtent",
+   "start": 25.882948000000003,
+   "end": 26.262948,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 26.262948,
+   "end": 26.362948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "jouer",
+   "start": 26.362948000000003,
+   "end": 26.542948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "dans",
+   "start": 26.542948000000003,
+   "end": 26.682948000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "l'arbre.",
+   "start": 26.682948000000003,
+   "end": 27.002948000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "Et",
+   "start": 27.594286000000004,
+   "end": 27.734286000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "lui",
+   "start": 27.734286000000004,
+   "end": 27.834286000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "?",
+   "start": 27.834286000000002,
+   "end": 28.084286000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "Planté",
+   "start": 28.334286000000002,
+   "end": 28.714286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "là,",
+   "start": 28.714286000000005,
+   "end": 28.854286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "immobile.",
+   "start": 29.214286000000005,
+   "end": 29.614286000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "Pendant",
+   "start": 30.074286000000004,
+   "end": 30.594286000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "que",
+   "start": 30.594286000000004,
+   "end": 30.794286000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "la",
+   "start": 30.794286000000003,
+   "end": 30.894286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "vie",
+   "start": 30.894286000000005,
+   "end": 31.074286000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "continuait",
+   "start": 31.074286000000004,
+   "end": 31.634286000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "ici,",
+   "start": 31.634286000000003,
+   "end": 31.954286000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "lui",
+   "start": 32.354286,
+   "end": 32.554286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "était",
+   "start": 32.554286000000005,
+   "end": 32.894286,
+   "segment": "d3"
+  },
+  {
+   "text": "au",
+   "start": 32.894286,
+   "end": 33.094286000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "front.",
+   "start": 33.094286000000004,
+   "end": 33.274286000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "Il",
+   "start": 33.61428600000001,
+   "end": 33.714286,
+   "segment": "d3"
+  },
+  {
+   "text": "a",
+   "start": 33.714286,
+   "end": 33.814286,
+   "segment": "d3"
+  },
+  {
+   "text": "vu",
+   "start": 33.814286,
+   "end": 33.894286,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 33.894286,
+   "end": 33.994286,
+   "segment": "d3"
+  },
+  {
+   "text": "choses",
+   "start": 33.994286,
+   "end": 34.194286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "que",
+   "start": 34.194286000000005,
+   "end": 34.374286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "personne",
+   "start": 34.374286000000005,
+   "end": 34.75428600000001,
+   "segment": "d3"
+  },
+  {
+   "text": "dans",
+   "start": 34.75428600000001,
+   "end": 34.974286000000006,
+   "segment": "d3"
+  },
+  {
+   "text": "cette",
+   "start": 34.974286000000006,
+   "end": 35.11428600000001,
+   "segment": "d3"
+  },
+  {
+   "text": "cour",
+   "start": 35.11428600000001,
+   "end": 35.29428600000001,
+   "segment": "d3"
+  },
+  {
+   "text": "ne",
+   "start": 35.29428600000001,
+   "end": 35.434286,
+   "segment": "d3"
+  },
+  {
+   "text": "pourra",
+   "start": 35.434286,
+   "end": 35.654286000000006,
+   "segment": "d3"
+  },
+  {
+   "text": "jamais",
+   "start": 35.654286000000006,
+   "end": 35.974286000000006,
+   "segment": "d3"
+  },
+  {
+   "text": "imaginer.",
+   "start": 35.974286000000006,
+   "end": 36.554286000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "Eux",
+   "start": 37.013334,
+   "end": 37.213334,
+   "segment": "d4"
+  },
+  {
+   "text": "fêtent",
+   "start": 37.213334,
+   "end": 37.633334,
+   "segment": "d4"
+  },
+  {
+   "text": "son",
+   "start": 37.633334,
+   "end": 37.833334,
+   "segment": "d4"
+  },
+  {
+   "text": "retour.",
+   "start": 37.833334,
+   "end": 38.153334,
+   "segment": "d4"
+  },
+  {
+   "text": "Mais",
+   "start": 38.533334,
+   "end": 38.693334,
+   "segment": "d4"
+  },
+  {
+   "text": "lui,",
+   "start": 38.693334,
+   "end": 38.933334,
+   "segment": "d4"
+  },
+  {
+   "text": "dans",
+   "start": 39.133334,
+   "end": 39.353334000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "sa",
+   "start": 39.353334000000004,
+   "end": 39.513334,
+   "segment": "d4"
+  },
+  {
+   "text": "tête,",
+   "start": 39.513334,
+   "end": 39.733334,
+   "segment": "d4"
+  },
+  {
+   "text": "n'est",
+   "start": 40.113334,
+   "end": 40.233334,
+   "segment": "d4"
+  },
+  {
+   "text": "pas",
+   "start": 40.233334,
+   "end": 40.373334,
+   "segment": "d4"
+  },
+  {
+   "text": "encore",
+   "start": 40.373334,
+   "end": 40.633334,
+   "segment": "d4"
+  },
+  {
+   "text": "vraiment",
+   "start": 40.633334,
+   "end": 40.953334,
+   "segment": "d4"
+  },
+  {
+   "text": "rentré.",
+   "start": 40.953334,
+   "end": 41.373334,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 41.827461,
+   "end": 41.827461,
+   "segment": "d5"
+  },
+  {
+   "text": "son",
+   "start": 41.827461,
+   "end": 42.047461,
+   "segment": "d5"
+  },
+  {
+   "text": "visage,",
+   "start": 42.047461,
+   "end": 42.487460999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "Rockwell",
+   "start": 42.847461,
+   "end": 43.327461,
+   "segment": "d5"
+  },
+  {
+   "text": "nous",
+   "start": 43.327461,
+   "end": 43.507461,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 43.507461,
+   "end": 43.627461,
+   "segment": "d5"
+  },
+  {
+   "text": "cache",
+   "start": 43.627461,
+   "end": 43.887461,
+   "segment": "d5"
+  },
+  {
+   "text": "exprès.",
+   "start": 44.167461,
+   "end": 44.547461,
+   "segment": "d5"
+  },
+  {
+   "text": "En",
+   "start": 45.127461,
+   "end": 45.167461,
+   "segment": "d5"
+  },
+  {
+   "text": "1945,",
+   "start": 45.167461,
+   "end": 45.887461,
+   "segment": "d5"
+  },
+  {
+   "text": "des",
+   "start": 46.327461,
+   "end": 46.387461,
+   "segment": "d5"
+  },
+  {
+   "text": "millions",
+   "start": 46.387461,
+   "end": 46.787461,
+   "segment": "d5"
+  },
+  {
+   "text": "de",
+   "start": 46.787461,
+   "end": 47.007461,
+   "segment": "d5"
+  },
+  {
+   "text": "familles",
+   "start": 47.007461,
+   "end": 47.307461,
+   "segment": "d5"
+  },
+  {
+   "text": "attendaient",
+   "start": 47.307461,
+   "end": 47.627461,
+   "segment": "d5"
+  },
+  {
+   "text": "encore",
+   "start": 47.627461,
+   "end": 47.787461,
+   "segment": "d5"
+  },
+  {
+   "text": "un",
+   "start": 47.787461,
+   "end": 48.027461,
+   "segment": "d5"
+  },
+  {
+   "text": "fils,",
+   "start": 48.027461,
+   "end": 48.187461,
+   "segment": "d5"
+  },
+  {
+   "text": "un",
+   "start": 48.507461,
+   "end": 48.587461,
+   "segment": "d5"
+  },
+  {
+   "text": "mari,",
+   "start": 48.587461,
+   "end": 48.807461,
+   "segment": "d5"
+  },
+  {
+   "text": "un",
+   "start": 49.007461,
+   "end": 49.047461,
+   "segment": "d5"
+  },
+  {
+   "text": "frère.",
+   "start": 49.047461,
+   "end": 49.427461,
+   "segment": "d5"
+  },
+  {
+   "text": "Sans",
+   "start": 50.087461,
+   "end": 50.207461,
+   "segment": "d5"
+  },
+  {
+   "text": "visage,",
+   "start": 50.207461,
+   "end": 50.647461,
+   "segment": "d5"
+  },
+  {
+   "text": "ce",
+   "start": 51.007461,
+   "end": 51.127461,
+   "segment": "d5"
+  },
+  {
+   "text": "soldat",
+   "start": 51.127461,
+   "end": 51.507461,
+   "segment": "d5"
+  },
+  {
+   "text": "devenait",
+   "start": 51.507461,
+   "end": 51.847460999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 51.847460999999996,
+   "end": 51.987460999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "leur",
+   "start": 51.987460999999996,
+   "end": 52.187461,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 52.187461,
+   "end": 52.437461,
+   "segment": "d5"
+  },
+  {
+   "text": "chaque",
+   "start": 52.667461,
+   "end": 53.027461,
+   "segment": "d5"
+  },
+  {
+   "text": "mère",
+   "start": 53.027461,
+   "end": 53.267461,
+   "segment": "d5"
+  },
+  {
+   "text": "qui",
+   "start": 53.267461,
+   "end": 53.487460999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "ouvrait",
+   "start": 53.487460999999996,
+   "end": 53.767461,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 53.767461,
+   "end": 53.847460999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "journal",
+   "start": 53.847460999999996,
+   "end": 54.087461,
+   "segment": "d5"
+  },
+  {
+   "text": "y",
+   "start": 54.087461,
+   "end": 54.247461,
+   "segment": "d5"
+  },
+  {
+   "text": "voyait",
+   "start": 54.247461,
+   "end": 54.527461,
+   "segment": "d5"
+  },
+  {
+   "text": "son",
+   "start": 54.527461,
+   "end": 54.667461,
+   "segment": "d5"
+  },
+  {
+   "text": "fils.",
+   "start": 54.667461,
+   "end": 54.887461,
+   "segment": "d5"
+  }
+ ]
+}

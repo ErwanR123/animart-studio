@@ -1,0 +1,19 @@
+{
+  "back": ["sheet_poses.png", [12, 56, 290, 500]],
+  "explaining": ["sheet_poses.png", [313, 65, 665, 504]],
+  "celebrating": ["sheet_poses.png", [652, 72, 976, 504]],
+  "satchel": ["sheet_poses.png", [956, 112, 1228, 508]],
+  "stamping": ["sheet_poses.png", [1219, 167, 1524, 491]],
+  "peeking": ["sheet_poses.png", [95, 540, 305, 972]],
+  "reading": ["sheet_poses.png", [381, 531, 689, 977]],
+  "point-left": ["sheet_poses.png", [727, 541, 1097, 977]],
+  "point-right": ["sheet_poses.png", [1125, 541, 1523, 975]],
+  "bust-thumb": ["sheet_expressions.png", [11, 49, 447, 598]],
+  "bust-worried": ["sheet_expressions.png", [448, 73, 873, 574]],
+  "bust-proud": ["sheet_expressions.png", [862, 47, 1302, 589]],
+  "bust-loupe": ["sheet_expressions.png", [8, 623, 449, 1124]],
+  "bust-laugh": ["sheet_expressions.png", [443, 592, 903, 1144]],
+  "bust-skeptical": ["sheet_expressions.png", [906, 609, 1300, 1147]],
+  "stamp-circle": ["sheet_stamps_badges.png", [85, 54, 491, 447]],
+  "stamp-postage": ["sheet_stamps_badges.png", [1133, 62, 1685, 430]]
+}

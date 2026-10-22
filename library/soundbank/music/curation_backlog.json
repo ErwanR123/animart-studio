@@ -1,0 +1,65 @@
+[
+  {
+    "register": "broad_comedy",
+    "target": "light pizzicato strings, bassoon or clarinet, comic chamber pulse",
+    "priority": 2,
+    "suggested_sources": ["musopen", "wikimedia", "freepd"],
+    "status": "needed"
+  },
+  {
+    "register": "warm_mischief",
+    "target": "harpsichord, lute or light clarinet, smiling chamber miniature",
+    "priority": 2,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  },
+  {
+    "register": "festive_everyday",
+    "target": "folk dance, tavern fiddle, village ensemble, warm rhythmic bed",
+    "priority": 1,
+    "suggested_sources": ["wikimedia", "internet_archive", "freepd"],
+    "status": "needed"
+  },
+  {
+    "register": "wonder_epic",
+    "target": "slow orchestral or organ/strings swell, broad landscape bed",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  },
+  {
+    "register": "tender_intimate",
+    "target": "solo cello, piano, harp or lute, sparse and close",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  },
+  {
+    "register": "dramatic_tension",
+    "target": "low strings, viola da gamba or minor ostinato, restrained pulse",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  },
+  {
+    "register": "mystery_conspiracy",
+    "target": "low harpsichord, muted strings, slow suspicious chamber figure",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia", "freepd"],
+    "status": "needed"
+  },
+  {
+    "register": "shiver",
+    "target": "organ, cold bowed strings or sparse drone-like classical excerpt",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  },
+  {
+    "register": "melancholy_solemn",
+    "target": "cello, piano, choral or organ, slow minor elegy",
+    "priority": 1,
+    "suggested_sources": ["musopen", "wikimedia"],
+    "status": "needed"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Pourquoi le tableau d'Edvard Munch s'appelle-t-il Le Cri, alors que son personnage ne crie pas ?",
+      "say": "Pourquoi le tableau d'Edvard Mounk s'appelle-t-il Le Cri, alors que son personnage ne crie pas ?"
+    },
+    {
+      "id": "context",
+      "text": "Un soir, Munch marche avec deux amis sur un chemin au-dessus d'Oslo.",
+      "say": "Un soir, Mounk marche avec deux amis sur un chemin au-dessus d'Oslo."
+    },
+    {
+      "id": "d0",
+      "text": "Le soleil se couche. Soudain, le ciel devient rouge sang."
+    },
+    {
+      "id": "d1",
+      "text": "Munch s'arrête, épuisé. Ses deux amis, eux, continuent leur route.",
+      "say": "Mounk s'arrête, épuisé. Ses deux amis, eux, continuent leur route."
+    },
+    {
+      "id": "d2",
+      "text": "Lui reste seul, tremblant d'angoisse. Il a raconté avoir senti un cri immense traverser la nature."
+    },
+    {
+      "id": "d3",
+      "text": "Regardez-le : les mains sur les joues, la bouche ouverte, le visage presque d'un crâne. Ce n'est pas lui qui hurle. Il se bouche les oreilles, pour ne plus l'entendre."
+    },
+    {
+      "id": "d4",
+      "text": "Le cri, c'est celui de la nature. Le ciel, le fjord, le chemin : tout ondule autour de lui, comme si le cri se propageait en vagues."
+    },
+    {
+      "id": "d5",
+      "text": "Quelques années plus tard, Munch écrit au crayon dans le coin du ciel : « Ne peut avoir été peint que par un fou. »",
+      "say": "Quelques années plus tard, Mounk écrit au crayon dans le coin du ciel : « Ne peut avoir été peint que par un fou. »"
+    },
+    {
+      "id": "d6",
+      "text": "Il n'a pas peint un cri qu'on entend. Il a peint une angoisse qu'on ressent, et que tout le monde a déjà connue. Voilà ce qui répond à la question :"
+    }
+  ]
+}

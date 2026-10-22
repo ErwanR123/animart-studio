@@ -1,0 +1,37 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Pourquoi Alexandre le Grand refuse-t-il de boire, alors que son armée meurt de soif ?"
+    },
+    {
+      "id": "context",
+      "text": "Alexandre, c'est le plus grand conquérant de l'Antiquité. Roi à vingt ans, il écrase l'immense empire perse, prend l'Égypte et pousse jusqu'en Inde, sans jamais perdre une bataille."
+    },
+    {
+      "id": "d0",
+      "text": "Mais en 325 avant Jésus-Christ, sur le chemin du retour, il traverse le désert de Gédrosie. Une fournaise. Des semaines de marche presque sans eau, et des milliers d'hommes y meurent.",
+      "say": "Mais en trois cent vingt-cinq avant Jésus-Christ, sur le chemin du retour, il traverse le désert de Gédrosie. Une fournaise. Des semaines de marche presque sans eau, et des milliers d'hommes y meurent."
+    },
+    {
+      "id": "d1",
+      "text": "C'est là que des éclaireurs trouvent un mince filet d'eau, à peine de quoi remplir un casque. Ils l'apportent à leur roi."
+    },
+    {
+      "id": "d2",
+      "text": "Mais regarde son doigt : Alexandre ne regarde même pas l'eau. Il montre ses hommes à bout de forces, et le soldat qui s'effondre."
+    },
+    {
+      "id": "d3",
+      "text": "Alors, devant toute l'armée, il les remercie… et verse l'eau dans le sable."
+    },
+    {
+      "id": "d4",
+      "text": "Boire seul, c'était leur dire : moi d'abord. Il préfère avoir soif avec eux."
+    },
+    {
+      "id": "d5",
+      "text": "Selon l'historien Arrien, ses soldats repartent comme si chacun avait bu. C'est tout Alexandre : il n'exigeait rien de ses hommes qu'il ne s'imposait pas à lui-même. Voilà la réponse à la question :"
+    }
+  ]
+}
