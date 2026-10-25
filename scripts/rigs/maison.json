@@ -5,7 +5,7 @@
  "rim": 6,
  "sources": {
   "m": {
-   "file": "out/sources/Rue_Saint-Hilaire,_vue_prise_de_la_rue_de_l'Ecole-Polytechnique,_5ème_arrondissement,_Paris,_PH593.jpg",
+   "file": "library/rig-sources/marville-rue-saint-hilaire.jpg",
    "crop": [
     0.23,
     0.18,

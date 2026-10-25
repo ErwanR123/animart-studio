@@ -5,7 +5,7 @@
  "rim": 7,
  "sources": {
   "rat": {
-   "file": "out/sources/Brown_rat,_or_Norway_rat_(Mus_decumanus)_from_the_viviparous_quadrupeds_of_North_America_(1845)_illustrated_by_John_Woodhouse_Audubon_(1812-1862).jpg",
+   "file": "library/rig-sources/rat-audubon-1845.jpg",
    "crop": [
     0.12,
     0.22,

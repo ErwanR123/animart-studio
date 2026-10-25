@@ -5,7 +5,7 @@
  "rim": 6,
  "sources": {
   "c": {
-   "file": "out/sources/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg",
+   "file": "library/rig-sources/courbet-casseurs-de-pierres.jpg",
    "crop": [
     0.38,
     0.15,

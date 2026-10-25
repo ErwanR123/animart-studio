@@ -56,7 +56,8 @@ Load `remotion-best-practices` before writing Remotion code.
   `design-system.md`). `docs/inspiration/` — the Vox-style reel the collage style comes from.
 - `library/` — raw material not yet in a video: `app-guide/` (paper bubbles, tape, stamps, sketches from the
   app), `guide-extra/` (more Guide drawings outside the pose bank: six busts, peeking round a wall, stamping),
-  `soundbank/` (`music/` beds, `ambiences/`, spare `sfx/` with their sources).
+  `soundbank/` (`music/` beds, `ambiences/`, spare `sfx/` with their sources), `rig-sources/` (the originals the
+  paper puppets are cut from, read by `scripts/rigs/*.json`).
 
 ## Commands (from the repo root, Node 22: `source ~/.nvm/nvm.sh && nvm use 22`)
 
