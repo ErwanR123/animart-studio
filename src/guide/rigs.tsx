@@ -2,14 +2,16 @@ import type React from "react";
 import { Img, staticFile } from "remotion";
 import haussmann from "./rigs/haussmann.json";
 import napoleon from "./rigs/napoleon.json";
+import casseur from "./rigs/casseur.json";
 import rat from "./rigs/rat.json";
 
 // Paper puppets (scripts/rig-cut.py): a figure cut from an archive photo into pieces of paper, each pinned at its
 // joint and moved one drawing at a time (the shot's 12-a-second clock), like cut-out animation under a rostrum
 // camera. The rest pose is the photo itself; an act gives every joint an angle per drawing. Arms are solved to where
 // the hands must be (two-bone IK), so both hands stay on the tool's handle through the whole swing. Two kinds: a
-// digger (legs, torso, head, two arms of two pieces: Napoléon III, Haussmann on the same frock coat) and a rat
-// (body, head, a front and a hind leg, a drawn tail).
+// digger (legs, torso, head, two arms of two pieces: Napoléon III, Haussmann on the same frock coat), a stone-breaker
+// (a body, his arms and hammer in one piece pinned at the shoulder: Courbet's) and a rat (body, head, a front and a
+// hind leg, a drawn tail).
 
 type Pt = [number, number];
 type Part = {
@@ -30,9 +32,10 @@ const RIGS = {
   napoleon: { dir: "art/rigs/napoleon", data: napoleon as RigData },
   haussmann: { dir: "art/rigs/haussmann", data: haussmann as RigData },
   rat: { dir: "art/rigs/rat", data: rat as RigData },
+  casseur: { dir: "art/rigs/casseur", data: casseur as RigData },
 };
 
-// `rig` names the puppet. A digger swings a pickaxe once a second from `delay` s after landing (raised slowly, held,
+// `rig` names the puppet. A stone-breaker raises his hammer and brings it down once a second, like a digger; a digger swings a pickaxe once a second from `delay` s after landing (raised slowly, held,
 // struck in one drawing, rebound, chips of stone); a rat scurries, crossing `travel` [dx, dy] shot px in `travel[2]` s.
 // `flip` mirrors it (facing the other way).
 export type RigLayer = {
@@ -75,13 +78,30 @@ const SWING: [number, Pose][] = [
   [12, { torso: 0, head: 0, drop: 0, hand: [70, 820], handle: 100 }],
 ];
 const IMPACT = 9; // the drawing where the pick hits
+// The stone-breaker's arm (deg round the shoulder, keyed on drawings): raised slowly from the heap, held, struck down
+// onto the stones in one drawing, a small rebound (the piece carries his back too: a wider swing would twist it).
+const HAMMER: [number, number][] = [
+  [0, 15],
+  [4, -10],
+  [6, -24],
+  [7, -27],
+  [8, 32],
+  [9, 26],
+  [10, 29],
+  [12, 15],
+];
+const HAMMER_HIT = 8;
 // When a digger's blows land (s, episode clock), for their sound: it starts swinging at `from`, until `until`.
 export const rigHits = (l: RigLayer, from: number, until: number) =>
   l.rig === "rat"
     ? []
     : Array.from(
         { length: 12 },
-        (_, n) => from + (l.delay ?? 0) + IMPACT / 12 + n,
+        (_, n) =>
+          from +
+          (l.delay ?? 0) +
+          (l.rig === "casseur" ? HAMMER_HIT : IMPACT) / 12 +
+          n,
       ).filter((x) => x < until);
 
 const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
@@ -302,6 +322,15 @@ export const Rig: React.FC<{
       `translate(${tx * u}px, ${ty * u}px)`,
     );
   }
+  if (l.rig === "casseur")
+    return (
+      <Breaker
+        dir={dir}
+        data={data}
+        t={e - start - (l.delay ?? 0)}
+        frame={frame}
+      />
+    );
   return (
     <Digger
       dir={dir}
@@ -311,6 +340,144 @@ export const Rig: React.FC<{
     />
   );
 };
+
+const Breaker: React.FC<{
+  dir: string;
+  data: RigData;
+  t: number;
+  frame: (c: React.ReactNode) => React.ReactNode;
+}> = ({ dir, data, t, frame }) => {
+  const P = data.parts;
+  const d = t < 0 ? 0 : Math.floor(t * 12) % 12;
+  const i = HAMMER.findIndex(([k]) => k > d);
+  const [d0, a0] = HAMMER[i - 1];
+  const [d1, a1] = HAMMER[i];
+  const a = lerp(a0, a1, (d - d0) / (d1 - d0));
+  // The hammer's head at the blow, round the shoulder: the heap of stones lies under it, the chips fly from there.
+  const [sx, sy] = P.arm.joint;
+  const [hx, hy] = data.marks?.head ?? P.arm.joint;
+  const r = (HAMMER.find(([k]) => k === HAMMER_HIT)![1] * Math.PI) / 180;
+  const head: Pt = [
+    sx + (hx - sx) * Math.cos(r) - (hy - sy) * Math.sin(r),
+    sy + (hx - sx) * Math.sin(r) + (hy - sy) * Math.cos(r) + 60,
+  ];
+  const age = t * 12 >= HAMMER_HIT ? (d - HAMMER_HIT + 12) % 12 : 99;
+  const blows =
+    t * 12 >= HAMMER_HIT ? Math.floor((t * 12 - HAMMER_HIT) / 12) + 1 : 0;
+  return frame(
+    <>
+      {piece(dir, "body", P.body)}
+      <Heap at={head} foot={data.height - 20} blows={blows} />
+      {pin(P.arm.joint, a, piece(dir, "arm", P.arm))}
+      {age < 4 ? <Dust at={head} age={age} /> : null}
+      {age < 6 ? <Chips at={head} age={age} /> : null}
+    </>,
+  );
+};
+
+// The heap a stone-breaker works at, piled from the ground (`foot`, rig px) up to its top block under the hammer at
+// `at`: the first blow cracks the block, the second splits it in two; every blow adds gravel round the block.
+const GREYS = ["#A79D88", "#C9BFA9", "#958B77", "#BDB39D"];
+const Heap: React.FC<{ at: Pt; foot: number; blows: number }> = ({
+  at,
+  foot,
+  blows,
+}) => {
+  const split = blows >= 2 ? 1 : 0;
+  const crack = blows ? "M 0 -55 L -8 -30 L 6 -10 L -4 15 L 8 40" : "";
+  const rows = Math.ceil((foot - at[1] - 40) / 60);
+  const stones = Array.from({ length: rows }, (_, r) => {
+    const y = 100 + r * 60;
+    const half = 70 + Math.sqrt(y / (foot - at[1])) * 170;
+    const n = Math.round(half / 40);
+    return Array.from({ length: n }, (_, k) => [
+      -half + ((k + 0.5) * 2 * half) / n + ((r * 37 + k * 23) % 40) - 20,
+      y + ((r * 11 + k * 31) % 24) - 12,
+      55 + ((r * 13 + k * 29) % 50),
+    ]);
+  }).flat();
+  return (
+    <svg
+      width={1}
+      height={1}
+      style={{
+        position: "absolute",
+        left: at[0],
+        top: at[1],
+        overflow: "visible",
+      }}
+    >
+      {stones.map(([x, y, sz], i) => (
+        <polygon
+          key={i}
+          points={`${x - sz / 2},${y} ${x - sz * 0.4},${y - sz * 0.55} ${x + sz * 0.1},${y - sz * 0.7} ${x + sz / 2},${y - sz * 0.45} ${x + sz * 0.45},${y}`}
+          fill={GREYS[(i * 7) % 4]}
+          transform={`rotate(${((i * 47) % 50) - 25} ${x} ${y - sz / 3})`}
+          stroke="#F6F2E9"
+          strokeWidth={7}
+          strokeLinejoin="round"
+        />
+      ))}
+      {Array.from({ length: Math.min(blows, 6) * 4 }, (_, i) => (
+        <circle
+          key={i}
+          cx={-120 + ((i * 53) % 240)}
+          cy={78 - ((i * 17) % 18)}
+          r={6 + (i % 3) * 3}
+          fill={i % 2 ? "#8C8475" : "#CFC6B4"}
+        />
+      ))}
+      {[-1, 1].map((side) => (
+        <g
+          key={side}
+          transform={`translate(${side * 14 * split} ${4 * split}) rotate(${side * 9 * split})`}
+        >
+          <polygon
+            points={
+              side < 0
+                ? "-95,60 -85,-45 0,-60 6,-10 -4,15 8,60"
+                : "0,-60 80,-50 95,60 8,60 -4,15 6,-10"
+            }
+            fill="#D8CFBB"
+            stroke="#F6F2E9"
+            strokeWidth={8}
+            strokeLinejoin="round"
+          />
+        </g>
+      ))}
+      {split ? null : (
+        <path
+          d={crack}
+          stroke="#3A342B"
+          strokeWidth={6}
+          fill="none"
+          strokeLinejoin="round"
+        />
+      )}
+    </svg>
+  );
+};
+
+// A puff of stone dust from a blow, swelling and fading over four drawings.
+const Dust: React.FC<{ at: Pt; age: number }> = ({ at, age }) => (
+  <>
+    {[-50, 0, 50].map((dx, i) => (
+      <div
+        key={i}
+        style={{
+          position: "absolute",
+          left: at[0] + dx * (1 + age * 0.5) - (40 + age * 22),
+          top: at[1] - 30 - age * 12 - (40 + age * 22),
+          width: 2 * (40 + age * 22),
+          height: 2 * (40 + age * 22),
+          borderRadius: "50%",
+          background: "#E8E0CE",
+          opacity: 0.5 - age * 0.11,
+        }}
+      />
+    ))}
+  </>
+);
 
 const Digger: React.FC<{
   dir: string;

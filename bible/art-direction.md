@@ -53,8 +53,8 @@ same look and stay as they are.
 | effect | key | verdict |
 |---|---|---|
 | collage shots | `shots` (+ `figure: true` to keep the episode's cut-out in front) | **yes**, the house style (rules above) |
-| pieces on 12 drawings a second | built into `shots` | added October 2026 from the Vox research: first shown on the next episode, verdict pending |
-| source line on an archive | `source` on a shot | added October 2026: verdict pending |
+| pieces on 12 drawings a second | built into `shots` | yes (*Rue de Paris*) |
+| source line on an archive | `source` on a shot | **no**: never shown on screen (the field stays as a note for us; sources go in `SOURCES.md`) |
 | slow push while the camera holds on the painting | built into `climb` (`HOLD_PUSH`, +3 % in 5 s, unwound on the loop) | added October 2026 (the picture never freezes: *Le Cri* stood still 13 % of the time, *Rue de Paris* 0 %): verdict pending |
 | a figure alone, the world gone | `shots` with `in: "fade"` and the figure's cut-out (`image-collage.py --cut --keep-box`) placed on its painted self | yes (*Le Cri*, "tout se passe dans sa tête") |
 | older collage | `collage` (+ `figure`, `tear`, `intro: "rip"`, `outro: "page"`) | yes in *Homecoming* and *Alexander*; new episodes use `shots` |
@@ -73,6 +73,11 @@ same look and stay as they are.
 | whip-pan + side by side | `turn` | yes (*Athens*) |
 | grey freeze, colour back as a wave | `freeze` (+ `spread`) | yes; the music dips under it, and stops only if a `heart` takes over |
 | pour | `pour` | yes (*Alexander*) |
+| paper puppets cut limb by limb from an archive: diggers swinging a pickaxe, a stone-breaker at his heap, a rat | `rig` (`src/guide/rigs.tsx`, `scripts/rig-cut.py`) | **yes**: "les personnages qui se penchent, qui donnent des coups" (*Rue de Paris*); a blow always lands on something (a house losing a piece per blow, a block cracking), never in the air |
+| drawn scenery in flat cut paper: a Haussmann facade floor by floor, a bucket emptied from a window, flies, a barricade, building-site ground and scaffolding, fire | `facade`, `pour` (number), `flies`, `barricade`, `ground`, `scaffold`, `flames` (`src/guide/scenery.tsx`) | yes (*Rue de Paris*) |
+| a piece pulled out of the picture while the rest goes into shadow (a floor of the building on its word) | `lift` (+ `hold`, `front`) | yes (*Rue de Paris*) |
+| a brass loupe searching the painting in the hook, landing on the subject on its word | `search` (episode config) | yes (*Rue de Paris*) |
+| a piece falling, pushed out of the frame, a floor lowered by a crane | `fall`, `exit`, `enter: "crane"` | yes (*Rue de Paris*) |
 | the loop | `loop` | yes, always |
 | wink, photo into painting, faces on a figure | `wink`, `flashes`, `portraits` | in the engine, not used since the pilot: test before reuse |
 

@@ -312,6 +312,14 @@ export type GuideConfig = {
   // With a room or a cover: from this word of the last line, the camera flies back to the opening shot, so the last
   // frame matches the first and the video loops into its hook.
   loop?: { word: string };
+  // The hook's search game: a magnifying glass (radius `r` px, `zoom` ×) wanders over the painting along `path`
+  // (painting fractions) and stops on its last point on `word`; it lifts away as the context begins.
+  search?: {
+    word: string;
+    path: [number, number][];
+    r?: number;
+    zoom?: number;
+  };
   tight?: boolean; // short gaps, camera moves overlapping the voice (≤ 75 s edits)
   // Second painting for `turn` beats (e.g. the fresco on the facing wall) and the labels of the side-by-side view.
   other?: {
@@ -1145,6 +1153,96 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     </>
   );
 
+  // ---- The hook's search: a magnifying glass looks over the painting and stops on what nobody notices ----
+  const Search: React.FC<{ t: number }> = ({ t }) => {
+    const sr = cfg.search;
+    if (!sr) return null;
+    const from = hook.at + 0.25;
+    const land = wordAt("hook", sr.word) ?? hook.end;
+    const on = Math.min(
+      interpolate(t, [from, from + 0.25], [0, 1], clamp),
+      interpolate(t, [context.at, context.at + 0.3], [1, 0], clamp),
+    );
+    if (on <= 0) return null;
+    const n = sr.path.length - 1;
+    const k = interpolate(t, [from, land], [0, n], clamp);
+    const i = Math.min(n - 1, Math.floor(k));
+    const u = easeInOut(k - i);
+    const fx = sr.path[i][0] + (sr.path[i + 1][0] - sr.path[i][0]) * u;
+    const fy = sr.path[i][1] + (sr.path[i + 1][1] - sr.path[i][1]) * u;
+    const c = toScreen(fx, fy, t);
+    const s = scaleAt(t, viewAt(t).z) * (sr.zoom ?? 2.4);
+    const r = sr.r ?? 135;
+    return (
+      <div
+        style={{
+          position: "absolute",
+          left: c.x - r,
+          top: c.y - r,
+          width: 2 * r,
+          height: 2 * r,
+          opacity: on,
+          transform: `scale(${0.8 + 0.2 * on})`,
+        }}
+      >
+        {/* The handle, then the glass with the painting enlarged under it, then the brass rim. */}
+        <div
+          style={{
+            position: "absolute",
+            left: 2 * r - 30,
+            top: 2 * r - 30,
+            width: 46,
+            height: 170,
+            borderRadius: 14,
+            background: "linear-gradient(90deg, #3B2414, #6E4526 50%, #3B2414)",
+            transform: "rotate(-45deg)",
+            transformOrigin: "23px 0",
+            boxShadow: "0 18px 30px rgba(0,0,0,0.5)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            borderRadius: "50%",
+            overflow: "hidden",
+            boxShadow: "0 22px 40px rgba(0,0,0,0.55)",
+          }}
+        >
+          <Img
+            src={SRC}
+            style={{
+              position: "absolute",
+              left: r - fx * PW * s,
+              top: r - fy * PH * s,
+              width: PW * s,
+              height: PH * s,
+              maxWidth: "none",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              borderRadius: "50%",
+              background:
+                "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.28), rgba(255,255,255,0) 45%)",
+            }}
+          />
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            inset: -14,
+            borderRadius: "50%",
+            border: "16px solid #B8862B",
+            boxShadow: "inset 0 0 0 3px #6B4E14, 0 0 0 3px #6B4E14",
+          }}
+        />
+      </div>
+    );
+  };
+
   // ---- A pencil loop drawn round the named object (a book, a hand), held while the Guide talks about it ----
   const Glows: React.FC<{ t: number }> = ({ t }) => (
     <svg width={1080} height={1920} style={pencilStyle}>
@@ -1640,12 +1738,26 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
       const times = s.layers.map((l) =>
         presentAtStart(l)
           ? start
-          : (prev = (l.at ? wordAt(d.id, l.at) : undefined) ?? prev + 0.08),
+          : (prev =
+              ((l.at ? wordAt(d.id, l.at) : undefined) ?? prev + 0.08) +
+              (l.after ?? 0)),
       );
-      // A tape's `strike`, a document's `cue`: the word a mark on the piece waits for.
+      // A tape's `strike`, a document's `cue`, a piece's `lift` or `exit`: the word a mark or a move waits for.
       const strikes = s.layers.map((l) => {
-        const word = "strike" in l ? l.strike : "cue" in l ? l.cue : undefined;
-        return word ? wordAt(d.id, word) : undefined;
+        const word =
+          "strike" in l
+            ? l.strike
+            : "cue" in l
+              ? l.cue
+              : "lift" in l
+                ? l.lift
+                : "exit" in l
+                  ? l.exit
+                  : undefined;
+        const w = word ? wordAt(d.id, word) : undefined;
+        return w !== undefined && ("lift" in l || "exit" in l)
+          ? w + (l.after ?? 0)
+          : w;
       });
       return {
         ...s,
@@ -3140,6 +3252,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
         <OtherWall t={t} />
         <Arrows t={t} />
         <Glows t={t} />
+        <Search t={t} />
         <Tags t={t} />
         <Shines t={t} />
         <Questions t={t} />

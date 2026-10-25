@@ -6,9 +6,10 @@ bubble beside him, while the top shows the painting (pencil loops, notes, spotli
 paper collages of its time (real archives, cut and pasted). Remotion (React) renders it; every timing comes from
 the voiceover's word timestamps.
 
-**Four finished episodes are the references** (`examples/` holds compressed previews): `GuideAthens` (the pilot),
-`GuideHomecoming`, `GuideAlexander`, `GuideScream` (the collage-shot style). A new episode should look and sound
-like them.
+**Five finished episodes are the references** (`examples/` holds compressed previews): `GuideAthens` (the pilot),
+`GuideHomecoming`, `GuideAlexander`, `GuideScream` (the collage-shot style) and **`GuideParisRain`** (Caillebotte,
+the latest and the quality bar: every beat a collage shot, paper puppets, drawn scenery, a loupe in the hook). Start
+a new episode by copying `src/episodes/GuideParisRain.tsx`.
 
 Before any work, read:
 
@@ -39,6 +40,8 @@ Load `remotion-best-practices` before writing Remotion code.
   registers them (one composition each, via `src/Root.tsx`).
 - `src/fonts.ts`, `src/theme.ts` (easings, size, fps), `src/components.tsx` (film grain).
 - `src/guide/maps/` — flat maps generated from OpenStreetMap (`scripts/map-osm.py`) for the `map` layer.
+- `src/guide/scenery.tsx` — drawn scenery layers in flat cut paper (a facade floor by floor, a bucket emptied from a
+  window, flies, a barricade, building-site ground and scaffolding, fire).
 - `src/guide/rigs.tsx` + `src/guide/rigs/` — paper puppets cut limb by limb from archive photos (`scripts/rig-cut.py`, specs in `scripts/rigs/`) for the `rig` layer; judged in the `GuidePuppets` lab composition.
 - `public/` — what the videos load:
   - `art/<episode>/` (the painting, its close-ups, its collage pieces), `art/paper/` (shared backgrounds),
@@ -93,6 +96,12 @@ The Guide's drawings: `scripts/guide-generate.py` (a new pose sheet from the can
 - **Never judge from code. Render and look** (sheet → stills → strips, full size for thin lines), and listen. A
   change is not done until it was seen in a frame and heard in a render.
 - **Storyboard collage shots as stills before animating them**, and show them.
+- **A shot layer without `at` lands 0.08 s after the layer before it** (plus its `after`): a list of such layers
+  chains and drifts seconds late. Give every piece that must land early `at: "<the shot's word>"` + `after`.
+- **A shot lasts until the next shot of its beat; the last one ends with the beat**, and the painting shows in the
+  gap before the next beat's first shot. `carry: true` holds it until the next shot (a gap under 1.5 s).
+- **A cue word matches the first word of the beat that starts with it** ("rue" hits "ruelles"): check
+  `public/voice/<Ep>.json` and pick an unambiguous word.
 - **Frames are pure functions of time.** No state, no `Math.random()`, no CSS transitions; clock-driven motion
   starts from its own cue.
 - **Facts are checked** (museum page, Wikipedia, period documents; sources in the episode file's header comment).

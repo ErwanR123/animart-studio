@@ -34,7 +34,7 @@ look is [bible/art-direction.md](bible/art-direction.md).
 |---|---|
 | `src/` | the engine (`src/guide/`) and the episodes (`src/episodes/`) |
 | `bible/` | the rules: script, format, art direction, sound, character, workflow, prompts |
-| `examples/` | the four finished episodes (compressed previews): Athens, Homecoming, Alexander, Le Cri |
+| `examples/` | the five finished episodes (compressed previews): Athens, Homecoming, Alexander, Le Cri, Rue de Paris (the quality bar) |
 | `public/` | what the videos load: `art/<episode>/` (painting, close-ups, collage pieces), `guide/` (the Guide's poses), `sfx/accents/` + `sfx/story/`, `music/`, `voice/` |
 | `docs/brand/` | the Guide's identity: character sheet (`mascot.md`), canonical and bank pose sheets (`sheets/`), decorations and textures (`assets/`), brand direction |
 | `library/` | raw material: `app-guide/` (paper bubbles, tape, stamps, sketches), `soundbank/` (`music/` beds, `ambiences/`) |

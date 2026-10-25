@@ -17,6 +17,7 @@ The spec (JSON):
     poly     the piece's outline, [[x, y], …] fractions of its source, intersected with the cut-out figure
     solid    keep the whole polygon (not only the figure): where a limb was cut away, the paper behind is refilled
     holes    polygons inside the piece to refill from the paper around them (a limb that lay over it)
+    keep     polygons always kept whole, whatever the cut-out says (a tool's thin iron head the figure cut-out drops)
     joint    the pivot, [x, y] fractions of its source
     end      a point carried along (the hand's grip on a forearm), [x, y] fractions
     to, size another source's piece placed so its joint lands on `to` (fractions of the first source), `size` = its
@@ -132,6 +133,8 @@ for name, p in spec["parts"].items():
             lab, n = ndimage.label(mask)
             if n > 1:  # the piece only, not the stray bits round it (whiskers, a leaf)
                 mask = lab == (np.argmax(np.bincount(lab.ravel())[1:]) + 1)
+        for kp in p.get("keep", []):
+            mask |= poly_mask(sid, kp, mask.shape)
         if p.get("holes"):
             hole = np.zeros_like(mask)
             for hp in p["holes"]:

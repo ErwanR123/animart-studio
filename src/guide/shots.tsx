@@ -1,6 +1,6 @@
 import type React from "react";
 import { Img, interpolate, staticFile } from "remotion";
-import { display, fellSC, hand, poster } from "../fonts";
+import { display, hand, poster } from "../fonts";
 import { clamp, easeIn, easeInOut, easeOut } from "../theme";
 import {
   Decor,
@@ -21,6 +21,7 @@ import {
   isSelfMoving,
 } from "./graphics";
 import { isRig, Rig, type RigLayer } from "./rigs";
+import { isScenery, Scenery, type SceneryLayer } from "./scenery";
 import { isVox, isVoxFlat, isVoxStill, Vox, type VoxLayer } from "./voxkit";
 
 // Collage shots: while the Guide talks at the bottom, the top of the frame becomes a run of paper collages, a new
@@ -42,6 +43,7 @@ type Enter =
   | "right"
   | "up"
   | "rise"
+  | "crane"
   | "grow"
   | "pop"
   | "toss"
@@ -53,7 +55,8 @@ export type ShotLayer = {
   rot?: number;
   z?: number; // depth 0 (far) … 1 (near), default 0.5
   at?: string; // lands on this word (default: with the shot, then 0.1 s after the previous layer)
-  enter?: Enter; // default: drop for pieces, slap for stamps and big numbers, none for backgrounds; rise: up from behind the foreground
+  after?: number; // … this many s later (a beat after its word, in time with a blow); also delays a `lift` or `exit`
+  enter?: Enter; // default: drop for pieces, slap for stamps and big numbers, none for backgrounds; rise: up from behind the foreground; crane: lowered from above into place
   // Landed pieces stay still; only a strip or a cloud may travel sideways (drift, `amount` px a second).
   move?: "drift";
   amount?: number;
@@ -83,6 +86,12 @@ export type ShotLayer = {
         turn?: number;
         breathe?: boolean;
         chop?: [number, number, number?, number?];
+        // Leaving the composition: `fall` [s after landing, dy px, deg] knocks it off (it tumbles and lies there: a
+        // chunk of a house under the pick); `lift` pulls it out of the picture on that word for `hold` s (a floor slid
+        // out of a building); `exit` slides it out of the frame to the left on that word (pushed out).
+        fall?: [number, number, number, number?]; // [s, dy, deg, dx?]
+        lift?: string;
+        exit?: string;
       }
     // A magnifying glass over the shot at x, y (radius r) showing the layers under it `zoom` times larger; with `to`, it
     // glides there over `glide` s.
@@ -94,9 +103,10 @@ export type ShotLayer = {
       }
     | DecorLayer // the kit in decor.tsx: hand-drawn marks, desk objects, period paper, graphic shapes
     | VoxLayer // voxkit.tsx: the Vox paper register (colour field, cut-out letters, name scrap, stencils, evidence ephemera)
+    | SceneryLayer // scenery.tsx: drawn props (a Haussmann facade floor by floor, slops out of a window, flies, a barricade)
     | RigLayer // rigs.tsx: a paper puppet cut into limbs that acts (swings a pickaxe), `w` px wide
     | GraphicLayer // graphics.tsx: kinetic type, counters, charts, routes, spotlight, scraps, splats, letters, paper grounds
-    | { bg: string; dim?: number } // a full-bleed page or texture behind everything (`dim` darkens it, 0 … 1), or a "#colour"
+    | { bg: string; dim?: number; rise?: number } // a full-bleed page or texture behind everything (`dim` darkens it, 0 … 1; `rise` lifts it that many px, still bleeding off the bottom), or a "#colour"
     | { tape: string; size?: number; color?: string; strike?: string } // a label on torn tape (yellow), crossed out in red on `strike`
     | { note: string; size?: number } // handwriting on a scrap of cream paper, `w` px wide (a diary line)
     | { big: string; size: number; color?: string } // huge poster numbers, letter by letter
@@ -133,7 +143,7 @@ export type Shot = {
   carry?: boolean; // the last shot of a beat stays up until the next beat's first shot when it follows within 1.5 s (no flash of the painting)
   figure?: boolean; // the episode's cut-out figure (GuideConfig.figure) stays in front of this shot, in place
   into?: [number, number]; // the point of the previous shot a `zoom` dives into (shot px)
-  source?: string; // where the archive comes from, in small type at the bottom left ("Harper's Weekly, 29 sept. 1883")
+  source?: string; // where the archive comes from ("Harper's Weekly, 29 sept. 1883"): kept with the shot, never shown (the user found the credit lines cluttered the frame)
   layers: ShotLayer[];
 };
 // Grounds and pieces without an entrance or a word are there as the shot arrives; the others land one after another.
@@ -149,11 +159,10 @@ export type TimedShot = Shot & {
 };
 
 const TR = 0.4; // transition length
-const SOURCE_Y = 1010; // the source line, just above where the shot fades into the Guide's band
 const DRAWINGS = 12; // the pieces' clock: a new drawing every 1/12 s (holds of 3, 2, 3, 2 frames at 30 fps)
 const onTwos = (t: number, at: number) =>
   Math.max(at, Math.floor(t * DRAWINGS) / DRAWINGS);
-const PAPER = "#F2EBDD"; // outside a piece (the source line, the tear's rim); pieces take the episode's palette
+const PAPER = "#F2EBDD"; // outside a piece (the tear's rim); pieces take the episode's palette
 const INK = "#1C1B19";
 
 const rnd = (seed: number) => {
@@ -211,6 +220,31 @@ const headPose = (e: number, talk: number | [number, number]) => {
   const [r, y] = TALK[Math.floor(e * 6) % TALK.length];
   return `translateY(${y}px) rotate(${r}deg)`;
 };
+// Leaving the composition (an image layer's `fall`, `lift`, `exit`); `cue` is its word, s after landing.
+const leave = (
+  l: {
+    fall?: [number, number, number, number?];
+    lift?: string;
+    hold?: number;
+    exit?: string;
+  },
+  e: number,
+  cue?: number,
+) => {
+  if (l.fall && e >= l.fall[0]) {
+    const u = Math.min(1, (e - l.fall[0]) / 0.45);
+    return ` translate(${(l.fall[3] ?? 0) * u}px, ${l.fall[1] * u * u}px) rotate(${l.fall[2] * u}deg)`;
+  }
+  if (cue !== undefined && l.lift && e >= cue && e < cue + (l.hold ?? 1.2)) {
+    const u = Math.min(1, (e - cue) / 0.17);
+    return ` translate(${-60 * u}px, ${-22 * u}px) scale(${1 + 0.08 * u})`;
+  }
+  if (cue !== undefined && l.exit && e >= cue) {
+    const u = Math.min(1, (e - cue) / 0.6);
+    return ` translateX(${-1400 * u * u}px) rotate(${-10 * u}deg)`;
+  }
+  return "";
+};
 const puppet = (
   l: {
     walk?: [number, number, number, number?];
@@ -247,7 +281,8 @@ const Layer: React.FC<{
   i: number;
   cam: [number, number, number];
   focus?: number;
-}> = ({ l, at, strikeAt, t, i, cam, focus }) => {
+  front?: boolean; // above the shade that dims the shot while a piece is lifted out (`lift`)
+}> = ({ l, at, strikeAt, t, i, cam, focus, front }) => {
   const col = usePalette();
   if (t < at || "loupe" in l) return null; // a loupe is drawn by ShotView, over the layers it magnifies
   t = onTwos(t, at); // everything below animates on the pieces' clock; the camera (cam) stays smooth
@@ -292,17 +327,22 @@ const Layer: React.FC<{
               ? `translateY(${(1 - land) * 1500}px)`
               : kind === "rise"
                 ? `translateY(${(1 - land) * 380}px)`
-                : kind === "grow"
-                  ? `scale(${land})`
-                  : kind === "pop"
-                    ? `scale(${POP[Math.min(POP.length - 1, Math.floor(e * DRAWINGS))]})`
-                    : kind === "toss"
-                      ? (([k, r]) => `scale(${k}) rotate(${r}deg)`)(
-                          TOSS[
-                            Math.min(TOSS.length - 1, Math.floor(e * DRAWINGS))
-                          ],
-                        )
-                      : "";
+                : kind === "crane"
+                  ? `translateY(${(1 - land) * -460}px)`
+                  : kind === "grow"
+                    ? `scale(${land})`
+                    : kind === "pop"
+                      ? `scale(${POP[Math.min(POP.length - 1, Math.floor(e * DRAWINGS))]})`
+                      : kind === "toss"
+                        ? (([k, r]) => `scale(${k}) rotate(${r}deg)`)(
+                            TOSS[
+                              Math.min(
+                                TOSS.length - 1,
+                                Math.floor(e * DRAWINGS),
+                              )
+                            ],
+                          )
+                        : "";
   const blur = focus === undefined ? 0 : Math.abs(z - focus) * 7;
   const shadow =
     isBg ||
@@ -315,7 +355,8 @@ const Layer: React.FC<{
     isSelfMoving(l) ||
     isVoxFlat(l) ||
     "postmark" in l ||
-    "fore" in l
+    "fore" in l ||
+    "flies" in l
       ? ""
       : ` drop-shadow(0 ${4 + 18 * z}px ${8 + 22 * z}px rgba(0,0,0,${0.35 + 0.2 * z}))`;
   const filter =
@@ -328,7 +369,7 @@ const Layer: React.FC<{
     position: "absolute",
     left: l.x ?? 0,
     top: l.y ?? 0,
-    transform: `rotate(${l.rot ?? 0}deg) ${enter} ${move} ${"src" in l ? puppet(l, e) : ""}`,
+    transform: `rotate(${l.rot ?? 0}deg) ${enter} ${move} ${"src" in l ? puppet(l, e) + leave(l, e, strikeAt === undefined ? undefined : strikeAt - at) : ""}`,
     transformOrigin:
       "src" in l && l.chop
         ? `${l.chop[0] * 100}% ${l.chop[1] * 100}%`
@@ -433,6 +474,7 @@ const Layer: React.FC<{
       />
     );
   else if (isGraphic(l)) body = <Graphic l={l} e={e} piece={piece} />;
+  else if (isScenery(l)) body = <Scenery l={l} e={e} piece={piece} />;
   else if (isRig(l))
     body = (
       <Rig
@@ -448,9 +490,9 @@ const Layer: React.FC<{
         style={{
           position: "absolute",
           left: -60,
-          top: -60,
+          top: -60 - (l.rise ?? 0),
           width: SHOT_W + 120,
-          height: SHOT_H + 120,
+          height: SHOT_H + 120 + (l.rise ?? 0),
           filter,
         }}
       >
@@ -780,6 +822,7 @@ const Layer: React.FC<{
         transformOrigin: "540px 600px",
         transform: `translate(${cam[0] * p}px, ${cam[1] * p}px) scale(${s})`,
         opacity: passing,
+        zIndex: front ? 3 : undefined,
       }}
     >
       {body}
@@ -807,6 +850,14 @@ const ShotView: React.FC<{ shot: TimedShot; t: number; index: number }> = ({
       ? Math.exp(-(t - shot.shakeAt) * 7)
       : 0;
   const n = Math.floor(t * 15);
+  // The pieces pulled out right now (`lift`), if any (two can come out together).
+  const up = shot.layers.map((l, i) => {
+    const cue = shot.strikes[i];
+    return (
+      "lift" in l && cue !== undefined && t >= cue && t < cue + (l.hold ?? 1.2)
+    );
+  });
+  const lifted = up.indexOf(true);
   const jolt =
     sh > 0.02
       ? `translate(${(rnd(n) - 0.5) * 40 * sh}px, ${(rnd(n + 9) - 0.5) * 40 * sh}px) rotate(${(rnd(n + 3) - 0.5) * 2 * sh}deg)`
@@ -819,6 +870,7 @@ const ShotView: React.FC<{ shot: TimedShot; t: number; index: number }> = ({
         overflow: "hidden",
         transform: jolt || undefined,
         backgroundColor: "#2A241D",
+        isolation: "isolate", // the shade and front pieces stack inside the shot, never over the Guide
       }}
     >
       {shot.layers.map((l, i) => (
@@ -831,8 +883,21 @@ const ShotView: React.FC<{ shot: TimedShot; t: number; index: number }> = ({
           i={index * 100 + i}
           cam={cam}
           focus={shot.focus}
+          front={lifted >= 0 && (up[i] || (i > lifted && !("lift" in l)))}
         />
       ))}
+      {lifted >= 0 ? (
+        // While a piece is pulled out, the rest of the picture goes into shadow; what lands after it stays lit.
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 2,
+            background: "rgba(16,13,10,0.55)",
+            opacity: Math.min(1, (t - shot.strikes[lifted]!) / 0.17),
+          }}
+        />
+      ) : null}
       {shot.layers.map((l, i) => {
         if (!("loupe" in l) || t < shot.times[i]) return null;
         // The glass shows the layers under it, enlarged round its centre.
@@ -931,29 +996,6 @@ const ShotView: React.FC<{ shot: TimedShot; t: number; index: number }> = ({
           </div>
         );
       })}
-      {shot.source ? (
-        // The source line (Vox: evidence names where it comes from): still, outside the camera, above the Guide's band.
-        <div
-          style={{
-            position: "absolute",
-            left: 36,
-            top: SOURCE_Y,
-            padding: "5px 12px 3px",
-            background: "rgba(20,16,12,0.6)",
-            fontFamily: fellSC,
-            fontSize: 27,
-            color: PAPER,
-            opacity: interpolate(
-              t,
-              [shot.start + 0.3, shot.start + 0.6],
-              [0, 0.9],
-              clamp,
-            ),
-          }}
-        >
-          {shot.source}
-        </div>
-      ) : null}
     </div>
   );
 };

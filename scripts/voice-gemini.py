@@ -35,7 +35,8 @@ GAP = 0.35  # seconds of silence after each segment (the edit places segments it
 STYLE = (
     "A warm, natural storyteller: an elderly Italian painter telling a friend about a painting, in French, for a short video. "
     "One steady, conversational tone from start to finish, no dramatic swings, no exaggerated emphasis; "
-    "a lively, fluent pace that flows from one sentence to the next without long pauses; light Italian accent."
+    "a lively, fluent pace that flows from one sentence to the next without long pauses; "
+    "clear, natural French with at most a faint, barely noticeable Italian lilt: never a caricature."
 )
 
 
