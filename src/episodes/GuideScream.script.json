@@ -2,43 +2,40 @@
   "segments": [
     {
       "id": "hook",
-      "text": "Pourquoi le tableau d'Edvard Munch s'appelle-t-il Le Cri, alors que son personnage ne crie pas ?",
-      "say": "Pourquoi le tableau d'Edvard Mounk s'appelle-t-il Le Cri, alors que son personnage ne crie pas ?"
+      "text": "Dans Le Cri d'Edvard Munch, tout le monde croit que cet homme hurle. En réalité, il essaie de ne plus rien entendre.",
+      "say": "Dans Le Cri d'Edvard Mounk, tout le monde croit que cet homme hurle. En réalité, il essaie de ne plus rien entendre."
     },
     {
       "id": "context",
-      "text": "Un soir, Munch marche avec deux amis sur un chemin au-dessus d'Oslo.",
-      "say": "Un soir, Mounk marche avec deux amis sur un chemin au-dessus d'Oslo."
+      "text": "Regardez ses mains : elles ne portent pas sa voix, elles sont plaquées sur ses oreilles. Et sa bouche s'ouvre sous le choc d'une angoisse immense."
     },
     {
       "id": "d0",
-      "text": "Le soleil se couche. Soudain, le ciel devient rouge sang."
+      "text": "Mais qu'entend-il ? Au fond, ses deux amis marchent tranquillement. Pour eux, il n'y a aucun bruit. Tout se passe dans sa tête."
     },
     {
       "id": "d1",
-      "text": "Munch s'arrête, épuisé. Ses deux amis, eux, continuent leur route.",
-      "say": "Mounk s'arrête, épuisé. Ses deux amis, eux, continuent leur route."
+      "text": "Munch a raconté cette soirée dans son journal. Au-dessus d'Oslo, le ciel est soudain devenu rouge sang, et il a senti « un cri infini traverser la nature ».",
+      "say": "Mounk a raconté cette soirée dans son journal. Au-dessus d'Oslo, le ciel est soudain devenu rouge sang, et il a senti « un cri infini traverser la nature »."
     },
     {
       "id": "d2",
-      "text": "Lui reste seul, tremblant d'angoisse. Il a raconté avoir senti un cri immense traverser la nature."
+      "text": "Et ce ciel n'était peut-être pas imaginaire. Des astronomes pensent que Munch se souvenait de la fin de l'année 1883 : l'éruption du Krakatoa avait rempli l'atmosphère de cendres, et les couchers de soleil étaient devenus rouges sur toute la planète, jusqu'en Norvège.",
+      "say": "Et ce ciel n'était peut-être pas imaginaire. Des astronomes pensent que Mounk se souvenait de la fin de l'année mille huit cent quatre-vingt-trois : l'éruption du Krakatoa avait rempli l'atmosphère de cendres, et les couchers de soleil étaient devenus rouges sur toute la planète, jusqu'en Norvège."
     },
     {
       "id": "d3",
-      "text": "Regardez-le : les mains sur les joues, la bouche ouverte, le visage presque d'un crâne. Ce n'est pas lui qui hurle. Il se bouche les oreilles, pour ne plus l'entendre."
+      "text": "Tout le tableau vibre avec lui : le ciel, le fjord, le chemin ondulent, comme si le cri se propageait en vagues."
     },
     {
       "id": "d4",
-      "text": "Le cri, c'est celui de la nature. Le ciel, le fjord, le chemin : tout ondule autour de lui, comme si le cri se propageait en vagues."
+      "text": "Quelques années plus tard, Munch a écrit au crayon, dans un coin du ciel : « Ne peut avoir été peint que par un fou. »",
+      "say": "Quelques années plus tard, Mounk a écrit au crayon, dans un coin du ciel : « Ne peut avoir été peint que par un fou. »"
     },
     {
       "id": "d5",
-      "text": "Quelques années plus tard, Munch écrit au crayon dans le coin du ciel : « Ne peut avoir été peint que par un fou. »",
-      "say": "Quelques années plus tard, Mounk écrit au crayon dans le coin du ciel : « Ne peut avoir été peint que par un fou. »"
-    },
-    {
-      "id": "d6",
-      "text": "Il n'a pas peint un cri qu'on entend. Il a peint une angoisse qu'on ressent, et que tout le monde a déjà connue. Voilà ce qui répond à la question :"
+      "text": "Ce n'est pas cet homme qui crie. C'est toute la nature qui hurle… et il est le seul à l'entendre.",
+      "pause": 0.35
     }
   ]
 }

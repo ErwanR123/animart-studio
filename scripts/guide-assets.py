@@ -6,14 +6,16 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
-SHEETS = "docs/design-handoff/visuel/sheets"
+SHEETS = "docs/brand/sheets"
 OUT = "public/guide"
-# name → (sheet, bbox x0,y0,x1,y1 in sheet pixels); filled from the component listing (--list).
+# name → (sheet, bbox x0,y0,x1,y1 in sheet pixels[, output scale]); filled from the component listing (--list). The scale
+# (default 2) keeps every pose the same size on screen: the bank sheets (scripts/guide-generate.py) draw the figure
+# ~1.65× taller than the canonical one, so their cuts use 1.2.
 CUTS = json.load(open("scripts/guide-cuts.json"))
 # Flaws in the source drawings, painted over in the output (2×) pixels: name → [(x, y, r, sample_x, sample_y)].
 RETOUCH = {"explaining": [(275, 191, 7.5, 281, 179)]}  # a second pupil in the left eye
 # Stamps whose inside also gets a solid mask (<name>-fill.png), to back text with the exact stamp shape.
-FILLS = ["stamp-postage"]
+FILLS: list[str] = []
 
 
 def key(rgb):
@@ -56,7 +58,8 @@ if "--list" in sys.argv:
         components(s)
     sys.exit()
 
-for name, (sheet, box) in CUTS.items():
+for name, (sheet, box, *scale) in CUTS.items():
+    k = scale[0] if scale else 2
     x0, y0, x1, y1 = box
     rgb = np.asarray(Image.open(f"{SHEETS}/{sheet}").convert("RGB")).astype(float)
     pad = 6
@@ -69,7 +72,7 @@ for name, (sheet, box) in CUTS.items():
     # Premultiplied upscale so edge pixels don't pick up dark or white fringes.
     a = rgba[..., 3:4].astype(float) / 255
     pre = Image.fromarray(np.dstack([rgba[..., :3] * a, a * 255]).astype(np.uint8), "RGBA")
-    big = np.asarray(pre.resize((pre.width * 2, pre.height * 2), Image.LANCZOS)).astype(float)
+    big = np.asarray(pre.resize((round(pre.width * k), round(pre.height * k)), Image.LANCZOS)).astype(float)
     ba = np.maximum(big[..., 3:4] / 255, 1e-3)
     out = np.dstack([np.clip(big[..., :3] / ba, 0, 255), big[..., 3]]).astype(np.uint8)
     for x, y, r, sx, sy in RETOUCH.get(name, []):

@@ -5,41 +5,37 @@ Each step has a check; don't move on until it passes. Commands run from the repo
 
 | # | step | command / output | check |
 |---|---|---|---|
-| 1 | **Research** the painting: museum page, Wikipedia FR + EN | sources in the episode file's header comment | every claim in the script has a source; disputed identifications stay out of the narration |
-| 2 | **Images** from Wikimedia Commons into `public/art/` (≥ 3000 px long side; for frescoes in a room, the other walls too; native-res crops of the faces you will zoom on, as `insets`) | a line per file in `public/art/SOURCES.md` | the crop is the whole painting |
-| 3 | **Scaffold** | `node scripts/new-episode.mjs Guide<Name> public/art/<img>.jpg` | the composition plays in `npm run dev` |
-| 4 | **Script** `src/episodes/<Ep>.script.json` (rules: `bible/script.md`) | spoken French, 150–190 words | read aloud: 60–75 s; every sentence makes sense to a cold viewer; the last beat answers the hook. **Show the user the script and wait for a go** |
-| 5 | **Storyboard**: per beat, the camera view, the pose, the effect and its word (format: `bible/format.md`) | a table in the episode file's comment or in chat | one read at a time; effects only from the approved list in `bible/art-direction.md`; show the user |
-| 6 | **Coordinates** of every figure / object / eye | `uv run scripts/grid.py public/art/<img>.jpg [x0 y0 x1 y1] [--inset …] [--mark fx,fy]` → `out/grid.png` | marks land on the thing (eyes: the *lower* lid, measured on the inset) |
-| 7 | **Placeholder voice** (free) after each script change | `node scripts/voiceover-placeholder.mjs <Ep>` | the edit plays through |
-| 8 | **Build** the config `src/episodes/<Ep>.tsx` (copy patterns from `GuideAthens.tsx`) | `npm run lint` | lint passes |
-| 9 | **Contact sheet** | `uv run scripts/review.py sheet <Ep> --every 1.5` | per frame: where is the eye, is it understood yet? bubble beside the Guide, nothing in the safe zones, nothing banned |
-| 10 | **Real voice, once** (~$0.03) | `uv run scripts/voiceover-gemini.py <Ep> --tempo 1.06`, then `uv run scripts/check-voice.py <Ep>` | every line's first and last words intact, names and dates pronounced right |
-| 11 | **Strips** on new effects and every camera seam | `uv run scripts/review.py strip <Ep> --from 12.2 --to 12.8 [--crop x,y,w,h]` | no pop, no black slab, effects on their word |
-| 12 | **Master** | `bash scripts/master.sh <Ep>` → `out/<ep>.mp4` + audio report | -14 LUFS ±1, true peak ≤ -1; watch it once with sound, once muted |
-| 13 | **Review** like a first-time viewer | `/video-review` | the user's notes go into the bible if they are rules |
+| 1 | **Research**: museum page, Wikipedia FR + EN, and the story around the painting (letters, diaries, the press of the time) | sources in the episode file's header comment | every hard fact has a source; a disputed hypothesis is said as one |
+| 2 | **Script** `src/episodes/<Ep>.script.json` (`bible/script.md`) | 140–180 words, vouvoiement | read aloud ≈ 55–70 s; every sentence makes sense cold; the end answers the hook. **Show the user, wait for a go** |
+| 3 | **The painting**: the museum's scan, as large as exists (≥ 3000 px; a deep zoom on a detail wants 6000+) | `uv run scripts/image-find.py search "<artist> <title>"` → `info` → `get` (Commons), or `hires "<Google Arts & Culture / museum viewer URL>"` (dezoomify-rs, the full tiled scan); lands in `out/sources/`, copy to `public/art/<ep>/` | the whole painting, sharp at the closest zoom the script needs; a line in `public/art/SOURCES.md` |
+| 4 | **Scaffold** | `node scripts/episode-new.mjs Guide<Name> public/art/<ep>/<img>.jpg` | plays in `npm run dev` |
+| 5 | **Storyboard, as still images**: per sentence, what is on top (painting view or collage shot), which archive, which mark, the Guide's pose, and what each shot carries across the cut (`bible/art-direction.md`, raccord) | a table first, then **one still per collage shot** (`npx remotion still <Ep> out/sb-<t>.png --frame=<f> --gl=angle`) | show the stills and get a go **before animating**: a bad composition is already bad as a still (pieces cut by the edge, a photo hidden, a figure pasted over what it should face) |
+| 6 | **Archives** for the shots: period photos, engravings, newspapers, letters; for a French story, the French press of the time (*Le Petit Journal*, *Le Petit Parisien* covers) | `image-find.py search/get` and `category "1890 Le Petit Journal"` on Commons; `europeana "<words>"` (European libraries and museums) then `url <link>`; `inside <IA item> "<words>"` then `page <item> <n>` for a scanned book or journal | each image says what its sentence says, true to its time and place (`bible/art-direction.md`) |
+| 7 | **Pieces** | `uv run scripts/image-collage.py SRC public/art/<ep>/<name>.png [--crop …] [--cut] [--tone bw|halftone|colour] [--paper]` | a line each in `SOURCES.md` |
+| 8 | **Coordinates** of every mark on the painting | `uv run scripts/image-grid.py public/art/<ep>/<img>.jpg x0 y0 x1 y1 --mark fx,fy` → `out/grid.png` | a loop goes round the thing (a hand from ear to wrist), measured, never guessed |
+| 9 | **Placeholder voice** (free) | `node scripts/voice-placeholder.mjs <Ep>` | the edit plays through |
+| 10 | **Build** `src/episodes/<Ep>.tsx` (copy patterns from the closest example) | `npm run lint` | passes |
+| 11 | **Contact sheet**, then at phone size | `uv run scripts/episode-review.py sheet <Ep> --every 1.5`, then `… sheet <Ep> --every 3 --phone` (TikTok/Reels buttons and caption drawn over) | per frame: where is the eye, is it understood? nothing cut by an edge, nothing left over from the previous shot, the Guide facing right; at phone size the subject is still big enough to read and nothing that matters sits under the buttons |
+| 12 | **Real voice, once** (~$0.03) | `uv run scripts/voice-gemini.py <Ep> --tempo 1.1 --cap 0.2`, then `uv run scripts/voice-check.py <Ep>` | first and last words intact, names and dates right; re-check the sheet (timings moved) |
+| 13 | **Strips** on every transition and new motion | `uv run scripts/episode-review.py strip <Ep> --from 12.2 --to 12.8` | no pop, no jump in frame, nothing shaking without a reason |
+| 14 | **Master** | `bash scripts/episode-master.sh <Ep>` → `out/<ep>.mp4` + audio report, then `uv run scripts/episode-review.py cadence out/<ep>.mp4` | -14 LUFS ±1, true peak ≤ -1, no music hole; cadence close to the reference (median shot ≤ 3 s in collage runs, frozen ≈ 0 %: the picture never stops for half a second) |
+| 15 | **Review** like a first-time viewer, then the user | `/video-review` | the user's notes that are rules go into the bible; a signed-off episode gets its preview in `examples/` |
 
-## Render pitfalls (all met in the pilot)
+## Render pitfalls
 
-- **Black slabs in the 3D room**: a wall that reaches behind the camera is drawn by Chrome as a black slab. When the
-  camera faces the painting straight on (before the first turn, the dive into the frame, the loop) `Room` renders
-  only that wall (`solo`). A new camera path in the room needs a full-size strip: **stills at `--scale 0.4` don't
-  show the bug**, full-size frames do.
-- **Two renders at once can hang**: a render that sits at 0 % CPU for minutes is stuck; kill it and render again,
-  one at a time.
-- **`interpolate` needs finite, increasing ranges**: use `inOut()` for effects whose cue may come late in a
-  sentence, and `1e6` (never `Infinity`) for "never".
-- **Frames are pure functions of time**: no state, no `Math.random()` (use `rnd(seed)`), no CSS transitions.
-
-## Review like a viewer
-
-- Read the sheet in order and ask at each frame: *where is the eye, and does the viewer understand it yet?*
-- Count frames per read (30 = 1 s). A read shorter than 20 frames is missed.
-- Look for generated-video tells: everything moving at once, glows and sparkles, an empty frame 0, an ending that
-  just stops.
+- **Full-size frames for anything thin** (pencil strokes, dashes, a 3D wall): stills at `--scale 0.4` hide bugs. A
+  red strike that came out dotted, a black slab in the 3D room: both only showed at full size.
+- **Two renders at once can hang**: one render at a time; kill one that sits at 0 % CPU.
+- **`interpolate` needs finite, increasing ranges**: `inOut()` for cues that may come late, `1e6` (never `Infinity`).
+- **Frames are pure functions of time**: no state, no `Math.random()` (use `rnd(seed)`), no CSS transitions. Any
+  motion that depends on the clock starts from its own cue (`t - at`), never from the video's start (the ash cloud
+  that had drifted off the map by 40 s).
+- **The voice cache**: `cache/gemini/` holds every paid take by text + voice + style. Re-cutting (`--tempo`, `--cap`)
+  is free while the take is cached; change one word of the script and the next run pays for a new performance.
+  Never trim a take from Whisper's word times (they clip syllables): only `voice-gemini.py`'s silence detection.
 
 ## Budget
 
-Sheets are cheap (proxy at 0.4 scale): one per change. Strips render a few full-size frames: one per new motion. A
-full render of a 75 s episode takes ~8 minutes: only when the sheet is clean. The paid voice: once per script
-version.
+Sheets are cheap (0.4 proxy): one per change. Stills for the storyboard: a few seconds each. A full master of 65 s
+takes ~6 minutes: only when the sheet is clean. The paid voice: once per approved script. A Guide pose sheet
+(`scripts/guide-generate.py`, ~$0.13): only to add a pose the bank lacks.

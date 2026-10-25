@@ -1,12 +1,6 @@
 {
   "version": 1,
   "skills": {
-    "motion-designer": {
-      "source": "ncklrs/startup-os-skills",
-      "sourceType": "github",
-      "skillPath": "skills/motion-designer/SKILL.md",
-      "computedHash": "6e97bde63421a9181d68d23690168d51c60894e3713f1e8e6944525f5480d084"
-    },
     "remotion-best-practices": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
@@ -66,12 +60,6 @@
       "sourceType": "github",
       "skillPath": "skills/remotion-upgrade/SKILL.md",
       "computedHash": "b03aa304059331a700d93c42972106951619f92937d5371d65307fb9b2fa587e"
-    },
-    "short-form-video": {
-      "source": "iart-ai/tiktok-video-skills",
-      "sourceType": "github",
-      "skillPath": "skills/short-form-video/SKILL.md",
-      "computedHash": "893ea19615f3199159b9fe94f05e37a5e538e7e0c3af7f77f9f9bed7ff933423"
     }
   }
 }

@@ -11,3 +11,5 @@ Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.setDefaultPremountInSeconds(2);
+// The painting shader (src/guide/shader.ts) is WebGL2: Remotion 4 renders it only with ANGLE.
+Config.setChromiumOpenGlRenderer("angle");

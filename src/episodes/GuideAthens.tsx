@@ -13,11 +13,11 @@ import voice from "../../public/voice/GuideAthens.json";
 export const guideAthens = createGuideEpisode({
   voiceFile: "voice/GuideAthens.mp3",
   voice: voice as Voice,
-  image: { src: "art/athens.jpg", width: 5200, height: 3394 },
+  image: { src: "art/athens/athens.jpg", width: 5200, height: 3394 },
   insets: [
-    { src: "art/athens-plato.jpg", x: 0.44768, y: 0.5, w: 0.12211, h: 0.14201 },
-    { src: "art/athens-heraclitus.jpg", x: 0.38373, y: 0.74079, w: 0.11627, h: 0.20987 },
-    { src: "art/athens-euclid.jpg", x: 0.75578, y: 0.7655, w: 0.13957, h: 0.20987 },
+    { src: "art/athens/athens-plato.jpg", x: 0.44768, y: 0.5, w: 0.12211, h: 0.14201 },
+    { src: "art/athens/athens-heraclitus.jpg", x: 0.38373, y: 0.74079, w: 0.11627, h: 0.20987 },
+    { src: "art/athens/athens-euclid.jpg", x: 0.75578, y: 0.7655, w: 0.13957, h: 0.20987 },
   ],
   maxWidth: 1000,
   climb: true,
@@ -25,20 +25,20 @@ export const guideAthens = createGuideEpisode({
   tight: true,
   room: {
     walls: [
-      { src: "art/athens.jpg", width: 5200, height: 3394, label: "La Philosophie" },
-      { src: "art/parnassus.jpg", width: 1920, height: 1446, label: "La Poésie" },
-      { src: "art/disputa.jpg", width: 3258, height: 2162, label: "La Foi" },
-      { src: "art/justice.jpg", width: 1920, height: 1630, label: "La Justice" },
+      { src: "art/athens/athens.jpg", width: 5200, height: 3394, label: "La Philosophie" },
+      { src: "art/athens/parnassus.jpg", width: 1920, height: 1446, label: "La Poésie" },
+      { src: "art/athens/disputa.jpg", width: 3258, height: 2162, label: "La Foi" },
+      { src: "art/athens/justice.jpg", width: 1920, height: 1630, label: "La Justice" },
     ],
     words: ["philosophie", "poésie", "foi", "justice"],
     start: { fx: 0.5, fy: 0.56 },
   },
   // The last line runs into the hook: from "Voilà", back to the opening shot (the video loops).
   loop: { word: "voilà" },
-  other: { src: "art/disputa.jpg", width: 3258, height: 2162, labels: ["LA PHILOSOPHIE", "LA FOI"] },
+  other: { src: "art/athens/disputa.jpg", width: 3258, height: 2162, labels: ["LA PHILOSOPHIE", "LA FOI"] },
   header: "RAPHAËL · VATICAN · VERS 1510",
   title: ["L’École", "d’Athènes."],
-  // Coordinates measured on a grid over public/art/athens.jpg (fractions of the working image).
+  // Coordinates measured on a grid over public/art/athens/athens.jpg (fractions of the working image).
   details: [
     {
       id: "d0", fx: 0.5, fy: 0.6,
@@ -91,7 +91,7 @@ export const guideAthens = createGuideEpisode({
       view: { z: 2.6, fx: 0.62, fy: 0.75 },
       spots: [{ fx: 0.585, fy: 0.765, rx: 0.065, ry: 0.07, name: "Diogène" }],
       // Jean-Léon Gérôme, Diogenes (1860), Walters Art Museum (Commons, public domain).
-      picture: { word: "jarre", src: "art/diogenes-gerome.jpg", width: 1800, height: 1322, caption: "Gérôme, Diogène, 1860", x: 560, y: 380, w: 480 },
+      picture: { word: "jarre", src: "art/athens/diogenes-gerome.jpg", width: 1800, height: 1322, caption: "Gérôme, Diogène, 1860", x: 560, y: 380, w: 480 },
       beat: { pose: "back", x: 240 },
     },
     {

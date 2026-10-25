@@ -4,1111 +4,1310 @@
   {
    "id": "hook",
    "start": 0.0,
-   "end": 4.665351
+   "end": 6.935646
   },
   {
    "id": "context",
-   "start": 5.015351,
-   "end": 8.40229
+   "start": 7.285646,
+   "end": 14.280997
   },
   {
    "id": "d0",
-   "start": 8.75229,
-   "end": 12.436712
+   "start": 14.630997,
+   "end": 21.149047000000003
   },
   {
    "id": "d1",
-   "start": 12.786712000000001,
-   "end": 16.493379
+   "start": 21.499047,
+   "end": 31.058684
   },
   {
    "id": "d2",
-   "start": 16.843379000000002,
-   "end": 23.870817000000002
+   "start": 31.408684,
+   "end": 43.820816
   },
   {
    "id": "d3",
-   "start": 24.220817000000004,
-   "end": 33.768867
+   "start": 44.170816,
+   "end": 50.905737
   },
   {
    "id": "d4",
-   "start": 34.118867,
-   "end": 42.59567
+   "start": 51.255737,
+   "end": 56.664739000000004
   },
   {
    "id": "d5",
-   "start": 42.94567,
-   "end": 48.410432
-  },
-  {
-   "id": "d6",
-   "start": 48.760432,
-   "end": 56.23245
+   "start": 57.014739000000006,
+   "end": 62.298503000000004
   }
  ],
  "words": [
   {
-   "text": "Pourquoi",
+   "text": "Dans",
    "start": 0.0,
-   "end": 0.46,
+   "end": 0.22,
    "segment": "hook"
   },
   {
-   "text": "le",
-   "start": 0.46,
-   "end": 0.68,
+   "text": "Le",
+   "start": 0.22,
+   "end": 0.38,
    "segment": "hook"
   },
   {
-   "text": "tableau",
-   "start": 0.68,
-   "end": 0.98,
+   "text": "Cri",
+   "start": 0.38,
+   "end": 0.62,
    "segment": "hook"
   },
   {
    "text": "d'Edvard",
-   "start": 0.98,
-   "end": 1.28,
+   "start": 0.62,
+   "end": 1.14,
    "segment": "hook"
   },
   {
-   "text": "Munch",
-   "start": 1.28,
-   "end": 1.64,
+   "text": "Munch,",
+   "start": 1.14,
+   "end": 1.54,
    "segment": "hook"
   },
   {
-   "text": "s'appelle-t-il",
-   "start": 1.64,
+   "text": "tout",
+   "start": 1.88,
+   "end": 1.96,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 1.96,
+   "end": 2.1,
+   "segment": "hook"
+  },
+  {
+   "text": "monde",
+   "start": 2.1,
    "end": 2.26,
    "segment": "hook"
   },
   {
-   "text": "Le",
+   "text": "croit",
    "start": 2.26,
-   "end": 2.52,
-   "segment": "hook"
-  },
-  {
-   "text": "Cri,",
-   "start": 2.52,
-   "end": 2.82,
-   "segment": "hook"
-  },
-  {
-   "text": "alors",
-   "start": 3.24,
-   "end": 3.36,
+   "end": 2.68,
    "segment": "hook"
   },
   {
    "text": "que",
-   "start": 3.36,
-   "end": 3.5,
+   "start": 2.68,
+   "end": 2.74,
    "segment": "hook"
   },
   {
-   "text": "son",
-   "start": 3.5,
-   "end": 3.6,
+   "text": "cet",
+   "start": 2.74,
+   "end": 2.96,
    "segment": "hook"
   },
   {
-   "text": "personnage",
-   "start": 3.6,
-   "end": 4.02,
+   "text": "homme",
+   "start": 2.96,
+   "end": 3.22,
+   "segment": "hook"
+  },
+  {
+   "text": "hurle.",
+   "start": 3.22,
+   "end": 3.84,
+   "segment": "hook"
+  },
+  {
+   "text": "En",
+   "start": 4.12,
+   "end": 4.2,
+   "segment": "hook"
+  },
+  {
+   "text": "réalité,",
+   "start": 4.2,
+   "end": 4.56,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 5.02,
+   "end": 5.16,
+   "segment": "hook"
+  },
+  {
+   "text": "essaie",
+   "start": 5.16,
+   "end": 5.5,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 5.5,
+   "end": 5.56,
    "segment": "hook"
   },
   {
    "text": "ne",
-   "start": 4.02,
-   "end": 4.16,
+   "start": 5.56,
+   "end": 5.66,
    "segment": "hook"
   },
   {
-   "text": "crie",
-   "start": 4.16,
-   "end": 4.4,
+   "text": "plus",
+   "start": 5.66,
+   "end": 5.84,
    "segment": "hook"
+  },
+  {
+   "text": "rien",
+   "start": 5.84,
+   "end": 6.22,
+   "segment": "hook"
+  },
+  {
+   "text": "entendre.",
+   "start": 6.22,
+   "end": 6.82,
+   "segment": "hook"
+  },
+  {
+   "text": "Regardez",
+   "start": 7.285646,
+   "end": 7.705646,
+   "segment": "context"
+  },
+  {
+   "text": "ses",
+   "start": 7.705646,
+   "end": 7.825646,
+   "segment": "context"
+  },
+  {
+   "text": "mains",
+   "start": 7.825646,
+   "end": 7.965646,
+   "segment": "context"
+  },
+  {
+   "text": ":",
+   "start": 7.965646,
+   "end": 8.215646,
+   "segment": "context"
+  },
+  {
+   "text": "elles",
+   "start": 8.225646,
+   "end": 8.305646,
+   "segment": "context"
+  },
+  {
+   "text": "ne",
+   "start": 8.305646,
+   "end": 8.445646,
+   "segment": "context"
+  },
+  {
+   "text": "portent",
+   "start": 8.445646,
+   "end": 8.665645999999999,
+   "segment": "context"
   },
   {
    "text": "pas",
-   "start": 4.4,
-   "end": 4.52,
-   "segment": "hook"
-  },
-  {
-   "text": "?",
-   "start": 4.52,
-   "end": 4.665351,
-   "segment": "hook"
-  },
-  {
-   "text": "Un",
-   "start": 5.015351,
-   "end": 5.155351,
+   "start": 8.665645999999999,
+   "end": 8.785646,
    "segment": "context"
   },
   {
-   "text": "soir,",
-   "start": 5.155351,
-   "end": 5.295351,
+   "text": "sa",
+   "start": 8.785646,
+   "end": 8.985646,
    "segment": "context"
   },
   {
-   "text": "Munch",
-   "start": 5.675351,
-   "end": 5.915351,
+   "text": "voix,",
+   "start": 8.985646,
+   "end": 9.165645999999999,
    "segment": "context"
   },
   {
-   "text": "marche",
-   "start": 5.915351,
-   "end": 6.115351,
+   "text": "elles",
+   "start": 9.645646,
+   "end": 9.725646,
    "segment": "context"
   },
   {
-   "text": "avec",
-   "start": 6.115351,
-   "end": 6.275351,
+   "text": "sont",
+   "start": 9.725646,
+   "end": 9.865646,
    "segment": "context"
   },
   {
-   "text": "deux",
-   "start": 6.275351,
-   "end": 6.455351,
-   "segment": "context"
-  },
-  {
-   "text": "amis",
-   "start": 6.455351,
-   "end": 6.695351,
+   "text": "plaquées",
+   "start": 9.865646,
+   "end": 10.325645999999999,
    "segment": "context"
   },
   {
    "text": "sur",
-   "start": 6.695351,
-   "end": 6.895351,
+   "start": 10.325645999999999,
+   "end": 10.465646,
    "segment": "context"
   },
   {
-   "text": "un",
-   "start": 6.895351,
-   "end": 7.035351,
+   "text": "ses",
+   "start": 10.465646,
+   "end": 10.585646,
    "segment": "context"
   },
   {
-   "text": "chemin",
-   "start": 7.035351,
-   "end": 7.315351,
+   "text": "oreilles.",
+   "start": 10.585646,
+   "end": 10.985646,
    "segment": "context"
   },
   {
-   "text": "au-dessus",
-   "start": 7.315351,
-   "end": 7.855351,
+   "text": "Et",
+   "start": 10.985646,
+   "end": 11.305646,
    "segment": "context"
   },
   {
-   "text": "d'Oslo.",
-   "start": 7.855351,
-   "end": 8.295351,
+   "text": "sa",
+   "start": 11.305646,
+   "end": 11.425646,
    "segment": "context"
   },
   {
-   "text": "Le",
-   "start": 8.75229,
-   "end": 8.892290000000001,
+   "text": "bouche",
+   "start": 11.425646,
+   "end": 11.825645999999999,
+   "segment": "context"
+  },
+  {
+   "text": "s'ouvre",
+   "start": 11.825645999999999,
+   "end": 12.465646,
+   "segment": "context"
+  },
+  {
+   "text": "sous",
+   "start": 12.465646,
+   "end": 12.585646,
+   "segment": "context"
+  },
+  {
+   "text": "le",
+   "start": 12.585646,
+   "end": 12.705646,
+   "segment": "context"
+  },
+  {
+   "text": "choc",
+   "start": 12.705646,
+   "end": 12.925646,
+   "segment": "context"
+  },
+  {
+   "text": "d'une",
+   "start": 12.925646,
+   "end": 13.105646,
+   "segment": "context"
+  },
+  {
+   "text": "angoisse",
+   "start": 13.105646,
+   "end": 13.485646,
+   "segment": "context"
+  },
+  {
+   "text": "immense.",
+   "start": 13.485646,
+   "end": 13.825645999999999,
+   "segment": "context"
+  },
+  {
+   "text": "Mais",
+   "start": 14.630997,
+   "end": 14.950997000000001,
    "segment": "d0"
   },
   {
-   "text": "soleil",
-   "start": 8.892290000000001,
-   "end": 9.27229,
+   "text": "qu'entend-il",
+   "start": 14.950997000000001,
+   "end": 15.890997,
+   "segment": "d0"
+  },
+  {
+   "text": "?",
+   "start": 15.890997,
+   "end": 16.140997000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "Au",
+   "start": 16.190997,
+   "end": 16.230997000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "fond,",
+   "start": 16.230997000000002,
+   "end": 16.450997,
+   "segment": "d0"
+  },
+  {
+   "text": "ses",
+   "start": 16.850997,
+   "end": 16.910997000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "deux",
+   "start": 16.910997000000002,
+   "end": 17.030997,
+   "segment": "d0"
+  },
+  {
+   "text": "amis",
+   "start": 17.030997,
+   "end": 17.210997,
+   "segment": "d0"
+  },
+  {
+   "text": "marchent",
+   "start": 17.210997,
+   "end": 17.530997,
+   "segment": "d0"
+  },
+  {
+   "text": "tranquillement.",
+   "start": 17.530997,
+   "end": 17.950997,
+   "segment": "d0"
+  },
+  {
+   "text": "Pour",
+   "start": 18.150997,
+   "end": 18.210997,
+   "segment": "d0"
+  },
+  {
+   "text": "eux,",
+   "start": 18.210997,
+   "end": 18.370997000000003,
+   "segment": "d0"
+  },
+  {
+   "text": "il",
+   "start": 18.650997,
+   "end": 18.730997000000002,
+   "segment": "d0"
+  },
+  {
+   "text": "n'y",
+   "start": 18.730997000000002,
+   "end": 18.830997,
+   "segment": "d0"
+  },
+  {
+   "text": "a",
+   "start": 18.830997,
+   "end": 18.850997,
+   "segment": "d0"
+  },
+  {
+   "text": "aucun",
+   "start": 18.850997,
+   "end": 19.010997,
+   "segment": "d0"
+  },
+  {
+   "text": "bruit.",
+   "start": 19.010997,
+   "end": 19.250997,
+   "segment": "d0"
+  },
+  {
+   "text": "Tout",
+   "start": 19.530997,
+   "end": 19.630997,
    "segment": "d0"
   },
   {
    "text": "se",
-   "start": 9.27229,
-   "end": 9.392290000000001,
+   "start": 19.630997,
+   "end": 19.830997,
    "segment": "d0"
   },
   {
-   "text": "couche.",
-   "start": 9.392290000000001,
-   "end": 9.77229,
+   "text": "passe",
+   "start": 19.830997,
+   "end": 20.110997,
    "segment": "d0"
   },
   {
-   "text": "Soudain,",
-   "start": 9.99229,
-   "end": 10.43229,
+   "text": "dans",
+   "start": 20.110997,
+   "end": 20.350997,
    "segment": "d0"
   },
   {
-   "text": "le",
-   "start": 10.792290000000001,
-   "end": 10.87229,
+   "text": "sa",
+   "start": 20.350997,
+   "end": 20.570997000000002,
    "segment": "d0"
   },
   {
-   "text": "ciel",
-   "start": 10.87229,
-   "end": 11.05229,
-   "segment": "d0"
-  },
-  {
-   "text": "devient",
-   "start": 11.05229,
-   "end": 11.392290000000001,
-   "segment": "d0"
-  },
-  {
-   "text": "rouge",
-   "start": 11.53229,
-   "end": 11.91229,
-   "segment": "d0"
-  },
-  {
-   "text": "sang.",
-   "start": 11.91229,
-   "end": 12.31229,
+   "text": "tête.",
+   "start": 20.570997000000002,
+   "end": 20.890997,
    "segment": "d0"
   },
   {
    "text": "Munch",
-   "start": 12.786712000000001,
-   "end": 13.126712000000001,
+   "start": 21.499047,
+   "end": 22.199047,
    "segment": "d1"
-  },
-  {
-   "text": "s'arrête,",
-   "start": 13.126712000000001,
-   "end": 13.806712000000001,
-   "segment": "d1"
-  },
-  {
-   "text": "épuisé.",
-   "start": 13.806712000000001,
-   "end": 14.466712000000001,
-   "segment": "d1"
-  },
-  {
-   "text": "Ses",
-   "start": 13.806712000000001,
-   "end": 14.966712000000001,
-   "segment": "d1"
-  },
-  {
-   "text": "deux",
-   "start": 14.966712000000001,
-   "end": 15.066712,
-   "segment": "d1"
-  },
-  {
-   "text": "amis,",
-   "start": 15.066712,
-   "end": 15.306712000000001,
-   "segment": "d1"
-  },
-  {
-   "text": "eux,",
-   "start": 15.306712000000001,
-   "end": 15.486712,
-   "segment": "d1"
-  },
-  {
-   "text": "continuent",
-   "start": 15.486712,
-   "end": 15.946712000000002,
-   "segment": "d1"
-  },
-  {
-   "text": "leur",
-   "start": 15.946712000000002,
-   "end": 16.046712,
-   "segment": "d1"
-  },
-  {
-   "text": "route.",
-   "start": 16.046712,
-   "end": 16.266712000000002,
-   "segment": "d1"
-  },
-  {
-   "text": "Lui",
-   "start": 16.843379000000002,
-   "end": 17.223379,
-   "segment": "d2"
-  },
-  {
-   "text": "reste",
-   "start": 17.223379,
-   "end": 17.483379000000003,
-   "segment": "d2"
-  },
-  {
-   "text": "seul,",
-   "start": 17.483379000000003,
-   "end": 17.803379000000003,
-   "segment": "d2"
-  },
-  {
-   "text": "tremblant",
-   "start": 18.223379,
-   "end": 18.663379000000003,
-   "segment": "d2"
-  },
-  {
-   "text": "d'angoisse.",
-   "start": 18.663379000000003,
-   "end": 19.343379000000002,
-   "segment": "d2"
-  },
-  {
-   "text": "Il",
-   "start": 19.723379,
-   "end": 19.943379000000004,
-   "segment": "d2"
   },
   {
    "text": "a",
-   "start": 19.943379000000004,
-   "end": 20.043379,
-   "segment": "d2"
+   "start": 22.199047,
+   "end": 22.359047,
+   "segment": "d1"
   },
   {
    "text": "raconté",
-   "start": 20.043379,
-   "end": 20.403379,
-   "segment": "d2"
+   "start": 22.359047,
+   "end": 22.739047,
+   "segment": "d1"
   },
   {
-   "text": "avoir",
-   "start": 20.403379,
-   "end": 20.523379000000002,
-   "segment": "d2"
+   "text": "cette",
+   "start": 22.739047,
+   "end": 22.839047,
+   "segment": "d1"
+  },
+  {
+   "text": "soirée",
+   "start": 22.839047,
+   "end": 23.199047,
+   "segment": "d1"
+  },
+  {
+   "text": "dans",
+   "start": 23.199047,
+   "end": 23.279047000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "son",
+   "start": 23.279047000000002,
+   "end": 23.399047,
+   "segment": "d1"
+  },
+  {
+   "text": "journal.",
+   "start": 23.399047,
+   "end": 23.679047,
+   "segment": "d1"
+  },
+  {
+   "text": "Au-dessus",
+   "start": 24.119047000000002,
+   "end": 24.479047,
+   "segment": "d1"
+  },
+  {
+   "text": "d'Oslo,",
+   "start": 24.479047,
+   "end": 24.839047,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 25.239047,
+   "end": 25.359047,
+   "segment": "d1"
+  },
+  {
+   "text": "ciel",
+   "start": 25.359047,
+   "end": 25.539047,
+   "segment": "d1"
+  },
+  {
+   "text": "est",
+   "start": 25.539047,
+   "end": 25.699047,
+   "segment": "d1"
+  },
+  {
+   "text": "soudain",
+   "start": 25.699047,
+   "end": 25.919047,
+   "segment": "d1"
+  },
+  {
+   "text": "devenu",
+   "start": 25.919047,
+   "end": 26.339047,
+   "segment": "d1"
+  },
+  {
+   "text": "rouge",
+   "start": 26.339047,
+   "end": 26.739047,
+   "segment": "d1"
+  },
+  {
+   "text": "sang,",
+   "start": 26.739047,
+   "end": 27.079047000000003,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 27.379047,
+   "end": 27.419047,
+   "segment": "d1"
+  },
+  {
+   "text": "il",
+   "start": 27.419047,
+   "end": 27.499047,
+   "segment": "d1"
+  },
+  {
+   "text": "a",
+   "start": 27.499047,
+   "end": 27.579047000000003,
+   "segment": "d1"
   },
   {
    "text": "senti",
-   "start": 20.523379000000002,
-   "end": 21.063379,
-   "segment": "d2"
+   "start": 27.579047000000003,
+   "end": 27.939047000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "«",
+   "start": 27.939047000000002,
+   "end": 27.939047000000002,
+   "segment": "d1"
   },
   {
    "text": "un",
-   "start": 21.063379,
-   "end": 21.383379,
-   "segment": "d2"
+   "start": 27.939047000000002,
+   "end": 28.499047,
+   "segment": "d1"
   },
   {
    "text": "cri",
-   "start": 21.383379,
-   "end": 21.663379000000003,
-   "segment": "d2"
+   "start": 28.499047,
+   "end": 28.779047000000002,
+   "segment": "d1"
   },
   {
-   "text": "immense",
-   "start": 21.663379000000003,
-   "end": 22.343379000000002,
-   "segment": "d2"
+   "text": "infini",
+   "start": 28.779047000000002,
+   "end": 29.499047,
+   "segment": "d1"
   },
   {
    "text": "traverser",
-   "start": 22.343379000000002,
-   "end": 23.143379000000003,
+   "start": 29.499047,
+   "end": 30.299047,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 30.299047,
+   "end": 30.399047000000003,
+   "segment": "d1"
+  },
+  {
+   "text": "nature",
+   "start": 30.399047000000003,
+   "end": 30.679047,
+   "segment": "d1"
+  },
+  {
+   "text": "».",
+   "start": 30.679047,
+   "end": 30.929047,
+   "segment": "d1"
+  },
+  {
+   "text": "Et",
+   "start": 31.408684,
+   "end": 31.528684000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "ce",
+   "start": 31.528684000000002,
+   "end": 31.608684,
+   "segment": "d2"
+  },
+  {
+   "text": "ciel",
+   "start": 31.608684,
+   "end": 31.828684000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "n'était",
+   "start": 31.828684000000003,
+   "end": 32.208684,
+   "segment": "d2"
+  },
+  {
+   "text": "peut-être",
+   "start": 32.208684,
+   "end": 32.468684,
+   "segment": "d2"
+  },
+  {
+   "text": "pas",
+   "start": 32.468684,
+   "end": 32.648684,
+   "segment": "d2"
+  },
+  {
+   "text": "imaginaire.",
+   "start": 32.648684,
+   "end": 33.168684,
+   "segment": "d2"
+  },
+  {
+   "text": "Des",
+   "start": 33.528684,
+   "end": 33.628684,
+   "segment": "d2"
+  },
+  {
+   "text": "astronomes",
+   "start": 33.628684,
+   "end": 34.048684,
+   "segment": "d2"
+  },
+  {
+   "text": "pensent",
+   "start": 34.048684,
+   "end": 34.348684,
+   "segment": "d2"
+  },
+  {
+   "text": "que",
+   "start": 34.348684,
+   "end": 34.408684,
+   "segment": "d2"
+  },
+  {
+   "text": "Munch",
+   "start": 34.408684,
+   "end": 34.708684,
+   "segment": "d2"
+  },
+  {
+   "text": "se",
+   "start": 34.708684,
+   "end": 34.828684,
+   "segment": "d2"
+  },
+  {
+   "text": "souvenait",
+   "start": 34.828684,
+   "end": 35.128684,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 35.128684,
+   "end": 35.188684,
    "segment": "d2"
   },
   {
    "text": "la",
-   "start": 23.143379000000003,
-   "end": 23.243379000000004,
+   "start": 35.188684,
+   "end": 35.288684,
    "segment": "d2"
   },
   {
-   "text": "nature.",
-   "start": 23.243379000000004,
-   "end": 23.523379000000002,
+   "text": "fin",
+   "start": 35.288684,
+   "end": 35.428684000000004,
    "segment": "d2"
   },
   {
-   "text": "Regardez-le",
-   "start": 24.220817000000004,
-   "end": 24.760817000000003,
-   "segment": "d3"
+   "text": "de",
+   "start": 35.428684000000004,
+   "end": 35.548684,
+   "segment": "d2"
+  },
+  {
+   "text": "l'année",
+   "start": 35.548684,
+   "end": 35.748684,
+   "segment": "d2"
+  },
+  {
+   "text": "1883",
+   "start": 35.748684,
+   "end": 36.828684,
+   "segment": "d2"
   },
   {
    "text": ":",
-   "start": 24.760817000000003,
-   "end": 25.010817000000003,
-   "segment": "d3"
+   "start": 36.828684,
+   "end": 37.078684,
+   "segment": "d2"
+  },
+  {
+   "text": "l'éruption",
+   "start": 37.368684,
+   "end": 37.688684,
+   "segment": "d2"
+  },
+  {
+   "text": "du",
+   "start": 37.688684,
+   "end": 37.888684,
+   "segment": "d2"
+  },
+  {
+   "text": "Krakatoa",
+   "start": 37.888684,
+   "end": 38.488684,
+   "segment": "d2"
+  },
+  {
+   "text": "avait",
+   "start": 38.488684,
+   "end": 38.868684,
+   "segment": "d2"
+  },
+  {
+   "text": "rempli",
+   "start": 38.868684,
+   "end": 39.288684,
+   "segment": "d2"
+  },
+  {
+   "text": "l'atmosphère",
+   "start": 39.288684,
+   "end": 39.728684,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 39.728684,
+   "end": 39.828684,
+   "segment": "d2"
+  },
+  {
+   "text": "cendres,",
+   "start": 39.828684,
+   "end": 40.208684000000005,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 40.448684,
+   "end": 40.508684,
+   "segment": "d2"
   },
   {
    "text": "les",
-   "start": 25.260817000000003,
-   "end": 25.340817000000005,
-   "segment": "d3"
+   "start": 40.508684,
+   "end": 40.608684,
+   "segment": "d2"
   },
   {
-   "text": "mains",
-   "start": 25.340817000000005,
-   "end": 25.480817000000005,
-   "segment": "d3"
+   "text": "couchers",
+   "start": 40.608684,
+   "end": 40.828684,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 40.888684,
+   "end": 40.928684000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "soleil",
+   "start": 40.928684000000004,
+   "end": 41.188684,
+   "segment": "d2"
+  },
+  {
+   "text": "étaient",
+   "start": 41.188684,
+   "end": 41.308684,
+   "segment": "d2"
+  },
+  {
+   "text": "devenus",
+   "start": 41.308684,
+   "end": 41.608684,
+   "segment": "d2"
+  },
+  {
+   "text": "rouges",
+   "start": 41.608684,
+   "end": 41.988684,
+   "segment": "d2"
   },
   {
    "text": "sur",
-   "start": 25.480817000000005,
-   "end": 25.640817000000006,
-   "segment": "d3"
+   "start": 41.988684,
+   "end": 42.128684,
+   "segment": "d2"
   },
   {
-   "text": "les",
-   "start": 25.640817000000006,
-   "end": 25.760817000000003,
-   "segment": "d3"
-  },
-  {
-   "text": "joues,",
-   "start": 25.760817000000003,
-   "end": 26.240817000000003,
-   "segment": "d3"
+   "text": "toute",
+   "start": 42.128684,
+   "end": 42.328684,
+   "segment": "d2"
   },
   {
    "text": "la",
-   "start": 26.240817000000003,
-   "end": 26.420817000000003,
-   "segment": "d3"
+   "start": 42.328684,
+   "end": 42.508684,
+   "segment": "d2"
   },
   {
-   "text": "bouche",
-   "start": 26.420817000000003,
-   "end": 26.720817000000004,
-   "segment": "d3"
+   "text": "planète,",
+   "start": 42.508684,
+   "end": 42.908684,
+   "segment": "d2"
   },
   {
-   "text": "ouverte,",
-   "start": 26.720817000000004,
-   "end": 27.160817000000005,
+   "text": "jusqu'en",
+   "start": 43.088684,
+   "end": 43.348684,
+   "segment": "d2"
+  },
+  {
+   "text": "Norvège.",
+   "start": 43.348684,
+   "end": 43.688684,
+   "segment": "d2"
+  },
+  {
+   "text": "Tout",
+   "start": 44.170816,
+   "end": 44.310816,
    "segment": "d3"
   },
   {
    "text": "le",
-   "start": 27.520817000000005,
-   "end": 27.720817000000004,
+   "start": 44.310816,
+   "end": 44.450816,
    "segment": "d3"
   },
   {
-   "text": "visage",
-   "start": 27.720817000000004,
-   "end": 28.080817000000003,
+   "text": "tableau",
+   "start": 44.450816,
+   "end": 44.830816,
    "segment": "d3"
   },
   {
-   "text": "presque",
-   "start": 28.080817000000003,
-   "end": 28.360817000000004,
+   "text": "vibre",
+   "start": 44.830816,
+   "end": 45.270816,
    "segment": "d3"
   },
   {
-   "text": "d'un",
-   "start": 28.360817000000004,
-   "end": 28.700817000000004,
-   "segment": "d3"
-  },
-  {
-   "text": "crâne.",
-   "start": 28.700817000000004,
-   "end": 29.220817000000004,
-   "segment": "d3"
-  },
-  {
-   "text": "Ce",
-   "start": 29.580817000000003,
-   "end": 29.680817000000005,
-   "segment": "d3"
-  },
-  {
-   "text": "n'est",
-   "start": 29.680817000000005,
-   "end": 29.740817000000003,
-   "segment": "d3"
-  },
-  {
-   "text": "pas",
-   "start": 29.740817000000003,
-   "end": 29.840817000000005,
+   "text": "avec",
+   "start": 45.270816,
+   "end": 45.450816,
    "segment": "d3"
   },
   {
    "text": "lui",
-   "start": 29.840817000000005,
-   "end": 30.020817000000005,
+   "start": 45.450816,
+   "end": 45.690816000000005,
    "segment": "d3"
   },
   {
-   "text": "qui",
-   "start": 30.020817000000005,
-   "end": 30.220817000000004,
+   "text": ":",
+   "start": 45.690816000000005,
+   "end": 45.890816,
    "segment": "d3"
   },
   {
-   "text": "hurle.",
-   "start": 30.220817000000004,
-   "end": 30.600817000000003,
+   "text": "le",
+   "start": 45.890816,
+   "end": 46.050816000000005,
    "segment": "d3"
-  },
-  {
-   "text": "Il",
-   "start": 30.820817000000005,
-   "end": 31.020817000000005,
-   "segment": "d3"
-  },
-  {
-   "text": "se",
-   "start": 31.020817000000005,
-   "end": 31.240817000000003,
-   "segment": "d3"
-  },
-  {
-   "text": "bouche",
-   "start": 31.240817000000003,
-   "end": 31.620817000000002,
-   "segment": "d3"
-  },
-  {
-   "text": "les",
-   "start": 31.620817000000002,
-   "end": 31.760817000000003,
-   "segment": "d3"
-  },
-  {
-   "text": "oreilles,",
-   "start": 31.760817000000003,
-   "end": 32.200817,
-   "segment": "d3"
-  },
-  {
-   "text": "pour",
-   "start": 32.200817,
-   "end": 32.560817,
-   "segment": "d3"
-  },
-  {
-   "text": "ne",
-   "start": 32.560817,
-   "end": 32.700817,
-   "segment": "d3"
-  },
-  {
-   "text": "plus",
-   "start": 32.700817,
-   "end": 33.02081700000001,
-   "segment": "d3"
-  },
-  {
-   "text": "l'entendre.",
-   "start": 33.02081700000001,
-   "end": 33.560817,
-   "segment": "d3"
-  },
-  {
-   "text": "Le",
-   "start": 34.118867,
-   "end": 34.258867,
-   "segment": "d4"
-  },
-  {
-   "text": "cri,",
-   "start": 34.258867,
-   "end": 34.438867,
-   "segment": "d4"
-  },
-  {
-   "text": "c'est",
-   "start": 34.698867,
-   "end": 35.038867,
-   "segment": "d4"
-  },
-  {
-   "text": "celui",
-   "start": 35.038867,
-   "end": 35.218867,
-   "segment": "d4"
-  },
-  {
-   "text": "de",
-   "start": 35.218867,
-   "end": 35.398867,
-   "segment": "d4"
-  },
-  {
-   "text": "la",
-   "start": 35.398867,
-   "end": 35.498867000000004,
-   "segment": "d4"
-  },
-  {
-   "text": "nature.",
-   "start": 35.498867000000004,
-   "end": 35.898867,
-   "segment": "d4"
-  },
-  {
-   "text": "Le",
-   "start": 36.498867000000004,
-   "end": 36.678867000000004,
-   "segment": "d4"
   },
   {
    "text": "ciel,",
-   "start": 36.678867000000004,
-   "end": 36.938867,
-   "segment": "d4"
+   "start": 46.050816000000005,
+   "end": 46.230816000000004,
+   "segment": "d3"
   },
   {
    "text": "le",
-   "start": 37.378867,
-   "end": 37.438867,
-   "segment": "d4"
+   "start": 46.630816,
+   "end": 46.670816,
+   "segment": "d3"
   },
   {
    "text": "fjord,",
-   "start": 37.438867,
-   "end": 37.838867,
-   "segment": "d4"
+   "start": 46.670816,
+   "end": 46.990816,
+   "segment": "d3"
   },
   {
    "text": "le",
-   "start": 38.098867,
-   "end": 38.258867,
-   "segment": "d4"
+   "start": 47.270816,
+   "end": 47.350816,
+   "segment": "d3"
   },
   {
    "text": "chemin",
-   "start": 38.258867,
-   "end": 38.538867,
-   "segment": "d4"
+   "start": 47.350816,
+   "end": 47.550816000000005,
+   "segment": "d3"
   },
   {
-   "text": ":",
-   "start": 38.538867,
-   "end": 38.788867,
-   "segment": "d4"
-  },
-  {
-   "text": "tout",
-   "start": 39.058867,
-   "end": 39.198867,
-   "segment": "d4"
-  },
-  {
-   "text": "ondule",
-   "start": 39.198867,
-   "end": 39.918867,
-   "segment": "d4"
-  },
-  {
-   "text": "autour",
-   "start": 39.918867,
-   "end": 40.098867,
-   "segment": "d4"
-  },
-  {
-   "text": "de",
-   "start": 40.098867,
-   "end": 40.298867,
-   "segment": "d4"
-  },
-  {
-   "text": "lui,",
-   "start": 40.298867,
-   "end": 40.478867,
-   "segment": "d4"
+   "text": "ondulent,",
+   "start": 47.550816000000005,
+   "end": 48.350816,
+   "segment": "d3"
   },
   {
    "text": "comme",
-   "start": 40.478867,
-   "end": 40.878867,
-   "segment": "d4"
+   "start": 48.590816000000004,
+   "end": 48.790816,
+   "segment": "d3"
   },
   {
    "text": "si",
-   "start": 40.878867,
-   "end": 41.018867,
-   "segment": "d4"
+   "start": 48.790816,
+   "end": 48.930816,
+   "segment": "d3"
   },
   {
    "text": "le",
-   "start": 41.018867,
-   "end": 41.138867000000005,
-   "segment": "d4"
+   "start": 48.930816,
+   "end": 49.070816,
+   "segment": "d3"
   },
   {
    "text": "cri",
-   "start": 41.138867000000005,
-   "end": 41.318867000000004,
-   "segment": "d4"
+   "start": 49.070816,
+   "end": 49.290816,
+   "segment": "d3"
   },
   {
    "text": "se",
-   "start": 41.318867000000004,
-   "end": 41.518867,
-   "segment": "d4"
+   "start": 49.290816,
+   "end": 49.770816,
+   "segment": "d3"
   },
   {
    "text": "propageait",
-   "start": 41.518867,
-   "end": 41.978867,
-   "segment": "d4"
+   "start": 49.770816,
+   "end": 50.350816,
+   "segment": "d3"
   },
   {
    "text": "en",
-   "start": 41.978867,
-   "end": 42.098867,
-   "segment": "d4"
+   "start": 50.350816,
+   "end": 50.410816000000004,
+   "segment": "d3"
   },
   {
    "text": "vagues.",
-   "start": 42.098867,
-   "end": 42.418867000000006,
-   "segment": "d4"
+   "start": 50.410816000000004,
+   "end": 50.750816,
+   "segment": "d3"
   },
   {
    "text": "Quelques",
-   "start": 42.94567,
-   "end": 43.30567,
-   "segment": "d5"
+   "start": 51.255737,
+   "end": 51.755737,
+   "segment": "d4"
   },
   {
    "text": "années",
-   "start": 43.30567,
-   "end": 43.42567,
-   "segment": "d5"
+   "start": 51.755737,
+   "end": 51.855737000000005,
+   "segment": "d4"
   },
   {
    "text": "plus",
-   "start": 43.42567,
-   "end": 43.58567,
-   "segment": "d5"
+   "start": 51.855737000000005,
+   "end": 51.995737000000005,
+   "segment": "d4"
   },
   {
    "text": "tard,",
-   "start": 43.58567,
-   "end": 43.78567,
-   "segment": "d5"
+   "start": 51.995737000000005,
+   "end": 52.215737000000004,
+   "segment": "d4"
   },
   {
    "text": "Munch",
-   "start": 44.16567,
-   "end": 44.44567,
-   "segment": "d5"
+   "start": 52.575737000000004,
+   "end": 52.875737,
+   "segment": "d4"
+  },
+  {
+   "text": "a",
+   "start": 52.875737,
+   "end": 53.035737000000005,
+   "segment": "d4"
   },
   {
    "text": "écrit",
-   "start": 44.52567,
-   "end": 44.70567,
-   "segment": "d5"
+   "start": 53.035737000000005,
+   "end": 53.215737000000004,
+   "segment": "d4"
   },
   {
    "text": "au",
-   "start": 44.70567,
-   "end": 44.86567,
-   "segment": "d5"
+   "start": 53.215737000000004,
+   "end": 53.395737000000004,
+   "segment": "d4"
   },
   {
-   "text": "crayon",
-   "start": 44.86567,
-   "end": 45.24567,
-   "segment": "d5"
+   "text": "crayon,",
+   "start": 53.395737000000004,
+   "end": 53.695737,
+   "segment": "d4"
   },
   {
    "text": "dans",
-   "start": 45.24567,
-   "end": 45.36567,
-   "segment": "d5"
+   "start": 53.975737,
+   "end": 54.035737000000005,
+   "segment": "d4"
   },
   {
-   "text": "le",
-   "start": 45.36567,
-   "end": 45.46567,
-   "segment": "d5"
+   "text": "un",
+   "start": 54.035737000000005,
+   "end": 54.195737,
+   "segment": "d4"
   },
   {
    "text": "coin",
-   "start": 45.46567,
-   "end": 45.62567,
-   "segment": "d5"
+   "start": 54.195737,
+   "end": 54.315737000000006,
+   "segment": "d4"
   },
   {
    "text": "du",
-   "start": 45.62567,
-   "end": 45.76567,
-   "segment": "d5"
+   "start": 54.315737000000006,
+   "end": 54.455737000000006,
+   "segment": "d4"
   },
   {
    "text": "ciel",
-   "start": 45.76567,
-   "end": 46.00567,
-   "segment": "d5"
+   "start": 54.455737000000006,
+   "end": 54.655737,
+   "segment": "d4"
   },
   {
    "text": ":",
-   "start": 46.00567,
-   "end": 46.25567,
-   "segment": "d5"
+   "start": 54.655737,
+   "end": 54.655737,
+   "segment": "d4"
   },
   {
    "text": "«",
-   "start": 46.25567,
-   "end": 46.50567,
-   "segment": "d5"
+   "start": 54.655737,
+   "end": 54.655737,
+   "segment": "d4"
   },
   {
    "text": "Ne",
-   "start": 46.54567,
-   "end": 46.62567,
-   "segment": "d5"
+   "start": 54.655737,
+   "end": 55.075737000000004,
+   "segment": "d4"
   },
   {
    "text": "peut",
-   "start": 46.62567,
-   "end": 46.84567,
-   "segment": "d5"
+   "start": 55.075737000000004,
+   "end": 55.195737,
+   "segment": "d4"
   },
   {
    "text": "avoir",
-   "start": 46.84567,
-   "end": 47.06567,
-   "segment": "d5"
+   "start": 55.195737,
+   "end": 55.395737000000004,
+   "segment": "d4"
   },
   {
    "text": "été",
-   "start": 47.06567,
-   "end": 47.34567,
-   "segment": "d5"
+   "start": 55.395737000000004,
+   "end": 55.615737,
+   "segment": "d4"
   },
   {
    "text": "peint",
-   "start": 47.34567,
-   "end": 47.64567,
-   "segment": "d5"
+   "start": 55.615737,
+   "end": 55.855737000000005,
+   "segment": "d4"
   },
   {
    "text": "que",
-   "start": 47.64567,
-   "end": 47.74567,
-   "segment": "d5"
+   "start": 55.855737000000005,
+   "end": 56.095737,
+   "segment": "d4"
   },
   {
    "text": "par",
-   "start": 47.74567,
-   "end": 47.94567,
-   "segment": "d5"
+   "start": 56.095737,
+   "end": 56.295737,
+   "segment": "d4"
   },
   {
    "text": "un",
-   "start": 47.94567,
-   "end": 48.10567,
-   "segment": "d5"
+   "start": 56.295737,
+   "end": 56.495737000000005,
+   "segment": "d4"
   },
   {
    "text": "fou.",
-   "start": 48.10567,
-   "end": 48.30567,
-   "segment": "d5"
+   "start": 56.495737000000005,
+   "end": 56.535737000000005,
+   "segment": "d4"
   },
   {
    "text": "»",
-   "start": 48.30567,
-   "end": 48.410432,
+   "start": 56.535737000000005,
+   "end": 56.664739000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "Ce",
+   "start": 57.014739000000006,
+   "end": 57.514739000000006,
    "segment": "d5"
   },
   {
-   "text": "Il",
-   "start": 48.760432,
-   "end": 49.100432000000005,
-   "segment": "d6"
-  },
-  {
-   "text": "n'a",
-   "start": 49.100432000000005,
-   "end": 49.200432,
-   "segment": "d6"
+   "text": "n'est",
+   "start": 57.514739000000006,
+   "end": 57.634739,
+   "segment": "d5"
   },
   {
    "text": "pas",
-   "start": 49.200432,
-   "end": 49.300432,
-   "segment": "d6"
+   "start": 57.634739,
+   "end": 57.734739000000005,
+   "segment": "d5"
   },
   {
-   "text": "peint",
-   "start": 49.300432,
-   "end": 49.380432,
-   "segment": "d6"
+   "text": "cet",
+   "start": 57.734739000000005,
+   "end": 57.89473900000001,
+   "segment": "d5"
   },
   {
-   "text": "un",
-   "start": 49.380432,
-   "end": 49.540432,
-   "segment": "d6"
-  },
-  {
-   "text": "cri",
-   "start": 49.540432,
-   "end": 49.780432000000005,
-   "segment": "d6"
-  },
-  {
-   "text": "qu'on",
-   "start": 49.780432000000005,
-   "end": 49.980432,
-   "segment": "d6"
-  },
-  {
-   "text": "entend.",
-   "start": 49.980432,
-   "end": 50.260432,
-   "segment": "d6"
-  },
-  {
-   "text": "Il",
-   "start": 50.800432,
-   "end": 51.020432,
-   "segment": "d6"
-  },
-  {
-   "text": "a",
-   "start": 51.100432,
-   "end": 51.100432,
-   "segment": "d6"
-  },
-  {
-   "text": "peint",
-   "start": 51.100432,
-   "end": 51.180432,
-   "segment": "d6"
-  },
-  {
-   "text": "une",
-   "start": 51.180432,
-   "end": 51.740432,
-   "segment": "d6"
-  },
-  {
-   "text": "angoisse",
-   "start": 51.740432,
-   "end": 52.300432,
-   "segment": "d6"
-  },
-  {
-   "text": "qu'on",
-   "start": 52.300432,
-   "end": 52.520432,
-   "segment": "d6"
-  },
-  {
-   "text": "ressent,",
-   "start": 52.520432,
-   "end": 52.940432,
-   "segment": "d6"
-  },
-  {
-   "text": "et",
-   "start": 52.940432,
-   "end": 53.400432,
-   "segment": "d6"
-  },
-  {
-   "text": "que",
-   "start": 53.400432,
-   "end": 53.520432,
-   "segment": "d6"
-  },
-  {
-   "text": "tout",
-   "start": 53.520432,
-   "end": 53.700432,
-   "segment": "d6"
-  },
-  {
-   "text": "le",
-   "start": 53.700432,
-   "end": 53.840432,
-   "segment": "d6"
-  },
-  {
-   "text": "monde",
-   "start": 53.840432,
-   "end": 54.000432,
-   "segment": "d6"
-  },
-  {
-   "text": "a",
-   "start": 54.000432,
-   "end": 54.120432,
-   "segment": "d6"
-  },
-  {
-   "text": "déjà",
-   "start": 54.120432,
-   "end": 54.280432000000005,
-   "segment": "d6"
-  },
-  {
-   "text": "connue.",
-   "start": 54.280432000000005,
-   "end": 54.580432,
-   "segment": "d6"
-  },
-  {
-   "text": "Voilà",
-   "start": 54.820432000000004,
-   "end": 55.020432,
-   "segment": "d6"
-  },
-  {
-   "text": "ce",
-   "start": 55.020432,
-   "end": 55.300432,
-   "segment": "d6"
+   "text": "homme",
+   "start": 57.89473900000001,
+   "end": 58.11473900000001,
+   "segment": "d5"
   },
   {
    "text": "qui",
-   "start": 55.300432,
-   "end": 55.380432,
-   "segment": "d6"
+   "start": 58.11473900000001,
+   "end": 58.25473900000001,
+   "segment": "d5"
   },
   {
-   "text": "répond",
-   "start": 55.380432,
-   "end": 55.680432,
-   "segment": "d6"
+   "text": "crie.",
+   "start": 58.25473900000001,
+   "end": 58.554739000000005,
+   "segment": "d5"
   },
   {
-   "text": "à",
-   "start": 55.680432,
-   "end": 55.780432000000005,
-   "segment": "d6"
+   "text": "C'est",
+   "start": 58.814739,
+   "end": 59.174739,
+   "segment": "d5"
+  },
+  {
+   "text": "toute",
+   "start": 59.174739,
+   "end": 59.514739000000006,
+   "segment": "d5"
   },
   {
    "text": "la",
-   "start": 55.780432000000005,
-   "end": 55.820432000000004,
-   "segment": "d6"
+   "start": 59.514739000000006,
+   "end": 59.774739000000004,
+   "segment": "d5"
   },
   {
-   "text": "question",
-   "start": 55.820432000000004,
-   "end": 56.060432,
-   "segment": "d6"
+   "text": "nature",
+   "start": 59.774739000000004,
+   "end": 60.07473900000001,
+   "segment": "d5"
   },
   {
-   "text": ":",
-   "start": 56.060432,
-   "end": 56.23245,
-   "segment": "d6"
+   "text": "qui",
+   "start": 60.07473900000001,
+   "end": 60.25473900000001,
+   "segment": "d5"
+  },
+  {
+   "text": "hurle…",
+   "start": 60.25473900000001,
+   "end": 60.734739000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "et",
+   "start": 60.954739000000004,
+   "end": 61.234739000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "il",
+   "start": 61.234739000000005,
+   "end": 61.314739,
+   "segment": "d5"
+  },
+  {
+   "text": "est",
+   "start": 61.314739,
+   "end": 61.39473900000001,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 61.39473900000001,
+   "end": 61.49473900000001,
+   "segment": "d5"
+  },
+  {
+   "text": "seul",
+   "start": 61.49473900000001,
+   "end": 61.654739000000006,
+   "segment": "d5"
+  },
+  {
+   "text": "à",
+   "start": 61.654739000000006,
+   "end": 61.75473900000001,
+   "segment": "d5"
+  },
+  {
+   "text": "l'entendre.",
+   "start": 61.75473900000001,
+   "end": 62.154739000000006,
+   "segment": "d5"
   }
  ]
 }

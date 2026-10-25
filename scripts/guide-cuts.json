@@ -1,19 +1,225 @@
 {
-  "back": ["sheet_poses.png", [12, 56, 290, 500]],
-  "explaining": ["sheet_poses.png", [313, 65, 665, 504]],
-  "celebrating": ["sheet_poses.png", [652, 72, 976, 504]],
-  "satchel": ["sheet_poses.png", [956, 112, 1228, 508]],
-  "stamping": ["sheet_poses.png", [1219, 167, 1524, 491]],
-  "peeking": ["sheet_poses.png", [95, 540, 305, 972]],
-  "reading": ["sheet_poses.png", [381, 531, 689, 977]],
-  "point-left": ["sheet_poses.png", [727, 541, 1097, 977]],
-  "point-right": ["sheet_poses.png", [1125, 541, 1523, 975]],
-  "bust-thumb": ["sheet_expressions.png", [11, 49, 447, 598]],
-  "bust-worried": ["sheet_expressions.png", [448, 73, 873, 574]],
-  "bust-proud": ["sheet_expressions.png", [862, 47, 1302, 589]],
-  "bust-loupe": ["sheet_expressions.png", [8, 623, 449, 1124]],
-  "bust-laugh": ["sheet_expressions.png", [443, 592, 903, 1144]],
-  "bust-skeptical": ["sheet_expressions.png", [906, 609, 1300, 1147]],
-  "stamp-circle": ["sheet_stamps_badges.png", [85, 54, 491, 447]],
-  "stamp-postage": ["sheet_stamps_badges.png", [1133, 62, 1685, 430]]
+ "back": [
+  "sheet_poses.png",
+  [
+   12,
+   56,
+   290,
+   500
+  ]
+ ],
+ "explaining": [
+  "sheet_poses.png",
+  [
+   313,
+   65,
+   665,
+   504
+  ]
+ ],
+ "celebrating": [
+  "sheet_poses.png",
+  [
+   652,
+   72,
+   976,
+   504
+  ]
+ ],
+ "satchel": [
+  "sheet_poses.png",
+  [
+   956,
+   112,
+   1228,
+   508
+  ]
+ ],
+ "reading": [
+  "sheet_poses.png",
+  [
+   381,
+   531,
+   689,
+   977
+  ]
+ ],
+ "point-left": [
+  "sheet_poses.png",
+  [
+   727,
+   541,
+   1097,
+   977
+  ]
+ ],
+ "point-right": [
+  "sheet_poses.png",
+  [
+   1125,
+   541,
+   1523,
+   975
+  ]
+ ],
+ "ears": [
+  "sheet_bank_1.png",
+  [
+   44,
+   129,
+   540,
+   837
+  ],
+  1.2
+ ],
+ "thinking": [
+  "sheet_bank_1.png",
+  [
+   560,
+   114,
+   1035,
+   838
+  ],
+  1.2
+ ],
+ "amazed": [
+  "sheet_bank_1.png",
+  [
+   1060,
+   120,
+   1598,
+   834
+  ],
+  1.2
+ ],
+ "point-up": [
+  "sheet_bank_1.png",
+  [
+   2003,
+   116,
+   2485,
+   838
+  ],
+  1.2
+ ],
+ "shh": [
+  "sheet_bank_1.png",
+  [
+   81,
+   899,
+   524,
+   1613
+  ],
+  1.2
+ ],
+ "shrug": [
+  "sheet_bank_1.png",
+  [
+   589,
+   883,
+   1218,
+   1613
+  ],
+  1.2
+ ],
+ "writing": [
+  "sheet_bank_1.png",
+  [
+   1326,
+   907,
+   1803,
+   1619
+  ],
+  1.2
+ ],
+ "walking": [
+  "sheet_bank_1.png",
+  [
+   1894,
+   893,
+   2408,
+   1620
+  ],
+  1.2
+ ],
+ "scared": [
+  "sheet_bank_2.png",
+  [
+   144,
+   98,
+   593,
+   830
+  ],
+  1.2
+ ],
+ "whisper": [
+  "sheet_bank_2.png",
+  [
+   660,
+   127,
+   1190,
+   835
+  ],
+  1.2
+ ],
+ "counting": [
+  "sheet_bank_2.png",
+  [
+   1293,
+   121,
+   1791,
+   839
+  ],
+  1.2
+ ],
+ "card": [
+  "sheet_bank_2.png",
+  [
+   1912,
+   106,
+   2392,
+   833
+  ],
+  1.2
+ ],
+ "skeptical": [
+  "sheet_bank_2.png",
+  [
+   107,
+   894,
+   547,
+   1623
+  ],
+  1.2
+ ],
+ "sitting": [
+  "sheet_bank_2.png",
+  [
+   665,
+   889,
+   1167,
+   1624
+  ],
+  1.2
+ ],
+ "loupe": [
+  "sheet_bank_2.png",
+  [
+   1269,
+   907,
+   1812,
+   1617
+  ],
+  1.2
+ ],
+ "waving": [
+  "sheet_bank_2.png",
+  [
+   1914,
+   885,
+   2448,
+   1620
+  ],
+  1.2
+ ]
 }

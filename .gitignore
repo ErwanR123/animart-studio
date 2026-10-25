@@ -6,11 +6,8 @@ dist
 # Ignore the output video from Git but not videos you import into src/.
 out
 
-# Paid TTS lines (scripts/voiceover-gemini.py): kept locally so a re-run never pays twice.
+# Paid generations (voice takes, Guide sheets): kept locally so a re-run never pays twice.
 cache
 
 # Reference repos cloned for study (see bible/references.md); re-clone with scripts/refs.sh
 refs
-
-# Raw CC0 sound packs (Kenney, BigSoundBank): scripts/sfx-curate.sh downloads them and cuts public/sfx/v3
-sound-library

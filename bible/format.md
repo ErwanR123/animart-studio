@@ -1,52 +1,49 @@
-# Format: "Le Guide" (pilot: GuideAthens)
+# Format: "Le Guide"
 
-One painting, one question, 60–75 s, 9:16. The viewer leaves knowing **who is in the painting, why they stand
-where they stand, and the answer to the question** — and the video loops back to the question so they watch again.
+One painting, one question, 55–70 s, 9:16. The viewer leaves knowing **what the painting shows, the story behind
+it, and the answer to the question**, and the video loops back to the question so they watch again.
 
-## Structure (what the pilot does, beat by beat)
+The four episodes in `examples/` are the references: *Athens* (the pilot: room in 3D, class photo, figures),
+*Homecoming* (a story told on one painting: the war behind the soldier), *Alexander* (an anecdote: collages of the
+context, then the scene), *Le Cri* (a reading: the painting, then archive collages that travel in time).
 
-| beat | segment | time | on screen (engine feature) |
-|---|---|---|---|
-| **Hook** | `hook` | 0–5 s | the painting's room in 3D, slow push on the painting (`room.start`); title + header rise in |
-| **Context** | `context` | 5–14 s | from the middle of the room the camera turns to each wall as its word is spoken, the wall's name big under the title (`room.words`); then it dives back into the painting, which hangs in its gold frame |
-| **Everyone** | `d0` | 14–18 s | class photo: shutter, then a name tag on every figure (`tags`) |
-| **Figures** ×4–6 | `d1…` | 6–9 s each | the frame grows full screen (`climb`) and the camera travels to the figure (`view`); one or two effects on its key words: pencil loop on an object (`glow`), pencil arrow (`arrows`), paper note (`notes`), spotlight + name (`spots`), question marks (`questions`), tears + colour drain (`tear`), a related artwork as a print (`picture`), light on the sky (`shine`) |
-| **Answer** | last `d` | 12–16 s | the whole painting full width (`view.z` ≈ 0.5), whip-pan to the facing wall (`turn.word`), both side by side (`turn.split`) |
-| **Loop** | end of the last `d` | 2 s | on `loop.word` the camera flies back to the opening shot: the last frame matches the first, the hook starts again |
+## The frame: always the same two parts
 
-The structure is a default, not a cage: a painting without a room (most museum paintings) starts on the hung
-painting instead of the 3D tour, and can't use `loop` (it needs the room); its answer beat ends on the whole
-painting.
+| zone | what | rule |
+|---|---|---|
+| **top**, 0 → `CLIMB_H` = 1400 | **the images**: the painting (camera climbing from detail to detail) or a collage shot | everything that is *shown* lives here; it changes, the bottom doesn't |
+| **bottom** | **the Guide** (feet at `BASELINE` = 1665, x = `GUIDE_X` 230) and his **bubble** to his right (top 1385, x 415 → 975, Caveat, ≤ 3 lines) | always there, always the same place: he tells, the images travel |
+| platform UI | top ~220 px, bottom ~400 px, right ~140 px from y ≈ 900 | nothing essential; labels stay left of x ≈ 940. Check with `episode-review.py sheet <Ep> --phone` (the zones drawn over each frame at phone size). The bubble's text ends at x ≈ 930 and y ≈ 1550; only its paper edge passes under the buttons |
+
+The user's words: *"on a le guide qui nous parle, qui nous explique les choses, et on voit les images défiler."* The
+Guide is **secondary**: the eye belongs to the images (`bible/character.md`).
+
+## Structure (a default, not a cage)
+
+| beat | segment | on screen |
+|---|---|---|
+| **Hook** | `hook` | the whole painting full width (`openView`), the title rising once (gone when the hook ends); one mark on the key word (a pencil loop, a label crossed out) |
+| **Context** | `context` | who / when / where: a collage shot or two (the artist, the date, the place), or the room in 3D for a fresco |
+| **Story beats** ×4–6 | `d0…` | alternate **the painting** (when the voice points at something in it: `view` + loops, spots, notes) and **collage shots** (when the voice tells what is around it: the time, the place, the cause) |
+| **Answer** | last `d` | back on the whole painting; the answer said over it; one last mark (a spotlight closing on the one who matters) |
+| **Loop** | end | the last frame is the first (`loop`): the hook starts again |
 
 ## Timing: model the viewer (the rule that fails most)
 
-You know what happens because you wrote it; the viewer sees it once, at full speed, with the sound maybe off.
+You know what happens because you wrote it; the viewer sees it once, at full speed, sound maybe off.
 
-- **Write the reads.** For every beat, list in order what the viewer has to understand (a *read*): "this is
-  Plato", "he points up", "up = the sky". Each read needs ≥ 20 frames to be found and registered.
+- **Write the reads.** For every beat, list what the viewer must understand, in order. Each read needs ≥ 20 frames.
 - **One read at a time.** Never start a new effect while the last one is still being read.
-- **Fast moves, slow meanings.** Camera moves are quick (0.5–0.9 s, eased); what they reveal holds (≥ 1 s).
-- **The picture lands on the word.** Effects fire on a spoken word's onset (`word` in the config = the first word
-  of the segment starting with it). Put the effect's word where the meaning is: the Gérôme print fires on
-  "jarre", so the jar sentence comes *before* the convenances sentence.
-- **No dead air.** Pauses inside a line are capped at 0.3 s by the voice script; gaps between lines are 0.12 s
-  (`tight: true`). The user hears a 0.5 s pause as a "moment mou".
-
-## Layout and safe zones (1080 × 1920)
-
-| zone | value (engine constant) | rule |
-|---|---|---|
-| painting, climb mode | top 0 → `CLIMB_H` = 1400 | everything that is *shown* lives here |
-| the Guide | feet at `BASELINE` = 1665, x = `GUIDE_X` 230 | bottom-left, never over the art |
-| speech bubble | right of the Guide, top 1385, x 415 → 975, Caveat 46 px, ≤ 3 lines | in the dark band under the painting, tail up to his mouth — never above his head, never over the painting |
-| platform UI | top ~220 px, bottom ~400 px, right ~140 px from y ≈ 900 | nothing essential there; labels stay left of x ≈ 940 |
-
-Check them on a frame with `uv run scripts/review.py sheet <Ep>`; the bubble's 3-line limit comes from the caption
-groups (≤ 62 characters, split at punctuation) in `engine.tsx`.
+- **Hold a shot ~2 s (never under 1.5 s)** and build it word by word (pieces landing on their words) rather than
+  cutting. A new image every second was "vomitif"; 7 shots in 13 s was right.
+- **Fast moves, slow meanings.** Camera moves are 0.5–0.9 s, eased; what they reveal holds ≥ 1 s.
+- **The picture lands on its word** (`word` = the first word of the segment starting with it).
+- **No dead air**, but room to breathe where it counts: pauses inside a line ≤ 0.2 s, a longer breath only on the
+  final line (`bible/sound.md`). A 0.5 s gap is a "moment mou"; people swipe.
 
 ## On-screen text
 
-The voice tells the story; the bubble shows the current phrase (viewers watch muted). Everything else on screen is
-a **name** (tags, spot names in gold Caveat), a **label** on an arrow ("le ciel", "la terre", handwritten), a
-**short paper note** ("L'Éthique : comment bien vivre"), a **caption** on a print, or the **title** once. Never a
-paragraph, never a "?" tag.
+The bubble shows the phrase being said (people watch muted). Everything else is **information the voice does not
+give**: a name, a date, a place, a source ("27 NOV. 1883", "Kristiania (Oslo)", "ARRIEN, ANABASE VI, 26"). A label
+that only repeats the bubble ("CENDRES" over "rempli l'atmosphère de cendres") is noise: cut it. Never a paragraph,
+never a "?" tag, never text typing itself.

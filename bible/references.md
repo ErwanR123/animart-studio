@@ -11,6 +11,10 @@ p5.js / node-canvas / WebGL films drawn entirely in code.
 | `Battle-of-Austerlitz-Film` (WinterArc21) | a 5-minute history film in WebGL, narration-timed | long-form educational structure; `web/script.js` beats → shots, every shot timed against narration beats — same idea as our word-timing engine at a larger scale |
 | `awesome-opus5-5-videos` (yihui-dev) | 400+ videos made with Opus 5.5, with their prompts | browse for a move to adapt (a text reveal, a transition, a timing pattern); gallery: skillry.dev/ai-videos/opus-5-5 |
 | `awesome-ai-motion` (guanmo-ai) | curated motion design / creative coding with sources and prompts | inspiration for transitions and texture effects |
+| `vox-style-video` (SousekiL) | Vox-style paper collage in Remotion, every number measured frame by frame on reference videos | `style/collage-motion/` (stepped 12 fps clock for pieces, paper that boils while photos hold still, pop/stamp overshoot tables, 19 paper transitions, the Vox editorial grammar in `13-vox-editorial.md`), `scripts/cadence.py` (hold lengths of any video: run it on our renders) |
+| `vox-editorial` (jaredcassoutt) | two Vox skills: Remotion (`vox-skill`) and ffmpeg multiplane | `vox-skill/references/scene-patterns.md` (offset red silhouette behind cut-outs, code-drawn documents with a highlighter sweep), `vertical.md` |
+| `voxstylehub-steven` (Phantomlau3674) | Vox collage skill for Codex + Remotion | its three failures: captions the only thing moving, a subject shrunk to a stamp at phone size, shots that drop every visual anchor at a cut |
+| `awesome-claude-video-skills` (zhuyansen) | 180 video skills graded | the "Explainers" and "Motion graphics" sections when looking for a technique |
 
 ## Libraries worth knowing (from "Claude Motion Tips")
 
@@ -29,7 +33,5 @@ p5.js / node-canvas / WebGL films drawn entirely in code.
   `remotion-best-practices` (load it before writing Remotion code), `remotion-create`, `remotion-render`,
   `remotion-studio`, `remotion-markup`, `remotion-multimedia`, `remotion-captions`, `remotion-interactivity`,
   `remotion-docs`, `remotion-upgrade`.
-- Video craft: `motion-designer` (motion specs for Remotion), `short-form-video` (hooks and retention for
-  Reels/TikTok/Shorts).
 - The HyperFrames skills (an HTML/GSAP video stack) were removed in the October 2026 cleanup: this studio is
   Remotion only.

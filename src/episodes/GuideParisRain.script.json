@@ -1,0 +1,38 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Tout le monde regarde ce couple. Personne ne remarque l'homme juste derrière."
+    },
+    {
+      "id": "context",
+      "text": "Blouse blanche, échelle sur l'épaule : un ouvrier. Pour comprendre ce qu'il fait là, il faut voir le Paris d'avant."
+    },
+    {
+      "id": "d1",
+      "text": "Des ruelles d'un ou deux mètres de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En 1832, le choléra tue plus d'un Parisien sur cinquante.",
+      "say": "Des ruelles d'un ou deux mètres de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En mille huit cent trente-deux, le choléra tue plus d'un Parisien sur cinquante."
+    },
+    {
+      "id": "d2",
+      "text": "Alors Napoléon III et son préfet, le baron Haussmann, sortent la pioche : vingt mille immeubles rasés en dix-sept ans.",
+      "say": "Alors Napoléon trois et son préfet, le baron Haussmann, sortent la pioche : vingt mille immeubles rasés en dix-sept ans."
+    },
+    {
+      "id": "d3",
+      "text": "Et ces boulevards bien droits, ce n'est pas que pour l'air. En dix-huit ans, Paris a connu sept insurrections. Une ruelle, ça se barricade. Un boulevard, beaucoup moins."
+    },
+    {
+      "id": "d4",
+      "text": "À la place, l'immeuble haussmannien. Et il range les gens par étage : les riches au deuxième, derrière le grand balcon. Plus on monte, plus on est pauvre. Sous le toit, les bonnes."
+    },
+    {
+      "id": "d5",
+      "text": "Ces immeubles, ce sont des ouvriers comme lui qui les ont bâtis. Sauf que les loyers flambent : ils n'ont plus les moyens d'y vivre."
+    },
+    {
+      "id": "d6",
+      "text": "Lui passe au fond, tout petit, en allant travailler. Et aujourd'hui encore, dans ce tableau…"
+    }
+  ]
+}

@@ -4,7 +4,9 @@
 set -euo pipefail
 mkdir -p refs && cd refs
 for r in JohnHeibel/ClaudeAnimationBase JohnHeibel/PDoomVideo buildwithhanif/claude-animation-skill \
-         yihui-dev/awesome-opus5-5-videos WinterArc21/Battle-of-Austerlitz-Film; do
+         yihui-dev/awesome-opus5-5-videos WinterArc21/Battle-of-Austerlitz-Film \
+         SousekiL/vox-style-video jaredcassoutt/vox-editorial Phantomlau3674/voxstylehub-steven \
+         zhuyansen/awesome-claude-video-skills; do
   n=${r#*/}; [ -d "$n" ] || git clone -q --depth 1 --filter=blob:limit=2m "https://github.com/$r.git" "$n"
 done
 [ -d awesome-ai-motion ] || git clone -q --depth 1 --filter=blob:limit=300k https://github.com/guanmo-ai/awesome-ai-motion.git

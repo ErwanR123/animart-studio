@@ -1,0 +1,1139 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.2890479999999997
+  },
+  {
+   "id": "context",
+   "start": 3.639048,
+   "end": 10.250885
+  },
+  {
+   "id": "d1",
+   "start": 10.600885,
+   "end": 20.378844
+  },
+  {
+   "id": "d2",
+   "start": 20.728844000000002,
+   "end": 27.772722
+  },
+  {
+   "id": "d3",
+   "start": 28.122722000000003,
+   "end": 36.508867
+  },
+  {
+   "id": "d4",
+   "start": 36.858867000000004,
+   "end": 46.704763
+  },
+  {
+   "id": "d5",
+   "start": 47.054763,
+   "end": 52.978074
+  },
+  {
+   "id": "d6",
+   "start": 53.328074,
+   "end": 57.749593000000004
+  }
+ ],
+ "words": [
+  {
+   "text": "Tout",
+   "start": 0.0,
+   "end": 0.14,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 0.14,
+   "end": 0.24,
+   "segment": "hook"
+  },
+  {
+   "text": "monde",
+   "start": 0.24,
+   "end": 0.4,
+   "segment": "hook"
+  },
+  {
+   "text": "regarde",
+   "start": 0.4,
+   "end": 0.76,
+   "segment": "hook"
+  },
+  {
+   "text": "ce",
+   "start": 0.76,
+   "end": 1.04,
+   "segment": "hook"
+  },
+  {
+   "text": "couple.",
+   "start": 1.04,
+   "end": 1.3,
+   "segment": "hook"
+  },
+  {
+   "text": "Personne",
+   "start": 1.76,
+   "end": 2.2,
+   "segment": "hook"
+  },
+  {
+   "text": "ne",
+   "start": 2.2,
+   "end": 2.32,
+   "segment": "hook"
+  },
+  {
+   "text": "remarque",
+   "start": 2.32,
+   "end": 2.8,
+   "segment": "hook"
+  },
+  {
+   "text": "l'homme",
+   "start": 2.8,
+   "end": 3.14,
+   "segment": "hook"
+  },
+  {
+   "text": "juste",
+   "start": 3.14,
+   "end": 3.2890479999999997,
+   "segment": "hook"
+  },
+  {
+   "text": "derrière.",
+   "start": 3.2890479999999997,
+   "end": 3.2890479999999997,
+   "segment": "hook"
+  },
+  {
+   "text": "Blouse",
+   "start": 3.639048,
+   "end": 4.059048,
+   "segment": "context"
+  },
+  {
+   "text": "blanche,",
+   "start": 4.059048,
+   "end": 4.559048,
+   "segment": "context"
+  },
+  {
+   "text": "échelle",
+   "start": 4.559048,
+   "end": 5.099048,
+   "segment": "context"
+  },
+  {
+   "text": "sur",
+   "start": 5.099048,
+   "end": 5.2790479999999995,
+   "segment": "context"
+  },
+  {
+   "text": "l'épaule",
+   "start": 5.2790479999999995,
+   "end": 5.839048,
+   "segment": "context"
+  },
+  {
+   "text": ":",
+   "start": 5.839048,
+   "end": 6.089048,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 6.359048,
+   "end": 6.519048,
+   "segment": "context"
+  },
+  {
+   "text": "ouvrier.",
+   "start": 6.359048,
+   "end": 6.899048,
+   "segment": "context"
+  },
+  {
+   "text": "Pour",
+   "start": 7.079048,
+   "end": 7.179048,
+   "segment": "context"
+  },
+  {
+   "text": "comprendre",
+   "start": 7.179048,
+   "end": 7.519048,
+   "segment": "context"
+  },
+  {
+   "text": "ce",
+   "start": 7.519048,
+   "end": 7.719048,
+   "segment": "context"
+  },
+  {
+   "text": "qu'il",
+   "start": 7.719048,
+   "end": 7.839048,
+   "segment": "context"
+  },
+  {
+   "text": "fait",
+   "start": 7.839048,
+   "end": 7.999048,
+   "segment": "context"
+  },
+  {
+   "text": "là,",
+   "start": 7.999048,
+   "end": 8.119048,
+   "segment": "context"
+  },
+  {
+   "text": "il",
+   "start": 8.599048,
+   "end": 8.639047999999999,
+   "segment": "context"
+  },
+  {
+   "text": "faut",
+   "start": 8.639047999999999,
+   "end": 8.879048000000001,
+   "segment": "context"
+  },
+  {
+   "text": "voir",
+   "start": 8.879048000000001,
+   "end": 9.179048,
+   "segment": "context"
+  },
+  {
+   "text": "le",
+   "start": 9.179048,
+   "end": 9.319047999999999,
+   "segment": "context"
+  },
+  {
+   "text": "Paris",
+   "start": 9.319047999999999,
+   "end": 9.539048000000001,
+   "segment": "context"
+  },
+  {
+   "text": "d'avant.",
+   "start": 9.539048000000001,
+   "end": 10.059048,
+   "segment": "context"
+  },
+  {
+   "text": "Des",
+   "start": 10.600885,
+   "end": 10.780885,
+   "segment": "d1"
+  },
+  {
+   "text": "ruelles",
+   "start": 10.780885,
+   "end": 11.140885,
+   "segment": "d1"
+  },
+  {
+   "text": "d'un",
+   "start": 11.140885,
+   "end": 11.480885,
+   "segment": "d1"
+  },
+  {
+   "text": "ou",
+   "start": 11.480885,
+   "end": 11.900885,
+   "segment": "d1"
+  },
+  {
+   "text": "deux",
+   "start": 11.900885,
+   "end": 12.220884999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "mètres",
+   "start": 12.220884999999999,
+   "end": 12.500885,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 12.500885,
+   "end": 12.600885,
+   "segment": "d1"
+  },
+  {
+   "text": "large,",
+   "start": 12.600885,
+   "end": 12.920885,
+   "segment": "d1"
+  },
+  {
+   "text": "pas",
+   "start": 13.220884999999999,
+   "end": 13.460885,
+   "segment": "d1"
+  },
+  {
+   "text": "d'égouts,",
+   "start": 13.460885,
+   "end": 14.100885,
+   "segment": "d1"
+  },
+  {
+   "text": "les",
+   "start": 14.100885,
+   "end": 14.180885,
+   "segment": "d1"
+  },
+  {
+   "text": "ordures",
+   "start": 14.180885,
+   "end": 14.580885,
+   "segment": "d1"
+  },
+  {
+   "text": "jetées",
+   "start": 14.580885,
+   "end": 14.980885,
+   "segment": "d1"
+  },
+  {
+   "text": "dans",
+   "start": 14.980885,
+   "end": 15.080885,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 15.080885,
+   "end": 15.200885,
+   "segment": "d1"
+  },
+  {
+   "text": "rue…",
+   "start": 15.200885,
+   "end": 15.380885,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 15.380885,
+   "end": 15.920885,
+   "segment": "d1"
+  },
+  {
+   "text": "les",
+   "start": 15.920885,
+   "end": 16.040885,
+   "segment": "d1"
+  },
+  {
+   "text": "rats.",
+   "start": 16.040885,
+   "end": 16.320885,
+   "segment": "d1"
+  },
+  {
+   "text": "En",
+   "start": 16.640885,
+   "end": 16.700885,
+   "segment": "d1"
+  },
+  {
+   "text": "1832,",
+   "start": 16.700885,
+   "end": 17.420885,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 17.700885,
+   "end": 17.800885,
+   "segment": "d1"
+  },
+  {
+   "text": "choléra",
+   "start": 17.800885,
+   "end": 18.160885,
+   "segment": "d1"
+  },
+  {
+   "text": "tue",
+   "start": 18.160885,
+   "end": 18.460885,
+   "segment": "d1"
+  },
+  {
+   "text": "plus",
+   "start": 18.460885,
+   "end": 18.580885000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "d'un",
+   "start": 18.580885000000002,
+   "end": 18.880885,
+   "segment": "d1"
+  },
+  {
+   "text": "Parisien",
+   "start": 18.880885,
+   "end": 19.420885,
+   "segment": "d1"
+  },
+  {
+   "text": "sur",
+   "start": 19.420885,
+   "end": 19.620885,
+   "segment": "d1"
+  },
+  {
+   "text": "cinquante.",
+   "start": 19.620885,
+   "end": 19.870885,
+   "segment": "d1"
+  },
+  {
+   "text": "Alors",
+   "start": 20.728844000000002,
+   "end": 20.968844,
+   "segment": "d2"
+  },
+  {
+   "text": "Napoléon",
+   "start": 21.308844,
+   "end": 21.728844000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "III",
+   "start": 21.728844000000002,
+   "end": 21.888844000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 21.888844000000002,
+   "end": 22.128844,
+   "segment": "d2"
+  },
+  {
+   "text": "son",
+   "start": 22.128844,
+   "end": 22.288844,
+   "segment": "d2"
+  },
+  {
+   "text": "préfet,",
+   "start": 22.288844,
+   "end": 22.648844000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 22.728844000000002,
+   "end": 22.808844,
+   "segment": "d2"
+  },
+  {
+   "text": "baron",
+   "start": 22.808844,
+   "end": 23.028844000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "Haussmann,",
+   "start": 23.028844000000003,
+   "end": 23.488844,
+   "segment": "d2"
+  },
+  {
+   "text": "sortent",
+   "start": 23.808844,
+   "end": 24.188844000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 24.188844000000003,
+   "end": 24.288844,
+   "segment": "d2"
+  },
+  {
+   "text": "pioche",
+   "start": 24.288844,
+   "end": 24.728844000000002,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 24.728844000000002,
+   "end": 24.978844000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "vingt",
+   "start": 24.978844000000002,
+   "end": 25.228844000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "mille",
+   "start": 25.528844000000003,
+   "end": 26.368844000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "immeubles",
+   "start": 25.528844000000003,
+   "end": 26.368844000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "rasés",
+   "start": 26.368844000000003,
+   "end": 26.828844000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "en",
+   "start": 26.828844000000004,
+   "end": 27.128844,
+   "segment": "d2"
+  },
+  {
+   "text": "dix-sept",
+   "start": 27.128844,
+   "end": 27.378844,
+   "segment": "d2"
+  },
+  {
+   "text": "ans.",
+   "start": 27.408844000000002,
+   "end": 27.668844000000004,
+   "segment": "d2"
+  },
+  {
+   "text": "Et",
+   "start": 28.122722000000003,
+   "end": 28.262722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "ces",
+   "start": 28.262722000000004,
+   "end": 28.362722,
+   "segment": "d3"
+  },
+  {
+   "text": "boulevards",
+   "start": 28.362722,
+   "end": 28.622722000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "bien",
+   "start": 28.622722000000003,
+   "end": 28.782722000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "droits,",
+   "start": 28.782722000000003,
+   "end": 29.202722,
+   "segment": "d3"
+  },
+  {
+   "text": "ce",
+   "start": 29.322722000000002,
+   "end": 29.502722000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "n'est",
+   "start": 29.502722000000002,
+   "end": 29.582722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "pas",
+   "start": 29.582722000000004,
+   "end": 29.662722000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "que",
+   "start": 29.662722000000002,
+   "end": 29.782722000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "pour",
+   "start": 29.782722000000003,
+   "end": 29.942722000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "l'air.",
+   "start": 29.942722000000003,
+   "end": 30.242722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "En",
+   "start": 30.502722000000002,
+   "end": 30.602722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "dix-huit",
+   "start": 30.602722000000004,
+   "end": 30.852722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "ans,",
+   "start": 30.902722000000004,
+   "end": 31.142722000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "Paris",
+   "start": 31.422722000000004,
+   "end": 31.662722000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "a",
+   "start": 31.662722000000002,
+   "end": 31.842722000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "connu",
+   "start": 31.842722000000002,
+   "end": 32.142722000000006,
+   "segment": "d3"
+  },
+  {
+   "text": "sept",
+   "start": 32.142722000000006,
+   "end": 32.462722,
+   "segment": "d3"
+  },
+  {
+   "text": "insurrections.",
+   "start": 32.462722,
+   "end": 32.982722,
+   "segment": "d3"
+  },
+  {
+   "text": "Une",
+   "start": 33.322722000000006,
+   "end": 33.442722,
+   "segment": "d3"
+  },
+  {
+   "text": "ruelle,",
+   "start": 33.442722,
+   "end": 33.842722,
+   "segment": "d3"
+  },
+  {
+   "text": "ça",
+   "start": 33.982722,
+   "end": 34.202722,
+   "segment": "d3"
+  },
+  {
+   "text": "se",
+   "start": 34.202722,
+   "end": 34.262722000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "barricade.",
+   "start": 34.262722000000004,
+   "end": 34.662722,
+   "segment": "d3"
+  },
+  {
+   "text": "Un",
+   "start": 34.942722,
+   "end": 35.122722,
+   "segment": "d3"
+  },
+  {
+   "text": "boulevard,",
+   "start": 35.122722,
+   "end": 35.502722000000006,
+   "segment": "d3"
+  },
+  {
+   "text": "beaucoup",
+   "start": 35.762722000000004,
+   "end": 36.102722,
+   "segment": "d3"
+  },
+  {
+   "text": "moins.",
+   "start": 36.102722,
+   "end": 36.342722,
+   "segment": "d3"
+  },
+  {
+   "text": "À",
+   "start": 36.858867000000004,
+   "end": 37.108867000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 37.318867000000004,
+   "end": 37.398867,
+   "segment": "d4"
+  },
+  {
+   "text": "place,",
+   "start": 37.398867,
+   "end": 37.598867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "l'immeuble",
+   "start": 37.858867000000004,
+   "end": 38.298867,
+   "segment": "d4"
+  },
+  {
+   "text": "haussmannien.",
+   "start": 38.298867,
+   "end": 38.898867,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 39.078867,
+   "end": 39.238867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "il",
+   "start": 39.238867000000006,
+   "end": 39.338867,
+   "segment": "d4"
+  },
+  {
+   "text": "range",
+   "start": 39.338867,
+   "end": 39.618867,
+   "segment": "d4"
+  },
+  {
+   "text": "les",
+   "start": 39.618867,
+   "end": 39.818867000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "gens",
+   "start": 39.818867000000004,
+   "end": 39.978867,
+   "segment": "d4"
+  },
+  {
+   "text": "par",
+   "start": 39.978867,
+   "end": 40.158867,
+   "segment": "d4"
+  },
+  {
+   "text": "étage",
+   "start": 40.158867,
+   "end": 40.598867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 40.598867000000006,
+   "end": 40.838867,
+   "segment": "d4"
+  },
+  {
+   "text": "les",
+   "start": 40.838867,
+   "end": 40.958867000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "riches",
+   "start": 40.958867000000005,
+   "end": 41.238867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "au",
+   "start": 41.398867,
+   "end": 41.458867000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "deuxième,",
+   "start": 41.458867000000005,
+   "end": 41.69886700000001,
+   "segment": "d4"
+  },
+  {
+   "text": "derrière",
+   "start": 42.138867000000005,
+   "end": 42.33886700000001,
+   "segment": "d4"
+  },
+  {
+   "text": "le",
+   "start": 42.33886700000001,
+   "end": 42.638867000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "grand",
+   "start": 42.638867000000005,
+   "end": 42.818867000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "balcon.",
+   "start": 42.818867000000004,
+   "end": 43.098867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "Plus",
+   "start": 43.538867,
+   "end": 43.718867,
+   "segment": "d4"
+  },
+  {
+   "text": "on",
+   "start": 43.718867,
+   "end": 43.83886700000001,
+   "segment": "d4"
+  },
+  {
+   "text": "monte,",
+   "start": 43.83886700000001,
+   "end": 44.098867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 44.438867,
+   "end": 44.578867,
+   "segment": "d4"
+  },
+  {
+   "text": "on",
+   "start": 44.578867,
+   "end": 44.678867000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "est",
+   "start": 44.678867000000004,
+   "end": 44.778867000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "pauvre.",
+   "start": 44.778867000000005,
+   "end": 45.178867000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "Sous",
+   "start": 45.478867,
+   "end": 45.598867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "le",
+   "start": 45.598867000000006,
+   "end": 45.638867000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "toit,",
+   "start": 45.638867000000005,
+   "end": 46.058867000000006,
+   "segment": "d4"
+  },
+  {
+   "text": "les",
+   "start": 46.118867,
+   "end": 46.258867,
+   "segment": "d4"
+  },
+  {
+   "text": "bonnes.",
+   "start": 46.258867,
+   "end": 46.578867,
+   "segment": "d4"
+  },
+  {
+   "text": "Ces",
+   "start": 47.054763,
+   "end": 47.574763000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "immeubles,",
+   "start": 47.574763000000004,
+   "end": 48.114763,
+   "segment": "d5"
+  },
+  {
+   "text": "ce",
+   "start": 48.114763,
+   "end": 48.354763,
+   "segment": "d5"
+  },
+  {
+   "text": "sont",
+   "start": 48.354763,
+   "end": 48.494763,
+   "segment": "d5"
+  },
+  {
+   "text": "des",
+   "start": 48.494763,
+   "end": 48.594763,
+   "segment": "d5"
+  },
+  {
+   "text": "ouvriers",
+   "start": 48.594763,
+   "end": 48.954763,
+   "segment": "d5"
+  },
+  {
+   "text": "comme",
+   "start": 48.954763,
+   "end": 49.154763,
+   "segment": "d5"
+  },
+  {
+   "text": "lui",
+   "start": 49.154763,
+   "end": 49.394763,
+   "segment": "d5"
+  },
+  {
+   "text": "qui",
+   "start": 49.394763,
+   "end": 49.574763000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 49.574763000000004,
+   "end": 49.714763000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "ont",
+   "start": 49.714763000000005,
+   "end": 49.834763,
+   "segment": "d5"
+  },
+  {
+   "text": "bâtis.",
+   "start": 49.834763,
+   "end": 50.134763,
+   "segment": "d5"
+  },
+  {
+   "text": "Sauf",
+   "start": 50.394763,
+   "end": 50.634763,
+   "segment": "d5"
+  },
+  {
+   "text": "que",
+   "start": 50.634763,
+   "end": 50.714763000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 50.714763000000005,
+   "end": 50.814763,
+   "segment": "d5"
+  },
+  {
+   "text": "loyers",
+   "start": 50.814763,
+   "end": 51.114763,
+   "segment": "d5"
+  },
+  {
+   "text": "flambent",
+   "start": 51.474763,
+   "end": 51.814763,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 51.814763,
+   "end": 51.894763,
+   "segment": "d5"
+  },
+  {
+   "text": "ils",
+   "start": 51.894763,
+   "end": 51.974763,
+   "segment": "d5"
+  },
+  {
+   "text": "n'ont",
+   "start": 51.974763,
+   "end": 52.034763,
+   "segment": "d5"
+  },
+  {
+   "text": "plus",
+   "start": 52.034763,
+   "end": 52.174763,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 52.174763,
+   "end": 52.274763,
+   "segment": "d5"
+  },
+  {
+   "text": "moyens",
+   "start": 52.274763,
+   "end": 52.414763,
+   "segment": "d5"
+  },
+  {
+   "text": "d'y",
+   "start": 52.414763,
+   "end": 52.594763,
+   "segment": "d5"
+  },
+  {
+   "text": "vivre.",
+   "start": 52.594763,
+   "end": 52.774763,
+   "segment": "d5"
+  },
+  {
+   "text": "Lui",
+   "start": 53.328074,
+   "end": 53.568074,
+   "segment": "d6"
+  },
+  {
+   "text": "passe",
+   "start": 53.568074,
+   "end": 53.928074,
+   "segment": "d6"
+  },
+  {
+   "text": "au",
+   "start": 53.928074,
+   "end": 54.148074,
+   "segment": "d6"
+  },
+  {
+   "text": "fond,",
+   "start": 54.148074,
+   "end": 54.348074000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "tout",
+   "start": 54.348074000000004,
+   "end": 54.688074,
+   "segment": "d6"
+  },
+  {
+   "text": "petit,",
+   "start": 54.688074,
+   "end": 54.908074,
+   "segment": "d6"
+  },
+  {
+   "text": "en",
+   "start": 54.908074,
+   "end": 55.248074,
+   "segment": "d6"
+  },
+  {
+   "text": "allant",
+   "start": 55.248074,
+   "end": 55.428074,
+   "segment": "d6"
+  },
+  {
+   "text": "travailler.",
+   "start": 55.428074,
+   "end": 55.728074,
+   "segment": "d6"
+  },
+  {
+   "text": "Et",
+   "start": 55.728074,
+   "end": 56.128074,
+   "segment": "d6"
+  },
+  {
+   "text": "aujourd'hui",
+   "start": 56.128074,
+   "end": 56.528074000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "encore,",
+   "start": 56.528074000000004,
+   "end": 56.768074,
+   "segment": "d6"
+  },
+  {
+   "text": "dans",
+   "start": 56.768074,
+   "end": 57.208074,
+   "segment": "d6"
+  },
+  {
+   "text": "ce",
+   "start": 57.208074,
+   "end": 57.368074,
+   "segment": "d6"
+  },
+  {
+   "text": "tableau…",
+   "start": 57.368074,
+   "end": 57.668074000000004,
+   "segment": "d6"
+  }
+ ]
+}
