@@ -37,7 +37,7 @@ look is [bible/art-direction.md](bible/art-direction.md).
 | `examples/` | the five finished episodes (compressed previews): Athens, Homecoming, Alexander, Le Cri, Rue de Paris (the quality bar) |
 | `public/` | what the videos load: `art/<episode>/` (painting, close-ups, collage pieces), `guide/` (the Guide's poses), `sfx/accents/` + `sfx/story/`, `music/`, `voice/` |
 | `docs/brand/` | the Guide's identity: character sheet (`mascot.md`), canonical and bank pose sheets (`sheets/`), decorations and textures (`assets/`), brand direction |
-| `library/` | raw material: `app-guide/` (paper bubbles, tape, stamps, sketches), `soundbank/` (`music/` beds, `ambiences/`) |
+| `library/` | raw material: `app-guide/` (paper bubbles, tape, stamps, sketches), `guide-extra/` (more Guide drawings: six busts, peeking round a wall, stamping), `soundbank/` (`music/` beds, `ambiences/`, spare `sfx/`) |
 | `docs/inspiration/` | the Vox-style reel the collage style comes from |
 | `scripts/` | by family: `episode-*` (new, review, master), `image-*` (find, collage, grid, depth), `voice-*` (gemini, placeholder, check), `guide-*` (the Guide's drawings) |
 
