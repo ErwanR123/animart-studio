@@ -60,8 +60,14 @@ Respect art. Never cover important regions or redraw originals in mascot style w
 ## Asset consistency
 All production assets derive from one canonical reference. Same facial structure, moustache, beret, proportions, clothing, palette and technique. Do not independently generate every pose without reference.
 
-## Production structure
-`assets/mascot/base`, `expressions`, `poses`, `props`, `scenes`. Most reusable assets should have transparent backgrounds.
+## Where the drawings are
+- References: `guide-character-reference.png` (the model sheet: colours, expressions, poses, props),
+  `turnaround.png` (front, three-quarter, profile, back), `perso.png` (an early pose sheet), `inspi1–3.png` (the
+  app's screens with the Guide, for the brand's look).
+- `sheets/`: the canonical pose sheet (`sheet_poses.png`, what `scripts/guide-generate.py` starts from) and the bank
+  sheets; `assets/`: drawn decorations, sketches and paper textures.
+- In the videos: the pose bank in `public/guide/` (cut by `scripts/guide-assets.py`), more drawings not yet in the
+  bank in `library/guide-extra/`. Every asset has a transparent background.
 
 ## Approval test
 Same person? Same body? Same clothes? Same illustrator? Same warm/curious personality? If any answer is no, reject the asset.

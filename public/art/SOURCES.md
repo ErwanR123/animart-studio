@@ -68,20 +68,14 @@ with `scripts/image-collage.py` (rembg BiRefNet cut-outs, halftone, white rim, t
 | file | artwork | source | use |
 |---|---|---|---|
 | `paris-rain.jpg` | Gustave Caillebotte, *Paris Street; Rainy Day* (1877), Art Institute of Chicago 1964.336 | Commons "Gustave Caillebotte - Paris Street; Rainy Day - Google Art Project.jpg" (5982 × 4531, public domain), saved at 4000 px | the painting |
-| `rue-tirechape.png`, `rue-aumaire.png` | Charles Marville, Rue Tirechape and Rue Aumaire, c. 1853–70 | Commons "Charles Marville, Rue Tirechape, de la rue de Rivoli, ca. 1853–70, edited.jpg", "Charles Marville, Rue Aumaire.jpg", public domain | `shots` (old Paris) |
+| `rue-aumaire.png` | Charles Marville, Rue Aumaire, c. 1853–70 | Commons "Charles Marville, Rue Aumaire.jpg", public domain | `shots` (old Paris) |
 | `cholera.png` | « Le choléra à Paris », engraving | Commons "Le choléra à Paris (5036894480).jpg" (National Library of Medicine via Flickr, no known restrictions) | `shots` |
 | `napoleon.png`, `haussmann.png` | portraits of Napoléon III (Levitsky) and Baron Haussmann (Reutlinger) | Commons "Portrait de Charles Louis Napoléon Bonaparte … PH54464.jpg", "Portrait du baron Haussmann … PH51656(2).jpg" (Paris Musées, CC0), cut out, halftone | `shots` |
-| `demolition.png`, `percement.png` | Charles Marville, the avenue de l'Opéra cut through the butte des Moulins (Dec. 1876–Feb. 1877) | Commons "Percement de l'avenue de l'Opéra Butte des Moulins (de la rue d'Argenteuil), PH937.jpg" (Paris Musées, CC0), "Charles Marville, Percement de l'avenue de l'Opéra, ca. 1853–70.jpg" | `shots` |
+| `demolition.png` | Charles Marville, the avenue de l'Opéra cut through the butte des Moulins (Dec. 1876–Feb. 1877) | Commons "Percement de l'avenue de l'Opéra Butte des Moulins (de la rue d'Argenteuil), PH937.jpg" (Paris Musées, CC0) | `shots` |
 | `map-1868.png` | Andriveau-Goujon, *Plan d'ensemble des travaux de Paris* (1868), new streets in red | Commons "Andriveau-Goujon, Plan d'ensemble des travaux de Paris, 1868 - David Rumsey.jpg", public domain; colour and contrast raised | `shots` |
-| `paris-demolishers.png` | Edmond Morin, caricature: Paris overrun by the demolishers | Commons "Caricature of Paris Invaded by Demolishers.jpg", public domain | `shots` |
 | `haussmann-demolisseur.png` | caricature of Haussmann as "artiste démolisseur" | Commons 'Haussmann as "Artiste Démolisseur".jpg', public domain, cut out | `shots` |
-| `opera-today.png` | the avenue de l'Opéra, July 2014 | Commons "Avenue de l'Opéra, Paris July 2014.jpg", Guilhem Vellut, CC BY 2.0 (credited in the shot's source line) | `shots` (then and now) |
-| `map-1855.png` | plan of central Paris before the works (catalogued c. 1855), north up | Commons "Map of Paris, ca. 1855 - Stanford Libraries.jpg" (6915 × 8135, public domain), centre cropped | `shots` (three avenues ruled in red pencil) |
-| `paris-comique.png` | « M. Haussmann et Mlle Lutèce », *Paris-Comique*, January 1870 | Commons 'M. Haussmann et Mlle Lutèce - "Paris-Comique".jpg', public domain | `shots` |
-| `demolition-scene.png` | caricature, a demolition scene | Commons "Demolition Scene - caricature.jpg", public domain | `shots` |
 | `daumier-demenagement.png` | Honoré Daumier, *Locataires et propriétaires*: families moving out | Commons "Locataires et Propriétaires - caricature.jpg", public domain | `shots` |
 | `stamp-napoleon.png` | Empire franc 40 c orange, Napoléon III (1853) | Commons "Napoléon 3 40c jaune orange.jpg", border trimmed | lab (`postage`) |
-| `figaro-1868.png` | *Le Petit Figaro*, 5 July 1868, front page | Commons "Le Petit Figaro, 2e année, N°163, 5 juillet 1868, 2017.0.4005.jpg" | lab |
 
 ## `kit/` — shared ephemera (any episode)
 
@@ -100,7 +94,7 @@ with `scripts/image-collage.py` (rembg BiRefNet cut-outs, halftone, white rim, t
 | `rigs/haussmann/*.png` | the same frock-coat body with Baron Haussmann's head (Reutlinger) | as above + Commons "Portrait du baron Haussmann … PH51656(2).jpg" (Paris Musées, CC0), `scripts/rigs/haussmann.json` | `rig: "haussmann"` |
 | `rigs/rat/*.png` | John Woodhouse Audubon, *Brown or Norway Rat*, plate LIV, *Viviparous Quadrupeds of North America*, 1845 (the male, top left), cut into body, head, front and hind leg; the tail is drawn | Commons "Brown rat, or Norway rat (Mus decumanus) … Audubon (1812-1862).jpg", `scripts/rigs/rat.json`, colour | `rig: "rat"` (scurries) |
 | `rigs/pioche.png` | a pickaxe in cut paper | our own (drawn with PIL) | the diggers' tool |
-| `ruelle-print.png`, `rivoli-print.png` | narrower prints of the rue du Haut-Moulin (Marville) and the new rue de Rivoli (1854) | crops of `ruelle-haut-moulin.jpg` and `rivoli-1854.png`, torn print | d3 split screen |
+| `ruelle-print.png`, `rivoli-print.png` | narrower prints of the rue du Haut-Moulin (Marville) and the new rue de Rivoli (1854) | crops of `ruelle-haut-moulin.jpg` and of a print of the new rue de Rivoli (1854), torn print | d3 split screen |
 | `bonne.png` | Giovanni Boldini, *The Maid* (charcoal), 19th c. | Commons "Giovanni Boldini The maid.jpg", public domain, cut out, bw | d4 (under the roof) |
 | `couple.png` | the couple of *Rue de Paris, temps de pluie* (Caillebotte, 1877) | cut from `paris-rain-6k.jpg`, colour | d4 (the 2nd floor) |
 | `maison/maison-1…5.png` | Charles Marville, *Rue Saint-Hilaire, vue prise de la rue de l'École-Polytechnique* (the corner house « Vins Virat », rue des Sept-Voies), c. 1865, cut roof to shop in five pieces | Commons "Rue Saint-Hilaire, vue prise de la rue de l'Ecole-Polytechnique, 5ème arrondissement, Paris, PH593.jpg" (Paris Musées, CC0), `scripts/rigs/maison.json`, bw | GuideParisRain d2 (knocked down by the giants) |
@@ -109,6 +103,5 @@ with `scripts/image-collage.py` (rembg BiRefNet cut-outs, halftone, white rim, t
 | `delacroix-liberte.png` | Eugène Delacroix, *La Liberté guidant le peuple*, 1830 (Louvre), crop | Commons "Eugène Delacroix - La liberté guidant le peuple.jpg", public domain, torn print | d3 (1830) |
 | `daumier-transnonain.png` | Honoré Daumier, *Rue Transnonain, le 15 avril 1834*, lithograph | Commons "Honoré Daumier, Rue Transnonain, le 15 avril 1834, 1834, NGA 6133.jpg", public domain | d3 (1834) |
 | `vernet-soufflot.png` | Horace Vernet, *Barricade rue Soufflot*, 1848 | Commons "Horace Vernet-Barricade rue Soufflot.jpg", public domain | d3 (1848) |
-| `meissonier-barricade.png` | Ernest Meissonier, *La Barricade, rue de la Mortellerie*, 1848 | Commons "Meissonier Barricade.jpg", public domain | spare |
 | `rigs/casseur/*.png` | Gustave Courbet, *Les Casseurs de pierres*, 1849 (destroyed 1945): the old stone-breaker cut into his body and his arms with the hammer, pinned at the shoulder | Commons "Gustave Courbet - The Stonebreakers - WGA05457.jpg", public domain, `scripts/rigs/casseur.json`, colour | `rig: "casseur"` (GuideParisRain d5) |
 | `casseur-jeune.png` | the boy carrying the basket of stones, same painting | same file, cut out, colour | d5 (walks across the building site) |
