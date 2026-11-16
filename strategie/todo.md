@@ -3,6 +3,25 @@
 La liste de tout ce qu'il reste à mettre en place. On coche quand c'est fait ; une tâche finie qui change une règle
 va dans `strategie/README.md`. Liste ouverte le 2026-11-17.
 
+## 0. La stratégie (à réfléchir ensemble, en priorité)
+
+Le but : devenir vraiment forts en marketing et en distribution. Une séance de travail dédiée, puis un document
+`strategie/plan.md` qui répond à :
+
+- [ ] **Le message** : ce qu'Animart promet en une phrase, pour qui, et pourquoi nous plutôt qu'un audioguide ou
+      Smartify ; les 3 ou 4 angles qu'on répète partout (les secrets des tableaux, la chasse au musée, entre amis…).
+- [ ] **Les piliers de contenu** : quels types de posts, pour quoi faire (faire découvrir, faire s'abonner, faire
+      s'inscrire), dans quelle proportion.
+- [ ] **Les nouveaux concepts** : partir de ce qui marche déjà sur TikTok et Instagram (formats, sons, tendances)
+      et l'adapter à l'art ; en tester plusieurs vite et pas cher, garder ceux qui amènent des inscrits.
+- [ ] **Les comptes** : un compte principal ou plusieurs comptes thématiques (STRATEGIE.md §7), qui pour qui.
+- [ ] **Le plan de lancement de l'app** : comment la waitlist devient des téléchargements le jour J (compte à
+      rebours, bêta-testeurs, emails, créateurs, presse, Nuit des musées…).
+- [ ] **Les canaux au-delà de nos comptes** : créateurs, presse, communautés, partenaires (STRATEGIE.md §6), et
+      lesquels on attaque d'abord.
+- [ ] **La veille** : ce que font les comptes art qui marchent et nos concurrents, chaque semaine.
+- [ ] **La boucle** : chaque lundi, `/bilan` dit ce qui a marché ; chaque mois, on ajuste le plan.
+
 ## 1. Mettre en ligne la mesure (en cours)
 
 - [ ] **Amine** déploie `gallery-wall` : les 3 lignes `location ~* ^/(ig|tt|yt)/?$` dans le nginx du site, le nouveau
