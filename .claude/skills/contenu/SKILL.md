@@ -33,3 +33,6 @@ The export gives `out/<id>.mp4`, a phone copy and `out/<id>.post.md` (one text p
 and copies the phone copy and the text to iCloud Drive `Animart à poster/`. Tell the user:
 Reels and TikTok from the phone with a trending sound; YouTube Shorts scheduled in Metricool.
 Then add the post's line to `strategie/journal.md` (date, id, format, account, platforms).
+And mark the post on PostHog's graphs: an annotation `Post : <id> (…)` at the posting time (REST API,
+`POST /api/projects/351733/annotations/`, key from `.env` via `node --env-file=.env`), so a spike shows its video.
+Our own tests use `?utm_source=test`: PostHog leaves them out of every graph.
