@@ -1,0 +1,65 @@
+{
+  "id": "DetailsSacre",
+  "status": "posted 2026-11-16 (Instagram, TikTok, YouTube Shorts)",
+  "image": "art/sacre/sacre.jpg",
+  "imageSize": [3840, 2387],
+  "imageSource": "Wikimedia Commons, « Le Sacre de Napoléon - Jacques-Louis David - Musée du Louvre Peintures INV 3699 ; MR 1437.jpg » (public domain)",
+  "work": {
+    "title": "Le Sacre de Napoléon",
+    "artist": "Jacques-Louis David",
+    "date": "1805–1807",
+    "museum": "Louvre",
+    "room": "Aile Denon, salle 702"
+  },
+  "hook": "4 détails que t'as jamais vus dans ce tableau",
+  "details": [
+    {
+      "cx": 0.578, "cy": 0.585, "wf": 0.11,
+      "title": "Sa couronne de laurier ? En or.",
+      "text": "Trop lourde à son goût : il fait retirer six feuilles. L'une d'elles a été vendue 625 000 € en 2017."
+    },
+    {
+      "cx": 0.53, "cy": 0.70, "wf": 0.20,
+      "title": "Il ne se couronne pas lui‑même. Enfin si, mais pas ici.",
+      "text": "Ce jour-là, Napoléon se couronne lui-même. David peint le moment d'après : il couronne Joséphine."
+    },
+    {
+      "cx": 0.446, "cy": 0.555, "wf": 0.17,
+      "title": "Sa mère est au premier rang. Elle n'est jamais venue.",
+      "text": "Fâchée contre Napoléon, elle a boudé le sacre. David l'a quand même mise à la meilleure place."
+    },
+    {
+      "cx": 0.655, "cy": 0.66, "wf": 0.16,
+      "title": "Le pape qui bénit ? Napoléon l'a exigé.",
+      "text": "David avait retiré ce geste. En 1808, Napoléon lui fait remettre la main levée de Pie VII."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": { "ground": "#5C4630", "deep": "#140F0A", "accent": "#E2C38A" },
+    "found": "5/24",
+    "anecdotes": 4,
+    "script": [
+      "Napoléon, debout, lève une couronne au-dessus de Joséphine.",
+      "On est à Notre-Dame de Paris, le 2 décembre 1804.",
+      "David ne peint pas le moment où l'Empereur se couronne lui-même.",
+      "Il choisit celui où il couronne l'Impératrice.",
+      "Derrière, le pape n'a plus qu'à bénir.",
+      "La toile fait près de dix mètres de large.",
+      "Plus de deux cents personnages, grandeur nature.",
+      "Une réplique presque identique est au château de Versailles.",
+      "David l'a terminée pendant son exil à Bruxelles."
+    ]
+  },
+  "post": {
+    "caption": "4 détails du Sacre de Napoléon que presque personne ne remarque au Louvre 👀",
+    "hashtags": ["louvre", "napoleon", "jacqueslouisdavid", "art", "paris"],
+    "youtubeTitle": "4 détails cachés dans Le Sacre de Napoléon (Louvre) #shorts",
+    "youtubeTags": ["sacre de napoléon", "napoléon", "jacques-louis david", "louvre", "musée du louvre", "histoire de l'art", "art", "peinture", "tableau", "détails cachés", "secrets tableau", "culture générale", "paris", "musée", "napoleon coronation", "louvre museum", "art history", "shorts"]
+  },
+  "sources": [
+    "Mère absente, Joséphine couronnée, dimensions, réplique de Versailles : content/selection/louvre-texts/A.json (Animart, non relu)",
+    "Feuille de laurier, 625 000 €, six feuilles retirées : https://www.rtbf.be/article/une-feuille-en-or-de-la-couronne-de-napoleon-adjugee-a-625-000-euros-9774001",
+    "Geste du pape remis en 1808 : https://www.napoleon.org/histoire-des-2-empires/tableaux/le-sacre-ou-le-couronnement-dessin-preparatoire/"
+  ]
+}
