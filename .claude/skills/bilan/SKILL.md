@@ -16,7 +16,10 @@ paid plan is ever taken, add its MCP server (`uvx --env-file .env mcp-metricool`
    gained, at 48 h and 7 days, per platform.
 3. **Site and waitlist** (PostHog MCP): visits and `waitlist_signup` events this week, by `utm_source` and
    `utm_campaign`. Posts carry no link of their own: a signup is credited to the platform's posts of the previous 48 h.
-4. **Fill** `strategie/journal.md` (numbers only, no comment that the numbers don't support).
+4. **Fill** `strategie/journal.md` (numbers only, no comment that the numbers don't support), and
+   `strategie/videos.json`: each new video's `ig` (instagram_media.id) and `yt` (youtubedata_videos.id), found by its
+   caption, which is the same on every platform; `tt_views` and `tt_date` from the Metricool screenshot. Then
+   `node --env-file=.env scripts/posthog-videos.mjs` (the insight « Vues par vidéo, toutes plateformes »).
 5. **Tell the user** in 5 lines: signups this week (and vs last week), the best post and why it likely worked,
    the worst, one change to try, the 5 posts proposed for next week (as in `/contenu` step 1).
 6. A lesson that changes how we work goes under « Ce qu'on a appris » in the journal, dated.

@@ -19,7 +19,8 @@ et zéro inscrit est un échec ; on garde ce qui amène des gens sur animartai.c
 Le chiffre de la semaine : **inscrits par plateforme et par format**. Le reste sert à comprendre pourquoi.
 
 Les vidéos sont sur le dashboard PostHog **« Animart · Réseaux »** (https://eu.posthog.com/project/351733/dashboard/1122748) :
-abonnés, chaque post Instagram et YouTube, les meilleurs posts, et par jour les vues Instagram, les clics sur le lien
+**chaque vidéo avec ses vues sur chaque plateforme et le total** (d'après `strategie/videos.json`, la fiche qui dit
+quel post est quelle vidéo), abonnés, chaque post Instagram et YouTube, les meilleurs posts, et par jour les vues Instagram, les clics sur le lien
 en bio et les inscrits. Tables : `instagram_media`, `instagram_media_insights`, `instagram_account_insights`
 (dont `profile_links_taps`), `youtubedata_videos`, `youtubedata_channels`.
 

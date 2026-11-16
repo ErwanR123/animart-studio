@@ -1,0 +1,23 @@
+{
+  "_doc": "One row per video, the same video on every platform. ig = Instagram media id, yt = YouTube video id (both read by PostHog); tt_views = TikTok views read on the Metricool screenshot at each /bilan (TikTok is not in PostHog), with tt_date the day they were read. scripts/posthog-videos.mjs pushes this file to PostHog (view `videos`, dashboard « Animart · Réseaux »).",
+  "videos": [
+    { "id": "guide-athens", "title": "L'École d'Athènes", "format": "Le Guide", "ig": "17892625929458732", "yt": "mGsq5-1RLbA" },
+    { "id": "guide-scream", "title": "Le Cri", "format": "Le Guide", "ig": "18083153819341570", "yt": "wxbE5Yilzk8" },
+    { "id": "guide-runs-to-him", "title": "Tout le monde court vers lui", "format": "Le Guide", "yt": "ZRX2jId7ZHA" },
+    { "id": "guide-paris-rain", "title": "Rue de Paris, temps de pluie", "format": "Le Guide", "ig": "17893510377616491", "yt": "TomHtpLEkYo" },
+    { "id": "guide-alexander", "title": "Alexandre refuse de boire", "format": "Le Guide", "ig": "18118926971075806", "yt": "42vVsvMKdBw" },
+    { "id": "guide-mona-lisa", "title": "Le vol de la Joconde", "format": "Le Guide", "ig": "17934535557429339", "yt": "ouR4kZXCeiI" },
+    { "id": "guide-banksy", "title": "La toile autodétruite de Banksy", "format": "Le Guide", "ig": "17913553470475942", "yt": "nC5VeJ3hGcs" },
+    { "id": "guide-ambassadors", "title": "Les Ambassadeurs, le crâne caché", "format": "Le Guide", "ig": "18287539579295954", "yt": "uVgoukk9zUQ" },
+    { "id": "guide-caravaggio", "title": "Caravage, sa tête coupée", "format": "Le Guide", "ig": "18033602024681641", "yt": "5uSsUQJ2YOw" },
+    { "id": "guide-mondrian", "title": "Le Mondrian à l'envers", "format": "Le Guide", "ig": "18032121179688019", "yt": "VbKf9rK42Ls" },
+    { "id": "guide-banana", "title": "La banane mangée", "format": "Le Guide", "ig": "18038359949847492", "yt": "SnIH37EOIaU" },
+    { "id": "guide-ronin", "title": "Les 47 rōnin", "format": "Le Guide", "ig": "18166103227495580", "yt": "12WptnfqUMk" },
+    { "id": "guide-mummy-brown", "title": "Le brun momie", "format": "Le Guide", "ig": "18101095481546527", "yt": "YLT6EOxNV6E" },
+    { "id": "guide-restoration", "title": "La restauration moquée", "format": "Le Guide", "ig": "18432732871150098", "yt": "8vXtkfMoqqk" },
+    { "id": "guide-louis-heart", "title": "Le cœur de Louis XIV", "format": "Le Guide", "ig": "18343868218286724", "yt": "BkMvZZJJEr8" },
+    { "id": "guide-erased-ex", "title": "Il a effacé son ex", "format": "Le Guide", "yt": "c4uKpioWFX8" },
+    { "id": "guide-glasses", "title": "Les lunettes au musée", "format": "Le Guide", "ig": "18133662574684928", "yt": "6qAv67eNZow" },
+    { "id": "details-sacre", "title": "4 détails du Sacre de Napoléon", "format": "Détails", "ig": "18136661923820543", "yt": "sF36CBZpXkg" }
+  ]
+}
