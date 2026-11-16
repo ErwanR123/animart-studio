@@ -11,6 +11,9 @@ The whole script is one call (one steady tone), then cut into lines; the take is
 re-running never pays twice for the same text, voice and style (~$0.03 per new take).
   uv run scripts/voice-gemini.py <Episode> --tempo 1.1 --cap 0.2   # the studio's pace (bible/sound.md)
   uv run scripts/voice-check.py <Episode>                          # then check every cut
+  uv run scripts/voice-gemini.py <Episode> --splice hook,d5         # re-voice only these lines, keep the others' audio
+The hook is played faster than the rest (--hook-tempo): the first second decides whether people stay. Any line can
+set its own "tempo" in the script.
 Reads src/episodes/<Episode>.script.json, writes public/voice/<Episode>.mp3 + .json.
 """
 import argparse
@@ -44,10 +47,10 @@ def norm(s: str) -> str:
     return re.sub(r"[^\w]", "", s.lower())
 
 
-def synth(text: str, model: str, voice: str, key: str) -> tuple[bytes, int]:
+def synth(text: str, model: str, voice: str, key: str, style: str) -> tuple[bytes, int]:
     body = {
         "model": model,
-        "input": [{"type": "user_input", "content": [{"type": "text", "text": text, "annotations": [{"type": "speech_metadata", "style": STYLE}]}]}],
+        "input": [{"type": "user_input", "content": [{"type": "text", "text": text, "annotations": [{"type": "speech_metadata", "style": style}]}]}],
         "response_format": {"type": "audio"},
         "generation_config": {"speech_config": [{"voice": voice}]},
     }
@@ -80,12 +83,13 @@ def wav_pcm(audio: bytes, rate: int) -> tuple[bytes, int]:
     raise RuntimeError("WAV without a data chunk")
 
 
-def cached_line(text: str, model: str, voice: str, key: str, cache: Path) -> Path:
-    h = hashlib.sha1(f"{model}|{voice}|{STYLE}|{text}".encode()).hexdigest()[:16]
+def cached_line(text: str, model: str, voice: str, key: str, cache: Path, take: int = 1, style: str = STYLE) -> Path:
+    # Take 1 keeps the original key, so every cached take stays valid; take N > 1 is a fresh call for the same text.
+    h = hashlib.sha1(f"{model}|{voice}|{style}|{text}{f'|take{take}' if take > 1 else ''}".encode()).hexdigest()[:16]
     wav = cache / f"{h}.wav"
     if wav.exists():
         return wav
-    audio, rate = synth(text, model, voice, key)
+    audio, rate = synth(text, model, voice, key, style)
     pcm, rate = wav_pcm(audio, rate)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(rate), "-ac", "1", "-i", "-", str(wav)], input=pcm, check=True)
     return wav
@@ -95,9 +99,10 @@ def probe(path: Path) -> float:
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)]))
 
 
-def speech_bounds(path: Path) -> tuple[float, float]:
+def speech_bounds(path: Path, tail: float = 0.16) -> tuple[float, float]:
     """Where a cut line's speech starts and ends, from its loudness (20 ms frames). The breaths around it are left
-    out: kept at both ends of every cut, the next line's intake plus its own sounded like a double breath."""
+    out: kept at both ends of every cut, the next line's intake plus its own sounded like a double breath. `tail`: the
+    longest pause the end may run on across (a soft last phrase after a breath: "…l'encens sur leurs tombes")."""
     pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True, check=True).stdout
     x = np.frombuffer(pcm, np.float32)
     n = len(x) // 320
@@ -118,7 +123,7 @@ def speech_bounds(path: Path) -> tuple[float, float]:
         while a > 0 and on[a - 1]:
             a -= 1
     while True:
-        ahead = np.flatnonzero(on[b + 1 : b + 9])
+        ahead = np.flatnonzero(on[b + 1 : b + 1 + round(tail / 0.02)])
         if not len(ahead):
             break
         b += ahead[0] + 1
@@ -191,7 +196,7 @@ def align(text: str, heard: list, duration: float):
     out = []
     for k, tok in enumerate(tokens):
         ts = [times[i] for i in range(len(owner)) if owner[i] == k and times[i]]
-        out.append({"text": tok, "start": ts[0][0] if ts else None, "end": ts[-1][1] if ts else None})
+        out.append({"text": tok, "start": ts[0][0] if ts else None, "end": ts[-1][1] if ts else None, "heard": bool(ts)})
     # Unheard tokens (punctuation, misses): placed between their neighbours.
     for k, w in enumerate(out):
         if w["start"] is None:
@@ -209,20 +214,36 @@ def main():
     # Pauses inside a line (after a comma, a colon) cut down to this many seconds; a segment's own "pause" in the
     # script keeps a longer breath where the eloquence needs it (the last line). No new API call either.
     ap.add_argument("--cap", type=float, default=0.2, help="longest pause kept inside a line, seconds")
+    ap.add_argument("--take", type=int, default=1, help="another take of the same script (~$0.03 each, cached by number)")
+    ap.add_argument("--hook-tempo", type=float, default=1.3, help="the hook's speed-up (a quick, punchy opener)")
+    # A finished episode keeps its narration: only the rewritten or new lines are voiced (one call, their own take) and
+    # spliced between the others, cut from the current mp3; lines no longer in the script are dropped.
+    ap.add_argument("--splice", help="comma-separated segment ids to re-voice; every other line keeps its current audio")
     args = ap.parse_args()
     load_dotenv(Path(__file__).resolve().parents[1] / ".env")
     key = os.environ.get("GOOGLE_API_KEY")
-    voice = os.environ.get("GUIDE_VOICE_ID_GEMINI")
     model = os.environ.get("TTS_MODEL_GEMINI_PREMIUM") or "gemini-3.8-flash-tts"
+    script = json.loads(Path(f"src/episodes/{args.episode}.script.json").read_text())
+    # A series with its own narrator names its Gemini voice in the script ("voice": "Puck"); the Guide keeps the .env one.
+    voice = script.get("voice") or os.environ.get("GUIDE_VOICE_ID_GEMINI")
     if not key or not voice:
         raise SystemExit("GOOGLE_API_KEY and GUIDE_VOICE_ID_GEMINI must be set (repo-root .env)")
-    segments = json.loads(Path(f"src/episodes/{args.episode}.script.json").read_text())["segments"]
+    segments = script["segments"]
+    # A series with its own narrator (the Lesson notebook) sets its own delivery in the script; the Guide keeps STYLE.
+    style = script.get("style", STYLE)
     cache = Path("cache/gemini")
     cache.mkdir(parents=True, exist_ok=True)
+    out = Path(f"public/voice/{args.episode}")
+    old = json.loads(Path(f"{out}.json").read_text()) if args.splice else None
+    voiced = [x for x in segments if not args.splice or x["id"] in args.splice.split(",")]
+    if args.splice:
+        missing = [x["id"] for x in segments if x not in voiced and x["id"] not in {o["id"] for o in old["segments"]}]
+        if missing:
+            raise SystemExit(f"new lines with no audio yet: add {','.join(missing)} to --splice")
 
     if args.only:
         seg = next(x for x in segments if x["id"] == args.only)
-        wav = cached_line(seg["text"], model, voice, key, cache)
+        wav = cached_line(seg["text"], model, voice, key, cache, style=style)
         print(f"{args.only}: {probe(wav):.2f}s for {len(seg['text'].split())} words -> {wav}")
         return
     from faster_whisper import WhisperModel
@@ -233,38 +254,54 @@ def main():
     # The whole script in one call (one continuous tone: line-by-line calls change mood every sentence), then cut
     # into lines at the gaps between Whisper's words.
     # `say` (optional) is what the voice reads when it differs from the caption, e.g. a year spelled out.
-    spoken = [x.get("say", x["text"]) for x in segments]
-    full = cached_line("\n\n".join(spoken), model, voice, key, cache)
+    spoken = [x.get("say", x["text"]) for x in voiced]
+    full = cached_line("\n\n".join(spoken), model, voice, key, cache, args.take, style)
     pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", full, "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True, check=True).stdout
     heard_all = [w for s in whisper.transcribe(np.frombuffer(pcm, np.float32), language="fr", word_timestamps=True)[0] for w in s.words]
     # Delivery tags ("[whispers]", "[short pause]": bible/sound.md) are read by Gemini, never spoken: drop them to align.
     plain = [re.sub(r"\[[^\]]*\]\s*", "", x) for x in spoken]
     tokens = align(" ".join(plain), heard_all, probe(full))
+    # Each line's first and last heard words: an unheard token ("À" on "ancienne. À Rome") is only a guess placed at the
+    # previous word's end, and a cut searched from there landed a sentence early.
     spans, k = [], 0
     for x in plain:
         n = len(x.split())
-        spans.append((tokens[k]["start"], tokens[k + n - 1]["end"]))
+        heard = [w for w in tokens[k:k + n] if w["heard"]] or tokens[k:k + n]
+        spans.append((heard[0]["start"], heard[-1]["end"], heard[-1]["start"]))
         k += n
     # One cut between two lines, in the breath between them (the longest true silence in the 2 s before Whisper's
     # first word, or since the previous line's end if that is earlier): the end of one line and the start of the next
     # share it, so neither can take a syllable of the other. Whisper's times alone did that: on "1848. En 1853" they
     # collapsed onto one instant and "En mille" was cut off.
-    bounds = [0.0] + [silence_before(pcm, spans[i][0], max(spans[i - 1][0], min(spans[i - 1][1], spans[i][0] - 2.0))) for i in range(1, len(spans))] + [probe(full)]
+    # Never before the previous line's last word starts.
+    bounds = [0.0] + [silence_before(pcm, spans[i][0], max(spans[i - 1][0], spans[i - 1][2], min(spans[i - 1][1], spans[i][0] - 2.0))) for i in range(1, len(spans))] + [probe(full)]
     cuts = []
     for i in range(len(spans)):
         cut = tmp / f"raw-{i}.wav"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", full, "-ss", f"{bounds[i]:.3f}", "-to", f"{bounds[i + 1]:.3f}", cut], check=True)
         cuts.append(cut)
     for i, seg in enumerate(segments):
-        src = cuts[i]
         wav = tmp / f"{i}.wav"
+        if seg not in voiced:
+            # A kept line: its audio and words as they are in the current voice, moved to its new place.
+            o = next(x for x in old["segments"] if x["id"] == seg["id"])
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{out}.mp3", "-ss", f"{o['start']:.3f}", "-to", f"{o['end'] + GAP:.3f}", "-ar", "44100", "-ac", "1", wav], check=True)
+            duration = o["end"] - o["start"]
+            timed.append({"id": seg["id"], "start": t, "end": t + duration})
+            words += [dict(w, start=w["start"] - o["start"] + t, end=w["end"] - o["start"] + t) for w in old["words"] if w["segment"] == seg["id"]]
+            files.append(wav)
+            t += duration + GAP
+            print(f"  {seg['id']}: {duration:.2f}s, kept")
+            continue
+        src = cuts[voiced.index(seg)]
         # Keep the speech only, apply the tempo, then pad the gap.
         # The line is kept as Gemini spoke it (cutting pauses inside it made the voice stutter): only the silence
         # and breaths before and after it are trimmed, with short fades so the cut is never heard.
-        a, b = speech_bounds(src)
+        a, b = speech_bounds(src, seg.get("tail", 0.16))
         line = tmp / f"line-{i}.wav"
         cap_pauses(src, a, b, line, seg.get("pause", args.cap))
-        af = f"afade=t=in:d=0.03,areverse,afade=t=in:d=0.06,areverse,atempo={args.tempo},apad=pad_dur={GAP}"
+        tempo = seg.get("tempo", args.hook_tempo if seg["id"] == "hook" else args.tempo)
+        af = f"afade=t=in:d=0.03,areverse,afade=t=in:d=0.06,areverse,atempo={tempo},apad=pad_dur={GAP}"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", line, "-af", af, "-ar", "44100", "-ac", "1", wav], check=True)
         duration = probe(wav) - GAP
         # No initial prompt: biased with the script, Whisper sometimes skips most of a line.
@@ -277,7 +314,6 @@ def main():
         t += duration + GAP
         print(f"  {seg['id']}: {duration:.2f}s, {len(heard)} words heard")
     (tmp / "list.txt").write_text("\n".join(f"file '{f}'" for f in files))
-    out = Path(f"public/voice/{args.episode}")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", tmp / "list.txt", "-af", "loudnorm=I=-17:TP=-2:LRA=11,alimiter=limit=0.79:level=false", "-ar", "44100", "-b:a", "192k", f"{out}.mp3"], check=True)
     Path(f"{out}.json").write_text(json.dumps({"voice": f"gemini:{model}", "segments": timed, "words": words}, ensure_ascii=False, indent=1))
     print(f"wrote {out}.mp3 and {out}.json ({t:.1f}s)")

@@ -1,0 +1,35 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ces samouraïs ont attendu deux ans pour couper une seule tête."
+    },
+    {
+      "id": "context",
+      "text": "Japon, 1701. Leur seigneur sort son sabre contre un homme qui l'humilie, en plein palais du shogun.",
+      "say": "Japon, dix-sept cent un. Leur seigneur sort son sabre contre un homme qui l'humilie, en plein palais du shogoune."
+    },
+    {
+      "id": "d1",
+      "text": "C'est interdit. Il est condamné à mort le jour même. Ses samouraïs perdent tout."
+    },
+    {
+      "id": "d2",
+      "text": "Ils deviennent des rōnin, des samouraïs sans maître. Et ils jurent de le venger.",
+      "say": "Ils deviennent des rônine, des samouraïs sans maître. Et ils jurent de le venger."
+    },
+    {
+      "id": "d4",
+      "text": "Presque deux ans plus tard, une nuit de neige, ils attaquent la maison de l'ennemi. Et ils lui coupent la tête."
+    },
+    {
+      "id": "d5",
+      "text": "Ils la déposent sur la tombe de leur seigneur. Puis ils se rendent. Condamnés à mort, eux aussi."
+    },
+    {
+      "id": "d6",
+      "text": "Le Japon en a fait son modèle du samouraï : fidèle jusqu'à la mort. Aujourd'hui encore, on brûle de l'encens sur leurs tombes.",
+      "tail": 0.5
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 2.896712
+  },
+  {
+   "id": "context",
+   "start": 3.246712,
+   "end": 9.44898
+  },
+  {
+   "id": "d1",
+   "start": 9.79898,
+   "end": 14.187869000000001
+  },
+  {
+   "id": "d2",
+   "start": 14.537869,
+   "end": 18.483629
+  },
+  {
+   "id": "d3",
+   "start": 18.833629000000002,
+   "end": 22.697098
+  },
+  {
+   "id": "d4",
+   "start": 23.047098000000002,
+   "end": 26.289728000000004
+  },
+  {
+   "id": "d5",
+   "start": 26.639728,
+   "end": 31.211746
+  },
+  {
+   "id": "d6",
+   "start": 31.561746,
+   "end": 33.517143
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.0,
+   "end": 0.14,
+   "segment": "hook"
+  },
+  {
+   "text": "tableau",
+   "start": 0.14,
+   "end": 0.5,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 0.5,
+   "end": 0.68,
+   "segment": "hook"
+  },
+  {
+   "text": "été",
+   "start": 0.68,
+   "end": 0.8,
+   "segment": "hook"
+  },
+  {
+   "text": "peint",
+   "start": 0.8,
+   "end": 1.16,
+   "segment": "hook"
+  },
+  {
+   "text": "avec",
+   "start": 1.16,
+   "end": 1.36,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 1.36,
+   "end": 1.54,
+   "segment": "hook"
+  },
+  {
+   "text": "cœur",
+   "start": 1.54,
+   "end": 1.92,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 1.92,
+   "end": 2.22,
+   "segment": "hook"
+  },
+  {
+   "text": "Louis",
+   "start": 2.22,
+   "end": 2.34,
+   "segment": "hook"
+  },
+  {
+   "text": "XIV.",
+   "start": 2.34,
+   "end": 2.6,
+   "segment": "hook"
+  },
+  {
+   "text": "À",
+   "start": 3.246712,
+   "end": 3.346712,
+   "segment": "context"
+  },
+  {
+   "text": "sa",
+   "start": 3.346712,
+   "end": 3.426712,
+   "segment": "context"
+  },
+  {
+   "text": "mort,",
+   "start": 3.426712,
+   "end": 3.686712,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 4.006712,
+   "end": 4.046712,
+   "segment": "context"
+  },
+  {
+   "text": "1715,",
+   "start": 4.046712,
+   "end": 4.726712,
+   "segment": "context"
+  },
+  {
+   "text": "son",
+   "start": 5.386712,
+   "end": 5.486712000000001,
+   "segment": "context"
+  },
+  {
+   "text": "cœur",
+   "start": 5.486712000000001,
+   "end": 5.786712,
+   "segment": "context"
+  },
+  {
+   "text": "est",
+   "start": 5.786712,
+   "end": 6.106712,
+   "segment": "context"
+  },
+  {
+   "text": "embaumé",
+   "start": 6.106712,
+   "end": 6.706712,
+   "segment": "context"
+  },
+  {
+   "text": "et",
+   "start": 6.706712,
+   "end": 7.306711999999999,
+   "segment": "context"
+  },
+  {
+   "text": "placé",
+   "start": 7.306711999999999,
+   "end": 7.646712000000001,
+   "segment": "context"
+  },
+  {
+   "text": "dans",
+   "start": 7.646712000000001,
+   "end": 7.7467120000000005,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 7.7467120000000005,
+   "end": 7.906712000000001,
+   "segment": "context"
+  },
+  {
+   "text": "reliquaire",
+   "start": 7.906712000000001,
+   "end": 8.346712,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 8.346712,
+   "end": 8.446712,
+   "segment": "context"
+  },
+  {
+   "text": "vermeil,",
+   "start": 8.446712,
+   "end": 8.866712,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 8.866712,
+   "end": 9.126712,
+   "segment": "context"
+  },
+  {
+   "text": "Paris.",
+   "start": 9.126712,
+   "end": 9.326712,
+   "segment": "context"
+  },
+  {
+   "text": "Puis",
+   "start": 9.79898,
+   "end": 9.91898,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 9.91898,
+   "end": 10.07898,
+   "segment": "d1"
+  },
+  {
+   "text": "Révolution",
+   "start": 10.07898,
+   "end": 10.43898,
+   "segment": "d1"
+  },
+  {
+   "text": "arrive.",
+   "start": 10.43898,
+   "end": 10.678980000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "Le",
+   "start": 10.99898,
+   "end": 11.07898,
+   "segment": "d1"
+  },
+  {
+   "text": "reliquaire",
+   "start": 11.07898,
+   "end": 11.43898,
+   "segment": "d1"
+  },
+  {
+   "text": "est",
+   "start": 11.43898,
+   "end": 11.49898,
+   "segment": "d1"
+  },
+  {
+   "text": "fondu…",
+   "start": 11.49898,
+   "end": 11.87898,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 12.31898,
+   "end": 12.37898,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 12.37898,
+   "end": 12.49898,
+   "segment": "d1"
+  },
+  {
+   "text": "cœur",
+   "start": 12.49898,
+   "end": 12.71898,
+   "segment": "d1"
+  },
+  {
+   "text": "finit",
+   "start": 12.71898,
+   "end": 13.17898,
+   "segment": "d1"
+  },
+  {
+   "text": "chez",
+   "start": 13.17898,
+   "end": 13.47898,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 13.47898,
+   "end": 13.65898,
+   "segment": "d1"
+  },
+  {
+   "text": "peintre.",
+   "start": 13.65898,
+   "end": 14.078980000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "Alexandre",
+   "start": 14.537869,
+   "end": 15.077869,
+   "segment": "d2"
+  },
+  {
+   "text": "Pau",
+   "start": 15.077869,
+   "end": 15.377869,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 15.377869,
+   "end": 15.477869,
+   "segment": "d2"
+  },
+  {
+   "text": "Saint-Martin.",
+   "start": 15.477869,
+   "end": 16.057869,
+   "segment": "d2"
+  },
+  {
+   "text": "Il",
+   "start": 16.177869,
+   "end": 16.277869,
+   "segment": "d2"
+  },
+  {
+   "text": "en",
+   "start": 16.277869,
+   "end": 16.357869,
+   "segment": "d2"
+  },
+  {
+   "text": "découpe",
+   "start": 16.357869,
+   "end": 16.697869,
+   "segment": "d2"
+  },
+  {
+   "text": "des",
+   "start": 16.697869,
+   "end": 16.797869,
+   "segment": "d2"
+  },
+  {
+   "text": "morceaux,",
+   "start": 16.797869,
+   "end": 17.217869,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 17.217869,
+   "end": 17.337869,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 17.337869,
+   "end": 17.457869000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "broie",
+   "start": 17.457869000000002,
+   "end": 17.877869,
+   "segment": "d2"
+  },
+  {
+   "text": "en",
+   "start": 17.877869,
+   "end": 18.017869,
+   "segment": "d2"
+  },
+  {
+   "text": "couleur.",
+   "start": 18.017869,
+   "end": 18.217869,
+   "segment": "d2"
+  },
+  {
+   "text": "À",
+   "start": 18.833629000000002,
+   "end": 18.973629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "l'époque,",
+   "start": 18.973629000000003,
+   "end": 19.113629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "c'est",
+   "start": 19.213629,
+   "end": 19.273629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "normal",
+   "start": 19.273629000000003,
+   "end": 19.453629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": ":",
+   "start": 19.453629000000003,
+   "end": 19.703629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 19.933629000000003,
+   "end": 20.213629,
+   "segment": "d3"
+  },
+  {
+   "text": "peintres",
+   "start": 20.213629,
+   "end": 20.473629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "broient",
+   "start": 20.473629000000003,
+   "end": 20.733629,
+   "segment": "d3"
+  },
+  {
+   "text": "déjà",
+   "start": 20.733629,
+   "end": 20.933629000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 20.933629000000003,
+   "end": 21.053629,
+   "segment": "d3"
+  },
+  {
+   "text": "vraies",
+   "start": 21.053629,
+   "end": 21.253629000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "momies",
+   "start": 21.253629000000004,
+   "end": 21.513629,
+   "segment": "d3"
+  },
+  {
+   "text": "pour",
+   "start": 21.513629,
+   "end": 21.853629,
+   "segment": "d3"
+  },
+  {
+   "text": "peindre",
+   "start": 21.853629,
+   "end": 22.093629,
+   "segment": "d3"
+  },
+  {
+   "text": "leurs",
+   "start": 22.093629,
+   "end": 22.233629,
+   "segment": "d3"
+  },
+  {
+   "text": "ombres.",
+   "start": 22.233629,
+   "end": 22.573629000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "Avec",
+   "start": 23.047098000000002,
+   "end": 23.267098,
+   "segment": "d4"
+  },
+  {
+   "text": "ce",
+   "start": 23.267098,
+   "end": 23.447098,
+   "segment": "d4"
+  },
+  {
+   "text": "brun,",
+   "start": 23.447098,
+   "end": 23.667098000000003,
+   "segment": "d4"
+  },
+  {
+   "text": "il",
+   "start": 24.087098,
+   "end": 24.207098000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "peint",
+   "start": 24.207098000000002,
+   "end": 24.387098,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 24.387098,
+   "end": 24.547098000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "vue",
+   "start": 24.547098000000002,
+   "end": 24.727098,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 24.727098,
+   "end": 24.827098000000003,
+   "segment": "d4"
+  },
+  {
+   "text": "Caen,",
+   "start": 24.827098000000003,
+   "end": 25.087098,
+   "segment": "d4"
+  },
+  {
+   "text": "en",
+   "start": 25.087098,
+   "end": 25.447098,
+   "segment": "d4"
+  },
+  {
+   "text": "1810.",
+   "start": 25.447098,
+   "end": 26.027098000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "Deux",
+   "start": 26.639728,
+   "end": 27.119728000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "siècles",
+   "start": 27.119728000000002,
+   "end": 27.279728000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "plus",
+   "start": 27.279728000000002,
+   "end": 27.439728000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "tard,",
+   "start": 27.439728000000002,
+   "end": 27.679728,
+   "segment": "d5"
+  },
+  {
+   "text": "un",
+   "start": 28.059728,
+   "end": 28.219728000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "médecin",
+   "start": 28.219728000000003,
+   "end": 28.439728000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "légiste",
+   "start": 28.439728000000002,
+   "end": 28.799728,
+   "segment": "d5"
+  },
+  {
+   "text": "analyse",
+   "start": 28.799728,
+   "end": 29.179728,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 29.179728,
+   "end": 29.359728,
+   "segment": "d5"
+  },
+  {
+   "text": "peinture…",
+   "start": 29.359728,
+   "end": 29.759728000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "et",
+   "start": 29.759728000000003,
+   "end": 30.119728000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "y",
+   "start": 30.119728000000002,
+   "end": 30.159728,
+   "segment": "d5"
+  },
+  {
+   "text": "retrouve",
+   "start": 30.159728,
+   "end": 30.419728000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 30.419728000000003,
+   "end": 30.579728000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "restes",
+   "start": 30.579728000000003,
+   "end": 30.819728,
+   "segment": "d5"
+  },
+  {
+   "text": "du",
+   "start": 30.819728,
+   "end": 30.879728,
+   "segment": "d5"
+  },
+  {
+   "text": "cœur.",
+   "start": 30.879728,
+   "end": 31.059728,
+   "segment": "d5"
+  },
+  {
+   "text": "Et",
+   "start": 31.561746,
+   "end": 31.801745999999998,
+   "segment": "d6"
+  },
+  {
+   "text": "c'est",
+   "start": 31.801745999999998,
+   "end": 31.901746,
+   "segment": "d6"
+  },
+  {
+   "text": "pour",
+   "start": 31.901746,
+   "end": 32.001746,
+   "segment": "d6"
+  },
+  {
+   "text": "ça",
+   "start": 32.001746,
+   "end": 32.081746,
+   "segment": "d6"
+  },
+  {
+   "text": "qu'aujourd'hui,",
+   "start": 32.081746,
+   "end": 32.501746,
+   "segment": "d6"
+  },
+  {
+   "text": "on",
+   "start": 32.821746,
+   "end": 32.961746,
+   "segment": "d6"
+  },
+  {
+   "text": "peut",
+   "start": 32.961746,
+   "end": 33.061746,
+   "segment": "d6"
+  },
+  {
+   "text": "le",
+   "start": 33.061746,
+   "end": 33.121746,
+   "segment": "d6"
+  },
+  {
+   "text": "dire",
+   "start": 33.121746,
+   "end": 33.261746,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 33.261746,
+   "end": 33.511746,
+   "segment": "d6"
+  }
+ ]
+}

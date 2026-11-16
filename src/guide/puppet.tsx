@@ -9,7 +9,9 @@ export type Pose =
   | "explaining" | "celebrating" | "satchel" | "reading" | "back" | "point-left" | "point-right"
   // The bank, generated from the canonical sheet alone (scripts/guide-generate.py, sheet_bank_1/2.png).
   | "ears" | "thinking" | "amazed" | "point-up" | "shh" | "shrug" | "writing" | "walking"
-  | "scared" | "whisper" | "counting" | "card" | "skeptical" | "sitting" | "loupe" | "waving";
+  | "scared" | "whisper" | "counting" | "card" | "skeptical" | "sitting" | "loupe" | "waving"
+  // sheet_bank_3.png: the rainy-day set (the expo agenda).
+  | "cozy" | "cape" | "map" | "ticket" | "umbrella" | "phone" | "point-down" | "shiver";
 
 // Pixel size (2× the sheet), the feet's horizontal centre and the mouth, as fractions of the image.
 // `left`: the drawing faces left; it is mirrored so the Guide always faces right, towards his bubble and the screen.
@@ -37,6 +39,14 @@ const POSES: Record<Pose, { w: number; h: number; footX: number; mouth: [number,
   sitting: { w: 617, h: 896, footX: 0.58, mouth: [0.5, 0.3], left: true },
   loupe: { w: 666, h: 866, footX: 0.51, mouth: [0.61, 0.28] },
   waving: { w: 655, h: 896, footX: 0.46, mouth: [0.57, 0.27] },
+  cozy: { w: 835, h: 858, footX: 0.49, mouth: [0.37, 0.17] },
+  cape: { w: 628, h: 893, footX: 0.48, mouth: [0.33, 0.2] },
+  map: { w: 642, h: 858, footX: 0.51, mouth: [0.45, 0.21] },
+  ticket: { w: 582, h: 864, footX: 0.52, mouth: [0.45, 0.17] },
+  umbrella: { w: 710, h: 926, footX: 0.42, mouth: [0.4, 0.29] },
+  phone: { w: 588, h: 878, footX: 0.42, mouth: [0.28, 0.26] },
+  "point-down": { w: 616, h: 817, footX: 0.43, mouth: [0.53, 0.23] },
+  shiver: { w: 485, h: 853, footX: 0.44, mouth: [0.42, 0.24] },
 };
 export const SCALE = 0.58; // ~1 sheet pixel per video pixel: the drawing stays crisp
 const PAD = 24; // transparent margin under the feet in every pose file

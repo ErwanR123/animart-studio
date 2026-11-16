@@ -7,16 +7,16 @@ guide; tip collection "Claude Motion Tips"). Copy, fill, paste into Claude Code 
 
 ```xml
 <painting>Artist, title, museum. Image: public/art/<file>.jpg (and the other walls if it is a fresco in a room)</painting>
-<angle>The hook: a question or a surprising statement with a named subject (bible/script.md rule 7).</angle>
+<angle>The hook: a teaser of a fact the video pays off later, ≤ 12 words (bible/format.md, the hook).</angle>
 <audience>French-speaking TikTok/Reels viewers, curious, not specialists. Sound off for many of them.</audience>
 <must_show>The details of the painting the story rests on, and the story around it (the time, the place, the
 documents) to show in collage shots.</must_show>
 <tone>The Guide: warm, curious, never professorial (bible/character.md).</tone>
-<constraints>55–70 s, vouvoiement, format bible/format.md, script rules bible/script.md, effects only from the approved list in
+<constraints>About 40 s, vouvoiement, format bible/format.md, script rules bible/script.md, effects only from the approved list in
 bible/art-direction.md, sound bible/sound.md. Check every fact against the museum page and Wikipedia; list sources
 in the file header. One paid voice take per script version.</constraints>
-<deliverable>Use /episode (bible/workflow.md): show me the script, then the storyboard as still images of every
-collage shot, before animating; then the contact sheet before the master.</deliverable>
+<deliverable>Use /episode (bible/workflow.md): show me the script with its signature moment, then the finished
+video once scripts/episode-check.py passes.</deliverable>
 ```
 
 ## One-second test (before building an effect into an episode)

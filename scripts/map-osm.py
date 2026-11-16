@@ -1,5 +1,6 @@
 # /// script
 # requires-python = ">=3.11"
+# dependencies = ["shapely"]
 # ///
 """A flat map for the collage shots from OpenStreetMap (Overpass, free, no key): a boundary to fill as land, rivers,
 named streets to draw on as routes, named places to pin. Writes src/guide/maps/<name>.ts: SVG paths in a viewBox
@@ -7,6 +8,11 @@ named streets to draw on as routes, named places to pin. Writes src/guide/maps/<
 
   uv run scripts/map-osm.py paris --bbox 48.815,2.224,48.902,2.470 --boundary 7444 --river "La Seine" \
       --way "Boulevard de Sébastopol" --way "Rue de Rivoli" --point "Opéra Garnier"
+
+--coast fills the land from the real coastline (Natural Earth 1:10m, public domain, cached in cache/) clipped to the
+bbox, for a map of a sea and its shores: a country's OSM boundary runs out at sea along its territorial waters.
+
+  uv run scripts/map-osm.py italie-malte --bbox 35.7,10.4,43.0,17.2 --coast --point "Rome=41.893,12.483" …
 """
 
 import argparse
@@ -19,6 +25,7 @@ import urllib.request
 from pathlib import Path
 
 OVERPASS = "https://overpass-api.de/api/interpreter"
+NATURAL_EARTH = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_land.geojson"
 OUT = Path(__file__).resolve().parent.parent / "src" / "guide" / "maps"
 
 
@@ -101,9 +108,10 @@ def main() -> None:
     p.add_argument("name")
     p.add_argument("--bbox", required=True, help="south,west,north,east")
     p.add_argument("--boundary", type=int, help="OSM relation id of the land to fill")
+    p.add_argument("--coast", action="store_true", help="fill the land from Natural Earth's coastline instead")
     p.add_argument("--river", action="append", default=[])
     p.add_argument("--way", action="append", default=[], help="a named street (drawn on as a route)")
-    p.add_argument("--point", action="append", default=[], help="a named place (node or building) to pin")
+    p.add_argument("--point", action="append", default=[], help="a named place (node or building) to pin, or Name=lat,lon")
     p.add_argument("--tol", type=float, default=0.8)
     a = p.parse_args()
 
@@ -131,6 +139,21 @@ def main() -> None:
         rel = query(f"[out:json][timeout:120];relation({a.boundary});out geom;")[0]
         outer = [[xy(g["lat"], g["lon"]) for g in m["geometry"]] for m in rel["members"] if m["type"] == "way" and m.get("role") == "outer"]
         data["land"] = path(stitch(outer), close=True)
+    if a.coast:
+        from shapely.geometry import box, shape
+
+        src = OUT.parent.parent.parent / "cache" / "ne_10m_land.geojson"
+        if not src.exists():
+            src.parent.mkdir(parents=True, exist_ok=True)
+            urllib.request.urlretrieve(NATURAL_EARTH, src)
+        frame = box(w, s, e, n)
+        rings = []
+        for f in json.loads(src.read_text())["features"]:
+            clipped = shape(f["geometry"]).intersection(frame)
+            for poly in getattr(clipped, "geoms", [clipped]):
+                if poly.geom_type == "Polygon" and not poly.is_empty:
+                    rings.append([xy(lat, lon) for lon, lat in poly.exterior.coords])
+        data["land"] = path(rings, close=True)
     for name in a.river:
         els = query(f'[out:json][timeout:120];way["waterway"="river"]["name"="{name}"]{bb};out geom;')
         data["rivers"][name] = path(stitch([[xy(g["lat"], g["lon"]) for g in el["geometry"]] for el in els]))
@@ -139,6 +162,10 @@ def main() -> None:
         data["ways"][name] = path([centreline([xy(g["lat"], g["lon"]) for el in els for g in el["geometry"]])])
         print(f"{name}: {len(els)} ways")
     for name in a.point:
+        if "=" in name:  # a place given by its coordinates ("Napoli=40.852,14.268"): no lookup to land on a namesake
+            name, at = name.split("=")
+            data["points"][name] = list(xy(*(float(v) for v in at.split(","))))
+            continue
         els = query(f'[out:json][timeout:120];nwr["name"="{name}"]{bb};out center;')
         if not els:
             print(f"!! {name}: not found")

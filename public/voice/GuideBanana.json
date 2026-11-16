@@ -1,0 +1,678 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 2.910476
+  },
+  {
+   "id": "context",
+   "start": 3.260476,
+   "end": 4.408118
+  },
+  {
+   "id": "d0",
+   "start": 4.758118,
+   "end": 9.575804999999999
+  },
+  {
+   "id": "d1",
+   "start": 9.925805,
+   "end": 17.884286000000003
+  },
+  {
+   "id": "d2",
+   "start": 18.234286,
+   "end": 22.799048000000003
+  },
+  {
+   "id": "d3",
+   "start": 23.149048,
+   "end": 29.379388
+  },
+  {
+   "id": "d4",
+   "start": 29.729388,
+   "end": 34.643198
+  }
+ ],
+ "words": [
+  {
+   "text": "Il",
+   "start": 0.0,
+   "end": 0.18,
+   "segment": "hook"
+  },
+  {
+   "text": "vient",
+   "start": 0.18,
+   "end": 0.44,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 0.44,
+   "end": 0.64,
+   "segment": "hook"
+  },
+  {
+   "text": "manger",
+   "start": 0.64,
+   "end": 0.92,
+   "segment": "hook"
+  },
+  {
+   "text": "une",
+   "start": 0.92,
+   "end": 1.1,
+   "segment": "hook"
+  },
+  {
+   "text": "œuvre",
+   "start": 1.1,
+   "end": 1.42,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 1.42,
+   "end": 1.6,
+   "segment": "hook"
+  },
+  {
+   "text": "cent",
+   "start": 1.6,
+   "end": 1.85,
+   "segment": "hook"
+  },
+  {
+   "text": "vingt",
+   "start": 1.85,
+   "end": 2.1,
+   "segment": "hook"
+  },
+  {
+   "text": "mille",
+   "start": 2.1,
+   "end": 2.32,
+   "segment": "hook"
+  },
+  {
+   "text": "dollars.",
+   "start": 2.32,
+   "end": 2.58,
+   "segment": "hook"
+  },
+  {
+   "text": "Et",
+   "start": 3.260476,
+   "end": 3.4404760000000003,
+   "segment": "context"
+  },
+  {
+   "text": "ce",
+   "start": 3.4404760000000003,
+   "end": 3.5204760000000004,
+   "segment": "context"
+  },
+  {
+   "text": "n'était",
+   "start": 3.5204760000000004,
+   "end": 3.680476,
+   "segment": "context"
+  },
+  {
+   "text": "que",
+   "start": 3.680476,
+   "end": 3.740476,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 3.740476,
+   "end": 3.8404760000000002,
+   "segment": "context"
+  },
+  {
+   "text": "première",
+   "start": 3.8404760000000002,
+   "end": 4.020476,
+   "segment": "context"
+  },
+  {
+   "text": "fois.",
+   "start": 4.020476,
+   "end": 4.260476000000001,
+   "segment": "context"
+  },
+  {
+   "text": "La",
+   "start": 4.758118,
+   "end": 4.978117999999999,
+   "segment": "d0"
+  },
+  {
+   "text": "galerie",
+   "start": 4.978117999999999,
+   "end": 5.398117999999999,
+   "segment": "d0"
+  },
+  {
+   "text": "ne",
+   "start": 5.398117999999999,
+   "end": 5.578118,
+   "segment": "d0"
+  },
+  {
+   "text": "s'énerve",
+   "start": 5.578118,
+   "end": 5.978117999999999,
+   "segment": "d0"
+  },
+  {
+   "text": "même",
+   "start": 5.978117999999999,
+   "end": 6.1781179999999996,
+   "segment": "d0"
+  },
+  {
+   "text": "pas",
+   "start": 6.1781179999999996,
+   "end": 6.538118,
+   "segment": "d0"
+  },
+  {
+   "text": ":",
+   "start": 6.538118,
+   "end": 6.788118,
+   "segment": "d0"
+  },
+  {
+   "text": "elle",
+   "start": 6.958118,
+   "end": 7.1381179999999995,
+   "segment": "d0"
+  },
+  {
+   "text": "sort",
+   "start": 7.1381179999999995,
+   "end": 7.478118,
+   "segment": "d0"
+  },
+  {
+   "text": "une",
+   "start": 7.478118,
+   "end": 7.6781179999999996,
+   "segment": "d0"
+  },
+  {
+   "text": "banane",
+   "start": 7.6781179999999996,
+   "end": 8.058118,
+   "segment": "d0"
+  },
+  {
+   "text": "neuve",
+   "start": 8.058118,
+   "end": 8.518118,
+   "segment": "d0"
+  },
+  {
+   "text": "et",
+   "start": 8.518118,
+   "end": 8.638117999999999,
+   "segment": "d0"
+  },
+  {
+   "text": "la",
+   "start": 8.638117999999999,
+   "end": 8.758118,
+   "segment": "d0"
+  },
+  {
+   "text": "scotche",
+   "start": 8.758118,
+   "end": 9.038118,
+   "segment": "d0"
+  },
+  {
+   "text": "au",
+   "start": 9.038118,
+   "end": 9.158118,
+   "segment": "d0"
+  },
+  {
+   "text": "mur.",
+   "start": 9.158118,
+   "end": 9.338118,
+   "segment": "d0"
+  },
+  {
+   "text": "Séoul,",
+   "start": 9.925805,
+   "end": 10.425805,
+   "segment": "d1"
+  },
+  {
+   "text": "2023",
+   "start": 10.585805,
+   "end": 11.205805,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 11.205805,
+   "end": 11.455805,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 11.705805,
+   "end": 11.805805,
+   "segment": "d1"
+  },
+  {
+   "text": "étudiant",
+   "start": 11.805805,
+   "end": 12.245805,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 12.245805,
+   "end": 12.465805,
+   "segment": "d1"
+  },
+  {
+   "text": "mange",
+   "start": 12.465805,
+   "end": 12.765805,
+   "segment": "d1"
+  },
+  {
+   "text": "au",
+   "start": 12.765805,
+   "end": 13.005805,
+   "segment": "d1"
+  },
+  {
+   "text": "musée.",
+   "start": 13.005805,
+   "end": 13.345805,
+   "segment": "d1"
+  },
+  {
+   "text": "Son",
+   "start": 13.545805000000001,
+   "end": 13.645805000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "excuse",
+   "start": 13.645805000000001,
+   "end": 13.945805,
+   "segment": "d1"
+  },
+  {
+   "text": "?",
+   "start": 13.945805,
+   "end": 14.195805,
+   "segment": "d1"
+  },
+  {
+   "text": "Il",
+   "start": 14.365805000000002,
+   "end": 14.465805,
+   "segment": "d1"
+  },
+  {
+   "text": "avait",
+   "start": 14.465805,
+   "end": 14.605805,
+   "segment": "d1"
+  },
+  {
+   "text": "sauté",
+   "start": 14.605805,
+   "end": 14.965805,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 14.965805,
+   "end": 15.025805,
+   "segment": "d1"
+  },
+  {
+   "text": "petit-déj.",
+   "start": 15.025805,
+   "end": 15.465805,
+   "segment": "d1"
+  },
+  {
+   "text": "Et",
+   "start": 15.725805000000001,
+   "end": 15.805805,
+   "segment": "d1"
+  },
+  {
+   "text": "il",
+   "start": 15.805805,
+   "end": 15.945805,
+   "segment": "d1"
+  },
+  {
+   "text": "recolle",
+   "start": 15.945805,
+   "end": 16.585805,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 16.585805,
+   "end": 16.785805,
+   "segment": "d1"
+  },
+  {
+   "text": "peau",
+   "start": 16.785805,
+   "end": 17.205805,
+   "segment": "d1"
+  },
+  {
+   "text": "au",
+   "start": 17.205805,
+   "end": 17.405805,
+   "segment": "d1"
+  },
+  {
+   "text": "mur.",
+   "start": 17.405805,
+   "end": 17.585805,
+   "segment": "d1"
+  },
+  {
+   "text": "New",
+   "start": 18.234286,
+   "end": 18.394286,
+   "segment": "d2"
+  },
+  {
+   "text": "York,",
+   "start": 18.394286,
+   "end": 18.654286,
+   "segment": "d2"
+  },
+  {
+   "text": "2024",
+   "start": 18.654286,
+   "end": 19.414286,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 19.414286,
+   "end": 19.664286,
+   "segment": "d2"
+  },
+  {
+   "text": "elle",
+   "start": 19.714286,
+   "end": 19.894286,
+   "segment": "d2"
+  },
+  {
+   "text": "se",
+   "start": 19.894286,
+   "end": 20.054286,
+   "segment": "d2"
+  },
+  {
+   "text": "vend",
+   "start": 20.054286,
+   "end": 20.174286000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "six",
+   "start": 20.174286000000002,
+   "end": 20.424286000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "millions.",
+   "start": 20.634286,
+   "end": 21.014286000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "Et",
+   "start": 21.014286000000002,
+   "end": 21.434286,
+   "segment": "d2"
+  },
+  {
+   "text": "l'acheteur…",
+   "start": 21.434286,
+   "end": 21.954286,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 21.954286,
+   "end": 22.234286,
+   "segment": "d2"
+  },
+  {
+   "text": "mange",
+   "start": 22.234286,
+   "end": 22.434286,
+   "segment": "d2"
+  },
+  {
+   "text": "aussi.",
+   "start": 22.434286,
+   "end": 22.654286000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "Le",
+   "start": 23.149048,
+   "end": 23.309048,
+   "segment": "d3"
+  },
+  {
+   "text": "secret",
+   "start": 23.309048,
+   "end": 23.569048000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "?",
+   "start": 23.569048000000002,
+   "end": 23.819048000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "L'acheteur",
+   "start": 24.229048,
+   "end": 24.789048,
+   "segment": "d3"
+  },
+  {
+   "text": "ne",
+   "start": 24.789048,
+   "end": 24.909048000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "reçoit",
+   "start": 24.909048000000002,
+   "end": 25.229048,
+   "segment": "d3"
+  },
+  {
+   "text": "pas",
+   "start": 25.229048,
+   "end": 25.309048,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 25.309048,
+   "end": 25.409048,
+   "segment": "d3"
+  },
+  {
+   "text": "banane.",
+   "start": 25.409048,
+   "end": 25.809048,
+   "segment": "d3"
+  },
+  {
+   "text": "Juste",
+   "start": 26.049048,
+   "end": 26.269048,
+   "segment": "d3"
+  },
+  {
+   "text": "un",
+   "start": 26.269048,
+   "end": 26.449048,
+   "segment": "d3"
+  },
+  {
+   "text": "certificat…",
+   "start": 26.449048,
+   "end": 27.209048,
+   "segment": "d3"
+  },
+  {
+   "text": "et",
+   "start": 27.329048,
+   "end": 27.429048,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 27.429048,
+   "end": 27.829048,
+   "segment": "d3"
+  },
+  {
+   "text": "droit",
+   "start": 27.829048,
+   "end": 28.049048,
+   "segment": "d3"
+  },
+  {
+   "text": "d'en",
+   "start": 28.049048,
+   "end": 28.289048,
+   "segment": "d3"
+  },
+  {
+   "text": "scotcher",
+   "start": 28.289048,
+   "end": 28.729048,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 28.729048,
+   "end": 28.929048,
+   "segment": "d3"
+  },
+  {
+   "text": "neuve.",
+   "start": 28.929048,
+   "end": 29.269048,
+   "segment": "d3"
+  },
+  {
+   "text": "Chaque",
+   "start": 29.729388,
+   "end": 30.389388,
+   "segment": "d4"
+  },
+  {
+   "text": "bouchée",
+   "start": 30.389388,
+   "end": 30.749388,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 30.749388,
+   "end": 31.049388,
+   "segment": "d4"
+  },
+  {
+   "text": "rend",
+   "start": 31.049388,
+   "end": 31.189388,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 31.189388,
+   "end": 31.429388,
+   "segment": "d4"
+  },
+  {
+   "text": "célèbre…",
+   "start": 31.429388,
+   "end": 31.909388,
+   "segment": "d4"
+  },
+  {
+   "text": "et",
+   "start": 31.909388,
+   "end": 32.169388,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 32.169388,
+   "end": 32.349388000000005,
+   "segment": "d4"
+  },
+  {
+   "text": "chère.",
+   "start": 32.349388000000005,
+   "end": 32.769388,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 32.989388000000005,
+   "end": 33.269388,
+   "segment": "d4"
+  },
+  {
+   "text": "tout",
+   "start": 33.269388,
+   "end": 33.549388,
+   "segment": "d4"
+  },
+  {
+   "text": "a",
+   "start": 33.549388,
+   "end": 33.749387999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "commencé",
+   "start": 33.749387999999996,
+   "end": 34.169388,
+   "segment": "d4"
+  },
+  {
+   "text": "quand…",
+   "start": 34.169388,
+   "end": 34.509388,
+   "segment": "d4"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "segments": [
+    { "id": "hook", "text": "Il vient de manger une œuvre à cent vingt mille dollars." },
+    { "id": "context", "text": "Et ce n'était que la première fois." },
+    { "id": "d0", "text": "La galerie ne s'énerve même pas : elle sort une banane neuve et la scotche au mur." },
+    { "id": "d1", "text": "Séoul, 2023 : un étudiant la mange au musée. Son excuse ? Il avait sauté le petit-déj. Et il recolle la peau au mur." },
+    { "id": "d2", "text": "New York, 2024 : elle se vend six millions. Et l'acheteur… la mange aussi." },
+    { "id": "d3", "text": "Le secret ? L'acheteur ne reçoit pas de banane. Juste un certificat… et le droit d'en scotcher une neuve." },
+    { "id": "d4", "text": "Chaque bouchée la rend plus célèbre… et plus chère. Et tout a commencé quand…" }
+  ]
+}

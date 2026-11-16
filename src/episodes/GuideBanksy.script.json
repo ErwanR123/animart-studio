@@ -1,0 +1,33 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce tableau vient d'être vendu un million… et il s'autodétruit devant tout le monde."
+    },
+    {
+      "id": "context",
+      "text": "Des années plus tôt, Banksy, l'artiste dont personne ne connaît le visage, avait vendu cette toile à un collectionneur."
+    },
+    {
+      "id": "d1",
+      "text": "Mais il avait caché une broyeuse dans le cadre… « au cas où elle passerait un jour aux enchères »."
+    },
+    {
+      "id": "d2",
+      "text": "Parce que Banksy déteste qu'on transforme l'art en placement pour riches. Il a même peint une vente aux enchères avec ce message : « Je n'arrive pas à croire que vous, abrutis, achetiez ça. »"
+    },
+    {
+      "id": "d3",
+      "text": "Octobre 2018 : le tableau est mis en vente chez Sotheby's. Un million… adjugé. Et la broyeuse se déclenche.",
+      "say": "Octobre deux mille dix-huit : le tableau est mis en vente chez Sotheby's. Un million… adjugé. Et la broyeuse se déclenche."
+    },
+    {
+      "id": "d4",
+      "text": "Sauf qu'elle se bloque à mi-chemin. Trois ans plus tard, l'œuvre à moitié broyée est revendue… dix-huit millions."
+    },
+    {
+      "id": "d5",
+      "text": "Le marché a transformé sa protestation en record. Alors, qui a gagné : Banksy… ou les abrutis ?"
+    }
+  ]
+}

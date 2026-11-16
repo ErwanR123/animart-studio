@@ -1,0 +1,50 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ils ont bradé ce tableau 45 livres.",
+      "say": "Ils ont bradé ce tableau quarante-cinq livres."
+    },
+    {
+      "id": "context",
+      "text": "C'était un Léonard de Vinci. Il s'est revendu 450 millions de dollars.",
+      "say": "C'était un Léonard de Vinci. Il s'est revendu quatre cent cinquante millions de dollars."
+    },
+    {
+      "id": "d1",
+      "text": "Comment on peut rater un Léonard ? Regardez-le en 1958. Repeint de partout. Pour tout le monde, c'est une copie.",
+      "say": "Comment on peut rater un Léonard ? Regardez-le en mille neuf cent cinquante-huit. Repeint de partout. Pour tout le monde, c'est une copie."
+    },
+    {
+      "id": "d2",
+      "text": "En 2005, deux marchands le rachètent pour trois fois rien… et le nettoient.",
+      "say": "En deux mille cinq, deux marchands le rachètent pour trois fois rien… et le nettoient."
+    },
+    {
+      "id": "d3",
+      "text": "Sous la peinture, ils tombent sur un pouce. Puis un deuxième."
+    },
+    {
+      "id": "d4",
+      "text": "Le peintre a hésité. Un copiste, lui, n'hésite pas : il recopie."
+    },
+    {
+      "id": "d5",
+      "text": "Donc c'est Léonard. Record du monde : 450 millions.",
+      "say": "Donc c'est Léonard. Record du monde : quatre cent cinquante millions."
+    },
+    {
+      "id": "d6",
+      "text": "Sauf que… regardez sa main gauche. Une vraie boule de cristal déforme tout ce qu'il y a derrière. Celle-là, rien."
+    },
+    {
+      "id": "d7",
+      "text": "Et Léonard était le roi de l'optique. Depuis la vente, l'acheteur ne l'a plus jamais montré."
+    },
+    {
+      "id": "d8",
+      "text": "Alors : 450 millions pour un Léonard… ou pour une copie à 45 livres ?",
+      "say": "Alors : quatre cent cinquante millions pour un Léonard… ou pour une copie à quarante-cinq livres ?"
+    }
+  ]
+}

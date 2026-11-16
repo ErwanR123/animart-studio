@@ -1,0 +1,40 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce garçon vient de tomber du ciel. Et personne ne lève la tête."
+    },
+    {
+      "id": "context",
+      "text": "Le laboureur continue son sillon. Le pêcheur, à deux mètres, fixe sa ligne."
+    },
+    {
+      "id": "d1",
+      "text": "Ce garçon, c'est Icare. Il y a une minute, il volait."
+    },
+    {
+      "id": "d2",
+      "text": "Son père Dédale, prisonnier en Crète avec lui, leur a fabriqué des ailes de plumes et de cire."
+    },
+    {
+      "id": "d3",
+      "text": "Une seule règle : pas trop près du soleil. Mais Icare se grise. Il monte, il monte…"
+    },
+    {
+      "id": "d4",
+      "text": "La cire fond. Il tombe dans la mer."
+    },
+    {
+      "id": "d5",
+      "text": "Dans le poème d'Ovide, tout le monde lève les yeux. Le peintre, lui, les fait regarder ailleurs."
+    },
+    {
+      "id": "d6",
+      "text": "Un seul témoin le regarde couler : cette perdrix. Le neveu que Dédale avait poussé dans le vide, par jalousie."
+    },
+    {
+      "id": "d7",
+      "text": "Les dieux l'ont changé en oiseau. Pour tous les autres… ce n'est rien."
+    }
+  ]
+}

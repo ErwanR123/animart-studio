@@ -1,0 +1,817 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.238889
+  },
+  {
+   "id": "intro",
+   "start": 4.588889,
+   "end": 5.880227
+  },
+  {
+   "id": "one",
+   "start": 6.230227,
+   "end": 13.001270000000002
+  },
+  {
+   "id": "two",
+   "start": 13.35127,
+   "end": 18.15025
+  },
+  {
+   "id": "three",
+   "start": 18.50025,
+   "end": 26.244014
+  },
+  {
+   "id": "outro",
+   "start": 26.594014,
+   "end": 31.708526000000003
+  }
+ ],
+ "words": [
+  {
+   "text": "Pourquoi",
+   "start": 0.0,
+   "end": 0.28,
+   "segment": "hook"
+  },
+  {
+   "text": "les",
+   "start": 0.28,
+   "end": 0.54,
+   "segment": "hook"
+  },
+  {
+   "text": "bébés",
+   "start": 0.54,
+   "end": 0.8,
+   "segment": "hook"
+  },
+  {
+   "text": "du",
+   "start": 0.8,
+   "end": 0.84,
+   "segment": "hook"
+  },
+  {
+   "text": "Moyen",
+   "start": 0.84,
+   "end": 1.08,
+   "segment": "hook"
+  },
+  {
+   "text": "Âge",
+   "start": 1.08,
+   "end": 1.28,
+   "segment": "hook"
+  },
+  {
+   "text": "ont",
+   "start": 1.28,
+   "end": 1.4,
+   "segment": "hook"
+  },
+  {
+   "text": "tous",
+   "start": 1.4,
+   "end": 1.54,
+   "segment": "hook"
+  },
+  {
+   "text": "une",
+   "start": 1.54,
+   "end": 1.72,
+   "segment": "hook"
+  },
+  {
+   "text": "tête",
+   "start": 1.72,
+   "end": 1.84,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 1.84,
+   "end": 1.96,
+   "segment": "hook"
+  },
+  {
+   "text": "comptable",
+   "start": 1.96,
+   "end": 2.3,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 2.3,
+   "end": 2.4,
+   "segment": "hook"
+  },
+  {
+   "text": "50",
+   "start": 2.4,
+   "end": 2.62,
+   "segment": "hook"
+  },
+  {
+   "text": "ans",
+   "start": 2.62,
+   "end": 2.82,
+   "segment": "hook"
+  },
+  {
+   "text": "?",
+   "start": 2.82,
+   "end": 3.02,
+   "segment": "hook"
+  },
+  {
+   "text": "Spoiler",
+   "start": 3.02,
+   "end": 3.46,
+   "segment": "hook"
+  },
+  {
+   "text": ":",
+   "start": 3.46,
+   "end": 3.7,
+   "segment": "hook"
+  },
+  {
+   "text": "c'est",
+   "start": 3.7,
+   "end": 3.78,
+   "segment": "hook"
+  },
+  {
+   "text": "fait",
+   "start": 3.78,
+   "end": 3.86,
+   "segment": "hook"
+  },
+  {
+   "text": "exprès.",
+   "start": 3.86,
+   "end": 4.12,
+   "segment": "hook"
+  },
+  {
+   "text": "Jour",
+   "start": 4.588889,
+   "end": 4.768889,
+   "segment": "intro"
+  },
+  {
+   "text": "5",
+   "start": 4.768889,
+   "end": 5.028889,
+   "segment": "intro"
+  },
+  {
+   "text": ":",
+   "start": 5.028889,
+   "end": 5.268889,
+   "segment": "intro"
+  },
+  {
+   "text": "les",
+   "start": 5.268889,
+   "end": 5.428889,
+   "segment": "intro"
+  },
+  {
+   "text": "bébés",
+   "start": 5.428889,
+   "end": 5.6488890000000005,
+   "segment": "intro"
+  },
+  {
+   "text": "vieux.",
+   "start": 5.6488890000000005,
+   "end": 5.828889,
+   "segment": "intro"
+  },
+  {
+   "text": "Un.",
+   "start": 6.230227,
+   "end": 6.480227,
+   "segment": "one"
+  },
+  {
+   "text": "Le",
+   "start": 6.930227,
+   "end": 6.990227,
+   "segment": "one"
+  },
+  {
+   "text": "bébé,",
+   "start": 6.990227,
+   "end": 7.230227,
+   "segment": "one"
+  },
+  {
+   "text": "c'est",
+   "start": 7.230227,
+   "end": 7.350227,
+   "segment": "one"
+  },
+  {
+   "text": "Jésus.",
+   "start": 7.350227,
+   "end": 7.5902270000000005,
+   "segment": "one"
+  },
+  {
+   "text": "Et",
+   "start": 7.810227,
+   "end": 7.850227,
+   "segment": "one"
+  },
+  {
+   "text": "pour",
+   "start": 7.850227,
+   "end": 7.970227,
+   "segment": "one"
+  },
+  {
+   "text": "l'Église,",
+   "start": 7.970227,
+   "end": 8.350227,
+   "segment": "one"
+  },
+  {
+   "text": "il",
+   "start": 8.410227,
+   "end": 8.490227,
+   "segment": "one"
+  },
+  {
+   "text": "naît",
+   "start": 8.490227,
+   "end": 8.630227,
+   "segment": "one"
+  },
+  {
+   "text": "déjà",
+   "start": 8.630227,
+   "end": 8.790227,
+   "segment": "one"
+  },
+  {
+   "text": "parfait,",
+   "start": 8.790227,
+   "end": 9.050227,
+   "segment": "one"
+  },
+  {
+   "text": "déjà",
+   "start": 9.330227,
+   "end": 9.510227,
+   "segment": "one"
+  },
+  {
+   "text": "sage.",
+   "start": 9.510227,
+   "end": 9.770227,
+   "segment": "one"
+  },
+  {
+   "text": "Donc",
+   "start": 10.190227,
+   "end": 10.390227,
+   "segment": "one"
+  },
+  {
+   "text": "on",
+   "start": 10.390227,
+   "end": 10.590227,
+   "segment": "one"
+  },
+  {
+   "text": "le",
+   "start": 10.590227,
+   "end": 10.690227,
+   "segment": "one"
+  },
+  {
+   "text": "peint",
+   "start": 10.690227,
+   "end": 10.890227,
+   "segment": "one"
+  },
+  {
+   "text": "en",
+   "start": 10.890227,
+   "end": 11.010227,
+   "segment": "one"
+  },
+  {
+   "text": "petit",
+   "start": 11.010227,
+   "end": 11.190227,
+   "segment": "one"
+  },
+  {
+   "text": "homme",
+   "start": 11.190227,
+   "end": 11.410226999999999,
+   "segment": "one"
+  },
+  {
+   "text": ":",
+   "start": 11.410226999999999,
+   "end": 11.610227,
+   "segment": "one"
+  },
+  {
+   "text": "tête",
+   "start": 11.610227,
+   "end": 11.750226999999999,
+   "segment": "one"
+  },
+  {
+   "text": "d'adulte,",
+   "start": 11.750226999999999,
+   "end": 12.270227,
+   "segment": "one"
+  },
+  {
+   "text": "corps",
+   "start": 12.390227,
+   "end": 12.470227000000001,
+   "segment": "one"
+  },
+  {
+   "text": "miniature.",
+   "start": 12.470227000000001,
+   "end": 12.710227,
+   "segment": "one"
+  },
+  {
+   "text": "Deux.",
+   "start": 13.35127,
+   "end": 13.60127,
+   "segment": "two"
+  },
+  {
+   "text": "Le",
+   "start": 13.891269999999999,
+   "end": 13.91127,
+   "segment": "two"
+  },
+  {
+   "text": "peintre",
+   "start": 13.91127,
+   "end": 14.15127,
+   "segment": "two"
+  },
+  {
+   "text": "cherche",
+   "start": 14.15127,
+   "end": 14.291269999999999,
+   "segment": "two"
+  },
+  {
+   "text": "pas",
+   "start": 14.291269999999999,
+   "end": 14.47127,
+   "segment": "two"
+  },
+  {
+   "text": "à",
+   "start": 14.47127,
+   "end": 14.551269999999999,
+   "segment": "two"
+  },
+  {
+   "text": "faire",
+   "start": 14.551269999999999,
+   "end": 14.631269999999999,
+   "segment": "two"
+  },
+  {
+   "text": "vrai.",
+   "start": 14.631269999999999,
+   "end": 14.81127,
+   "segment": "two"
+  },
+  {
+   "text": "Il",
+   "start": 15.11127,
+   "end": 15.19127,
+   "segment": "two"
+  },
+  {
+   "text": "fait",
+   "start": 15.19127,
+   "end": 15.31127,
+   "segment": "two"
+  },
+  {
+   "text": "une",
+   "start": 15.31127,
+   "end": 15.41127,
+   "segment": "two"
+  },
+  {
+   "text": "image",
+   "start": 15.41127,
+   "end": 15.61127,
+   "segment": "two"
+  },
+  {
+   "text": "sacrée,",
+   "start": 15.61127,
+   "end": 15.99127,
+   "segment": "two"
+  },
+  {
+   "text": "pas",
+   "start": 16.15127,
+   "end": 16.21127,
+   "segment": "two"
+  },
+  {
+   "text": "une",
+   "start": 16.21127,
+   "end": 16.31127,
+   "segment": "two"
+  },
+  {
+   "text": "photo.",
+   "start": 16.31127,
+   "end": 16.47127,
+   "segment": "two"
+  },
+  {
+   "text": "Un",
+   "start": 16.931269999999998,
+   "end": 17.05127,
+   "segment": "two"
+  },
+  {
+   "text": "Jésus",
+   "start": 17.05127,
+   "end": 17.29127,
+   "segment": "two"
+  },
+  {
+   "text": "mignon",
+   "start": 17.29127,
+   "end": 17.53127,
+   "segment": "two"
+  },
+  {
+   "text": "?",
+   "start": 17.53127,
+   "end": 17.611269999999998,
+   "segment": "two"
+  },
+  {
+   "text": "Personne",
+   "start": 17.611269999999998,
+   "end": 17.79127,
+   "segment": "two"
+  },
+  {
+   "text": "en",
+   "start": 17.931269999999998,
+   "end": 17.95127,
+   "segment": "two"
+  },
+  {
+   "text": "veut.",
+   "start": 17.95127,
+   "end": 18.03127,
+   "segment": "two"
+  },
+  {
+   "text": "Trois.",
+   "start": 18.50025,
+   "end": 18.82025,
+   "segment": "three"
+  },
+  {
+   "text": "À",
+   "start": 18.98025,
+   "end": 19.04025,
+   "segment": "three"
+  },
+  {
+   "text": "la",
+   "start": 19.04025,
+   "end": 19.100250000000003,
+   "segment": "three"
+  },
+  {
+   "text": "Renaissance,",
+   "start": 19.100250000000003,
+   "end": 19.460250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "les",
+   "start": 19.64025,
+   "end": 19.70025,
+   "segment": "three"
+  },
+  {
+   "text": "familles",
+   "start": 19.70025,
+   "end": 19.920250000000003,
+   "segment": "three"
+  },
+  {
+   "text": "riches",
+   "start": 19.920250000000003,
+   "end": 20.100250000000003,
+   "segment": "three"
+  },
+  {
+   "text": "veulent",
+   "start": 20.100250000000003,
+   "end": 20.24025,
+   "segment": "three"
+  },
+  {
+   "text": "des",
+   "start": 20.24025,
+   "end": 20.620250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "portraits",
+   "start": 20.24025,
+   "end": 20.620250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "de",
+   "start": 20.620250000000002,
+   "end": 20.66025,
+   "segment": "three"
+  },
+  {
+   "text": "leurs",
+   "start": 20.66025,
+   "end": 20.76025,
+   "segment": "three"
+  },
+  {
+   "text": "vrais",
+   "start": 20.76025,
+   "end": 20.960250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "enfants.",
+   "start": 20.960250000000002,
+   "end": 21.16025,
+   "segment": "three"
+  },
+  {
+   "text": "Et",
+   "start": 21.420250000000003,
+   "end": 21.48025,
+   "segment": "three"
+  },
+  {
+   "text": "d'un",
+   "start": 21.48025,
+   "end": 21.620250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "coup,",
+   "start": 21.620250000000002,
+   "end": 21.800250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "les",
+   "start": 21.98025,
+   "end": 22.06025,
+   "segment": "three"
+  },
+  {
+   "text": "bébés",
+   "start": 22.06025,
+   "end": 22.300250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "deviennent",
+   "start": 22.300250000000002,
+   "end": 22.58025,
+   "segment": "three"
+  },
+  {
+   "text": "des",
+   "start": 22.58025,
+   "end": 22.70025,
+   "segment": "three"
+  },
+  {
+   "text": "bébés",
+   "start": 22.70025,
+   "end": 22.90025,
+   "segment": "three"
+  },
+  {
+   "text": ":",
+   "start": 22.90025,
+   "end": 23.08025,
+   "segment": "three"
+  },
+  {
+   "text": "joues",
+   "start": 23.08025,
+   "end": 23.56025,
+   "segment": "three"
+  },
+  {
+   "text": "rondes,",
+   "start": 23.08025,
+   "end": 23.56025,
+   "segment": "three"
+  },
+  {
+   "text": "bourrelets.",
+   "start": 23.740250000000003,
+   "end": 24.02025,
+   "segment": "three"
+  },
+  {
+   "text": "Jusqu'aux",
+   "start": 24.40025,
+   "end": 24.780250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "deux",
+   "start": 24.780250000000002,
+   "end": 24.90025,
+   "segment": "three"
+  },
+  {
+   "text": "angelots",
+   "start": 24.90025,
+   "end": 25.20025,
+   "segment": "three"
+  },
+  {
+   "text": "qui",
+   "start": 25.20025,
+   "end": 25.300250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "sont",
+   "start": 25.300250000000002,
+   "end": 25.440250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "aujourd'hui",
+   "start": 25.440250000000002,
+   "end": 25.70025,
+   "segment": "three"
+  },
+  {
+   "text": "sur",
+   "start": 25.70025,
+   "end": 25.780250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "tous",
+   "start": 25.780250000000002,
+   "end": 25.86025,
+   "segment": "three"
+  },
+  {
+   "text": "les",
+   "start": 25.86025,
+   "end": 25.98025,
+   "segment": "three"
+  },
+  {
+   "text": "mugs.",
+   "start": 25.98025,
+   "end": 26.120250000000002,
+   "segment": "three"
+  },
+  {
+   "text": "Au",
+   "start": 26.594014,
+   "end": 26.754014,
+   "segment": "outro"
+  },
+  {
+   "text": "musée,",
+   "start": 26.754014,
+   "end": 27.014014000000003,
+   "segment": "outro"
+  },
+  {
+   "text": "regarde",
+   "start": 27.154014,
+   "end": 27.334014,
+   "segment": "outro"
+  },
+  {
+   "text": "le",
+   "start": 27.334014,
+   "end": 27.494014,
+   "segment": "outro"
+  },
+  {
+   "text": "bébé",
+   "start": 27.494014,
+   "end": 27.734014000000002,
+   "segment": "outro"
+  },
+  {
+   "text": ":",
+   "start": 27.734014000000002,
+   "end": 27.914014,
+   "segment": "outro"
+  },
+  {
+   "text": "petit",
+   "start": 27.914014,
+   "end": 28.114014,
+   "segment": "outro"
+  },
+  {
+   "text": "vieux,",
+   "start": 28.114014,
+   "end": 28.334014,
+   "segment": "outro"
+  },
+  {
+   "text": "Moyen",
+   "start": 28.574014000000002,
+   "end": 28.674014,
+   "segment": "outro"
+  },
+  {
+   "text": "Âge.",
+   "start": 28.674014,
+   "end": 28.974014,
+   "segment": "outro"
+  },
+  {
+   "text": "Bébé",
+   "start": 29.194014000000003,
+   "end": 29.374014000000003,
+   "segment": "outro"
+  },
+  {
+   "text": "tout",
+   "start": 29.374014000000003,
+   "end": 29.614014,
+   "segment": "outro"
+  },
+  {
+   "text": "rond,",
+   "start": 29.374014000000003,
+   "end": 29.614014,
+   "segment": "outro"
+  },
+  {
+   "text": "Renaissance.",
+   "start": 29.854014,
+   "end": 30.234014000000002,
+   "segment": "outro"
+  },
+  {
+   "text": "Abonne-toi,",
+   "start": 30.514014000000003,
+   "end": 30.874014000000003,
+   "segment": "outro"
+  },
+  {
+   "text": "jour",
+   "start": 31.134014,
+   "end": 31.214014000000002,
+   "segment": "outro"
+  },
+  {
+   "text": "6",
+   "start": 31.214014000000002,
+   "end": 31.374014000000003,
+   "segment": "outro"
+  },
+  {
+   "text": "demain.",
+   "start": 31.374014000000003,
+   "end": 31.534014000000003,
+   "segment": "outro"
+  }
+ ]
+}

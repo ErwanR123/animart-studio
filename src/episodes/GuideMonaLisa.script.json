@@ -1,0 +1,51 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "On a volé la Joconde. Et la police a soupçonné… Picasso."
+    },
+    {
+      "id": "context",
+      "text": "Lundi 21 août 1911, jour de fermeture du Louvre. Un homme en blouse blanche, comme les ouvriers du musée, décroche La Joconde.",
+      "say": "Lundi vingt et un août mille neuf cent onze, jour de fermeture du Louvre. Un homme en blouse blanche, comme les ouvriers du musée, décroche La Joconde."
+    },
+    {
+      "id": "d1",
+      "text": "Dans un escalier de service, il abandonne le cadre. Un plombier lui ouvre même la porte… et il sort avec le tableau."
+    },
+    {
+      "id": "d2",
+      "text": "Le lendemain, un peintre venu la copier ne trouve que quatre crochets vides."
+    },
+    {
+      "id": "d3",
+      "text": "Le Louvre ferme une semaine. Son visage fait la une des journaux du monde entier."
+    },
+    {
+      "id": "d4",
+      "text": "Le poète Apollinaire est même jeté en prison… et Picasso, interrogé."
+    },
+    {
+      "id": "d5",
+      "text": "Et quand le musée rouvre, la foule se presse… pour regarder le mur vide."
+    },
+    {
+      "id": "d6",
+      "text": "Le voleur ? Vincenzo Peruggia, un vitrier italien. C'est lui qui avait mis La Joconde sous verre."
+    },
+    {
+      "id": "d7",
+      "text": "Pendant deux ans, elle dort dans une malle, dans sa chambre. La police vient même chez lui… sans rien voir."
+    },
+    {
+      "id": "d8",
+      "text": "En 1913, il essaie de la vendre à Florence. Arrêté. Il jure qu'il voulait juste la rendre à l'Italie.",
+      "say": "En mille neuf cent treize, il essaie de la vendre à Florence. Arrêté. Il jure qu'il voulait juste la rendre à l'Italie."
+    },
+    {
+      "id": "d9",
+      "text": "Elle revient au Louvre, mais ce n'est plus un tableau : c'est une star. Tout ça parce qu'un jour…",
+      "pause": 0.5
+    }
+  ]
+}

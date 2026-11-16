@@ -1,0 +1,976 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 6.7769390000000005
+  },
+  {
+   "id": "context",
+   "start": 7.126939,
+   "end": 7.929207
+  },
+  {
+   "id": "d1",
+   "start": 8.279207,
+   "end": 14.461883
+  },
+  {
+   "id": "d2",
+   "start": 14.811883,
+   "end": 21.94728
+  },
+  {
+   "id": "d3",
+   "start": 22.29728,
+   "end": 26.499207000000002
+  },
+  {
+   "id": "d4",
+   "start": 26.849207,
+   "end": 31.882835
+  },
+  {
+   "id": "d5",
+   "start": 32.232835,
+   "end": 36.935103
+  },
+  {
+   "id": "d6",
+   "start": 37.285103,
+   "end": 41.717688
+  },
+  {
+   "id": "d7",
+   "start": 42.067688,
+   "end": 48.249956
+  }
+ ],
+ "words": [
+  {
+   "text": "Novembre",
+   "start": 0.0,
+   "end": 0.6,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 0.6,
+   "end": 0.7,
+   "segment": "hook"
+  },
+  {
+   "text": "Paris",
+   "start": 0.7,
+   "end": 1.04,
+   "segment": "hook"
+  },
+  {
+   "text": ":",
+   "start": 1.04,
+   "end": 1.04,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 1.04,
+   "end": 1.62,
+   "segment": "hook"
+  },
+  {
+   "text": "pleut,",
+   "start": 1.62,
+   "end": 2.28,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 2.28,
+   "end": 2.48,
+   "segment": "hook"
+  },
+  {
+   "text": "fait",
+   "start": 2.48,
+   "end": 2.78,
+   "segment": "hook"
+  },
+  {
+   "text": "froid…",
+   "start": 2.78,
+   "end": 3.2,
+   "segment": "hook"
+  },
+  {
+   "text": "Parfait",
+   "start": 3.2,
+   "end": 3.64,
+   "segment": "hook"
+  },
+  {
+   "text": "pour",
+   "start": 3.64,
+   "end": 3.84,
+   "segment": "hook"
+  },
+  {
+   "text": "les",
+   "start": 3.84,
+   "end": 3.94,
+   "segment": "hook"
+  },
+  {
+   "text": "musées",
+   "start": 3.94,
+   "end": 4.28,
+   "segment": "hook"
+  },
+  {
+   "text": "!",
+   "start": 4.28,
+   "end": 4.28,
+   "segment": "hook"
+  },
+  {
+   "text": "Voici",
+   "start": 4.28,
+   "end": 5.06,
+   "segment": "hook"
+  },
+  {
+   "text": "cinq",
+   "start": 5.06,
+   "end": 5.54,
+   "segment": "hook"
+  },
+  {
+   "text": "expos",
+   "start": 5.54,
+   "end": 5.88,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 5.88,
+   "end": 6.14,
+   "segment": "hook"
+  },
+  {
+   "text": "voir",
+   "start": 6.14,
+   "end": 6.28,
+   "segment": "hook"
+  },
+  {
+   "text": "ce",
+   "start": 6.28,
+   "end": 6.44,
+   "segment": "hook"
+  },
+  {
+   "text": "mois-ci.",
+   "start": 6.44,
+   "end": 6.7,
+   "segment": "hook"
+  },
+  {
+   "text": "On",
+   "start": 7.126939,
+   "end": 7.266939,
+   "segment": "context"
+  },
+  {
+   "text": "sort",
+   "start": 7.266939,
+   "end": 7.406939,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 7.406939,
+   "end": 7.5269390000000005,
+   "segment": "context"
+  },
+  {
+   "text": "carte",
+   "start": 7.5269390000000005,
+   "end": 7.726939,
+   "segment": "context"
+  },
+  {
+   "text": "!",
+   "start": 7.726939,
+   "end": 7.929207,
+   "segment": "context"
+  },
+  {
+   "text": "Un",
+   "start": 8.279207,
+   "end": 8.529207,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 8.529207,
+   "end": 8.779207,
+   "segment": "d1"
+  },
+  {
+   "text": "«",
+   "start": 8.779207,
+   "end": 8.879207,
+   "segment": "d1"
+  },
+  {
+   "text": "Bruxelles",
+   "start": 8.879207,
+   "end": 9.439207,
+   "segment": "d1"
+  },
+  {
+   "text": "1900",
+   "start": 9.439207,
+   "end": 9.979206999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "»,",
+   "start": 9.979206999999999,
+   "end": 9.979206999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "au",
+   "start": 9.979206999999999,
+   "end": 10.279207,
+   "segment": "d1"
+  },
+  {
+   "text": "Petit",
+   "start": 10.279207,
+   "end": 10.539207,
+   "segment": "d1"
+  },
+  {
+   "text": "Palais,",
+   "start": 10.539207,
+   "end": 10.779207,
+   "segment": "d1"
+  },
+  {
+   "text": "dès",
+   "start": 10.779207,
+   "end": 11.119207,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 11.119207,
+   "end": 11.279207,
+   "segment": "d1"
+  },
+  {
+   "text": "10",
+   "start": 11.279207,
+   "end": 11.479206999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "novembre.",
+   "start": 11.479206999999999,
+   "end": 11.939207,
+   "segment": "d1"
+  },
+  {
+   "text": "L'Art",
+   "start": 12.239207,
+   "end": 12.499206999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "nouveau",
+   "start": 12.499206999999998,
+   "end": 12.799207,
+   "segment": "d1"
+  },
+  {
+   "text": "belge,",
+   "start": 12.799207,
+   "end": 13.079207,
+   "segment": "d1"
+  },
+  {
+   "text": "des",
+   "start": 13.359207,
+   "end": 13.479206999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "bijoux",
+   "start": 13.479206999999999,
+   "end": 13.799207,
+   "segment": "d1"
+  },
+  {
+   "text": "aux",
+   "start": 13.799207,
+   "end": 14.039207,
+   "segment": "d1"
+  },
+  {
+   "text": "tableaux.",
+   "start": 14.039207,
+   "end": 14.339206999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "Deux",
+   "start": 14.811883,
+   "end": 15.471883,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 15.471883,
+   "end": 15.721883,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 15.891883,
+   "end": 15.971883,
+   "segment": "d2"
+  },
+  {
+   "text": "secrets",
+   "start": 15.971883,
+   "end": 16.311883,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 16.311883,
+   "end": 16.491883,
+   "segment": "d2"
+  },
+  {
+   "text": "l'Alhambra,",
+   "start": 16.491883,
+   "end": 16.991883,
+   "segment": "d2"
+  },
+  {
+   "text": "à",
+   "start": 16.991883,
+   "end": 17.351883,
+   "segment": "d2"
+  },
+  {
+   "text": "l'Institut",
+   "start": 17.351883,
+   "end": 17.851883,
+   "segment": "d2"
+  },
+  {
+   "text": "du",
+   "start": 17.851883,
+   "end": 17.931883,
+   "segment": "d2"
+  },
+  {
+   "text": "monde",
+   "start": 17.931883,
+   "end": 18.111883,
+   "segment": "d2"
+  },
+  {
+   "text": "arabe,",
+   "start": 18.111883,
+   "end": 18.731883,
+   "segment": "d2"
+  },
+  {
+   "text": "dès",
+   "start": 18.731883,
+   "end": 18.851883,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 18.851883,
+   "end": 18.911883,
+   "segment": "d2"
+  },
+  {
+   "text": "24.",
+   "start": 18.911883,
+   "end": 19.131883000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "Le",
+   "start": 19.811883,
+   "end": 19.911883,
+   "segment": "d2"
+  },
+  {
+   "text": "palais",
+   "start": 19.911883,
+   "end": 20.131883000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 20.131883000000002,
+   "end": 20.211883,
+   "segment": "d2"
+  },
+  {
+   "text": "Grenade",
+   "start": 20.211883,
+   "end": 20.631883000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 20.631883000000002,
+   "end": 20.871883,
+   "segment": "d2"
+  },
+  {
+   "text": "sa",
+   "start": 20.871883,
+   "end": 21.031883,
+   "segment": "d2"
+  },
+  {
+   "text": "fontaine",
+   "start": 21.031883,
+   "end": 21.491883,
+   "segment": "d2"
+  },
+  {
+   "text": "aux",
+   "start": 21.491883,
+   "end": 21.611883,
+   "segment": "d2"
+  },
+  {
+   "text": "Lions.",
+   "start": 21.611883,
+   "end": 21.851883,
+   "segment": "d2"
+  },
+  {
+   "text": "Trois",
+   "start": 22.29728,
+   "end": 22.54728,
+   "segment": "d3"
+  },
+  {
+   "text": ":",
+   "start": 22.54728,
+   "end": 22.79728,
+   "segment": "d3"
+  },
+  {
+   "text": "Zurbarán,",
+   "start": 23.11728,
+   "end": 23.51728,
+   "segment": "d3"
+  },
+  {
+   "text": "au",
+   "start": 23.59728,
+   "end": 23.75728,
+   "segment": "d3"
+  },
+  {
+   "text": "Louvre.",
+   "start": 23.75728,
+   "end": 24.077280000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "Le",
+   "start": 24.397280000000002,
+   "end": 24.51728,
+   "segment": "d3"
+  },
+  {
+   "text": "maître",
+   "start": 24.51728,
+   "end": 24.79728,
+   "segment": "d3"
+  },
+  {
+   "text": "espagnol",
+   "start": 24.79728,
+   "end": 25.27728,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 25.27728,
+   "end": 25.41728,
+   "segment": "d3"
+  },
+  {
+   "text": "ombres",
+   "start": 25.41728,
+   "end": 25.91728,
+   "segment": "d3"
+  },
+  {
+   "text": "et",
+   "start": 25.91728,
+   "end": 25.99728,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 25.99728,
+   "end": 26.19728,
+   "segment": "d3"
+  },
+  {
+   "text": "saints.",
+   "start": 26.19728,
+   "end": 26.37728,
+   "segment": "d3"
+  },
+  {
+   "text": "Quatre",
+   "start": 26.849207,
+   "end": 27.099207,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 27.099207,
+   "end": 27.349207,
+   "segment": "d4"
+  },
+  {
+   "text": "Cézanne,",
+   "start": 27.629207,
+   "end": 28.009207,
+   "segment": "d4"
+  },
+  {
+   "text": "au",
+   "start": 28.209207,
+   "end": 28.249207,
+   "segment": "d4"
+  },
+  {
+   "text": "Grand",
+   "start": 28.249207,
+   "end": 28.409207,
+   "segment": "d4"
+  },
+  {
+   "text": "Palais,",
+   "start": 28.409207,
+   "end": 28.689207,
+   "segment": "d4"
+  },
+  {
+   "text": "face",
+   "start": 28.929206999999998,
+   "end": 29.069207,
+   "segment": "d4"
+  },
+  {
+   "text": "à",
+   "start": 29.069207,
+   "end": 29.249207,
+   "segment": "d4"
+  },
+  {
+   "text": "ceux",
+   "start": 29.249207,
+   "end": 29.369207,
+   "segment": "d4"
+  },
+  {
+   "text": "qu'il",
+   "start": 29.369207,
+   "end": 29.509207,
+   "segment": "d4"
+  },
+  {
+   "text": "a",
+   "start": 29.509207,
+   "end": 29.609206999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "inspirés",
+   "start": 29.609206999999998,
+   "end": 30.069207,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 30.069207,
+   "end": 30.209207,
+   "segment": "d4"
+  },
+  {
+   "text": "Picasso,",
+   "start": 30.209207,
+   "end": 30.469207,
+   "segment": "d4"
+  },
+  {
+   "text": "Matisse,",
+   "start": 30.849207,
+   "end": 31.269207,
+   "segment": "d4"
+  },
+  {
+   "text": "Mondrian.",
+   "start": 31.389207,
+   "end": 31.749207,
+   "segment": "d4"
+  },
+  {
+   "text": "Cinq",
+   "start": 32.232835,
+   "end": 32.482835,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 32.482835,
+   "end": 32.732835,
+   "segment": "d5"
+  },
+  {
+   "text": "Mary",
+   "start": 33.192835,
+   "end": 33.452835,
+   "segment": "d5"
+  },
+  {
+   "text": "Cassatt,",
+   "start": 33.452835,
+   "end": 33.812835,
+   "segment": "d5"
+  },
+  {
+   "text": "à",
+   "start": 33.812835,
+   "end": 34.112835000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "Orsay.",
+   "start": 34.112835000000004,
+   "end": 34.572835,
+   "segment": "d5"
+  },
+  {
+   "text": "La",
+   "start": 34.832835,
+   "end": 34.932835000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "seule",
+   "start": 34.932835000000004,
+   "end": 35.192835,
+   "segment": "d5"
+  },
+  {
+   "text": "Américaine",
+   "start": 35.192835,
+   "end": 35.652835,
+   "segment": "d5"
+  },
+  {
+   "text": "du",
+   "start": 35.652835,
+   "end": 35.772835,
+   "segment": "d5"
+  },
+  {
+   "text": "groupe",
+   "start": 35.772835,
+   "end": 35.972835,
+   "segment": "d5"
+  },
+  {
+   "text": "des",
+   "start": 35.972835,
+   "end": 36.132835,
+   "segment": "d5"
+  },
+  {
+   "text": "impressionnistes.",
+   "start": 36.132835,
+   "end": 36.752835000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "Astuce",
+   "start": 37.285103,
+   "end": 37.845103,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 37.845103,
+   "end": 38.095103,
+   "segment": "d6"
+  },
+  {
+   "text": "au",
+   "start": 38.325103,
+   "end": 38.425103,
+   "segment": "d6"
+  },
+  {
+   "text": "Louvre",
+   "start": 38.425103,
+   "end": 38.665103,
+   "segment": "d6"
+  },
+  {
+   "text": "et",
+   "start": 38.665103,
+   "end": 38.745103,
+   "segment": "d6"
+  },
+  {
+   "text": "à",
+   "start": 38.745103,
+   "end": 38.805103,
+   "segment": "d6"
+  },
+  {
+   "text": "Orsay,",
+   "start": 38.805103,
+   "end": 39.065103,
+   "segment": "d6"
+  },
+  {
+   "text": "c'est",
+   "start": 39.205103,
+   "end": 39.305103,
+   "segment": "d6"
+  },
+  {
+   "text": "gratuit",
+   "start": 39.305103,
+   "end": 39.545103,
+   "segment": "d6"
+  },
+  {
+   "text": "pour",
+   "start": 39.545103,
+   "end": 39.745103,
+   "segment": "d6"
+  },
+  {
+   "text": "les",
+   "start": 39.745103,
+   "end": 39.845103,
+   "segment": "d6"
+  },
+  {
+   "text": "moins",
+   "start": 39.845103,
+   "end": 39.965103,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 39.965103,
+   "end": 40.085103,
+   "segment": "d6"
+  },
+  {
+   "text": "26",
+   "start": 40.085103,
+   "end": 40.345103,
+   "segment": "d6"
+  },
+  {
+   "text": "ans",
+   "start": 40.345103,
+   "end": 40.485103,
+   "segment": "d6"
+  },
+  {
+   "text": "qui",
+   "start": 40.485103,
+   "end": 40.625102999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "vivent",
+   "start": 40.625102999999996,
+   "end": 40.825103,
+   "segment": "d6"
+  },
+  {
+   "text": "dans",
+   "start": 40.825103,
+   "end": 40.905103,
+   "segment": "d6"
+  },
+  {
+   "text": "l'Union",
+   "start": 40.905103,
+   "end": 41.165103,
+   "segment": "d6"
+  },
+  {
+   "text": "européenne.",
+   "start": 41.165103,
+   "end": 41.585103,
+   "segment": "d6"
+  },
+  {
+   "text": "Et",
+   "start": 42.067688,
+   "end": 42.567688,
+   "segment": "d7"
+  },
+  {
+   "text": "pour",
+   "start": 42.567688,
+   "end": 42.667688,
+   "segment": "d7"
+  },
+  {
+   "text": "les",
+   "start": 42.667688,
+   "end": 42.747688,
+   "segment": "d7"
+  },
+  {
+   "text": "visiter",
+   "start": 42.747688,
+   "end": 43.107687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "avec",
+   "start": 43.107687999999996,
+   "end": 43.347688,
+   "segment": "d7"
+  },
+  {
+   "text": "un",
+   "start": 43.347688,
+   "end": 43.507687999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "guide",
+   "start": 43.507687999999995,
+   "end": 43.687687999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "dans",
+   "start": 43.687687999999994,
+   "end": 43.867687999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "ta",
+   "start": 43.867687999999994,
+   "end": 43.947688,
+   "segment": "d7"
+  },
+  {
+   "text": "poche,",
+   "start": 43.947688,
+   "end": 44.267688,
+   "segment": "d7"
+  },
+  {
+   "text": "l'appli",
+   "start": 44.627688,
+   "end": 44.927687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "Animart",
+   "start": 44.927687999999996,
+   "end": 45.527688,
+   "segment": "d7"
+  },
+  {
+   "text": "arrive",
+   "start": 45.527688,
+   "end": 45.90768799999999,
+   "segment": "d7"
+  },
+  {
+   "text": "bientôt.",
+   "start": 45.90768799999999,
+   "end": 46.287687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "Lien",
+   "start": 46.587688,
+   "end": 46.867687999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "en",
+   "start": 46.867687999999994,
+   "end": 46.987688,
+   "segment": "d7"
+  },
+  {
+   "text": "bio",
+   "start": 46.987688,
+   "end": 47.107687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "pour",
+   "start": 47.107687999999996,
+   "end": 47.347688,
+   "segment": "d7"
+  },
+  {
+   "text": "t'inscrire",
+   "start": 47.347688,
+   "end": 47.767688,
+   "segment": "d7"
+  },
+  {
+   "text": "à",
+   "start": 47.767688,
+   "end": 47.887688,
+   "segment": "d7"
+  },
+  {
+   "text": "la",
+   "start": 47.887688,
+   "end": 47.927687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "bêta",
+   "start": 47.927687999999996,
+   "end": 48.107687999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "!",
+   "start": 48.107687999999996,
+   "end": 48.249956,
+   "segment": "d7"
+  }
+ ]
+}

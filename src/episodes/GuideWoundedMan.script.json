@@ -1,0 +1,51 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Il a effacé son ex du tableau. Puis il s'est peint mourant."
+    },
+    {
+      "id": "context",
+      "text": "En 1844, Gustave Courbet se peint dans les bras de Virginie.",
+      "say": "En dix-huit cent quarante-quatre, Gustave Courbet se peint dans les bras de Virginie."
+    },
+    {
+      "id": "d1",
+      "text": "Ils vivent ensemble, ils ont un fils."
+    },
+    {
+      "id": "d2",
+      "text": "Puis elle le quitte."
+    },
+    {
+      "id": "d3",
+      "text": "Alors il ressort la toile, et il recouvre Virginie de peinture."
+    },
+    {
+      "id": "d4",
+      "text": "Il ajoute une épée."
+    },
+    {
+      "id": "d5",
+      "text": "Et là où elle dormait, juste sur son cœur, il peint du sang."
+    },
+    {
+      "id": "d7",
+      "text": "En 1973, on passe le tableau aux rayons X. Et Virginie est toujours là, dans ses bras.",
+      "say": "En dix-neuf cent soixante-treize, on passe le tableau aux rayons X. Et Virginie est toujours là, dans ses bras."
+    },
+    {
+      "id": "d8",
+      "text": "À Orsay, vous passez devant, et vous voyez juste un blessé."
+    },
+    {
+      "id": "d9",
+      "text": "Mais tout ça, vous l'auriez su si vous aviez scanné le tableau avec Animart, sur votre téléphone.",
+      "say": "Mais tout ça, vous l'auriez su si vous aviez scanné le tableau avec Animarte, sur votre téléphone."
+    },
+    {
+      "id": "d10",
+      "text": "Inscrivez-vous à la bêta, lien en bio."
+    }
+  ]
+}

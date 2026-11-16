@@ -1,0 +1,49 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Cet homme risquait la peine de mort. Sa seule chance : prouver… qu'il était un faussaire."
+    },
+    {
+      "id": "context",
+      "text": "Mai 1945. Dans la collection d'Hermann Göring, on retrouve un Vermeer. Göring l'avait payé… avec 137 tableaux volés.",
+      "say": "Mai mille neuf cent quarante-cinq. Dans la collection d'Hermann Göring, on retrouve un Vermeer. Göring l'avait payé… avec cent trente-sept tableaux volés."
+    },
+    {
+      "id": "d1",
+      "text": "Le vendeur ? Un peintre néerlandais, Han van Meegeren. Vendre un trésor national aux nazis : c'est de la trahison.",
+      "say": "Le vendeur ? Un peintre néerlandais, Hann van Méguéren. Vendre un trésor national aux nazis : c'est de la trahison."
+    },
+    {
+      "id": "d2",
+      "text": "Alors il avoue : « Ce n'est pas un Vermeer. C'est moi qui l'ai peint ! »"
+    },
+    {
+      "id": "d3",
+      "text": "Personne ne le croit. Ses faux Vermeer ont trompé les plus grands experts. Un musée de Rotterdam en a même acheté un, pour une fortune."
+    },
+    {
+      "id": "d4",
+      "text": "Son secret : de vraies toiles du XVIIe siècle, une résine qui durcit la peinture, et un passage au four pour la faire craqueler.",
+      "say": "Son secret : de vraies toiles du dix-septième siècle, une résine qui durcit la peinture, et un passage au four pour la faire craqueler."
+    },
+    {
+      "id": "d5",
+      "text": "Pourquoi ? Les critiques méprisaient ses tableaux. Il voulait leur prouver qu'il valait les grands maîtres."
+    },
+    {
+      "id": "d6",
+      "text": "Pour prouver son crime, il peint un dernier « Vermeer », sous surveillance, devant des témoins."
+    },
+    {
+      "id": "d7",
+      "text": "Verdict : plus un traître, juste un faussaire. Un an de prison. Et les Néerlandais l'adorent : c'est l'homme qui a roulé Göring."
+    },
+    {
+      "id": "d8",
+      "text": "Il meurt d'une crise cardiaque avant même d'entrer en prison. Tout ça parce qu'en 1945…",
+      "say": "Il meurt d'une crise cardiaque avant même d'entrer en prison. Tout ça parce qu'en mille neuf cent quarante-cinq…",
+      "pause": 0.5
+    }
+  ]
+}

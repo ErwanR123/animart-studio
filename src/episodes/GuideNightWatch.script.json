@@ -1,0 +1,41 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Au milieu de ces soldats, il y a une petite fille. Avec un poulet mort à la ceinture."
+    },
+    {
+      "id": "context",
+      "text": "Et ces soldats… n'en sont pas vraiment."
+    },
+    {
+      "id": "d1",
+      "text": "Ce sont des bourgeois d'Amsterdam, qui ont acheté leur arme de leur poche. Lui, en noir, c'est leur capitaine. Il deviendra maire de la ville."
+    },
+    {
+      "id": "d2",
+      "text": "Leur mission : garder l'une des villes les plus riches du monde, pendant que le pays se bat contre l'Espagne."
+    },
+    {
+      "id": "d3",
+      "text": "Mais l'ennemi est loin. Alors ils montent la garde, ils défilent… et ils se font peindre. Cent florins chacun pour être sur ce tableau."
+    },
+    {
+      "id": "d4",
+      "text": "D'habitude, ça donne une photo de classe. Rembrandt, lui, les met en marche : le capitaine donne l'ordre, le tambour roule."
+    },
+    {
+      "id": "d5",
+      "text": "Et au milieu de ce défilé, en pleine lumière, elle. Les pattes du poulet : la griffe, l'emblème de leur milice. Elle n'a rien payé. C'est leur blason… vivant."
+    },
+    {
+      "id": "d6",
+      "text": "L'année du tableau, en 1642, Rembrandt perd sa femme, Saskia, à vingt-neuf ans. Et certains reconnaissent son visage chez la petite fille.",
+      "say": "L'année du tableau, en mille six cent quarante-deux, Rembrandt perd sa femme, Saskia, à vingt-neuf ans. Et certains reconnaissent son visage chez la petite fille."
+    },
+    {
+      "id": "d7",
+      "text": "Pour la milice, un blason. Pour lui, peut-être, un dernier portrait d'elle. Voilà pourquoi il y a une petite fille au milieu de ces soldats."
+    }
+  ]
+}

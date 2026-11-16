@@ -2,16 +2,7 @@
   "segments": [
     {
       "id": "hook",
-      "text": "Pourquoi le pape Jules II a-t-il fait peindre des philosophes grecs dans sa bibliothèque ?"
-    },
-    {
-      "id": "context",
-      "text": "En 1508, il confie ses murs à Raphaël. Un mur par grand savoir : la poésie, la foi, la justice… et la philosophie.",
-      "say": "En mille cinq cent huit, il confie ses murs à Raphaël. Un mur par grand savoir : la poésie, la foi, la justice… et la philosophie."
-    },
-    {
-      "id": "d0",
-      "text": "Sur celui-ci, Raphaël réunit les plus grands penseurs de l'Antiquité."
+      "text": "Raphaël a réuni les plus grands génies de l'Antiquité dans un seul tableau… sauf qu'un des personnages n'a rien à faire là."
     },
     {
       "id": "d1",
@@ -35,7 +26,7 @@
     },
     {
       "id": "d6",
-      "text": "Et la réponse à la question du début est juste en face. Sur l'autre mur, Raphaël a peint la foi : le Christ, les saints, l'Église. Pour le pape, la religion et la philosophie ne s'opposent pas : ce sont deux chemins vers la même vérité. Voilà ce qui répond à la question :"
+      "text": "Et l'intrus ? Tout au bord, celui qui te regarde droit dans les yeux : c'est Raphaël. Il s'est glissé discrètement parmi les plus grands génies de l'histoire. Et toi, lesquels j'ai pas cités, tu les as reconnus ?"
     }
   ]
 }

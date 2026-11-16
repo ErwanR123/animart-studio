@@ -57,7 +57,10 @@ export type DecorLayer =
   | { polaroid: string; caption?: string } // a photo in a white instant-print frame with a handwritten caption, `w` wide
   | { typed: string; size?: number; speed?: number } // typed letter by letter on a sheet (`speed` letters a second), `w` wide
   | { filmstrip: string[]; speed?: number } // a strip of film frames scrolling sideways (`speed` px a second), `w` = frame width
-  | { redact: Box }; // a black censor bar sliding over a box
+  | { redact: Box } // a black censor bar sliding over a box
+  | { hole: true } // a bullet hole punched through the paper, `w` across, centred on x, y
+  | { tears: [number, number][] } // drops welling up at each eye (shot px) and running down, one after another
+  | { badge: string; color?: string; size?: number }; // a sheriff's six-pointed star with its word, `w` across
 
 const gen = rough.generator();
 const roughPaths = (d: ReturnType<typeof gen.path>) => gen.toPaths(d).map((p) => p.d);
@@ -95,9 +98,9 @@ const perforated = (size: number) => ({
 });
 
 export const isDecor = (l: object): l is DecorLayer =>
-  ["scribble", "arrow", "underline", "cross", "bracket", "halftone", "washi", "pin", "clip", "postage", "label", "ticket", "clipping", "polaroid", "typed", "filmstrip", "redact"].some((k) => k in l);
+  ["scribble", "arrow", "underline", "cross", "bracket", "halftone", "washi", "pin", "clip", "postage", "label", "ticket", "clipping", "polaroid", "typed", "filmstrip", "redact", "hole", "badge", "tears"].some((k) => k in l);
 // Marks drawn on the page (no drop shadow, no landing move: they are drawn on).
-export const isMark = (l: object) => ["scribble", "arrow", "underline", "cross", "bracket", "redact"].some((k) => k in l);
+export const isMark = (l: object) => ["scribble", "arrow", "underline", "cross", "bracket", "redact", "hole", "tears"].some((k) => k in l);
 
 export const Decor: React.FC<{ l: DecorLayer & { x?: number; y?: number; w?: number; rot?: number }; e: number; seed: number; piece: React.CSSProperties }> = ({ l, e, seed, piece }) => {
   const col = usePalette();
@@ -251,10 +254,81 @@ export const Decor: React.FC<{ l: DecorLayer & { x?: number; y?: number; w?: num
       </div>
     );
   }
+  if ("hole" in l) {
+    // Punched in on two drawings (a little larger, then set): the dark hole, the paper torn back round it, cracks.
+    const r = w / 2;
+    const k = e < 1 / 12 ? 1.25 : 1;
+    const ring = (n: number, r0: number, jag: number, sd: number) =>
+      Array.from({ length: n }, (_, i) => {
+        const a = (i / n) * Math.PI * 2;
+        const rr = r0 * (1 + (rnd(sd + i) - 0.5) * jag);
+        return `${i ? "L" : "M"} ${(Math.cos(a) * rr).toFixed(1)} ${(Math.sin(a) * rr).toFixed(1)}`;
+      }).join(" ") + " Z";
+    const cracks = Array.from({ length: 6 }, (_, i) => {
+      const a = (i / 6) * Math.PI * 2 + rnd(seed + 40 + i);
+      const r1 = r * (0.85 + rnd(seed + 50 + i) * 0.5);
+      return `M ${(Math.cos(a) * r * 0.45).toFixed(1)} ${(Math.sin(a) * r * 0.45).toFixed(1)} L ${(Math.cos(a + 0.12) * r1).toFixed(1)} ${(Math.sin(a + 0.12) * r1).toFixed(1)}`;
+    });
+    return (
+      <svg width={w} height={w} viewBox={`${-r} ${-r} ${w} ${w}`} style={{ ...piece, left: (l.x ?? 0) - r, top: (l.y ?? 0) - r, overflow: "visible", transform: `${piece.transform ?? ""} scale(${k})` }}>
+        <path d={ring(18, r * 0.62, 0.5, seed + 10)} fill={col("paper")} stroke={col("ink")} strokeOpacity={0.35} strokeWidth={1.5} />
+        {cracks.map((d, i) => <path key={i} d={d} stroke={col("ink")} strokeWidth={2} strokeOpacity={0.7} />)}
+        <path d={ring(14, r * 0.34, 0.35, seed + 20)} fill={col("ink")} />
+      </svg>
+    );
+  }
+  if ("tears" in l) {
+    // On the pieces' clock: a drop swells at the eye for 3 drawings, then runs 130 px down the cheek over 6, leaving a
+    // wet line; a new one every 7 drawings, the eyes out of step.
+    const n = Math.floor(e * 12);
+    return (
+      <svg width={1080} height={1400} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
+        {l.tears.flatMap(([x, y], i) =>
+          Array.from({ length: 6 }, (_, k) => {
+            const age = n - k * 7 - i * 4;
+            if (age < 0) return null;
+            const fall = Math.min(1, Math.max(0, (age - 3) / 6));
+            const r = Math.min(1, (age + 1) / 3) * 15;
+            const dy = fall * 130;
+            const fade = age > 12 ? Math.max(0, 1 - (age - 12) / 4) : 1;
+            return (
+              <g key={`${i}-${k}`} opacity={fade}>
+                {fall > 0 ? <path d={`M ${x} ${y} L ${x + 2} ${y + dy}`} stroke="#CFE3EA" strokeWidth={8} strokeLinecap="round" opacity={0.85} /> : null}
+                <path d={`M ${x + 2} ${y + dy - r * 1.6} Q ${x + 2 + r} ${y + dy} ${x + 2} ${y + dy + r} Q ${x + 2 - r} ${y + dy} ${x + 2} ${y + dy - r * 1.6} Z`} fill="#CFE3EA" stroke={col("ink")} strokeWidth={3} />
+              </g>
+            );
+          }),
+        )}
+      </svg>
+    );
+  }
+  if ("badge" in l) {
+    // Six points with a ball on each tip, a ring in the middle carrying the word.
+    const c = col(l.color, "hl");
+    const r = w / 2;
+    const star = Array.from({ length: 12 }, (_, i) => {
+      const a = (i / 12) * Math.PI * 2 - Math.PI / 2;
+      const rr = i % 2 ? r * 0.5 : r * 0.86;
+      return `${i ? "L" : "M"} ${(Math.cos(a) * rr).toFixed(1)} ${(Math.sin(a) * rr).toFixed(1)}`;
+    }).join(" ") + " Z";
+    return (
+      <div style={{ ...piece, width: w, height: w }}>
+        <svg width={w} height={w} viewBox={`${-r} ${-r} ${w} ${w}`} style={{ position: "absolute", overflow: "visible" }}>
+          <path d={star} fill={c} stroke={col("ink")} strokeWidth={3} strokeLinejoin="round" />
+          {Array.from({ length: 6 }, (_, i) => {
+            const a = (i / 6) * Math.PI * 2 - Math.PI / 2;
+            return <circle key={i} cx={Math.cos(a) * r * 0.9} cy={Math.sin(a) * r * 0.9} r={r * 0.09} fill={c} stroke={col("ink")} strokeWidth={3} />;
+          })}
+          <circle r={r * 0.4} fill="none" stroke={col("ink")} strokeWidth={2.5} />
+        </svg>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: poster, fontSize: l.size ?? w * 0.15, color: col("ink"), letterSpacing: 1 }}>{l.badge}</div>
+      </div>
+    );
+  }
   if ("redact" in l) {
     const [x, y, bw, bh] = l.redact;
     const wipe = interpolate(e, [0, 0.25], [0, 1], { ...clamp, easing: easeInOut });
-    return <div style={{ position: "absolute", left: x, top: y, width: bw * wipe, height: bh, background: "#121110", transform: "rotate(-0.8deg)", boxShadow: "0 2px 0 rgba(0,0,0,0.3)" }} />;
+    return <div style={{ position: "absolute", left: x, top: y, width: bw * wipe, height: bh, background: "#121110", transform: `${piece.transform ?? ""} rotate(-0.8deg)`, opacity: piece.opacity, boxShadow: "0 2px 0 rgba(0,0,0,0.3)" }} />;
   }
   // A press clipping: masthead, headline, then lines of small type (grey bars); `mark` gets a highlighter sweep.
   const lines = l.lines ?? 7;

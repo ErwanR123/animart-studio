@@ -1,0 +1,1197 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 5.678209000000001
+  },
+  {
+   "id": "context",
+   "start": 6.028209,
+   "end": 14.673356
+  },
+  {
+   "id": "d1",
+   "start": 15.023356,
+   "end": 21.093741
+  },
+  {
+   "id": "d2",
+   "start": 21.443741,
+   "end": 24.730385
+  },
+  {
+   "id": "d3",
+   "start": 25.080385,
+   "end": 31.009115
+  },
+  {
+   "id": "d4",
+   "start": 31.359115,
+   "end": 38.782788
+  },
+  {
+   "id": "d5",
+   "start": 39.132788,
+   "end": 44.284557
+  },
+  {
+   "id": "d6",
+   "start": 44.634557,
+   "end": 49.573695
+  },
+  {
+   "id": "d7",
+   "start": 49.923695,
+   "end": 55.65916
+  },
+  {
+   "id": "d8",
+   "start": 56.00916,
+   "end": 60.911722000000005
+  }
+ ],
+ "words": [
+  {
+   "text": "Cet",
+   "start": 0.0,
+   "end": 0.26,
+   "segment": "hook"
+  },
+  {
+   "text": "homme",
+   "start": 0.26,
+   "end": 0.66,
+   "segment": "hook"
+  },
+  {
+   "text": "risquait",
+   "start": 0.66,
+   "end": 1.36,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 1.36,
+   "end": 1.46,
+   "segment": "hook"
+  },
+  {
+   "text": "peine",
+   "start": 1.46,
+   "end": 1.66,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 1.66,
+   "end": 1.8,
+   "segment": "hook"
+  },
+  {
+   "text": "mort.",
+   "start": 1.8,
+   "end": 2.1,
+   "segment": "hook"
+  },
+  {
+   "text": "Sa",
+   "start": 2.54,
+   "end": 2.9,
+   "segment": "hook"
+  },
+  {
+   "text": "seule",
+   "start": 2.9,
+   "end": 3.14,
+   "segment": "hook"
+  },
+  {
+   "text": "chance",
+   "start": 3.14,
+   "end": 3.42,
+   "segment": "hook"
+  },
+  {
+   "text": ":",
+   "start": 3.42,
+   "end": 3.42,
+   "segment": "hook"
+  },
+  {
+   "text": "prouver…",
+   "start": 3.42,
+   "end": 4.22,
+   "segment": "hook"
+  },
+  {
+   "text": "qu'il",
+   "start": 4.22,
+   "end": 4.54,
+   "segment": "hook"
+  },
+  {
+   "text": "était",
+   "start": 4.54,
+   "end": 4.74,
+   "segment": "hook"
+  },
+  {
+   "text": "un",
+   "start": 4.74,
+   "end": 4.94,
+   "segment": "hook"
+  },
+  {
+   "text": "faussaire.",
+   "start": 4.94,
+   "end": 5.52,
+   "segment": "hook"
+  },
+  {
+   "text": "Mai",
+   "start": 6.028209,
+   "end": 6.808209000000001,
+   "segment": "context"
+  },
+  {
+   "text": "1945.",
+   "start": 6.808209000000001,
+   "end": 7.6882090000000005,
+   "segment": "context"
+  },
+  {
+   "text": "Dans",
+   "start": 8.308209,
+   "end": 8.468209,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 8.468209,
+   "end": 8.588209,
+   "segment": "context"
+  },
+  {
+   "text": "collection",
+   "start": 8.588209,
+   "end": 8.848209,
+   "segment": "context"
+  },
+  {
+   "text": "d'Hermann",
+   "start": 8.848209,
+   "end": 9.188209,
+   "segment": "context"
+  },
+  {
+   "text": "Göring,",
+   "start": 9.188209,
+   "end": 9.588209,
+   "segment": "context"
+  },
+  {
+   "text": "on",
+   "start": 9.928209,
+   "end": 10.068209,
+   "segment": "context"
+  },
+  {
+   "text": "retrouve",
+   "start": 10.068209,
+   "end": 10.348209,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 10.348209,
+   "end": 10.568209,
+   "segment": "context"
+  },
+  {
+   "text": "Vermeer.",
+   "start": 10.568209,
+   "end": 11.308209000000002,
+   "segment": "context"
+  },
+  {
+   "text": "Göring",
+   "start": 11.548209,
+   "end": 11.888209,
+   "segment": "context"
+  },
+  {
+   "text": "l'avait",
+   "start": 11.888209,
+   "end": 12.068209,
+   "segment": "context"
+  },
+  {
+   "text": "payé…",
+   "start": 12.068209,
+   "end": 12.448209,
+   "segment": "context"
+  },
+  {
+   "text": "avec",
+   "start": 12.448209,
+   "end": 13.108209,
+   "segment": "context"
+  },
+  {
+   "text": "137",
+   "start": 13.108209,
+   "end": 13.968209000000002,
+   "segment": "context"
+  },
+  {
+   "text": "tableaux",
+   "start": 13.968209000000002,
+   "end": 14.268209,
+   "segment": "context"
+  },
+  {
+   "text": "volés.",
+   "start": 14.268209,
+   "end": 14.568209,
+   "segment": "context"
+  },
+  {
+   "text": "Le",
+   "start": 15.023356,
+   "end": 15.203356,
+   "segment": "d1"
+  },
+  {
+   "text": "vendeur",
+   "start": 15.203356,
+   "end": 15.543356,
+   "segment": "d1"
+  },
+  {
+   "text": "?",
+   "start": 15.543356,
+   "end": 15.793356,
+   "segment": "d1"
+  },
+  {
+   "text": "Un",
+   "start": 15.803355999999999,
+   "end": 16.023356,
+   "segment": "d1"
+  },
+  {
+   "text": "peintre",
+   "start": 16.023356,
+   "end": 16.303356,
+   "segment": "d1"
+  },
+  {
+   "text": "néerlandais,",
+   "start": 16.303356,
+   "end": 16.883356,
+   "segment": "d1"
+  },
+  {
+   "text": "Han",
+   "start": 17.023356,
+   "end": 17.223356,
+   "segment": "d1"
+  },
+  {
+   "text": "van",
+   "start": 17.223356,
+   "end": 17.403356,
+   "segment": "d1"
+  },
+  {
+   "text": "Meegeren.",
+   "start": 17.403356,
+   "end": 17.923356,
+   "segment": "d1"
+  },
+  {
+   "text": "Vendre",
+   "start": 18.103355999999998,
+   "end": 18.503356,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 18.503356,
+   "end": 18.583356,
+   "segment": "d1"
+  },
+  {
+   "text": "trésor",
+   "start": 18.583356,
+   "end": 18.903356,
+   "segment": "d1"
+  },
+  {
+   "text": "national",
+   "start": 18.903356,
+   "end": 19.243356,
+   "segment": "d1"
+  },
+  {
+   "text": "aux",
+   "start": 19.243356,
+   "end": 19.383356,
+   "segment": "d1"
+  },
+  {
+   "text": "nazis",
+   "start": 19.383356,
+   "end": 19.683356,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 19.683356,
+   "end": 19.933356,
+   "segment": "d1"
+  },
+  {
+   "text": "c'est",
+   "start": 20.043356,
+   "end": 20.463356,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 20.463356,
+   "end": 20.523356,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 20.523356,
+   "end": 20.603355999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "trahison.",
+   "start": 20.603355999999998,
+   "end": 20.943356,
+   "segment": "d1"
+  },
+  {
+   "text": "Alors",
+   "start": 21.443741,
+   "end": 21.663740999999998,
+   "segment": "d2"
+  },
+  {
+   "text": "il",
+   "start": 21.883741,
+   "end": 22.043741,
+   "segment": "d2"
+  },
+  {
+   "text": "avoue",
+   "start": 22.043741,
+   "end": 22.263741,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 22.263741,
+   "end": 22.513741,
+   "segment": "d2"
+  },
+  {
+   "text": "«",
+   "start": 22.513741,
+   "end": 22.643741,
+   "segment": "d2"
+  },
+  {
+   "text": "Ce",
+   "start": 22.643741,
+   "end": 22.763741,
+   "segment": "d2"
+  },
+  {
+   "text": "n'est",
+   "start": 22.763741,
+   "end": 22.883741,
+   "segment": "d2"
+  },
+  {
+   "text": "pas",
+   "start": 22.883741,
+   "end": 23.023741,
+   "segment": "d2"
+  },
+  {
+   "text": "un",
+   "start": 23.023741,
+   "end": 23.203741,
+   "segment": "d2"
+  },
+  {
+   "text": "Vermeer.",
+   "start": 23.203741,
+   "end": 23.643741,
+   "segment": "d2"
+  },
+  {
+   "text": "C'est",
+   "start": 23.803741,
+   "end": 23.963741,
+   "segment": "d2"
+  },
+  {
+   "text": "moi",
+   "start": 23.963741,
+   "end": 24.143741,
+   "segment": "d2"
+  },
+  {
+   "text": "qui",
+   "start": 24.143741,
+   "end": 24.323741,
+   "segment": "d2"
+  },
+  {
+   "text": "l'ai",
+   "start": 24.323741,
+   "end": 24.463741,
+   "segment": "d2"
+  },
+  {
+   "text": "peint",
+   "start": 24.463741,
+   "end": 24.643741,
+   "segment": "d2"
+  },
+  {
+   "text": "!",
+   "start": 24.643741,
+   "end": 24.730385,
+   "segment": "d2"
+  },
+  {
+   "text": "»",
+   "start": 24.730385,
+   "end": 24.730385,
+   "segment": "d2"
+  },
+  {
+   "text": "Personne",
+   "start": 25.080385,
+   "end": 25.500385,
+   "segment": "d3"
+  },
+  {
+   "text": "ne",
+   "start": 25.500385,
+   "end": 25.560385,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 25.560385,
+   "end": 25.620385,
+   "segment": "d3"
+  },
+  {
+   "text": "croit.",
+   "start": 25.620385,
+   "end": 25.960385,
+   "segment": "d3"
+  },
+  {
+   "text": "Ses",
+   "start": 26.120385,
+   "end": 26.360385,
+   "segment": "d3"
+  },
+  {
+   "text": "faux",
+   "start": 26.360385,
+   "end": 26.600385,
+   "segment": "d3"
+  },
+  {
+   "text": "Vermeer",
+   "start": 26.600385,
+   "end": 26.980385,
+   "segment": "d3"
+  },
+  {
+   "text": "ont",
+   "start": 26.980385,
+   "end": 27.120385,
+   "segment": "d3"
+  },
+  {
+   "text": "trompé",
+   "start": 27.120385,
+   "end": 27.380385,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 27.380385,
+   "end": 27.440385,
+   "segment": "d3"
+  },
+  {
+   "text": "plus",
+   "start": 27.440385,
+   "end": 27.560385,
+   "segment": "d3"
+  },
+  {
+   "text": "grands",
+   "start": 27.560385,
+   "end": 27.720385,
+   "segment": "d3"
+  },
+  {
+   "text": "experts.",
+   "start": 27.720385,
+   "end": 28.060385,
+   "segment": "d3"
+  },
+  {
+   "text": "Un",
+   "start": 28.400385,
+   "end": 28.540385,
+   "segment": "d3"
+  },
+  {
+   "text": "musée",
+   "start": 28.540385,
+   "end": 28.780385,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 28.780385,
+   "end": 28.860385,
+   "segment": "d3"
+  },
+  {
+   "text": "Rotterdam",
+   "start": 28.860385,
+   "end": 29.260385,
+   "segment": "d3"
+  },
+  {
+   "text": "en",
+   "start": 29.260385,
+   "end": 29.580385,
+   "segment": "d3"
+  },
+  {
+   "text": "a",
+   "start": 29.580385,
+   "end": 29.680385,
+   "segment": "d3"
+  },
+  {
+   "text": "même",
+   "start": 29.680385,
+   "end": 29.780385,
+   "segment": "d3"
+  },
+  {
+   "text": "acheté",
+   "start": 29.780385,
+   "end": 30.060385,
+   "segment": "d3"
+  },
+  {
+   "text": "un,",
+   "start": 30.060385,
+   "end": 30.180385,
+   "segment": "d3"
+  },
+  {
+   "text": "pour",
+   "start": 30.180385,
+   "end": 30.360385,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 30.360385,
+   "end": 30.460385,
+   "segment": "d3"
+  },
+  {
+   "text": "fortune.",
+   "start": 30.460385,
+   "end": 30.680385,
+   "segment": "d3"
+  },
+  {
+   "text": "Son",
+   "start": 31.359115,
+   "end": 31.519115,
+   "segment": "d4"
+  },
+  {
+   "text": "secret",
+   "start": 31.519115,
+   "end": 31.739114999999998,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 31.739114999999998,
+   "end": 31.989114999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 32.259115,
+   "end": 32.559115,
+   "segment": "d4"
+  },
+  {
+   "text": "vraies",
+   "start": 32.559115,
+   "end": 32.859115,
+   "segment": "d4"
+  },
+  {
+   "text": "toiles",
+   "start": 32.859115,
+   "end": 33.239115,
+   "segment": "d4"
+  },
+  {
+   "text": "du",
+   "start": 33.239115,
+   "end": 33.379115,
+   "segment": "d4"
+  },
+  {
+   "text": "XVIIe",
+   "start": 33.379115,
+   "end": 33.879115,
+   "segment": "d4"
+  },
+  {
+   "text": "siècle,",
+   "start": 33.879115,
+   "end": 34.139115,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 34.539115,
+   "end": 34.979115,
+   "segment": "d4"
+  },
+  {
+   "text": "résine",
+   "start": 34.979115,
+   "end": 35.539114999999995,
+   "segment": "d4"
+  },
+  {
+   "text": "qui",
+   "start": 35.539114999999995,
+   "end": 35.899115,
+   "segment": "d4"
+  },
+  {
+   "text": "durcit",
+   "start": 35.899115,
+   "end": 36.319115,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 36.319115,
+   "end": 36.419115,
+   "segment": "d4"
+  },
+  {
+   "text": "peinture,",
+   "start": 36.419115,
+   "end": 36.879115,
+   "segment": "d4"
+  },
+  {
+   "text": "et",
+   "start": 36.879115,
+   "end": 37.199115,
+   "segment": "d4"
+  },
+  {
+   "text": "un",
+   "start": 37.199115,
+   "end": 37.279115,
+   "segment": "d4"
+  },
+  {
+   "text": "passage",
+   "start": 37.279115,
+   "end": 37.539114999999995,
+   "segment": "d4"
+  },
+  {
+   "text": "au",
+   "start": 37.539114999999995,
+   "end": 37.679114999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "four",
+   "start": 37.679114999999996,
+   "end": 37.879115,
+   "segment": "d4"
+  },
+  {
+   "text": "pour",
+   "start": 37.879115,
+   "end": 38.059115,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 38.059115,
+   "end": 38.319115,
+   "segment": "d4"
+  },
+  {
+   "text": "faire",
+   "start": 38.159115,
+   "end": 38.319115,
+   "segment": "d4"
+  },
+  {
+   "text": "craqueler.",
+   "start": 38.319115,
+   "end": 38.659115,
+   "segment": "d4"
+  },
+  {
+   "text": "Pourquoi",
+   "start": 39.132788,
+   "end": 39.352788,
+   "segment": "d5"
+  },
+  {
+   "text": "?",
+   "start": 39.352788,
+   "end": 39.602788,
+   "segment": "d5"
+  },
+  {
+   "text": "Les",
+   "start": 39.972788,
+   "end": 40.232788,
+   "segment": "d5"
+  },
+  {
+   "text": "critiques",
+   "start": 40.232788,
+   "end": 40.712787999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "méprisaient",
+   "start": 40.712787999999996,
+   "end": 41.572787999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "ses",
+   "start": 41.572787999999996,
+   "end": 41.752787999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "tableaux.",
+   "start": 41.752787999999995,
+   "end": 42.092788,
+   "segment": "d5"
+  },
+  {
+   "text": "Il",
+   "start": 42.352788,
+   "end": 42.492788,
+   "segment": "d5"
+  },
+  {
+   "text": "voulait",
+   "start": 42.492788,
+   "end": 42.752787999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "leur",
+   "start": 42.752787999999995,
+   "end": 42.812788,
+   "segment": "d5"
+  },
+  {
+   "text": "prouver",
+   "start": 42.812788,
+   "end": 43.072787999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "qu'il",
+   "start": 43.072787999999996,
+   "end": 43.232788,
+   "segment": "d5"
+  },
+  {
+   "text": "valait",
+   "start": 43.232788,
+   "end": 43.532788,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 43.532788,
+   "end": 43.632788,
+   "segment": "d5"
+  },
+  {
+   "text": "grands",
+   "start": 43.632788,
+   "end": 43.832788,
+   "segment": "d5"
+  },
+  {
+   "text": "maîtres.",
+   "start": 43.832788,
+   "end": 44.192788,
+   "segment": "d5"
+  },
+  {
+   "text": "Pour",
+   "start": 44.634557,
+   "end": 44.774557,
+   "segment": "d6"
+  },
+  {
+   "text": "prouver",
+   "start": 44.774557,
+   "end": 45.054557,
+   "segment": "d6"
+  },
+  {
+   "text": "son",
+   "start": 45.054557,
+   "end": 45.194557,
+   "segment": "d6"
+  },
+  {
+   "text": "crime,",
+   "start": 45.194557,
+   "end": 45.434557,
+   "segment": "d6"
+  },
+  {
+   "text": "il",
+   "start": 45.794557,
+   "end": 45.894557,
+   "segment": "d6"
+  },
+  {
+   "text": "peint",
+   "start": 45.894557,
+   "end": 46.154557000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "un",
+   "start": 46.154557000000004,
+   "end": 46.254557,
+   "segment": "d6"
+  },
+  {
+   "text": "dernier",
+   "start": 46.254557,
+   "end": 46.594557,
+   "segment": "d6"
+  },
+  {
+   "text": "«",
+   "start": 46.594557,
+   "end": 46.594557,
+   "segment": "d6"
+  },
+  {
+   "text": "Vermeer",
+   "start": 46.594557,
+   "end": 47.534557,
+   "segment": "d6"
+  },
+  {
+   "text": "»,",
+   "start": 47.534557,
+   "end": 47.534557,
+   "segment": "d6"
+  },
+  {
+   "text": "sous",
+   "start": 47.534557,
+   "end": 47.894557,
+   "segment": "d6"
+  },
+  {
+   "text": "surveillance,",
+   "start": 47.894557,
+   "end": 48.334557000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "devant",
+   "start": 48.334557000000004,
+   "end": 48.994557,
+   "segment": "d6"
+  },
+  {
+   "text": "des",
+   "start": 48.994557,
+   "end": 49.194557,
+   "segment": "d6"
+  },
+  {
+   "text": "témoins.",
+   "start": 49.194557,
+   "end": 49.514557,
+   "segment": "d6"
+  },
+  {
+   "text": "Verdict",
+   "start": 49.923695,
+   "end": 50.303695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": ":",
+   "start": 50.303695000000005,
+   "end": 50.443695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "plus",
+   "start": 50.443695000000005,
+   "end": 50.623695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "un",
+   "start": 50.623695000000005,
+   "end": 50.763695000000006,
+   "segment": "d7"
+  },
+  {
+   "text": "traître,",
+   "start": 50.763695000000006,
+   "end": 51.003695,
+   "segment": "d7"
+  },
+  {
+   "text": "juste",
+   "start": 51.263695000000006,
+   "end": 51.423695,
+   "segment": "d7"
+  },
+  {
+   "text": "un",
+   "start": 51.423695,
+   "end": 51.563695,
+   "segment": "d7"
+  },
+  {
+   "text": "faussaire.",
+   "start": 51.563695,
+   "end": 51.943695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "Un",
+   "start": 52.243695,
+   "end": 52.343695000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "an",
+   "start": 52.243695,
+   "end": 52.343695000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "de",
+   "start": 52.343695000000004,
+   "end": 52.403695,
+   "segment": "d7"
+  },
+  {
+   "text": "prison.",
+   "start": 52.403695,
+   "end": 52.583695000000006,
+   "segment": "d7"
+  },
+  {
+   "text": "Et",
+   "start": 52.583695000000006,
+   "end": 52.833695000000006,
+   "segment": "d7"
+  },
+  {
+   "text": "les",
+   "start": 52.923695,
+   "end": 53.003695,
+   "segment": "d7"
+  },
+  {
+   "text": "Néerlandais",
+   "start": 53.003695,
+   "end": 53.483695000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "l'adorent",
+   "start": 53.483695000000004,
+   "end": 53.743695,
+   "segment": "d7"
+  },
+  {
+   "text": ":",
+   "start": 53.743695,
+   "end": 53.993695,
+   "segment": "d7"
+  },
+  {
+   "text": "c'est",
+   "start": 54.123695000000005,
+   "end": 54.303695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "l'homme",
+   "start": 54.303695000000005,
+   "end": 54.483695000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "qui",
+   "start": 54.483695000000004,
+   "end": 54.623695000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "a",
+   "start": 54.623695000000005,
+   "end": 54.743695,
+   "segment": "d7"
+  },
+  {
+   "text": "roulé",
+   "start": 54.743695,
+   "end": 55.143695,
+   "segment": "d7"
+  },
+  {
+   "text": "Göring.",
+   "start": 55.143695,
+   "end": 55.483695000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "Il",
+   "start": 56.00916,
+   "end": 56.16916,
+   "segment": "d8"
+  },
+  {
+   "text": "meurt",
+   "start": 56.16916,
+   "end": 56.36916,
+   "segment": "d8"
+  },
+  {
+   "text": "d'une",
+   "start": 56.36916,
+   "end": 56.48916,
+   "segment": "d8"
+  },
+  {
+   "text": "crise",
+   "start": 56.48916,
+   "end": 56.64916,
+   "segment": "d8"
+  },
+  {
+   "text": "cardiaque",
+   "start": 56.64916,
+   "end": 57.08916,
+   "segment": "d8"
+  },
+  {
+   "text": "avant",
+   "start": 57.08916,
+   "end": 57.48916,
+   "segment": "d8"
+  },
+  {
+   "text": "même",
+   "start": 57.48916,
+   "end": 57.68916,
+   "segment": "d8"
+  },
+  {
+   "text": "d'entrer",
+   "start": 57.68916,
+   "end": 57.94916,
+   "segment": "d8"
+  },
+  {
+   "text": "en",
+   "start": 57.94916,
+   "end": 58.029160000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "prison.",
+   "start": 58.029160000000005,
+   "end": 58.22916,
+   "segment": "d8"
+  },
+  {
+   "text": "Tout",
+   "start": 58.54916,
+   "end": 58.82916,
+   "segment": "d8"
+  },
+  {
+   "text": "ça",
+   "start": 58.82916,
+   "end": 58.98916,
+   "segment": "d8"
+  },
+  {
+   "text": "parce",
+   "start": 58.98916,
+   "end": 59.58916,
+   "segment": "d8"
+  },
+  {
+   "text": "qu'en",
+   "start": 59.58916,
+   "end": 59.76916,
+   "segment": "d8"
+  },
+  {
+   "text": "1945…",
+   "start": 59.76916,
+   "end": 60.58916,
+   "segment": "d8"
+  }
+ ]
+}

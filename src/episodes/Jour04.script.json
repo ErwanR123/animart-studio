@@ -1,0 +1,33 @@
+{
+  "voice": "Puck",
+  "style": "A 22-year-old French guy from Paris filming a TikTok, telling his friends something he just found out about art. Casual, amused, a bit cheeky, a real smile in the voice, fast spoken French with natural contractions, never announcing, never solemn, never a teacher or a narrator. Like a voice note to a friend. Keep the same energy from start to finish.",
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Dans cette église à Rome, tu mets une pièce pour allumer le tableau. Et c'est un tableau… sur la lumière."
+    },
+    {
+      "id": "intro",
+      "text": "Jour 4 : le clair-obscur.",
+      "say": "Jour quatre : le clair-obscur."
+    },
+    {
+      "id": "one",
+      "text": "Un. Fond presque noir, une seule lumière en biais, comme un spot sur une scène. Le Caravage, c'est le boss de ça."
+    },
+    {
+      "id": "two",
+      "text": "Deux. La lumière choisit qui compte. Elle arrive avec la main de Jésus et tape sur une table de mecs qui comptent leur thune. Il vient chercher Matthieu, un collecteur d'impôts."
+    },
+    {
+      "id": "three",
+      "text": "Trois. Sauf que… c'est lequel, Matthieu ? Le barbu qui se montre du doigt, ou le jeune affalé sur l'argent ? Les experts sont toujours pas d'accord. Toi, 1 ou 2 ?",
+      "say": "Trois. Sauf que… c'est lequel, Matthieu ? Le barbu qui se montre du doigt, ou le jeune affalé sur l'argent ? Les experts sont toujours pas d'accord. Toi, un ou deux ?"
+    },
+    {
+      "id": "outro",
+      "text": "Au musée, cherche d'où vient la lumière : elle te montre qui compte. Abonne-toi, jour 5 demain.",
+      "say": "Au musée, cherche d'où vient la lumière : elle te montre qui compte. Abonne-toi, jour cinq demain."
+    }
+  ]
+}

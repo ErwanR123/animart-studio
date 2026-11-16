@@ -1,0 +1,33 @@
+{
+  "voice": "Puck",
+  "style": "A 22-year-old French guy from Paris filming a TikTok, telling his friends something he just found out about art. Casual, amused, a bit cheeky, a real smile in the voice, fast spoken French with natural contractions, never announcing, never solemn, never a teacher or a narrator. Like a voice note to a friend. Keep the same energy from start to finish.",
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Pourquoi les bébés du Moyen Âge ont tous une tête de comptable de 50 ans ? Spoiler : c'est fait exprès.",
+      "say": "Pourquoi les bébés du Moyen Âge ont tous une tête de comptable de cinquante ans ? Spoiler : c'est fait exprès."
+    },
+    {
+      "id": "intro",
+      "text": "Jour 5 : les bébés vieux.",
+      "say": "Jour cinq : les bébés vieux."
+    },
+    {
+      "id": "one",
+      "text": "Un. Le bébé, c'est Jésus. Et pour l'Église, il naît déjà parfait, déjà sage. Donc on le peint en petit homme : tête d'adulte, corps miniature."
+    },
+    {
+      "id": "two",
+      "text": "Deux. Le peintre cherche pas à faire vrai. Il fait une image sacrée, pas une photo. Un Jésus mignon ? Personne en veut."
+    },
+    {
+      "id": "three",
+      "text": "Trois. À la Renaissance, les familles riches veulent des portraits de leurs vrais enfants. Et d'un coup, les bébés deviennent des bébés : joues rondes, bourrelets. Jusqu'aux deux angelots qui sont aujourd'hui sur tous les mugs."
+    },
+    {
+      "id": "outro",
+      "text": "Au musée, regarde le bébé : petit vieux, Moyen Âge. Bébé tout rond, Renaissance. Abonne-toi, jour 6 demain.",
+      "say": "Au musée, regarde le bébé : petit vieux, Moyen Âge. Bébé tout rond, Renaissance. Abonne-toi, jour six demain."
+    }
+  ]
+}

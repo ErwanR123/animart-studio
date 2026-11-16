@@ -1,0 +1,1160 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.3699770000000004
+  },
+  {
+   "id": "context",
+   "start": 4.719977,
+   "end": 13.571451
+  },
+  {
+   "id": "d1",
+   "start": 13.921451,
+   "end": 20.015963
+  },
+  {
+   "id": "d2",
+   "start": 20.365963,
+   "end": 24.075056
+  },
+  {
+   "id": "d3",
+   "start": 24.425056,
+   "end": 28.580453000000002
+  },
+  {
+   "id": "d4",
+   "start": 28.930453,
+   "end": 32.942086
+  },
+  {
+   "id": "d5",
+   "start": 33.292086,
+   "end": 37.089047
+  },
+  {
+   "id": "d6",
+   "start": 37.439046999999995,
+   "end": 43.163422999999995
+  },
+  {
+   "id": "d7",
+   "start": 43.513422999999996,
+   "end": 48.570814999999996
+  },
+  {
+   "id": "d8",
+   "start": 48.920815,
+   "end": 55.39442
+  },
+  {
+   "id": "d9",
+   "start": 55.74442,
+   "end": 60.754964
+  }
+ ],
+ "words": [
+  {
+   "text": "On",
+   "start": 0.0,
+   "end": 0.18,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 0.18,
+   "end": 0.44,
+   "segment": "hook"
+  },
+  {
+   "text": "volé",
+   "start": 0.44,
+   "end": 1.08,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 1.08,
+   "end": 1.42,
+   "segment": "hook"
+  },
+  {
+   "text": "Joconde.",
+   "start": 1.42,
+   "end": 1.94,
+   "segment": "hook"
+  },
+  {
+   "text": "Et",
+   "start": 1.94,
+   "end": 2.5,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 2.5,
+   "end": 2.62,
+   "segment": "hook"
+  },
+  {
+   "text": "police",
+   "start": 2.62,
+   "end": 2.84,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 2.84,
+   "end": 2.98,
+   "segment": "hook"
+  },
+  {
+   "text": "soupçonné…",
+   "start": 2.98,
+   "end": 3.4,
+   "segment": "hook"
+  },
+  {
+   "text": "Picasso.",
+   "start": 3.4,
+   "end": 3.98,
+   "segment": "hook"
+  },
+  {
+   "text": "Lundi",
+   "start": 4.719977,
+   "end": 5.219977,
+   "segment": "context"
+  },
+  {
+   "text": "21",
+   "start": 5.219977,
+   "end": 5.579977,
+   "segment": "context"
+  },
+  {
+   "text": "août",
+   "start": 5.579977,
+   "end": 6.079977,
+   "segment": "context"
+  },
+  {
+   "text": "1911,",
+   "start": 6.079977,
+   "end": 7.039977,
+   "segment": "context"
+  },
+  {
+   "text": "jour",
+   "start": 7.299977,
+   "end": 7.459977,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 7.459977,
+   "end": 7.659977,
+   "segment": "context"
+  },
+  {
+   "text": "fermeture",
+   "start": 7.659977,
+   "end": 8.259977,
+   "segment": "context"
+  },
+  {
+   "text": "du",
+   "start": 8.259977,
+   "end": 8.399977,
+   "segment": "context"
+  },
+  {
+   "text": "Louvre.",
+   "start": 8.399977,
+   "end": 8.699977,
+   "segment": "context"
+  },
+  {
+   "text": "Un",
+   "start": 9.159977000000001,
+   "end": 9.459977,
+   "segment": "context"
+  },
+  {
+   "text": "homme",
+   "start": 9.459977,
+   "end": 9.719977,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 9.719977,
+   "end": 9.959977,
+   "segment": "context"
+  },
+  {
+   "text": "blouse",
+   "start": 9.959977,
+   "end": 10.219977,
+   "segment": "context"
+  },
+  {
+   "text": "blanche,",
+   "start": 10.219977,
+   "end": 10.679977000000001,
+   "segment": "context"
+  },
+  {
+   "text": "comme",
+   "start": 10.739977,
+   "end": 10.979977,
+   "segment": "context"
+  },
+  {
+   "text": "les",
+   "start": 10.979977,
+   "end": 11.119977,
+   "segment": "context"
+  },
+  {
+   "text": "ouvriers",
+   "start": 11.119977,
+   "end": 11.439976999999999,
+   "segment": "context"
+  },
+  {
+   "text": "du",
+   "start": 11.439976999999999,
+   "end": 11.579977,
+   "segment": "context"
+  },
+  {
+   "text": "musée,",
+   "start": 11.579977,
+   "end": 11.919977,
+   "segment": "context"
+  },
+  {
+   "text": "décroche",
+   "start": 12.239977,
+   "end": 12.759977,
+   "segment": "context"
+  },
+  {
+   "text": "La",
+   "start": 12.759977,
+   "end": 12.999977,
+   "segment": "context"
+  },
+  {
+   "text": "Joconde.",
+   "start": 12.999977,
+   "end": 13.399977,
+   "segment": "context"
+  },
+  {
+   "text": "Dans",
+   "start": 13.921451,
+   "end": 14.041450999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 14.041450999999999,
+   "end": 14.161451,
+   "segment": "d1"
+  },
+  {
+   "text": "escalier",
+   "start": 14.161451,
+   "end": 14.501451,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 14.501451,
+   "end": 14.561451,
+   "segment": "d1"
+  },
+  {
+   "text": "service,",
+   "start": 14.561451,
+   "end": 14.861450999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "il",
+   "start": 15.101450999999999,
+   "end": 15.161451,
+   "segment": "d1"
+  },
+  {
+   "text": "abandonne",
+   "start": 15.161451,
+   "end": 15.581451,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 15.581451,
+   "end": 15.661451,
+   "segment": "d1"
+  },
+  {
+   "text": "cadre.",
+   "start": 15.661451,
+   "end": 15.881450999999998,
+   "segment": "d1"
+  },
+  {
+   "text": "Un",
+   "start": 16.401450999999998,
+   "end": 16.521451,
+   "segment": "d1"
+  },
+  {
+   "text": "plombier",
+   "start": 16.521451,
+   "end": 17.021451,
+   "segment": "d1"
+  },
+  {
+   "text": "lui",
+   "start": 17.021451,
+   "end": 17.221451,
+   "segment": "d1"
+  },
+  {
+   "text": "ouvre",
+   "start": 17.221451,
+   "end": 17.501451,
+   "segment": "d1"
+  },
+  {
+   "text": "même",
+   "start": 17.501451,
+   "end": 17.621451,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 17.621451,
+   "end": 17.781451,
+   "segment": "d1"
+  },
+  {
+   "text": "porte…",
+   "start": 17.781451,
+   "end": 18.021451,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 18.021451,
+   "end": 18.401451,
+   "segment": "d1"
+  },
+  {
+   "text": "il",
+   "start": 18.401451,
+   "end": 18.581451,
+   "segment": "d1"
+  },
+  {
+   "text": "sort",
+   "start": 18.581451,
+   "end": 18.941451,
+   "segment": "d1"
+  },
+  {
+   "text": "avec",
+   "start": 18.941451,
+   "end": 19.441451,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 19.441451,
+   "end": 19.621451,
+   "segment": "d1"
+  },
+  {
+   "text": "tableau.",
+   "start": 19.621451,
+   "end": 19.901451,
+   "segment": "d1"
+  },
+  {
+   "text": "Le",
+   "start": 20.365963,
+   "end": 20.505963,
+   "segment": "d2"
+  },
+  {
+   "text": "lendemain,",
+   "start": 20.505963,
+   "end": 20.805963000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "un",
+   "start": 20.985963,
+   "end": 21.105963,
+   "segment": "d2"
+  },
+  {
+   "text": "peintre",
+   "start": 21.105963,
+   "end": 21.405963,
+   "segment": "d2"
+  },
+  {
+   "text": "venu",
+   "start": 21.405963,
+   "end": 21.685963,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 21.685963,
+   "end": 21.785963000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "copier",
+   "start": 21.785963000000002,
+   "end": 22.105963,
+   "segment": "d2"
+  },
+  {
+   "text": "ne",
+   "start": 22.325963,
+   "end": 22.385963,
+   "segment": "d2"
+  },
+  {
+   "text": "trouve",
+   "start": 22.385963,
+   "end": 22.525963,
+   "segment": "d2"
+  },
+  {
+   "text": "que",
+   "start": 22.525963,
+   "end": 22.685963,
+   "segment": "d2"
+  },
+  {
+   "text": "quatre",
+   "start": 22.685963,
+   "end": 23.065963,
+   "segment": "d2"
+  },
+  {
+   "text": "crochets",
+   "start": 23.065963,
+   "end": 23.485963,
+   "segment": "d2"
+  },
+  {
+   "text": "vides.",
+   "start": 23.485963,
+   "end": 23.885963,
+   "segment": "d2"
+  },
+  {
+   "text": "Le",
+   "start": 24.425056,
+   "end": 24.665056,
+   "segment": "d3"
+  },
+  {
+   "text": "Louvre",
+   "start": 24.665056,
+   "end": 24.945056,
+   "segment": "d3"
+  },
+  {
+   "text": "ferme",
+   "start": 24.945056,
+   "end": 25.225056000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 25.225056000000002,
+   "end": 25.285056,
+   "segment": "d3"
+  },
+  {
+   "text": "semaine.",
+   "start": 25.285056,
+   "end": 25.545056000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "Son",
+   "start": 26.045056000000002,
+   "end": 26.165056,
+   "segment": "d3"
+  },
+  {
+   "text": "visage",
+   "start": 26.165056,
+   "end": 26.505056000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "fait",
+   "start": 26.505056000000003,
+   "end": 26.645056,
+   "segment": "d3"
+  },
+  {
+   "text": "la",
+   "start": 26.645056,
+   "end": 26.745056,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 26.745056,
+   "end": 27.025056000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 27.025056000000003,
+   "end": 27.165056,
+   "segment": "d3"
+  },
+  {
+   "text": "journaux",
+   "start": 27.165056,
+   "end": 27.565056000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "du",
+   "start": 27.565056000000002,
+   "end": 27.825056,
+   "segment": "d3"
+  },
+  {
+   "text": "monde",
+   "start": 27.825056,
+   "end": 28.045056000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "entier.",
+   "start": 28.045056000000002,
+   "end": 28.465056,
+   "segment": "d3"
+  },
+  {
+   "text": "Le",
+   "start": 28.930453,
+   "end": 29.270453,
+   "segment": "d4"
+  },
+  {
+   "text": "poète",
+   "start": 29.270453,
+   "end": 29.590453,
+   "segment": "d4"
+  },
+  {
+   "text": "Apollinaire",
+   "start": 29.590453,
+   "end": 30.150453,
+   "segment": "d4"
+  },
+  {
+   "text": "est",
+   "start": 30.150453,
+   "end": 30.510453,
+   "segment": "d4"
+  },
+  {
+   "text": "même",
+   "start": 30.510453,
+   "end": 30.610453,
+   "segment": "d4"
+  },
+  {
+   "text": "jeté",
+   "start": 30.610453,
+   "end": 30.930453,
+   "segment": "d4"
+  },
+  {
+   "text": "en",
+   "start": 30.930453,
+   "end": 30.990453,
+   "segment": "d4"
+  },
+  {
+   "text": "prison…",
+   "start": 30.990453,
+   "end": 31.210453,
+   "segment": "d4"
+  },
+  {
+   "text": "et",
+   "start": 31.210453,
+   "end": 31.670453000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "Picasso,",
+   "start": 31.670453000000002,
+   "end": 32.030453,
+   "segment": "d4"
+  },
+  {
+   "text": "interrogé.",
+   "start": 32.030453,
+   "end": 32.830453,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 33.292086,
+   "end": 33.412085999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "quand",
+   "start": 33.412085999999995,
+   "end": 33.552085999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 33.552085999999996,
+   "end": 33.672086,
+   "segment": "d5"
+  },
+  {
+   "text": "musée",
+   "start": 33.672086,
+   "end": 33.912085999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "rouvre,",
+   "start": 33.912085999999995,
+   "end": 34.192085999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 34.512086,
+   "end": 34.612086,
+   "segment": "d5"
+  },
+  {
+   "text": "foule",
+   "start": 34.612086,
+   "end": 34.892086,
+   "segment": "d5"
+  },
+  {
+   "text": "se",
+   "start": 34.892086,
+   "end": 35.092085999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "presse…",
+   "start": 35.092085999999995,
+   "end": 35.792086,
+   "segment": "d5"
+  },
+  {
+   "text": "pour",
+   "start": 35.792086,
+   "end": 36.052085999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "regarder",
+   "start": 36.052085999999996,
+   "end": 36.372085999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 36.372085999999996,
+   "end": 36.512086,
+   "segment": "d5"
+  },
+  {
+   "text": "mur",
+   "start": 36.512086,
+   "end": 36.632086,
+   "segment": "d5"
+  },
+  {
+   "text": "vide.",
+   "start": 36.632086,
+   "end": 36.852086,
+   "segment": "d5"
+  },
+  {
+   "text": "Le",
+   "start": 37.439046999999995,
+   "end": 37.679047,
+   "segment": "d6"
+  },
+  {
+   "text": "voleur",
+   "start": 37.679047,
+   "end": 38.09904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "?",
+   "start": 38.09904699999999,
+   "end": 38.09904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "Vincenzo",
+   "start": 38.09904699999999,
+   "end": 39.05904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "Peruggia,",
+   "start": 39.05904699999999,
+   "end": 39.679047,
+   "segment": "d6"
+  },
+  {
+   "text": "un",
+   "start": 39.999047,
+   "end": 40.219046999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "vitrier",
+   "start": 40.219046999999996,
+   "end": 40.639047,
+   "segment": "d6"
+  },
+  {
+   "text": "italien.",
+   "start": 40.639047,
+   "end": 41.19904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "C'est",
+   "start": 41.499047,
+   "end": 41.679047,
+   "segment": "d6"
+  },
+  {
+   "text": "lui",
+   "start": 41.679047,
+   "end": 41.77904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "qui",
+   "start": 41.77904699999999,
+   "end": 42.039047,
+   "segment": "d6"
+  },
+  {
+   "text": "avait",
+   "start": 42.039047,
+   "end": 42.139047,
+   "segment": "d6"
+  },
+  {
+   "text": "mis",
+   "start": 42.139047,
+   "end": 42.259046999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "La",
+   "start": 42.259046999999995,
+   "end": 42.37904699999999,
+   "segment": "d6"
+  },
+  {
+   "text": "Joconde",
+   "start": 42.37904699999999,
+   "end": 42.659046999999994,
+   "segment": "d6"
+  },
+  {
+   "text": "sous",
+   "start": 42.659046999999994,
+   "end": 42.939046999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "verre.",
+   "start": 42.759046999999995,
+   "end": 42.939046999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "Pendant",
+   "start": 43.513422999999996,
+   "end": 44.013422999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "deux",
+   "start": 44.013422999999996,
+   "end": 44.17342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "ans,",
+   "start": 44.17342299999999,
+   "end": 44.293423,
+   "segment": "d7"
+  },
+  {
+   "text": "elle",
+   "start": 44.553422999999995,
+   "end": 44.63342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "dort",
+   "start": 44.63342299999999,
+   "end": 44.833422999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "dans",
+   "start": 44.833422999999996,
+   "end": 44.99342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "une",
+   "start": 44.99342299999999,
+   "end": 45.13342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "malle,",
+   "start": 45.13342299999999,
+   "end": 45.533423,
+   "segment": "d7"
+  },
+  {
+   "text": "dans",
+   "start": 45.613423,
+   "end": 45.753423,
+   "segment": "d7"
+  },
+  {
+   "text": "sa",
+   "start": 45.753423,
+   "end": 45.873422999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "chambre.",
+   "start": 45.873422999999995,
+   "end": 46.213423,
+   "segment": "d7"
+  },
+  {
+   "text": "La",
+   "start": 46.693422999999996,
+   "end": 46.81342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "police",
+   "start": 46.81342299999999,
+   "end": 47.013422999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "vient",
+   "start": 47.013422999999996,
+   "end": 47.233422999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "même",
+   "start": 47.233422999999995,
+   "end": 47.333422999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "chez",
+   "start": 47.333422999999996,
+   "end": 47.473423,
+   "segment": "d7"
+  },
+  {
+   "text": "lui…",
+   "start": 47.473423,
+   "end": 47.63342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "sans",
+   "start": 47.85342299999999,
+   "end": 47.99342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "rien",
+   "start": 47.99342299999999,
+   "end": 48.13342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "voir.",
+   "start": 48.13342299999999,
+   "end": 48.31342299999999,
+   "segment": "d7"
+  },
+  {
+   "text": "En",
+   "start": 48.920815,
+   "end": 49.380815,
+   "segment": "d8"
+  },
+  {
+   "text": "1913,",
+   "start": 49.380815,
+   "end": 50.160815,
+   "segment": "d8"
+  },
+  {
+   "text": "il",
+   "start": 50.440815,
+   "end": 50.600815,
+   "segment": "d8"
+  },
+  {
+   "text": "essaie",
+   "start": 50.600815,
+   "end": 50.880815,
+   "segment": "d8"
+  },
+  {
+   "text": "de",
+   "start": 50.880815,
+   "end": 50.900814999999994,
+   "segment": "d8"
+  },
+  {
+   "text": "la",
+   "start": 50.900814999999994,
+   "end": 51.000814999999996,
+   "segment": "d8"
+  },
+  {
+   "text": "vendre",
+   "start": 51.000814999999996,
+   "end": 51.460815,
+   "segment": "d8"
+  },
+  {
+   "text": "à",
+   "start": 51.460815,
+   "end": 51.580815,
+   "segment": "d8"
+  },
+  {
+   "text": "Florence.",
+   "start": 51.580815,
+   "end": 51.860814999999995,
+   "segment": "d8"
+  },
+  {
+   "text": "Arrêté.",
+   "start": 52.480815,
+   "end": 52.900814999999994,
+   "segment": "d8"
+  },
+  {
+   "text": "Il",
+   "start": 53.280815,
+   "end": 53.420815,
+   "segment": "d8"
+  },
+  {
+   "text": "jure",
+   "start": 53.420815,
+   "end": 53.680814999999996,
+   "segment": "d8"
+  },
+  {
+   "text": "qu'il",
+   "start": 53.680814999999996,
+   "end": 53.820814999999996,
+   "segment": "d8"
+  },
+  {
+   "text": "voulait",
+   "start": 53.820814999999996,
+   "end": 54.040814999999995,
+   "segment": "d8"
+  },
+  {
+   "text": "juste",
+   "start": 54.040814999999995,
+   "end": 54.180814999999996,
+   "segment": "d8"
+  },
+  {
+   "text": "la",
+   "start": 54.180814999999996,
+   "end": 54.360814999999995,
+   "segment": "d8"
+  },
+  {
+   "text": "rendre",
+   "start": 54.360814999999995,
+   "end": 54.620815,
+   "segment": "d8"
+  },
+  {
+   "text": "à",
+   "start": 54.620815,
+   "end": 54.880815,
+   "segment": "d8"
+  },
+  {
+   "text": "l'Italie.",
+   "start": 54.880815,
+   "end": 55.240815,
+   "segment": "d8"
+  },
+  {
+   "text": "Elle",
+   "start": 55.74442,
+   "end": 55.88442,
+   "segment": "d9"
+  },
+  {
+   "text": "revient",
+   "start": 55.88442,
+   "end": 56.08442,
+   "segment": "d9"
+  },
+  {
+   "text": "au",
+   "start": 56.08442,
+   "end": 56.20442,
+   "segment": "d9"
+  },
+  {
+   "text": "Louvre,",
+   "start": 56.20442,
+   "end": 56.48442,
+   "segment": "d9"
+  },
+  {
+   "text": "mais",
+   "start": 56.824419999999996,
+   "end": 56.94442,
+   "segment": "d9"
+  },
+  {
+   "text": "ce",
+   "start": 56.94442,
+   "end": 57.044419999999995,
+   "segment": "d9"
+  },
+  {
+   "text": "n'est",
+   "start": 57.044419999999995,
+   "end": 57.12442,
+   "segment": "d9"
+  },
+  {
+   "text": "plus",
+   "start": 57.12442,
+   "end": 57.26442,
+   "segment": "d9"
+  },
+  {
+   "text": "un",
+   "start": 57.26442,
+   "end": 57.42442,
+   "segment": "d9"
+  },
+  {
+   "text": "tableau",
+   "start": 57.42442,
+   "end": 57.70442,
+   "segment": "d9"
+  },
+  {
+   "text": ":",
+   "start": 57.70442,
+   "end": 57.95442,
+   "segment": "d9"
+  },
+  {
+   "text": "c'est",
+   "start": 58.12442,
+   "end": 58.38442,
+   "segment": "d9"
+  },
+  {
+   "text": "une",
+   "start": 58.38442,
+   "end": 58.52442,
+   "segment": "d9"
+  },
+  {
+   "text": "star.",
+   "start": 58.52442,
+   "end": 58.88442,
+   "segment": "d9"
+  },
+  {
+   "text": "Tout",
+   "start": 59.66442,
+   "end": 59.80442,
+   "segment": "d9"
+  },
+  {
+   "text": "ça",
+   "start": 59.80442,
+   "end": 59.98442,
+   "segment": "d9"
+  },
+  {
+   "text": "parce",
+   "start": 59.98442,
+   "end": 60.14442,
+   "segment": "d9"
+  },
+  {
+   "text": "qu'un",
+   "start": 60.14442,
+   "end": 60.30442,
+   "segment": "d9"
+  },
+  {
+   "text": "jour…",
+   "start": 60.30442,
+   "end": 60.42442,
+   "segment": "d9"
+  }
+ ]
+}

@@ -8,6 +8,9 @@ import voice from "../../public/voice/GuideAlexander.json";
 // "Boire seul, c'était leur dire : moi d'abord" is the episode's reading (bible/script.md rule 4).
 // Images: public/art/SOURCES.md (the painting: Commons "Alexander the Great Refuses to Take Water.jpg", 1484 px, the
 // best found online, upscaled ×4 with Real-ESRGAN and saved at 2968 px); collage pieces in public/art/alexander.
+// The cold open's first close-up (the dying soldier): the loop flies back to it.
+const OPEN = { z: 1.6, fx: 0.13, fy: 0.55 };
+
 export const guideAlexander = createGuideEpisode({
   voiceFile: "voice/GuideAlexander.mp3",
   voice: voice as Voice,
@@ -18,13 +21,21 @@ export const guideAlexander = createGuideEpisode({
   // The whole painting, full width.
   openView: { z: 0.54, fx: 0.5, fy: 0.5 },
   tight: true,
-  // Pointing up at the painting: the first frame and, with the loop, the last.
+  // Cold open, one travelling: the dying soldier on frame 0, across to Alexander on "On lui apporte la dernière eau",
+  // then out to the whole painting on "jette", which the context's rip then tears open.
+  cold: [
+    { view: OPEN, tapes: ["ALEXANDRE", "VOIT SON ARMÉE", "MOURIR DE SOIF"], y: 300 },
+    { word: "on", view: { z: 1.6, fx: 0.77, fy: 0.38 }, tapes: ["IL A JETÉ", "LA DERNIÈRE EAU", "DE SON ARMÉE"], y: 1180, glide: 0.7 },
+    { word: "jette", view: { z: 0.54, fx: 0.5, fy: 0.5 }, tapes: [], glide: 0.9 },
+  ],
+  // Pointing up at the painting as he comes in.
   openPose: "point-up",
   lead: {
+    hook: { sfx: [{ word: "on", src: "sfx/accents/tape.wav", volume: 0.8 }] },
     // Who he was: the painting tears open onto a Vox collage of his conquests.
     context: {
       collage: {
-        word: "alexandre",
+        word: "c'est",
         intro: "rip",
         outro: "page",
         push: 0.25,
@@ -53,8 +64,9 @@ export const guideAlexander = createGuideEpisode({
   },
   // From the water poured away until "bu": the scene goes grey and silent; on "comme si chacun avait bu" the colour
   // comes back as a wave from Alexander through his men.
-  freeze: { from: ["d3", "verse"], to: ["d5", "comme"], fx: 0.5, fy: 0.5, rx: 0.001, ry: 0.001, spread: { fx: 0.74, fy: 0.3, dur: 1.4 } },
-  loop: { word: "voilà" },
+  freeze: { from: ["d3", "renverse"], to: ["d5", "comme"], fx: 0.5, fy: 0.5, rx: 0.001, ry: 0.001, spread: { fx: 0.74, fy: 0.3, dur: 1.4 } },
+  // "…sa plus grande victoire. Le jour où…" flies back to the first frame: "…Alexandre le Grand voit son armée mourir".
+  loop: { word: "où", view: OPEN },
   header: "GIUSEPPE CADES · 1792",
   title: ["Alexandre", "refuse l'eau."],
   // Coordinates measured on a grid over public/art/alexander/alexander.jpg.
@@ -124,13 +136,13 @@ export const guideAlexander = createGuideEpisode({
       // The water poured into the sand.
       id: "d3", fx: 0.62, fy: 0.5,
       view: { z: 1.3, fx: 0.6, fy: 0.55 },
-      pour: { word: "verse", from: { fx: 0.662, fy: 0.466 }, to: { fx: 0.705, fy: 0.815 } },
+      pour: { word: "renverse", from: { fx: 0.662, fy: 0.466 }, to: { fx: 0.705, fy: 0.815 } },
       sfx: [
-        { word: "verse", src: "sfx/story/pour.wav", volume: 0.7 },
+        { word: "renverse", src: "sfx/story/pour.wav", volume: 0.7 },
         { word: "sable", src: "sfx/story/sizzle.wav", volume: 0.25 },
       ],
-      poses: [{ word: "verse", pose: "amazed" }],
-      hold: 1.4,
+      poses: [{ word: "renverse", pose: "amazed" }],
+      hold: 0.3,
       beat: { pose: "explaining", x: 230 },
     },
     {
@@ -144,18 +156,13 @@ export const guideAlexander = createGuideEpisode({
           { tape: "AVEC EUX", x: 520, y: 760, w: 78, rot: 4, depth: 0.9, at: "eux" },
         ],
       },
-      hold: 1.2,
+      hold: 0.9,
       beat: { pose: "explaining", x: 230 },
     },
     {
-      // The whole painting again; the colour comes back on "bu", then the loop to the opening question.
+      // Alexander and his men, close (the whole painting, small, read as the end); the colour comes back on "bu".
       id: "d5", fx: 0.5, fy: 0.5,
-      view: { z: 0.54, fx: 0.5, fy: 0.5 },
-      collage: {
-        word: "selon",
-        until: "voilà",
-        pieces: [{ tape: "ARRIEN, ANABASE VI, 26", x: 170, y: 960, w: 40, rot: -3, depth: 0.9, at: "arrien" }],
-      },
+      view: { z: 1.1, fx: 0.55, fy: 0.5 },
       beat: { pose: "explaining", x: 230 },
     },
   ],

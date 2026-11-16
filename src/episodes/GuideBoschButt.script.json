@@ -1,0 +1,39 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce peintre a écrit une chanson sur les fesses d'un homme."
+    },
+    {
+      "id": "context",
+      "text": "Vers 1500, Jérôme Bosch peint l'enfer. Et dans son enfer, il y a un orchestre.",
+      "say": "Vers quinze cents, Jérôme Bosch peint l'enfer. Et dans son enfer, il y a un orchestre."
+    },
+    {
+      "id": "d1",
+      "text": "Celui-là est crucifié sur une harpe. Lui, écrasé sous un luth. Et lui a une flûte… là où vous pensez."
+    },
+    {
+      "id": "d2",
+      "text": "Sur les fesses de ce damné, une partition. Et tout un chœur la chante, dirigé par un monstre."
+    },
+    {
+      "id": "d3",
+      "text": "Pourquoi ? Pour l'Église de l'époque, la musique des fêtes est un piège : elle mène au péché de chair."
+    },
+    {
+      "id": "d4",
+      "text": "Alors chez Bosch, chacun est puni par ce qu'il a aimé. Les musiciens finissent torturés par leurs instruments."
+    },
+    {
+      "id": "d5",
+      "text": "En 2014, une étudiante a déchiffré la partition. Et ça donne ça.",
+      "say": "En deux mille quatorze, une étudiante a déchiffré la partition. Et ça donne ça.",
+      "pause": 2.5
+    },
+    {
+      "id": "d6",
+      "text": "Le péché de chair, puni sur la chair. Voilà pourquoi ce peintre a écrit une chanson sur les fesses d'un homme."
+    }
+  ]
+}

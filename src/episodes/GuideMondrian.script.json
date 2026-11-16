@@ -1,0 +1,11 @@
+{
+  "segments": [
+    { "id": "hook", "text": "Ce Mondrian est accroché à l'envers depuis quatre-vingts ans." },
+    { "id": "context", "text": "Et le musée a décidé de le laisser comme ça." },
+    { "id": "d0", "text": "Mondrian, le roi des carrés rouges, jaunes et bleus, meurt en 1944 sans l'avoir signé." },
+    { "id": "d1", "text": "Du coup, à New York, on l'accroche… dans ce sens-là." },
+    { "id": "d2", "text": "En 2022, une conservatrice trouve une photo de son atelier : sur le chevalet, il est dans l'autre sens." },
+    { "id": "d3", "text": "Et dans sa version finie, à Paris, les lignes se serrent en haut, comme un ciel sombre." },
+    { "id": "d4", "text": "Alors pourquoi ne pas le retourner ? Ses lignes sont de vieux rubans adhésifs. Retournés, ils tomberaient. C'est pour ça que…" }
+  ]
+}

@@ -35,3 +35,31 @@ Cut, faded and peak-normalised by hand; the engine cycles through the numbered t
 | boom.wav | our own: a sine falling 70 → 28 Hz under low rumbling noise dying over 3.5 s (Krakatoa) | 4 s |
 | story/squeak.wav | our own: a rat's squeak, synthesized | whole |
 | story/pick-1.wav, pick-2.wav, pick-3.wav | our own: a pickaxe on stone, synthesized (three takes) | whole |
+| `reel.wav` | Kenney "Interface Sounds" tick_002 (CC0), repeated on the reel's slowing rows (GuideAmbassadors) | the date reel |
+| `steps.wav` | Commons "Pasos en escalera de caracol.ogg" (CC BY-SA 4.0), 2–4.5 s, -20 LUFS (GuideMonaLisa) | footsteps on a stair |
+| `laugh.wav` | Commons "Laughter(s).ogg" (sagetyrtle, CC0), first 1.1 s | the thief's laugh (GuideMonaLisa) |
+| `gate.wav` | Kenney "Impact Sounds" impactMetal_heavy_002 + impactBell_heavy_001 (CC0), mixed with a short echo | a prison gate slamming (GuideMonaLisa) |
+| `door.wav` | Kenney "RPG Audio" doorOpen_2 + creak3 (CC0) | a door creaking open (GuideMonaLisa) |
+| `rain.wav` | Commons "Rain against the window.ogg" (cori, 2008, public domain), first 7 s, high-pass, faded | rain on the window (GuideExposNov) |
+| `shredder.wav` | synthesized with ffmpeg: brown noise banded and fluttering at 38 Hz (the motor) + high white-noise crackle (paper) | a shredder (GuideBanksy) |
+| `gunshot-1.wav`, `gunshot-2.wav` | Commons "Gunshots 8.ogg" (aradlaw, 2009, public domain), two shots at 1.43 s and 2.27 s, 0.45 s each, faded, -16 LUFS | the shots through the wanted poster (GuideCaravaggio) |
+| `sob.wav` | Commons "Man Crying .ogg" (Iwan "qubodup" Gabovitch, 2013, CC BY 3.0), first sob 0–1.75 s, faded, -20 LUFS | Caravaggio weeping at his sentence (GuideCaravaggio) |
+| `bite.wav` | Commons "Crunching munching grinding.ogg" (public domain), first crunch 0.14–0.74 s, faded, -18 LUFS | the bite into the banana (GuideBanana) |
+| `heart-beat.wav` | Freesound 22440 "Single Heartbeat Clean HQ_BeatSmith" (Lunardrive, CC0), whole | one beat, placed only while a heart is in sight (GuideLouisHeart) |
+| `crowd-riot.wav` | Freesound 384401 "Crowd/Mob/Riot Noise (Voices Only)" (FillMat, CC0), 0–3.6 s, faded, -16 LUFS | the Revolution's crowd (GuideLouisHeart) |
+| `fire.wav` | Freesound 636178 "Fire - Crackling, Spitting, Roaring" (jamesdrake89, CC0), 248–252 s, faded, -16 LUFS | the fire (GuideLouisHeart) |
+| `pestle-1…3.wav` | Freesound 337619 "Thai_MorTar_Pestle" (werapol, CC0), blows at 0.86 / 1.96 / 2.56 s, 0.28 s each | blows in the mortar (GuideLouisHeart) |
+| `chop.wav` | Freesound 862542 "Chop on cuttingboard" (SunBanana, CC0), whole | the knife (GuideLouisHeart) |
+| `lid-shut.wav` | Freesound 448392 "Metal Lid Close" (LordForklift, CC0), 0.6–1.5 s | the reliquary snapping shut (GuideLouisHeart) |
+| `metal-clank.wav` | Freesound 741357 "Metal Clank (Hitting the Lid of the Pan)" (Mish7913, CC0), 0.1–1.1 s | the reliquary's halves (GuideLouisHeart) |
+| `body-fall.wav` | Freesound 181177 "Body falling to floor" (jmdh, CC0), 0.9–1.7 s | the king falling (GuideLouisHeart) |
+| `stamp.wav` | Freesound 362622 "Stamp" (kermite607, CC0), whole | a rubber stamp (GuideLouisHeart) |
+| `splat.wav` | Freesound 515621 "Splat/Squish 4" (mrickey13, CC0), whole | wet things landing (GuideLouisHeart) |
+| `brush.wav` | Freesound 487816 "Paint Brush 3" (BenDrain, CC0), 4–6 s, faded, -16 LUFS | the painting painting itself (GuideLouisHeart) |
+| `hand-whoosh.wav` | Freesound 618772 "Hand Air Woosh" (angelikipanart, CC0), 0.95–1.45 s | the hand (GuideLouisHeart) |
+| `wood-step.wav` | Freesound 505832 "Footsteps indoors wood floor" (jedg, CC0), one step at 2.84 s | one footstep, placed per paper step (GuideLouisHeart) |
+| `scanner.wav` | Freesound 443398 "scanner" (Menth, CC0), 45–47.2 s, faded, -16 LUFS | the scan (GuideLouisHeart) |
+| `scan-ping.wav` | Freesound 823078 "Retail Hand Inventory Scanner Ping 1" (Filmscore, CC0), 1–2.2 s | "identifié" (GuideLouisHeart) |
+| `gavel.wav` | Freesound 173941 "wood hammer, gavel, knock, pound, jury, court" (JohnsonBrandEditing, CC0), 0.23–0.93 s, -16 LUFS | the auction hammer (GuideSalvator) |
+| `nail.wav` | Freesound 497922 "12.1) Hammer on nail" (16FPanskaLipovska_Katerina, CC0), one blow at 2.78 s | spare (GuideSalvator) |
+| `receipt.wav` | Freesound 345057 "epson receipt printer7" (azumarill, CC0), 0.2–2.6 s, faded, -18 LUFS | the receipt printing out of the price tag (GuideSalvator) |

@@ -11,3 +11,6 @@ cache
 
 # Reference repos cloned for study (see bible/references.md); re-clone with scripts/refs.sh
 refs
+
+# Python bytecode
+__pycache__/

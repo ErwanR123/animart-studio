@@ -1,0 +1,832 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 2.6653059999999997
+  },
+  {
+   "id": "context",
+   "start": 3.015306,
+   "end": 9.925691
+  },
+  {
+   "id": "d1",
+   "start": 10.275691,
+   "end": 13.296984
+  },
+  {
+   "id": "d2",
+   "start": 13.646984,
+   "end": 16.916280999999998
+  },
+  {
+   "id": "d3",
+   "start": 17.266281,
+   "end": 19.957504999999998
+  },
+  {
+   "id": "d4",
+   "start": 20.307505,
+   "end": 25.361224
+  },
+  {
+   "id": "d5",
+   "start": 25.711223999999998,
+   "end": 30.232243999999998
+  },
+  {
+   "id": "d6",
+   "start": 30.582243999999996,
+   "end": 34.05711899999999
+  },
+  {
+   "id": "d7",
+   "start": 34.407118999999994,
+   "end": 36.51795799999999
+  }
+ ],
+ "words": [
+  {
+   "text": "Tout",
+   "start": 0.0,
+   "end": 0.12,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 0.12,
+   "end": 0.22,
+   "segment": "hook"
+  },
+  {
+   "text": "monde",
+   "start": 0.22,
+   "end": 0.34,
+   "segment": "hook"
+  },
+  {
+   "text": "croit",
+   "start": 0.34,
+   "end": 0.62,
+   "segment": "hook"
+  },
+  {
+   "text": "que",
+   "start": 0.62,
+   "end": 0.66,
+   "segment": "hook"
+  },
+  {
+   "text": "c'est",
+   "start": 0.66,
+   "end": 0.82,
+   "segment": "hook"
+  },
+  {
+   "text": "une",
+   "start": 0.82,
+   "end": 0.96,
+   "segment": "hook"
+  },
+  {
+   "text": "œuvre.",
+   "start": 0.96,
+   "end": 1.26,
+   "segment": "hook"
+  },
+  {
+   "text": "Ce",
+   "start": 1.52,
+   "end": 1.58,
+   "segment": "hook"
+  },
+  {
+   "text": "sont",
+   "start": 1.58,
+   "end": 1.72,
+   "segment": "hook"
+  },
+  {
+   "text": "les",
+   "start": 1.72,
+   "end": 1.84,
+   "segment": "hook"
+  },
+  {
+   "text": "lunettes",
+   "start": 1.84,
+   "end": 2.18,
+   "segment": "hook"
+  },
+  {
+   "text": "d'un",
+   "start": 2.18,
+   "end": 2.34,
+   "segment": "hook"
+  },
+  {
+   "text": "ado.",
+   "start": 2.34,
+   "end": 2.54,
+   "segment": "hook"
+  },
+  {
+   "text": "San",
+   "start": 3.015306,
+   "end": 3.3353059999999997,
+   "segment": "context"
+  },
+  {
+   "text": "Francisco,",
+   "start": 3.3353059999999997,
+   "end": 3.7353059999999996,
+   "segment": "context"
+  },
+  {
+   "text": "2016.",
+   "start": 4.035306,
+   "end": 4.435306,
+   "segment": "context"
+  },
+  {
+   "text": "Deux",
+   "start": 5.015306,
+   "end": 5.175306,
+   "segment": "context"
+  },
+  {
+   "text": "ados",
+   "start": 5.175306,
+   "end": 5.435306,
+   "segment": "context"
+  },
+  {
+   "text": "visitent",
+   "start": 5.435306,
+   "end": 5.715306,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 5.715306,
+   "end": 5.815306,
+   "segment": "context"
+  },
+  {
+   "text": "musée",
+   "start": 5.815306,
+   "end": 6.075305999999999,
+   "segment": "context"
+  },
+  {
+   "text": "d'art",
+   "start": 6.075305999999999,
+   "end": 6.235306,
+   "segment": "context"
+  },
+  {
+   "text": "moderne.",
+   "start": 6.235306,
+   "end": 6.6553059999999995,
+   "segment": "context"
+  },
+  {
+   "text": "Devant",
+   "start": 6.835305999999999,
+   "end": 6.995305999999999,
+   "segment": "context"
+  },
+  {
+   "text": "certaines",
+   "start": 6.995305999999999,
+   "end": 7.1953059999999995,
+   "segment": "context"
+  },
+  {
+   "text": "œuvres,",
+   "start": 7.1953059999999995,
+   "end": 7.675306,
+   "segment": "context"
+  },
+  {
+   "text": "ils",
+   "start": 7.855306,
+   "end": 7.935306,
+   "segment": "context"
+  },
+  {
+   "text": "se",
+   "start": 7.935306,
+   "end": 8.075306,
+   "segment": "context"
+  },
+  {
+   "text": "demandent",
+   "start": 8.075306,
+   "end": 8.755306000000001,
+   "segment": "context"
+  },
+  {
+   "text": ":",
+   "start": 8.755306000000001,
+   "end": 8.755306000000001,
+   "segment": "context"
+  },
+  {
+   "text": "c'est",
+   "start": 8.755306000000001,
+   "end": 9.255306000000001,
+   "segment": "context"
+  },
+  {
+   "text": "vraiment",
+   "start": 9.255306000000001,
+   "end": 9.415306000000001,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 9.415306000000001,
+   "end": 9.535305999999999,
+   "segment": "context"
+  },
+  {
+   "text": "l'art",
+   "start": 9.535305999999999,
+   "end": 9.715306,
+   "segment": "context"
+  },
+  {
+   "text": "?",
+   "start": 9.715306,
+   "end": 9.925691,
+   "segment": "context"
+  },
+  {
+   "text": "Alors",
+   "start": 10.275691,
+   "end": 10.555691,
+   "segment": "d1"
+  },
+  {
+   "text": "ils",
+   "start": 10.555691,
+   "end": 10.695691,
+   "segment": "d1"
+  },
+  {
+   "text": "font",
+   "start": 10.695691,
+   "end": 10.835691,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 10.835691,
+   "end": 10.935691,
+   "segment": "d1"
+  },
+  {
+   "text": "test.",
+   "start": 10.935691,
+   "end": 11.135691,
+   "segment": "d1"
+  },
+  {
+   "text": "Ils",
+   "start": 11.435691,
+   "end": 11.515691,
+   "segment": "d1"
+  },
+  {
+   "text": "posent",
+   "start": 11.515691,
+   "end": 11.755691,
+   "segment": "d1"
+  },
+  {
+   "text": "des",
+   "start": 11.755691,
+   "end": 11.915691,
+   "segment": "d1"
+  },
+  {
+   "text": "lunettes",
+   "start": 11.915691,
+   "end": 12.115691,
+   "segment": "d1"
+  },
+  {
+   "text": "par",
+   "start": 12.115691,
+   "end": 12.275691,
+   "segment": "d1"
+  },
+  {
+   "text": "terre,",
+   "start": 12.275691,
+   "end": 12.475691000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "et",
+   "start": 12.475691000000001,
+   "end": 12.775691,
+   "segment": "d1"
+  },
+  {
+   "text": "ils",
+   "start": 12.775691,
+   "end": 12.855691,
+   "segment": "d1"
+  },
+  {
+   "text": "reculent.",
+   "start": 12.855691,
+   "end": 13.195691,
+   "segment": "d1"
+  },
+  {
+   "text": "Très",
+   "start": 13.646984,
+   "end": 13.926984,
+   "segment": "d2"
+  },
+  {
+   "text": "vite,",
+   "start": 13.646984,
+   "end": 13.926984,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 14.166984,
+   "end": 14.426984,
+   "segment": "d2"
+  },
+  {
+   "text": "foule",
+   "start": 14.426984,
+   "end": 14.586984,
+   "segment": "d2"
+  },
+  {
+   "text": "arrive.",
+   "start": 14.586984,
+   "end": 14.786984,
+   "segment": "d2"
+  },
+  {
+   "text": "Les",
+   "start": 15.186983999999999,
+   "end": 15.426984,
+   "segment": "d2"
+  },
+  {
+   "text": "gens",
+   "start": 15.426984,
+   "end": 15.546984,
+   "segment": "d2"
+  },
+  {
+   "text": "s'accroupissent",
+   "start": 15.546984,
+   "end": 16.086984,
+   "segment": "d2"
+  },
+  {
+   "text": "pour",
+   "start": 16.086984,
+   "end": 16.226984,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 16.226984,
+   "end": 16.326984,
+   "segment": "d2"
+  },
+  {
+   "text": "photographier.",
+   "start": 16.326984,
+   "end": 16.806984,
+   "segment": "d2"
+  },
+  {
+   "text": "La",
+   "start": 17.266281,
+   "end": 17.426281,
+   "segment": "d3"
+  },
+  {
+   "text": "photo",
+   "start": 17.426281,
+   "end": 17.606281,
+   "segment": "d3"
+  },
+  {
+   "text": "fait",
+   "start": 17.606281,
+   "end": 17.806281,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 17.806281,
+   "end": 17.866281,
+   "segment": "d3"
+  },
+  {
+   "text": "tour",
+   "start": 17.866281,
+   "end": 18.006280999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "d'internet.",
+   "start": 18.006280999999998,
+   "end": 18.446281,
+   "segment": "d3"
+  },
+  {
+   "text": "Mais",
+   "start": 18.606281,
+   "end": 18.706281,
+   "segment": "d3"
+  },
+  {
+   "text": "cette",
+   "start": 18.706281,
+   "end": 18.826280999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "blague",
+   "start": 18.826280999999998,
+   "end": 19.126281,
+   "segment": "d3"
+  },
+  {
+   "text": "a",
+   "start": 19.326280999999998,
+   "end": 19.546281,
+   "segment": "d3"
+  },
+  {
+   "text": "presque",
+   "start": 19.326280999999998,
+   "end": 19.726281,
+   "segment": "d3"
+  },
+  {
+   "text": "cent",
+   "start": 19.726281,
+   "end": 19.726281,
+   "segment": "d3"
+  },
+  {
+   "text": "ans.",
+   "start": 19.726281,
+   "end": 19.986280999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "En",
+   "start": 20.307505,
+   "end": 20.467505,
+   "segment": "d4"
+  },
+  {
+   "text": "1917,",
+   "start": 20.467505,
+   "end": 21.247505,
+   "segment": "d4"
+  },
+  {
+   "text": "Marcel",
+   "start": 21.727505,
+   "end": 22.087505,
+   "segment": "d4"
+  },
+  {
+   "text": "Duchamp",
+   "start": 22.087505,
+   "end": 22.427505,
+   "segment": "d4"
+  },
+  {
+   "text": "envoie",
+   "start": 22.427505,
+   "end": 22.847504999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "un",
+   "start": 22.847504999999998,
+   "end": 22.947505,
+   "segment": "d4"
+  },
+  {
+   "text": "urinoir",
+   "start": 22.947505,
+   "end": 23.487505,
+   "segment": "d4"
+  },
+  {
+   "text": "à",
+   "start": 23.487505,
+   "end": 23.807505,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 23.807505,
+   "end": 23.907505,
+   "segment": "d4"
+  },
+  {
+   "text": "exposition,",
+   "start": 23.907505,
+   "end": 24.407505,
+   "segment": "d4"
+  },
+  {
+   "text": "signé",
+   "start": 24.547505,
+   "end": 24.867504999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "d'un",
+   "start": 24.867504999999998,
+   "end": 24.987505,
+   "segment": "d4"
+  },
+  {
+   "text": "faux",
+   "start": 24.987505,
+   "end": 25.107505,
+   "segment": "d4"
+  },
+  {
+   "text": "nom.",
+   "start": 25.107505,
+   "end": 25.247505,
+   "segment": "d4"
+  },
+  {
+   "text": "Scandale",
+   "start": 26.131223999999996,
+   "end": 26.491224,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 26.491224,
+   "end": 26.741224,
+   "segment": "d5"
+  },
+  {
+   "text": "on",
+   "start": 26.811224,
+   "end": 26.911223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 26.911223999999997,
+   "end": 27.011224,
+   "segment": "d5"
+  },
+  {
+   "text": "cache.",
+   "start": 27.011224,
+   "end": 27.271223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "Aujourd'hui,",
+   "start": 27.471224,
+   "end": 27.871223999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "c'est",
+   "start": 28.011224,
+   "end": 28.271223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "l'une",
+   "start": 28.271223999999997,
+   "end": 28.391223999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "des",
+   "start": 28.391223999999998,
+   "end": 28.471224,
+   "segment": "d5"
+  },
+  {
+   "text": "œuvres",
+   "start": 28.471224,
+   "end": 28.731223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "les",
+   "start": 28.731223999999997,
+   "end": 28.811224,
+   "segment": "d5"
+  },
+  {
+   "text": "plus",
+   "start": 28.811224,
+   "end": 28.931223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "influentes",
+   "start": 28.931223999999997,
+   "end": 29.471224,
+   "segment": "d5"
+  },
+  {
+   "text": "du",
+   "start": 29.471224,
+   "end": 29.631223999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "XXe",
+   "start": 29.631223999999996,
+   "end": 29.871223999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "siècle.",
+   "start": 29.871223999999998,
+   "end": 30.091223999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "Son",
+   "start": 30.582243999999996,
+   "end": 30.922243999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "idée",
+   "start": 30.922243999999996,
+   "end": 31.102243999999995,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 31.102243999999995,
+   "end": 31.352243999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "ce",
+   "start": 31.522243999999997,
+   "end": 31.722243999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "n'est",
+   "start": 31.722243999999996,
+   "end": 31.782243999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "pas",
+   "start": 31.782243999999995,
+   "end": 31.862243999999997,
+   "segment": "d6"
+  },
+  {
+   "text": "l'objet",
+   "start": 31.862243999999997,
+   "end": 32.24224399999999,
+   "segment": "d6"
+  },
+  {
+   "text": "qui",
+   "start": 32.24224399999999,
+   "end": 32.482243999999994,
+   "segment": "d6"
+  },
+  {
+   "text": "fait",
+   "start": 32.482243999999994,
+   "end": 32.602244,
+   "segment": "d6"
+  },
+  {
+   "text": "l'œuvre,",
+   "start": 32.602244,
+   "end": 32.902243999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "c'est",
+   "start": 33.122243999999995,
+   "end": 33.242244,
+   "segment": "d6"
+  },
+  {
+   "text": "l'endroit",
+   "start": 33.242244,
+   "end": 33.56224399999999,
+   "segment": "d6"
+  },
+  {
+   "text": "où",
+   "start": 33.56224399999999,
+   "end": 33.682244,
+   "segment": "d6"
+  },
+  {
+   "text": "on",
+   "start": 33.682244,
+   "end": 33.762243999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "le",
+   "start": 33.762243999999995,
+   "end": 33.862244,
+   "segment": "d6"
+  },
+  {
+   "text": "met.",
+   "start": 33.862244,
+   "end": 33.942243999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "Alors",
+   "start": 34.407118999999994,
+   "end": 34.547118999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "ces",
+   "start": 34.687118999999996,
+   "end": 34.787119,
+   "segment": "d7"
+  },
+  {
+   "text": "lunettes",
+   "start": 34.787119,
+   "end": 35.06711899999999,
+   "segment": "d7"
+  },
+  {
+   "text": ":",
+   "start": 35.06711899999999,
+   "end": 35.267118999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "une",
+   "start": 35.267118999999994,
+   "end": 35.407118999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "blague…",
+   "start": 35.407118999999994,
+   "end": 35.727118999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "ou",
+   "start": 35.727118999999995,
+   "end": 35.98711899999999,
+   "segment": "d7"
+  },
+  {
+   "text": "une",
+   "start": 35.98711899999999,
+   "end": 36.107119,
+   "segment": "d7"
+  },
+  {
+   "text": "œuvre",
+   "start": 36.107119,
+   "end": 36.327118999999996,
+   "segment": "d7"
+  },
+  {
+   "text": "?",
+   "start": 36.327118999999996,
+   "end": 36.51795799999999,
+   "segment": "d7"
+  }
+ ]
+}

@@ -18,6 +18,10 @@ painting views, the Guide and the verdicts.
 
 1. **Story first, then evidence, then design.** "My job wasn't to decorate a video. My job was to tell a story"
    (Caswell); animation is "number nine on the list". A move that carries no information is cut.
+   **Fewer shots, more happening in each** (the user on *Caravage* v1, Oct. 2026: "trop de changements entre plans, des
+   plans inutiles"; "le truc de papier avec les petits personnages, on l'a pas assez"): one scene per beat where
+   paper puppets act the sentence (a duel, a fall, a man fleeing, a figure hopping along the map) beats three
+   static boards. Period prints of whole figures (Callot for the 17th c.) make the cast.
 2. **Every shot shows a piece of evidence and names its source** (a photo, a document, a map, a number, a quote):
    the `source` line. Decorative props only on shots that claim nothing.
 3. **One visual anchor per video**, chosen for the story and coming back in every run (Sendaydiego: construction paper

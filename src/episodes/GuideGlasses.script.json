@@ -1,0 +1,13 @@
+{
+  "segments": [
+    { "id": "hook", "text": "Tout le monde croit que c'est une œuvre. Ce sont les lunettes d'un ado." },
+    { "id": "context", "text": "San Francisco, 2016. Deux ados visitent un musée d'art moderne. Devant certaines œuvres, ils se demandent : c'est vraiment de l'art ?", "say": "San Francisco, deux mille seize. Deux ados visitent un musée d'art moderne. Devant certaines œuvres, ils se demandent : c'est vraiment de l'art ?" },
+    { "id": "d1", "text": "Alors ils font un test. Ils posent des lunettes par terre, et ils reculent." },
+    { "id": "d2", "text": "Très vite, la foule arrive. Les gens s'accroupissent pour les photographier." },
+    { "id": "d3", "text": "La photo fait le tour d'internet. Mais cette blague a presque cent ans." },
+    { "id": "d4", "text": "En 1917, Marcel Duchamp envoie un urinoir à une exposition, signé d'un faux nom.", "say": "En mille neuf cent dix-sept, Marcel Duchamp envoie un urinoir à une exposition, signé d'un faux nom." },
+    { "id": "d5", "text": "Scandale : on le cache. Aujourd'hui, c'est l'une des œuvres les plus influentes du XXe siècle.", "say": "Scandale : on le cache. Aujourd'hui, c'est l'une des œuvres les plus influentes du vingtième siècle." },
+    { "id": "d6", "text": "Son idée : ce n'est pas l'objet qui fait l'œuvre, c'est l'endroit où on le met." },
+    { "id": "d7", "text": "Alors ces lunettes : une blague… ou une œuvre ?" }
+  ]
+}

@@ -1,0 +1,867 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 2.542177
+  },
+  {
+   "id": "context",
+   "start": 2.892177,
+   "end": 7.607098000000001
+  },
+  {
+   "id": "d1",
+   "start": 7.957098,
+   "end": 13.473742000000001
+  },
+  {
+   "id": "d2",
+   "start": 13.823742000000001,
+   "end": 16.779456000000003
+  },
+  {
+   "id": "d3",
+   "start": 17.129456,
+   "end": 20.645851
+  },
+  {
+   "id": "d4",
+   "start": 20.995851000000002,
+   "end": 23.998980000000003
+  },
+  {
+   "id": "d5",
+   "start": 24.348980000000005,
+   "end": 27.740159000000006
+  },
+  {
+   "id": "d6",
+   "start": 28.090159000000007,
+   "end": 33.29458100000001
+  },
+  {
+   "id": "d7",
+   "start": 33.644581,
+   "end": 37.861225000000005
+  },
+  {
+   "id": "d8",
+   "start": 38.211225000000006,
+   "end": 41.85589600000001
+  }
+ ],
+ "words": [
+  {
+   "text": "Ils",
+   "start": 0.0,
+   "end": 0.24,
+   "segment": "hook"
+  },
+  {
+   "text": "ont",
+   "start": 0.24,
+   "end": 0.44,
+   "segment": "hook"
+  },
+  {
+   "text": "bradé",
+   "start": 0.44,
+   "end": 0.8,
+   "segment": "hook"
+  },
+  {
+   "text": "ce",
+   "start": 0.8,
+   "end": 0.9,
+   "segment": "hook"
+  },
+  {
+   "text": "tableau",
+   "start": 0.9,
+   "end": 1.18,
+   "segment": "hook"
+  },
+  {
+   "text": "45",
+   "start": 1.18,
+   "end": 1.76,
+   "segment": "hook"
+  },
+  {
+   "text": "livres.",
+   "start": 1.76,
+   "end": 2.34,
+   "segment": "hook"
+  },
+  {
+   "text": "C'était",
+   "start": 2.892177,
+   "end": 3.272177,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 3.272177,
+   "end": 3.392177,
+   "segment": "context"
+  },
+  {
+   "text": "Léonard",
+   "start": 3.392177,
+   "end": 3.792177,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 3.792177,
+   "end": 3.872177,
+   "segment": "context"
+  },
+  {
+   "text": "Vinci.",
+   "start": 3.872177,
+   "end": 4.2121770000000005,
+   "segment": "context"
+  },
+  {
+   "text": "Il",
+   "start": 4.332177,
+   "end": 4.392177,
+   "segment": "context"
+  },
+  {
+   "text": "s'est",
+   "start": 4.392177,
+   "end": 4.652177,
+   "segment": "context"
+  },
+  {
+   "text": "revendu",
+   "start": 4.652177,
+   "end": 5.112177000000001,
+   "segment": "context"
+  },
+  {
+   "text": "450",
+   "start": 5.112177000000001,
+   "end": 5.892177,
+   "segment": "context"
+  },
+  {
+   "text": "millions",
+   "start": 5.892177,
+   "end": 6.832177,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 6.832177,
+   "end": 7.052177,
+   "segment": "context"
+  },
+  {
+   "text": "dollars.",
+   "start": 7.052177,
+   "end": 7.292177000000001,
+   "segment": "context"
+  },
+  {
+   "text": "Comment",
+   "start": 7.957098,
+   "end": 8.237098,
+   "segment": "d1"
+  },
+  {
+   "text": "on",
+   "start": 8.237098,
+   "end": 8.497098000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "peut",
+   "start": 8.497098000000001,
+   "end": 8.597098,
+   "segment": "d1"
+  },
+  {
+   "text": "rater",
+   "start": 8.597098,
+   "end": 8.837098000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 8.837098000000001,
+   "end": 8.917098,
+   "segment": "d1"
+  },
+  {
+   "text": "Léonard",
+   "start": 8.917098,
+   "end": 9.277098,
+   "segment": "d1"
+  },
+  {
+   "text": "?",
+   "start": 9.277098,
+   "end": 9.527098,
+   "segment": "d1"
+  },
+  {
+   "text": "Regardez-le",
+   "start": 9.737098,
+   "end": 10.217098,
+   "segment": "d1"
+  },
+  {
+   "text": "en",
+   "start": 10.317098,
+   "end": 10.397098,
+   "segment": "d1"
+  },
+  {
+   "text": "1958.",
+   "start": 10.397098,
+   "end": 11.077098,
+   "segment": "d1"
+  },
+  {
+   "text": "Repeint",
+   "start": 11.497098000000001,
+   "end": 11.837098000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 11.837098000000001,
+   "end": 11.937098,
+   "segment": "d1"
+  },
+  {
+   "text": "partout.",
+   "start": 11.937098,
+   "end": 12.157098000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "Pour",
+   "start": 12.617098,
+   "end": 12.777098,
+   "segment": "d1"
+  },
+  {
+   "text": "tout",
+   "start": 12.777098,
+   "end": 12.877098,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 12.877098,
+   "end": 12.917098,
+   "segment": "d1"
+  },
+  {
+   "text": "monde,",
+   "start": 12.917098,
+   "end": 13.037098,
+   "segment": "d1"
+  },
+  {
+   "text": "c'est",
+   "start": 13.057098,
+   "end": 13.177098,
+   "segment": "d1"
+  },
+  {
+   "text": "une",
+   "start": 13.177098,
+   "end": 13.177098,
+   "segment": "d1"
+  },
+  {
+   "text": "copie.",
+   "start": 13.177098,
+   "end": 13.397098,
+   "segment": "d1"
+  },
+  {
+   "text": "En",
+   "start": 13.823742000000001,
+   "end": 13.943742,
+   "segment": "d2"
+  },
+  {
+   "text": "2005,",
+   "start": 13.943742,
+   "end": 14.383742000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "deux",
+   "start": 14.643742000000001,
+   "end": 14.823742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "marchands",
+   "start": 14.823742000000001,
+   "end": 15.143742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 15.143742000000001,
+   "end": 15.243742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "rachètent",
+   "start": 15.143742000000001,
+   "end": 15.563742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "pour",
+   "start": 15.563742000000001,
+   "end": 15.663742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "trois",
+   "start": 15.663742000000001,
+   "end": 15.823742000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "fois",
+   "start": 15.823742000000001,
+   "end": 15.943742000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "rien…",
+   "start": 15.943742000000002,
+   "end": 16.123742,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 16.123742,
+   "end": 16.323742000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 16.323742000000003,
+   "end": 16.403742,
+   "segment": "d2"
+  },
+  {
+   "text": "nettoient.",
+   "start": 16.403742,
+   "end": 16.703742,
+   "segment": "d2"
+  },
+  {
+   "text": "Sous",
+   "start": 17.129456,
+   "end": 17.449456,
+   "segment": "d3"
+  },
+  {
+   "text": "la",
+   "start": 17.449456,
+   "end": 17.569456000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "peinture,",
+   "start": 17.569456000000002,
+   "end": 18.149456,
+   "segment": "d3"
+  },
+  {
+   "text": "ils",
+   "start": 18.269456,
+   "end": 18.489456,
+   "segment": "d3"
+  },
+  {
+   "text": "tombent",
+   "start": 18.489456,
+   "end": 18.929456000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "sur",
+   "start": 18.929456000000002,
+   "end": 19.149456,
+   "segment": "d3"
+  },
+  {
+   "text": "un",
+   "start": 19.149456,
+   "end": 19.309456,
+   "segment": "d3"
+  },
+  {
+   "text": "pouce.",
+   "start": 19.309456,
+   "end": 19.649456,
+   "segment": "d3"
+  },
+  {
+   "text": "Puis",
+   "start": 19.849456,
+   "end": 19.929456000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "un",
+   "start": 19.929456000000002,
+   "end": 20.189456,
+   "segment": "d3"
+  },
+  {
+   "text": "deuxième.",
+   "start": 20.189456,
+   "end": 20.369456000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "Le",
+   "start": 20.995851000000002,
+   "end": 21.135851000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "peintre",
+   "start": 21.135851000000002,
+   "end": 21.435851000000003,
+   "segment": "d4"
+  },
+  {
+   "text": "a",
+   "start": 21.435851000000003,
+   "end": 21.495851000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "hésité.",
+   "start": 21.495851000000002,
+   "end": 21.735851,
+   "segment": "d4"
+  },
+  {
+   "text": "Un",
+   "start": 21.955851000000003,
+   "end": 22.055851,
+   "segment": "d4"
+  },
+  {
+   "text": "copiste,",
+   "start": 22.055851,
+   "end": 22.355851,
+   "segment": "d4"
+  },
+  {
+   "text": "lui,",
+   "start": 22.355851,
+   "end": 22.555851,
+   "segment": "d4"
+  },
+  {
+   "text": "n'hésite",
+   "start": 22.555851,
+   "end": 23.055851,
+   "segment": "d4"
+  },
+  {
+   "text": "pas",
+   "start": 23.055851,
+   "end": 23.175851,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 23.175851,
+   "end": 23.425851,
+   "segment": "d4"
+  },
+  {
+   "text": "il",
+   "start": 23.475851000000002,
+   "end": 23.555851,
+   "segment": "d4"
+  },
+  {
+   "text": "recopie.",
+   "start": 23.555851,
+   "end": 23.915851,
+   "segment": "d4"
+  },
+  {
+   "text": "Donc",
+   "start": 24.348980000000005,
+   "end": 24.508980000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "c'est",
+   "start": 24.788980000000006,
+   "end": 24.968980000000006,
+   "segment": "d5"
+  },
+  {
+   "text": "Léonard.",
+   "start": 24.968980000000006,
+   "end": 25.308980000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "Record",
+   "start": 25.488980000000005,
+   "end": 25.828980000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "du",
+   "start": 25.828980000000005,
+   "end": 26.028980000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "monde",
+   "start": 26.028980000000004,
+   "end": 26.228980000000004,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 26.228980000000004,
+   "end": 26.478980000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "450",
+   "start": 26.508980000000005,
+   "end": 27.068980000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "millions.",
+   "start": 27.068980000000003,
+   "end": 27.568980000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "Sauf",
+   "start": 28.090159000000007,
+   "end": 28.370159000000008,
+   "segment": "d6"
+  },
+  {
+   "text": "que…",
+   "start": 28.370159000000008,
+   "end": 28.470159000000006,
+   "segment": "d6"
+  },
+  {
+   "text": "regardez",
+   "start": 28.810159000000006,
+   "end": 29.130159000000006,
+   "segment": "d6"
+  },
+  {
+   "text": "sa",
+   "start": 29.130159000000006,
+   "end": 29.310159000000006,
+   "segment": "d6"
+  },
+  {
+   "text": "main",
+   "start": 29.310159000000006,
+   "end": 29.390159000000008,
+   "segment": "d6"
+  },
+  {
+   "text": "gauche.",
+   "start": 29.390159000000008,
+   "end": 29.710159000000008,
+   "segment": "d6"
+  },
+  {
+   "text": "Une",
+   "start": 30.03015900000001,
+   "end": 30.17015900000001,
+   "segment": "d6"
+  },
+  {
+   "text": "vraie",
+   "start": 30.17015900000001,
+   "end": 30.35015900000001,
+   "segment": "d6"
+  },
+  {
+   "text": "boule",
+   "start": 30.35015900000001,
+   "end": 30.470159000000006,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 30.470159000000006,
+   "end": 30.550159000000008,
+   "segment": "d6"
+  },
+  {
+   "text": "cristal",
+   "start": 30.550159000000008,
+   "end": 30.830159000000005,
+   "segment": "d6"
+  },
+  {
+   "text": "déforme",
+   "start": 30.830159000000005,
+   "end": 31.110159000000007,
+   "segment": "d6"
+  },
+  {
+   "text": "tout",
+   "start": 31.110159000000007,
+   "end": 31.510159000000005,
+   "segment": "d6"
+  },
+  {
+   "text": "ce",
+   "start": 31.510159000000005,
+   "end": 31.610159000000007,
+   "segment": "d6"
+  },
+  {
+   "text": "qu'il",
+   "start": 31.610159000000007,
+   "end": 31.750159000000007,
+   "segment": "d6"
+  },
+  {
+   "text": "y",
+   "start": 31.750159000000007,
+   "end": 31.770159000000007,
+   "segment": "d6"
+  },
+  {
+   "text": "a",
+   "start": 31.770159000000007,
+   "end": 32.09015900000001,
+   "segment": "d6"
+  },
+  {
+   "text": "derrière.",
+   "start": 32.09015900000001,
+   "end": 32.09015900000001,
+   "segment": "d6"
+  },
+  {
+   "text": "Celle-là,",
+   "start": 32.47015900000001,
+   "end": 32.790159,
+   "segment": "d6"
+  },
+  {
+   "text": "rien.",
+   "start": 32.95015900000001,
+   "end": 33.090159000000014,
+   "segment": "d6"
+  },
+  {
+   "text": "Et",
+   "start": 33.644581,
+   "end": 33.784581,
+   "segment": "d7"
+  },
+  {
+   "text": "Léonard",
+   "start": 33.784581,
+   "end": 34.144581,
+   "segment": "d7"
+  },
+  {
+   "text": "était",
+   "start": 34.144581,
+   "end": 34.264581,
+   "segment": "d7"
+  },
+  {
+   "text": "le",
+   "start": 34.264581,
+   "end": 34.404581,
+   "segment": "d7"
+  },
+  {
+   "text": "roi",
+   "start": 34.404581,
+   "end": 34.704581000000005,
+   "segment": "d7"
+  },
+  {
+   "text": "de",
+   "start": 34.704581000000005,
+   "end": 34.744581000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "l'optique.",
+   "start": 34.744581000000004,
+   "end": 35.044581,
+   "segment": "d7"
+  },
+  {
+   "text": "Depuis",
+   "start": 35.344581000000005,
+   "end": 35.684581,
+   "segment": "d7"
+  },
+  {
+   "text": "la",
+   "start": 35.684581,
+   "end": 35.864581,
+   "segment": "d7"
+  },
+  {
+   "text": "vente,",
+   "start": 35.864581,
+   "end": 36.084581,
+   "segment": "d7"
+  },
+  {
+   "text": "l'acheteur",
+   "start": 36.244581000000004,
+   "end": 36.584581,
+   "segment": "d7"
+  },
+  {
+   "text": "ne",
+   "start": 36.584581,
+   "end": 36.684581,
+   "segment": "d7"
+  },
+  {
+   "text": "l'a",
+   "start": 36.684581,
+   "end": 36.804581000000006,
+   "segment": "d7"
+  },
+  {
+   "text": "plus",
+   "start": 36.804581000000006,
+   "end": 36.964581,
+   "segment": "d7"
+  },
+  {
+   "text": "jamais",
+   "start": 36.964581,
+   "end": 37.304581000000006,
+   "segment": "d7"
+  },
+  {
+   "text": "montré.",
+   "start": 37.304581000000006,
+   "end": 37.784581,
+   "segment": "d7"
+  },
+  {
+   "text": "Alors",
+   "start": 38.211225000000006,
+   "end": 38.371225,
+   "segment": "d8"
+  },
+  {
+   "text": ":",
+   "start": 38.371225,
+   "end": 38.621225,
+   "segment": "d8"
+  },
+  {
+   "text": "450",
+   "start": 38.67122500000001,
+   "end": 38.99122500000001,
+   "segment": "d8"
+  },
+  {
+   "text": "millions",
+   "start": 38.99122500000001,
+   "end": 39.431225000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "pour",
+   "start": 39.431225000000005,
+   "end": 39.611225000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "un",
+   "start": 39.611225000000005,
+   "end": 39.711225000000006,
+   "segment": "d8"
+  },
+  {
+   "text": "Léonard…",
+   "start": 39.711225000000006,
+   "end": 40.05122500000001,
+   "segment": "d8"
+  },
+  {
+   "text": "ou",
+   "start": 40.05122500000001,
+   "end": 40.31122500000001,
+   "segment": "d8"
+  },
+  {
+   "text": "pour",
+   "start": 40.31122500000001,
+   "end": 40.49122500000001,
+   "segment": "d8"
+  },
+  {
+   "text": "une",
+   "start": 40.49122500000001,
+   "end": 40.611225000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "copie",
+   "start": 40.611225000000005,
+   "end": 40.931225000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "à",
+   "start": 40.931225000000005,
+   "end": 41.071225000000005,
+   "segment": "d8"
+  },
+  {
+   "text": "45",
+   "start": 41.071225000000005,
+   "end": 41.391225000000006,
+   "segment": "d8"
+  },
+  {
+   "text": "livres",
+   "start": 41.391225000000006,
+   "end": 41.691225,
+   "segment": "d8"
+  },
+  {
+   "text": "?",
+   "start": 41.691225,
+   "end": 41.85589600000001,
+   "segment": "d8"
+  }
+ ]
+}

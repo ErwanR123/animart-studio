@@ -1,0 +1,599 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.389478
+  },
+  {
+   "id": "context",
+   "start": 4.739478,
+   "end": 7.942902
+  },
+  {
+   "id": "d1",
+   "start": 8.292902,
+   "end": 10.950362
+  },
+  {
+   "id": "d2",
+   "start": 11.300362,
+   "end": 14.614080999999999
+  },
+  {
+   "id": "d3",
+   "start": 14.964081,
+   "end": 19.226553000000003
+  },
+  {
+   "id": "d4",
+   "start": 19.576553,
+   "end": 22.601950000000002
+  },
+  {
+   "id": "d5",
+   "start": 22.95195,
+   "end": 25.980136
+  },
+  {
+   "id": "d6",
+   "start": 26.330136,
+   "end": 29.298344999999998
+  }
+ ],
+ "words": [
+  {
+   "text": "Cinq",
+   "start": 0.0,
+   "end": 0.25,
+   "segment": "hook"
+  },
+  {
+   "text": "millions",
+   "start": 0.42,
+   "end": 0.86,
+   "segment": "hook"
+  },
+  {
+   "text": "d'euros",
+   "start": 0.86,
+   "end": 1.4,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 1.4,
+   "end": 1.54,
+   "segment": "hook"
+  },
+  {
+   "text": "restauration.",
+   "start": 1.54,
+   "end": 2.18,
+   "segment": "hook"
+  },
+  {
+   "text": "Résultat",
+   "start": 2.32,
+   "end": 2.7,
+   "segment": "hook"
+  },
+  {
+   "text": ":",
+   "start": 2.7,
+   "end": 2.94,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 2.94,
+   "end": 3.02,
+   "segment": "hook"
+  },
+  {
+   "text": "monde",
+   "start": 3.02,
+   "end": 3.18,
+   "segment": "hook"
+  },
+  {
+   "text": "entier",
+   "start": 3.18,
+   "end": 3.48,
+   "segment": "hook"
+  },
+  {
+   "text": "se",
+   "start": 3.48,
+   "end": 3.58,
+   "segment": "hook"
+  },
+  {
+   "text": "moque",
+   "start": 3.58,
+   "end": 3.84,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 3.84,
+   "end": 3.94,
+   "segment": "hook"
+  },
+  {
+   "text": "cet",
+   "start": 3.94,
+   "end": 4.06,
+   "segment": "hook"
+  },
+  {
+   "text": "agneau.",
+   "start": 4.06,
+   "end": 4.34,
+   "segment": "hook"
+  },
+  {
+   "text": "C'est",
+   "start": 4.739478,
+   "end": 5.1794780000000005,
+   "segment": "context"
+  },
+  {
+   "text": "L'Agneau",
+   "start": 5.1794780000000005,
+   "end": 5.559478,
+   "segment": "context"
+  },
+  {
+   "text": "mystique,",
+   "start": 5.559478,
+   "end": 5.999478,
+   "segment": "context"
+  },
+  {
+   "text": "le",
+   "start": 6.299478000000001,
+   "end": 6.379478,
+   "segment": "context"
+  },
+  {
+   "text": "chef-d'œuvre",
+   "start": 6.379478,
+   "end": 6.999478,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 6.999478,
+   "end": 7.0994779999999995,
+   "segment": "context"
+  },
+  {
+   "text": "Van",
+   "start": 7.0994779999999995,
+   "end": 7.2194780000000005,
+   "segment": "context"
+  },
+  {
+   "text": "Eyck,",
+   "start": 7.2194780000000005,
+   "end": 7.519477999999999,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 7.519477999999999,
+   "end": 7.679478,
+   "segment": "context"
+  },
+  {
+   "text": "Gand.",
+   "start": 7.679478,
+   "end": 7.839478,
+   "segment": "context"
+  },
+  {
+   "text": "En",
+   "start": 8.292902,
+   "end": 8.392902,
+   "segment": "d1"
+  },
+  {
+   "text": "2020,",
+   "start": 8.392902,
+   "end": 8.772902,
+   "segment": "d1"
+  },
+  {
+   "text": "tout",
+   "start": 9.092902,
+   "end": 9.292902,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 9.292902,
+   "end": 9.392902,
+   "segment": "d1"
+  },
+  {
+   "text": "monde",
+   "start": 9.392902,
+   "end": 9.552902,
+   "segment": "d1"
+  },
+  {
+   "text": "parle",
+   "start": 9.552902,
+   "end": 9.832902,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 9.832902,
+   "end": 10.052902,
+   "segment": "d1"
+  },
+  {
+   "text": "restauration",
+   "start": 10.052902,
+   "end": 10.552902,
+   "segment": "d1"
+  },
+  {
+   "text": "ratée.",
+   "start": 10.552902,
+   "end": 10.852902,
+   "segment": "d1"
+  },
+  {
+   "text": "Sauf",
+   "start": 11.300362,
+   "end": 11.500361999999999,
+   "segment": "d2"
+  },
+  {
+   "text": "que",
+   "start": 11.500361999999999,
+   "end": 11.620362,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 11.620362,
+   "end": 11.720362,
+   "segment": "d2"
+  },
+  {
+   "text": "restaurateurs",
+   "start": 11.720362,
+   "end": 12.200362,
+   "segment": "d2"
+  },
+  {
+   "text": "n'ont",
+   "start": 12.200362,
+   "end": 12.420362,
+   "segment": "d2"
+  },
+  {
+   "text": "pas",
+   "start": 12.420362,
+   "end": 12.500361999999999,
+   "segment": "d2"
+  },
+  {
+   "text": "inventé",
+   "start": 12.500361999999999,
+   "end": 12.980362,
+   "segment": "d2"
+  },
+  {
+   "text": "ce",
+   "start": 12.980362,
+   "end": 13.100362,
+   "segment": "d2"
+  },
+  {
+   "text": "visage.",
+   "start": 13.100362,
+   "end": 13.500361999999999,
+   "segment": "d2"
+  },
+  {
+   "text": "Ils",
+   "start": 13.780362,
+   "end": 13.860362,
+   "segment": "d2"
+  },
+  {
+   "text": "l'ont",
+   "start": 13.860362,
+   "end": 14.040362,
+   "segment": "d2"
+  },
+  {
+   "text": "retrouvé.",
+   "start": 14.040362,
+   "end": 14.500361999999999,
+   "segment": "d2"
+  },
+  {
+   "text": "Au",
+   "start": 14.964081,
+   "end": 15.344081000000001,
+   "segment": "d3"
+  },
+  {
+   "text": "seizième",
+   "start": 15.344081000000001,
+   "end": 15.664081,
+   "segment": "d3"
+  },
+  {
+   "text": "siècle,",
+   "start": 15.664081,
+   "end": 15.904081,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 16.044081,
+   "end": 16.264081,
+   "segment": "d3"
+  },
+  {
+   "text": "peintres",
+   "start": 16.264081,
+   "end": 16.604081,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 16.604081,
+   "end": 16.704081,
+   "segment": "d3"
+  },
+  {
+   "text": "recouvrent",
+   "start": 16.704081,
+   "end": 17.224080999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "avec",
+   "start": 17.224080999999998,
+   "end": 17.344081,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 17.344081,
+   "end": 17.604081,
+   "segment": "d3"
+  },
+  {
+   "text": "tête",
+   "start": 17.604081,
+   "end": 17.904081,
+   "segment": "d3"
+  },
+  {
+   "text": "d'agneau",
+   "start": 17.904081,
+   "end": 18.504081,
+   "segment": "d3"
+  },
+  {
+   "text": "normale.",
+   "start": 18.504081,
+   "end": 18.924081,
+   "segment": "d3"
+  },
+  {
+   "text": "Pendant",
+   "start": 19.576553,
+   "end": 19.836553000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 19.836553000000002,
+   "end": 19.976553,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 19.976553,
+   "end": 20.096553,
+   "segment": "d4"
+  },
+  {
+   "text": "quatre",
+   "start": 20.096553,
+   "end": 20.376553,
+   "segment": "d4"
+  },
+  {
+   "text": "siècles,",
+   "start": 20.376553,
+   "end": 20.936553,
+   "segment": "d4"
+  },
+  {
+   "text": "tout",
+   "start": 21.216553,
+   "end": 21.276553,
+   "segment": "d4"
+  },
+  {
+   "text": "le",
+   "start": 21.276553,
+   "end": 21.396553,
+   "segment": "d4"
+  },
+  {
+   "text": "monde",
+   "start": 21.396553,
+   "end": 21.556553,
+   "segment": "d4"
+  },
+  {
+   "text": "admire",
+   "start": 21.556553,
+   "end": 21.896553,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 21.896553,
+   "end": 22.056553,
+   "segment": "d4"
+  },
+  {
+   "text": "retouche.",
+   "start": 22.056553,
+   "end": 22.456553,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 22.95195,
+   "end": 23.07195,
+   "segment": "d5"
+  },
+  {
+   "text": "dessous,",
+   "start": 23.07195,
+   "end": 23.35195,
+   "segment": "d5"
+  },
+  {
+   "text": "il",
+   "start": 23.57195,
+   "end": 23.67195,
+   "segment": "d5"
+  },
+  {
+   "text": "y",
+   "start": 23.67195,
+   "end": 23.75195,
+   "segment": "d5"
+  },
+  {
+   "text": "a",
+   "start": 23.75195,
+   "end": 23.83195,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 23.83195,
+   "end": 23.91195,
+   "segment": "d5"
+  },
+  {
+   "text": "vrai",
+   "start": 23.91195,
+   "end": 24.19195,
+   "segment": "d5"
+  },
+  {
+   "text": "Van",
+   "start": 24.19195,
+   "end": 24.531950000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "Eyck,",
+   "start": 24.531950000000002,
+   "end": 24.87195,
+   "segment": "d5"
+  },
+  {
+   "text": "de",
+   "start": 24.87195,
+   "end": 25.13195,
+   "segment": "d5"
+  },
+  {
+   "text": "1432.",
+   "start": 25.13195,
+   "end": 25.73195,
+   "segment": "d5"
+  },
+  {
+   "text": "Internet",
+   "start": 26.330136,
+   "end": 26.650136,
+   "segment": "d6"
+  },
+  {
+   "text": "croyait",
+   "start": 26.650136,
+   "end": 27.050136,
+   "segment": "d6"
+  },
+  {
+   "text": "se",
+   "start": 27.050136,
+   "end": 27.150136,
+   "segment": "d6"
+  },
+  {
+   "text": "moquer",
+   "start": 27.150136,
+   "end": 27.370136,
+   "segment": "d6"
+  },
+  {
+   "text": "des",
+   "start": 27.370136,
+   "end": 27.450136,
+   "segment": "d6"
+  },
+  {
+   "text": "restaurateurs.",
+   "start": 27.450136,
+   "end": 27.930136,
+   "segment": "d6"
+  },
+  {
+   "text": "Il",
+   "start": 28.270136,
+   "end": 28.370136,
+   "segment": "d6"
+  },
+  {
+   "text": "se",
+   "start": 28.370136,
+   "end": 28.490136,
+   "segment": "d6"
+  },
+  {
+   "text": "moquait",
+   "start": 28.490136,
+   "end": 28.770136,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 28.770136,
+   "end": 28.890136,
+   "segment": "d6"
+  },
+  {
+   "text": "Van",
+   "start": 28.770136,
+   "end": 28.890136,
+   "segment": "d6"
+  },
+  {
+   "text": "Eyck.",
+   "start": 28.890136,
+   "end": 29.130136,
+   "segment": "d6"
+  }
+ ]
+}

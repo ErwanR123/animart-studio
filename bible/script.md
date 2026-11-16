@@ -25,17 +25,26 @@ away at the first sentence that doesn't make sense. The goal is **emotion**: "le
    pose means). **A disputed hypothesis that adds emotion can stay, said as a hypothesis** ("des astronomes pensent
    que…"). No false superlatives.
 6. **Cut what doesn't serve the question.** A fun anecdote that leads nowhere costs 5 seconds and the viewer.
-7. **The hook is a precise question or a surprising statement with a named subject**, in the first words: "Pourquoi
-   Alexandre le Grand refuse-t-il de boire, alors que son armée meurt de soif ?", "Dans Le Cri d'Edvard Munch, tout
-   le monde croit que cet homme hurle. En réalité, il essaie de ne plus rien entendre." Never "ce tableau cache un
-   secret".
-8. **The end answers the hook and loops into it.** If the hook is a question, the last line can end on "Voilà la
-   réponse à la question :" and the video restarts on it. If it is a statement, the last line answers it on its own
-   and the return to the opening image makes the loop. No call to action, ever.
+7. **The hook teases a fact the video pays off later** (`bible/format.md`, the hook): ≤ 12 words, ≤ 3.5 s, a
+   surprise that makes a cold viewer ask "what is he talking about?": "Et si ce qui l'angoisse, c'était un volcan à
+   onze mille kilomètres ?" (*Le Cri*), "Ce tableau vient d'être vendu un million… et il s'autodétruit devant tout
+   le monde." (*Banksy*). Rejected: "Tout le monde croit qu'il hurle." (a reading, no surprise), the name-first
+   opening, "ce tableau cache un secret". Write it for the ear, in one breath: no "…" pause inside it.
+8. **The end answers the hook and its last words run into it**: read the last line then the first aloud, as one
+   sentence ("…et il est le seul à l'entendre. / Et si ce qui l'angoisse…"; "Voilà pourquoi…" / the hook). No call
+   to action, ever.
 9. **Every sentence must be showable**: when you write it, know what will be on screen (a detail of the painting, an
    archive of the time). A sentence with nothing true to show is a sentence to rewrite.
-10. **Length: 55–70 s, about 140–180 words.** Cut anecdotes and pauses, never the explanation that makes a sentence
-    true.
+10. **Length: about 40 s, 90–120 words, never a minute.** Tell the story once, in order, and stop: a last line
+    that says it again (*Alexander* after 40 s) is cut. Cut anecdotes and pauses, never the explanation that makes a
+    sentence true.
+11. **Written for TikTok, Reels and Shorts**: every line raises the next question (an open loop the next line closes
+    and reopens), concrete and spoken like a friend telling a story, never a lesson.
+
+12. **Start at 70 %, then waves** (the user, 2026-11-03): the first sentence drops the viewer in the story near its
+    climax, a shock line about what is happening, not a game or a question to work out. Then the energy goes down a
+    little (who, how), back up, down, up: each line is a jump that relaunches, with the peaks spread to the end
+    (the fall, then a last twist), never a calm block of context.
 
 ## Reference scripts
 
@@ -68,8 +77,21 @@ published episodes on them; confirm on more videos before changing the rules or 
 - **First second** (same date): *Le Cri* had 70 % swiped away vs 52 % for *Athens*. Suspects: the opening frame (the
   painting a narrow strip between wide beige margins) and the hook's revelation arriving only after ~3 s ("Dans Le
   Cri d'Edvard Munch, tout le monde croit…"). To check against its own retention curve.
+- **TikTok, first video of a cold account** (*Paris Rain*, 2026-10-28): 880 views, 98.8 % from For You, so TikTok
+  did test it; but only ~19 % still watching at 0:04, average watch 6.5 s of 52 s, 4 % to the end. Third video
+  where the loss is in the first 2 s. Suspects on the opening: a dim painting crop with a wandering loupe that blurs
+  faces, a small title, the spoken line only describing the screen ("Tout le monde regarde ce couple") with no
+  stakes, the Guide and the caption bubble in the bottom third, which TikTok's caption overlay covers. To test next:
+  frame 0 full screen and already moving, big text in the upper-middle safe zone, a hook with stakes for today's
+  viewer, the Guide out of the first 2 s.
+  Same video on YouTube Shorts: 41 % stayed (59 % swiped), average 0:31 of 0:53; the curve leaks steadily from the
+  start to ~14 s (hook + "il faut voir le Paris d'avant" + the old-Paris block), then stays flat to the end. So the
+  body holds on both platforms; the weak part is 0–14 s, and TikTok punishes it far harder.
 
 ## Rejected along the way (don't propose again)
+
+- **"Find / search" hooks** ("Essayez de trouver Icare", "Trouvez-le"): the user, 2026-11-03: people leave at once,
+  they have no time to search or decode. Open on the climax instead (rule 12).
 
 - "Ce tableau cache un secret" hooks; a hook split across two bubbles.
 - A reveal about the models ("the soldier's real father is the man on the roof"): trivia that changes nothing.

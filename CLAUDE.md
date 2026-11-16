@@ -1,6 +1,6 @@
 # Animart video studio
 
-Short videos about paintings (9:16, 1080×1920, 30 fps, 55–70 s) for TikTok / Reels / Shorts, in French. The format
+Short videos about paintings (9:16, 1080×1920, 30 fps, about 40 s, never a minute) for TikTok / Reels / Shorts, in French. The format
 is **"Le Guide"**: the Guide (our cartoon mascot) tells the story from the bottom of the frame, his words in a paper
 bubble beside him, while the top shows the painting (pencil loops, notes, spotlights on his words) and Vox-style
 paper collages of its time (real archives, cut and pasted). Remotion (React) renders it; every timing comes from
@@ -9,7 +9,8 @@ the voiceover's word timestamps.
 **Five finished episodes are the references** (`examples/` holds compressed previews): `GuideAthens` (the pilot),
 `GuideHomecoming`, `GuideAlexander`, `GuideScream` (the collage-shot style) and **`GuideParisRain`** (Caillebotte,
 the latest and the quality bar: every beat a collage shot, paper puppets, drawn scenery, a loupe in the hook). Start
-a new episode by copying `src/episodes/GuideParisRain.tsx`.
+a new episode with `/episode` (`node scripts/episode-new.mjs` scaffolds the cold open, the small hook tape and the
+loop); **`bible/format.md` is the format**, and `scripts/episode-check.py` must pass before the user sees a video.
 
 Before any work, read:
 

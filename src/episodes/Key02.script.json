@@ -1,0 +1,14 @@
+{
+  "style": "A young French guy talking to a friend about art in a TikTok video: natural, relaxed, curious, a real smile in the voice, conversational and a little casual, never announcing or selling. Varied rhythm like real speech, a small pause after each point's title. Clear natural French.",
+  "segments": [
+    { "id": "hook", "text": "Grâce à cette technique, une statue reprend vie. Et inconsciemment, tu fais la même pose sur tes photos Insta." },
+    { "id": "intro", "text": "Jour 1 sur 30 : le contrapposto. 3 trucs à savoir pour le repérer.", "say": "Jour un sur trente : le contrapposto. Trois trucs à savoir pour le repérer." },
+    { "id": "one_t", "text": "Un : tout le poids sur une jambe." },
+    { "id": "one", "text": "Une jambe porte le corps, l'autre se relâche. Du coup, la hanche monte d'un côté, et les épaules penchent de l'autre. Le corps fait un S." },
+    { "id": "two_t", "text": "Deux : ce sont les Grecs." },
+    { "id": "two", "text": "Avant, les statues étaient raides, le poids sur les deux jambes. Vers 480 avant Jésus-Christ, un sculpteur grec décale juste la hanche. Et d'un coup, la statue respire.", "say": "Avant, les statues étaient raides, le poids sur les deux jambes. Vers quatre cent quatre-vingts avant Jésus-Christ, un sculpteur grec décale juste la hanche. Et d'un coup, la statue respire." },
+    { "id": "three_t", "text": "Trois : Michel-Ange le ressort." },
+    { "id": "three", "text": "2 000 ans plus tard, la Renaissance redécouvre la pose. Le David de Michel-Ange : jambe droite tendue, hanche qui ressort, épaules en sens inverse.", "say": "Deux mille ans plus tard, la Renaissance redécouvre la pose. Le David de Michel-Ange : jambe droite tendue, hanche qui ressort, épaules en sens inverse." },
+    { "id": "outro", "text": "Chaque jour, je t'explique une notion pour que tu lises n'importe quelle œuvre comme un pro. Abonne-toi pour la notion numéro 2 demain.", "say": "Chaque jour, je t'explique une notion pour que tu lises n'importe quelle œuvre comme un pro. Abonne-toi pour la notion numéro deux demain.", "tail": 0.3 }
+  ]
+}

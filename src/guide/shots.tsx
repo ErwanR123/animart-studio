@@ -1,7 +1,8 @@
 import type React from "react";
-import { Img, interpolate, staticFile } from "remotion";
-import { display, hand, poster } from "../fonts";
-import { clamp, easeIn, easeInOut, easeOut } from "../theme";
+import { createContext, useContext } from "react";
+import { Img, interpolate, OffthreadVideo, Sequence, staticFile } from "remotion";
+import { display, hand, poster, sans } from "../fonts";
+import { clamp, easeIn, easeInOut, easeOut, FPS } from "../theme";
 import {
   Decor,
   type DecorLayer,
@@ -35,6 +36,11 @@ import { isVox, isVoxFlat, isVoxStill, Vox, type VoxLayer } from "./voxkit";
 
 export const SHOT_W = 1080;
 export const SHOT_H = 1400; // the top of the frame; its bottom fades into the Guide's dark band
+// Safe layout (the episode's `safe`): every piece but the full-bleed grounds is scaled into the band the platforms
+// leave visible, from SAFE_TOP down (their top bar hides what is above); the bottom of the frame barely moves.
+const SAFE_TOP = 170;
+const SAFE_K = 0.86;
+const SafeContext = createContext(false);
 
 type Enter =
   | "drop"
@@ -47,6 +53,7 @@ type Enter =
   | "grow"
   | "pop"
   | "toss"
+  | "spin"
   | "none";
 export type ShotLayer = {
   x?: number; // px in the 1080 × 1400 shot (top-left of the piece)
@@ -56,7 +63,8 @@ export type ShotLayer = {
   z?: number; // depth 0 (far) … 1 (near), default 0.5
   at?: string; // lands on this word (default: with the shot, then 0.1 s after the previous layer)
   after?: number; // … this many s later (a beat after its word, in time with a blow); also delays a `lift` or `exit`
-  enter?: Enter; // default: drop for pieces, slap for stamps and big numbers, none for backgrounds; rise: up from behind the foreground; crane: lowered from above into place
+  enter?: Enter; // default: drop for pieces, slap for stamps and big numbers, none for backgrounds; rise: up from behind the foreground; crane: lowered from above into place; spin: whirls in from nothing (the old-film newspaper)
+  off?: string; // leaves on this word: shrinks away to nothing (a censor bar lifted off a face)
   // Landed pieces stay still; only a strip or a cloud may travel sideways (drift, `amount` px a second).
   move?: "drift";
   amount?: number;
@@ -69,7 +77,12 @@ export type ShotLayer = {
   // A cut-out person can act, on the pieces' clock (a paper puppet): `neck` (fraction of its height) splits off the
   // head, which nods and turns in held poses for `talk` s after landing (or from `talk[0]` to `talk[1]` s); `walk` [dx, dy, steps, step s] hops it across
   // the shot step by step, tilting side to side (a step lasts 0.32 s by default: a rat scurries at 0.08); `turn` flips it
-  // to face the other way that many s after landing (squashed through edge-on in five drawings); `breathe` swells it
+  // to face the other way that many s after landing (squashed through edge-on in five drawings); `route` chains walks,
+  // each [s after landing, dx, dy, steps, step s] from where the last one stopped (arrive, wait, leave: a thief, and
+  // the painting in his hands on the same legs); `open` turns it edge-on on its left edge on that word (a folder's
+  // cover lifting) and `opened` lays its back down flat from its right edge right after (the inside of that cover);
+  // `swing` rotates it round `pivot` (fractions of itself) through `keys` [s after landing, deg] (a trunk's lid);
+  // `breathe` swells it
   // slowly from the feet; `chop` [pivot x, pivot y, delay s, amplitude] swings it round that point of itself (fractions) like a
   // pickaxe in held drawings, raised slowly and struck hard, once a second (a tool in a paper figure's hands).
   (| {
@@ -83,15 +96,40 @@ export type ShotLayer = {
         neck?: number;
         talk?: number | [number, number];
         walk?: [number, number, number, number?];
+        route?: [number, number, number, number, number?][];
         turn?: number;
         breathe?: boolean;
         chop?: [number, number, number?, number?];
+        open?: string;
+        opened?: string;
+        swing?: { pivot: [number, number]; keys: [number, number][] };
+        // `peel`: from landing, the piece lifts off the picture it was cut from (rises, grows, tilts, its shadow
+        // deepening): laid exactly over a still of the real footage, the photo becomes paper. `float`: it rises
+        // `float` px a second, swaying (a balloon let go).
+        peel?: boolean;
+        // `curl` [s, h px]: from landing, the piece (h its height) peels off from its bottom-right corner like a sticker,
+        // folding over to show its paper back, until it has left by the top-left.
+        curl?: [number, number];
+        float?: number;
+        // `write`: revealed left to right over that many s from landing, behind a soft slanted edge (a signature
+        // writing itself; laid over its unpainted twin, a picture being painted).
+        write?: number;
+        // `wipe`: revealed top to bottom over that many s from landing, a hard edge (paint running down); with `scanLine`
+        // a bright bar rides the edge (a scanner's).
+        wipe?: number;
+        scanLine?: boolean;
+        // `pulse`: it beats like a heart, a double thump (lub-dub) every `pulse` s from landing.
+        pulse?: number;
         // Leaving the composition: `fall` [s after landing, dy px, deg] knocks it off (it tumbles and lies there: a
         // chunk of a house under the pick); `lift` pulls it out of the picture on that word for `hold` s (a floor slid
         // out of a building); `exit` slides it out of the frame to the left on that word (pushed out).
         fall?: [number, number, number, number?]; // [s, dy, deg, dx?]
         lift?: string;
         exit?: string;
+        // `fold` squashes it along the axis at `angle` deg to `k` of its length on that word, round `origin` (fractions
+        // of the piece), in held drawings over `dur` s, while the rest of the shot goes into shadow (an anamorphosis
+        // folding back into the thing it hides).
+        fold?: { word: string; angle: number; k: number; origin: [number, number]; dur?: number };
       }
     // A magnifying glass over the shot at x, y (radius r) showing the layers under it `zoom` times larger; with `to`, it
     // glides there over `glide` s.
@@ -116,6 +154,12 @@ export type ShotLayer = {
     | { pencil: string; color?: string; width?: number; draw?: number } // a red pencil path (SVG, shot px) drawn over `draw` s
     | { marker: [number, number, number, number] } // a yellow highlighter swipe over x, y, w, h (shot px), left to right
     | { haze: [number, number]; color?: string; draw?: number } // a cloud of ash spreading from a point until it veils the whole shot
+    | { flash: number } // that many camera flashes, the whole shot going white and back
+    // Real footage (public/clips, cut to start where it should) playing from the moment it lands, `w` × `h` px,
+    // cropped to fill; `volume` > 0 keeps its own sound (the room's gasps). A shorter clip holds its last frame.
+    | { footage: string; h: number; volume?: number; grain?: boolean } // `grain`: film grain and a warm grade, so the archive sits in the paper world
+    | { veil: number; color?: string } // the whole shot darkens to `veil` (0 … 1) over 0.3 s from landing (the room falls away behind a lifted piece)
+    | { frise: [string, string]; pos: number; from?: number } // a thin dated line `w` long, a red cursor sliding from `from` to `pos` (0 … 1)
   );
 
 // How a shot arrives over the previous one (bible/vox.md §9): a hard cut, a whip pan, a push (the previous one rushes
@@ -138,9 +182,9 @@ export type Shot = {
   // Camera over the shot: x, y in px and a scale, from → to (default: a slow push 1 → 1.05). Always moving, gently.
   cam?: { from?: [number, number, number]; to?: [number, number, number] };
   focus?: number; // the sharp depth (layers away from it blur: rack focus); default all sharp
-  shake?: string; // the whole shot jolts on this word (an explosion)
+  shake?: string | string[]; // the whole shot jolts on this word (an explosion), or on each of these (two gunshots)
   until?: string; // the run hands back to the painting on this word (default: the next shot, or the end of the beat)
-  carry?: boolean; // the last shot of a beat stays up until the next beat's first shot when it follows within 1.5 s (no flash of the painting)
+  carry?: boolean; // the last shot of a beat stays up until the next beat's first shot when it follows within 1.5 s (no flash of the painting); on the episode's last shot, to the last frame
   figure?: boolean; // the episode's cut-out figure (GuideConfig.figure) stays in front of this shot, in place
   into?: [number, number]; // the point of the previous shot a `zoom` dives into (shot px)
   source?: string; // where the archive comes from ("Harper's Weekly, 29 sept. 1883"): kept with the shot, never shown (the user found the credit lines cluttered the frame)
@@ -154,7 +198,7 @@ export type TimedShot = Shot & {
   end: number;
   times: number[];
   strikes: (number | undefined)[];
-  shakeAt?: number;
+  shakeAt?: number[];
   last: boolean;
 };
 
@@ -220,6 +264,27 @@ const headPose = (e: number, talk: number | [number, number]) => {
   const [r, y] = TALK[Math.floor(e * 6) % TALK.length];
   return `translateY(${y}px) rotate(${r}deg)`;
 };
+// A sheet w × h peeling from its bottom-right corner (`curl`), at u = 0 (flat) … 1.5 (gone): the fold is a straight line
+// crossing the sheet; the part still flat, and the part past the fold mirrored over it (the flap).
+const curlSheet = (w: number, h: number, u: number) => {
+  const len = Math.hypot(w, h);
+  const [nx, ny] = [w / len, h / len];
+  const d = len * (1 - u);
+  const side = ([x, y]: [number, number]) => x * nx + y * ny - d;
+  const keep = (sign: number) => {
+    const rect: [number, number][] = [[0, 0], [w, 0], [w, h], [0, h]];
+    return rect.flatMap((p, k) => {
+      const q = rect[(k + 1) % 4];
+      const [a, b] = [side(p) * sign, side(q) * sign];
+      const cross: [number, number] = [p[0] + (q[0] - p[0]) * (a / (a - b)), p[1] + (q[1] - p[1]) * (a / (a - b))];
+      return [...(a >= 0 ? [p] : []), ...(a >= 0 !== b >= 0 ? [cross] : [])];
+    });
+  };
+  const flat = keep(-1);
+  const flap = keep(1).map((p): [number, number] => [p[0] - 2 * side(p) * nx, p[1] - 2 * side(p) * ny]);
+  return { flat, flap, fold: [d * nx, d * ny, nx, ny] };
+};
+
 // Leaving the composition (an image layer's `fall`, `lift`, `exit`); `cue` is its word, s after landing.
 const leave = (
   l: {
@@ -245,9 +310,36 @@ const leave = (
   }
   return "";
 };
+// A heartbeat's scale at s into a beat: a strong thump, a softer one 0.2 s later.
+const heartbeat = (s: number) => 1 + 0.06 * Math.exp(-(((s - 0.05) / 0.06) ** 2)) + 0.035 * Math.exp(-(((s - 0.25) / 0.06) ** 2));
+// The `write` reveal at progress u (0 … 1): a mask whose slanted soft edge sweeps past the piece's right side.
+const writeMask = (u: number): React.CSSProperties => {
+  const p = -12 + 124 * Math.min(1, Math.max(0, u));
+  const mask = `linear-gradient(100deg, black ${p}%, transparent ${p + 10}%)`;
+  return { WebkitMaskImage: mask, maskImage: mask };
+};
+// The `wipe` reveal at progress u (0 … 1): everything above the edge shows.
+const wipeMask = (u: number): React.CSSProperties => {
+  const p = 100 * Math.min(1, Math.max(0, u));
+  const mask = `linear-gradient(180deg, black ${p}%, transparent ${p}%)`;
+  return { WebkitMaskImage: mask, maskImage: mask };
+};
+
+const fold = (
+  f: { angle: number; k: number; dur?: number },
+  e: number,
+  cue?: number,
+) => {
+  if (cue === undefined || e < cue) return "";
+  const u = Math.min(1, (e - cue) / (f.dur ?? 0.6));
+  const k = 1 + (f.k - 1) * u * u * (3 - 2 * u);
+  return ` rotate(${f.angle}deg) scaleX(${k}) rotate(${-f.angle}deg)`;
+};
 const puppet = (
   l: {
     walk?: [number, number, number, number?];
+    route?: [number, number, number, number, number?][];
+    swing?: { pivot: [number, number]; keys: [number, number][] };
     turn?: number;
     breathe?: boolean;
     chop?: [number, number, number?, number?];
@@ -255,6 +347,34 @@ const puppet = (
   e: number,
 ) => {
   let tf = "";
+  if (l.swing) {
+    const keys = l.swing.keys;
+    const k = keys.findIndex(([s]) => s > e);
+    const deg =
+      k === -1
+        ? keys[keys.length - 1][1]
+        : k === 0
+          ? keys[0][1]
+          : keys[k - 1][1] + (keys[k][1] - keys[k - 1][1]) * easeInOut((e - keys[k - 1][0]) / (keys[k][0] - keys[k - 1][0]));
+    tf += ` rotate(${deg}deg)`;
+  }
+  if (l.route) {
+    let x = 0;
+    let y = 0;
+    let hop = 0;
+    let tilt = 0;
+    for (const [t0, dx, dy, steps, STEP = 0.32] of l.route) {
+      if (e < t0) break;
+      const k = Math.min(steps, Math.floor((e - t0) / STEP));
+      const u = k < steps ? ((e - t0) % STEP) / STEP : 0;
+      const f = (k + Math.min(1, u * 2.5)) / steps;
+      x += dx * f;
+      y += dy * f;
+      hop = k < steps ? Math.sin(u * Math.PI) * 16 * Math.min(1, STEP / 0.32) : 0;
+      tilt = k < steps ? (k % 2 ? 2.5 : -2.5) : 0;
+    }
+    tf += ` translate(${x}px, ${y - hop}px) rotate(${tilt}deg)`;
+  }
   if (l.walk) {
     const [dx, dy, steps, STEP = 0.32] = l.walk;
     const k = Math.min(steps, Math.floor(e / STEP));
@@ -300,6 +420,9 @@ const Layer: React.FC<{
         : "pencil" in l ||
             "marker" in l ||
             "haze" in l ||
+            "flash" in l ||
+            "frise" in l ||
+            "veil" in l ||
             isMark(l) ||
             isSelfMoving(l) ||
             isVoxFlat(l) ||
@@ -342,7 +465,9 @@ const Layer: React.FC<{
                               )
                             ],
                           )
-                        : "";
+                        : kind === "spin"
+                          ? (([u]) => `rotate(${(1 - u) * -540}deg) scale(${0.1 + 0.9 * u})`)([interpolate(e, [0, 0.5], [0, 1], { ...clamp, easing: easeOut })])
+                          : "";
   const blur = focus === undefined ? 0 : Math.abs(z - focus) * 7;
   const shadow =
     isBg ||
@@ -350,6 +475,8 @@ const Layer: React.FC<{
     "marker" in l ||
     "stamp" in l ||
     "haze" in l ||
+    "flash" in l ||
+    "veil" in l ||
     isMark(l) ||
     "halftone" in l ||
     isSelfMoving(l) ||
@@ -361,19 +488,39 @@ const Layer: React.FC<{
       : ` drop-shadow(0 ${4 + 18 * z}px ${8 + 22 * z}px rgba(0,0,0,${0.35 + 0.2 * z}))`;
   const filter =
     `${blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : ""}${shadow}` || undefined;
+  // `off` and `open` wait for their word (strikeAt): the piece shrinks away, or swings open on its left edge.
+  // `opened` waits for the front to stand edge-on (0.3 s), then lies down flat.
+  const opened = "opened" in l && l.opened !== undefined;
+  const gone = strikeAt !== undefined && ("off" in l || "open" in l) ? interpolate(t - strikeAt, [0, l.off ? 0.2 : 0.3], [0, 1], clamp) : 0;
+  const down = opened ? (strikeAt === undefined ? -1 : interpolate(t - strikeAt, [0.3, 0.6], [0, 1], clamp)) : 1;
+  const away = opened
+    ? ` perspective(1800px) rotateY(${90 * (1 - easeOut(Math.max(0, down)))}deg)`
+    : gone === 0 ? "" : l.off ? ` scaleX(${1 - gone})` : ` perspective(1800px) rotateY(${-90 * easeIn(gone)}deg)`;
   const opacity =
-    kind === "drop" || kind === "slap" ? Math.min(1, land * 3) : 1;
+    (kind === "drop" || kind === "slap" ? Math.min(1, land * 3) : 1) * (gone >= 1 || (opened && (strikeAt === undefined || t - strikeAt < 0.3)) ? 0 : 1);
+  const peel = "src" in l && l.peel ? easeOut(interpolate(e, [0, 0.45], [0, 1], clamp)) : 0;
   const move =
-    l.move === "drift" ? `translateX(${e * (l.amount ?? 20)}px)` : "";
+    (l.move === "drift" ? `translateX(${e * (l.amount ?? 20)}px)` : "") +
+    (peel ? ` translateY(${-24 * peel}px) scale(${1 + 0.07 * peel}) rotate(${-2.5 * peel}deg)` : "") +
+    ("src" in l && l.pulse ? ` scale(${heartbeat(e % l.pulse)})` : "") +
+    ("src" in l && l.float ? ` translate(${Math.sin(e * 1.7) * 16}px, ${-e * l.float}px) rotate(${Math.sin(e * 1.3) * 4}deg)` : "");
   const piece: React.CSSProperties = {
     position: "absolute",
     left: l.x ?? 0,
     top: l.y ?? 0,
-    transform: `rotate(${l.rot ?? 0}deg) ${enter} ${move} ${"src" in l ? puppet(l, e) + leave(l, e, strikeAt === undefined ? undefined : strikeAt - at) : ""}`,
+    transform: `rotate(${l.rot ?? 0}deg) ${enter} ${move} ${"src" in l ? puppet(l, e) + leave(l, e, strikeAt === undefined ? undefined : strikeAt - at) + (l.fold ? fold(l.fold, e, strikeAt === undefined ? undefined : strikeAt - at) : "") : ""}${away}`,
     transformOrigin:
-      "src" in l && l.chop
+      "src" in l && l.swing
+        ? `${l.swing.pivot[0] * 100}% ${l.swing.pivot[1] * 100}%`
+        : "src" in l && l.opened
+        ? "100% 50%"
+        : "src" in l && l.open
+        ? "0% 50%"
+        : "src" in l && l.fold
+        ? `${l.fold.origin[0] * 100}% ${l.fold.origin[1] * 100}%`
+        : "src" in l && l.chop
         ? `${l.chop[0] * 100}% ${l.chop[1] * 100}%`
-        : "src" in l && (l.walk || l.breathe || l.turn !== undefined)
+        : "src" in l && (l.walk || l.route || l.breathe || l.turn !== undefined)
           ? "50% 100%"
           : undefined,
     opacity,
@@ -381,7 +528,31 @@ const Layer: React.FC<{
   };
 
   let body: React.ReactNode;
-  if ("src" in l) {
+  if ("src" in l && l.curl) {
+    const [w, h] = [l.w ?? 0, l.curl[1]];
+    const { flat, flap, fold } = curlSheet(w, h, 1.5 * interpolate(e / l.curl[0], [0, 1], [0, 1], { ...clamp, easing: easeInOut }));
+    const points = (poly: [number, number][]) => poly.map((p) => p.join(",")).join(" ");
+    body = (
+      <div style={{ ...piece, width: w, height: h }}>
+        {flat.length ? (
+          <Img
+            src={staticFile(l.src)}
+            style={{ display: "block", width: "100%", height: "100%", clipPath: `polygon(${flat.map(([x, y]) => `${x}px ${y}px`).join(",")})` }}
+          />
+        ) : null}
+        <svg width={w} height={h} style={{ position: "absolute", left: 0, top: 0, overflow: "visible", filter: "drop-shadow(10px 16px 18px rgba(0,0,0,0.55))" }}>
+          <defs>
+            <linearGradient id={`curl-${i}`} gradientUnits="userSpaceOnUse" x1={fold[0]} y1={fold[1]} x2={fold[0] - fold[2] * 260} y2={fold[1] - fold[3] * 260}>
+              <stop offset="0" stopColor="#A89A80" />
+              <stop offset="0.3" stopColor={CREAM} />
+              <stop offset="1" stopColor={CREAM} />
+            </linearGradient>
+          </defs>
+          {flap.length ? <polygon points={points(flap)} fill={`url(#curl-${i})`} /> : null}
+        </svg>
+      </div>
+    );
+  } else if ("src" in l) {
     const src = l.swap
       ? [l.src, ...l.swap][
           Math.floor(e / (l.hold ?? 0.33)) % (l.swap.length + 1)
@@ -389,7 +560,7 @@ const Layer: React.FC<{
       : l.src;
     const tone = l.tone && l.tone in TONES ? `url(#tone-${l.tone})` : undefined;
     body = (
-      <div style={{ ...piece, width: l.w }}>
+      <div style={{ ...piece, width: l.w, ...(l.write ? writeMask(e / l.write) : {}), ...(l.wipe ? wipeMask(e / l.wipe) : {}) }}>
         {l.edge ? (
           <Silhouette src={src} color={l.edge} dx={16} dy={12} />
         ) : null}
@@ -405,6 +576,20 @@ const Layer: React.FC<{
             opacity: l.fill ? 0 : 1,
           }}
         />
+        {l.wipe && l.scanLine && e < l.wipe ? (
+          <div
+            style={{
+              position: "absolute",
+              zIndex: 1,
+              left: 0,
+              right: 0,
+              top: 0,
+              height: `${(100 * Math.max(0, e)) / l.wipe}%`,
+              borderBottom: "9px solid #F4F7F2",
+              boxSizing: "border-box",
+            }}
+          />
+        ) : null}
         {l.neck !== undefined ? (
           // The head, nodding on its own over the whole body; it fades out across the neck so no seam shows.
           <Img
@@ -461,7 +646,33 @@ const Layer: React.FC<{
         ) : null}
       </div>
     );
-  } else if (isDecor(l))
+  } else if ("footage" in l)
+    body = (
+      <div style={{ ...piece, width: l.w ?? SHOT_W, height: l.h, overflow: "hidden" }}>
+        <Sequence from={Math.round(at * FPS)} layout="none">
+          <OffthreadVideo
+            src={staticFile(l.footage)}
+            volume={l.volume ?? 0}
+            muted={!l.volume}
+            style={{ width: "100%", height: "100%", objectFit: "cover", filter: l.grain ? "sepia(0.22) contrast(1.08) saturate(0.85)" : undefined }}
+          />
+        </Sequence>
+        {l.grain ? (
+          <svg width="100%" height="100%" style={{ position: "absolute", inset: 0, mixBlendMode: "overlay", opacity: 0.55 }}>
+            <filter id={`grain-${i}`}>
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={Math.floor(t * 12) % 97} />
+              <feColorMatrix type="saturate" values="0" />
+            </filter>
+            <rect width="100%" height="100%" filter={`url(#grain-${i})`} />
+          </svg>
+        ) : null}
+      </div>
+    );
+  else if ("veil" in l)
+    body = (
+      <div style={{ position: "absolute", left: -80, top: -80, width: SHOT_W + 160, height: SHOT_H + 160, background: l.color ?? "#0d0c0b", opacity: l.veil * interpolate(e, [0, 0.3], [0, 1], clamp) }} />
+    );
+  else if (isDecor(l))
     body = <Decor l={l} e={e} seed={i * 7 + 3} piece={piece} />;
   else if (isVox(l))
     body = (
@@ -636,7 +847,22 @@ const Layer: React.FC<{
         })}
       </div>
     );
-  else if ("stamp" in l)
+  else if ("flash" in l) {
+    // Each flash goes white at once and dies out in a few drawings, 0.22 s apart.
+    const f = Math.max(0, ...Array.from({ length: l.flash }, (_, k) => (e >= k * 0.22 ? Math.exp(-(e - k * 0.22) * 14) : 0)));
+    body = <div style={{ position: "absolute", left: -80, top: -80, width: 1240, height: 1560, background: "#FFFDF6", opacity: f }} />;
+  } else if ("frise" in l) {
+    const w = l.w ?? 900;
+    const u = l.from === undefined ? l.pos : interpolate(e, [0, 0.6], [l.from, l.pos], { ...clamp, easing: easeInOut });
+    const label: React.CSSProperties = { position: "absolute", top: -14, fontFamily: sans, fontWeight: 800, fontSize: 26, color: col("ink"), background: CREAM, padding: "2px 8px" };
+    body = (
+      <div style={{ ...piece, width: w, height: 4, background: col("ink") }}>
+        <div style={{ ...label, left: -10 }}>{l.frise[0]}</div>
+        <div style={{ ...label, right: -10 }}>{l.frise[1]}</div>
+        <div style={{ position: "absolute", left: 120 + u * (w - 240) - 13, top: -11, width: 26, height: 26, borderRadius: 13, background: RED, boxShadow: "0 2px 4px rgba(0,0,0,0.35)" }} />
+      </div>
+    );
+  } else if ("stamp" in l)
     body = (
       <div
         style={{
@@ -697,6 +923,7 @@ const Layer: React.FC<{
             left: 0,
             top: 0,
             overflow: "visible",
+            opacity: 1 - gone, // `off`: the mark fades away
             ...((l.width ?? 9) > 20
               ? { filter: "blur(10px)", mixBlendMode: "multiply" as const }
               : {}),
@@ -814,13 +1041,14 @@ const Layer: React.FC<{
   // On a fly-through (a camera scale well over 1) the near layers pass the lens: they fade as they grow past it.
   const passing =
     s > 1.8 && !isBg ? interpolate(s, [1.8, 2.6], [1, 0], clamp) : 1;
+  const safe = useContext(SafeContext) && !isBg && !("field" in l) && !("veil" in l) && !("flash" in l);
   return (
     <div
       style={{
         position: "absolute",
         inset: 0,
         transformOrigin: "540px 600px",
-        transform: `translate(${cam[0] * p}px, ${cam[1] * p}px) scale(${s})`,
+        transform: `${safe ? `translateY(${SAFE_TOP - 600 * (1 - SAFE_K)}px) scale(${SAFE_K}) ` : ""}translate(${cam[0] * p}px, ${cam[1] * p}px) scale(${s})`,
         opacity: passing,
         zIndex: front ? 3 : undefined,
       }}
@@ -846,15 +1074,15 @@ const ShotView: React.FC<{ shot: TimedShot; t: number; index: number }> = ({
   ];
   // The jolt: a few big stop-motion offsets dying out.
   const sh =
-    shot.shakeAt !== undefined && t >= shot.shakeAt
-      ? Math.exp(-(t - shot.shakeAt) * 7)
-      : 0;
+    Math.max(0, ...(shot.shakeAt ?? []).filter((a) => t >= a).map((a) => Math.exp(-(t - a) * 7)));
   const n = Math.floor(t * 15);
-  // The pieces pulled out right now (`lift`), if any (two can come out together).
+  // The pieces pulled out right now (`lift`, or folding back: `fold`), if any (two can come out together).
   const up = shot.layers.map((l, i) => {
     const cue = shot.strikes[i];
     return (
-      "lift" in l && cue !== undefined && t >= cue && t < cue + (l.hold ?? 1.2)
+      cue !== undefined &&
+      t >= cue &&
+      (("lift" in l && t < cue + (l.hold ?? 1.2)) || ("fold" in l && !!l.fold))
     );
   });
   const lifted = up.indexOf(true);
@@ -1019,7 +1247,8 @@ export const Shots: React.FC<{
   shots: TimedShot[];
   t: number;
   palette?: Palette;
-}> = ({ shots, t, palette }) => {
+  safe?: boolean;
+}> = ({ shots, t, palette, safe = false }) => {
   const nextIn = (i: number) => {
     const next = shots[i + 1];
     return next && next.start - shots[i].end < 0.05
@@ -1034,6 +1263,7 @@ export const Shots: React.FC<{
     );
   if (!live.length) return null;
   return (
+    <SafeContext.Provider value={safe}>
     <PaletteContext.Provider value={palette ?? {}}>
       <div
         style={{
@@ -1169,6 +1399,7 @@ export const Shots: React.FC<{
         />
       </div>
     </PaletteContext.Provider>
+    </SafeContext.Provider>
   );
 };
 

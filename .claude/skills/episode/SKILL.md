@@ -6,15 +6,20 @@ description: Make a new "Le Guide" video about a painting in the studio's style,
 # New episode
 
 Work from the repo root with Node 22 (`source ~/.nvm/nvm.sh && nvm use 22`). Read `CLAUDE.md`, then the bible:
-`format.md`, `script.md`, `art-direction.md`, `character.md`, `sound.md`. Open the closest example as the worked
-pattern: `GuideScream.tsx` (a reading, collage shots), `GuideAlexander.tsx` (an anecdote), `GuideHomecoming.tsx` (a
-story on one painting), `GuideAthens.tsx` (figures in a fresco). Follow `bible/workflow.md`: each step's check passes
-before the next.
+`format.md` first (the hook, the two modes, the loop, ~40 s), `script.md`, `vox.md`, `art-direction.md`, `sound.md`.
+Open the closest example: `GuideBanksy.tsx` / `GuideCaravaggio.tsx` (a story in Vox collage shots), `GuideScream.tsx`
+(the cold open with the teased piece on the cut, collage shots, the full-screen loop), `GuideAthens.tsx` (inside the
+painting, each camera move telling the next part). Follow `bible/workflow.md`: each step's check passes before the
+next. **The user sees two things: the script, then the finished video.** Everything they asked on every past video
+(`bible/format.md`, the hook) is already in the scaffold and the check: never hand over a video they would have to
+send back for it.
 
 1. **Research**: museum page, Wikipedia FR/EN, and the story around the painting (diaries, letters, the press of the
    time). Find what in the painting the story rests on, and what moves people.
-2. **Script** in `src/episodes/<Ep>.script.json` (`bible/script.md`: vouvoiement, a hook with a named subject in the
-   first words, every sentence showable, the end answering the hook). **Show it to the user and wait for a go.**
+2. **Script** in `src/episodes/<Ep>.script.json` (`bible/script.md`: vouvoiement, a ≤ 12-word hook teasing a fact
+   paid off later, ~40 s, every sentence showable, the last line running into the hook). Show it to the user with
+   the mode (Vox story or inside the painting), frame 0 and its tape, and **one or two signature-moment ideas**
+   (`bible/format.md`) you found yourself; wait for a go.
 3. **The painting** at full museum resolution (`image-find.py get`, or `hires` on a Google Arts & Culture / museum
    viewer page) in `public/art/<ep>/`, scaffold (`node scripts/episode-new.mjs Guide<Name> …`). Pick the **music bed**
    of its time and place (`bible/sound.md`).
@@ -26,9 +31,11 @@ before the next.
 6. **Look**: `episode-review.py sheet <Ep> --every 1.5`, then `--phone`; fix; full-size stills and strips on
    transitions and thin lines.
 7. **Voice, once** (~$0.03): `uv run scripts/voice-gemini.py <Ep> --tempo 1.1 --cap 0.2`, then
-   `voice-check.py`. Re-check the sheet (timings moved).
-8. **Master**: `bash scripts/episode-master.sh <Ep>` (one render at a time), `episode-review.py cadence out/<ep>.mp4`;
-   `/video-review`; fix the worst; master again.
+   `voice-check.py` and `episode-check.py` (the hook is played at `--hook-tempo` 1.3 by default). Re-check the sheet
+   (timings moved). A line rewritten later: `--splice <ids>` re-voices only it, the rest keeps its tone.
+8. **Master**: `bash scripts/episode-master.sh <Ep>` (one render at a time), `episode-review.py cadence out/<ep>.mp4`,
+   `uv run scripts/episode-check.py <Ep>` (no FAIL); `/video-review`; fix the worst; master again. While it renders,
+   research and write the next episode's script.
 
 Report in French: the output path, its length, what you checked, what you could not check (motion, sound), and the
 decisions you need. Every image goes in `SOURCES.md`. When the user gives a note that is a rule, add it to the

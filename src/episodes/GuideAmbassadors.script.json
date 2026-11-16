@@ -1,0 +1,42 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Il y a une tête de mort cachée dans ce tableau. Et elle est sous vos yeux."
+    },
+    {
+      "id": "context",
+      "text": "Cette tache, au sol. De face, rien. Mais changez d'angle… Un crâne. Pourquoi le cacher là ?"
+    },
+    {
+      "id": "d1",
+      "text": "Ce crâne a un nom : un memento mori. « Souviens-toi que tu vas mourir. » Et l'idée ne date pas d'hier.",
+      "say": "Ce crâne a un nom : un mémento mori. « Souviens-toi que tu vas mourir. » Et l'idée ne date pas d'hier."
+    },
+    {
+      "id": "d2",
+      "text": "Déjà à Rome, un esclave montait derrière le général triomphant pour lui souffler : « Souviens-toi que tu n'es qu'un homme. » Pour l'empêcher de se prendre pour un dieu."
+    },
+    {
+      "id": "d4",
+      "text": "Au Moyen Âge, la même idée revient : après la Peste noire, on peint des squelettes qui entraînent dans leur ronde le pape, le roi et le paysan. Devant la mort, tout le monde est égal."
+    },
+    {
+      "id": "d5",
+      "text": "Et ces deux-là ? Un ambassadeur et un évêque. Ils ont tout : jeunesse, pouvoir, savoir."
+    },
+    {
+      "id": "d6",
+      "text": "Pourtant, la devise de l'ambassadeur, c'était : memento mori. Il porte même un petit crâne sur son chapeau.",
+      "say": "Pourtant, la devise de l'ambassadeur, c'était : mémento mori. Il porte même un petit crâne sur son chapeau."
+    },
+    {
+      "id": "d7",
+      "text": "Face à la mort, toute cette gloire n'est que du vent."
+    },
+    {
+      "id": "d8",
+      "text": "Et Holbein l'a caché pour qu'on ne le voie qu'en passant, de biais. Comme la mort : on ne la voit pas venir. Voilà pourquoi…"
+    }
+  ]
+}

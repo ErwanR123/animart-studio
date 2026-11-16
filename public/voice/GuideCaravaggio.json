@@ -1,0 +1,940 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.72381
+  },
+  {
+   "id": "context",
+   "start": 4.07381,
+   "end": 10.790953
+  },
+  {
+   "id": "d1",
+   "start": 11.140953,
+   "end": 13.722246
+  },
+  {
+   "id": "d2",
+   "start": 14.072246,
+   "end": 17.479344
+  },
+  {
+   "id": "d3",
+   "start": 17.829344,
+   "end": 23.979888
+  },
+  {
+   "id": "d4",
+   "start": 24.329887999999997,
+   "end": 29.671407
+  },
+  {
+   "id": "d5",
+   "start": 30.021406999999996,
+   "end": 33.333628999999995
+  },
+  {
+   "id": "d6",
+   "start": 33.683628999999996,
+   "end": 39.105760999999994
+  },
+  {
+   "id": "d7",
+   "start": 39.455760999999995,
+   "end": 43.738685999999994
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.0,
+   "end": 0.22,
+   "segment": "hook"
+  },
+  {
+   "text": "peintre",
+   "start": 0.22,
+   "end": 0.56,
+   "segment": "hook"
+  },
+  {
+   "text": "était",
+   "start": 0.56,
+   "end": 0.68,
+   "segment": "hook"
+  },
+  {
+   "text": "condamné",
+   "start": 0.68,
+   "end": 1.1,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 1.1,
+   "end": 1.16,
+   "segment": "hook"
+  },
+  {
+   "text": "mort.",
+   "start": 1.16,
+   "end": 1.4,
+   "segment": "hook"
+  },
+  {
+   "text": "Alors",
+   "start": 1.78,
+   "end": 2.1,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 2.1,
+   "end": 2.26,
+   "segment": "hook"
+  },
+  {
+   "text": "s'est",
+   "start": 2.26,
+   "end": 2.4,
+   "segment": "hook"
+  },
+  {
+   "text": "peint…",
+   "start": 2.4,
+   "end": 2.66,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 2.94,
+   "end": 3.08,
+   "segment": "hook"
+  },
+  {
+   "text": "tête",
+   "start": 3.08,
+   "end": 3.22,
+   "segment": "hook"
+  },
+  {
+   "text": "coupée.",
+   "start": 3.22,
+   "end": 3.62,
+   "segment": "hook"
+  },
+  {
+   "text": "Rome,",
+   "start": 4.07381,
+   "end": 4.55381,
+   "segment": "context"
+  },
+  {
+   "text": "1606.",
+   "start": 4.85381,
+   "end": 5.49381,
+   "segment": "context"
+  },
+  {
+   "text": "Le",
+   "start": 6.05381,
+   "end": 6.17381,
+   "segment": "context"
+  },
+  {
+   "text": "Caravage,",
+   "start": 6.17381,
+   "end": 6.65381,
+   "segment": "context"
+  },
+  {
+   "text": "le",
+   "start": 6.75381,
+   "end": 6.81381,
+   "segment": "context"
+  },
+  {
+   "text": "peintre",
+   "start": 6.81381,
+   "end": 7.11381,
+   "segment": "context"
+  },
+  {
+   "text": "star",
+   "start": 7.11381,
+   "end": 7.37381,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 7.37381,
+   "end": 7.513809999999999,
+   "segment": "context"
+  },
+  {
+   "text": "la",
+   "start": 7.513809999999999,
+   "end": 7.61381,
+   "segment": "context"
+  },
+  {
+   "text": "ville,",
+   "start": 7.61381,
+   "end": 7.793810000000001,
+   "segment": "context"
+  },
+  {
+   "text": "tue",
+   "start": 8.213809999999999,
+   "end": 8.41381,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 8.41381,
+   "end": 8.57381,
+   "segment": "context"
+  },
+  {
+   "text": "homme",
+   "start": 8.57381,
+   "end": 8.79381,
+   "segment": "context"
+  },
+  {
+   "text": "dans",
+   "start": 8.79381,
+   "end": 8.95381,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 8.95381,
+   "end": 9.13381,
+   "segment": "context"
+  },
+  {
+   "text": "duel",
+   "start": 9.13381,
+   "end": 9.29381,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 9.29381,
+   "end": 9.41381,
+   "segment": "context"
+  },
+  {
+   "text": "l'épée.",
+   "start": 9.41381,
+   "end": 9.73381,
+   "segment": "context"
+  },
+  {
+   "text": "Il",
+   "start": 9.95381,
+   "end": 9.95381,
+   "segment": "context"
+  },
+  {
+   "text": "est",
+   "start": 9.95381,
+   "end": 10.05381,
+   "segment": "context"
+  },
+  {
+   "text": "condamné",
+   "start": 10.05381,
+   "end": 10.39381,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 10.39381,
+   "end": 10.433810000000001,
+   "segment": "context"
+  },
+  {
+   "text": "mort.",
+   "start": 10.433810000000001,
+   "end": 10.57381,
+   "segment": "context"
+  },
+  {
+   "text": "Sa",
+   "start": 11.140953,
+   "end": 11.280953,
+   "segment": "d1"
+  },
+  {
+   "text": "tête",
+   "start": 11.280953,
+   "end": 11.480953,
+   "segment": "d1"
+  },
+  {
+   "text": "est",
+   "start": 11.480953,
+   "end": 11.700953,
+   "segment": "d1"
+  },
+  {
+   "text": "mise",
+   "start": 11.700953,
+   "end": 11.800953,
+   "segment": "d1"
+  },
+  {
+   "text": "à",
+   "start": 11.800953,
+   "end": 11.920952999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "prix",
+   "start": 11.920952999999999,
+   "end": 12.080953,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 12.080953,
+   "end": 12.260953,
+   "segment": "d1"
+  },
+  {
+   "text": "n'importe",
+   "start": 12.260953,
+   "end": 12.560953,
+   "segment": "d1"
+  },
+  {
+   "text": "qui",
+   "start": 12.560953,
+   "end": 12.860953,
+   "segment": "d1"
+  },
+  {
+   "text": "a",
+   "start": 12.860953,
+   "end": 13.040953,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 13.040953,
+   "end": 13.100953,
+   "segment": "d1"
+  },
+  {
+   "text": "droit",
+   "start": 13.100953,
+   "end": 13.280953,
+   "segment": "d1"
+  },
+  {
+   "text": "de",
+   "start": 13.280953,
+   "end": 13.380953,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 13.380953,
+   "end": 13.440953,
+   "segment": "d1"
+  },
+  {
+   "text": "tuer.",
+   "start": 13.440953,
+   "end": 13.660953,
+   "segment": "d1"
+  },
+  {
+   "text": "Il",
+   "start": 14.072246,
+   "end": 14.232246,
+   "segment": "d2"
+  },
+  {
+   "text": "fuit",
+   "start": 14.232246,
+   "end": 14.592246,
+   "segment": "d2"
+  },
+  {
+   "text": "pendant",
+   "start": 14.592246,
+   "end": 14.792246,
+   "segment": "d2"
+  },
+  {
+   "text": "quatre",
+   "start": 14.792246,
+   "end": 15.092246,
+   "segment": "d2"
+  },
+  {
+   "text": "ans.",
+   "start": 15.092246,
+   "end": 15.292246,
+   "segment": "d2"
+  },
+  {
+   "text": "Naples,",
+   "start": 15.612245999999999,
+   "end": 16.052246,
+   "segment": "d2"
+  },
+  {
+   "text": "Malte,",
+   "start": 16.292246,
+   "end": 16.632246,
+   "segment": "d2"
+  },
+  {
+   "text": "la",
+   "start": 16.852246,
+   "end": 16.952246,
+   "segment": "d2"
+  },
+  {
+   "text": "Sicile.",
+   "start": 16.952246,
+   "end": 17.312246000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "Seul",
+   "start": 17.829344,
+   "end": 18.389343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 18.389343999999998,
+   "end": 18.529344,
+   "segment": "d3"
+  },
+  {
+   "text": "pape",
+   "start": 18.529344,
+   "end": 18.869343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "peut",
+   "start": 18.869343999999998,
+   "end": 19.049343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "annuler",
+   "start": 19.049343999999998,
+   "end": 19.409343999999997,
+   "segment": "d3"
+  },
+  {
+   "text": "sa",
+   "start": 19.409343999999997,
+   "end": 19.549343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "condamnation.",
+   "start": 19.549343999999998,
+   "end": 20.049343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "Alors",
+   "start": 20.329344,
+   "end": 20.609344,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 20.609344,
+   "end": 21.289344,
+   "segment": "d3"
+  },
+  {
+   "text": "peint",
+   "start": 21.289344,
+   "end": 21.569344,
+   "segment": "d3"
+  },
+  {
+   "text": "ce",
+   "start": 21.569344,
+   "end": 21.669344,
+   "segment": "d3"
+  },
+  {
+   "text": "tableau",
+   "start": 21.669344,
+   "end": 21.969344,
+   "segment": "d3"
+  },
+  {
+   "text": "pour",
+   "start": 21.969344,
+   "end": 22.109344,
+   "segment": "d3"
+  },
+  {
+   "text": "son",
+   "start": 22.109344,
+   "end": 22.269344,
+   "segment": "d3"
+  },
+  {
+   "text": "neveu,",
+   "start": 22.269344,
+   "end": 22.809344,
+   "segment": "d3"
+  },
+  {
+   "text": "pour",
+   "start": 22.809344,
+   "end": 22.989344,
+   "segment": "d3"
+  },
+  {
+   "text": "qu'il",
+   "start": 22.989344,
+   "end": 23.149344,
+   "segment": "d3"
+  },
+  {
+   "text": "plaide",
+   "start": 23.149344,
+   "end": 23.449344,
+   "segment": "d3"
+  },
+  {
+   "text": "sa",
+   "start": 23.449344,
+   "end": 23.549343999999998,
+   "segment": "d3"
+  },
+  {
+   "text": "cause.",
+   "start": 23.549343999999998,
+   "end": 23.769344,
+   "segment": "d3"
+  },
+  {
+   "text": "La",
+   "start": 24.329887999999997,
+   "end": 24.629887999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "tête",
+   "start": 24.629887999999998,
+   "end": 24.769887999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 24.769887999999998,
+   "end": 24.909887999999995,
+   "segment": "d4"
+  },
+  {
+   "text": "Goliath,",
+   "start": 24.909887999999995,
+   "end": 25.289887999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "c'est",
+   "start": 25.369887999999996,
+   "end": 25.849887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "son",
+   "start": 25.849887999999996,
+   "end": 26.009887999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "propre",
+   "start": 26.009887999999997,
+   "end": 26.249888,
+   "segment": "d4"
+  },
+  {
+   "text": "visage.",
+   "start": 26.249888,
+   "end": 26.769887999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "Il",
+   "start": 26.949887999999998,
+   "end": 27.049887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "nous",
+   "start": 27.049887999999996,
+   "end": 27.169887999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 27.169887999999997,
+   "end": 27.469887999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "tend,",
+   "start": 27.249888,
+   "end": 27.469887999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "comme",
+   "start": 27.709887999999996,
+   "end": 27.889887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "pour",
+   "start": 27.889887999999996,
+   "end": 28.049887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "dire",
+   "start": 28.049887999999996,
+   "end": 28.209887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": ":",
+   "start": 28.209887999999996,
+   "end": 28.459887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 28.629887999999998,
+   "end": 28.709887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "voilà,",
+   "start": 28.709887999999996,
+   "end": 28.929888,
+   "segment": "d4"
+  },
+  {
+   "text": "ma",
+   "start": 29.169887999999997,
+   "end": 29.349887999999996,
+   "segment": "d4"
+  },
+  {
+   "text": "tête.",
+   "start": 29.349887999999996,
+   "end": 29.469887999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 30.021406999999996,
+   "end": 30.181406999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "regardez",
+   "start": 30.181406999999997,
+   "end": 30.481406999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "David",
+   "start": 30.481406999999997,
+   "end": 30.741406999999995,
+   "segment": "d5"
+  },
+  {
+   "text": ":",
+   "start": 30.741406999999995,
+   "end": 30.991406999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "il",
+   "start": 31.101406999999995,
+   "end": 31.201406999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "ne",
+   "start": 31.201406999999996,
+   "end": 31.341406999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "triomphe",
+   "start": 31.341406999999997,
+   "end": 31.841406999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "pas.",
+   "start": 31.841406999999997,
+   "end": 31.941406999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "Il",
+   "start": 32.18140699999999,
+   "end": 32.281406999999994,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 32.281406999999994,
+   "end": 32.381406999999996,
+   "segment": "d5"
+  },
+  {
+   "text": "regarde",
+   "start": 32.381406999999996,
+   "end": 32.641406999999994,
+   "segment": "d5"
+  },
+  {
+   "text": "avec",
+   "start": 32.641406999999994,
+   "end": 32.821406999999994,
+   "segment": "d5"
+  },
+  {
+   "text": "pitié.",
+   "start": 32.821406999999994,
+   "end": 33.161407,
+   "segment": "d5"
+  },
+  {
+   "text": "En",
+   "start": 33.683628999999996,
+   "end": 33.823629,
+   "segment": "d6"
+  },
+  {
+   "text": "1610,",
+   "start": 33.823629,
+   "end": 34.363628999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "il",
+   "start": 34.723628999999995,
+   "end": 34.84362899999999,
+   "segment": "d6"
+  },
+  {
+   "text": "reprend",
+   "start": 34.84362899999999,
+   "end": 35.243629,
+   "segment": "d6"
+  },
+  {
+   "text": "enfin",
+   "start": 35.243629,
+   "end": 35.66362899999999,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 35.66362899999999,
+   "end": 35.84362899999999,
+   "segment": "d6"
+  },
+  {
+   "text": "route",
+   "start": 35.84362899999999,
+   "end": 36.003629,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 36.003629,
+   "end": 36.183628999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "Rome.",
+   "start": 36.183628999999996,
+   "end": 36.383629,
+   "segment": "d6"
+  },
+  {
+   "text": "Il",
+   "start": 36.903628999999995,
+   "end": 37.023629,
+   "segment": "d6"
+  },
+  {
+   "text": "meurt",
+   "start": 37.023629,
+   "end": 37.34362899999999,
+   "segment": "d6"
+  },
+  {
+   "text": "en",
+   "start": 37.34362899999999,
+   "end": 37.423629,
+   "segment": "d6"
+  },
+  {
+   "text": "chemin…",
+   "start": 37.423629,
+   "end": 37.643629,
+   "segment": "d6"
+  },
+  {
+   "text": "sans",
+   "start": 37.643629,
+   "end": 37.98362899999999,
+   "segment": "d6"
+  },
+  {
+   "text": "jamais",
+   "start": 37.98362899999999,
+   "end": 38.223628999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "recevoir",
+   "start": 38.223628999999995,
+   "end": 38.583628999999995,
+   "segment": "d6"
+  },
+  {
+   "text": "sa",
+   "start": 38.583628999999995,
+   "end": 38.683628999999996,
+   "segment": "d6"
+  },
+  {
+   "text": "grâce.",
+   "start": 38.683628999999996,
+   "end": 38.883629,
+   "segment": "d6"
+  },
+  {
+   "text": "Son",
+   "start": 39.455760999999995,
+   "end": 39.635760999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "tableau,",
+   "start": 39.635760999999995,
+   "end": 39.93576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "lui,",
+   "start": 39.955760999999995,
+   "end": 40.07576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "est",
+   "start": 40.635760999999995,
+   "end": 40.675760999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "bien",
+   "start": 40.675760999999994,
+   "end": 40.815760999999995,
+   "segment": "d7"
+  },
+  {
+   "text": "arrivé",
+   "start": 40.815760999999995,
+   "end": 41.11576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "à",
+   "start": 41.11576099999999,
+   "end": 41.195761,
+   "segment": "d7"
+  },
+  {
+   "text": "Rome.",
+   "start": 41.195761,
+   "end": 41.375761,
+   "segment": "d7"
+  },
+  {
+   "text": "Il",
+   "start": 41.815760999999995,
+   "end": 41.89576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "y",
+   "start": 41.89576099999999,
+   "end": 42.015761,
+   "segment": "d7"
+  },
+  {
+   "text": "est",
+   "start": 42.015761,
+   "end": 42.07576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "encore…",
+   "start": 42.07576099999999,
+   "end": 42.295761,
+   "segment": "d7"
+  },
+  {
+   "text": "et",
+   "start": 42.835761,
+   "end": 42.89576099999999,
+   "segment": "d7"
+  },
+  {
+   "text": "il",
+   "start": 42.89576099999999,
+   "end": 42.975761,
+   "segment": "d7"
+  },
+  {
+   "text": "nous",
+   "start": 42.975761,
+   "end": 43.035760999999994,
+   "segment": "d7"
+  },
+  {
+   "text": "rappelle",
+   "start": 43.035760999999994,
+   "end": 43.235761,
+   "segment": "d7"
+  },
+  {
+   "text": "que…",
+   "start": 43.235761,
+   "end": 43.695761,
+   "segment": "d7"
+  }
+ ]
+}

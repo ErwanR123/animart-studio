@@ -1,0 +1,15 @@
+{
+  "segments": [
+    { "id": "hook", "text": "Cet animal n'a jamais existé. L'Europe y a cru pendant deux siècles." },
+    { "id": "context", "text": "En 1515, un vrai rhinocéros débarque à Lisbonne, cadeau venu d'Inde.", "say": "En quinze cent quinze, un vrai rhinocéros débarque à Lisbonne, cadeau venu d'Inde." },
+    { "id": "d1", "text": "Le roi le met face à un éléphant, pour voir. L'éléphant s'enfuit." },
+    { "id": "d2", "text": "À Nuremberg, Dürer ne l'a jamais vu. Il a juste une lettre et un croquis.", "say": "À Nuremberg, Dureur ne l'a jamais vu. Il a juste une lettre et un croquis." },
+    { "id": "d3", "text": "Alors il invente : une armure, des rivets, une petite corne sur le dos." },
+    { "id": "d4", "text": "Le vrai, lui, part en cadeau chez le pape. Le bateau coule. Enchaîné au pont, il se noie." },
+    { "id": "d5", "text": "Un autre artiste, Burgkmair, le dessine bien plus juste. Il en reste un seul exemplaire.", "say": "Un autre artiste, Bourkmaïr, le dessine bien plus juste. Il en reste un seul exemplaire." },
+    { "id": "d6", "text": "Celui de Dürer, on le copie partout, jusque sur la cathédrale de Pise.", "say": "Celui de Dureur, on le copie partout, jusque sur la cathédrale de Pise." },
+    { "id": "d7", "text": "En 1749, Oudry peint enfin une vraie rhinocéros, grandeur nature.", "say": "En dix-sept cent quarante-neuf, Oudri peint enfin une vraie rhinocéros, grandeur nature." },
+    { "id": "d8", "text": "Trop tard : jusqu'aux années 1930, des manuels scolaires allemands montrent encore celui de Dürer.", "say": "Trop tard : jusqu'aux années mille neuf cent trente, des manuels scolaires allemands montrent encore celui de Dureur." },
+    { "id": "d9", "text": "Le vrai s'est noyé. L'Europe a gardé celui-ci." }
+  ]
+}

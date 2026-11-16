@@ -1,0 +1,731 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.398549
+  },
+  {
+   "id": "context",
+   "start": 3.748549,
+   "end": 8.350522000000002
+  },
+  {
+   "id": "d1",
+   "start": 8.700522000000001,
+   "end": 12.547030000000001
+  },
+  {
+   "id": "d1b",
+   "start": 12.89703,
+   "end": 17.784989000000003
+  },
+  {
+   "id": "d2",
+   "start": 18.134989,
+   "end": 22.984830000000002
+  },
+  {
+   "id": "d3",
+   "start": 23.334830000000004,
+   "end": 28.278095000000004
+  },
+  {
+   "id": "d4",
+   "start": 28.628095000000002,
+   "end": 32.738571
+  },
+  {
+   "id": "d6",
+   "start": 33.088571,
+   "end": 36.253288000000005
+  }
+ ],
+ "words": [
+  {
+   "text": "Pendant",
+   "start": 0.0,
+   "end": 0.26,
+   "segment": "hook"
+  },
+  {
+   "text": "des",
+   "start": 0.26,
+   "end": 0.36,
+   "segment": "hook"
+  },
+  {
+   "text": "siècles,",
+   "start": 0.36,
+   "end": 0.82,
+   "segment": "hook"
+  },
+  {
+   "text": "des",
+   "start": 1.14,
+   "end": 1.32,
+   "segment": "hook"
+  },
+  {
+   "text": "peintres",
+   "start": 1.32,
+   "end": 1.76,
+   "segment": "hook"
+  },
+  {
+   "text": "ont",
+   "start": 1.76,
+   "end": 1.88,
+   "segment": "hook"
+  },
+  {
+   "text": "peint",
+   "start": 1.88,
+   "end": 2.18,
+   "segment": "hook"
+  },
+  {
+   "text": "avec",
+   "start": 2.18,
+   "end": 2.4,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 2.4,
+   "end": 2.58,
+   "segment": "hook"
+  },
+  {
+   "text": "vraies",
+   "start": 2.58,
+   "end": 2.98,
+   "segment": "hook"
+  },
+  {
+   "text": "momies.",
+   "start": 2.98,
+   "end": 3.3,
+   "segment": "hook"
+  },
+  {
+   "text": "Des",
+   "start": 3.748549,
+   "end": 4.088549,
+   "segment": "context"
+  },
+  {
+   "text": "corps",
+   "start": 4.088549,
+   "end": 4.288549,
+   "segment": "context"
+  },
+  {
+   "text": "égyptiens,",
+   "start": 4.288549,
+   "end": 4.928549,
+   "segment": "context"
+  },
+  {
+   "text": "broyés",
+   "start": 5.188549,
+   "end": 5.468548999999999,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 5.468548999999999,
+   "end": 5.5485489999999995,
+   "segment": "context"
+  },
+  {
+   "text": "poudre",
+   "start": 5.5485489999999995,
+   "end": 5.888549000000001,
+   "segment": "context"
+  },
+  {
+   "text": ":",
+   "start": 5.888549000000001,
+   "end": 6.138549000000001,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 6.468549000000001,
+   "end": 6.568549000000001,
+   "segment": "context"
+  },
+  {
+   "text": "brun",
+   "start": 6.568549000000001,
+   "end": 6.768549,
+   "segment": "context"
+  },
+  {
+   "text": "transparent,",
+   "start": 6.768549,
+   "end": 7.148549000000001,
+   "segment": "context"
+  },
+  {
+   "text": "parfait",
+   "start": 7.308549000000001,
+   "end": 7.628549,
+   "segment": "context"
+  },
+  {
+   "text": "pour",
+   "start": 7.628549,
+   "end": 7.808548999999999,
+   "segment": "context"
+  },
+  {
+   "text": "les",
+   "start": 7.808548999999999,
+   "end": 7.948549,
+   "segment": "context"
+  },
+  {
+   "text": "ombres.",
+   "start": 7.948549,
+   "end": 8.228549000000001,
+   "segment": "context"
+  },
+  {
+   "text": "Au",
+   "start": 8.700522000000001,
+   "end": 8.820522,
+   "segment": "d1"
+  },
+  {
+   "text": "départ,",
+   "start": 8.820522,
+   "end": 8.960522000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 9.120522000000001,
+   "end": 9.420522000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "momie,",
+   "start": 9.180522000000002,
+   "end": 9.420522000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "c'est",
+   "start": 9.720522,
+   "end": 9.900522,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 9.900522,
+   "end": 10.060522,
+   "segment": "d1"
+  },
+  {
+   "text": "médicament",
+   "start": 10.060522,
+   "end": 10.480522,
+   "segment": "d1"
+  },
+  {
+   "text": ":",
+   "start": 10.480522,
+   "end": 10.730522,
+   "segment": "d1"
+  },
+  {
+   "text": "les",
+   "start": 10.740522000000002,
+   "end": 10.840522000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "pharmacies",
+   "start": 10.840522000000002,
+   "end": 11.200522000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "la",
+   "start": 11.200522000000001,
+   "end": 11.380522000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "vendent",
+   "start": 11.200522000000001,
+   "end": 12.060522,
+   "segment": "d1"
+  },
+  {
+   "text": "en",
+   "start": 12.060522,
+   "end": 12.060522,
+   "segment": "d1"
+  },
+  {
+   "text": "poudre,",
+   "start": 11.520522000000001,
+   "end": 12.060522,
+   "segment": "d1"
+  },
+  {
+   "text": "à",
+   "start": 12.100522000000002,
+   "end": 12.200522000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "avaler.",
+   "start": 12.200522000000001,
+   "end": 12.420522000000002,
+   "segment": "d1"
+  },
+  {
+   "text": "Et",
+   "start": 12.89703,
+   "end": 13.057030000000001,
+   "segment": "d1b"
+  },
+  {
+   "text": "comme",
+   "start": 13.057030000000001,
+   "end": 13.357030000000002,
+   "segment": "d1b"
+  },
+  {
+   "text": "ces",
+   "start": 13.357030000000002,
+   "end": 13.57703,
+   "segment": "d1b"
+  },
+  {
+   "text": "mêmes",
+   "start": 13.57703,
+   "end": 13.797030000000001,
+   "segment": "d1b"
+  },
+  {
+   "text": "pharmacies",
+   "start": 13.797030000000001,
+   "end": 14.31703,
+   "segment": "d1b"
+  },
+  {
+   "text": "fabriquent",
+   "start": 14.31703,
+   "end": 14.73703,
+   "segment": "d1b"
+  },
+  {
+   "text": "aussi",
+   "start": 14.73703,
+   "end": 14.977030000000001,
+   "segment": "d1b"
+  },
+  {
+   "text": "les",
+   "start": 14.977030000000001,
+   "end": 15.117030000000002,
+   "segment": "d1b"
+  },
+  {
+   "text": "couleurs…",
+   "start": 15.117030000000002,
+   "end": 15.89703,
+   "segment": "d1b"
+  },
+  {
+   "text": "la",
+   "start": 15.89703,
+   "end": 16.09703,
+   "segment": "d1b"
+  },
+  {
+   "text": "poudre",
+   "start": 16.09703,
+   "end": 16.43703,
+   "segment": "d1b"
+  },
+  {
+   "text": "finit",
+   "start": 16.43703,
+   "end": 16.75703,
+   "segment": "d1b"
+  },
+  {
+   "text": "sur",
+   "start": 16.75703,
+   "end": 16.91703,
+   "segment": "d1b"
+  },
+  {
+   "text": "la",
+   "start": 16.91703,
+   "end": 17.017030000000002,
+   "segment": "d1b"
+  },
+  {
+   "text": "palette",
+   "start": 17.017030000000002,
+   "end": 17.19703,
+   "segment": "d1b"
+  },
+  {
+   "text": "des",
+   "start": 17.19703,
+   "end": 17.35703,
+   "segment": "d1b"
+  },
+  {
+   "text": "peintres.",
+   "start": 17.35703,
+   "end": 17.677030000000002,
+   "segment": "d1b"
+  },
+  {
+   "text": "Et",
+   "start": 18.134989,
+   "end": 18.274989,
+   "segment": "d2"
+  },
+  {
+   "text": "quand",
+   "start": 18.274989,
+   "end": 18.374989,
+   "segment": "d2"
+  },
+  {
+   "text": "Bonaparte",
+   "start": 18.374989,
+   "end": 18.794989,
+   "segment": "d2"
+  },
+  {
+   "text": "revient",
+   "start": 18.794989,
+   "end": 19.054989,
+   "segment": "d2"
+  },
+  {
+   "text": "d'Égypte,",
+   "start": 19.054989,
+   "end": 19.574989000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "l'Europe",
+   "start": 19.634989,
+   "end": 19.954989,
+   "segment": "d2"
+  },
+  {
+   "text": "devient",
+   "start": 19.954989,
+   "end": 20.274989,
+   "segment": "d2"
+  },
+  {
+   "text": "folle",
+   "start": 20.274989,
+   "end": 20.754989000000002,
+   "segment": "d2"
+  },
+  {
+   "text": ":",
+   "start": 20.754989000000002,
+   "end": 20.954989,
+   "segment": "d2"
+  },
+  {
+   "text": "les",
+   "start": 20.954989,
+   "end": 21.114989,
+   "segment": "d2"
+  },
+  {
+   "text": "momies",
+   "start": 21.114989,
+   "end": 21.394989000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "arrivent",
+   "start": 21.394989000000002,
+   "end": 21.714989000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "par",
+   "start": 21.714989000000003,
+   "end": 21.854989000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "caisses",
+   "start": 21.854989000000003,
+   "end": 22.334989,
+   "segment": "d2"
+  },
+  {
+   "text": "entières.",
+   "start": 22.334989,
+   "end": 22.874989,
+   "segment": "d2"
+  },
+  {
+   "text": "On",
+   "start": 23.334830000000004,
+   "end": 23.494830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 23.494830000000004,
+   "end": 23.634830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "déballe",
+   "start": 23.634830000000004,
+   "end": 24.114830000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "devant",
+   "start": 24.114830000000005,
+   "end": 24.354830000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 24.354830000000003,
+   "end": 24.574830000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "salons",
+   "start": 24.574830000000002,
+   "end": 24.934830000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "pleins",
+   "start": 24.934830000000005,
+   "end": 25.274830000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 25.274830000000005,
+   "end": 25.354830000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "curieux…",
+   "start": 25.354830000000003,
+   "end": 25.914830000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "puis",
+   "start": 26.174830000000004,
+   "end": 26.494830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "on",
+   "start": 26.494830000000004,
+   "end": 26.674830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "les",
+   "start": 26.674830000000004,
+   "end": 26.794830000000005,
+   "segment": "d3"
+  },
+  {
+   "text": "revend",
+   "start": 26.794830000000005,
+   "end": 27.154830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "au",
+   "start": 27.154830000000004,
+   "end": 27.374830000000003,
+   "segment": "d3"
+  },
+  {
+   "text": "marchand",
+   "start": 27.374830000000003,
+   "end": 27.734830000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 27.734830000000002,
+   "end": 27.814830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "couleurs.",
+   "start": 27.814830000000004,
+   "end": 27.974830000000004,
+   "segment": "d3"
+  },
+  {
+   "text": "Le",
+   "start": 28.628095000000002,
+   "end": 28.808095,
+   "segment": "d4"
+  },
+  {
+   "text": "dernier",
+   "start": 28.808095,
+   "end": 29.048095000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "fabricant",
+   "start": 29.048095000000004,
+   "end": 29.488095,
+   "segment": "d4"
+  },
+  {
+   "text": "arrête",
+   "start": 29.488095,
+   "end": 29.868095,
+   "segment": "d4"
+  },
+  {
+   "text": "en",
+   "start": 29.868095,
+   "end": 30.168095,
+   "segment": "d4"
+  },
+  {
+   "text": "1964.",
+   "start": 30.168095,
+   "end": 30.868095000000004,
+   "segment": "d4"
+  },
+  {
+   "text": "Sa",
+   "start": 31.508095,
+   "end": 31.628095000000002,
+   "segment": "d4"
+  },
+  {
+   "text": "raison",
+   "start": 31.628095000000002,
+   "end": 31.808095,
+   "segment": "d4"
+  },
+  {
+   "text": "?",
+   "start": 31.808095,
+   "end": 32.048095,
+   "segment": "d4"
+  },
+  {
+   "text": "Il",
+   "start": 32.048095,
+   "end": 32.128095,
+   "segment": "d4"
+  },
+  {
+   "text": "n'a",
+   "start": 32.128095,
+   "end": 32.248095,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 32.248095,
+   "end": 32.348095,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 32.348095,
+   "end": 32.428095,
+   "segment": "d4"
+  },
+  {
+   "text": "momies.",
+   "start": 32.428095,
+   "end": 32.648095,
+   "segment": "d4"
+  },
+  {
+   "text": "L'Europe",
+   "start": 33.088571,
+   "end": 33.428571000000005,
+   "segment": "d6"
+  },
+  {
+   "text": "aimait",
+   "start": 33.428571000000005,
+   "end": 33.668571,
+   "segment": "d6"
+  },
+  {
+   "text": "tellement",
+   "start": 33.668571,
+   "end": 33.988571,
+   "segment": "d6"
+  },
+  {
+   "text": "l'Égypte…",
+   "start": 33.988571,
+   "end": 34.828571000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "qu'elle",
+   "start": 34.828571000000004,
+   "end": 35.268571,
+   "segment": "d6"
+  },
+  {
+   "text": "l'a",
+   "start": 35.268571,
+   "end": 35.408571,
+   "segment": "d6"
+  },
+  {
+   "text": "mise",
+   "start": 35.408571,
+   "end": 35.568571,
+   "segment": "d6"
+  },
+  {
+   "text": "dans",
+   "start": 35.568571,
+   "end": 35.768571,
+   "segment": "d6"
+  },
+  {
+   "text": "ses",
+   "start": 35.768571,
+   "end": 35.928571,
+   "segment": "d6"
+  },
+  {
+   "text": "tableaux.",
+   "start": 35.928571,
+   "end": 36.208571,
+   "segment": "d6"
+  }
+ ]
+}

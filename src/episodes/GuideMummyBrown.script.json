@@ -1,0 +1,37 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Pendant des siècles, des peintres ont peint avec de vraies momies."
+    },
+    {
+      "id": "context",
+      "text": "Des corps égyptiens, broyés en poudre : un brun transparent, parfait pour les ombres."
+    },
+    {
+      "id": "d1",
+      "text": "Au départ, la momie, c'est un médicament : les pharmacies la vendent en poudre, à avaler."
+    },
+    {
+      "id": "d1b",
+      "text": "Et comme ces mêmes pharmacies fabriquent aussi les couleurs… la poudre finit sur la palette des peintres."
+    },
+    {
+      "id": "d2",
+      "text": "Et quand Bonaparte revient d'Égypte, l'Europe devient folle : les momies arrivent par caisses entières."
+    },
+    {
+      "id": "d3",
+      "text": "On les déballe devant des salons pleins de curieux… puis on les revend au marchand de couleurs."
+    },
+    {
+      "id": "d4",
+      "text": "Le dernier fabricant arrête en 1964. Sa raison ? Il n'a plus de momies.",
+      "say": "Le dernier fabricant arrête en mille neuf cent soixante-quatre. Sa raison ? Il n'a plus de momies."
+    },
+    {
+      "id": "d6",
+      "text": "L'Europe aimait tellement l'Égypte… qu'elle l'a mise dans ses tableaux."
+    }
+  ]
+}

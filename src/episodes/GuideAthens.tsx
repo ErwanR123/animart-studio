@@ -5,11 +5,15 @@ import voice from "../../public/voice/GuideAthens.json";
 // Checked against the Vatican Museums text (Plato with the Timaeus, Aristotle with the Ethics, Pythagoras writing,
 // Diogenes on the steps, Heraclitus as Michelangelo, Euclid teaching geometry, Zoroaster's celestial and Ptolemy's
 // terrestrial globe, Raphael's self-portrait in the black cap) and Wikipedia FR (the four themes of the room, the
-// Disputa on the facing wall, read as the harmony of faith and reason). Narration names only the consensual figures;
+// Disputa on the facing wall, read as the harmony of faith and reason; no longer told). Raphael's self-portrait at the
+// right edge, in the black cap, looking out: the ending, which loops into the hook. Narration names only the consensual figures;
 // the class-photo tags add Wikipedia FR's usual names for the others (Zeno, Epicurus, Averroes, Alcibiades,
 // Parmenides, Plotinus); Hypatia (unfounded) is left out. Raphael is not the only figure looking out at the viewer.
 // Images (Wikimedia Commons, public domain): athens.jpg "Chroma denoise" lunette crop with native-res insets,
 // disputa.jpg, parnassus.jpg "Raphael - The Parnassus.jpg", justice.jpg "Rafael - Virtudes Teologales y la Ley…".
+// The whole painting, full width on the full-height screen.
+const WHOLE = { z: 0.37, fx: 0.5, fy: 0.5 };
+
 export const guideAthens = createGuideEpisode({
   voiceFile: "voice/GuideAthens.mp3",
   voice: voice as Voice,
@@ -21,46 +25,41 @@ export const guideAthens = createGuideEpisode({
   ],
   maxWidth: 1000,
   climb: true,
-  climbFrom: "d1",
+  // Full screen from frame 0 on the whole painting (the class photo), the shot the loop comes back to.
+  climbFrom: "start",
+  openView: WHOLE,
   tight: true,
-  room: {
-    walls: [
-      { src: "art/athens/athens.jpg", width: 5200, height: 3394, label: "La Philosophie" },
-      { src: "art/athens/parnassus.jpg", width: 1920, height: 1446, label: "La Poésie" },
-      { src: "art/athens/disputa.jpg", width: 3258, height: 2162, label: "La Foi" },
-      { src: "art/athens/justice.jpg", width: 1920, height: 1630, label: "La Justice" },
-    ],
-    words: ["philosophie", "poésie", "foi", "justice"],
-    start: { fx: 0.5, fy: 0.56 },
-  },
-  // The last line runs into the hook: from "Voilà", back to the opening shot (the video loops).
-  loop: { word: "voilà" },
-  other: { src: "art/athens/disputa.jpg", width: 3258, height: 2162, labels: ["LA PHILOSOPHIE", "LA FOI"] },
+  // Test cut without the Guide or his bubbles: the painting alone, full screen once the camera climbs in.
+  bare: true,
+  // The last line runs into the hook: "Et toi, lesquels j'ai pas cités, tu les as reconnus ?" → "Raphaël a réuni…"
+  loop: { word: "toi", view: WHOLE },
   header: "RAPHAËL · VATICAN · VERS 1510",
+  plate: { work: ["L’École d’Athènes", "· Raphaël · 1509-1511"], place: "Musées du Vatican · Cité du Vatican" },
   title: ["L’École", "d’Athènes."],
+  // The class photo on the hook: every name drops onto its figure while the voice says who they are.
+  lead: {
+    hook: {
+        tags: [
+          { fx: 0.05, fy: 0.67, name: "Zénon", dx: 10, dy: -170 },
+          { fx: 0.238, fy: 0.522, name: "Alcibiade", dx: -40, dy: -190 },
+          { fx: 0.333, fy: 0.525, name: "Socrate", dx: -10, dy: -130 },
+          { fx: 0.479, fy: 0.539, name: "Platon", dx: -40, dy: -200 },
+          { fx: 0.523, fy: 0.535, name: "Aristote", dx: 100, dy: -170 },
+          { fx: 0.861, fy: 0.518, name: "Plotin", dx: 0, dy: -170 },
+          { fx: 0.914, fy: 0.66, name: "Zoroastre", dx: -70, dy: -140 },
+          { fx: 0.113, fy: 0.665, name: "Épicure", dx: -50, dy: 80 },
+          { fx: 0.207, fy: 0.716, name: "Averroès", dx: 70, dy: 70 },
+          { fx: 0.31, fy: 0.68, name: "Parménide", dx: 50, dy: -50 },
+          { fx: 0.22, fy: 0.778, name: "Pythagore", dx: -70, dy: 130 },
+          { fx: 0.432, fy: 0.77, name: "Héraclite", dx: 10, dy: 160 },
+          { fx: 0.579, fy: 0.719, name: "Diogène", dx: 120, dy: 90 },
+          { fx: 0.935, fy: 0.668, name: "Ptolémée", dx: -20, dy: 100 },
+          { fx: 0.83, fy: 0.81, name: "Euclide", dx: 20, dy: 145 },
+        ],
+    },
+  },
   // Coordinates measured on a grid over public/art/athens/athens.jpg (fractions of the working image).
   details: [
-    {
-      id: "d0", fx: 0.5, fy: 0.6,
-      tags: [
-        { fx: 0.05, fy: 0.67, name: "Zénon", dx: 10, dy: -170 },
-        { fx: 0.238, fy: 0.522, name: "Alcibiade", dx: -40, dy: -190 },
-        { fx: 0.333, fy: 0.525, name: "Socrate", dx: -10, dy: -130 },
-        { fx: 0.479, fy: 0.539, name: "Platon", dx: -40, dy: -200 },
-        { fx: 0.523, fy: 0.535, name: "Aristote", dx: 100, dy: -170 },
-        { fx: 0.861, fy: 0.518, name: "Plotin", dx: 0, dy: -170 },
-        { fx: 0.914, fy: 0.66, name: "Zoroastre", dx: -70, dy: -140 },
-        { fx: 0.113, fy: 0.665, name: "Épicure", dx: -50, dy: 80 },
-        { fx: 0.207, fy: 0.716, name: "Averroès", dx: 70, dy: 70 },
-        { fx: 0.31, fy: 0.68, name: "Parménide", dx: 50, dy: -50 },
-        { fx: 0.22, fy: 0.778, name: "Pythagore", dx: -70, dy: 130 },
-        { fx: 0.432, fy: 0.77, name: "Héraclite", dx: 10, dy: 160 },
-        { fx: 0.579, fy: 0.719, name: "Diogène", dx: 120, dy: 90 },
-        { fx: 0.935, fy: 0.668, name: "Ptolémée", dx: -20, dy: 100 },
-        { fx: 0.83, fy: 0.81, name: "Euclide", dx: 20, dy: 145 },
-      ],
-      beat: { pose: "point-right", x: 220 },
-    },
     {
       id: "d1", fx: 0.47, fy: 0.57,
       view: { z: 3, fx: 0.47, fy: 0.57 },
@@ -103,12 +102,11 @@ export const guideAthens = createGuideEpisode({
       beat: { pose: "explaining", x: 230 },
     },
     {
-      // The answer to the hook: whip round to the facing wall (the Disputa), then both walls side by side.
-      id: "d6", fx: 0.5, fy: 0.5,
-      // The whole painting, full width, before the facing wall.
-      view: { z: 0.5, fx: 0.5, fy: 0.5 },
-      turn: { word: "face", split: "pape", view: { z: 1.6, fx: 0.49, fy: 0.36 } },
-      hold: 0.2,
+      // "Et le dernier, tout au bord": straight from Heraclitus across to his face (black cap), Raphael's self-portrait;
+      // on "Alors…" back out to the whole painting, the first frame.
+      id: "d6", fx: 0.957, fy: 0.665,
+      view: { z: 4, fx: 0.957, fy: 0.665 },
+      spots: [{ word: "raphaël", fx: 0.957, fy: 0.665, rx: 0.03, ry: 0.05, name: "Raphaël" }],
       beat: { pose: "explaining", x: 230 },
     },
   ],

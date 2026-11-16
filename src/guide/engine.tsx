@@ -6,12 +6,13 @@ import {
   Img,
   Interactive,
   interpolate,
+  OffthreadVideo,
   Sequence,
   staticFile,
   useCurrentFrame,
 } from "remotion";
 import { Grain } from "../components";
-import { fell, fellSC, hand } from "../fonts";
+import { fell, fellSC, hand, poster, sans } from "../fonts";
 import { clamp, easeIn, easeInOut, easeOut, FPS } from "../theme";
 import {
   type Cam,
@@ -205,16 +206,14 @@ export type GuideDetail = {
   // or two, each to the next shot or the end of the beat, where the run hands back to the painting.
   shots?: Shot[];
   // Sound accents on spoken words (paths under public/).
-  sfx?: { word: string; src: string; volume?: number }[];
+  sfx?: { word: string; src: string; volume?: number; after?: number }[];
   hold?: number; // extra seconds on this beat after the sentence (a reveal that needs to land)
   beat: Omit<Beat, "at">;
 };
 
-// Effects on the hook and context lines (the same keys as a detail, without a pose; `view` in climb mode).
-export type LeadFx = Omit<
-  GuideDetail,
-  "id" | "fx" | "fy" | "turn" | "hold" | "beat"
->;
+// Effects on the hook and context lines (the same keys as a detail, without a pose; `view` in climb mode; `hold` only
+// on the context line).
+export type LeadFx = Omit<GuideDetail, "id" | "fx" | "fy" | "turn" | "beat">;
 // A spoken word: [segment id, word] (first word of the segment starting with it).
 export type Cue = [string, string];
 // One piece of a collage, in px of the 1080 × CLIMB_H frame. `depth` 0 (far: lands blurred, barely moves) … 1 (near:
@@ -310,8 +309,12 @@ export type GuideConfig = {
     start: { fx: number; fy: number };
   };
   // With a room or a cover: from this word of the last line, the camera flies back to the opening shot, so the last
-  // frame matches the first and the video loops into its hook.
-  loop?: { word: string };
+  // frame matches the first and the video loops into its hook. `view`: the shot it flies back to, when the first
+  // frame is not `openView` (a cold open's first close-up). `full`: after a cold open, the frame also grows back to the
+  // whole screen and the Guide leaves, so the last frame is the cold open's first (its tapes slapped back on at the
+  // end). `cover`: a full-screen clip (1080 × 1920, `dur` s) shown from the word and ending on the last frame: the
+  // footage just before the cold open's first frame, so the video loops on in motion.
+  loop?: { word: string; view?: { z: number; fx: number; fy: number }; full?: boolean; cover?: { src: string; dur: number } };
   // The hook's search game: a magnifying glass (radius `r` px, `zoom` ×) wanders over the painting along `path`
   // (painting fractions) and stops on its last point on `word`; it lifts away as the context begins.
   search?: {
@@ -321,6 +324,29 @@ export type GuideConfig = {
     zoom?: number;
   };
   tight?: boolean; // short gaps, camera moves overlapping the voice (≤ 75 s edits)
+  handSfx?: boolean; // no automatic paper flick or thump under landing pieces: every sound is named in `sfx`
+  sfxGain?: number; // multiplies the volume of every sound named in `sfx`, against the voice
+  quietPieces?: boolean; // no automatic paper flick under landing pieces: only the sounds the episode names
+  // Clear of the platforms' top bar: the collage pieces are laid lower (shots.tsx, SAFE_TOP) and the Guide is smaller.
+  safe?: boolean;
+  bare?: boolean; // no Guide and no speech bubble: the hung frame sits mid-screen, climbing fills the whole screen
+  // Cold open: the voice starts at once and the hook plays full screen as close-ups of the painting, a hard cut on each
+  // shot's word of the hook (the first is there on frame 0), its words on yellow tape stacked from `y` (px). The title is
+  // not shown; the Guide and his bubble come in with the context line. `glide`: instead of the cut, the camera travels
+  // from the previous shot for that many seconds; a shot without `tapes` keeps the previous shot's. `size`: the tapes' type
+  // size (default 84). `spin`: the painting turns to that many degrees on the shot's word, in 0.45 s (180: hung the
+  // other way up; the next shot without `spin` turns it back). `cover`: a full-screen still or clip (1080 × 1920, under
+  // public/) shown instead of the painting from the shot's word, a clip playing from there (real footage on frame 0).
+  cold?: { word?: string; view: { z: number; fx: number; fy: number }; tapes?: string[]; y?: number; size?: number; glide?: number; spin?: number; cover?: string }[];
+  // A price tag hanging on a string from x, y of the cold open's first frame: it follows the zoom of each cold shot and
+  // swings at each cut, still on frame 0 and on the loop's last frame.
+  coldTag?: { text: string; x: number; y: number; size?: number };
+  // The music stops dead between these two words (a reveal in silence) and comes back in 0.3 s.
+  musicCut?: [Cue, Cue];
+  // A tear-off calendar pinned in a corner over the collage shots (it never moves with their camera): from each cue
+  // (+ `after` s) the top page is torn off onto that date ("21 AOÛT 1911", or a month: "OCT. 1911"); hidden from
+  // `until`. Pages a few hundredths apart riffle by (two years in a second).
+  calendar?: { pages: [Cue, string, number?][]; until?: Cue; x?: number; y?: number };
   // Second painting for `turn` beats (e.g. the fresco on the facing wall) and the labels of the side-by-side view.
   other?: {
     src: string;
@@ -330,6 +356,9 @@ export type GuideConfig = {
   };
   header: string;
   title: [string, string];
+  // Instead of the title: two lines under the painting while the hook plays (a museum label): the work, painter and
+  // date ([title, rest]), then where it hangs.
+  plate?: { work: [string, string]; place: string };
   details: GuideDetail[];
 };
 
@@ -341,16 +370,17 @@ const GOLD = "#E8C66A";
 const MOVE = 0.85; // camera travel between details
 const BASELINE = 1665; // the Guide's feet (TikTok/Reels keep ~400 px at the bottom for caption and account)
 const GUIDE_X = 230;
-const CLIMB_H = 1400; // painting height on screen in climb mode
+const GUIDE_CLIMB_H = 1400; // painting height on screen in climb mode, above the Guide
 const HOLD_PUSH = 0.006; // the camera's slow push while it holds on the painting: +3 % in 5 s (Vox: it never freezes)
 
 export const createGuideEpisode = (cfg: GuideConfig) => {
+  const CLIMB_H = cfg.bare ? 1920 : GUIDE_CLIMB_H;
   // ---- Layout: the painting fits a 860 × 800 box under the heading ----
   const ratio = cfg.image.width / cfg.image.height;
   const PW = Math.min(cfg.maxWidth ?? 860, 800 * ratio);
   const PH = PW / ratio;
   const BX = 540 - PW / 2;
-  const BY = 345 + (800 - PH) / 2;
+  const BY = cfg.bare ? 960 - PH / 2 : 345 + (800 - PH) / 2;
   const SRC = staticFile(cfg.image.src);
 
   // ---- Timeline (seconds) ----
@@ -359,7 +389,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     if (!s) throw new Error(`voice segment ${id} missing`);
     return s;
   };
-  let cursor = 0.35;
+  let cursor = cfg.cold ? 0.05 : 0.35;
   const place = (id: string, gapAfter: number) => {
     const s = segment(id);
     const at = cursor;
@@ -369,7 +399,10 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
   const gap = (normal: number) => (cfg.tight ? Math.min(normal, 0.12) : normal);
   const hook = place("hook", gap(0.2));
   // With a room, the camera needs a moment after the last word to dive back into the painting.
-  const context = place("context", cfg.room ? 0.35 : gap(0.2));
+  // No context line: the details follow the hook straight away.
+  const context = cfg.voice.segments.some((s) => s.id === "context")
+    ? place("context", (cfg.room ? 0.35 : gap(0.2)) + (cfg.lead?.context?.hold ?? 0))
+    : { id: "context", at: cursor, end: cursor, src: cursor };
   const DETAILS_FROM = cursor;
   const details = cfg.details.map((d, i) => {
     // Tight: the camera starts moving under the end of the previous sentence.
@@ -416,7 +449,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
       interpolate(t, [a, a + rise], [0, 1], { ...clamp, easing: easeInOut }),
       interpolate(t, [b - fall, b], [1, 0], { ...clamp, easing: easeInOut }),
     );
-  const voiceLines = [hook, context, ...details.map((d) => d.vo)];
+  const voiceLines = [hook, context, ...details.map((d) => d.vo)].filter((l) => l.end > l.at); // no empty context
 
   // Word timings on the video clock (captions + the Guide's speech bob).
   type TimedWord = { text: string; at: number; until: number; segment: string };
@@ -548,6 +581,32 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     ...(cfg.loop ? [{ at: LOOP_AT, pose: OPEN_POSE, x: GUIDE_X }] : []), // the opening pose
   ].sort((a, b) => a.at - b.at);
   // ---- Frame box: hung on the wall, or full screen while climbing ----
+  const coldShots = (cfg.cold ?? []).reduce<
+    { view: { z: number; fx: number; fy: number }; glide?: number; spin?: number; cover?: string; at: number; tapes: string[]; y: number; size: number; tapesAt: number }[]
+  >((shots, c, i) => {
+    const at = i === 0 || !c.word ? 0 : (wordAt("hook", c.word) ?? 0);
+    const prev = shots[i - 1];
+    return [
+      ...shots,
+      {
+        ...c,
+        at,
+        tapes: c.tapes ?? prev?.tapes ?? [],
+        y: c.y ?? prev?.y ?? 0,
+        size: c.size ?? prev?.size ?? 84,
+        tapesAt: c.tapes || !prev ? at : prev.tapesAt,
+      },
+    ];
+  }, []);
+  const coldShot = (t: number) =>
+    t < context.at ? coldShots.filter((c) => c.at <= t).pop() : undefined;
+  // The painting's turn in degrees: from the previous cold shot's to this one's.
+  const spinAt = (t: number) => {
+    const cut = coldShot(t);
+    if (!cut) return 0;
+    const from = coldShots[coldShots.indexOf(cut) - 1]?.spin ?? 0;
+    return interpolate(t, [cut.at, cut.at + 0.45], [from, cut.spin ?? 0], { ...clamp, easing: easeInOut });
+  };
   const climbStart =
     cfg.climbFrom === "start"
       ? -1
@@ -561,6 +620,14 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
           easing: easeInOut,
         })
       : 0;
+  // A cold open fills the whole screen until the Guide comes in, then the frame lifts to make room for him.
+  const loopFull = (t: number) =>
+    cfg.cold && cfg.loop?.full ? interpolate(t, [LOOP_AT, END - 1 / FPS], [0, 1], { ...clamp, easing: easeInOut }) : 0;
+  const climbH = (t: number) =>
+    cfg.cold
+      ? interpolate(t, [context.at - 0.35, context.at + 0.15], [1920, CLIMB_H], { ...clamp, easing: easeInOut }) +
+        (1920 - CLIMB_H) * loopFull(t)
+      : CLIMB_H;
   const boxAt = (t: number) => {
     const p = immAt(t);
     // Full width, down to just above the Guide's head: the bottom of the painting must never hide behind him.
@@ -568,7 +635,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
       x: BX * (1 - p),
       y: BY * (1 - p),
       w: PW + (1080 - PW) * p,
-      h: PH + (CLIMB_H - PH) * p,
+      h: PH + (climbH(t) - PH) * p,
     };
   };
   // Screen px per painting px: z times the scale at which the painting covers the box.
@@ -603,7 +670,11 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     // While the camera holds, it keeps pushing in slowly (HOLD_PUSH a second): the picture never freezes, even on the
     // whole painting where the framing can't climb. Each move starts from where the push got to, so nothing jumps.
     let held = 0;
-    for (const d of all) {
+    const cut = coldShot(t);
+    if (cut) {
+      v = coldShots[coldShots.indexOf(cut) - 1]?.view ?? cut.view;
+      blend(cut.view, cut.glide ? interpolate(t, [cut.at, cut.at + cut.glide], [0, 1], { ...clamp, easing: easeInOut }) : 1);
+    } else for (const d of all) {
       if (!d.view || t < d.move - 0.2) continue;
       v = { ...v, z: v.z * (1 + HOLD_PUSH * Math.max(0, d.move - 0.2 - held)) };
       const p = interpolate(t, [d.move - 0.2, d.arrive + 0.3], [0, 1], {
@@ -620,7 +691,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     // On the loop the camera flies back to the opening frame and the push eases off: the last frame is the first again.
     if (cfg.loop && t >= LOOP_AT)
       blend(
-        cfg.openView ?? { z: 1, fx: 0.5, fy: 0.5 },
+        cfg.loop.view ?? cfg.openView ?? { z: 1, fx: 0.5, fy: 0.5 },
         interpolate(t, [LOOP_AT, END - 1 / FPS], [0, 1], {
           ...clamp,
           easing: easeInOut,
@@ -789,6 +860,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     const b = boxAt(t);
     const imm = immAt(t);
     const pad = 20 * (1 - imm);
+    const cover = coldShot(t)?.cover;
     return (
       <div
         style={{
@@ -817,7 +889,24 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
             backgroundColor: "#000",
           }}
         >
-          <PaintingLayer t={t} style={{ transform: contentTransform(t) }} />
+          <PaintingLayer
+            t={t}
+            style={{
+              transform: `translate(${b.w / 2}px, ${b.h / 2}px) rotate(${spinAt(t)}deg) translate(${-b.w / 2}px, ${-b.h / 2}px) ${contentTransform(t)}`,
+            }}
+          />
+          {cover?.endsWith(".mp4") ? (
+            <Sequence from={f(coldShot(t)?.at ?? 0)} layout="none">
+              <OffthreadVideo src={staticFile(cover)} muted style={{ ...full, objectFit: "cover" }} />
+            </Sequence>
+          ) : cover ? (
+            <Img src={staticFile(cover)} style={{ ...full, objectFit: "cover" }} />
+          ) : null}
+          {cfg.loop?.cover && t >= LOOP_AT ? (
+            <Sequence from={f(END) - f(cfg.loop.cover.dur)} layout="none">
+              <OffthreadVideo src={staticFile(cfg.loop.cover.src)} muted style={{ ...full, objectFit: "cover" }} />
+            </Sequence>
+          ) : null}
           <div
             style={{
               position: "absolute",
@@ -1254,11 +1343,10 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
             ...clamp,
             easing: easeInOut,
           });
-          const out = interpolate(
-            t,
-            [leaveOf(d) - 0.3, leaveOf(d)],
-            [1, 0],
-            clamp,
+          // Gone as the loop flies back, so the last frame is the first again.
+          const out = Math.min(
+            interpolate(t, [leaveOf(d) - 0.3, leaveOf(d)], [1, 0], clamp),
+            cfg.loop ? interpolate(t, [LOOP_AT, LOOP_AT + 0.3], [1, 0], clamp) : 1,
           );
           const c = toScreen(g.fx, g.fy, t);
           const s = scaleAt(t, viewAt(t).z);
@@ -1727,7 +1815,11 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
   // ---- Collage shots: every beat's shots on the video clock, each lasting until the next one ----
   const timedShots: TimedShot[] = all.flatMap((d) => {
     const list = d.shots ?? [];
-    const starts = list.map((s) => wordAt(d.id, s.word) ?? d.vo.at);
+    // A hook that opens on a collage shot holds it from the first frame (the voice starts 0.35 s in).
+    const starts = list.map((s, i) => {
+      const at = wordAt(d.id, s.word) ?? d.vo.at;
+      return d.id === "hook" && i === 0 && at <= d.vo.at + 0.05 ? 0 : at;
+    });
     return list.map((s, i) => {
       const start = starts[i];
       const end =
@@ -1742,7 +1834,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
               ((l.at ? wordAt(d.id, l.at) : undefined) ?? prev + 0.08) +
               (l.after ?? 0)),
       );
-      // A tape's `strike`, a document's `cue`, a piece's `lift` or `exit`: the word a mark or a move waits for.
+      // A tape's `strike`, a document's `cue`, a piece's `lift`, `exit`, `fold`, `open`, `opened` or `off`: the word a mark or a move waits for.
       const strikes = s.layers.map((l) => {
         const word =
           "strike" in l
@@ -1753,9 +1845,15 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
                 ? l.lift
                 : "exit" in l
                   ? l.exit
-                  : undefined;
+                  : "fold" in l
+                    ? l.fold?.word
+                    : "open" in l
+                      ? l.open
+                      : "opened" in l
+                        ? l.opened
+                        : l.off;
         const w = word ? wordAt(d.id, word) : undefined;
-        return w !== undefined && ("lift" in l || "exit" in l)
+        return w !== undefined && ("lift" in l || "exit" in l || "fold" in l)
           ? w + (l.after ?? 0)
           : w;
       });
@@ -1765,7 +1863,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
         end,
         times,
         strikes,
-        shakeAt: s.shake ? wordAt(d.id, s.shake) : undefined,
+        shakeAt: s.shake ? [s.shake].flat().flatMap((w) => wordAt(d.id, w) ?? []) : undefined,
         last: i === list.length - 1 || !!s.until,
       };
     });
@@ -1775,6 +1873,8 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     // Only across a short gap: a beat without shots in between keeps its painting.
     if (s.carry && next && next.start - s.end < 1.5)
       Object.assign(s, { end: next.start, last: false });
+    // The episode's very last shot, carried: it holds to the last frame (a loop back onto the first one).
+    if (s.carry && !next) Object.assign(s, { end: 1e6, last: false });
   });
 
   // ---- Archive photos cut in over the frame (a match cut on a figure, then plain cuts) ----
@@ -2964,6 +3064,47 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     </span>
   );
 
+  // ---- The tear-off calendar (cfg.calendar) ----
+  const pages = (cfg.calendar?.pages ?? []).map(([c, label, after]) => ({ at: cue(c) + (after ?? 0), label }));
+  const calendarOff = cfg.calendar?.until ? cue(cfg.calendar.until) : 1e6;
+  const Calendar: React.FC<{ t: number }> = ({ t }) => {
+    const k = pages.reduce((n, p, i) => (p.at <= t ? i : n), -1);
+    if (!cfg.calendar || k < 0 || t >= calendarOff) return null;
+    const x = cfg.calendar.x ?? 862;
+    const y = cfg.calendar.y ?? 236;
+    const ink = cfg.palette?.ink ?? "#1C1B19";
+    const red = cfg.palette?.accent ?? "#C8321E";
+    // "21 AOÛT 1911" → day, month, year; "OCT. 1911" → month, year.
+    const Page: React.FC<{ label: string; style?: React.CSSProperties }> = ({ label, style }) => {
+      const w = label.split(" ");
+      const year = w[w.length - 1];
+      const day = /^\d+$/.test(w[0]) ? w[0] : undefined;
+      const month = w.slice(day ? 1 : 0, -1).join(" ");
+      return (
+        <div style={{ position: "absolute", left: 0, top: 0, width: 168, height: 190, background: "#F6F1E4", boxShadow: "0 6px 14px rgba(0,0,0,0.4)", overflow: "hidden", ...style }}>
+          <div style={{ height: 40, background: red, color: "#F6F1E4", fontFamily: sans, fontWeight: 900, fontSize: 26, lineHeight: "40px", textAlign: "center", letterSpacing: 2 }}>{year}</div>
+          <div style={{ fontFamily: poster, fontSize: day ? 92 : 50, lineHeight: day ? "100px" : "100px", textAlign: "center", color: ink }}>{day ?? month}</div>
+          {day ? <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 26, textAlign: "center", color: ink, marginTop: -6 }}>{month}</div> : null}
+        </div>
+      );
+    };
+    const cur = pages[k];
+    const prev = pages[k - 1];
+    // The torn page: lifted off its top edge and dropped, faster when the next one follows close.
+    const tearFor = Math.min(0.3, Math.max(0.06, (pages[k + 1]?.at ?? 1e6) - cur.at));
+    const u = prev ? interpolate(t - cur.at, [0, tearFor], [0, 1], clamp) : 1;
+    const pop = interpolate(t - (pages[0]?.at ?? 0), [0, 0.2], [0.6, 1], { ...clamp, easing: easeOut });
+    return (
+      <div style={{ position: "absolute", left: x, top: y, width: 168, height: 190, transform: `rotate(3deg) scale(${pop})` }}>
+        <div style={{ position: "absolute", left: 6, top: 8, width: 168, height: 190, background: "#D9D2C1" }} />
+        <Page label={cur.label} />
+        {prev && u < 1 ? <Page label={prev.label} style={{ transform: `translateY(${u * u * 260}px) rotate(${-u * 28}deg)`, transformOrigin: "0% 0%", opacity: 1 - u }} /> : null}
+        {/* the binding along the top */}
+        <div style={{ position: "absolute", left: -4, top: -8, width: 176, height: 14, background: ink, borderRadius: 3 }} />
+      </div>
+    );
+  };
+
   const Title: React.FC<{ t: number }> = ({ t }) => {
     // Gone with the hook (it must not sit over the painting for long), or before the first collage covers the frame.
     const firstCollage = Math.min(
@@ -2972,7 +3113,90 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     );
     const until = Math.min(context.at, firstCollage + 0.2);
     const out = interpolate(t, [until - 0.3, until], [1, 0], clamp);
-    if (out <= 0) return null;
+    // The loop's last frames: the first shot's tapes slapped back on, as on frame 0.
+    const back = cfg.cold && cfg.loop?.full && t >= END - 0.4;
+    if ((out <= 0 && !back) || cfg.plate) return null;
+    if (cfg.cold) {
+      // The hook's words on yellow tape, slapped on at each cut (the first shot's are there on frame 0).
+      const shot = back ? { ...coldShots[0], tapesAt: END - 0.4 } : coldShot(t);
+      if (!shot) return null;
+      const slap = shot.tapesAt > 0 ? interpolate(t - shot.tapesAt, [0, 0.12], [1.2, 1], { ...clamp, easing: easeOut }) : 1;
+      const tag = cfg.coldTag;
+      const since = Math.abs((back ? END : shot.at) - Math.floor(t * 12) / 12);
+      const swing = 6 * Math.exp(-2 * since) * Math.sin(8 * since);
+      return (
+        <>
+        {tag && (back || t < context.at - 0.35) ? (
+          <div
+            style={{
+              position: "absolute",
+              left: 540 + (tag.x - 540) * shot.view.z,
+              top: 960 + (tag.y - 960) * shot.view.z,
+              transformOrigin: "0 0",
+              transform: `scale(${shot.view.z}) rotate(${swing}deg)`,
+            }}
+          >
+            <div style={{ position: "absolute", left: -2, top: 0, width: 4, height: 92, background: "#E9DFC6", boxShadow: "2px 3px 3px rgba(0,0,0,0.45)" }} />
+            <div
+              style={{
+                position: "absolute",
+                top: 76,
+                left: 0,
+                transform: "translateX(-50%) rotate(-2deg)",
+                padding: "44px 44px 22px",
+                background: "#E8D3A5",
+                fontFamily: fellSC,
+                fontWeight: 700,
+                fontSize: tag.size ?? 72,
+                lineHeight: 1,
+                color: INK,
+                whiteSpace: "nowrap",
+                clipPath: "polygon(50% 0, 100% 16%, 100% 100%, 0 100%, 0 16%)",
+                filter: "drop-shadow(0 10px 14px rgba(0,0,0,0.5))",
+              }}
+            >
+              <div style={{ position: "absolute", left: "50%", top: 14, width: 18, height: 18, marginLeft: -9, borderRadius: "50%", background: "#3A2C1C" }} />
+              {tag.text}
+            </div>
+          </div>
+        ) : null}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: shot.y,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 14,
+            transform: `scale(${slap})`,
+          }}
+        >
+          {shot.tapes.map((line, i) => (
+            <div
+              key={line}
+              style={{
+                padding: "10px 30px 4px",
+                background: "#F2C230",
+                boxShadow: "0 8px 16px rgba(0,0,0,0.35)",
+                fontFamily: fellSC,
+                fontWeight: 700,
+                fontSize: shot.size,
+                lineHeight: 1,
+                color: INK,
+                whiteSpace: "nowrap",
+                clipPath: "polygon(1% 4%, 99% 0, 100% 92%, 0 100%)",
+                transform: `rotate(${[-3, 2, -2][i % 3]}deg)`,
+              }}
+            >
+              {line}
+            </div>
+          ))}
+        </div>
+        </>
+      );
+    }
     // One line inside the frame: a long title ("Rue de Paris, temps de pluie.") gets smaller type (IM Fell ≈ 0.39 em a
     // character), never a second line over the painting.
     const titleSize = Math.min(
@@ -3015,6 +3239,35 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
             text={cfg.title[1]}
             style={{ fontStyle: "italic", color: GOLD }}
           />
+        </div>
+      </div>
+    );
+  };
+
+  // ---- Museum label under the painting, from the first frame until the camera leaves for the first detail ----
+  const Plate: React.FC<{ t: number }> = ({ t }) => {
+    if (!cfg.plate) return null;
+    const until = context.at - 0.1;
+    const out = interpolate(t, [until - 0.3, until], [1, 0], clamp);
+    if (out <= 0) return null;
+    const shade = "0 2px 10px rgba(0,0,0,0.85)";
+    return (
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1360, textAlign: "center", opacity: out }}>
+        <div style={{ fontFamily: fell, fontSize: 50, lineHeight: 1.1, color: CREAM, textShadow: shade }}>
+          <Words t={t} at={0} text={cfg.plate.work[0]} style={{ fontStyle: "italic", color: GOLD }} />
+          <Words t={t} at={0.15} text={cfg.plate.work[1]} />
+        </div>
+        <div
+          style={{
+            marginTop: 14,
+            fontFamily: fellSC,
+            fontSize: 30,
+            letterSpacing: "0.12em",
+            color: "rgba(244,235,221,0.8)",
+            textShadow: shade,
+          }}
+        >
+          <Words t={t} at={0.3} text={cfg.plate.place} />
         </div>
       </div>
     );
@@ -3164,6 +3417,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
     return (
       interpolate(speaking, [0, 1], [0.3, 0.12]) *
       interpolate(t, [END - 1.5, END], [1, 0], clamp) *
+      (cfg.musicCut ? interpolate(t, [cue(cfg.musicCut[0]) - 0.05, cue(cfg.musicCut[0]), cue(cfg.musicCut[1]), cue(cfg.musicCut[1]) + 0.3], [1, 0, 0, 1], clamp) : 1) *
       (1 - dip)
     );
   };
@@ -3243,7 +3497,7 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
           <AbsoluteFill
             style={{
               opacity: immAt(t),
-              background: `linear-gradient(180deg, rgba(12,14,10,0.82) 0px, rgba(12,14,10,0.3) 380px, rgba(12,14,10,0) 560px, rgba(12,14,10,0) ${CLIMB_H - 260}px, ${WALL} ${CLIMB_H}px, ${WALL} 1920px)`,
+              background: `linear-gradient(180deg, rgba(12,14,10,0.82) 0px, rgba(12,14,10,0.3) 380px, rgba(12,14,10,0) 560px, rgba(12,14,10,0) ${climbH(t) - 260}px, ${WALL} ${climbH(t)}px, ${WALL} 1920px)`,
             }}
           />
         ) : null}
@@ -3261,12 +3515,25 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
         <Portraits t={t} />
         <Notes t={t} />
         {/* Collage shots replace the frame: above every mark on the painting (spots, loops, notes). */}
-        <Shots shots={timedShots} t={t} palette={cfg.palette} />
+        <Shots shots={timedShots} t={t} palette={cfg.palette} safe={cfg.safe} />
+        <Calendar t={t} />
         <Figure t={t} on={shotFigure(t)} />
         <CoverLayer t={t} />
         <Title t={t} />
-        <Guide t={t} beats={beats} onsets={onsets} baseline={BASELINE} />
-        <Bubble t={t} />
+        <Plate t={t} />
+        {cfg.bare ? null : (
+          // Safe layout: the Guide a size smaller, his feet where they were.
+          <div style={{ position: "absolute", inset: 0, transformOrigin: `${GUIDE_X}px ${BASELINE}px`, transform: cfg.safe ? "scale(0.82)" : undefined }}>
+            <Guide
+              t={t}
+              beats={beats}
+              onsets={onsets}
+              baseline={BASELINE}
+              opacity={cfg.cold ? interpolate(t, [context.at - 0.3, context.at], [0, 1], clamp) * (1 - loopFull(t)) : 1}
+            />
+          </div>
+        )}
+        {!cfg.bare && (!cfg.cold || t >= context.at - 0.1) && loopFull(t) < 0.5 ? <Bubble t={t} /> : null}
 
         <AbsoluteFill
           style={{
@@ -3381,8 +3648,8 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
             <Sfx
               key={`${d.id}-sfx-${i}`}
               file={s.src}
-              at={wordAt(d.id, s.word) ?? 1e6}
-              volume={s.volume ?? 0.6}
+              at={(wordAt(d.id, s.word) ?? 1e6) + (s.after ?? 0)}
+              volume={(s.volume ?? 0.6) * (cfg.sfxGain ?? 1)}
             />
           )),
         )}
@@ -3446,9 +3713,14 @@ export const createGuideEpisode = (cfg: GuideConfig) => {
             ),
           ),
           ...s.layers.map((l, k) =>
+            cfg.quietPieces ||
             "bg" in l ||
             "pencil" in l ||
             "marker" in l ||
+            "hole" in l ||
+            "tears" in l ||
+            cfg.handSfx ||
+            s.times[k] < s.start ||
             (k === 0 && s.in) ? null : (
               <Sfx
                 key={`shot-${i}-${k}`}

@@ -1,0 +1,36 @@
+{
+  "voice": "Puck",
+  "style": "A 22-year-old French guy from Paris filming a TikTok, telling his friends something he just found out about art. Casual, amused, a bit cheeky, a real smile in the voice, fast spoken French with natural contractions, never announcing, never solemn, never a teacher or a narrator. Like a voice note to a friend. Keep the same energy from start to finish.",
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Tout le monde fait la queue pour la Joconde. Et personne regarde le tableau de 10 mètres juste derrière eux.",
+      "say": "Tout le monde fait la queue pour la Joconde. Et personne regarde le tableau de dix mètres juste derrière eux."
+    },
+    {
+      "id": "intro",
+      "text": "Jour 2 : la taille d'un tableau. Et elle veut dire un truc.",
+      "say": "Jour deux : la taille d'un tableau. Et elle veut dire un truc."
+    },
+    {
+      "id": "one",
+      "text": "Un. La Joconde fait 77 centimètres. C'est un portrait pour une maison. Petit, c'est intime : t'es censé être à un mètre d'elle.",
+      "say": "Un. La Joconde fait soixante-dix-sept centimètres. C'est un portrait pour une maison. Petit, c'est intime : t'es censé être à un mètre d'elle."
+    },
+    {
+      "id": "two",
+      "text": "Deux. En face, Les Noces de Cana : 67 mètres carrés. Plus grand que ton appart. Pendant des siècles, la règle est simple : Dieu, les rois, les batailles, c'est en XXL. Une pomme sur une table, c'est en A4.",
+      "say": "Deux. En face, Les Noces de Cana : soixante-sept mètres carrés. Plus grand que ton appart. Pendant des siècles, la règle est simple : Dieu, les rois, les batailles, c'est en XXL. Une pomme sur une table, c'est en A4."
+    },
+    {
+      "id": "three",
+      "text": "Trois. Et un jour, Courbet casse la règle. Un enterrement de paysans… sur 7 mètres de large. Des inconnus à la taille d'un roi. À Paris, c'est le scandale.",
+      "say": "Trois. Et un jour, Courbet casse la règle. Un enterrement de paysans… sur sept mètres de large. Des inconnus à la taille d'un roi. À Paris, c'est le scandale."
+    },
+    {
+      "id": "outro",
+      "text": "Donc au musée, regarde d'abord la taille : elle te dit ce que le tableau se croit être. Abonne-toi, jour 3 demain.",
+      "say": "Donc au musée, regarde d'abord la taille : elle te dit ce que le tableau se croit être. Abonne-toi, jour trois demain."
+    }
+  ]
+}

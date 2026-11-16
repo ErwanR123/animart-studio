@@ -1,0 +1,13 @@
+{
+  "style": "A friendly young French narrator explaining art to a friend in a short TikTok video: warm, curious, a smile in the voice, lively and fluent, conversational, never a teacher's lecture tone, no dramatic swings. Clear natural French.",
+  "segments": [
+    { "id": "hook", "text": "Au musée, on passe en moyenne moins de 30 secondes devant un tableau. Et on rate tout.", "say": "Au musée, on passe en moyenne moins de trente secondes devant un tableau. Et on rate tout." },
+    { "id": "method", "text": "La méthode en trois temps, sur la Joconde." },
+    { "id": "one", "text": "Un : l'ensemble. Une femme assise sur un balcon. Et derrière elle, pas une pièce : un paysage de rêve, avec des chemins, un pont, des montagnes." },
+    { "id": "two", "text": "Deux : cherche ce qui cloche. Regarde l'horizon. À gauche, il est plus bas qu'à droite. Les deux côtés ne se raccordent pas." },
+    { "id": "three", "text": "Trois : les détails. Sa bouche n'a aucun contour, juste des ombres floues." },
+    { "id": "smile", "text": "Regarde ses yeux : elle sourit. Regarde sa bouche : le sourire disparaît." },
+    { "id": "recap", "text": "Trente secondes. Et tu ne la regarderas plus jamais pareil." },
+    { "id": "outro", "text": "Pendant 30 jours, je t'apprends à kiffer n'importe quel musée. Demain : le détail que personne ne voit dans Le Radeau de la Méduse. Abonne-toi !", "say": "Pendant trente jours, je t'apprends à kiffer n'importe quel musée. Demain : le détail que personne ne voit dans Le Radeau de la Méduse. Abonne-toi !", "tail": 0.3 }
+  ]
+}

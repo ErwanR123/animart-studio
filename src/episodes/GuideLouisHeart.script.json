@@ -1,0 +1,39 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce tableau a été peint avec le cœur de Louis XIV."
+    },
+    {
+      "id": "context",
+      "text": "À sa mort, en 1715, son cœur est embaumé et placé dans un reliquaire en vermeil, à Paris.",
+      "say": "À sa mort, en dix-sept cent quinze, son cœur est embaumé et placé dans un reliquaire en vermeil, à Paris."
+    },
+    {
+      "id": "d1",
+      "text": "Puis la Révolution arrive. Le reliquaire est fondu… et le cœur finit chez un peintre."
+    },
+    {
+      "id": "d2",
+      "text": "Alexandre Pau de Saint-Martin. Il en découpe des morceaux, et les broie en couleur.",
+      "say": "Alexandre Pô de Saint-Martin. Il en découpe des morceaux, et les broie en couleur."
+    },
+    {
+      "id": "d3",
+      "text": "À l'époque, c'est normal : les peintres broient déjà de vraies momies pour peindre leurs ombres."
+    },
+    {
+      "id": "d4",
+      "text": "Avec ce brun, il peint une vue de Caen, en 1810.",
+      "say": "Avec ce brun, il peint une vue de Caen, en mille huit cent dix."
+    },
+    {
+      "id": "d5",
+      "text": "Deux siècles plus tard, un médecin légiste analyse la peinture… et y retrouve les restes du cœur."
+    },
+    {
+      "id": "d6",
+      "text": "Et c'est pour ça qu'aujourd'hui, on peut le dire :"
+    }
+  ]
+}

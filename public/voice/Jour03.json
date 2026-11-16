@@ -1,0 +1,841 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.621179000000001
+  },
+  {
+   "id": "intro",
+   "start": 4.971179,
+   "end": 8.292993
+  },
+  {
+   "id": "one",
+   "start": 8.642993,
+   "end": 13.131542000000001
+  },
+  {
+   "id": "two",
+   "start": 13.481542000000001,
+   "end": 21.595397000000002
+  },
+  {
+   "id": "three",
+   "start": 21.945397,
+   "end": 26.367211
+  },
+  {
+   "id": "outro",
+   "start": 26.717211,
+   "end": 31.145057
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.0,
+   "end": 0.26,
+   "segment": "hook"
+  },
+  {
+   "text": "mur",
+   "start": 0.26,
+   "end": 0.56,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 0.56,
+   "end": 0.74,
+   "segment": "hook"
+  },
+  {
+   "text": "Milan,",
+   "start": 0.74,
+   "end": 0.96,
+   "segment": "hook"
+  },
+  {
+   "text": "t'as",
+   "start": 0.96,
+   "end": 1.36,
+   "segment": "hook"
+  },
+  {
+   "text": "15",
+   "start": 1.36,
+   "end": 1.66,
+   "segment": "hook"
+  },
+  {
+   "text": "minutes",
+   "start": 1.66,
+   "end": 2.02,
+   "segment": "hook"
+  },
+  {
+   "text": "pour",
+   "start": 2.02,
+   "end": 2.24,
+   "segment": "hook"
+  },
+  {
+   "text": "le",
+   "start": 2.24,
+   "end": 2.36,
+   "segment": "hook"
+  },
+  {
+   "text": "voir.",
+   "start": 2.36,
+   "end": 2.56,
+   "segment": "hook"
+  },
+  {
+   "text": "Et",
+   "start": 2.56,
+   "end": 2.9,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 2.9,
+   "end": 2.98,
+   "segment": "hook"
+  },
+  {
+   "text": "y",
+   "start": 2.98,
+   "end": 2.98,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 2.98,
+   "end": 3.0,
+   "segment": "hook"
+  },
+  {
+   "text": "un",
+   "start": 3.0,
+   "end": 3.06,
+   "segment": "hook"
+  },
+  {
+   "text": "trou",
+   "start": 3.06,
+   "end": 3.3,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 3.3,
+   "end": 3.4,
+   "segment": "hook"
+  },
+  {
+   "text": "clou",
+   "start": 3.4,
+   "end": 3.68,
+   "segment": "hook"
+  },
+  {
+   "text": "dans",
+   "start": 3.68,
+   "end": 3.88,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 3.88,
+   "end": 3.98,
+   "segment": "hook"
+  },
+  {
+   "text": "tête",
+   "start": 3.98,
+   "end": 4.12,
+   "segment": "hook"
+  },
+  {
+   "text": "de",
+   "start": 4.12,
+   "end": 4.26,
+   "segment": "hook"
+  },
+  {
+   "text": "Jésus.",
+   "start": 4.26,
+   "end": 4.5,
+   "segment": "hook"
+  },
+  {
+   "text": "Jour",
+   "start": 4.971179,
+   "end": 5.171179,
+   "segment": "intro"
+  },
+  {
+   "text": "3",
+   "start": 5.171179,
+   "end": 5.411179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": ":",
+   "start": 5.411179000000001,
+   "end": 5.661179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "la",
+   "start": 5.691179,
+   "end": 5.771179,
+   "segment": "intro"
+  },
+  {
+   "text": "perspective.",
+   "start": 5.771179,
+   "end": 6.131179,
+   "segment": "intro"
+  },
+  {
+   "text": "Le",
+   "start": 6.571179000000001,
+   "end": 6.811179,
+   "segment": "intro"
+  },
+  {
+   "text": "truc",
+   "start": 6.811179,
+   "end": 7.071179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "qui",
+   "start": 7.071179000000001,
+   "end": 7.331179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "te",
+   "start": 7.331179000000001,
+   "end": 7.411179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "fait",
+   "start": 7.411179000000001,
+   "end": 7.491179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "rentrer",
+   "start": 7.491179000000001,
+   "end": 7.851179,
+   "segment": "intro"
+  },
+  {
+   "text": "dans",
+   "start": 7.851179,
+   "end": 7.931179,
+   "segment": "intro"
+  },
+  {
+   "text": "le",
+   "start": 7.931179,
+   "end": 8.011179,
+   "segment": "intro"
+  },
+  {
+   "text": "tableau.",
+   "start": 8.011179,
+   "end": 8.211179000000001,
+   "segment": "intro"
+  },
+  {
+   "text": "Un.",
+   "start": 8.642993,
+   "end": 8.892993,
+   "segment": "one"
+  },
+  {
+   "text": "Tout",
+   "start": 9.142993,
+   "end": 9.262993,
+   "segment": "one"
+  },
+  {
+   "text": "ce",
+   "start": 9.262993,
+   "end": 9.342993,
+   "segment": "one"
+  },
+  {
+   "text": "qui",
+   "start": 9.342993,
+   "end": 9.422993,
+   "segment": "one"
+  },
+  {
+   "text": "s'éloigne",
+   "start": 9.422993,
+   "end": 9.722993,
+   "segment": "one"
+  },
+  {
+   "text": "rapetisse,",
+   "start": 9.722993,
+   "end": 10.082993,
+   "segment": "one"
+  },
+  {
+   "text": "et",
+   "start": 10.262993000000002,
+   "end": 10.402993,
+   "segment": "one"
+  },
+  {
+   "text": "toutes",
+   "start": 10.402993,
+   "end": 10.602993000000001,
+   "segment": "one"
+  },
+  {
+   "text": "les",
+   "start": 10.602993000000001,
+   "end": 10.782993000000001,
+   "segment": "one"
+  },
+  {
+   "text": "lignes",
+   "start": 10.782993000000001,
+   "end": 11.062993,
+   "segment": "one"
+  },
+  {
+   "text": "filent",
+   "start": 11.062993,
+   "end": 11.382993,
+   "segment": "one"
+  },
+  {
+   "text": "vers",
+   "start": 11.382993,
+   "end": 11.422993,
+   "segment": "one"
+  },
+  {
+   "text": "un",
+   "start": 11.422993,
+   "end": 11.702993000000001,
+   "segment": "one"
+  },
+  {
+   "text": "seul",
+   "start": 11.702993000000001,
+   "end": 11.842993,
+   "segment": "one"
+  },
+  {
+   "text": "point.",
+   "start": 11.842993,
+   "end": 12.042993000000001,
+   "segment": "one"
+  },
+  {
+   "text": "Comme",
+   "start": 12.242993,
+   "end": 12.382993,
+   "segment": "one"
+  },
+  {
+   "text": "des",
+   "start": 12.382993,
+   "end": 12.642993,
+   "segment": "one"
+  },
+  {
+   "text": "rails",
+   "start": 12.642993,
+   "end": 12.802993,
+   "segment": "one"
+  },
+  {
+   "text": "de",
+   "start": 12.802993,
+   "end": 12.882993,
+   "segment": "one"
+  },
+  {
+   "text": "train.",
+   "start": 12.882993,
+   "end": 13.022993,
+   "segment": "one"
+  },
+  {
+   "text": "Deux.",
+   "start": 13.481542000000001,
+   "end": 13.701542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "Le",
+   "start": 13.881542000000001,
+   "end": 14.081542,
+   "segment": "two"
+  },
+  {
+   "text": "peintre",
+   "start": 14.081542,
+   "end": 14.421542,
+   "segment": "two"
+  },
+  {
+   "text": "met",
+   "start": 14.421542,
+   "end": 14.581542,
+   "segment": "two"
+  },
+  {
+   "text": "l'essentiel",
+   "start": 14.581542,
+   "end": 15.041542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "pile",
+   "start": 15.041542000000002,
+   "end": 15.421542,
+   "segment": "two"
+  },
+  {
+   "text": "sur",
+   "start": 15.421542,
+   "end": 15.581542,
+   "segment": "two"
+  },
+  {
+   "text": "ce",
+   "start": 15.581542,
+   "end": 15.741542,
+   "segment": "two"
+  },
+  {
+   "text": "point.",
+   "start": 15.741542,
+   "end": 15.901542000000001,
+   "segment": "two"
+  },
+  {
+   "text": "Dans",
+   "start": 16.121542,
+   "end": 16.201542,
+   "segment": "two"
+  },
+  {
+   "text": "La",
+   "start": 16.201542,
+   "end": 16.321542,
+   "segment": "two"
+  },
+  {
+   "text": "Cène,",
+   "start": 16.321542,
+   "end": 16.561542000000003,
+   "segment": "two"
+  },
+  {
+   "text": "toutes",
+   "start": 16.921542000000002,
+   "end": 17.061542000000003,
+   "segment": "two"
+  },
+  {
+   "text": "les",
+   "start": 17.061542000000003,
+   "end": 17.241542000000003,
+   "segment": "two"
+  },
+  {
+   "text": "lignes",
+   "start": 17.241542000000003,
+   "end": 17.561542000000003,
+   "segment": "two"
+  },
+  {
+   "text": "foncent…",
+   "start": 17.561542000000003,
+   "end": 18.041542,
+   "segment": "two"
+  },
+  {
+   "text": "vers",
+   "start": 18.041542,
+   "end": 18.361542,
+   "segment": "two"
+  },
+  {
+   "text": "la",
+   "start": 18.361542,
+   "end": 18.481542,
+   "segment": "two"
+  },
+  {
+   "text": "tête",
+   "start": 18.481542,
+   "end": 18.601542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "de",
+   "start": 18.601542000000002,
+   "end": 18.721542,
+   "segment": "two"
+  },
+  {
+   "text": "Jésus.",
+   "start": 18.721542,
+   "end": 18.941542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "Et",
+   "start": 19.181542,
+   "end": 19.201542,
+   "segment": "two"
+  },
+  {
+   "text": "le",
+   "start": 19.201542,
+   "end": 19.301542,
+   "segment": "two"
+  },
+  {
+   "text": "trou,",
+   "start": 19.301542,
+   "end": 19.501542,
+   "segment": "two"
+  },
+  {
+   "text": "c'est",
+   "start": 19.621542,
+   "end": 19.761542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "le",
+   "start": 19.761542000000002,
+   "end": 19.841542,
+   "segment": "two"
+  },
+  {
+   "text": "clou",
+   "start": 19.841542,
+   "end": 20.081542,
+   "segment": "two"
+  },
+  {
+   "text": "que",
+   "start": 20.081542,
+   "end": 20.221542,
+   "segment": "two"
+  },
+  {
+   "text": "Léonard",
+   "start": 20.221542,
+   "end": 20.521542,
+   "segment": "two"
+  },
+  {
+   "text": "a",
+   "start": 20.521542,
+   "end": 20.581542,
+   "segment": "two"
+  },
+  {
+   "text": "planté",
+   "start": 20.581542,
+   "end": 20.861542,
+   "segment": "two"
+  },
+  {
+   "text": "pour",
+   "start": 20.861542,
+   "end": 21.001542,
+   "segment": "two"
+  },
+  {
+   "text": "tendre",
+   "start": 21.001542,
+   "end": 21.181542,
+   "segment": "two"
+  },
+  {
+   "text": "ses",
+   "start": 21.181542,
+   "end": 21.261542000000002,
+   "segment": "two"
+  },
+  {
+   "text": "ficelles.",
+   "start": 21.261542000000002,
+   "end": 21.501542,
+   "segment": "two"
+  },
+  {
+   "text": "Trois.",
+   "start": 21.945397,
+   "end": 22.325397,
+   "segment": "three"
+  },
+  {
+   "text": "Pour",
+   "start": 22.425397,
+   "end": 22.565397,
+   "segment": "three"
+  },
+  {
+   "text": "aller",
+   "start": 22.565397,
+   "end": 22.665397,
+   "segment": "three"
+  },
+  {
+   "text": "encore",
+   "start": 22.665397,
+   "end": 22.805397,
+   "segment": "three"
+  },
+  {
+   "text": "plus",
+   "start": 22.805397,
+   "end": 23.085397,
+   "segment": "three"
+  },
+  {
+   "text": "loin,",
+   "start": 23.085397,
+   "end": 23.305397,
+   "segment": "three"
+  },
+  {
+   "text": "il",
+   "start": 23.505397,
+   "end": 23.545397,
+   "segment": "three"
+  },
+  {
+   "text": "peint",
+   "start": 23.545397,
+   "end": 23.685397,
+   "segment": "three"
+  },
+  {
+   "text": "le",
+   "start": 23.685397,
+   "end": 23.745397,
+   "segment": "three"
+  },
+  {
+   "text": "fond",
+   "start": 23.745397,
+   "end": 23.945397,
+   "segment": "three"
+  },
+  {
+   "text": "bleu",
+   "start": 23.945397,
+   "end": 24.285397,
+   "segment": "three"
+  },
+  {
+   "text": "et",
+   "start": 24.285397,
+   "end": 24.365397,
+   "segment": "three"
+  },
+  {
+   "text": "flou,",
+   "start": 24.365397,
+   "end": 24.605397,
+   "segment": "three"
+  },
+  {
+   "text": "comme",
+   "start": 24.725397,
+   "end": 24.925397,
+   "segment": "three"
+  },
+  {
+   "text": "les",
+   "start": 24.925397,
+   "end": 25.025396999999998,
+   "segment": "three"
+  },
+  {
+   "text": "montagnes",
+   "start": 25.025396999999998,
+   "end": 25.265397,
+   "segment": "three"
+  },
+  {
+   "text": "au",
+   "start": 25.265397,
+   "end": 25.325397,
+   "segment": "three"
+  },
+  {
+   "text": "loin.",
+   "start": 25.325397,
+   "end": 25.445397,
+   "segment": "three"
+  },
+  {
+   "text": "Regarde",
+   "start": 25.625397,
+   "end": 25.905397,
+   "segment": "three"
+  },
+  {
+   "text": "par",
+   "start": 25.905397,
+   "end": 25.965397,
+   "segment": "three"
+  },
+  {
+   "text": "les",
+   "start": 25.965397,
+   "end": 26.045397,
+   "segment": "three"
+  },
+  {
+   "text": "fenêtres.",
+   "start": 26.045397,
+   "end": 26.245397,
+   "segment": "three"
+  },
+  {
+   "text": "Au",
+   "start": 26.717211,
+   "end": 26.797210999999997,
+   "segment": "outro"
+  },
+  {
+   "text": "musée,",
+   "start": 26.797210999999997,
+   "end": 27.117210999999998,
+   "segment": "outro"
+  },
+  {
+   "text": "cherche",
+   "start": 27.257210999999998,
+   "end": 27.497211,
+   "segment": "outro"
+  },
+  {
+   "text": "le",
+   "start": 27.497211,
+   "end": 27.657211,
+   "segment": "outro"
+  },
+  {
+   "text": "point",
+   "start": 27.657211,
+   "end": 27.797210999999997,
+   "segment": "outro"
+  },
+  {
+   "text": "où",
+   "start": 27.797210999999997,
+   "end": 27.917210999999998,
+   "segment": "outro"
+  },
+  {
+   "text": "tout",
+   "start": 27.917210999999998,
+   "end": 28.077211,
+   "segment": "outro"
+  },
+  {
+   "text": "converge",
+   "start": 28.077211,
+   "end": 28.497211,
+   "segment": "outro"
+  },
+  {
+   "text": ":",
+   "start": 28.497211,
+   "end": 28.737211,
+   "segment": "outro"
+  },
+  {
+   "text": "c'est",
+   "start": 28.737211,
+   "end": 28.857211,
+   "segment": "outro"
+  },
+  {
+   "text": "là",
+   "start": 28.857211,
+   "end": 29.057211,
+   "segment": "outro"
+  },
+  {
+   "text": "qu'on",
+   "start": 29.057211,
+   "end": 29.377211,
+   "segment": "outro"
+  },
+  {
+   "text": "veut",
+   "start": 29.377211,
+   "end": 29.417210999999998,
+   "segment": "outro"
+  },
+  {
+   "text": "que",
+   "start": 29.417210999999998,
+   "end": 29.477210999999997,
+   "segment": "outro"
+  },
+  {
+   "text": "tu",
+   "start": 29.477210999999997,
+   "end": 29.497211,
+   "segment": "outro"
+  },
+  {
+   "text": "regardes.",
+   "start": 29.497211,
+   "end": 29.977210999999997,
+   "segment": "outro"
+  },
+  {
+   "text": "Abonne-toi,",
+   "start": 30.017211,
+   "end": 30.357211,
+   "segment": "outro"
+  },
+  {
+   "text": "jour",
+   "start": 30.597210999999998,
+   "end": 30.677211,
+   "segment": "outro"
+  },
+  {
+   "text": "4",
+   "start": 30.677211,
+   "end": 30.817211,
+   "segment": "outro"
+  },
+  {
+   "text": "demain.",
+   "start": 30.817211,
+   "end": 30.977210999999997,
+   "segment": "outro"
+  }
+ ]
+}

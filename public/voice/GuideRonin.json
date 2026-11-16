@@ -1,0 +1,750 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.298254
+  },
+  {
+   "id": "context",
+   "start": 3.648254,
+   "end": 9.896508
+  },
+  {
+   "id": "d1",
+   "start": 10.246508,
+   "end": 14.601814000000001
+  },
+  {
+   "id": "d2",
+   "start": 14.951814,
+   "end": 19.166667
+  },
+  {
+   "id": "d4",
+   "start": 19.516666999999998,
+   "end": 25.181269999999998
+  },
+  {
+   "id": "d5",
+   "start": 25.53127,
+   "end": 30.072699000000004
+  },
+  {
+   "id": "d6",
+   "start": 30.422699,
+   "end": 37.424876000000005
+  }
+ ],
+ "words": [
+  {
+   "text": "Ces",
+   "start": 0.0,
+   "end": 0.2,
+   "segment": "hook"
+  },
+  {
+   "text": "samouraïs",
+   "start": 0.2,
+   "end": 0.74,
+   "segment": "hook"
+  },
+  {
+   "text": "ont",
+   "start": 0.74,
+   "end": 0.92,
+   "segment": "hook"
+  },
+  {
+   "text": "attendu",
+   "start": 0.92,
+   "end": 1.32,
+   "segment": "hook"
+  },
+  {
+   "text": "deux",
+   "start": 1.32,
+   "end": 1.7,
+   "segment": "hook"
+  },
+  {
+   "text": "ans",
+   "start": 1.7,
+   "end": 1.96,
+   "segment": "hook"
+  },
+  {
+   "text": "pour",
+   "start": 1.96,
+   "end": 2.2,
+   "segment": "hook"
+  },
+  {
+   "text": "couper",
+   "start": 2.2,
+   "end": 2.5,
+   "segment": "hook"
+  },
+  {
+   "text": "une",
+   "start": 2.5,
+   "end": 2.74,
+   "segment": "hook"
+  },
+  {
+   "text": "seule",
+   "start": 2.74,
+   "end": 2.92,
+   "segment": "hook"
+  },
+  {
+   "text": "tête.",
+   "start": 2.92,
+   "end": 3.1,
+   "segment": "hook"
+  },
+  {
+   "text": "Japon,",
+   "start": 3.648254,
+   "end": 4.188254000000001,
+   "segment": "context"
+  },
+  {
+   "text": "1701.",
+   "start": 4.188254000000001,
+   "end": 5.428254,
+   "segment": "context"
+  },
+  {
+   "text": "Leur",
+   "start": 5.828254,
+   "end": 5.9882539999999995,
+   "segment": "context"
+  },
+  {
+   "text": "seigneur",
+   "start": 5.9882539999999995,
+   "end": 6.428254,
+   "segment": "context"
+  },
+  {
+   "text": "sort",
+   "start": 6.428254,
+   "end": 6.808254,
+   "segment": "context"
+  },
+  {
+   "text": "son",
+   "start": 6.808254,
+   "end": 7.008254,
+   "segment": "context"
+  },
+  {
+   "text": "sabre",
+   "start": 7.008254,
+   "end": 7.328254,
+   "segment": "context"
+  },
+  {
+   "text": "contre",
+   "start": 7.328254,
+   "end": 7.5282540000000004,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 7.5282540000000004,
+   "end": 7.748253999999999,
+   "segment": "context"
+  },
+  {
+   "text": "homme",
+   "start": 7.748253999999999,
+   "end": 7.9882539999999995,
+   "segment": "context"
+  },
+  {
+   "text": "qui",
+   "start": 7.9882539999999995,
+   "end": 8.148254,
+   "segment": "context"
+  },
+  {
+   "text": "l'humilie,",
+   "start": 8.148254,
+   "end": 8.648254,
+   "segment": "context"
+  },
+  {
+   "text": "en",
+   "start": 8.648254,
+   "end": 8.848254,
+   "segment": "context"
+  },
+  {
+   "text": "plein",
+   "start": 8.848254,
+   "end": 9.028254,
+   "segment": "context"
+  },
+  {
+   "text": "palais",
+   "start": 9.028254,
+   "end": 9.328254,
+   "segment": "context"
+  },
+  {
+   "text": "du",
+   "start": 9.328254,
+   "end": 9.368254,
+   "segment": "context"
+  },
+  {
+   "text": "shogun.",
+   "start": 9.368254,
+   "end": 9.728254,
+   "segment": "context"
+  },
+  {
+   "text": "C'est",
+   "start": 10.246508,
+   "end": 10.466508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "interdit.",
+   "start": 10.466508000000001,
+   "end": 10.786508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "Il",
+   "start": 10.906508,
+   "end": 11.026508,
+   "segment": "d1"
+  },
+  {
+   "text": "est",
+   "start": 11.026508,
+   "end": 11.126508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "condamné",
+   "start": 11.126508000000001,
+   "end": 11.506508,
+   "segment": "d1"
+  },
+  {
+   "text": "à",
+   "start": 11.506508,
+   "end": 11.646508,
+   "segment": "d1"
+  },
+  {
+   "text": "mort",
+   "start": 11.646508,
+   "end": 11.886508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 11.886508000000001,
+   "end": 12.226508,
+   "segment": "d1"
+  },
+  {
+   "text": "jour",
+   "start": 12.226508,
+   "end": 12.426508,
+   "segment": "d1"
+  },
+  {
+   "text": "même.",
+   "start": 12.426508,
+   "end": 12.606508,
+   "segment": "d1"
+  },
+  {
+   "text": "Ses",
+   "start": 13.046508,
+   "end": 13.446508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "samouraïs",
+   "start": 13.446508000000001,
+   "end": 13.966508000000001,
+   "segment": "d1"
+  },
+  {
+   "text": "perdent",
+   "start": 13.966508000000001,
+   "end": 14.346508,
+   "segment": "d1"
+  },
+  {
+   "text": "tout.",
+   "start": 14.346508,
+   "end": 14.486508,
+   "segment": "d1"
+  },
+  {
+   "text": "Ils",
+   "start": 14.951814,
+   "end": 15.311814,
+   "segment": "d2"
+  },
+  {
+   "text": "deviennent",
+   "start": 15.311814,
+   "end": 15.591814000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "des",
+   "start": 15.591814000000001,
+   "end": 15.811814,
+   "segment": "d2"
+  },
+  {
+   "text": "rōnin,",
+   "start": 15.811814,
+   "end": 16.231814,
+   "segment": "d2"
+  },
+  {
+   "text": "des",
+   "start": 16.431814,
+   "end": 16.551814,
+   "segment": "d2"
+  },
+  {
+   "text": "samouraïs",
+   "start": 16.551814,
+   "end": 16.951814,
+   "segment": "d2"
+  },
+  {
+   "text": "sans",
+   "start": 16.951814,
+   "end": 17.111814000000003,
+   "segment": "d2"
+  },
+  {
+   "text": "maître.",
+   "start": 17.111814000000003,
+   "end": 17.431814,
+   "segment": "d2"
+  },
+  {
+   "text": "Et",
+   "start": 17.551814,
+   "end": 17.631814000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "ils",
+   "start": 17.631814000000002,
+   "end": 17.851814,
+   "segment": "d2"
+  },
+  {
+   "text": "jurent",
+   "start": 17.851814,
+   "end": 18.451814,
+   "segment": "d2"
+  },
+  {
+   "text": "de",
+   "start": 18.451814,
+   "end": 18.531814,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 18.531814,
+   "end": 18.631814000000002,
+   "segment": "d2"
+  },
+  {
+   "text": "venger.",
+   "start": 18.631814000000002,
+   "end": 18.991814,
+   "segment": "d2"
+  },
+  {
+   "text": "Presque",
+   "start": 19.516666999999998,
+   "end": 19.976667,
+   "segment": "d4"
+  },
+  {
+   "text": "deux",
+   "start": 19.976667,
+   "end": 20.456667,
+   "segment": "d4"
+  },
+  {
+   "text": "ans",
+   "start": 20.456667,
+   "end": 20.696666999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "plus",
+   "start": 20.696666999999998,
+   "end": 20.836667,
+   "segment": "d4"
+  },
+  {
+   "text": "tard,",
+   "start": 20.836667,
+   "end": 21.156667,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 21.456667,
+   "end": 21.656667,
+   "segment": "d4"
+  },
+  {
+   "text": "nuit",
+   "start": 21.656667,
+   "end": 21.916666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 21.916666999999997,
+   "end": 22.036666999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "neige,",
+   "start": 22.036666999999998,
+   "end": 22.416666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "ils",
+   "start": 22.556666999999997,
+   "end": 22.676667,
+   "segment": "d4"
+  },
+  {
+   "text": "attaquent",
+   "start": 22.676667,
+   "end": 23.136667,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 23.136667,
+   "end": 23.236666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "maison",
+   "start": 23.236666999999997,
+   "end": 23.416666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "de",
+   "start": 23.416666999999997,
+   "end": 23.596666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "l'ennemi.",
+   "start": 23.596666999999997,
+   "end": 23.916666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 23.916666999999997,
+   "end": 24.096666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "ils",
+   "start": 24.096666999999997,
+   "end": 24.236666999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "lui",
+   "start": 24.236666999999997,
+   "end": 24.376666999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "coupent",
+   "start": 24.376666999999998,
+   "end": 24.616667,
+   "segment": "d4"
+  },
+  {
+   "text": "la",
+   "start": 24.616667,
+   "end": 24.796667,
+   "segment": "d4"
+  },
+  {
+   "text": "tête.",
+   "start": 24.796667,
+   "end": 24.936667,
+   "segment": "d4"
+  },
+  {
+   "text": "Ils",
+   "start": 25.53127,
+   "end": 25.97127,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 25.97127,
+   "end": 26.091269999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "déposent",
+   "start": 26.091269999999998,
+   "end": 26.41127,
+   "segment": "d5"
+  },
+  {
+   "text": "sur",
+   "start": 26.41127,
+   "end": 26.51127,
+   "segment": "d5"
+  },
+  {
+   "text": "la",
+   "start": 26.51127,
+   "end": 26.65127,
+   "segment": "d5"
+  },
+  {
+   "text": "tombe",
+   "start": 26.65127,
+   "end": 26.931269999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "de",
+   "start": 26.931269999999998,
+   "end": 27.01127,
+   "segment": "d5"
+  },
+  {
+   "text": "leur",
+   "start": 27.01127,
+   "end": 27.111269999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "seigneur.",
+   "start": 27.01127,
+   "end": 27.591269999999998,
+   "segment": "d5"
+  },
+  {
+   "text": "Puis",
+   "start": 27.751269999999998,
+   "end": 27.87127,
+   "segment": "d5"
+  },
+  {
+   "text": "ils",
+   "start": 27.87127,
+   "end": 28.17127,
+   "segment": "d5"
+  },
+  {
+   "text": "se",
+   "start": 28.17127,
+   "end": 28.31127,
+   "segment": "d5"
+  },
+  {
+   "text": "rendent.",
+   "start": 28.31127,
+   "end": 28.69127,
+   "segment": "d5"
+  },
+  {
+   "text": "Condamnés",
+   "start": 28.711270000000003,
+   "end": 29.131270000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "à",
+   "start": 29.131270000000004,
+   "end": 29.251269999999995,
+   "segment": "d5"
+  },
+  {
+   "text": "mort,",
+   "start": 29.251269999999995,
+   "end": 29.451269999999997,
+   "segment": "d5"
+  },
+  {
+   "text": "eux",
+   "start": 29.451269999999997,
+   "end": 29.771270000000005,
+   "segment": "d5"
+  },
+  {
+   "text": "aussi.",
+   "start": 29.771270000000005,
+   "end": 29.991270000000004,
+   "segment": "d5"
+  },
+  {
+   "text": "Le",
+   "start": 30.422699,
+   "end": 30.962699,
+   "segment": "d6"
+  },
+  {
+   "text": "Japon",
+   "start": 30.962699,
+   "end": 31.222699,
+   "segment": "d6"
+  },
+  {
+   "text": "en",
+   "start": 31.222699,
+   "end": 31.622699000000004,
+   "segment": "d6"
+  },
+  {
+   "text": "a",
+   "start": 31.622699000000004,
+   "end": 31.742699,
+   "segment": "d6"
+  },
+  {
+   "text": "fait",
+   "start": 31.742699,
+   "end": 31.842699000000003,
+   "segment": "d6"
+  },
+  {
+   "text": "son",
+   "start": 31.842699000000003,
+   "end": 32.002699,
+   "segment": "d6"
+  },
+  {
+   "text": "modèle",
+   "start": 32.002699,
+   "end": 32.322699,
+   "segment": "d6"
+  },
+  {
+   "text": "du",
+   "start": 32.322699,
+   "end": 32.562699,
+   "segment": "d6"
+  },
+  {
+   "text": "samouraï",
+   "start": 32.562699,
+   "end": 33.102699,
+   "segment": "d6"
+  },
+  {
+   "text": ":",
+   "start": 33.102699,
+   "end": 33.242699,
+   "segment": "d6"
+  },
+  {
+   "text": "fidèle",
+   "start": 33.242699,
+   "end": 33.722699,
+   "segment": "d6"
+  },
+  {
+   "text": "jusqu'à",
+   "start": 33.722699,
+   "end": 34.462699,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 34.462699,
+   "end": 34.542699,
+   "segment": "d6"
+  },
+  {
+   "text": "mort.",
+   "start": 34.542699,
+   "end": 34.742699,
+   "segment": "d6"
+  },
+  {
+   "text": "Aujourd'hui",
+   "start": 34.982699000000004,
+   "end": 35.322699,
+   "segment": "d6"
+  },
+  {
+   "text": "encore,",
+   "start": 35.322699,
+   "end": 35.442699000000005,
+   "segment": "d6"
+  },
+  {
+   "text": "on",
+   "start": 35.842699,
+   "end": 35.942699000000005,
+   "segment": "d6"
+  },
+  {
+   "text": "brûle",
+   "start": 35.942699000000005,
+   "end": 36.162699,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 36.162699,
+   "end": 36.322699,
+   "segment": "d6"
+  },
+  {
+   "text": "l'encens",
+   "start": 36.322699,
+   "end": 36.702699,
+   "segment": "d6"
+  },
+  {
+   "text": "sur",
+   "start": 36.702699,
+   "end": 36.922699,
+   "segment": "d6"
+  },
+  {
+   "text": "leurs",
+   "start": 36.922699,
+   "end": 37.062699,
+   "segment": "d6"
+  },
+  {
+   "text": "tombes.",
+   "start": 37.062699,
+   "end": 37.362699,
+   "segment": "d6"
+  }
+ ]
+}

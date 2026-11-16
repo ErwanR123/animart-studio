@@ -1,0 +1,920 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.429932
+  },
+  {
+   "id": "context",
+   "start": 3.779932,
+   "end": 7.5538549999999995
+  },
+  {
+   "id": "d1",
+   "start": 7.903855,
+   "end": 10.601565
+  },
+  {
+   "id": "d2",
+   "start": 10.951565,
+   "end": 14.205488
+  },
+  {
+   "id": "d3",
+   "start": 14.555488,
+   "end": 18.356259
+  },
+  {
+   "id": "d4",
+   "start": 18.706259,
+   "end": 22.78322
+  },
+  {
+   "id": "d5",
+   "start": 23.13322,
+   "end": 27.116735000000002
+  },
+  {
+   "id": "d6",
+   "start": 27.466735,
+   "end": 30.876327
+  },
+  {
+   "id": "d7",
+   "start": 31.226327,
+   "end": 35.113515
+  },
+  {
+   "id": "d8",
+   "start": 35.463515,
+   "end": 40.383651
+  },
+  {
+   "id": "d9",
+   "start": 40.733651,
+   "end": 42.894921000000004
+  }
+ ],
+ "words": [
+  {
+   "text": "Cet",
+   "start": 0.0,
+   "end": 0.2,
+   "segment": "hook"
+  },
+  {
+   "text": "animal",
+   "start": 0.2,
+   "end": 0.44,
+   "segment": "hook"
+  },
+  {
+   "text": "n'a",
+   "start": 0.44,
+   "end": 0.92,
+   "segment": "hook"
+  },
+  {
+   "text": "jamais",
+   "start": 0.92,
+   "end": 1.1,
+   "segment": "hook"
+  },
+  {
+   "text": "existé.",
+   "start": 1.1,
+   "end": 1.6,
+   "segment": "hook"
+  },
+  {
+   "text": "L'Europe",
+   "start": 1.78,
+   "end": 2.06,
+   "segment": "hook"
+  },
+  {
+   "text": "y",
+   "start": 2.06,
+   "end": 2.4,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 2.4,
+   "end": 2.46,
+   "segment": "hook"
+  },
+  {
+   "text": "cru",
+   "start": 2.46,
+   "end": 2.6,
+   "segment": "hook"
+  },
+  {
+   "text": "pendant",
+   "start": 2.6,
+   "end": 2.74,
+   "segment": "hook"
+  },
+  {
+   "text": "deux",
+   "start": 2.74,
+   "end": 3.04,
+   "segment": "hook"
+  },
+  {
+   "text": "siècles.",
+   "start": 3.04,
+   "end": 3.34,
+   "segment": "hook"
+  },
+  {
+   "text": "En",
+   "start": 3.779932,
+   "end": 3.939932,
+   "segment": "context"
+  },
+  {
+   "text": "1515,",
+   "start": 3.939932,
+   "end": 4.519932,
+   "segment": "context"
+  },
+  {
+   "text": "un",
+   "start": 4.919932,
+   "end": 5.059932,
+   "segment": "context"
+  },
+  {
+   "text": "vrai",
+   "start": 5.059932,
+   "end": 5.259932,
+   "segment": "context"
+  },
+  {
+   "text": "rhinocéros",
+   "start": 5.259932,
+   "end": 5.719932,
+   "segment": "context"
+  },
+  {
+   "text": "débarque",
+   "start": 5.719932,
+   "end": 6.119932,
+   "segment": "context"
+  },
+  {
+   "text": "à",
+   "start": 6.119932,
+   "end": 6.139932,
+   "segment": "context"
+  },
+  {
+   "text": "Lisbonne,",
+   "start": 6.139932,
+   "end": 6.599932,
+   "segment": "context"
+  },
+  {
+   "text": "cadeau",
+   "start": 6.6599319999999995,
+   "end": 6.959932,
+   "segment": "context"
+  },
+  {
+   "text": "venu",
+   "start": 6.959932,
+   "end": 7.199932,
+   "segment": "context"
+  },
+  {
+   "text": "d'Inde.",
+   "start": 7.199932,
+   "end": 7.399932,
+   "segment": "context"
+  },
+  {
+   "text": "Le",
+   "start": 7.903855,
+   "end": 8.063855,
+   "segment": "d1"
+  },
+  {
+   "text": "roi",
+   "start": 8.063855,
+   "end": 8.343855,
+   "segment": "d1"
+  },
+  {
+   "text": "le",
+   "start": 8.343855,
+   "end": 8.463855,
+   "segment": "d1"
+  },
+  {
+   "text": "met",
+   "start": 8.463855,
+   "end": 8.623855,
+   "segment": "d1"
+  },
+  {
+   "text": "face",
+   "start": 8.623855,
+   "end": 8.803855,
+   "segment": "d1"
+  },
+  {
+   "text": "à",
+   "start": 8.803855,
+   "end": 8.923855,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 8.923855,
+   "end": 9.003855,
+   "segment": "d1"
+  },
+  {
+   "text": "éléphant,",
+   "start": 9.003855,
+   "end": 9.283854999999999,
+   "segment": "d1"
+  },
+  {
+   "text": "pour",
+   "start": 9.283854999999999,
+   "end": 9.463855,
+   "segment": "d1"
+  },
+  {
+   "text": "voir.",
+   "start": 9.463855,
+   "end": 9.663855,
+   "segment": "d1"
+  },
+  {
+   "text": "L'éléphant",
+   "start": 9.663855,
+   "end": 10.203855,
+   "segment": "d1"
+  },
+  {
+   "text": "s'enfuit.",
+   "start": 10.203855,
+   "end": 10.583855,
+   "segment": "d1"
+  },
+  {
+   "text": "À",
+   "start": 10.951565,
+   "end": 11.051565,
+   "segment": "d2"
+  },
+  {
+   "text": "Nuremberg,",
+   "start": 11.051565,
+   "end": 11.551565,
+   "segment": "d2"
+  },
+  {
+   "text": "Dürer",
+   "start": 11.631565,
+   "end": 11.971565,
+   "segment": "d2"
+  },
+  {
+   "text": "ne",
+   "start": 11.971565,
+   "end": 12.131565,
+   "segment": "d2"
+  },
+  {
+   "text": "l'a",
+   "start": 12.131565,
+   "end": 12.271565,
+   "segment": "d2"
+  },
+  {
+   "text": "jamais",
+   "start": 12.271565,
+   "end": 12.451565,
+   "segment": "d2"
+  },
+  {
+   "text": "vu.",
+   "start": 12.451565,
+   "end": 12.711565,
+   "segment": "d2"
+  },
+  {
+   "text": "Il",
+   "start": 12.891565,
+   "end": 12.971565,
+   "segment": "d2"
+  },
+  {
+   "text": "a",
+   "start": 12.971565,
+   "end": 13.071565,
+   "segment": "d2"
+  },
+  {
+   "text": "juste",
+   "start": 13.071565,
+   "end": 13.171565000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "une",
+   "start": 13.171565000000001,
+   "end": 13.351565,
+   "segment": "d2"
+  },
+  {
+   "text": "lettre",
+   "start": 13.351565,
+   "end": 13.671565000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "et",
+   "start": 13.671565000000001,
+   "end": 13.751565,
+   "segment": "d2"
+  },
+  {
+   "text": "un",
+   "start": 13.751565,
+   "end": 13.831565000000001,
+   "segment": "d2"
+  },
+  {
+   "text": "croquis.",
+   "start": 13.831565000000001,
+   "end": 14.111565,
+   "segment": "d2"
+  },
+  {
+   "text": "Alors",
+   "start": 14.555488,
+   "end": 14.715488,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 14.715488,
+   "end": 14.855488000000001,
+   "segment": "d3"
+  },
+  {
+   "text": "invente",
+   "start": 14.855488000000001,
+   "end": 15.235488,
+   "segment": "d3"
+  },
+  {
+   "text": ":",
+   "start": 15.235488,
+   "end": 15.235488,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 15.235488,
+   "end": 15.535488,
+   "segment": "d3"
+  },
+  {
+   "text": "armure,",
+   "start": 15.535488,
+   "end": 16.015488,
+   "segment": "d3"
+  },
+  {
+   "text": "des",
+   "start": 16.275488,
+   "end": 16.355488,
+   "segment": "d3"
+  },
+  {
+   "text": "rivets,",
+   "start": 16.355488,
+   "end": 16.655488000000002,
+   "segment": "d3"
+  },
+  {
+   "text": "une",
+   "start": 17.135488000000002,
+   "end": 17.255488,
+   "segment": "d3"
+  },
+  {
+   "text": "petite",
+   "start": 17.255488,
+   "end": 17.495488,
+   "segment": "d3"
+  },
+  {
+   "text": "corne",
+   "start": 17.495488,
+   "end": 17.875488,
+   "segment": "d3"
+  },
+  {
+   "text": "sur",
+   "start": 17.875488,
+   "end": 18.015488,
+   "segment": "d3"
+  },
+  {
+   "text": "le",
+   "start": 18.015488,
+   "end": 18.115488,
+   "segment": "d3"
+  },
+  {
+   "text": "dos.",
+   "start": 18.115488,
+   "end": 18.235488,
+   "segment": "d3"
+  },
+  {
+   "text": "Le",
+   "start": 18.706259,
+   "end": 18.846259,
+   "segment": "d4"
+  },
+  {
+   "text": "vrai,",
+   "start": 18.846259,
+   "end": 18.986259,
+   "segment": "d4"
+  },
+  {
+   "text": "lui,",
+   "start": 19.026259,
+   "end": 19.126259,
+   "segment": "d4"
+  },
+  {
+   "text": "part",
+   "start": 19.486259,
+   "end": 19.666259,
+   "segment": "d4"
+  },
+  {
+   "text": "en",
+   "start": 19.666259,
+   "end": 19.766258999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "cadeau",
+   "start": 19.766258999999998,
+   "end": 20.026259,
+   "segment": "d4"
+  },
+  {
+   "text": "chez",
+   "start": 20.026259,
+   "end": 20.126258999999997,
+   "segment": "d4"
+  },
+  {
+   "text": "le",
+   "start": 20.126258999999997,
+   "end": 20.206259,
+   "segment": "d4"
+  },
+  {
+   "text": "pape.",
+   "start": 20.206259,
+   "end": 20.426258999999998,
+   "segment": "d4"
+  },
+  {
+   "text": "Le",
+   "start": 20.646259,
+   "end": 20.706259,
+   "segment": "d4"
+  },
+  {
+   "text": "bateau",
+   "start": 20.706259,
+   "end": 20.966259,
+   "segment": "d4"
+  },
+  {
+   "text": "coule.",
+   "start": 20.966259,
+   "end": 21.146259,
+   "segment": "d4"
+  },
+  {
+   "text": "Enchaîné",
+   "start": 21.366259,
+   "end": 21.686259,
+   "segment": "d4"
+  },
+  {
+   "text": "au",
+   "start": 21.686259,
+   "end": 21.826259,
+   "segment": "d4"
+  },
+  {
+   "text": "pont,",
+   "start": 21.826259,
+   "end": 22.006259,
+   "segment": "d4"
+  },
+  {
+   "text": "il",
+   "start": 22.306259,
+   "end": 22.386259,
+   "segment": "d4"
+  },
+  {
+   "text": "se",
+   "start": 22.386259,
+   "end": 22.506259,
+   "segment": "d4"
+  },
+  {
+   "text": "noie.",
+   "start": 22.506259,
+   "end": 22.706259,
+   "segment": "d4"
+  },
+  {
+   "text": "Un",
+   "start": 23.13322,
+   "end": 23.253220000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "autre",
+   "start": 23.253220000000002,
+   "end": 23.37322,
+   "segment": "d5"
+  },
+  {
+   "text": "artiste,",
+   "start": 23.37322,
+   "end": 23.87322,
+   "segment": "d5"
+  },
+  {
+   "text": "Burgkmair,",
+   "start": 23.87322,
+   "end": 24.553220000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "le",
+   "start": 24.63322,
+   "end": 24.69322,
+   "segment": "d5"
+  },
+  {
+   "text": "dessine",
+   "start": 24.69322,
+   "end": 24.97322,
+   "segment": "d5"
+  },
+  {
+   "text": "bien",
+   "start": 24.97322,
+   "end": 25.113220000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "plus",
+   "start": 25.113220000000002,
+   "end": 25.29322,
+   "segment": "d5"
+  },
+  {
+   "text": "juste.",
+   "start": 25.29322,
+   "end": 25.51322,
+   "segment": "d5"
+  },
+  {
+   "text": "Il",
+   "start": 25.753220000000002,
+   "end": 25.85322,
+   "segment": "d5"
+  },
+  {
+   "text": "en",
+   "start": 25.85322,
+   "end": 25.933220000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "reste",
+   "start": 25.933220000000002,
+   "end": 26.13322,
+   "segment": "d5"
+  },
+  {
+   "text": "un",
+   "start": 26.13322,
+   "end": 26.373220000000003,
+   "segment": "d5"
+  },
+  {
+   "text": "seul",
+   "start": 26.373220000000003,
+   "end": 26.53322,
+   "segment": "d5"
+  },
+  {
+   "text": "exemplaire.",
+   "start": 26.53322,
+   "end": 27.01322,
+   "segment": "d5"
+  },
+  {
+   "text": "Celui",
+   "start": 27.466735,
+   "end": 27.906735,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 27.906735,
+   "end": 27.966735,
+   "segment": "d6"
+  },
+  {
+   "text": "Dürer,",
+   "start": 27.966735,
+   "end": 28.326735,
+   "segment": "d6"
+  },
+  {
+   "text": "on",
+   "start": 28.426735,
+   "end": 28.566735,
+   "segment": "d6"
+  },
+  {
+   "text": "le",
+   "start": 28.566735,
+   "end": 28.666735,
+   "segment": "d6"
+  },
+  {
+   "text": "copie",
+   "start": 28.666735,
+   "end": 28.886735,
+   "segment": "d6"
+  },
+  {
+   "text": "partout,",
+   "start": 28.886735,
+   "end": 29.166735,
+   "segment": "d6"
+  },
+  {
+   "text": "jusque",
+   "start": 29.366735,
+   "end": 29.706735000000002,
+   "segment": "d6"
+  },
+  {
+   "text": "sur",
+   "start": 29.706735000000002,
+   "end": 29.846735,
+   "segment": "d6"
+  },
+  {
+   "text": "la",
+   "start": 29.846735,
+   "end": 29.966735,
+   "segment": "d6"
+  },
+  {
+   "text": "cathédrale",
+   "start": 29.966735,
+   "end": 30.346735,
+   "segment": "d6"
+  },
+  {
+   "text": "de",
+   "start": 30.346735,
+   "end": 30.426735,
+   "segment": "d6"
+  },
+  {
+   "text": "Pise.",
+   "start": 30.426735,
+   "end": 30.646735,
+   "segment": "d6"
+  },
+  {
+   "text": "En",
+   "start": 31.226327,
+   "end": 31.326327000000003,
+   "segment": "d7"
+  },
+  {
+   "text": "1749,",
+   "start": 31.326327000000003,
+   "end": 31.946327,
+   "segment": "d7"
+  },
+  {
+   "text": "Oudry",
+   "start": 32.286327,
+   "end": 32.506327,
+   "segment": "d7"
+  },
+  {
+   "text": "peint",
+   "start": 32.506327,
+   "end": 33.026327,
+   "segment": "d7"
+  },
+  {
+   "text": "enfin",
+   "start": 33.026327,
+   "end": 33.306327,
+   "segment": "d7"
+  },
+  {
+   "text": "une",
+   "start": 33.306327,
+   "end": 33.446327000000004,
+   "segment": "d7"
+  },
+  {
+   "text": "vraie",
+   "start": 33.446327000000004,
+   "end": 33.746327,
+   "segment": "d7"
+  },
+  {
+   "text": "rhinocéros,",
+   "start": 33.746327,
+   "end": 34.366327,
+   "segment": "d7"
+  },
+  {
+   "text": "grandeur",
+   "start": 34.366327,
+   "end": 34.666327,
+   "segment": "d7"
+  },
+  {
+   "text": "nature.",
+   "start": 34.666327,
+   "end": 34.866327,
+   "segment": "d7"
+  },
+  {
+   "text": "Trop",
+   "start": 35.463515,
+   "end": 35.603515,
+   "segment": "d8"
+  },
+  {
+   "text": "tard",
+   "start": 35.603515,
+   "end": 35.863515,
+   "segment": "d8"
+  },
+  {
+   "text": ":",
+   "start": 35.863515,
+   "end": 36.113515,
+   "segment": "d8"
+  },
+  {
+   "text": "jusqu'aux",
+   "start": 36.323515,
+   "end": 36.723515,
+   "segment": "d8"
+  },
+  {
+   "text": "années",
+   "start": 36.723515,
+   "end": 36.863515,
+   "segment": "d8"
+  },
+  {
+   "text": "1930,",
+   "start": 36.863515,
+   "end": 37.523515,
+   "segment": "d8"
+  },
+  {
+   "text": "des",
+   "start": 37.883515,
+   "end": 38.203515,
+   "segment": "d8"
+  },
+  {
+   "text": "manuels",
+   "start": 38.003515,
+   "end": 38.203515,
+   "segment": "d8"
+  },
+  {
+   "text": "scolaires",
+   "start": 38.203515,
+   "end": 38.583515,
+   "segment": "d8"
+  },
+  {
+   "text": "allemands",
+   "start": 38.583515,
+   "end": 38.843515000000004,
+   "segment": "d8"
+  },
+  {
+   "text": "montrent",
+   "start": 38.843515000000004,
+   "end": 39.083515,
+   "segment": "d8"
+  },
+  {
+   "text": "encore",
+   "start": 39.083515,
+   "end": 39.403515,
+   "segment": "d8"
+  },
+  {
+   "text": "celui",
+   "start": 39.403515,
+   "end": 39.703515,
+   "segment": "d8"
+  },
+  {
+   "text": "de",
+   "start": 39.703515,
+   "end": 39.883515,
+   "segment": "d8"
+  },
+  {
+   "text": "Dürer.",
+   "start": 39.883515,
+   "end": 40.303515000000004,
+   "segment": "d8"
+  },
+  {
+   "text": "Le",
+   "start": 40.733651,
+   "end": 40.873651,
+   "segment": "d9"
+  },
+  {
+   "text": "vrai",
+   "start": 40.873651,
+   "end": 40.993651,
+   "segment": "d9"
+  },
+  {
+   "text": "s'est",
+   "start": 40.993651,
+   "end": 41.493651,
+   "segment": "d9"
+  },
+  {
+   "text": "noyé.",
+   "start": 40.993651,
+   "end": 41.493651,
+   "segment": "d9"
+  },
+  {
+   "text": "L'Europe",
+   "start": 41.573651000000005,
+   "end": 41.893651,
+   "segment": "d9"
+  },
+  {
+   "text": "a",
+   "start": 41.893651,
+   "end": 42.193651,
+   "segment": "d9"
+  },
+  {
+   "text": "gardé",
+   "start": 42.193651,
+   "end": 42.493651,
+   "segment": "d9"
+  },
+  {
+   "text": "celui-ci.",
+   "start": 42.493651,
+   "end": 42.813651,
+   "segment": "d9"
+  }
+ ]
+}

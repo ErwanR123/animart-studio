@@ -1,0 +1,14 @@
+{
+  "style": "A young French guy talking to a friend about art in a TikTok video: natural, relaxed, curious, a real smile in the voice, conversational and a little casual, never announcing or selling. Varied rhythm like real speech, a small pause after each point's title. Clear natural French.",
+  "segments": [
+    { "id": "hook", "text": "Grâce à cette technique, t'as l'impression de pouvoir rentrer dans le tableau." },
+    { "id": "intro", "text": "Jour 1 sur 30 : la perspective. 3 trucs à savoir pour la maîtriser.", "say": "Jour un sur trente : la perspective. Trois trucs à savoir pour la maîtriser." },
+    { "id": "one_t", "text": "Un : le point de fuite." },
+    { "id": "one", "text": "Tout ce qui s'éloigne rapetisse, et toutes les lignes filent vers un seul point. La règle a été trouvée à Florence, il y a 600 ans.", "say": "Tout ce qui s'éloigne rapetisse, et toutes les lignes filent vers un seul point. La règle a été trouvée à Florence, il y a six cents ans." },
+    { "id": "two_t", "text": "Deux : l'astuce du peintre." },
+    { "id": "two", "text": "Il met l'essentiel pile sur ce point. Dans la Cène, c'est la tête de Jésus. Et on y voit encore le trou du clou que Léonard a planté pour tendre ses ficelles." },
+    { "id": "three_t", "text": "Trois : le fond bleu." },
+    { "id": "three", "text": "Pour aller encore plus loin, les peintres rendent le fond bleu et flou, comme l'air au loin. Regarde derrière la Joconde." },
+    { "id": "outro", "text": "Chaque jour, je t'explique une notion pour que tu lises n'importe quel tableau comme un pro. Abonne-toi pour la notion numéro 2 demain.", "say": "Chaque jour, je t'explique une notion pour que tu lises n'importe quel tableau comme un pro. Abonne-toi pour la notion numéro deux demain.", "tail": 0.3 }
+  ]
+}

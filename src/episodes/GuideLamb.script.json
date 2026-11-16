@@ -1,0 +1,12 @@
+{
+  "segments": [
+    { "id": "hook", "text": "Cinq millions d'euros de restauration. Résultat : le monde entier se moque de cet agneau." },
+    { "id": "context", "text": "C'est L'Agneau mystique, le chef-d'œuvre de Van Eyck, à Gand." },
+    { "id": "d1", "text": "En 2020, tout le monde parle de restauration ratée.", "say": "En deux mille vingt, tout le monde parle de restauration ratée." },
+    { "id": "d2", "text": "Sauf que les restaurateurs n'ont pas inventé ce visage. Ils l'ont retrouvé." },
+    { "id": "d3", "text": "Au seizième siècle, des peintres le recouvrent avec une tête d'agneau normale." },
+    { "id": "d4", "text": "Pendant plus de quatre siècles, tout le monde admire la retouche." },
+    { "id": "d5", "text": "Et dessous, il y a le vrai Van Eyck, de 1432.", "say": "Et dessous, il y a le vrai Van Eyck, de quatorze cent trente-deux." },
+    { "id": "d6", "text": "Internet croyait se moquer des restaurateurs. Il se moquait de Van Eyck.", "tail": 0.3 }
+  ]
+}

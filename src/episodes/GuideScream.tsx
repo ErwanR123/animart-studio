@@ -15,7 +15,7 @@ import voice from "../../public/voice/GuideScream.json";
 // the 1883 Chelsea sky sketches by William Ascroft and the eruption lithograph from the Royal Society's Krakatoa
 // report (1888); Harper's Weekly (29 Sept. 1883); Science (Jan. 1884); Malte-Brun's world map (1832); Kristiania from
 // Ekeberg (National Library of Norway postcard). Diary line: Munch's entry "Nice 22.01.1892" ("Jeg gikk bortover
-// veien med to venner – solen gikk ned"), in French.
+// veien med to venner – solen gikk ned"), in French, handwritten on a page of our own (not his notebook).
 // Style: the painting where the voice points at it (pencil loops, notes, spotlights), collage shots (src/guide/
 // shots.tsx) for the story around it, each held ~2 s and built word by word (bible/art-direction.md).
 // The full-width view: screen x = 0.4 + 1079 fx, y = 30 + 1340 fy (collage pieces in px of the 1080 × 1400 frame).
@@ -37,39 +37,18 @@ export const guideScream = createGuideEpisode({
   // Finger on his lips: the first frame and the last ("il est le seul à l'entendre": silence), so the loop matches.
   openPose: "shh",
   tight: true,
-  lead: {
-    // The painting, then a print of him: "il hurle" taped on him and crossed out.
-    hook: {
-      shots: [
-        {
-          word: "tout", in: "slide", cam: { from: [0, 0, 1], to: [0, 20, 1.05] },
-          layers: [
-            { bg: "art/paper/kraft.jpg", dim: 0.25 },
-            { src: "art/scream/figure.png", x: 140, y: 50, w: 804, z: 0.5, enter: "none" },
-            { tape: "Il hurle.", x: 560, y: 700, size: 84, rot: -5, z: 0.9, at: "hurle", strike: "réalité" },
-          ],
-        },
-      ],
-      // He does what the man does.
-      poses: [{ word: "essaie", pose: "ears" }],
-      sfx: [{ word: "réalité", src: "sfx/accents/pencil-4.wav", volume: 0.5 }],
-    },
-    // The proof, on the painting: his hands on his ears, his open mouth.
-    context: {
-      view: { z: 3.0, fx: 0.528, fy: 0.6 },
-      glow: [
-        // His hands, from the ear down to the wrist under the jaw (measured on out/grid.png).
-        { word: "mains", fx: 0.456, fy: 0.607, w: 0.036, h: 0.135, angle: -6 },
-        { word: "mains", fx: 0.59, fy: 0.605, w: 0.034, h: 0.135, angle: -6 },
-        { word: "bouche", fx: 0.53, fy: 0.607, w: 0.026, h: 0.032, round: true },
-      ],
-      poses: [{ word: "regardez", pose: "point-up" }],
-    },
-  },
+  // Cold open: the whole painting full screen on frame 0 (everyone knows it), "il ne crie pas" small at the bottom; the
+  // camera easing in on his face through the whole line (no context line: the Guide comes in with d0).
+  cold: [
+    { view: { z: 1, fx: 0.5, fy: 0.5 }, tapes: ["IL NE CRIE PAS"], y: 1700, size: 54 },
+    { word: "cet", view: { z: 1.4, fx: 0.53, fy: 0.55 }, glide: 1.8 },
+  ],
   // "Aucun bruit": the world goes grey and the music stops; in his head, a heartbeat.
-  freeze: { from: ["d0", "aucun"], to: ["d1", "munch"], fx: 0.53, fy: 0.75, rx: 0.13, ry: 0.27 },
+  freeze: { from: ["d0", "eux"], to: ["d1", "munch"], fx: 0.53, fy: 0.75, rx: 0.13, ry: 0.27 },
   heart: { src: "sfx/story/heart.wav", from: ["d0", "tout"], to: ["d1", "munch"], volume: 0.85 },
-  loop: { word: "l'entendre" },
+  // Back out to the whole painting full screen, the Guide gone, its tape back on: the last frame is frame 0 ("…le seul
+  // à l'entendre. Cet homme ne crie pas.").
+  loop: { word: "l'entendre", view: { z: 1, fx: 0.5, fy: 0.5 }, full: true },
   header: "EDVARD MUNCH · 1893",
   title: ["Le", "Cri."],
   // Coordinates measured on a grid over public/art/scream/scream.jpg.
@@ -90,7 +69,7 @@ export const guideScream = createGuideEpisode({
         },
       ],
       spots: [{ word: "amis", fx: 0.07, fy: 0.44, rx: 0.07, ry: 0.11, name: "ses amis", dx: 150 }],
-      poses: [{ word: "aucun", pose: "shh" }],
+      poses: [{ word: "eux", pose: "shh" }],
       beat: { pose: "thinking", x: 230 },
     },
     {
@@ -107,8 +86,11 @@ export const guideScream = createGuideEpisode({
             { disc: "#E2602E", x: 520, y: 150, w: 480, z: 0.25, enter: "none" },
             { src: "art/scream/munch.png", x: 540, y: 200, w: 440, z: 0.6, enter: "up" },
             { tape: "Edvard Munch", x: 580, y: 790, size: 50, rot: 3, z: 0.9 },
-            { note: "« Je marchais le long de la route avec deux amis — le soleil se couchait… »", w: 470, size: 46, x: 50, y: 250, rot: -4, z: 0.8, at: "raconté" },
-            { tape: "Son journal · 1892", x: 70, y: 700, size: 46, rot: 2, z: 0.95, at: "journal" },
+            { note: "« Je marchais le long de la route avec deux amis — le soleil se couchait… »", w: 470, size: 46, x: 50, y: 200, rot: -4, z: 0.8, at: "raconté" },
+            // A small notebook (William Clark's, standing in for his), "Journal" written on its cover, the tape under it.
+            { src: "art/scream/journal.png", x: 130, y: 500, w: 260, rot: -4, z: 0.7, at: "son" },
+            { note: "Journal", w: 190, size: 48, x: 165, y: 570, rot: -5, z: 0.75, at: "son", after: 0.2 },
+            { tape: "Son journal · 1892", x: 90, y: 930, size: 46, rot: 2, z: 0.95, at: "journal" },
           ],
         },
         {
@@ -235,20 +217,11 @@ export const guideScream = createGuideEpisode({
       beat: { pose: "explaining", x: 230 },
     },
     {
-      // Munch's own pencil line, as it is: the camera comes close enough to read it (the user: no re-tracing).
-      id: "d4", fx: 0.28, fy: 0.147,
-      view: { z: 5.4, fx: 0.285, fy: 0.147 },
-      // The magnifying glass on the inscription.
-      hold: 0.4,
-      beat: { pose: "loupe", x: 230 },
-    },
-    {
       id: "d5", fx: 0.5, fy: 0.5,
       view: FULL,
       // The answer: the whole painting, then the light closes on the one man who hears it.
       spots: [{ word: "seul", fx: 0.53, fy: 0.66, rx: 0.14, ry: 0.26, name: "" }],
       poses: [{ word: "nature", pose: "amazed" }],
-      hold: 0.6,
       beat: { pose: "explaining", x: 230 },
     },
   ],

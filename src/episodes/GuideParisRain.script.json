@@ -2,16 +2,14 @@
   "segments": [
     {
       "id": "hook",
-      "text": "Tout le monde regarde ce couple. Personne ne remarque l'homme juste derrière."
-    },
-    {
-      "id": "context",
-      "text": "Blouse blanche, échelle sur l'épaule : un ouvrier. Pour comprendre ce qu'il fait là, il faut voir le Paris d'avant."
+      "text": "Ce tableau montre le Paris parfait. Mais on a effacé un autre Paris pour le construire.",
+      "tempo": 1.25
     },
     {
       "id": "d1",
-      "text": "Des ruelles d'un ou deux mètres de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En 1832, le choléra tue plus d'un Parisien sur cinquante.",
-      "say": "Des ruelles d'un ou deux mètres de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En mille huit cent trente-deux, le choléra tue plus d'un Parisien sur cinquante."
+      "text": "L'ancien Paris puait. Des ruelles d'un mètre de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En 1832, le choléra tue plus d'un Parisien sur cinquante.",
+      "say": "L'ancien Paris puait. Des ruelles d'un mètre de large, pas d'égouts, les ordures jetées dans la rue… et les rats. En mille huit cent trente-deux, le choléra tue plus d'un Parisien sur cinquante.",
+      "tempo": 1.25
     },
     {
       "id": "d2",
@@ -28,11 +26,13 @@
     },
     {
       "id": "d5",
-      "text": "Ces immeubles, ce sont des ouvriers comme lui qui les ont bâtis. Sauf que les loyers flambent : ils n'ont plus les moyens d'y vivre."
+      "text": "Ces immeubles, ce sont des ouvriers qui les ont bâtis. Sauf que les loyers flambent : ils n'ont plus les moyens d'y vivre.",
+      "tempo": 0.95
     },
     {
       "id": "d6",
-      "text": "Lui passe au fond, tout petit, en allant travailler. Et aujourd'hui encore, dans ce tableau…"
+      "text": "Alors Caillebotte en a laissé un, tout petit, au fond de son tableau. Pour qu'on n'oublie jamais que…",
+      "tempo": 0.9
     }
   ]
 }

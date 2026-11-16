@@ -74,16 +74,18 @@ export type VoxLayer =
     } // a torn scrap of patterned paper, `w` × `h`
   // A flat map `w` wide: land and rivers in two flat colours, our own `labels` (text, x, y in map units), then the
   // named `routes` drawing on one after another (`draw` s each) in the accent from the word `cue` (default: as it
-  // lands), then the `pins` landing (a place of the map's points, or [label, x, y]).
+  // lands), then the `pins` landing (a place of the map's points, or [label, x, y]); `landed` of them already down.
   | {
       map: MapData;
       land?: string;
       water?: string;
       routes?: string[];
-      pins?: (string | [string, number, number])[];
+      pins?: (string | [string, number, number, "left"?])[];
+      streets?: boolean; // every way of the map drawn in thin ink (the streets to read the map by)
       labels?: [string, number, number][];
       draw?: number;
       cue?: string;
+      landed?: number; // the first `landed` pins are already there (pins from the shots before)
     }
   // A document page `w` wide with its real text (paragraphs split on blank lines): `press` (newsprint, a masthead
   // `head`, two columns), `typed` (a typewritten sheet), `book` (a printed page). On the word `cue` the yellow
@@ -614,6 +616,11 @@ export const Vox: React.FC<{
             <path key={k} d={d} />
           ))}
         </g>
+        {l.streets
+          ? Object.values(m.ways).map((d, k) => (
+              <path key={k} d={d} fill="none" stroke={col("ink")} strokeOpacity={0.55} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
+            ))
+          : null}
         {(l.labels ?? []).map(([text, x, y], k) => (
           <text
             key={k}
@@ -651,11 +658,14 @@ export const Vox: React.FC<{
           ) : null;
         })}
         {(l.pins ?? []).map((pin, k) => {
-          const s = Math.floor((e - pinsAt - k * 0.25) * 12);
-          const [label, x, y] =
+          const landed = l.landed ?? 0;
+          const s = k < landed ? 99 : Math.floor((e - pinsAt - (k - landed) * 0.25) * 12);
+          const [label, x, y, side] =
             typeof pin === "string"
-              ? [pin, ...(m.points[pin] ?? [-99, -99])]
+              ? [pin, ...(m.points[pin] ?? [-99, -99]), undefined]
               : pin;
+          const boxW = (label.length * 21 + 28) * u;
+          const boxX = side === "left" ? -22 * u - boxW : 22 * u;
           if (s < 0) return null;
           return (
             <g
@@ -669,13 +679,13 @@ export const Vox: React.FC<{
                 strokeWidth={5 * u}
               />
               <rect
-                x={22 * u}
+                x={boxX}
                 y={-24 * u}
-                width={(label.length * 21 + 28) * u}
+                width={boxW}
                 height={48 * u}
                 fill={col("ink")}
               />
-              <text x={36 * u} y={10 * u} fill={col("paper")} style={type(32)}>
+              <text x={boxX + 14 * u} y={10 * u} fill={col("paper")} style={type(32)}>
                 {label.toUpperCase()}
               </text>
             </g>

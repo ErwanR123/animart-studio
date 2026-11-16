@@ -1,0 +1,46 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Novembre à Paris : il pleut, il fait froid… Parfait pour les musées ! Voici cinq expos à voir ce mois-ci."
+    },
+    {
+      "id": "context",
+      "text": "On sort la carte !"
+    },
+    {
+      "id": "d1",
+      "text": "Un : « Bruxelles 1900 », au Petit Palais, dès le 10 novembre. L'Art nouveau belge, des bijoux aux tableaux.",
+      "say": "Un : Bruxelles dix-neuf cent, au Petit Palais, dès le dix novembre. L'Art nouveau belge, des bijoux aux tableaux."
+    },
+    {
+      "id": "d2",
+      "text": "Deux : les secrets de l'Alhambra, à l'Institut du monde arabe, dès le 24. Le palais de Grenade et sa fontaine aux Lions.",
+      "say": "Deux : les secrets de l'Alhambra, à l'Institut du monde arabe, dès le vingt-quatre. Le palais de Grenade et sa fontaine aux Lions."
+    },
+    {
+      "id": "d3",
+      "text": "Trois : Zurbarán, au Louvre. Le maître espagnol des ombres et des saints.",
+      "say": "Trois : Zurbaran, au Louvre. Le maître espagnol des ombres et des saints."
+    },
+    {
+      "id": "d4",
+      "text": "Quatre : Cézanne, au Grand Palais, face à ceux qu'il a inspirés : Picasso, Matisse, Mondrian."
+    },
+    {
+      "id": "d5",
+      "text": "Cinq : Mary Cassatt, à Orsay. La seule Américaine du groupe des impressionnistes.",
+      "say": "Cinq : Mary Cassatt, à Orsay. La seule Américaine du groupe des impressionnistes."
+    },
+    {
+      "id": "d6",
+      "text": "Astuce : au Louvre et à Orsay, c'est gratuit pour les moins de 26 ans qui vivent dans l'Union européenne.",
+      "say": "Astuce : au Louvre et à Orsay, c'est gratuit pour les moins de vingt-six ans qui vivent dans l'Union européenne."
+    },
+    {
+      "id": "d7",
+      "text": "Et pour les visiter avec un guide dans ta poche, l'appli Animart arrive bientôt. Lien en bio pour t'inscrire à la bêta !",
+      "say": "Et pour les visiter avec un guide dans ta poche, l'appli Animart arrive bientôt. Lien en bio pour t'inscrire à la bêta !"
+    }
+  ]
+}

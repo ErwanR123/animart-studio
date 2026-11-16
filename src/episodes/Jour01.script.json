@@ -1,0 +1,60 @@
+{
+  "voice": "Puck",
+  "style": "A 22-year-old French guy from Paris filming a TikTok, telling his friends something he just found out about art. Casual, amused, a bit cheeky, a real smile in the voice, fast spoken French with natural contractions, never announcing, never solemn, never a teacher or a narrator. Like a voice note to a friend. Keep the same energy from start to finish.",
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Au musée, la moitié des gens passent moins de 17 secondes devant un tableau. Et ils ratent tout.",
+      "say": "Au musée, la moitié des gens passent moins de dix-sept secondes devant un tableau. Et ils ratent tout."
+    },
+    {
+      "id": "day",
+      "text": "Jour 1 sur 30 : comment regarder un tableau.",
+      "say": "Jour un sur trente : comment regarder un tableau."
+    },
+    {
+      "id": "key",
+      "text": "Trois questions. Ça marche sur n'importe quelle œuvre."
+    },
+    {
+      "id": "q1",
+      "text": "Ce tableau. Un : qu'est-ce qui se passe ?"
+    },
+    {
+      "id": "a1",
+      "text": "Un paysan laboure, un berger rêvasse, des bateaux passent. Journée tranquille."
+    },
+    {
+      "id": "q2",
+      "text": "Deux : qu'est-ce qui te fait dire ça ?"
+    },
+    {
+      "id": "a2",
+      "text": "La mer est calme, personne panique."
+    },
+    {
+      "id": "q3",
+      "text": "Trois : qu'est-ce qu'on peut trouver d'autre ?"
+    },
+    {
+      "id": "legs",
+      "text": "Là. En bas à droite. Deux jambes qui sortent de l'eau."
+    },
+    {
+      "id": "icare",
+      "text": "C'est Icare. Le tableau s'appelle La Chute d'Icare… et personne le regarde."
+    },
+    {
+      "id": "msg",
+      "text": "Le message : le monde continue, même quand quelqu'un tombe du ciel."
+    },
+    {
+      "id": "reflex",
+      "text": "Au musée : qu'est-ce qui se passe, qu'est-ce qui te le fait dire, quoi d'autre. Et tu vois ce que les autres ratent."
+    },
+    {
+      "id": "outro",
+      "text": "Demain : le petit carton à côté du tableau. Abonne-toi."
+    }
+  ]
+}

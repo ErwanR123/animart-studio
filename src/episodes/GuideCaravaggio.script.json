@@ -1,0 +1,43 @@
+{
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce peintre était condamné à mort. Alors il s'est peint… la tête coupée."
+    },
+    {
+      "id": "context",
+      "text": "Rome, 1606. Le Caravage, le peintre star de la ville, tue un homme dans un duel à l'épée. Il est condamné à mort.",
+      "say": "Rome, seize cent six. Le Caravage, le peintre star de la ville, tue un homme dans un duel à l'épée. Il est condamné à mort."
+    },
+    {
+      "id": "d1",
+      "text": "Sa tête est mise à prix : n'importe qui a le droit de le tuer."
+    },
+    {
+      "id": "d2",
+      "text": "Il fuit pendant quatre ans. Naples, Malte, la Sicile."
+    },
+    {
+      "id": "d3",
+      "text": "Seul le pape peut annuler sa condamnation. Alors il peint ce tableau pour son neveu, pour qu'il plaide sa cause."
+    },
+    {
+      "id": "d4",
+      "text": "La tête de Goliath, c'est son propre visage. Il nous la tend, comme pour dire : la voilà, ma tête."
+    },
+    {
+      "id": "d5",
+      "text": "Et regardez David : il ne triomphe pas. Il la regarde avec pitié."
+    },
+    {
+      "id": "d6",
+      "text": "En 1610, il reprend enfin la route de Rome. Il meurt en chemin… sans jamais recevoir sa grâce.",
+      "say": "En seize cent dix, il reprend enfin la route de Rome. Il meurt en chemin… sans jamais recevoir sa grâce."
+    },
+    {
+      "id": "d7",
+      "text": "Son tableau, lui, est bien arrivé à Rome. Il y est encore… et il nous rappelle que…",
+      "pause": 0.35
+    }
+  ]
+}

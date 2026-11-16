@@ -2,16 +2,12 @@
   "segments": [
     {
       "id": "hook",
-      "text": "Dans Le Cri d'Edvard Munch, tout le monde croit que cet homme hurle. En réalité, il essaie de ne plus rien entendre.",
-      "say": "Dans Le Cri d'Edvard Mounk, tout le monde croit que cet homme hurle. En réalité, il essaie de ne plus rien entendre."
-    },
-    {
-      "id": "context",
-      "text": "Regardez ses mains : elles ne portent pas sa voix, elles sont plaquées sur ses oreilles. Et sa bouche s'ouvre sous le choc d'une angoisse immense."
+      "text": "Personne n'a compris ce tableau : cet homme ne crie pas, il entend un cri.",
+      "tempo": 1.1
     },
     {
       "id": "d0",
-      "text": "Mais qu'entend-il ? Au fond, ses deux amis marchent tranquillement. Pour eux, il n'y a aucun bruit. Tout se passe dans sa tête."
+      "text": "Derrière lui, ses deux amis marchent tranquillement. Eux n'entendent rien : tout se passe dans sa tête."
     },
     {
       "id": "d1",
@@ -28,14 +24,10 @@
       "text": "Tout le tableau vibre avec lui : le ciel, le fjord, le chemin ondulent, comme si le cri se propageait en vagues."
     },
     {
-      "id": "d4",
-      "text": "Quelques années plus tard, Munch a écrit au crayon, dans un coin du ciel : « Ne peut avoir été peint que par un fou. »",
-      "say": "Quelques années plus tard, Mounk a écrit au crayon, dans un coin du ciel : « Ne peut avoir été peint que par un fou. »"
-    },
-    {
       "id": "d5",
-      "text": "Ce n'est pas cet homme qui crie. C'est toute la nature qui hurle… et il est le seul à l'entendre.",
-      "pause": 0.35
+      "text": "Ce cri, ce n'est pas le sien. C'est toute la nature qui hurle… et il est le seul à l'entendre.",
+      "pause": 0.35,
+      "tempo": 1.25
     }
   ]
 }

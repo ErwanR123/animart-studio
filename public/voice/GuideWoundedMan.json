@@ -1,0 +1,746 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.456349
+  },
+  {
+   "id": "context",
+   "start": 3.806349,
+   "end": 7.519954
+  },
+  {
+   "id": "d1",
+   "start": 7.869954,
+   "end": 9.558548
+  },
+  {
+   "id": "d2",
+   "start": 9.908548,
+   "end": 11.006734
+  },
+  {
+   "id": "d3",
+   "start": 11.356734,
+   "end": 14.791291999999999
+  },
+  {
+   "id": "d4",
+   "start": 15.141292,
+   "end": 15.937437
+  },
+  {
+   "id": "d5",
+   "start": 16.287437,
+   "end": 20.104943000000002
+  },
+  {
+   "id": "d7",
+   "start": 20.454943,
+   "end": 25.605669
+  },
+  {
+   "id": "d8",
+   "start": 25.955669,
+   "end": 28.107302
+  },
+  {
+   "id": "d9",
+   "start": 28.457302,
+   "end": 32.765307
+  },
+  {
+   "id": "d10",
+   "start": 33.115307,
+   "end": 34.758323000000004
+  }
+ ],
+ "words": [
+  {
+   "text": "Il",
+   "start": 0.0,
+   "end": 0.14,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 0.14,
+   "end": 0.22,
+   "segment": "hook"
+  },
+  {
+   "text": "effacé",
+   "start": 0.22,
+   "end": 0.92,
+   "segment": "hook"
+  },
+  {
+   "text": "son",
+   "start": 0.92,
+   "end": 1.08,
+   "segment": "hook"
+  },
+  {
+   "text": "ex",
+   "start": 1.08,
+   "end": 1.32,
+   "segment": "hook"
+  },
+  {
+   "text": "du",
+   "start": 1.32,
+   "end": 1.52,
+   "segment": "hook"
+  },
+  {
+   "text": "tableau.",
+   "start": 1.52,
+   "end": 1.92,
+   "segment": "hook"
+  },
+  {
+   "text": "Puis",
+   "start": 2.04,
+   "end": 2.14,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 2.14,
+   "end": 2.48,
+   "segment": "hook"
+  },
+  {
+   "text": "s'est",
+   "start": 2.48,
+   "end": 2.64,
+   "segment": "hook"
+  },
+  {
+   "text": "peint",
+   "start": 2.64,
+   "end": 2.94,
+   "segment": "hook"
+  },
+  {
+   "text": "mourant.",
+   "start": 2.94,
+   "end": 3.38,
+   "segment": "hook"
+  },
+  {
+   "text": "En",
+   "start": 3.806349,
+   "end": 3.946349,
+   "segment": "context"
+  },
+  {
+   "text": "1844,",
+   "start": 3.946349,
+   "end": 4.806349,
+   "segment": "context"
+  },
+  {
+   "text": "Gustave",
+   "start": 5.226349,
+   "end": 5.806349,
+   "segment": "context"
+  },
+  {
+   "text": "Courbet",
+   "start": 5.806349,
+   "end": 6.106349,
+   "segment": "context"
+  },
+  {
+   "text": "se",
+   "start": 6.106349,
+   "end": 6.266349,
+   "segment": "context"
+  },
+  {
+   "text": "peint",
+   "start": 6.266349,
+   "end": 6.566349,
+   "segment": "context"
+  },
+  {
+   "text": "dans",
+   "start": 6.566349,
+   "end": 6.666349,
+   "segment": "context"
+  },
+  {
+   "text": "les",
+   "start": 6.666349,
+   "end": 6.7863489999999995,
+   "segment": "context"
+  },
+  {
+   "text": "bras",
+   "start": 6.7863489999999995,
+   "end": 6.9063490000000005,
+   "segment": "context"
+  },
+  {
+   "text": "de",
+   "start": 6.9063490000000005,
+   "end": 6.986349000000001,
+   "segment": "context"
+  },
+  {
+   "text": "Virginie.",
+   "start": 6.986349000000001,
+   "end": 7.466349,
+   "segment": "context"
+  },
+  {
+   "text": "Ils",
+   "start": 7.869954,
+   "end": 7.989954,
+   "segment": "d1"
+  },
+  {
+   "text": "vivent",
+   "start": 7.989954,
+   "end": 8.169954,
+   "segment": "d1"
+  },
+  {
+   "text": "ensemble,",
+   "start": 8.169954,
+   "end": 8.489954,
+   "segment": "d1"
+  },
+  {
+   "text": "ils",
+   "start": 8.869954,
+   "end": 8.889954,
+   "segment": "d1"
+  },
+  {
+   "text": "ont",
+   "start": 8.889954,
+   "end": 9.029954,
+   "segment": "d1"
+  },
+  {
+   "text": "un",
+   "start": 9.029954,
+   "end": 9.169954,
+   "segment": "d1"
+  },
+  {
+   "text": "fils.",
+   "start": 9.169954,
+   "end": 9.269954,
+   "segment": "d1"
+  },
+  {
+   "text": "Puis",
+   "start": 9.908548,
+   "end": 10.068548,
+   "segment": "d2"
+  },
+  {
+   "text": "elle",
+   "start": 10.068548,
+   "end": 10.508548,
+   "segment": "d2"
+  },
+  {
+   "text": "le",
+   "start": 10.508548,
+   "end": 10.648548,
+   "segment": "d2"
+  },
+  {
+   "text": "quitte.",
+   "start": 10.648548,
+   "end": 10.868548,
+   "segment": "d2"
+  },
+  {
+   "text": "Alors",
+   "start": 11.356734,
+   "end": 11.536734,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 11.776734,
+   "end": 11.876733999999999,
+   "segment": "d3"
+  },
+  {
+   "text": "ressort",
+   "start": 11.876733999999999,
+   "end": 12.256734,
+   "segment": "d3"
+  },
+  {
+   "text": "la",
+   "start": 12.256734,
+   "end": 12.356734,
+   "segment": "d3"
+  },
+  {
+   "text": "toile,",
+   "start": 12.356734,
+   "end": 12.676734,
+   "segment": "d3"
+  },
+  {
+   "text": "et",
+   "start": 12.676734,
+   "end": 12.976734,
+   "segment": "d3"
+  },
+  {
+   "text": "il",
+   "start": 12.976734,
+   "end": 13.076734,
+   "segment": "d3"
+  },
+  {
+   "text": "recouvre",
+   "start": 13.076734,
+   "end": 13.676734,
+   "segment": "d3"
+  },
+  {
+   "text": "Virginie",
+   "start": 13.676734,
+   "end": 14.096734,
+   "segment": "d3"
+  },
+  {
+   "text": "de",
+   "start": 14.096734,
+   "end": 14.176734,
+   "segment": "d3"
+  },
+  {
+   "text": "peinture.",
+   "start": 14.176734,
+   "end": 14.576734,
+   "segment": "d3"
+  },
+  {
+   "text": "Il",
+   "start": 15.141292,
+   "end": 15.261292,
+   "segment": "d4"
+  },
+  {
+   "text": "ajoute",
+   "start": 15.261292,
+   "end": 15.481292,
+   "segment": "d4"
+  },
+  {
+   "text": "une",
+   "start": 15.481292,
+   "end": 15.601292,
+   "segment": "d4"
+  },
+  {
+   "text": "épée.",
+   "start": 15.601292,
+   "end": 15.821292,
+   "segment": "d4"
+  },
+  {
+   "text": "Et",
+   "start": 16.287437,
+   "end": 16.687437,
+   "segment": "d5"
+  },
+  {
+   "text": "là",
+   "start": 16.687437,
+   "end": 16.927437,
+   "segment": "d5"
+  },
+  {
+   "text": "où",
+   "start": 16.927437,
+   "end": 17.127437,
+   "segment": "d5"
+  },
+  {
+   "text": "elle",
+   "start": 17.127437,
+   "end": 17.247437,
+   "segment": "d5"
+  },
+  {
+   "text": "dormait,",
+   "start": 17.247437,
+   "end": 17.587437,
+   "segment": "d5"
+  },
+  {
+   "text": "juste",
+   "start": 17.747437,
+   "end": 18.007437,
+   "segment": "d5"
+  },
+  {
+   "text": "sur",
+   "start": 18.007437,
+   "end": 18.247437,
+   "segment": "d5"
+  },
+  {
+   "text": "son",
+   "start": 18.247437,
+   "end": 18.367437000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "cœur,",
+   "start": 18.367437000000002,
+   "end": 18.627437,
+   "segment": "d5"
+  },
+  {
+   "text": "il",
+   "start": 19.027437,
+   "end": 19.147437,
+   "segment": "d5"
+  },
+  {
+   "text": "peint",
+   "start": 19.147437,
+   "end": 19.487437,
+   "segment": "d5"
+  },
+  {
+   "text": "du",
+   "start": 19.487437,
+   "end": 19.727437000000002,
+   "segment": "d5"
+  },
+  {
+   "text": "sang.",
+   "start": 19.727437000000002,
+   "end": 20.007437,
+   "segment": "d5"
+  },
+  {
+   "text": "En",
+   "start": 20.454943,
+   "end": 20.594943,
+   "segment": "d7"
+  },
+  {
+   "text": "1973,",
+   "start": 20.594943,
+   "end": 21.454943,
+   "segment": "d7"
+  },
+  {
+   "text": "on",
+   "start": 21.754943,
+   "end": 21.794943,
+   "segment": "d7"
+  },
+  {
+   "text": "passe",
+   "start": 21.794943,
+   "end": 21.954943,
+   "segment": "d7"
+  },
+  {
+   "text": "le",
+   "start": 21.954943,
+   "end": 22.054943,
+   "segment": "d7"
+  },
+  {
+   "text": "tableau",
+   "start": 22.054943,
+   "end": 22.314943,
+   "segment": "d7"
+  },
+  {
+   "text": "aux",
+   "start": 22.314943,
+   "end": 22.494943,
+   "segment": "d7"
+  },
+  {
+   "text": "rayons",
+   "start": 22.494943,
+   "end": 22.694943000000002,
+   "segment": "d7"
+  },
+  {
+   "text": "X.",
+   "start": 22.694943000000002,
+   "end": 22.914943,
+   "segment": "d7"
+  },
+  {
+   "text": "Et",
+   "start": 23.194943000000002,
+   "end": 23.394943,
+   "segment": "d7"
+  },
+  {
+   "text": "Virginie",
+   "start": 23.394943,
+   "end": 23.894943,
+   "segment": "d7"
+  },
+  {
+   "text": "est",
+   "start": 23.894943,
+   "end": 24.114943,
+   "segment": "d7"
+  },
+  {
+   "text": "toujours",
+   "start": 24.114943,
+   "end": 24.434943,
+   "segment": "d7"
+  },
+  {
+   "text": "là,",
+   "start": 24.434943,
+   "end": 24.654943,
+   "segment": "d7"
+  },
+  {
+   "text": "dans",
+   "start": 24.994943,
+   "end": 25.094943,
+   "segment": "d7"
+  },
+  {
+   "text": "ses",
+   "start": 25.094943,
+   "end": 25.294943,
+   "segment": "d7"
+  },
+  {
+   "text": "bras.",
+   "start": 25.294943,
+   "end": 25.454943,
+   "segment": "d7"
+  },
+  {
+   "text": "À",
+   "start": 25.955669,
+   "end": 26.095669,
+   "segment": "d8"
+  },
+  {
+   "text": "Orsay,",
+   "start": 26.095669,
+   "end": 26.335669,
+   "segment": "d8"
+  },
+  {
+   "text": "vous",
+   "start": 26.575669,
+   "end": 26.655669,
+   "segment": "d8"
+  },
+  {
+   "text": "passez",
+   "start": 26.655669,
+   "end": 26.915669,
+   "segment": "d8"
+  },
+  {
+   "text": "devant,",
+   "start": 26.915669,
+   "end": 27.035669,
+   "segment": "d8"
+  },
+  {
+   "text": "et",
+   "start": 27.035669,
+   "end": 27.215669000000002,
+   "segment": "d8"
+  },
+  {
+   "text": "vous",
+   "start": 27.215669000000002,
+   "end": 27.275669,
+   "segment": "d8"
+  },
+  {
+   "text": "voyez",
+   "start": 27.275669,
+   "end": 27.475669,
+   "segment": "d8"
+  },
+  {
+   "text": "juste",
+   "start": 27.475669,
+   "end": 27.635669,
+   "segment": "d8"
+  },
+  {
+   "text": "un",
+   "start": 27.635669,
+   "end": 27.735669,
+   "segment": "d8"
+  },
+  {
+   "text": "blessé.",
+   "start": 27.735669,
+   "end": 27.995669,
+   "segment": "d8"
+  },
+  {
+   "text": "Mais",
+   "start": 28.457302,
+   "end": 28.617302,
+   "segment": "d9"
+  },
+  {
+   "text": "tout",
+   "start": 28.617302,
+   "end": 28.797302,
+   "segment": "d9"
+  },
+  {
+   "text": "ça,",
+   "start": 28.797302,
+   "end": 28.937302,
+   "segment": "d9"
+  },
+  {
+   "text": "vous",
+   "start": 28.937302,
+   "end": 29.037301999999997,
+   "segment": "d9"
+  },
+  {
+   "text": "l'auriez",
+   "start": 29.037301999999997,
+   "end": 29.237302,
+   "segment": "d9"
+  },
+  {
+   "text": "su",
+   "start": 29.237302,
+   "end": 29.377302,
+   "segment": "d9"
+  },
+  {
+   "text": "si",
+   "start": 29.377302,
+   "end": 29.717302,
+   "segment": "d9"
+  },
+  {
+   "text": "vous",
+   "start": 29.717302,
+   "end": 29.817301999999998,
+   "segment": "d9"
+  },
+  {
+   "text": "aviez",
+   "start": 29.817301999999998,
+   "end": 30.037301999999997,
+   "segment": "d9"
+  },
+  {
+   "text": "scanné",
+   "start": 30.037301999999997,
+   "end": 30.297302,
+   "segment": "d9"
+  },
+  {
+   "text": "le",
+   "start": 30.297302,
+   "end": 30.457302,
+   "segment": "d9"
+  },
+  {
+   "text": "tableau",
+   "start": 30.457302,
+   "end": 30.717301999999997,
+   "segment": "d9"
+  },
+  {
+   "text": "avec",
+   "start": 30.717301999999997,
+   "end": 30.997301999999998,
+   "segment": "d9"
+  },
+  {
+   "text": "Animart,",
+   "start": 30.997301999999998,
+   "end": 31.737302,
+   "segment": "d9"
+  },
+  {
+   "text": "sur",
+   "start": 31.737302,
+   "end": 32.057302,
+   "segment": "d9"
+  },
+  {
+   "text": "votre",
+   "start": 32.057302,
+   "end": 32.217302,
+   "segment": "d9"
+  },
+  {
+   "text": "téléphone.",
+   "start": 32.217302,
+   "end": 32.537302,
+   "segment": "d9"
+  },
+  {
+   "text": "Inscrivez-vous",
+   "start": 33.115307,
+   "end": 33.595307,
+   "segment": "d10"
+  },
+  {
+   "text": "à",
+   "start": 33.595307,
+   "end": 33.635307000000005,
+   "segment": "d10"
+  },
+  {
+   "text": "la",
+   "start": 33.635307000000005,
+   "end": 33.715307,
+   "segment": "d10"
+  },
+  {
+   "text": "bêta,",
+   "start": 33.715307,
+   "end": 33.875307,
+   "segment": "d10"
+  },
+  {
+   "text": "lien",
+   "start": 34.215307,
+   "end": 34.355307,
+   "segment": "d10"
+  },
+  {
+   "text": "en",
+   "start": 34.355307,
+   "end": 34.515307,
+   "segment": "d10"
+  },
+  {
+   "text": "bio.",
+   "start": 34.515307,
+   "end": 34.615307,
+   "segment": "d10"
+  }
+ ]
+}

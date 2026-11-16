@@ -15,11 +15,12 @@ import { BOULEVARDS } from "./GuideParisRain.boulevards";
 //   up, maids' rooms under the roof (Paris Zigzag); rents soared (IDHES Nanterre, Slate);
 // - in the painting a workman in a white smock carries a ladder, between the man's head and the umbrella's stick
 //   (6000 px scan); "en allant travailler" is our reading.
-// The loop: the last line stops on "dans ce tableau…" and the hook completes it ("…tout le monde regarde ce couple").
+// The loop: the last line stops on "pour qu'on n'oublie jamais que…" and the hook completes it ("…ce tableau montre le
+// Paris parfait. Mais on a effacé un autre Paris pour le construire.").
 // Style (bible/vox.md): the painting is the anchor, the history runs as collage shots on one palette.
 const FULL = { z: 0.584, fx: 0.5, fy: 0.5 };
-// The opening frame: the couple, the workman small behind the man; the loop lands back on it.
-const COUPLE = { z: 1.5, fx: 0.66, fy: 0.52 };
+// The opening frame, full screen: the boulevard, the new buildings and the couple; the loop lands back on it.
+const OPEN = { z: 1, fx: 0.56, fy: 0.5 };
 // The workman fills the frame, the hat's edge on the left and the umbrella's stick on the right (out/grid.png on the
 // 6000 px scan: body 0.646–0.656 × 0.430–0.469, the ladder's top at 0.644, 0.428).
 const WORKMAN = { z: 6, fx: 0.65, fy: 0.447 };
@@ -58,44 +59,40 @@ export const guideParisRain = createGuideEpisode({
   maxWidth: 1000,
   climb: true,
   climbFrom: "start",
-  openView: COUPLE,
-  openPose: "loupe",
+  openView: OPEN,
+  openPose: "point-up",
   // Paris in one bar: a valse musette on the accordion, « Reine de musette » (André Verchuren, 78 rpm), cleaned.
   music: "music/reine-de-musette.mp3",
   tight: true,
-  loop: { word: "aujourd'hui" },
-  // The search game of the title: the glass looks at her face, his, his hand on the umbrella, the passers-by, and stops
-  // on the workman behind them on "derrière".
-  search: { word: "derrière", path: [[0.757, 0.466], [0.592, 0.452], [0.662, 0.571], [0.548, 0.44], [0.651, 0.442]] },
+  // Text clear of the platforms' top bar and caption: pieces laid lower, the Guide smaller, the cold tape above the caption.
+  safe: true,
+  // Cold open: the painting full screen on frame 0, "le Paris parfait ?" small at the bottom, the camera easing in.
+  cold: [
+    { view: OPEN, tapes: ["LE PARIS PARFAIT ?"], y: 1380, size: 54 },
+    { word: "paris", view: { z: 1.12, fx: 0.56, fy: 0.48 }, glide: 2.5 },
+  ],
+  // From "Pour qu'on n'oublie jamais que…", back out to frame 0 full screen, the Guide gone.
+  loop: { word: "pour", view: OPEN, full: true },
   header: "GUSTAVE CAILLEBOTTE · 1877",
-  title: ["Saurez-vous", "le trouver ?"],
+  title: ["Rue de Paris,", "temps de pluie."],
   // Cream paper, black ink, one red (pencil, stamps, the marked one), the yellow highlighter; fields in the painting's
   // own muted ochre and slate blue.
   palette: { paper: "#EFE6D2", accent: "#C0281C", hl: "#F4C531", ochre: "#C9A15A", blue: "#4A6B84" },
-  lead: {
-    // The camera dives onto him: his smock, his ladder.
-    context: {
-      view: WORKMAN,
-      glow: [
-        { word: "blouse", ...BODY },
-        { word: "échelle", fx: 0.6425, fy: 0.424, w: 0.009, h: 0.013 },
-      ],
-    },
-  },
   details: [
     {
       // A street of old Paris full frame: its width measured, slops thrown out of a window, flies, a rat; then one
       // Parisian in fifty.
+      // Straight from the cold open: the alley tears in over the painting on "L'ancien Paris puait" (no pull-back first).
       id: "d1", fx: 0.5, fy: 0.5,
-      view: FULL,
+      view: { z: 1.12, fx: 0.56, fy: 0.48 },
       shots: [
         {
-          word: "des", in: "tear", source: "Charles Marville, rue du Haut-Moulin, vers 1865", cam: { from: [0, 0, 1], to: [0, -30, 1.08] },
+          word: "l'ancien", in: "tear", source: "Charles Marville, rue du Haut-Moulin, vers 1865", cam: { from: [0, 0, 1], to: [0, -30, 1.08] },
           layers: [
             { bg: `${ART}/ruelle-haut-moulin.jpg` },
             // The width between the two walls, measured in red pencil across the alley.
-            { pencil: span(408, 732, 640), width: 8, at: "deux", draw: 0.5 },
-            { note: "1 à 2 m", x: 470, y: 668, w: 220, size: 54, rot: -3, z: 0.9, at: "mètres" },
+            { pencil: span(408, 732, 640), width: 8, at: "mètre", draw: 0.5 },
+            { note: "1 m", x: 500, y: 668, w: 160, size: 54, rot: -3, z: 0.9, at: "mètre" },
             { tape: "Pas d'égouts", x: 90, y: 300, size: 52, rot: 2, z: 0.92, at: "égouts" },
             { flies: 7, x: 170, y: 1000, w: 240, z: 0.5, enter: "none" },
             // A bucket emptied out of the window on the right wall, down onto the cobbles.
@@ -277,8 +274,8 @@ export const guideParisRain = createGuideEpisode({
             { scaffold: 440, x: 605, y: 560, w: 450, z: 0.55, enter: "none" },
             { rig: "casseur", x: -90, y: 610, w: 420, z: 0.7, enter: "none" },
             { src: `${ART}/casseur-jeune.png`, x: 290, y: 650, w: 190, z: 0.75, at: "immeubles", enter: "none", walk: [250, 0, 6] },
-            { tape: "des ouvriers comme lui", x: 60, y: 500, size: 46, rot: -3, z: 0.92, at: "ouvriers" },
-            { src: `${ART}/ouvrier-print.png`, x: 650, y: 90, w: 300, rot: 4, z: 0.85, at: "lui", enter: "pop" },
+            { tape: "des ouvriers", x: 60, y: 500, size: 46, rot: -3, z: 0.92, at: "ouvriers" },
+            { src: `${ART}/ouvrier-print.png`, x: 650, y: 90, w: 300, rot: 4, z: 0.85, at: "ouvriers", after: 0.3, enter: "pop" },
           ],
         },
         {
@@ -301,12 +298,14 @@ export const guideParisRain = createGuideEpisode({
       beat: { pose: "skeptical", x: 230 },
     },
     {
-      // On him, then the loop flies back to the couple of the first frame as the line breaks off.
+      // The camera dives onto the one he left in: his smock, his ladder; then the loop flies back out to frame 0 as the
+      // line breaks off.
       id: "d6", fx: 0.65, fy: 0.447,
       view: WORKMAN,
-      // As the camera flies back to the couple, they stay in the shadow and he stays in the light (gone by the last
-      // frame, which must match the first for the loop).
-      spots: [{ word: "aujourd'hui", fx: 0.651, fy: 0.45, rx: 0.016, ry: 0.032, name: "" }],
+      glow: [
+        { word: "laissé", ...BODY },
+        { word: "petit", fx: 0.6425, fy: 0.424, w: 0.009, h: 0.013 },
+      ],
       beat: { pose: "point-up", x: 230 },
     },
   ],

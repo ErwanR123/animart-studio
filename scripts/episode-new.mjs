@@ -20,20 +20,20 @@ const [width, height] = execFileSync("ffprobe", ["-v", "error", "-select_streams
 const src = image.replace(/^public\//, "");
 const camel = name[0].toLowerCase() + name.slice(1);
 
-// The studio's shape (bible/format.md): hook → context in collage shots → story beats alternating the painting and
-// collage shots → the answer on the whole painting → loop.
+// The studio's shape (bible/format.md): a ~40 s video, 90–120 words. Cold open (the hook, ≤ 3 s, teasing the
+// surprise the video pays off later) → the proof → the story in order → the answer, whose last words run into the hook.
 const segments = [
-  { id: "hook", text: "L'accroche : une question ou une affirmation surprenante, avec un sujet nommé, dès les premiers mots." },
-  { id: "context", text: "Qui, quand, où : ce qu'il faut savoir pour comprendre la suite." },
-  { id: "d0", text: "Regardez ce détail du tableau : ce qu'il montre, ce qu'il veut dire." },
-  { id: "d1", text: "L'histoire autour du tableau : ce qui s'est passé à l'époque." },
-  { id: "d2", text: "Un deuxième détail, ou la suite de l'histoire." },
-  { id: "d3", text: "La réponse à l'accroche, dite sur le tableau entier." },
+  { id: "hook", text: "L'accroche, 12 mots au plus : le fait surprenant que la vidéo expliquera plus tard." },
+  { id: "context", text: "La preuve, ou qui / quand / où, en une phrase." },
+  { id: "d0", text: "L'histoire, dans l'ordre : ce qui s'est passé." },
+  { id: "d1", text: "La suite, jusqu'au moment clé." },
+  { id: "d2", text: "Le moment clé : la réponse au teaser." },
+  { id: "d3", text: "La chute, qui s'enchaîne sur la première phrase pour la boucle." },
 ];
 // The script comes first (bible/workflow.md step 2): an approved one is kept, only a missing one gets the outline.
 if (!existsSync(`${base}.script.json`)) writeFileSync(`${base}.script.json`, JSON.stringify({ segments }, null, 2) + "\n");
 
-// The whole painting full width: z = (1080 / ratio) / 1400.
+// The whole painting full width under the Guide: z = (1080 / ratio) / 1400.
 const full = `{ z: ${((1080 * height) / width / 1400).toFixed(3)}, fx: 0.5, fy: 0.5 }`;
 writeFileSync(
   `${base}.tsx`,
@@ -42,9 +42,12 @@ import voice from "../../public/voice/${name}.json";
 
 // TODO: the painting (artist, title, date, museum) and the sources every fact was checked against (museum page,
 // Wikipedia FR/EN, period documents); every image is in public/art/SOURCES.md.
-// Patterns: GuideScream.tsx (collage shots, marks on the painting), GuideAlexander.tsx, GuideHomecoming.tsx;
-// GuideDetail in src/guide/engine.tsx and Shot in src/guide/shots.tsx document every option.
+// Two modes (bible/format.md): a story told in Vox collage shots (GuideBanksy.tsx, GuideCaravaggio.tsx, GuideScream.tsx
+// d2), or a journey inside the painting, each camera move telling the next part (GuideAthens.tsx). GuideDetail in
+// src/guide/engine.tsx and Shot in src/guide/shots.tsx document every option.
 const FULL = ${full};
+// Frame 0 and the loop's last frame: the painting covering the whole screen.
+const OPEN = { z: 1, fx: 0.5, fy: 0.5 };
 export const ${camel} = createGuideEpisode({
   voiceFile: "voice/${name}.mp3",
   voice: voice as Voice,
@@ -53,16 +56,24 @@ export const ${camel} = createGuideEpisode({
   climb: true,
   climbFrom: "start",
   openView: FULL,
-  openPose: "point-up", // his first and last frame (the loop): pick one that fits the last line too
+  openPose: "point-up",
   // music: "music/TODO.mp3", // a bed of the painting's time and place (bible/sound.md); default the Gymnopédie
   tight: true,
-  loop: { word: "TODO" }, // a word of the last line: from there the camera flies back to the opening shot
+  // Cold open (bible/format.md, the hook): the painting full screen on frame 0, the hook small on tape at the bottom,
+  // then a hard cut before 2 s onto the detail the teaser is about. The Guide comes in with the context line.
+  cold: [
+    { view: OPEN, tapes: ["TODO L'ACCROCHE EN 5 MOTS"], y: 1700, size: 54 },
+    { word: "TODO", view: { z: 2, fx: 0.5, fy: 0.3 } },
+  ],
+  // From this word of the last line, back to frame 0 full screen, the Guide gone: the video loops into its hook.
+  loop: { word: "TODO", view: OPEN, full: true },
   header: "TODO ARTISTE · DATE",
   title: ["TODO Titre", "en deux lignes."],
   lead: {
     hook: {
-      // One mark on the key word, e.g. a pencil loop measured with scripts/image-grid.py:
-      // glow: [{ word: "TODO", fx: 0.5, fy: 0.5, w: 0.05, h: 0.08 }],
+      // On the cut: the teased thing lands as a real archive piece (the eruption on Le Cri's sky), with an accent.
+      // collage: { word: "TODO", pieces: [{ src: "art/TODO/piece.png", x: 330, y: 560, w: 420, rot: -6, depth: 0.9, at: "TODO" }] },
+      // sfx: [{ word: "TODO", src: "sfx/story/boom.wav", volume: 0.5 }],
     },
     context: {
       // Who / when / where as collage shots (bible/art-direction.md), each storyboarded as a still first:

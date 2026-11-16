@@ -2,11 +2,11 @@
   "segments": [
     {
       "id": "hook",
-      "text": "Pourquoi Alexandre le Grand refuse-t-il de boire, alors que son armée meurt de soif ?"
+      "text": "Alexandre le Grand voit son armée mourir de soif. On lui apporte la dernière eau… et il la jette dans le sable."
     },
     {
       "id": "context",
-      "text": "Alexandre, c'est le plus grand conquérant de l'Antiquité. Roi à vingt ans, il écrase l'immense empire perse, prend l'Égypte et pousse jusqu'en Inde, sans jamais perdre une bataille."
+      "text": "C'est le plus grand conquérant de l'Antiquité. Roi à vingt ans, il écrase l'immense empire perse, prend l'Égypte et pousse jusqu'en Inde, sans jamais perdre une bataille."
     },
     {
       "id": "d0",
@@ -23,7 +23,7 @@
     },
     {
       "id": "d3",
-      "text": "Alors, devant toute l'armée, il les remercie… et verse l'eau dans le sable."
+      "text": "Alors, devant toute l'armée, il renverse l'eau dans le sable."
     },
     {
       "id": "d4",
@@ -31,7 +31,7 @@
     },
     {
       "id": "d5",
-      "text": "Selon l'historien Arrien, ses soldats repartent comme si chacun avait bu. C'est tout Alexandre : il n'exigeait rien de ses hommes qu'il ne s'imposait pas à lui-même. Voilà la réponse à la question :"
+      "text": "Et ses soldats repartent comme si chacun avait bu. Ce jour-là, il n'a rien conquis. Et pourtant, c'est sa plus grande victoire. Le jour où…"
     }
   ]
 }
