@@ -45,13 +45,14 @@ d'inscrits perdus sur un bandeau. Le texte légal du site dit qu'on mesure l'aud
 
 ## Les liens
 
-Un lien en bio par plateforme, pour savoir d'où viennent les inscrits :
+Un lien court en bio par plateforme, pour savoir d'où viennent les inscrits. Le serveur du site (nginx) le redirige
+vers l'accueil avec `?utm_source=<plateforme>&utm_medium=bio` :
 
 | plateforme | lien en bio |
 |---|---|
-| Instagram | `https://animartai.com/?utm_source=instagram&utm_medium=bio` |
-| TikTok | `https://animartai.com/?utm_source=tiktok&utm_medium=bio` |
-| YouTube | `https://animartai.com/?utm_source=youtube&utm_medium=bio` |
+| Instagram | `animartai.com/ig` |
+| TikTok | `animartai.com/tt` |
+| YouTube | `animartai.com/yt` |
 
 Les liens dans la description d'un Short YouTube ne sont pas cliquables (depuis 2023) : sur les 3 plateformes,
 le seul lien est celui du profil. Un post se repère donc à la date : PostHog porte un repère « Post : <id> » à
