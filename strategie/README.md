@@ -13,7 +13,7 @@ et zéro inscrit est un échec ; on garde ce qui amène des gens sur animartai.c
 | étape | où on le lit |
 |---|---|
 | 1. Vues, rétention, partages, enregistrements, abonnés gagnés | Metricool (Instagram, TikTok, YouTube réunis) |
-| 2. Visites du site, par plateforme et par post | PostHog (`utm_source`, `utm_campaign`) |
+| 2. Visites du site, par plateforme (et par post, d’après la date) | PostHog (`utm_source`, repères de posts) |
 | 3. Inscriptions à la waitlist, par plateforme et par post | PostHog (événement `waitlist_signup`) ; les emails restent dans Supabase `public.waitlist` |
 
 Le chiffre de la semaine : **inscrits par plateforme et par format**. Le reste sert à comprendre pourquoi.
@@ -53,9 +53,9 @@ Un lien en bio par plateforme, pour savoir d'où viennent les inscrits :
 | TikTok | `https://animartai.com/?utm_source=tiktok&utm_medium=bio` |
 | YouTube | `https://animartai.com/?utm_source=youtube&utm_medium=bio` |
 
-Là où un post peut porter son propre lien (description YouTube, story Instagram avec sticker lien), on ajoute
-`&utm_campaign=<id du post>` (ex. `details-sacre`) : on sait alors quel post a amené quel inscrit. L'export le
-met dans le texte du post.
+Les liens dans la description d'un Short YouTube ne sont pas cliquables (depuis 2023) : sur les 3 plateformes,
+le seul lien est celui du profil. Un post se repère donc à la date : PostHog porte un repère « Post : <id> » à
+chaque publication, et les inscrits des 48 h qui suivent lui sont attribués.
 
 Étape suivante possible sur Instagram : « commente SECRET et je t'envoie le lien » (réponse automatique en DM,
 avec ManyChat). Les commentaires font monter le post, et chaque lien est propre au post.

@@ -28,7 +28,7 @@ const out = [
   `# ${r.id}: post`, "",
   "## Instagram / TikTok", "", "```", body, "```", "",
   "## YouTube Shorts", "", `Titre : ${p.youtubeTitle ?? p.caption}`, "",
-  "Description :", "", "```", body.replace("Lien de la waitlist en bio 🔗", `Waitlist de l’app : https://animartai.com/?utm_source=youtube&utm_medium=shorts&utm_campaign=${process.argv[2]}`), "```", "",
+  "Description :", "", "```", body.replace("Lien de la waitlist en bio 🔗", "Lien de la waitlist sur la chaîne 🔗"), "```", "",
   "Tags :", "", "```", (p.youtubeTags ?? []).join(", "), "```", "",
   "## Avant de poster", "",
   "- Ajouter le son tendance dans l’app du réseau (la piste de la vidéo est muette).",
