@@ -18,6 +18,12 @@ et zéro inscrit est un échec ; on garde ce qui amène des gens sur animartai.c
 
 Le chiffre de la semaine : **inscrits par plateforme et par format**. Le reste sert à comprendre pourquoi.
 
+Tout est sur le dashboard PostHog **« Animart · Waitlist »**
+(https://eu.posthog.com/project/351733/dashboard/1122659) : inscrits par plateforme et par post, conversion
+visite → inscription, visiteurs, clics vers la waitlist, erreurs, messages de contact. Événements envoyés par le
+site : `waitlist_signup` (nouvel email), `waitlist_already`, `waitlist_error`, `contact_sent`, `contact_error`, plus
+les pages vues et les clics. Alertes par email : une erreur d'inscription, un nouveau message de contact.
+
 ## Les outils (choisis le 2026-11-16)
 
 | outil | rôle | pourquoi lui |
