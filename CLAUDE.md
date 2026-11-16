@@ -22,6 +22,7 @@ and its call to action, and every result is logged so the next piece learns from
 | [strategie/README.md](strategie/README.md) | the goal, the accounts, the post rules, the funnel and the tools (Metricool, PostHog) |
 | [strategie/journal.md](strategie/journal.md) | every post with its numbers and what we learnt |
 | `../Animart/docs/STRATEGIE.md` §5–7 | the reference above everything (distribution, channels, content accounts) |
+| [strategie/todo.md](strategie/todo.md) | what is left to set up for distribution and the accounts |
 | [IDEAS.md](IDEAS.md) | the idea backlog and the 30-days programme |
 
 Formats (each folder documents its rules; read it before touching the format):
