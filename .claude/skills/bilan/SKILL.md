@@ -5,8 +5,9 @@ description: Weekly review of Animart's content: read each post's numbers (Metri
 
 # /bilan: what worked this week
 
-Platform numbers come from a **screenshot of the Metricool dashboard** the user gives (free plan: no API). Ask
-for it if it is missing. Site and waitlist numbers come from PostHog: the MCP server (`.mcp.json`), or its REST API with
+Instagram and YouTube numbers are in PostHog (dashboard « Animart · Réseaux », id 1122748; tables `instagram_*`,
+`youtubedata_*`, synced daily; query them with HogQL). TikTok numbers come from a **screenshot of the Metricool
+dashboard** the user gives (free plan: no API); ask for it if it is missing. Site and waitlist numbers come from PostHog: the MCP server (`.mcp.json`), or its REST API with
 `node --env-file=.env` (`POSTHOG_PERSONAL_API_KEY`, project 351733, EU), dashboard « Animart · Waitlist » (id 1122659). If Metricool's
 paid plan is ever taken, add its MCP server (`uvx --env-file .env mcp-metricool`) and read the numbers directly.
 

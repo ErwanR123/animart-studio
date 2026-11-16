@@ -12,13 +12,18 @@ et zéro inscrit est un échec ; on garde ce qui amène des gens sur animartai.c
 
 | étape | où on le lit |
 |---|---|
-| 1. Vues, rétention, partages, enregistrements, abonnés gagnés | Metricool (Instagram, TikTok, YouTube réunis) |
+| 1. Vues, rétention, partages, enregistrements, abonnés gagnés | PostHog, dashboard « Animart · Réseaux » (Instagram et YouTube, synchro chaque jour) ; TikTok : Metricool |
 | 2. Visites du site, par plateforme (et par post, d’après la date) | PostHog (`utm_source`, repères de posts) |
 | 3. Inscriptions à la waitlist, par plateforme et par post | PostHog (événement `waitlist_signup`) ; les emails restent dans Supabase `public.waitlist` |
 
 Le chiffre de la semaine : **inscrits par plateforme et par format**. Le reste sert à comprendre pourquoi.
 
-Tout est sur le dashboard PostHog **« Animart · Waitlist »**
+Les vidéos sont sur le dashboard PostHog **« Animart · Réseaux »** (https://eu.posthog.com/project/351733/dashboard/1122748) :
+abonnés, chaque post Instagram et YouTube, les meilleurs posts, et par jour les vues Instagram, les clics sur le lien
+en bio et les inscrits. Tables : `instagram_media`, `instagram_media_insights`, `instagram_account_insights`
+(dont `profile_links_taps`), `youtubedata_videos`, `youtubedata_channels`.
+
+Le site est sur le dashboard PostHog **« Animart · Waitlist »**
 (https://eu.posthog.com/project/351733/dashboard/1122659) : inscrits par plateforme et par post, conversion
 visite → inscription, visiteurs, clics vers la waitlist, erreurs, messages de contact. Événements envoyés par le
 site : `waitlist_signup` (nouvel email), `waitlist_already`, `waitlist_error`, `contact_sent`, `contact_error`, plus
