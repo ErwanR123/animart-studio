@@ -34,5 +34,5 @@ camera arrives (hidden during the ad).
 
 - `types.ts`: what a reel JSON holds; `reels/*.json`: one per video; `reels/index.ts` registers them.
 - `engine.tsx`: timing (`T`, `AD`), camera, captions, tracker, ad, end. `app.tsx`: the scan and work screens.
-- `root.tsx`: the entry point (`npx remotion studio src/formats/details/root.tsx`).
+- `compositions.tsx`: the reels as compositions, mounted in `src/Root.tsx` (`npm run dev` shows them).
 - `scripts/details-export.sh <Id>`: the files to post and the post text.

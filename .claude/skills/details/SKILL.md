@@ -28,11 +28,11 @@ things: the details' texts, then the finished video.**
    5 `hashtags` (museum, subject, artist, `art`, city), `youtubeTitle`, `youtubeTags`.
 8. **Register** the JSON in `src/formats/details/reels/index.ts`; `npx eslint src/formats && npx tsc --noEmit`.
 9. **Look**: stills at the hook, each dwell, the ad (camera, story open), the end
-   (`npx remotion still src/formats/details/root.tsx <Id> out/s.png --frame=<f> --scale=0.4`). Check: text low and
+   (`npx remotion still <Id> out/s.png --frame=<f> --scale=0.4`). Check: text low and
    readable, nothing under the platform's buttons (right side, top 220 px, bottom 380 px), the detail visible and
    framed, no detail spoiled by the app screen.
 10. **Export**: `bash scripts/details-export.sh <Id>` → `out/<slug>.mp4`, `out/<slug>-mobile.mp4` (< 30 MB, to send
     to the phone), `out/<slug>.post.md` (captions for each platform, tags, facts to check). Give the user the files
     and the post text.
-11. **After posting**: set `status` in the JSON, and log the result in `IDEAS.md` (views after 48 h, waitlist
-    signups) so the next reels learn from it.
+11. **After posting**: set `status` in the JSON and add the post's line to `strategie/journal.md`; `/bilan` fills
+    its numbers, so the next reels learn from it.

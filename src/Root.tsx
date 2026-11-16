@@ -9,6 +9,7 @@ import { jour03 } from "./episodes/Jour03";
 import { jour04 } from "./episodes/Jour04";
 import { jour05 } from "./episodes/Jour05";
 import { lesson01 } from "./episodes/Lesson01";
+import { DetailsCompositions } from "./formats/details/compositions";
 import { GuidePuppets, PUPPET_FRAMES } from "./lab/GuidePuppets";
 import { GuideVox, VOX_FRAMES } from "./lab/GuideVox";
 import { FPS, HEIGHT, WIDTH } from "./theme";
@@ -31,6 +32,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Jour04" component={jour04.Component} durationInFrames={jour04.durationInFrames} fps={FPS} width={WIDTH} height={HEIGHT} />
       <Composition id="Jour05" component={jour05.Component} durationInFrames={jour05.durationInFrames} fps={FPS} width={WIDTH} height={HEIGHT} />
       <Composition id="Key02v2" component={key02v2.Component} durationInFrames={key02v2.durationInFrames} fps={FPS} width={WIDTH} height={HEIGHT} />
+      {/* « Détails »: a painting's hidden details and the app ad (src/formats/details/). */}
+      <DetailsCompositions />
       {/* The Vox paper register as real scenes (src/lab/GuideVox.tsx). */}
       <Composition id="GuidePuppets" component={GuidePuppets} durationInFrames={PUPPET_FRAMES} fps={FPS} width={WIDTH} height={HEIGHT} />
       <Composition id="GuideVox" component={GuideVox} durationInFrames={VOX_FRAMES} fps={FPS} width={WIDTH} height={HEIGHT} />
