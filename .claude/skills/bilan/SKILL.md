@@ -5,11 +5,12 @@ description: Weekly review of Animart's content: read each post's numbers (Metri
 
 # /bilan: what worked this week
 
-Needs the Metricool and PostHog MCP servers (`.mcp.json`; keys in `.env`, see `strategie/README.md`). If one is
-not connected, say which and go on with the other.
+Platform numbers come from a **screenshot of the Metricool dashboard** the user gives (free plan: no API). Ask
+for it if it is missing. Site and waitlist numbers come from the PostHog MCP server (`.mcp.json`). If Metricool's
+paid plan is ever taken, add its MCP server (`uvx --env-file .env mcp-metricool`) and read the numbers directly.
 
 1. **The posts**: the journal's lines from the last 14 days without numbers.
-2. **Platforms** (Metricool MCP): for each post, views, average watch time or retention, shares, saves, follows
+2. **Platforms** (the screenshot): for each post, views, average watch time or retention, shares, saves, follows
    gained, at 48 h and 7 days, per platform.
 3. **Site and waitlist** (PostHog MCP): visits and `waitlist_signup` events this week, by `utm_source` and
    `utm_campaign`. A signup without a campaign is credited to the platform's posts of the previous 48 h.

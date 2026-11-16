@@ -22,7 +22,7 @@ Le chiffre de la semaine : **inscrits par plateforme et par format**. Le reste s
 
 | outil | rôle | pourquoi lui |
 |---|---|---|
-| **Metricool** | programmer les posts et lire les stats des 3 plateformes au même endroit | une seule connexion par compte au lieu de trois API (Meta, TikTok, Google) à faire valider ; a un serveur MCP officiel, donc Claude lit les stats directement |
+| **Metricool** (offre gratuite) | programmer les posts et voir les stats des comptes au même endroit | une seule connexion par compte ; Claude lit les stats sur une capture du tableau de bord. L'offre Advanced (~45 €/mois) donne l'API et le MCP : à prendre quand on postera tous les jours sur plusieurs comptes |
 | **PostHog** (cloud UE) | les visites du site et les inscriptions, par source | gratuit à notre échelle, un serveur MCP officiel ; servira aussi pour l'app à sa sortie |
 | **Supabase** `public.waitlist` | la liste des emails (existe déjà) | rien à changer |
 | **iCloud Drive** `Animart à poster/` | l'export y dépose la vidéo et son texte, on les retrouve sur le téléphone | zéro AirDrop, zéro envoi |
@@ -62,7 +62,7 @@ avec ManyChat). Les commentaires font monter le post, et chaque lien est propre 
 | L'art en 30 jours | TikTok | 30 jours | les jeunes qui veulent apprendre à regarder | abonne-toi, puis waitlist |
 
 À compléter : les noms exacts des comptes, et qui a les accès. Les comptes Instagram et TikTok doivent être en
-mode **professionnel** (créateur ou entreprise) pour que Metricool lise leurs stats.
+mode **professionnel** (créateur ou entreprise) pour que Metricool lise leurs stats (connectés le 2026-11-16 : Facebook, Instagram, TikTok, YouTube).
 
 ## Règles des posts
 
@@ -81,11 +81,11 @@ mode **professionnel** (créateur ou entreprise) pour que Metricool lise leurs s
 
 ## Brancher les outils (une fois, par la personne qui a les accès)
 
-1. **Metricool** : créer le compte de l'équipe, y connecter Instagram, TikTok et YouTube (comptes pro). L'API et
-   le MCP demandent l'offre qui inclut l'API. Mettre `METRICOOL_USER_TOKEN` et `METRICOOL_USER_ID` dans `.env`.
+1. **Metricool** : fait le 2026-11-16 (offre gratuite, 4 comptes connectés). Si on prend l'offre Advanced, mettre
+   `METRICOOL_USER_TOKEN` et `METRICOOL_USER_ID` dans `.env` et ajouter le serveur dans `.mcp.json`.
 2. **PostHog** : créer le projet sur eu.posthog.com ; sa clé de projet (publique, `phc_…`) va dans le site.
    Une clé personnelle (préréglage « MCP server ») va dans `.env` **et** dans le shell
    (`export POSTHOG_PERSONAL_API_KEY=…` dans `~/.zshrc`), car `.mcp.json` la lit depuis l'environnement.
 3. **Le site** (dépôt `animart_website`) : PostHog sans cookie, l'événement `waitlist_signup` avec la source et la
    campagne, le texte légal à jour.
-4. Relancer Claude Code dans ce dépôt et accepter les serveurs `metricool` et `posthog` ; `/bilan` les utilise.
+4. Relancer Claude Code dans ce dépôt et accepter le serveur `posthog` ; `/bilan` l'utilise.
