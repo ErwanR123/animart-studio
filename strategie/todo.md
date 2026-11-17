@@ -73,6 +73,11 @@ captures.
 
 ## 3. Les formats
 
+Choisis le 2026-11-17 : **Détails**, **L'Agenda**, **le quiz à niveaux** ; les must-sees d'un musée plus tard.
+
+- [ ] Construire L'Agenda (données : opendata.paris.fr « Que faire à Paris », tri des grosses expos + pépites).
+- [ ] Construire le quiz à niveaux.
+
 - [ ] Faire le ménage : garder les formats qui marchent (d'après le dashboard « Vues par vidéo »), archiver le reste.
 - [ ] Un système pour créer un format facilement : une base commune (écrans de l'app, polices, zones sûres, texte
       bas, export avec piste muette, légende identique partout, ajout à `videos.json`) et un modèle de dossier

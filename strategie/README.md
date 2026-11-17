@@ -67,6 +67,17 @@ chaque publication, et les inscrits des 48 h qui suivent lui sont attribués.
 Étape suivante possible sur Instagram : « commente SECRET et je t'envoie le lien » (réponse automatique en DM,
 avec ManyChat). Les commentaires font monter le post, et chaque lien est propre au post.
 
+## Les formats (choisis le 2026-11-17)
+
+| format | quoi | rythme | statut |
+|---|---|---|---|
+| **Détails** | un chef-d'œuvre, 4 détails cachés, la pub de l'app | 2 par semaine | en place (`/details`) |
+| **L'Agenda** | les expos de Paris : ce week-end, ça ferme bientôt, ça ouvre, les événements autour des expos | 1 par semaine, le jeudi soir (+ story le vendredi) | à construire |
+| **Le quiz à niveaux** | « Tu reconnais ce tableau ? Niveau 1 à 10 » | 1 par semaine | à construire |
+| Les must-sees d'un musée | « Les 5 œuvres à ne pas rater au Louvre » | plus tard | idée |
+
+On garde un format qui amène des inscrits (dashboard « Vues par vidéo » + PostHog) ; on revoit après 3 semaines.
+
 ## Les comptes
 
 | compte | plateformes | format | cible | appel à l'action |
