@@ -24,7 +24,7 @@ Le but : devenir vraiment forts en marketing et en distribution. Une séance de 
 
 ## 1. Mettre en ligne la mesure (en cours)
 
-- [ ] **Amine** déploie `gallery-wall` : les 3 lignes `location ~* ^/(ig|tt|yt)/?$` dans le nginx du site, le nouveau
+- [x] **Amine** déploie `gallery-wall` (en ligne le 2026-11-17 : `/ig` redirige, PostHog reçoit les visites) : les 3 lignes `location ~* ^/(ig|tt|yt)/?$` dans le nginx du site, le nouveau
       `security-headers.conf`, `nginx -t && reload`, `deploy/deploy.sh`.
 - [ ] Tester : `animartai.com/ig` arrive sur l'accueil ; une inscription test (`?utm_source=test`) apparaît dans
       PostHog → Activity ; un message test depuis /contact arrive dans Supabase → `contact_messages`.
