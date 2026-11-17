@@ -1,0 +1,66 @@
+{
+  "id": "DetailsCana",
+  "image": "art/cana/cana.jpg",
+  "imageSize": [3840, 2571],
+  "imageSource": "Wikimedia Commons, « Les Noces de Cana - Paolo Veronese - Musée du Louvre Peintures INV 142 ; MR 384.jpg » (public domain)",
+  "work": {
+    "title": "Les Noces de Cana",
+    "artist": "Véronèse",
+    "date": "1562–1563",
+    "museum": "Louvre",
+    "room": "Aile Denon, salle 711 (salle des États), face à la Joconde"
+  },
+  "hook": "Le plus grand tableau du Louvre… et tout le monde lui tourne le dos.",
+  "details": [
+    {
+      "cx": 0.51, "cy": 0.53, "wf": 0.17,
+      "title": "Juste au-dessus de Jésus, un boucher découpe un agneau.",
+      "text": "C'est pas un hasard : l'agneau, c'est Jésus, qui va être sacrifié. Et à côté, sa mère porte déjà un voile noir."
+    },
+    {
+      "cx": 0.07, "cy": 0.70, "wf": 0.15,
+      "title": "Les mariés ? Relégués tout au bout de la table.",
+      "text": "C'est leur mariage, mais Véronèse les a collés dans le coin. La place d'honneur, au centre, il la donne à Jésus."
+    },
+    {
+      "cx": 0.48, "cy": 0.79, "wf": 0.22,
+      "title": "Ces musiciens, ce sont des peintres.",
+      "text": "Selon la tradition, Véronèse s'est peint en blanc avec sa viole, entouré de Titien, Tintoret et Bassano."
+    },
+    {
+      "cx": 0.5, "cy": 0.55, "wf": 0.55,
+      "title": "En 1797, il est découpé en sept morceaux.",
+      "text": "L'armée de Napoléon l'emporte de Venise à Paris. Recousu au Louvre, il n'en est jamais reparti : il fait face à la Joconde.",
+      "inset": { "image": "art/cana/joconde.jpg", "size": [604, 900], "title": "La Joconde", "artist": "Léonard de Vinci · en face, salle 711" }
+    }
+  ],
+  "ad": {
+    "afterDetail": 4,
+    "palette": { "ground": "#4A5563", "deep": "#14161A", "accent": "#E9C88F" },
+    "found": "7/24",
+    "anecdotes": 4,
+    "script": [
+      "Venise, 1562 : les moines de San Giorgio Maggiore commandent un tableau pour leur réfectoire.",
+      "Véronèse a environ quinze mois pour le peindre.",
+      "Le sujet : les noces de Cana, où Jésus change l'eau en vin.",
+      "C'est son premier miracle, raconté dans l'Évangile de Jean.",
+      "Mais Véronèse en fait une fête vénitienne de son époque.",
+      "Costumes de soie, vaisselle d'or, architecture à l'antique.",
+      "La toile fait près de sept mètres sur dix.",
+      "C'est le plus grand tableau du Louvre."
+    ]
+  },
+  "post": {
+    "caption": "4 détails des Noces de Cana que presque personne ne remarque au Louvre 👀 Tu l'avais vu, l'agneau ?",
+    "hashtags": ["louvre", "nocesdecana", "veronese", "art", "paris"],
+    "youtubeTitle": "4 détails cachés dans Les Noces de Cana (Louvre) #shorts",
+    "youtubeTags": ["noces de cana", "véronèse", "paolo veronese", "louvre", "musée du louvre", "joconde", "histoire de l'art", "art", "peinture", "tableau", "détails cachés", "secrets tableau", "culture générale", "napoléon", "venise", "wedding at cana", "louvre museum", "art history", "shorts"]
+  },
+  "sources": [
+    "Plus grand tableau du Louvre, salle des États, en face de la Joconde : https://www.louvre.fr/decouvrir/le-palais/de-la-joconde-aux-noces-de-cana",
+    "Boucher qui découpe un agneau au-dessus de Jésus (Agnus Dei), Marie au voile noir, mariés relégués à l'extrême gauche : https://fr.wikipedia.org/wiki/Les_Noces_de_Cana_(Véronèse) (Analyse)",
+    "Musiciens = Véronèse (viole, en blanc), Bassano, Tintoret, Titien selon Boschini (XVIIe s.), interprétation discutée : même article",
+    "1797, traité de Campo-Formio, découpé en sept lés recollés en France ; 1815, Denon le garde, Le Brun envoyé à Venise : même article (Historique)",
+    "Commande juin 1562, livraison octobre 1563 ; 6,77 × 9,94 m : notice Commons / Louvre INV 142"
+  ]
+}

@@ -85,9 +85,9 @@ export function createDetailsReel(r: DetailsReel) {
             </div>
           );
         })}
-        {/* During the ad: the video is not over */}
-        <div style={{ marginLeft: 14, fontSize: 34, fontWeight: 600, letterSpacing: "-0.02em", opacity: left, transform: `translateX(${(1 - left) * -16}px)`,
-          textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>Encore {r.details.length - r.ad.afterDetail} détails 👇</div>
+        {/* During a mid-video ad: the video is not over (nothing to say when the ad closes the video) */}
+        {r.details.length > r.ad.afterDetail && <div style={{ marginLeft: 14, fontSize: 34, fontWeight: 600, letterSpacing: "-0.02em", opacity: left, transform: `translateX(${(1 - left) * -16}px)`,
+          textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>Encore {r.details.length - r.ad.afterDetail} détails 👇</div>}
       </div>
     );
   };

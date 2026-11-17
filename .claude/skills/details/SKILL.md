@@ -14,14 +14,14 @@ things: the details' texts, then the finished video.**
 2. **Find 4 details** (3 to 5) that are true, visible and surprising: a person who was not there, a hidden object,
    a price, a scandal, a trick of the painter. Sources: the museum's page, `../Animart/content/selection/*-texts/`
    (the app's texts, not reviewed yet: verify), Wikipedia FR/EN, napoleon.org-type references. Every fact gets a
-   line in `sources`. Order them so the strongest is first or last, and the ad comes after a strong one.
+   line in `sources`. Order them so a strong one opens and the strongest closes (it answers the hook); the ad follows it.
 3. **Write the texts** (Gen Z, tutoiement, no AI tells such as « fascinant », « plongeons »): `title` ≤ 10 words, the
    surprise; `text` ≤ 25 words, why. **Show them to the user and wait for a go.**
 4. **The image** at full resolution in `public/art/<slug>/` (`uv run scripts/image-find.py get "<Commons file>"`),
    its size in `imageSize`, its source in `imageSource`.
 5. **Coordinates**: `uv run scripts/image-grid.py public/art/<slug>/<img>.jpg` → `cx`, `cy` of each detail; `wf`
    from 0.1 (a face, a crown) to 0.25 (a group). Check each with a still at the dwell's frame.
-6. **The ad**: `afterDetail` (2 for 4 details), the work's `palette` (ground = a mid tone of the painting, deep =
+6. **The ad**: at the end since 2026-11-17, `afterDetail` = the number of details, the work's `palette` (ground = a mid tone of the painting, deep =
    its darkest, accent = a light warm colour in it), `script` = 8 to 10 lines of the app's presentation that **do not
    reveal the details still to come**.
 7. **Post texts**: `post.caption` (« N détails de <œuvre> que presque personne ne remarque au <musée> 👀 »), exactly
