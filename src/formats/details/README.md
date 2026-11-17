@@ -8,15 +8,18 @@ Napoléon (`reels/sacre.json`, posted 2026-11-16). Make a new one with the `/det
 
 | part | what is on screen | length |
 |---|---|---|
-| hook | the whole painting; above it the work's label (title, artist, date), under it « 4 détails que t'as jamais vus dans ce tableau » | 1.3 s, short: get to the first detail fast |
-| each detail | one camera move into the painting (no cut), then a slow push while the text reads: the surprise in big, the why in small | 1 s move + 5.5 s dwell |
-| the ad, over one detail | a phone rises in front of the painting on the app's scan screen, recognises the work at once (buzz, « Œuvre reconnue »), its story slides up (tab Présentation, the script scrolling), « Gratuit. », then « Rejoins la waitlist · lien en bio » | 6.7 s |
-| end | back on the whole painting: « Un chef-d'œuvre. Ses secrets. Tous les jours. », « + Abonne-toi », « L'app arrive bientôt · waitlist en bio » | 4 s |
+| hook | the whole painting; above it the work's label (title, artist, date), under it a line that opens the loops the details close (« Ce tableau cache un cannibale, un peintre célèbre… et un bateau qui les abandonne. »), shown from the very first frame | 2.2 s |
+| each detail | one camera move into the painting (no cut), then a slow push while the text reads: the surprise in big, the why in small; a work the text names pops in small above it, with its label, 1.3 s later (`inset`) | 1 s move + 5.5 s dwell |
+| the ad, over one detail | a phone rises in front of the painting on the app's scan screen, recognises the work at once (buzz, « Œuvre reconnue »), its story slides up (tab Présentation, the script scrolling), « Gratuit. », then « Rejoins la waitlist · lien en bio »; the squares stay, with « Encore N détails 👇 » so nobody thinks the video ends | 4.2 s |
+| end | back on the whole painting: « Un chef-d'œuvre. Ses secrets. Tous les jours. », « + Abonne-toi », « L'app arrive bientôt · waitlist en bio »; the last half second glides back to the first frame's framing (seamless loop) | 4 s |
 
 Progress: one square per detail at the top left, like the app's grid cells, each filled with its detail when the
 camera arrives (hidden during the ad).
 
-## Rules the user set (2026-11-16)
+## Rules the user set (2026-11-16, 2026-11-17)
+
+- **The writing carries the video** (no big effects): every line opens a question the next one answers; the hook
+  promises the details' mysteries; the strongest shock comes just before the ad so viewers sit through it.
 
 - **Text sits low**, its bottom ~380 px above the frame's bottom: just above the platform's account name
   (`TEXT_BOTTOM` in `engine.tsx`). Nothing in the top 220 px, the right margin stays clear of the buttons.
