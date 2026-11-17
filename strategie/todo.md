@@ -50,7 +50,15 @@ Le but : devenir vraiment forts en marketing et en distribution. Une séance de 
       (YouTube). Choisir un seul nom si possible (décision à prendre : changer un nom casse les anciens liens).
 - [ ] Instagram : partager chaque Reel sur Facebook automatiquement (Paramètres → Partage).
 
-## 2 bis. Les réponses automatiques Instagram
+## 2 bis. Les réponses automatiques Instagram (prioritaire, à faire vite)
+
+À penser comme un parcours, pas des messages isolés : la première fois que quelqu'un écrit ou commente, il reçoit
+l'essentiel (c'est quoi, quand ça sort, c'est gratuit ?, quels musées) et une raison de cliquer sur la waitlist.
+À préparer avant de configurer : la date de sortie qu'on peut annoncer, les musées du lancement, ce qui est gratuit,
+le ton (court, tutoiement, Gen Z, pas de mots d'IA), et ce qu'on offre à ceux qui s'inscrivent (être les premiers,
+une bêta ?). Configuration dans Meta Business Suite sur ordinateur (aucune API ni MCP ne le permet), guidée par
+captures.
+
 
 - [ ] **Commente WAITLIST → lien en DM** (Meta Business Suite sur ordinateur → Boîte de réception → automatisations ;
       sinon ManyChat). Mots-clés `WAITLIST`, `waitlist`, `Waitlist` ; réponse publique « C'est envoyé en DM 📩 » ; le
