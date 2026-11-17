@@ -11,9 +11,9 @@ export const W = 1080, H = 1920, FPS = 30;
 /** Text blocks end this far above the bottom: just above the platform's account name and caption. */
 export const TEXT_BOTTOM = 380;
 /** Frames: first shot (hook), camera move, dwell on a detail (time to read), ad, move back, end screen. */
-const T = { hook: 66, travel: 30, dwell: 165, ad: 126, back: 36, end: 120 };
+const T = { hook: 66, travel: 30, dwell: 165, ad: 150, back: 36, end: 120 };
 /** In the ad (frames from its start): the work recognised, its story opens, the waitlist button. */
-const AD = { recog: 12, open: 30, cta: 54 };
+const AD = { recog: 16, open: 52, cta: 92 };
 /** A named work pops in this long after the detail's text. */
 const INSET_AT = 40;
 /** The last frames glide back to the opening framing. */
@@ -134,13 +134,13 @@ export function createDetailsReel(r: DetailsReel) {
     const p = inn - out;
     const buzz = f >= AD.recog && f < AD.recog + 9 ? Math.sin((f - AD.recog) * 2.6) * 7 : 0;
     const cta = spring({ frame: f - AD.cta, fps, config: { damping: 13, stiffness: 150 } });
-    const line1 = interpolate(f, [6, 14, AD.open - 6, AD.open], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-    const line2 = interpolate(f, [AD.open, AD.open + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const line1 = interpolate(f, [4, 10, AD.open - 5, AD.open], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const line2 = interpolate(f, [AD.open, AD.open + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const txt: React.CSSProperties = { position: "absolute", left: 64, right: 64, top: 390, fontSize: 60, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" };
     return (
       <>
         <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.7) 100%)", opacity: p }} />
-        <div style={{ ...txt, opacity: line1 * p }}>Au musée, tu scannes le tableau…</div>
+        <div style={{ ...txt, opacity: line1 * p }}>Au musée, scanne un tableau…</div>
         <div style={{ ...txt, opacity: line2 * p }}>…et Animart te raconte ses secrets.<div style={{ fontSize: 36, fontWeight: 600, color: "#EAD9BF", marginTop: 14, letterSpacing: "-0.01em" }}>Gratuit.</div></div>
         <div style={{ position: "absolute", left: (W - 470 * 0.86) / 2, top: 590, transformOrigin: "top left",
           transform: `translate(${buzz}px, ${(1 - p) * 1400}px) scale(0.86) rotate(${(1 - p) * 8 - 1.5}deg)` }}>
