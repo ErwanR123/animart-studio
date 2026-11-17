@@ -29,8 +29,12 @@ camera arrives (hidden during the ad).
   `faces` (the real people the text names, portraits popping one after the other with their names, above the
   subject), `marks` (a white circle drawing itself around what the text points at, like a finger on a photo),
   `inset` (another work the text names).
-- **The ad closes the video** (`afterDetail` = last detail): waitlist and « Abonne-toi pour la suite » on the same
-  screen, then the loop. No separate end screen: one long last shot lost viewers.
+- **Two calls, tested since 2026-11-17**: a discreet follow pill mid-video (« + Abonne-toi : un chef-d'œuvre décrypté
+  chaque jour », under the squares, 4 s into the second detail, `MID_FOLLOW`), then the app ad closes the video with
+  « Inscris-toi à la bêta · lien en bio », then the loop. Why: the Radeau lost ~15 % of viewers at its mid-video ad;
+  on Cana (ad at the end) only ~20 % were still there for an end follow call.
+- **The hook decides** (skip rate Radeau 45 % vs Cana 59 %): three concrete promises (« un cannibale, un peintre
+  célèbre… et un bateau ») beat a riddle (« tout le monde lui tourne le dos »).
 - **Time to read** every text: 5.5 s a detail. The first shot is short.
 - **One camera travelling through the painting**, slow zooms; no cuts between details, no numbers on the painting.
 - **No sound effects** in the render (they read as AI slop); the music is the platform's trending sound, added when

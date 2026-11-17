@@ -9,19 +9,19 @@
     "date": "vers 1636–1638",
     "museum": "Louvre"
   },
-  "hook": "Une arnaque est en train de se passer. Et le peintre a fait de toi son complice.",
+  "hook": "Trois arnaqueurs, une victime… et le peintre t'a mis dans le coup.",
   "details": [
     {
       "cx": 0.14, "cy": 0.52, "wf": 0.46,
       "title": "Lui seul te montre son jeu : un as caché dans son dos.",
       "text": "Il le sort de sa ceinture pendant que les autres regardent ailleurs. Et il te jette un regard en coin, avec un petit sourire.",
-      "marks": [{ "x": 0.06, "y": 0.745, "r": 0.045 }, { "x": 0.232, "y": 0.335, "r": 0.03 }]
+      "marks": [{ "x": 0.06, "y": 0.745, "r": 0.045 }, { "x": 0.222, "y": 0.368, "r": 0.028 }]
     },
     {
       "cx": 0.36, "cy": 0.33, "wf": 0.58,
       "title": "Ici, personne ne se regarde en face.",
       "text": "La femme lance un regard à la servante, qui répond du coin de l'œil. Le tricheur, lui, te regarde. Tout se dit sans un mot.",
-      "marks": [{ "x": 0.565, "y": 0.338, "r": 0.03 }, { "x": 0.442, "y": 0.243, "r": 0.025 }, { "x": 0.232, "y": 0.335, "r": 0.025 }]
+      "marks": [{ "x": 0.566, "y": 0.336, "r": 0.032 }, { "x": 0.443, "y": 0.217, "r": 0.02 }, { "x": 0.222, "y": 0.368, "r": 0.022 }]
     },
     {
       "cx": 0.78, "cy": 0.58, "wf": 0.45,
@@ -32,7 +32,8 @@
     {
       "cx": 0.27, "cy": 0.8, "wf": 0.32,
       "title": "Et La Tour a signé dans l'ombre, sous le coude du tricheur.",
-      "text": "Le peintre a ensuite été oublié jusqu'en 1915. En 1972, le Louvre achète ce tableau 10 millions de francs : un record."
+      "text": "Le peintre a ensuite été oublié jusqu'en 1915. En 1972, le Louvre achète ce tableau 10 millions de francs : un record.",
+      "marks": [{ "x": 0.31, "y": 0.893, "r": 0.045 }]
     }
   ],
   "ad": {

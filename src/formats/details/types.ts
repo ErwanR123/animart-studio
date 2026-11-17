@@ -45,7 +45,7 @@ export type DetailsReel = {
     script: string[];
   };
   /** End screen; defaults in engine.tsx. */
-  end?: { lines?: string[]; follow?: string; sub?: string; promise?: string; followSoon?: string };
+  end?: { lines?: string[]; follow?: string; sub?: string; midFollow?: string; beta?: string };
   post: { caption: string; hashtags: string[]; youtubeTitle?: string; youtubeTags?: string[] };
   /** Where each fact comes from (checked before posting). */
   sources: string[];
