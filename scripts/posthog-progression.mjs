@@ -26,6 +26,12 @@ const TILES = [
     description: "Instagram et YouTube. Relevés horaires depuis le 17/11 ; avant, Instagram est reconstruit avec les abonnements de chaque jour." },
   { name: "Ce que chaque post a gagné chaque jour", file: "posts-jour.sql", display: "ActionsTable",
     description: "Nouvelles vues, likes, commentaires, partages et enregistrements de chaque post, jour par jour (relevés horaires, depuis le 17/11). C'est ici qu'on voit quel post a porté la journée, même un vieux post qui repart." },
+  { name: "Les formats comparés", file: "formats.sql", display: "ActionsTable",
+    description: "Par format (Le Guide, Détails, L'Agenda…) : vues moyennes, % de la vidéo regardé, et pour 1 000 vues les partages, enregistrements et abonnés. Le format d'une vidéo vient de strategie/videos.json." },
+  { name: "La qualité de chaque vidéo", file: "qualite.sql", display: "ActionsTable",
+    description: "Chaque vidéo Instagram : % regardé (temps moyen / durée), likes, partages, enregistrements et abonnés pour 1 000 vues. Comparer à vues égales : c'est ce que l'algorithme récompense." },
+  { name: "La vie de chaque post (J0 → J7)", file: "vie.sql", display: "ActionsTable",
+    description: "Vues cumulées de chaque post le jour de sa publication puis à J1, J2, J3 et J7 (relevés horaires, depuis le 16/11)." },
   { name: "Instagram · abonnés gagnés par vidéo", file: "abonnes-par-video.sql", display: "ActionsTable",
     description: "Instagram ne donne pas les abonnés par Reel : chaque vidéo reçoit les abonnements des jours entre sa publication et la suivante." },
 ];

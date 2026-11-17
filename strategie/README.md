@@ -35,6 +35,10 @@ abonnés gagnés par vidéo. Il vit de deux choses :
 - **les CSV déposés** dans `~/Desktop/marketing_animart/stats/` (TikTok Studio → Analytique → télécharger les
   données ; tout CSV avec une colonne date marche) : `node scripts/stats-import.mjs` les envoie (événements
   `stats_day`, `stats_post`, sans doublon si on redépose) et les range dans `stats/importes/`.
+Il compare aussi **les formats** (vues moyennes, % regardé, partages / enregistrements / abonnés pour 1 000 vues),
+**la qualité de chaque vidéo** et **la vie de chaque post** (vues à J0, J1, J2, J3, J7) ; le % regardé vient de
+`duration_s` dans `strategie/videos.json`. Chaque nouveau post est annoté sur toutes les courbes par le relevé horaire.
+Alertes par mail : chaque nouvelle inscription (vérifié toutes les heures), et aucune inscription en une semaine.
 Les requêtes sont dans `strategie/posthog/*.sql` ; après une modification : `node --env-file=.env scripts/posthog-progression.mjs`.
 Instagram ne donne pas les abonnés par Reel : on attribue à chaque vidéo les abonnements des jours qui la suivent.
 

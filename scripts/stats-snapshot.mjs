@@ -53,6 +53,22 @@ const batch = [
   ...ytChannel.map(c => ev("stats_account", { platform: "youtube", followers: num(c.subs), views: num(c.views), posts: num(c.videos) })),
 ];
 
+// A mark on every PostHog chart for each post of the last 3 days (« Posté sur Instagram : … »), once.
+async function annotatePosts() {
+  const H = { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" };
+  const A = `https://eu.posthog.com/api/projects/${PROJECT}/annotations/`;
+  const known = new Set(((await (await fetch(`${A}?limit=300`, { headers: H })).json()).results || []).map(a => a.content));
+  const recent = [...igPosts.map(p => ["Instagram", p]), ...ytPosts.map(p => ["YouTube", p])]
+    .filter(([, p]) => p.posted && Date.now() - new Date(p.posted).getTime() < 3 * 86400e3);
+  for (const [where, p] of recent) {
+    const content = `Posté sur ${where} : ${String(p.title).slice(0, 60)}`;
+    if (known.has(content) || DRY) continue;
+    const r = await fetch(A, { method: "POST", headers: H, body: JSON.stringify({ content, date_marker: new Date(p.posted).toISOString(), scope: "project" }) });
+    console.log("annotation", r.status, content);
+  }
+}
+await annotatePosts();
+
 if (DRY) {
   console.log(`${batch.length} events`, JSON.stringify(batch.filter(e => e.event === "stats_account").map(e => e.properties)));
 } else {

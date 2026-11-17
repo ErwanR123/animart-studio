@@ -3,7 +3,9 @@ select j.jour as jour, coalesce(p.posts, '') as posts_publies,
   j.vues as vues_ig, j.comptes_touches as comptes_touches, j.likes as likes, j.commentaires as commentaires,
   j.partages as partages, j.enregistrements as enregistrements,
   coalesce(fo.gagnes, 0) as abonnes_gagnes, coalesce(fo.perdus, 0) as desabonnements,
-  j.clics_lien_bio as clics_lien_bio, coalesce(s.visiteurs, 0) as visiteurs_site, coalesce(s.inscrits, 0) as inscrits_waitlist
+  j.clics_lien_bio as clics_lien_bio, coalesce(s.visiteurs, 0) as visiteurs_site, coalesce(s.inscrits, 0) as inscrits_waitlist,
+  round(1000 * j.clics_lien_bio / greatest(j.vues, 1), 1) as clics_bio_pour_1000_vues,
+  if(coalesce(s.visiteurs, 0) > 0, round(100 * s.inscrits / s.visiteurs, 1), null) as inscrits_pour_100_visiteurs
 from (
   select toDate(parseDateTimeBestEffort(toString(date))) as jour,
     sumIf(toFloat(value), metric = 'views') as vues, sumIf(toFloat(value), metric = 'reach') as comptes_touches,

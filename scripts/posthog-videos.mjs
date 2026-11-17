@@ -16,15 +16,19 @@ const api = async (path, body, method = body ? 'POST' : 'GET') => {
 
 const { videos } = JSON.parse(readFileSync(new URL('../strategie/videos.json', import.meta.url), 'utf8'))
 const s = v => `'${String(v ?? '').replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`
-const rows = videos.map(v => `(${[v.id, v.title, v.format, v.ig, v.yt].map(s).join(', ')}, ${Number(v.tt_views ?? 0)})`)
+const rows = videos.map(v => `(${[v.id, v.title, v.format, v.ig, v.yt].map(s).join(', ')}, ${Number(v.tt_views ?? 0)}, ${Number(v.duration_s ?? 0)})`)
 const VIEW = `select tupleElement(t, 1) as video, tupleElement(t, 2) as titre, tupleElement(t, 3) as format,
-  tupleElement(t, 4) as ig_id, tupleElement(t, 5) as yt_id, tupleElement(t, 6) as tiktok_vues
+  tupleElement(t, 4) as ig_id, tupleElement(t, 5) as yt_id, tupleElement(t, 6) as tiktok_vues, tupleElement(t, 7) as duree_s
 from (select arrayJoin([${rows.join(', ')}]) as t)`
 
 // The view: one row per video, its id on each platform.
 const views = (await api('/warehouse_saved_queries/?limit=200')).results
 const existing = views.find(v => v.name === 'videos')
-if (existing) await api(`/warehouse_saved_queries/${existing.id}/`, { query: { kind: 'HogQLQuery', query: VIEW } }, 'PATCH')
+// PostHog refuses an edit that does not name the version it replaces (« modified by someone else »).
+if (existing) {
+  const { latest_history_id } = await api(`/warehouse_saved_queries/${existing.id}/`)
+  await api(`/warehouse_saved_queries/${existing.id}/`, { query: { kind: 'HogQLQuery', query: VIEW }, edited_history_id: latest_history_id }, 'PATCH')
+}
 else await api('/warehouse_saved_queries/', { name: 'videos', query: { kind: 'HogQLQuery', query: VIEW } })
 console.log(`view videos: ${videos.length} videos`)
 
