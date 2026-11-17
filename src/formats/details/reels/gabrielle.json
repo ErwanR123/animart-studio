@@ -1,0 +1,132 @@
+{
+  "id": "DetailsGabrielle",
+  "image": "art/gabrielle/gabrielle.jpg",
+  "imageSize": [
+    3840,
+    2838
+  ],
+  "imageSource": "Wikimedia Commons, « Scuola di fontainebleau, presunti ritratti di gabrielle d'estrées sua sorella la duchessa di villars, 1594 ca. 06.jpg » (public domain)",
+  "work": {
+    "title": "Gabrielle d'Estrées et une de ses sœurs",
+    "artist": "École de Fontainebleau",
+    "date": "vers 1594",
+    "museum": "Louvre"
+  },
+  "hook": "Pourquoi elle lui pince le téton ? Ce tableau est un message codé pour toute la cour.",
+  "details": [
+    {
+      "cx": 0.62,
+      "cy": 0.5,
+      "wf": 0.5,
+      "title": "Ce geste, c'est une annonce.",
+      "text": "Gabrielle est la maîtresse du roi Henri IV. Sa sœur lui pince le sein : on y lit une grossesse. Son fils César naît en 1594.",
+      "marks": [
+        {
+          "x": 0.645,
+          "y": 0.638,
+          "r": 0.035
+        }
+      ]
+    },
+    {
+      "cx": 0.66,
+      "cy": 0.78,
+      "wf": 0.36,
+      "title": "Et cette bague, on y voit celle du roi.",
+      "text": "Son anneau de sacre, offert en promesse de mariage. Une maîtresse qui montre la bague du roi : toute la cour comprend.",
+      "marks": [
+        {
+          "x": 0.655,
+          "y": 0.875,
+          "r": 0.03
+        }
+      ]
+    },
+    {
+      "cx": 0.48,
+      "cy": 0.32,
+      "wf": 0.36,
+      "title": "Au fond, une femme coud près du feu.",
+      "text": "On y lit la layette du bébé à venir. Le tableau raconte la grossesse jusque dans le décor.",
+      "marks": [
+        {
+          "x": 0.425,
+          "y": 0.39,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "cx": 0.56,
+      "cy": 0.18,
+      "wf": 0.32,
+      "title": "Au-dessus de la cheminée, un homme nu… coupé à la taille.",
+      "text": "On ne voit que ses jambes. Une lecture : ce n'est pas le roi, alors pas de visage. Et le peintre, lui, est resté inconnu.",
+      "marks": [
+        {
+          "x": 0.585,
+          "y": 0.095,
+          "r": 0.05
+        }
+      ]
+    }
+  ],
+  "ad": {
+    "afterDetail": 4,
+    "palette": {
+      "ground": "#5A2A26",
+      "deep": "#140808",
+      "accent": "#F2D3C4"
+    },
+    "found": "5/24",
+    "anecdotes": 4,
+    "script": [
+      "Ce tableau est peint vers 1594, par un artiste resté inconnu.",
+      "On le rattache à l'école de Fontainebleau.",
+      "Deux femmes au bain, derrière un grand rideau rouge.",
+      "À droite, Gabrielle d'Estrées, favorite d'Henri IV.",
+      "À gauche, sans doute sa sœur, la duchesse de Villars.",
+      "Le thème vient de la Dame au bain de François Clouet, vers 1571.",
+      "Les deux femmes ne portent que des perles aux oreilles.",
+      "Le Louvre achète le tableau en 1937."
+    ]
+  },
+  "post": {
+    "caption": "4 détails de Gabrielle d'Estrées que presque personne ne remarque au Louvre 👀 Toi aussi, tu croyais que c'était une blague ?",
+    "hashtags": [
+      "louvre",
+      "henriiv",
+      "gabrielledestrees",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Pourquoi elle lui pince le téton ? 4 détails cachés (Louvre) #shorts",
+    "youtubeTags": [
+      "gabrielle d'estrées",
+      "gabrielle d'estrées et une de ses sœurs",
+      "henri iv",
+      "école de fontainebleau",
+      "louvre",
+      "musée du louvre",
+      "message codé",
+      "histoire de france",
+      "histoire de l'art",
+      "art",
+      "peinture",
+      "tableau",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "paris",
+      "renaissance",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Gabrielle, maîtresse d'Henri IV ; la sœur pince le sein, souvent interprété comme l'annonce d'une grossesse ; César né en juin 1594 : https://fr.wikipedia.org/wiki/Gabrielle_d'Estrées_et_une_de_ses_sœurs ; https://en.wikipedia.org/wiki/Gabrielle_d'Estrées_and_One_of_Her_Sisters",
+    "La bague : l'anneau du couronnement d'Henri IV offert en promesse de mariage (lecture) : mêmes articles",
+    "La couturière au fond, lue comme préparant la layette : article EN",
+    "Au-dessus de la cheminée, le bas du corps d'un homme nu ; lecture : n'étant pas Henri IV, seule la partie inférieure est montrée ; artiste inconnu : article FR",
+    "École de Fontainebleau, vers 1594 ; acheté par le Louvre en 1937 ; sœur présumée = duchesse de Villars (inscription sur une copie) ; d'après la Dame au bain de Clouet : article FR"
+  ]
+}

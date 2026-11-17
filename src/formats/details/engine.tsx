@@ -11,7 +11,8 @@ export const W = 1080, H = 1920, FPS = 30;
 /** Text blocks end this far above the bottom: just above the platform's account name and caption. */
 export const TEXT_BOTTOM = 300;
 /** How far up the painting's bottom edge may rise: about the height of the text block. */
-const TEXT_ZONE = 560;
+const TEXT_ZONE = 700;
+const TOP_ZONE = 380; // a detail at the painting's top edge comes down out of the platform's top bar, the dark ground above it
 /** Frames: first shot (hook), camera move, dwell on a detail (time to read), ad, move back, end screen. */
 const T = { hook: 66, travel: 30, dwell: 165, ad: 150, back: 36, end: 120 };
 /** In the ad (frames from its start): the work recognised, its story opens, the waitlist button. */
@@ -81,7 +82,7 @@ export function createDetailsReel(r: DetailsReel) {
     left = Math.min(0, Math.max(W - iw, left));
     // The painting may stop above the frame's bottom by the text's height: a detail low in the painting (musicians
     // at the bottom edge) still sits above the text, the dark ground showing under the caption.
-    if (ih >= H) top = Math.min(0, Math.max(H - ih - TEXT_ZONE, top));
+    if (ih >= H) top = Math.min(TOP_ZONE, Math.max(H - ih - TEXT_ZONE, top));
     return { left, top, iw, ih };
   };
   const Painting: React.FC<{ c: Cam }> = ({ c }) => {

@@ -1,0 +1,134 @@
+{
+  "id": "DetailsOlympia",
+  "image": "art/olympia/olympia.jpg",
+  "imageSize": [
+    3840,
+    2598
+  ],
+  "imageSource": "Wikimedia Commons, « Edouard Manet - Olympia - Google Art Project.jpg » (public domain)",
+  "work": {
+    "title": "Olympia",
+    "artist": "Édouard Manet",
+    "date": "1863",
+    "museum": "Orsay"
+  },
+  "hook": "Dans ce tableau : un chat interdit, un bouquet de client… et un regard qui a choqué Paris.",
+  "details": [
+    {
+      "cx": 0.89,
+      "cy": 0.6,
+      "wf": 0.3,
+      "title": "Chez Titien, il y avait un petit chien. Manet met un chat noir.",
+      "text": "Le chien, c'est la fidélité. Le chat noir, queue dressée, c'est la nuit et le désir. Le public a compris direct.",
+      "marks": [
+        {
+          "x": 0.94,
+          "y": 0.615,
+          "r": 0.035
+        }
+      ]
+    },
+    {
+      "cx": 0.66,
+      "cy": 0.4,
+      "wf": 0.42,
+      "title": "Ce bouquet annonce l'arrivée d'un client.",
+      "text": "La servante l'apporte, Olympia ne le regarde même pas. Pour le public de 1865, c'est clair : elle est prostituée.",
+      "marks": [
+        {
+          "x": 0.665,
+          "y": 0.43,
+          "r": 0.07
+        }
+      ]
+    },
+    {
+      "cx": 0.24,
+      "cy": 0.52,
+      "wf": 0.32,
+      "title": "Ce bracelet, c'est celui de la mère de Manet.",
+      "text": "D'après sa nièce, il garde une mèche de cheveux de Manet enfant. Il a mis sa mère au poignet d'une courtisane.",
+      "marks": [
+        {
+          "x": 0.215,
+          "y": 0.555,
+          "r": 0.032
+        }
+      ]
+    },
+    {
+      "cx": 0.26,
+      "cy": 0.3,
+      "wf": 0.3,
+      "title": "Le vrai scandale, c'est ce regard.",
+      "text": "Elle te fixe, sérieuse, sans gêne. Au Salon de 1865, des visiteurs ont voulu crever la toile à coups de parapluie.",
+      "marks": [
+        {
+          "x": 0.252,
+          "y": 0.282,
+          "r": 0.045
+        }
+      ]
+    }
+  ],
+  "ad": {
+    "afterDetail": 4,
+    "palette": {
+      "ground": "#3B3A30",
+      "deep": "#0D0E0B",
+      "accent": "#EDE3CF"
+    },
+    "found": "9/24",
+    "anecdotes": 4,
+    "script": [
+      "Édouard Manet peint Olympia en 1863.",
+      "Il la présente au Salon de 1865.",
+      "La pose reprend la Vénus d'Urbin de Titien, peinte vers 1538.",
+      "Le modèle s'appelle Victorine Meurent.",
+      "Elle deviendra peintre à son tour et exposera au Salon.",
+      "La servante est posée par une femme nommée Laure.",
+      "En 1890, Claude Monet lance une souscription pour l'offrir à l'État.",
+      "Le tableau entre au musée d'Orsay en 1986."
+    ]
+  },
+  "post": {
+    "caption": "4 détails d'Olympia que presque personne ne remarque à Orsay 👀 Toi aussi, t'avais pas vu le chat ?",
+    "hashtags": [
+      "orsay",
+      "olympia",
+      "manet",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "4 détails cachés dans Olympia de Manet (musée d'Orsay) #shorts",
+    "youtubeTags": [
+      "olympia",
+      "manet",
+      "édouard manet",
+      "musée d'orsay",
+      "orsay",
+      "scandale",
+      "salon de 1865",
+      "titien",
+      "vénus d'urbin",
+      "histoire de l'art",
+      "art",
+      "peinture",
+      "tableau",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "paris",
+      "olympia manet",
+      "art history",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Le chat noir remplace le petit chien de la Vénus d'Urbin de Titien ; chien = fidélité, chat = promiscuité nocturne ; queue relevée : https://en.wikipedia.org/wiki/Olympia_(Manet) ; https://fr.wikipedia.org/wiki/Olympia_(Manet)",
+    "Le bouquet évoque la venue d'un client, présenté par la servante : mêmes articles",
+    "Le bracelet de la mère de Manet avec une mèche de ses cheveux d'enfant, d'après Julie Manet : article FR",
+    "Le regard et l'expression sérieuse font le scandale ; des visiteurs ont voulu la percer avec leur parapluie : article FR",
+    "Victorine Meurent, peintre exposée au Salon (1876, 1879, 1885, 1904) ; servante posée par Laure ; souscription de Monet 1889-1890 ; Orsay 1986 : articles EN et FR"
+  ]
+}

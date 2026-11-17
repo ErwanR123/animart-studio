@@ -1,0 +1,127 @@
+{
+  "id": "DetailsLiberte",
+  "image": "art/liberte/liberte.jpg",
+  "imageSize": [
+    3840,
+    3072
+  ],
+  "imageSource": "Wikimedia Commons, « La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg » (public domain)",
+  "work": {
+    "title": "La Liberté guidant le peuple",
+    "artist": "Eugène Delacroix",
+    "date": "1830",
+    "museum": "Louvre"
+  },
+  "hook": "Ce tableau a été caché par l'État. Et lui-même cache Notre-Dame, Gavroche… et une botte disparue.",
+  "details": [
+    {
+      "cx": 0.87,
+      "cy": 0.43,
+      "wf": 0.24,
+      "title": "Au fond, dans la fumée : Notre-Dame.",
+      "text": "Sur une de ses tours flotte un minuscule drapeau tricolore. On est à Paris, le 28 juillet 1830, en pleine révolution.",
+      "marks": [
+        {
+          "x": 0.885,
+          "y": 0.39,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "cx": 0.74,
+      "cy": 0.42,
+      "wf": 0.36,
+      "title": "Ce gamin aux deux pistolets, tu le connais peut-être.",
+      "text": "On le voit comme le modèle de Gavroche, le gamin des Misérables. Victor Hugo publie le roman trente ans plus tard.",
+      "marks": [
+        {
+          "x": 0.75,
+          "y": 0.355,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "cx": 0.1,
+      "cy": 0.9,
+      "wf": 0.26,
+      "title": "En bas à gauche, une botte restée invisible pendant des décennies.",
+      "text": "Sous huit couches de vernis, elle se confondait avec les pavés. La restauration de 2024 l'a fait réapparaître.",
+      "marks": [
+        {
+          "x": 0.045,
+          "y": 0.95,
+          "r": 0.035
+        }
+      ]
+    },
+    {
+      "cx": 0.6,
+      "cy": 0.4,
+      "wf": 0.5,
+      "title": "L'État l'achète en 1831… puis le décroche.",
+      "text": "Jugé trop révolutionnaire, il est enlevé au bout de quelques mois et rendu à Delacroix. Depuis, il a fini sur les billets de 100 francs."
+    }
+  ],
+  "ad": {
+    "afterDetail": 4,
+    "palette": {
+      "ground": "#4A4A44",
+      "deep": "#0F0F0E",
+      "accent": "#F1D9A8"
+    },
+    "found": "6/24",
+    "anecdotes": 4,
+    "script": [
+      "Eugène Delacroix peint ce tableau à l'automne 1830.",
+      "Il raconte les Trois Glorieuses : les 27, 28 et 29 juillet 1830.",
+      "Paris se soulève contre le roi Charles X.",
+      "Au centre, la Liberté, drapeau dans une main, fusil dans l'autre.",
+      "Autour d'elle, un ouvrier, un étudiant, un bourgeois en haut-de-forme.",
+      "Delacroix écrit : « J'ai entrepris un sujet moderne, une barricade. »",
+      "La composition reprend le Radeau de la Méduse de Géricault.",
+      "Le tableau entre au Louvre en 1874."
+    ]
+  },
+  "post": {
+    "caption": "4 détails de La Liberté guidant le peuple que presque personne ne remarque au Louvre 👀 Toi aussi, t'avais pas vu Notre-Dame ?",
+    "hashtags": [
+      "louvre",
+      "liberte",
+      "delacroix",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "4 détails cachés dans La Liberté guidant le peuple (Louvre) #shorts",
+    "youtubeTags": [
+      "la liberté guidant le peuple",
+      "delacroix",
+      "eugène delacroix",
+      "louvre",
+      "musée du louvre",
+      "révolution",
+      "trois glorieuses",
+      "1830",
+      "gavroche",
+      "notre-dame",
+      "histoire de l'art",
+      "art",
+      "peinture",
+      "tableau",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "paris",
+      "liberty leading the people",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Notre-Dame à l'arrière-plan dans la fumée, petit drapeau tricolore sur une tour : https://fr.wikipedia.org/wiki/La_Liberté_guidant_le_peuple ; https://en.wikipedia.org/wiki/Liberty_Leading_the_People",
+    "Gavroche « widely believed to have been inspired by » le garçon aux pistolets : article EN (Les Misérables, 1862)",
+    "Restauration 2024 : huit couches de vernis, une botte en bas à gauche qui se confondait avec les pavés : article EN",
+    "Acheté par l'État en 1831 (3 000 F), retiré au bout de quelques mois pour son message politique, rendu à l'artiste ; billet de 100 F (1978-1995), pochette de Coldplay (2008) : article EN",
+    "Signature « Eug. Delacroix 1830 » : article FR (infobox) ; Louvre en 1874 ; lettre du 21 octobre 1830 : articles"
+  ]
+}

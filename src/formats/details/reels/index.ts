@@ -4,5 +4,8 @@ import radeau from "./radeau.json";
 import sacre from "./sacre.json";
 import cana from "./cana.json";
 import tricheur from "./tricheur.json";
+import olympia from "./olympia.json";
+import liberte from "./liberte.json";
+import gabrielle from "./gabrielle.json";
 
-export const reels: DetailsReel[] = [sacre as DetailsReel, radeau as DetailsReel, cana as DetailsReel, tricheur as DetailsReel];
+export const reels: DetailsReel[] = [sacre as DetailsReel, radeau as DetailsReel, cana as DetailsReel, tricheur as DetailsReel, olympia as DetailsReel, liberte as DetailsReel, gabrielle as DetailsReel];
