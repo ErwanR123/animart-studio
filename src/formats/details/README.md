@@ -29,8 +29,9 @@ camera arrives (hidden during the ad).
   `faces` (the real people the text names, portraits popping one after the other with their names, above the
   subject), `marks` (a white circle drawing itself around what the text points at, like a finger on a photo),
   `inset` (another work the text names).
-- **Two calls, tested since 2026-11-17**: a discreet follow pill mid-video (« + Abonne-toi : un chef-d'œuvre décrypté
-  chaque jour », under the squares, 4 s into the second detail, `MID_FOLLOW`), then the app ad closes the video with
+- **Two calls, tested since 2026-11-17**: a follow button mid-video, 2 s into the second detail, just above the
+  caption's title where the eyes are: white « + Abonne-toi » with « Un chef-d'œuvre décrypté chaque jour » beside it,
+  « tapped » after 1.7 s into a grey « ✓ Abonné » (`MID_FOLLOW`; a small pill at the top was « trop discret »), then the app ad closes the video with
   « Inscris-toi à la bêta · lien en bio », then the loop. Why: the Radeau lost ~15 % of viewers at its mid-video ad;
   on Cana (ad at the end) only ~20 % were still there for an end follow call.
 - **The hook decides** (skip rate Radeau 45 % vs Cana 59 %): three concrete promises (« un cannibale, un peintre

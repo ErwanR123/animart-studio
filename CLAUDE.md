@@ -25,14 +25,19 @@ and its call to action, and every result is logged so the next piece learns from
 | [strategie/todo.md](strategie/todo.md) | what is left to set up for distribution and the accounts |
 | [IDEAS.md](IDEAS.md) | the idea backlog and the 30-days programme |
 
-Formats (each folder documents its rules; read it before touching the format):
+Formats (each folder documents its rules; read it before touching the format). **Each live format shows one part of
+the app** (decided 2026-11-17):
 
-| format | where | skill | state |
-|---|---|---|---|
-| **Détails**: a painting's hidden details, the app ad, the waitlist call | [src/formats/details/README.md](src/formats/details/README.md) | `/details` | in use (Sacre posted 2026-11-16) |
-| **Le Guide**: the mascot tells a painting's story, Vox collages | [bible/README.md](bible/README.md) | `/episode` | 23 episodes, references in `examples/` |
-| **30 jours**: one notion a day, stickers | `src/keys/`, `src/lesson/`, `IDEAS.md` § Nouveau cap | — | Jour01–05 |
-| **Memes**: art memes from found clips | `scripts/meme-*.py` | `/meme-hunt` | test |
+| format | the app part it sells | where | skill | state |
+|---|---|---|---|---|
+| **Détails**: a painting's hidden details, the app ad at the end, a follow call mid-video | the Guide (scan a painting, hear its secrets) | [src/formats/details/README.md](src/formats/details/README.md) | `/details` | live, 2–3 a week |
+| **L'Agenda**: this weekend's exhibitions in Paris, voiced (Achird), real photos | Explore (what's on, what closes soon) | [src/formats/agenda/README.md](src/formats/agenda/README.md) | `/agenda` | live, 1–2 a week, Thursday evening |
+| **Sorties entre amis** | Profile and friends (going out in a group) | `strategie/README.md` § Les formats | — | to invent with the user |
+| **Le Guide**: the mascot (Lorenzo) tells a painting's story, Vox collages | — | [bible/README.md](bible/README.md) | `/episode` | **on hold**: make none, keep the engine |
+| **30 jours**: one notion a day | — | `src/keys/`, `src/lesson/`, `IDEAS.md` | — | **paused**: the user is rethinking it |
+
+The repo is shared with friends who make and post videos too: [README.md](README.md) is their entry (French). Keep it
+true when a format, a script or a rule changes.
 
 Every composition shows in `npm run dev` (`src/Root.tsx`). Other skills: `/video-review` (watch a render like a
 viewer, fix it), the `remotion-*` skills (load `remotion-best-practices` before writing Remotion code).

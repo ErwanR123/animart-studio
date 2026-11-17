@@ -32,8 +32,9 @@ Le but : devenir vraiment forts en marketing et en distribution. Une séance de 
       `animartai.com/yt` (titre « Waitlist de l'app 🎨 »).
 - [ ] Brancher la table `waitlist` de Supabase dans PostHog (SQL prêt : vue `analytics.waitlist_signups` sans les
       emails, rôle `posthog_reader`), pour recouper les inscrits.
+- [ ] Le format « Sorties entre amis » (montrer Profil et amis) : à inventer ensemble.
 - [ ] Le dashboard PostHog par email chaque lundi (Erwan, Moh, Amine).
-- [ ] Pousser le studio sur GitHub (tout est commité en local).
+- [x] Pousser le studio sur GitHub (2026-11-17), avec un README d'entrée pour les potes.
 
 ## 2. Des comptes propres (pour qui arrive sur le profil)
 

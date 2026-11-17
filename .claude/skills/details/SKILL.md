@@ -34,5 +34,5 @@ things: the details' texts, then the finished video.**
 10. **Export**: `bash scripts/details-export.sh <Id>` → `out/<slug>.mp4`, `out/<slug>-mobile.mp4` (< 30 MB, to send
     to the phone), `out/<slug>.post.md` (captions for each platform, tags, facts to check). Give the user the files
     and the post text.
-11. **After posting**: set `status` in the JSON and add the post's line to `strategie/journal.md`; `/bilan` fills
+11. **After posting**: add the video to `strategie/videos.json` (ig and yt ids, `duration_s`, format `Détails`), run `node --env-file=.env scripts/posthog-videos.mjs`, and add the post's line to `strategie/journal.md`; `/bilan` fills
     its numbers, so the next reels learn from it.

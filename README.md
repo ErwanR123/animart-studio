@@ -1,98 +1,110 @@
-# Animart studio
+# Animart Studio
 
-The studio for the Animart social account (Instagram / TikTok): short educational videos about paintings in the
-**"Le Guide"** format, rendered with [Remotion](https://www.remotion.dev). Everything needed to make one is in this
-repo: the engine, the character, the voice pipeline, the sound palette, the art, and finished episodes to copy from.
+Le hub marketing d'Animart. Tout ce qui amène des gens vers l'app est ici : les formats de vidéos et le moteur qui
+les fabrique, la stratégie, les textes des posts, et les stats qui disent ce qui marche. L'app elle-même est dans
+un autre repo (`Animart`).
 
-Start with [CLAUDE.md](CLAUDE.md) and the studio bible in [bible/](bible/). A new episode is one command plus the
-`/episode` skill in Claude Code.
+**Le but : des inscrits à la waitlist** (puis des téléchargements à la sortie), pas des vues.
 
-## Setup (from a fresh clone, in this order)
+Les vidéos sont faites avec [Remotion](https://www.remotion.dev) (des vidéos écrites en React) et **Claude Code**
+fait presque tout le travail : ouvre ce dossier dans Claude Code, il lit `CLAUDE.md` et les skills tout seul.
 
-Everything the videos need is in git (engine, Guide drawings, art, music, sound, voices of the finished episodes);
-only the tools below are installed per machine. Commands are for macOS with [Homebrew](https://brew.sh); on Linux use
-your package manager, on Windows use WSL. A Claude agent can run this section top to bottom: each step ends with a
-check that must pass before the next.
+## Les contenus
 
-1. **System tools**
+Chaque format montre une partie de l'app.
 
-   ```console
-   brew install git ffmpeg uv nvm
-   brew install dezoomify-rs   # optional: full-resolution museum scans (scripts/image-find.py hires)
-   ```
-   Check: `ffmpeg -version`, `uv --version` print a version.
+| format | ce qu'il montre de l'app | quoi | rythme | état | comment en faire un |
+|---|---|---|---|---|---|
+| **Détails** | **le Guide** (scanner un tableau au musée, l'app raconte ses secrets) | un tableau, 4 détails cachés, la pub de l'app à la fin | 2 à 3 par semaine | ✅ en place | `/details` · [README](src/formats/details/README.md) |
+| **L'Agenda** | **Explorer** (les expos qui arrivent, ce qui ferme bientôt) | les expos à voir ce week-end à Paris, en voix off | 1 à 2 par semaine, le jeudi soir | ✅ en place (1er le 20 nov.) | `/agenda` · [README](src/formats/agenda/README.md) |
+| **Sorties entre amis** | **le Profil et les amis** (sortir au musée en groupe, voir ce que les potes ont aimé) | à inventer | — | 💡 à inventer | [strategie/README.md](strategie/README.md#les-formats) |
+| Le Guide (Lorenzo) | — | la mascotte raconte l'histoire d'un tableau, collages style Vox | — | 📦 en réserve : on n'en fait plus pour l'instant, mais on garde le moteur | `/episode` · [bible/](bible/README.md) |
+| 30 jours pour apprendre l'art | — | une notion par jour | — | ⏸ en pause (on réfléchit au format) | [IDEAS.md](IDEAS.md) |
 
-2. **Node 22** (the version in `.nvmrc`)
+Les règles communes à toutes les vidéos (accroche, rétention, appel à l'action) sont dans
+[bible/viral.md](bible/viral.md) : à lire avant d'écrire un script.
 
-   ```console
-   source "$(brew --prefix nvm)/nvm.sh"   # or add nvm to your shell profile once, as `brew info nvm` says
-   nvm install && nvm use
-   ```
-   Check: `node -v` prints v22.
+## Installer (une fois par ordi)
 
-3. **Remotion and the other packages** (exact versions from `package-lock.json`)
+Pour macOS avec [Homebrew](https://brew.sh) (Linux : ton gestionnaire de paquets ; Windows : WSL). Claude peut faire
+cette section de haut en bas : chaque étape finit par une vérification.
 
-   ```console
-   npm ci --loglevel=error
-   npx remotion browser ensure   # the headless Chrome Remotion renders with (~100 MB, once)
-   ```
-   Check: `npm run lint` ends without errors.
+1. **Les outils** : `brew install git ffmpeg uv nvm` (vérifier : `ffmpeg -version`, `uv --version`).
+2. **Node 22** : `source "$(brew --prefix nvm)/nvm.sh" && nvm install && nvm use` (vérifier : `node -v` → v22).
+3. **Les paquets** : `npm ci --loglevel=error && npx remotion browser ensure` (vérifier : `npm run lint` sans erreur).
+4. **Python** : rien à installer, `uv run` récupère ce qu'il faut au premier lancement
+   (vérifier : `uv run scripts/episode-review.py --help`).
+5. **Les clés** : `cp .env.example .env`, puis remplir. **Demande les valeurs à Erwan en direct, jamais dans un chat
+   ou un commit.** `.env` n'est jamais commité ni affiché.
+   - `GOOGLE_API_KEY` : la voix de L'Agenda (Gemini, ~0,03 $ la prise). Les Détails n'en ont pas besoin.
+   - `POSTHOG_PERSONAL_API_KEY` : lire les stats et mettre à jour les dashboards.
+6. **Vérifier** : `npm run dev` ouvre Remotion Studio dans le navigateur ; lance `DetailsTricheur` et `Agenda1120`.
 
-4. **Python scripts**: nothing to install. Each script declares its packages in its header and `uv run` fetches them
-   on first use (a minute or two). The first voice run also downloads a Whisper model (a few hundred MB) for the word timings;
-   `rig-cut.py` and `image-collage.py --cut` download a cut-out model the same way.
-   Check: `uv run scripts/episode-review.py --help` prints the usage.
+## Faire une vidéo
 
-5. **Keys** (only for the real voice and new Guide poses; everything else works without them)
+Dans Claude Code : `/details` ou `/agenda`. Claude propose le sujet et les textes, **tu les relis** (tout ce
+qu'écrit l'IA est relu par un humain avant d'être posté), puis il fabrique la vidéo et l'exporte dans
+`~/Desktop/marketing_animart/` avec le texte du post (`<video>.post.md`).
 
-   ```console
-   cp .env.example .env
-   ```
-   Fill `GOOGLE_API_KEY` (a Gemini key from [Google AI Studio](https://aistudio.google.com/apikey), billing on) and
-   `GUIDE_VOICE_ID_GEMINI` (the Guide's voice: ask Erwan for the value so every video has the same voice). `.env` is
-   git-ignored: never commit it, never print it. Optional: copy Erwan's `cache/` folder into the repo so voice
-   takes already paid for are never paid again.
+À la main :
 
-6. **Check the whole chain**
-
-   ```console
-   npx remotion still GuideParisRain out/check.png --frame=1336   # one frame of the reference episode
-   npm run dev                                                    # Remotion Studio in the browser: play any episode
-   ```
-   Check: `out/check.png` shows the building site (the stone-breaker, the scaffolding, the Guide at the bottom). A
-   full render + audio master of an episode: `bash scripts/episode-master.sh GuideParisRain` (a few minutes) →
-   `out/guide-paris-rain.mp4`, compare with `examples/guide-paris-rain.mp4`.
-
-With Claude Code: open the repo folder, `CLAUDE.md` and the skills in `.claude/skills/` load by themselves (`/episode`
-makes a new video end to end, `/video-review` reviews a render). Paid steps (the voice, ~$0.03 a take; a new Guide
-pose sheet, ~$0.13) are run only once a script is approved.
-
-## Make a video
-
-```console
-npm run dev                                                         # Remotion Studio
-node scripts/episode-new.mjs GuideMonaLisa public/art/mona-lisa/mona-lisa.jpg # scaffold a new episode
-bash scripts/episode-master.sh GuideMonaLisa                                # final render + audio master → out/
+```bash
+npm run dev                                   # Remotion Studio : toutes les vidéos
+npx remotion still DetailsTricheur out/s.png --frame=300 --scale=0.5   # une image
+bash scripts/details-export.sh DetailsTricheur   # une vidéo Détails prête à poster
+bash scripts/agenda-export.sh Agenda1120         # une vidéo Agenda prête à poster
 ```
 
-The full step-by-step (research → script → storyboard stills → archives → voice → build → review → master) is
-[bible/workflow.md](bible/workflow.md); how to write the script is [bible/script.md](bible/script.md), how it must
-look is [bible/art-direction.md](bible/art-direction.md).
+## Poster
 
-## What's where
+Tout est dans [strategie/README.md](strategie/README.md) (« Publier », « Les liens », « Règles des posts »). En bref :
 
-| folder | what |
+1. Reels et TikTok **depuis le téléphone**, avec un son tendance (la piste des Détails est muette exprès) ; YouTube
+   Shorts le même jour. Le texte de chaque plateforme est dans le `.post.md`.
+2. **Juste après**, ajoute la vidéo dans [strategie/videos.json](strategie/videos.json) (id Instagram, id YouTube,
+   durée, format), puis `node --env-file=.env scripts/posthog-videos.mjs`. Sans ça, la vidéo n'apparaît pas dans les
+   stats. Claude retrouve les ids tout seul si tu lui dis « c'est posté ».
+3. Commit + push, pour que les autres voient ce qui est sorti.
+
+## Les stats
+
+Sur PostHog (demande l'accès à Erwan) :
+
+- **[Progression jour par jour](https://eu.posthog.com/project/351733/dashboard/1124859)** : chaque jour en une
+  ligne, abonnés, ce que chaque post a gagné, formats comparés, qualité de chaque vidéo, vie de chaque post.
+- **[Réseaux](https://eu.posthog.com/project/351733/dashboard/1122748)** : chaque vidéo et ses vues par plateforme.
+- **[Waitlist](https://eu.posthog.com/project/351733/dashboard/1122659)** : visiteurs du site → inscrits, par source.
+
+Le relevé horaire des stats (`scripts/stats-snapshot.mjs`) tourne **sur un seul Mac** (celui d'Erwan, via
+`bash scripts/stats-launchd.sh`) : ne l'installe pas chez toi, ça compterait double. TikTok n'a pas d'API : on dépose
+ses exports CSV dans `~/Desktop/marketing_animart/stats/` puis `node scripts/stats-import.mjs`. Chaque lundi,
+`/bilan` fait le point dans [strategie/journal.md](strategie/journal.md).
+
+## Travailler à plusieurs
+
+- `git pull` avant de commencer, commit + push quand une vidéo est finie. Petits commits, un par vidéo.
+- **Ne commite jamais** `.env`, ni les rendus (`out/`, ignoré), ni le cache des voix payées (`cache/`, ignoré : copie
+  celui d'Erwan si tu veux réutiliser ses prises sans repayer).
+- Une vidéo = ses fichiers dans son format (`src/formats/<format>/reels/`) et ses images dans `public/art/<sujet>/`.
+- Une nouvelle règle apprise (« ça, les gens n'aiment pas ») va dans le README du format, pour que tout le monde (et
+  Claude) la suive.
+
+## Où est quoi
+
+| chemin | quoi |
 |---|---|
-| `src/` | the engine (`src/guide/`) and the episodes (`src/episodes/`) |
-| `bible/` | the rules: script, format, art direction, sound, character, workflow, prompts |
-| `examples/` | the five finished episodes (compressed previews): Athens, Homecoming, Alexander, Le Cri, Rue de Paris (the quality bar) |
-| `public/` | what the videos load: `art/<episode>/` (painting, close-ups, collage pieces), `guide/` (the Guide's poses), `sfx/accents/` + `sfx/story/`, `music/`, `voice/` |
-| `docs/brand/` | the Guide's identity: character sheet (`mascot.md`), canonical and bank pose sheets (`sheets/`), decorations and textures (`assets/`), brand direction |
-| `library/` | raw material: `app-guide/` (paper bubbles, tape, stamps, sketches), `guide-extra/` (more Guide drawings: six busts, peeking round a wall, stamping), `soundbank/` (`music/` beds, `ambiences/`, spare `sfx/`), `rig-sources/` (the originals the paper puppets are cut from) |
-| `docs/inspiration/` | the Vox-style reel the collage style comes from |
-| `scripts/` | by family: `episode-*` (new, review, master), `image-*` (find, collage, grid, depth), `voice-*` (gemini, placeholder, check), `guide-*` (the Guide's drawings) |
+| [CLAUDE.md](CLAUDE.md) | les règles que Claude suit dans ce repo (à lire aussi) |
+| [strategie/](strategie/README.md) | le but, les comptes, comment poster, les liens, la mesure ; `journal.md` (chaque post et ce qu'on en a appris), `todo.md` (ce qu'il reste à mettre en place), `videos.json`, `posthog/` (les requêtes des dashboards) |
+| `src/formats/details/`, `src/formats/agenda/` | les deux formats en cours : moteur, vidéos, README |
+| `src/guide/`, `src/episodes/`, [bible/](bible/README.md) | Le Guide (en réserve) : moteur Vox, épisodes, règles ; `examples/` les meilleurs |
+| `src/keys/`, `src/lesson/` | 30 jours (en pause) |
+| `public/` | ce que les vidéos chargent : `art/`, `voice/`, `music/`, `sfx/`, `guide/` |
+| `scripts/` | `details-export`, `agenda-export`, `voice-*` (voix Gemini), `image-*` (trouver et cadrer les images), `stats-*` et `posthog-*` (les stats), `episode-*` (Le Guide) |
+| `.claude/skills/` | `/details`, `/agenda`, `/contenu` (que faire ensuite), `/bilan` (le point de la semaine), `/video-review`, `/episode` |
+| [IDEAS.md](IDEAS.md) | les idées de vidéos |
+| `library/`, `docs/brand/` | matière brute et identité de la mascotte (Le Guide) |
 
-Not in git (local only): `out/` (full-quality renders, downloaded sources in `out/sources/`), `cache/` (paid voice
-takes and Guide sheets — copy it between machines so a re-run never pays twice), `refs/` (`bash scripts/refs.sh`).
+Pas dans git : `out/` (rendus), `cache/` (prises de voix payées), `refs/` (`bash scripts/refs.sh`).
 
-Remotion needs a company licence for some entities: https://github.com/remotion-dev/remotion/blob/main/LICENSE.md
+Remotion demande une licence entreprise au-delà d'une certaine taille :
+https://github.com/remotion-dev/remotion/blob/main/LICENSE.md

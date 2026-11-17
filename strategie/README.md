@@ -85,23 +85,27 @@ chaque publication, et les inscrits des 48 h qui suivent lui sont attribués.
 Étape suivante possible sur Instagram : « commente SECRET et je t'envoie le lien » (réponse automatique en DM,
 avec ManyChat). Les commentaires font monter le post, et chaque lien est propre au post.
 
-## Les formats (choisis le 2026-11-17)
+## Les formats
 
-| format | quoi | rythme | statut |
-|---|---|---|---|
-| **Détails** | un chef-d'œuvre, 4 détails cachés, la pub de l'app | 2 par semaine | en place (`/details`) |
-| **L'Agenda** | les expos de Paris : ce week-end, ça ferme bientôt, ça ouvre, les événements autour des expos | 1 par semaine, le jeudi soir (+ story le vendredi) | à construire |
-| **Le quiz à niveaux** | « Tu reconnais ce tableau ? Niveau 1 à 10 » | 1 par semaine | à construire |
-| Les must-sees d'un musée | « Les 5 œuvres à ne pas rater au Louvre » | plus tard | idée |
+Chaque format montre une partie de l'app (décidé le 2026-11-17) :
 
-On garde un format qui amène des inscrits (dashboard « Vues par vidéo » + PostHog) ; on revoit après 3 semaines.
+| format | partie de l'app | quoi | rythme | statut |
+|---|---|---|---|---|
+| **Détails** | le Guide | un chef-d'œuvre, 4 détails cachés ; abonne-toi au milieu, la pub de l'app (bêta) à la fin | 2 à 3 par semaine | en place (`/details`) |
+| **L'Agenda** | Explorer | les expos de Paris du week-end, en voix off ; l'onglet Explorer à la fin | 1 à 2 par semaine, le jeudi soir (+ story le vendredi) | en place (`/agenda`), 1er le 20 nov. |
+| **Sorties entre amis** | Profil et amis | à inventer : sortir au musée en groupe, ce que tes potes ont aimé, qui va voir quoi | — | à inventer ensemble |
+| Le Guide (Lorenzo) | — | la mascotte raconte un tableau, collages Vox | — | en réserve (on garde le moteur) |
+| 30 jours pour apprendre l'art | — | une notion par jour | — | en pause |
+| Le quiz à niveaux, les must-sees d'un musée | — | « Tu reconnais ce tableau ? », « Les 5 œuvres à ne pas rater » | — | idées |
+
+On garde un format qui amène des inscrits (dashboards PostHog) ; on revoit après 3 semaines.
 
 ## Les comptes
 
 | compte | plateformes | format | cible | appel à l'action |
 |---|---|---|---|---|
-| Animart (principal) | Instagram, TikTok, YouTube | Détails, Le Guide | ceux qui aiment l'art, les visiteurs de musées | waitlist en bio |
-| L'art en 30 jours | TikTok | 30 jours | les jeunes qui veulent apprendre à regarder | abonne-toi, puis waitlist |
+| Animart (principal) | Instagram, TikTok, YouTube | Détails, L'Agenda | ceux qui aiment l'art, les visiteurs de musées | waitlist en bio |
+| L'art en 30 jours (en pause) | TikTok | 30 jours | les jeunes qui veulent apprendre à regarder | abonne-toi, puis waitlist |
 
 À compléter : les noms exacts des comptes, et qui a les accès. Les comptes Instagram et TikTok doivent être en
 mode **professionnel** (créateur ou entreprise) pour que Metricool lise leurs stats (connectés le 2026-11-16 : Facebook, Instagram, TikTok, YouTube).

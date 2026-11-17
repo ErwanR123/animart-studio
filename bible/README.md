@@ -1,5 +1,8 @@
 # Le Guide (format)
 
+> **En réserve depuis le 2026-11-17** : on ne fait plus de vidéos Guide pour l'instant, mais on garde le moteur
+> (collages Vox, mascotte) pour plus tard. Les formats en cours sont Détails et L'Agenda (voir `README.md`).
+
 Short videos about paintings (9:16, 1080×1920, 30 fps, about 40 s, never a minute) for TikTok / Reels / Shorts, in French. The format
 is **"Le Guide"**: the Guide (our cartoon mascot) tells the story from the bottom of the frame, his words in a paper
 bubble beside him, while the top shows the painting (pencil loops, notes, spotlights on his words) and Vox-style
