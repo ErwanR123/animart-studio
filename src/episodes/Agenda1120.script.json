@@ -1,46 +1,42 @@
 {
   "voice": "Achird",
-  "style": "A young Parisian in their twenties sending a voice note to a friend about what to do this weekend, in French. Relaxed, smiling, natural, like talking not reading; no announcer tone, no advertising voice, no dramatic emphasis. A slight playful beat on the surprising bits.",
+  "style": "A young Parisian in their twenties sending a casual voice note to a friend, in French. Completely natural and unperformed, like actually talking: relaxed, a bit of a smile, normal everyday pace, no announcer tone, no advertising voice, no emphasis on every word, no theatrical pauses.",
   "segments": [
     {
       "id": "hook",
-      "text": "Ce week-end à Paris, il y a une expo qui se visite dans les égouts. À la lampe à carbure."
+      "text": "Tu sais pas quoi faire ce week-end ? Bouge pas, j'ai fait le tri dans les expos à Paris."
     },
     {
-      "id": "lock",
-      "text": "Je te la garde pour la fin. Avant, cinq autres, dont une qui ferme dimanche."
+      "id": "weekly",
+      "text": "Et chaque jeudi, je te poste celles de la semaine."
     },
     {
       "id": "louvre",
-      "text": "Au Louvre, une expo photo… sur le Louvre. Plus de trois cents photos. Et il y a un concours : ta photo peut finir accrochée dedans."
+      "text": "Au Louvre, une expo sur le Louvre… en photos. Plus de trois cents, des toutes premières à aujourd'hui."
     },
     {
       "id": "orsay",
-      "text": "À Orsay, Mary Cassatt. Degas l'a fait entrer chez les impressionnistes, et c'est la seule Américaine à avoir exposé avec eux."
-    },
-    {
-      "id": "rehook",
-      "text": "La suivante, c'est l'histoire d'un viticulteur de Béziers."
+      "text": "À Orsay, Mary Cassatt : la seule Américaine qui a exposé avec les impressionnistes."
     },
     {
       "id": "fayet",
-      "text": "Gustave Fayet. Il avait dix Van Gogh et soixante-dix-huit Gauguin. Sa collection est à la Fondation Vuitton."
+      "text": "À la Fondation Vuitton, la collection de Gustave Fayet. Il avait dix Van Gogh et soixante-dix-huit Gauguin chez lui."
     },
     {
       "id": "moreau",
-      "text": "Dans la maison-musée de Gustave Moreau, un peintre d'aujourd'hui, Ali Banisadr, expose au milieu de ses tableaux."
+      "text": "Au musée Gustave Moreau, le peintre Ali Banisadr expose au milieu des toiles de Moreau."
     },
     {
       "id": "c104",
-      "text": "Au 104, l'expo de Walid Raad est gratuite. Mais elle ferme dimanche."
+      "text": "Au 104, Walid Raad. C'est gratuit, mais c'est le dernier week-end."
     },
     {
       "id": "egouts",
-      "text": "Et donc, les égouts. Dès vendredi soir, le musée des égouts se visite à la lampe à carbure."
+      "text": "Et pour un truc différent : dès vendredi, le musée des égouts se visite le soir, à la lampe à carbure."
     },
     {
       "id": "cta",
-      "text": "Enregistre la vidéo pour ce week-end. Et un nouvel agenda chaque jeudi."
+      "text": "Toutes ces expos, et toutes les prochaines, tu les retrouveras dans l'app Animart. Elle sort bientôt : inscris-toi, le lien est en bio."
     }
   ]
 }

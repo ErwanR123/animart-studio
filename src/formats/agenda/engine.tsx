@@ -6,6 +6,7 @@ import React from "react";
 import { Audio } from "@remotion/media";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { inter } from "../details/fonts";
+import { ExplorePhone } from "./explore";
 import type { AgendaReel, VoiceJson } from "./types";
 
 export const FPS = 30;
@@ -15,7 +16,7 @@ const TEXT_BOTTOM = 300; // the caption's bottom edge, px above the frame's bott
 const RIGHT = 170; // the like / comment / share column
 const LEFT = 60;
 
-type Shot = { src: string; pos: string; from: number; to: number };
+type Shot = { src: string; pos: string; from: number; to: number; phone?: { from: number; to: number } };
 type Caption = { text: string; from: number; to: number };
 type Label = { title: string; info: string; from: number; to: number };
 
@@ -75,7 +76,8 @@ export function createAgendaReel(r: AgendaReel, voice: VoiceJson) {
       }
       return s.start + ((to - s.start) * k) / seg.images.length;
     });
-    seg.images.forEach((img, k) => shots.push({ src: img.src, pos: img.pos ?? "center", from: starts[k], to: starts[k + 1] ?? to }));
+    const phone = seg.phone ? { from: s.start, to } : undefined;
+    seg.images.forEach((img, k) => shots.push({ src: img.src, pos: img.pos ?? "center", from: starts[k], to: starts[k + 1] ?? to, phone }));
     if (seg.label) {
       const prev = labels[labels.length - 1];
       if (prev && prev.title === seg.label.title) prev.to = to;
@@ -94,7 +96,12 @@ export function createAgendaReel(r: AgendaReel, voice: VoiceJson) {
     const zoom = interpolate(t, [shot.from, shot.to], [1.0, 1.07], { extrapolateRight: "clamp" });
     return (
       <AbsoluteFill style={{ background: "#000", fontFamily: inter }}>
-        <Img src={staticFile(shot.src)} style={{ position: "absolute", inset: 0, width: W, height: H, objectFit: "cover", objectPosition: shot.pos, transform: `scale(${zoom})` }} />
+        <Img src={staticFile(shot.src)} style={{ position: "absolute", inset: 0, width: W, height: H, objectFit: "cover", objectPosition: shot.pos, transform: `scale(${zoom})`, filter: shot.phone ? "brightness(0.45)" : undefined }} />
+        {shot.phone && r.explore && (
+          <div style={{ position: "absolute", left: 0, right: 0, top: 170, display: "flex", justifyContent: "center" }}>
+            <ExplorePhone items={r.explore} f={f - Math.round(shot.phone.from * FPS)} dur={Math.round((shot.phone.to - shot.phone.from) * FPS)} width={560} />
+          </div>
+        )}
         {label && (
           <div style={{ position: "absolute", left: LEFT, right: RIGHT, bottom: TEXT_BOTTOM + 330, display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
             <Box size={44} weight={800}>{label.title}</Box>
