@@ -21,9 +21,9 @@ const INSET_AT = 40;
 /** The last frames glide back to the opening framing. */
 const LOOP = 14;
 /** Extra frames the ending ad keeps its buttons on screen. */
-const AD_HOLD = 30;
+const AD_HOLD = 45;
 /** The row of portraits (a detail's `faces`): top edge, each one's size, the delay between two. */
-const FACES = { top: 355, w: 128, h: 156, every: 7 };
+const FACES = { top: 245, w: 104, h: 128, every: 7 };
 /** The hand-drawn circles (a detail's `marks`): first one drawn this long after the text, then one every `every`. */
 const MARK = { at: 26, draw: 14, every: 45 };
 
@@ -200,17 +200,22 @@ export function createDetailsReel(r: DetailsReel) {
     const out = adLast ? interpolate(f, [adLen - 2, adLen + LOOP - 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
       : spring({ frame: f - (T.ad - 16), fps, config: { damping: 20, stiffness: 160 } });
     const p = Math.max(0, inn - out);
-    const follow = spring({ frame: f - AD.cta - 8, fps, config: { damping: 12, stiffness: 160 } });
+    const follow = spring({ frame: f - AD.cta - 26, fps, config: { damping: 12, stiffness: 160 } });
     const buzz = f >= AD.recog && f < AD.recog + 9 ? Math.sin((f - AD.recog) * 2.6) * 7 : 0;
     const cta = spring({ frame: f - AD.cta, fps, config: { damping: 13, stiffness: 150 } });
     const line1 = interpolate(f, [4, 10, AD.open - 5, AD.open], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-    const line2 = interpolate(f, [AD.open, AD.open + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    // As the ending, the top line turns to the account's promise when the follow button comes: the follow is about
+    // the videos, the waitlist about the app.
+    const FOLLOW_AT = AD.cta + 20;
+    const line2 = interpolate(f, adLast ? [AD.open, AD.open + 6, FOLLOW_AT - 6, FOLLOW_AT] : [AD.open, AD.open + 6], adLast ? [0, 1, 1, 0] : [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const line3 = adLast ? interpolate(f, [FOLLOW_AT, FOLLOW_AT + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
     const ps = adLast ? 0.78 : 0.86;
     const txt: React.CSSProperties = { position: "absolute", left: 64, right: 64, top: 390, fontSize: 60, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" };
     return (
       <>
         <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.7) 100%)", opacity: p }} />
         <div style={{ ...txt, opacity: line1 * p }}>Au musée, scanne un tableau…</div>
+        {adLast && <div style={{ ...txt, fontSize: 54, opacity: line3 * p }}>{end.promise}</div>}
         <div style={{ ...txt, opacity: line2 * p }}>…et Animart te raconte ses secrets.<div style={{ fontSize: 36, fontWeight: 600, color: "#EAD9BF", marginTop: 14, letterSpacing: "-0.01em" }}>Gratuit.</div></div>
         <div style={{ position: "absolute", left: (W - 470 * ps) / 2, top: adLast ? 560 : 590, transformOrigin: "top left",
           transform: `translate(${buzz}px, ${(1 - p) * 1400}px) scale(${ps}) rotate(${(1 - p) * 8 - 1.5}deg)` }}>
@@ -222,14 +227,18 @@ export function createDetailsReel(r: DetailsReel) {
         {adLast && (
           <div style={{ position: "absolute", left: 0, right: 0, bottom: TEXT_BOTTOM + 132, display: "flex", justifyContent: "center", opacity: follow * p, transform: `scale(${0.8 + 0.2 * follow})` }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12, background: "rgba(0,0,0,0.55)", border: "3px solid #fff", color: "#fff", fontSize: 36, fontWeight: 700, padding: "16px 40px", borderRadius: 999, letterSpacing: "-0.02em" }}>
-              <span style={{ fontSize: 42, lineHeight: 1, marginTop: -4 }}>+</span>Abonne-toi pour la suite</div>
+              <span style={{ fontSize: 42, lineHeight: 1, marginTop: -4 }}>+</span>{end.followSoon}</div>
           </div>
         )}
       </>
     );
   };
 
-  const end = { lines: ["Un chef-d'œuvre.", "Ses secrets.", "Tous les jours."], follow: "Abonne-toi", sub: "L'app arrive bientôt · waitlist en bio", ...r.end };
+  const end = { lines: ["Un chef-d'œuvre.", "Ses secrets.", "Tous les jours."], follow: "Abonne-toi", sub: "L'app arrive bientôt · waitlist en bio",
+    promise: "Chaque jour, je te partage les secrets des plus grands chefs-d'œuvre.", followSoon: "Abonne-toi pour la suite", ...r.end };
+
+  // The progress squares step aside while a row of portraits takes their place.
+  const facesOn = (f: number) => r.details.some((d, i) => d.faces && f >= arrive[i] + INSET_AT - 6 && f < arrive[i] + T.dwell);
 
   const Component: React.FC = () => {
     const f = useCurrentFrame();
@@ -267,7 +276,7 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 30, color: "rgba(255,255,255,0.7)", marginTop: 26 }}>{end.sub}</div>
         </div>}
 
-        {f >= arrive[0] && f < total - LOOP && <Tracker f={f} left={interpolate(f, [adAt + 8, adAt + 18, adAt + adLen - 12, adAt + adLen], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
+        {f >= arrive[0] && f < total - LOOP && !facesOn(f) && <Tracker f={f} left={interpolate(f, [adAt + 8, adAt + 18, adAt + adLen - 12, adAt + adLen], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
       </AbsoluteFill>
     );
   };
