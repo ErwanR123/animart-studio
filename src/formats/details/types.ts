@@ -11,6 +11,8 @@ export type Detail = {
   title: string;
   /** Small line under it: why, ≤ 25 words. */
   text: string;
+  /** Another work the text names: it pops in small a second after the text, with its label. */
+  inset?: { image: string; size: [number, number]; title: string; artist: string };
 };
 
 export type DetailsReel = {

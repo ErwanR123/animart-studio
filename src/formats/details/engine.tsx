@@ -11,9 +11,13 @@ export const W = 1080, H = 1920, FPS = 30;
 /** Text blocks end this far above the bottom: just above the platform's account name and caption. */
 export const TEXT_BOTTOM = 380;
 /** Frames: first shot (hook), camera move, dwell on a detail (time to read), ad, move back, end screen. */
-const T = { hook: 40, travel: 30, dwell: 165, ad: 200, back: 36, end: 120 };
+const T = { hook: 66, travel: 30, dwell: 165, ad: 126, back: 36, end: 120 };
 /** In the ad (frames from its start): the work recognised, its story opens, the waitlist button. */
-const AD = { recog: 22, open: 44, cta: 78 };
+const AD = { recog: 12, open: 30, cta: 54 };
+/** A named work pops in this long after the detail's text. */
+const INSET_AT = 40;
+/** The last frames glide back to the opening framing. */
+const LOOP = 14;
 
 type Cam = { cx: number; cy: number; wf: number; fy: number };
 
@@ -36,18 +40,19 @@ export function createDetailsReel(r: DetailsReel) {
   // Camera keys: (cx, cy) is the painting point shown at screen height fy; wf the share of its width on screen.
   const WHOLE: Cam = { cx: 0.5, cy: 0.5, wf: 1, fy: 860 };
   const END_CAM: Cam = { ...WHOLE, fy: 700 }; // painting higher: room for the end text
-  const keys: [number, Cam][] = [[0, WHOLE], [T.hook, { ...WHOLE, wf: 0.94 }]];
+  // [frame, camera, eased move to the next key (else a slow linear push)]
+  const keys: [number, Cam, boolean][] = [[0, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]];
   r.details.forEach((d, i) => {
     const stay = T.dwell + (i === adIdx ? T.ad : 0);
-    keys.push([arrive[i], { cx: d.cx, cy: d.cy, wf: d.wf, fy: 0.4 * H }]);
-    keys.push([arrive[i] + stay, { cx: d.cx, cy: d.cy, wf: d.wf * (i === adIdx ? 0.86 : 0.93), fy: 0.4 * H }]);
+    keys.push([arrive[i], { cx: d.cx, cy: d.cy, wf: d.wf, fy: 0.4 * H }, false]);
+    keys.push([arrive[i] + stay, { cx: d.cx, cy: d.cy, wf: d.wf * (i === adIdx ? 0.86 : 0.93), fy: 0.4 * H }, true]);
   });
-  keys.push([leaveLast + T.back, END_CAM], [total, { ...END_CAM, wf: 0.95 }]);
+  // The end ends on the first frame's framing, so the replay follows on without a jump.
+  keys.push([leaveLast + T.back, END_CAM, false], [total - LOOP, { ...END_CAM, wf: 0.97 }, true], [total, WHOLE, false]);
   const camAt = (f: number): Cam => {
     let k = 0;
     while (k < keys.length - 2 && f >= keys[k + 1][0]) k++;
-    const [f0, a] = keys[k], [f1, b] = keys[k + 1];
-    const moving = k % 2 === 1 || k === keys.length - 3; // odd segments are the moves between dwells
+    const [f0, a, moving] = keys[k], [f1, b] = keys[k + 1];
     const u = interpolate(f, [f0, f1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: moving ? Easing.inOut(Easing.cubic) : Easing.linear });
     return { cx: a.cx + (b.cx - a.cx) * u, cy: a.cy + (b.cy - a.cy) * u, wf: Math.exp(Math.log(a.wf) + (Math.log(b.wf) - Math.log(a.wf)) * u), fy: a.fy + (b.fy - a.fy) * u };
   };
@@ -61,11 +66,11 @@ export function createDetailsReel(r: DetailsReel) {
   };
 
   // Progress: one square per detail, like the app's grid cells, filled with its detail when the camera arrives.
-  const Tracker: React.FC<{ f: number; hide: number }> = ({ f, hide }) => {
+  const Tracker: React.FC<{ f: number; left: number }> = ({ f, left }) => {
     const { fps } = useVideoConfig();
     const S = 92;
     return (
-      <div style={{ position: "absolute", left: 64, top: 250, display: "flex", gap: 14, opacity: 1 - hide }}>
+      <div style={{ position: "absolute", left: 64, top: 250, display: "flex", gap: 14, alignItems: "center" }}>
         {r.details.map((d, i) => {
           const k = spring({ frame: f - arrive[i] - 12, fps, config: { damping: 11, stiffness: 170 } });
           const w = d.wf * 0.55, hf = w * AR;
@@ -80,6 +85,27 @@ export function createDetailsReel(r: DetailsReel) {
             </div>
           );
         })}
+        {/* During the ad: the video is not over */}
+        <div style={{ marginLeft: 14, fontSize: 34, fontWeight: 600, letterSpacing: "-0.02em", opacity: left, transform: `translateX(${(1 - left) * -16}px)`,
+          textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>Encore {r.details.length - r.ad.afterDetail} détails 👇</div>
+      </div>
+    );
+  };
+
+  // A work the text names, small, with its label: pops in a second after the text.
+  const Inset: React.FC<{ d: Detail; f: number; hide: number }> = ({ d, f, hide }) => {
+    const { fps } = useVideoConfig();
+    if (!d.inset) return null;
+    const k = spring({ frame: f - INSET_AT, fps, config: { damping: 12, stiffness: 180 } });
+    const h = 230, w = (h * d.inset.size[0]) / d.inset.size[1];
+    return (
+      <div style={{ display: "flex", alignItems: "flex-end", gap: 22, marginBottom: 30, opacity: Math.min(1, k * 1.4) * (1 - hide),
+        transform: `scale(${0.7 + 0.3 * k})`, transformOrigin: "bottom left" }}>
+        <Img src={staticFile(d.inset.image)} style={{ width: w, height: h, borderRadius: 8, border: "4px solid #fff", boxShadow: "0 8px 28px rgba(0,0,0,0.55)" }} />
+        <div style={{ paddingBottom: 6 }}>
+          <div style={{ fontSize: 30, fontWeight: 700, lineHeight: 1.1, letterSpacing: "-0.02em", maxWidth: 420 }}>{d.inset.title}</div>
+          <div style={{ fontSize: 26, color: "rgba(255,255,255,0.72)", marginTop: 6 }}>{d.inset.artist}</div>
+        </div>
       </div>
     );
   };
@@ -92,6 +118,7 @@ export function createDetailsReel(r: DetailsReel) {
       <>
         <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 72%, rgba(0,0,0,0.9) 100%)", opacity: 1 - hide * 0.6 }} />
         <div style={{ position: "absolute", left: 64, right: 150, bottom: TEXT_BOTTOM }}>
+          <Inset d={d} f={f} hide={hide} />
           <div style={{ opacity: o, fontSize: 66, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" }}>{d.title}</div>
           <div style={{ opacity: o2, fontSize: 36, lineHeight: 1.32, color: "rgba(255,255,255,0.8)", marginTop: 22, letterSpacing: "-0.01em" }}>{d.text}</div>
         </div>
@@ -109,14 +136,14 @@ export function createDetailsReel(r: DetailsReel) {
     const cta = spring({ frame: f - AD.cta, fps, config: { damping: 13, stiffness: 150 } });
     const line1 = interpolate(f, [6, 14, AD.open - 6, AD.open], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const line2 = interpolate(f, [AD.open, AD.open + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-    const txt: React.CSSProperties = { position: "absolute", left: 64, right: 64, top: 300, fontSize: 60, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" };
+    const txt: React.CSSProperties = { position: "absolute", left: 64, right: 64, top: 390, fontSize: 60, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" };
     return (
       <>
         <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.7) 100%)", opacity: p }} />
         <div style={{ ...txt, opacity: line1 * p }}>Au musée, tu scannes le tableau…</div>
         <div style={{ ...txt, opacity: line2 * p }}>…et Animart te raconte ses secrets.<div style={{ fontSize: 36, fontWeight: 600, color: "#EAD9BF", marginTop: 14, letterSpacing: "-0.01em" }}>Gratuit.</div></div>
-        <div style={{ position: "absolute", left: (W - 470 * 0.95) / 2, top: 480, transformOrigin: "top left",
-          transform: `translate(${buzz}px, ${(1 - p) * 1400}px) scale(0.95) rotate(${(1 - p) * 8 - 1.5}deg)` }}>
+        <div style={{ position: "absolute", left: (W - 470 * 0.86) / 2, top: 590, transformOrigin: "top left",
+          transform: `translate(${buzz}px, ${(1 - p) * 1400}px) scale(0.86) rotate(${(1 - p) * 8 - 1.5}deg)` }}>
           <Phone r={r} img={img} f={f} recog={AD.recog} open={AD.open} />
         </div>
         <div style={{ position: "absolute", left: 0, right: 0, bottom: TEXT_BOTTOM, display: "flex", justifyContent: "center", opacity: cta * p, transform: `translateY(${(1 - cta) * 60}px)` }}>
@@ -131,7 +158,7 @@ export function createDetailsReel(r: DetailsReel) {
   const Component: React.FC = () => {
     const f = useCurrentFrame();
     const hookOut = interpolate(f, [T.hook - 6, T.hook + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-    const endIn = interpolate(f, [leaveLast + T.back - 4, leaveLast + T.back + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const endIn = interpolate(f, [leaveLast + T.back - 4, leaveLast + T.back + 8, total - LOOP, total - 2], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const follow = spring({ frame: f - (leaveLast + T.back + 14), fps: FPS, config: { damping: 12, stiffness: 160 } });
     return (
       <AbsoluteFill style={{ background: "#17110E", color: "#fff", fontFamily: inter }}>
@@ -142,7 +169,7 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 46, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1.1 }}>{r.work.title}</div>
           <div style={{ fontSize: 34, fontWeight: 500, color: "rgba(255,255,255,0.7)", marginTop: 8 }}>{r.work.artist} · {r.work.date}</div>
         </div>
-        <div style={{ position: "absolute", left: 64, right: 64, bottom: TEXT_BOTTOM, fontSize: 82, fontWeight: 700, lineHeight: 1.02, letterSpacing: "-0.045em", opacity: hookOut }}>{r.hook}</div>
+        <div style={{ position: "absolute", left: 64, right: 64, bottom: TEXT_BOTTOM, fontSize: 72, fontWeight: 700, lineHeight: 1.04, letterSpacing: "-0.04em", textWrap: "balance", opacity: hookOut }}>{r.hook}</div>
 
         {r.details.map((d, i) => {
           const stay = T.dwell + (i === adIdx ? T.ad : 0);
@@ -164,7 +191,7 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 30, color: "rgba(255,255,255,0.7)", marginTop: 26 }}>{end.sub}</div>
         </div>
 
-        {f >= arrive[0] && <Tracker f={f} hide={interpolate(f, [adAt, adAt + 10, adAt + T.ad - 10, adAt + T.ad], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
+        {f >= arrive[0] && f < total - LOOP && <Tracker f={f} left={interpolate(f, [adAt + 8, adAt + 18, adAt + T.ad - 12, adAt + T.ad], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
       </AbsoluteFill>
     );
   };

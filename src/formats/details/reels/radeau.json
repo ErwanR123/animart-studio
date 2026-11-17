@@ -1,0 +1,68 @@
+{
+  "id": "DetailsRadeau",
+  "image": "art/radeau/radeau.jpg",
+  "imageSize": [3840, 2609],
+  "imageSource": "Wikimedia Commons, « Théodore Géricault - The Raft of the Medusa - WGA08630.jpg » (public domain)",
+  "work": {
+    "title": "Le Radeau de la Méduse",
+    "artist": "Théodore Géricault",
+    "date": "1818–1819",
+    "museum": "Louvre",
+    "room": "Aile Denon, salle 700 (salle Mollien)"
+  },
+  "hook": "Ce tableau cache un cannibale, un peintre célèbre… et un bateau qui les abandonne.",
+  "details": [
+    {
+      "cx": 0.475, "cy": 0.80, "wf": 0.13,
+      "title": "Ce mort au premier plan ? C'est Delacroix.",
+      "text": "Il a 20 ans et pose pour son ami Géricault. Douze ans plus tard, c'est lui qui peindra La Liberté guidant le peuple.",
+      "inset": { "image": "art/radeau/liberte.jpg", "size": [900, 720], "title": "La Liberté guidant le peuple", "artist": "Eugène Delacroix · 1830" }
+    },
+    {
+      "cx": 0.30, "cy": 0.66, "wf": 0.22,
+      "title": "Ce père refuse de lâcher son fils mort.",
+      "text": "Géricault lui donne la pose d'Ugolin, qui chez Dante dévore ses enfants. Parce que sur le vrai radeau, ils ont mangé leurs morts.",
+      "inset": { "image": "art/radeau/fuseli-ugolino.jpg", "size": [736, 900], "title": "Ugolin et ses fils", "artist": "Johann Heinrich Füssli · 1806" }
+    },
+    {
+      "cx": 0.811, "cy": 0.397, "wf": 0.075,
+      "title": "Ce minuscule point, c'est leur seul espoir.",
+      "text": "Le bateau des secours. Ils hurlent, agitent leurs chemises… il ne les voit pas et s'en va. Il reviendra deux heures plus tard."
+    },
+    {
+      "cx": 0.42, "cy": 0.48, "wf": 0.20,
+      "title": "Et ce tableau est en train de mourir.",
+      "text": "Géricault a peint avec du bitume, qui noircit et se fripe avec le temps. Des morceaux entiers ont déjà disparu dans le noir."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": { "ground": "#4E3F2B", "deep": "#120D09", "accent": "#E9C88F" },
+    "found": "6/24",
+    "anecdotes": 4,
+    "script": [
+      "Juillet 1816 : la frégate Méduse s'échoue au large du Sénégal.",
+      "Environ cent cinquante personnes s'entassent sur un radeau.",
+      "Les canots censés le remorquer l'abandonnent en pleine mer.",
+      "L'affaire devient un scandale politique.",
+      "Géricault interroge deux survivants.",
+      "Il construit une maquette du radeau dans son atelier.",
+      "Il dessine des cadavres à la morgue de l'hôpital Beaujon.",
+      "La toile fait cinq mètres sur sept.",
+      "Au premier plan, les corps sont plus grands que nature."
+    ]
+  },
+  "post": {
+    "caption": "4 détails du Radeau de la Méduse que presque personne ne remarque au Louvre 👀 Tu l'avais vu, le bateau ?",
+    "hashtags": ["louvre", "radeaudelameduse", "gericault", "art", "paris"],
+    "youtubeTitle": "4 détails cachés dans Le Radeau de la Méduse (Louvre) #shorts",
+    "youtubeTags": ["radeau de la méduse", "géricault", "théodore géricault", "delacroix", "louvre", "musée du louvre", "histoire de l'art", "art", "peinture", "tableau", "détails cachés", "secrets tableau", "culture générale", "naufrage", "paris", "raft of the medusa", "louvre museum", "art history", "shorts"]
+  },
+  "sources": [
+    "Delacroix pose pour la figure du premier plan, face vers le bas, un bras tendu : https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa (Execution)",
+    "Le vieil homme et son fils mort, référence à Ugolin d'après Füssli (1806), cannibalisme sur le radeau : même article (Influences ; Background)",
+    "L'Argus passe sans les voir, revient deux heures plus tard ; 13 jours, 15 survivants : même article (Composition)",
+    "Bitume qui noircit et se ride, irréparable : même article (Execution)",
+    "Salle 700 (Mollien), avec La Liberté guidant le peuple ; morgue Beaujon ; dimensions : content/selection/louvre-*.json (Animart, non relu)"
+  ]
+}
