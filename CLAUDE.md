@@ -49,6 +49,8 @@ bash scripts/episode-master.sh <Ep>           # a Guide episode ready to post
 
 ## Rules for every format
 
+- **Write and check every script against [bible/viral.md](bible/viral.md)**: hook, lock-in zone, re-hooks, payoff
+  answering the hook, CTA with a gift. It sums up 10 Reels on what makes videos spread (sources in `refs/reels/`).
 - **Never judge from code. Render and look**, and listen. A change is done when it was seen in a frame.
 - **9:16, 1080×1920, 30 fps, ~40 s.** Text sits low, its bottom ~300 px above the frame's bottom (just above the
   account name); nothing in the top 220 px; the right margin stays clear of the platform's buttons.

@@ -1,0 +1,1053 @@
+{
+ "voice": "gemini:gemini-3.8-flash-tts",
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 4.234014
+  },
+  {
+   "id": "lock",
+   "start": 4.584014,
+   "end": 8.01839
+  },
+  {
+   "id": "louvre",
+   "start": 8.36839,
+   "end": 15.089025
+  },
+  {
+   "id": "orsay",
+   "start": 15.439025,
+   "end": 21.533288000000002
+  },
+  {
+   "id": "rehook",
+   "start": 21.883288,
+   "end": 24.576168
+  },
+  {
+   "id": "fayet",
+   "start": 24.926168,
+   "end": 30.668005
+  },
+  {
+   "id": "moreau",
+   "start": 31.018005000000002,
+   "end": 36.290341000000005
+  },
+  {
+   "id": "c104",
+   "start": 36.640341,
+   "end": 40.152223
+  },
+  {
+   "id": "egouts",
+   "start": 40.502223,
+   "end": 45.135352
+  },
+  {
+   "id": "cta",
+   "start": 45.485352,
+   "end": 48.360454
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.0,
+   "end": 0.14,
+   "segment": "hook"
+  },
+  {
+   "text": "week-end",
+   "start": 0.14,
+   "end": 0.38,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 0.38,
+   "end": 0.48,
+   "segment": "hook"
+  },
+  {
+   "text": "Paris,",
+   "start": 0.48,
+   "end": 0.68,
+   "segment": "hook"
+  },
+  {
+   "text": "il",
+   "start": 0.94,
+   "end": 1.02,
+   "segment": "hook"
+  },
+  {
+   "text": "y",
+   "start": 1.02,
+   "end": 1.02,
+   "segment": "hook"
+  },
+  {
+   "text": "a",
+   "start": 1.02,
+   "end": 1.06,
+   "segment": "hook"
+  },
+  {
+   "text": "une",
+   "start": 1.06,
+   "end": 1.14,
+   "segment": "hook"
+  },
+  {
+   "text": "expo",
+   "start": 1.14,
+   "end": 1.48,
+   "segment": "hook"
+  },
+  {
+   "text": "qui",
+   "start": 1.48,
+   "end": 1.6,
+   "segment": "hook"
+  },
+  {
+   "text": "se",
+   "start": 1.6,
+   "end": 1.68,
+   "segment": "hook"
+  },
+  {
+   "text": "visite",
+   "start": 1.68,
+   "end": 2.04,
+   "segment": "hook"
+  },
+  {
+   "text": "dans",
+   "start": 2.04,
+   "end": 2.28,
+   "segment": "hook"
+  },
+  {
+   "text": "les",
+   "start": 2.28,
+   "end": 2.4,
+   "segment": "hook"
+  },
+  {
+   "text": "égouts.",
+   "start": 2.4,
+   "end": 2.72,
+   "segment": "hook"
+  },
+  {
+   "text": "À",
+   "start": 3.1,
+   "end": 3.42,
+   "segment": "hook"
+  },
+  {
+   "text": "la",
+   "start": 3.42,
+   "end": 3.5,
+   "segment": "hook"
+  },
+  {
+   "text": "lampe",
+   "start": 3.5,
+   "end": 3.74,
+   "segment": "hook"
+  },
+  {
+   "text": "à",
+   "start": 3.74,
+   "end": 3.8,
+   "segment": "hook"
+  },
+  {
+   "text": "carbure.",
+   "start": 3.8,
+   "end": 4.1,
+   "segment": "hook"
+  },
+  {
+   "text": "Je",
+   "start": 4.584014,
+   "end": 4.944014,
+   "segment": "lock"
+  },
+  {
+   "text": "te",
+   "start": 4.944014,
+   "end": 5.024014,
+   "segment": "lock"
+  },
+  {
+   "text": "la",
+   "start": 5.024014,
+   "end": 5.124014,
+   "segment": "lock"
+  },
+  {
+   "text": "garde",
+   "start": 5.124014,
+   "end": 5.2640139999999995,
+   "segment": "lock"
+  },
+  {
+   "text": "pour",
+   "start": 5.2640139999999995,
+   "end": 5.384014,
+   "segment": "lock"
+  },
+  {
+   "text": "la",
+   "start": 5.384014,
+   "end": 5.484014,
+   "segment": "lock"
+  },
+  {
+   "text": "fin.",
+   "start": 5.484014,
+   "end": 5.624014,
+   "segment": "lock"
+  },
+  {
+   "text": "Avant,",
+   "start": 6.144014,
+   "end": 6.204014,
+   "segment": "lock"
+  },
+  {
+   "text": "cinq",
+   "start": 6.204014,
+   "end": 6.624014,
+   "segment": "lock"
+  },
+  {
+   "text": "autres,",
+   "start": 6.624014,
+   "end": 6.904014,
+   "segment": "lock"
+  },
+  {
+   "text": "dont",
+   "start": 6.904014,
+   "end": 7.104013999999999,
+   "segment": "lock"
+  },
+  {
+   "text": "une",
+   "start": 7.104013999999999,
+   "end": 7.284014,
+   "segment": "lock"
+  },
+  {
+   "text": "qui",
+   "start": 7.284014,
+   "end": 7.384014,
+   "segment": "lock"
+  },
+  {
+   "text": "ferme",
+   "start": 7.384014,
+   "end": 7.604013999999999,
+   "segment": "lock"
+  },
+  {
+   "text": "dimanche.",
+   "start": 7.604013999999999,
+   "end": 7.864013999999999,
+   "segment": "lock"
+  },
+  {
+   "text": "Au",
+   "start": 8.36839,
+   "end": 8.50839,
+   "segment": "louvre"
+  },
+  {
+   "text": "Louvre,",
+   "start": 8.50839,
+   "end": 8.76839,
+   "segment": "louvre"
+  },
+  {
+   "text": "une",
+   "start": 8.988389999999999,
+   "end": 9.18839,
+   "segment": "louvre"
+  },
+  {
+   "text": "expo",
+   "start": 9.18839,
+   "end": 9.488389999999999,
+   "segment": "louvre"
+  },
+  {
+   "text": "photo…",
+   "start": 9.488389999999999,
+   "end": 9.74839,
+   "segment": "louvre"
+  },
+  {
+   "text": "sur",
+   "start": 9.74839,
+   "end": 10.40839,
+   "segment": "louvre"
+  },
+  {
+   "text": "le",
+   "start": 10.40839,
+   "end": 10.52839,
+   "segment": "louvre"
+  },
+  {
+   "text": "Louvre.",
+   "start": 10.52839,
+   "end": 10.80839,
+   "segment": "louvre"
+  },
+  {
+   "text": "Plus",
+   "start": 11.10839,
+   "end": 11.30839,
+   "segment": "louvre"
+  },
+  {
+   "text": "de",
+   "start": 11.30839,
+   "end": 11.44839,
+   "segment": "louvre"
+  },
+  {
+   "text": "trois",
+   "start": 11.44839,
+   "end": 11.69839,
+   "segment": "louvre"
+  },
+  {
+   "text": "cents",
+   "start": 11.69839,
+   "end": 11.78839,
+   "segment": "louvre"
+  },
+  {
+   "text": "photos.",
+   "start": 11.78839,
+   "end": 12.10839,
+   "segment": "louvre"
+  },
+  {
+   "text": "Et",
+   "start": 12.668389999999999,
+   "end": 12.80839,
+   "segment": "louvre"
+  },
+  {
+   "text": "il",
+   "start": 12.80839,
+   "end": 12.90839,
+   "segment": "louvre"
+  },
+  {
+   "text": "y",
+   "start": 12.90839,
+   "end": 12.90839,
+   "segment": "louvre"
+  },
+  {
+   "text": "a",
+   "start": 12.90839,
+   "end": 12.988389999999999,
+   "segment": "louvre"
+  },
+  {
+   "text": "un",
+   "start": 12.988389999999999,
+   "end": 13.04839,
+   "segment": "louvre"
+  },
+  {
+   "text": "concours",
+   "start": 13.04839,
+   "end": 13.34839,
+   "segment": "louvre"
+  },
+  {
+   "text": ":",
+   "start": 13.34839,
+   "end": 13.58839,
+   "segment": "louvre"
+  },
+  {
+   "text": "ta",
+   "start": 13.58839,
+   "end": 13.68839,
+   "segment": "louvre"
+  },
+  {
+   "text": "photo",
+   "start": 13.68839,
+   "end": 13.90839,
+   "segment": "louvre"
+  },
+  {
+   "text": "peut",
+   "start": 13.90839,
+   "end": 14.08839,
+   "segment": "louvre"
+  },
+  {
+   "text": "finir",
+   "start": 14.08839,
+   "end": 14.38839,
+   "segment": "louvre"
+  },
+  {
+   "text": "accrochée",
+   "start": 14.38839,
+   "end": 14.78839,
+   "segment": "louvre"
+  },
+  {
+   "text": "dedans.",
+   "start": 14.78839,
+   "end": 14.92839,
+   "segment": "louvre"
+  },
+  {
+   "text": "À",
+   "start": 15.439025,
+   "end": 15.689025,
+   "segment": "orsay"
+  },
+  {
+   "text": "Orsay,",
+   "start": 15.839025000000001,
+   "end": 16.199025000000002,
+   "segment": "orsay"
+  },
+  {
+   "text": "Mary",
+   "start": 16.699025000000002,
+   "end": 17.039025000000002,
+   "segment": "orsay"
+  },
+  {
+   "text": "Cassatt.",
+   "start": 17.039025000000002,
+   "end": 17.479025,
+   "segment": "orsay"
+  },
+  {
+   "text": "Degas",
+   "start": 17.879025000000002,
+   "end": 18.359025000000003,
+   "segment": "orsay"
+  },
+  {
+   "text": "l'a",
+   "start": 18.099025,
+   "end": 18.439025,
+   "segment": "orsay"
+  },
+  {
+   "text": "fait",
+   "start": 18.439025,
+   "end": 18.559025000000002,
+   "segment": "orsay"
+  },
+  {
+   "text": "entrer",
+   "start": 18.559025000000002,
+   "end": 18.859025000000003,
+   "segment": "orsay"
+  },
+  {
+   "text": "chez",
+   "start": 18.859025000000003,
+   "end": 18.899025,
+   "segment": "orsay"
+  },
+  {
+   "text": "les",
+   "start": 18.899025,
+   "end": 19.019025,
+   "segment": "orsay"
+  },
+  {
+   "text": "impressionnistes,",
+   "start": 19.019025,
+   "end": 19.639025,
+   "segment": "orsay"
+  },
+  {
+   "text": "et",
+   "start": 19.639025,
+   "end": 19.759025,
+   "segment": "orsay"
+  },
+  {
+   "text": "c'est",
+   "start": 19.759025,
+   "end": 19.879025000000002,
+   "segment": "orsay"
+  },
+  {
+   "text": "la",
+   "start": 19.879025000000002,
+   "end": 19.959025,
+   "segment": "orsay"
+  },
+  {
+   "text": "seule",
+   "start": 19.959025,
+   "end": 20.179025000000003,
+   "segment": "orsay"
+  },
+  {
+   "text": "Américaine",
+   "start": 20.179025000000003,
+   "end": 20.619025,
+   "segment": "orsay"
+  },
+  {
+   "text": "à",
+   "start": 20.619025,
+   "end": 20.699025,
+   "segment": "orsay"
+  },
+  {
+   "text": "avoir",
+   "start": 20.699025,
+   "end": 20.799025,
+   "segment": "orsay"
+  },
+  {
+   "text": "exposé",
+   "start": 20.799025,
+   "end": 21.159025,
+   "segment": "orsay"
+  },
+  {
+   "text": "avec",
+   "start": 21.159025,
+   "end": 21.259025,
+   "segment": "orsay"
+  },
+  {
+   "text": "eux.",
+   "start": 21.259025,
+   "end": 21.379025000000002,
+   "segment": "orsay"
+  },
+  {
+   "text": "La",
+   "start": 21.883288,
+   "end": 22.023288,
+   "segment": "rehook"
+  },
+  {
+   "text": "suivante,",
+   "start": 22.023288,
+   "end": 22.403288,
+   "segment": "rehook"
+  },
+  {
+   "text": "c'est",
+   "start": 22.723288,
+   "end": 23.023288,
+   "segment": "rehook"
+  },
+  {
+   "text": "l'histoire",
+   "start": 23.023288,
+   "end": 23.243288,
+   "segment": "rehook"
+  },
+  {
+   "text": "d'un",
+   "start": 23.243288,
+   "end": 23.423288,
+   "segment": "rehook"
+  },
+  {
+   "text": "viticulteur",
+   "start": 23.423288,
+   "end": 24.023288,
+   "segment": "rehook"
+  },
+  {
+   "text": "de",
+   "start": 24.023288,
+   "end": 24.123288000000002,
+   "segment": "rehook"
+  },
+  {
+   "text": "Béziers.",
+   "start": 24.123288000000002,
+   "end": 24.463288,
+   "segment": "rehook"
+  },
+  {
+   "text": "Gustave",
+   "start": 24.926168,
+   "end": 25.326168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Fayet.",
+   "start": 25.326168,
+   "end": 25.646168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Il",
+   "start": 26.226168,
+   "end": 26.406168,
+   "segment": "fayet"
+  },
+  {
+   "text": "avait",
+   "start": 26.406168,
+   "end": 26.706168,
+   "segment": "fayet"
+  },
+  {
+   "text": "dix",
+   "start": 26.706168,
+   "end": 26.956168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Van",
+   "start": 27.106168,
+   "end": 27.286168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Gogh",
+   "start": 27.286168,
+   "end": 27.626168,
+   "segment": "fayet"
+  },
+  {
+   "text": "et",
+   "start": 27.626168,
+   "end": 27.766168,
+   "segment": "fayet"
+  },
+  {
+   "text": "soixante-dix-huit",
+   "start": 27.766168,
+   "end": 28.016168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Gauguin.",
+   "start": 28.306168,
+   "end": 28.826168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Sa",
+   "start": 29.186168000000002,
+   "end": 29.306168,
+   "segment": "fayet"
+  },
+  {
+   "text": "collection",
+   "start": 29.306168,
+   "end": 29.586168,
+   "segment": "fayet"
+  },
+  {
+   "text": "est",
+   "start": 29.586168,
+   "end": 29.806168,
+   "segment": "fayet"
+  },
+  {
+   "text": "à",
+   "start": 29.806168,
+   "end": 29.866168000000002,
+   "segment": "fayet"
+  },
+  {
+   "text": "la",
+   "start": 29.866168000000002,
+   "end": 29.966168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Fondation",
+   "start": 29.966168,
+   "end": 30.286168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Vuitton.",
+   "start": 30.286168,
+   "end": 30.546168,
+   "segment": "fayet"
+  },
+  {
+   "text": "Dans",
+   "start": 31.018005000000002,
+   "end": 31.158005000000003,
+   "segment": "moreau"
+  },
+  {
+   "text": "la",
+   "start": 31.158005000000003,
+   "end": 31.258005,
+   "segment": "moreau"
+  },
+  {
+   "text": "maison-musée",
+   "start": 31.258005,
+   "end": 31.778005000000004,
+   "segment": "moreau"
+  },
+  {
+   "text": "de",
+   "start": 31.778005000000004,
+   "end": 31.858005000000002,
+   "segment": "moreau"
+  },
+  {
+   "text": "Gustave",
+   "start": 31.858005000000002,
+   "end": 32.198005,
+   "segment": "moreau"
+  },
+  {
+   "text": "Moreau,",
+   "start": 32.198005,
+   "end": 32.478005,
+   "segment": "moreau"
+  },
+  {
+   "text": "un",
+   "start": 32.718005000000005,
+   "end": 32.838005,
+   "segment": "moreau"
+  },
+  {
+   "text": "peintre",
+   "start": 32.838005,
+   "end": 33.158005,
+   "segment": "moreau"
+  },
+  {
+   "text": "d'aujourd'hui,",
+   "start": 33.158005,
+   "end": 33.658005,
+   "segment": "moreau"
+  },
+  {
+   "text": "Ali",
+   "start": 33.878005,
+   "end": 34.038005000000005,
+   "segment": "moreau"
+  },
+  {
+   "text": "Banisadr,",
+   "start": 34.038005000000005,
+   "end": 34.658005,
+   "segment": "moreau"
+  },
+  {
+   "text": "expose",
+   "start": 34.918005,
+   "end": 35.238005,
+   "segment": "moreau"
+  },
+  {
+   "text": "au",
+   "start": 35.238005,
+   "end": 35.538005,
+   "segment": "moreau"
+  },
+  {
+   "text": "milieu",
+   "start": 35.538005,
+   "end": 35.718005000000005,
+   "segment": "moreau"
+  },
+  {
+   "text": "de",
+   "start": 35.718005000000005,
+   "end": 35.838005,
+   "segment": "moreau"
+  },
+  {
+   "text": "ses",
+   "start": 35.838005,
+   "end": 35.918005,
+   "segment": "moreau"
+  },
+  {
+   "text": "tableaux.",
+   "start": 35.918005,
+   "end": 36.178005,
+   "segment": "moreau"
+  },
+  {
+   "text": "Au",
+   "start": 36.640341,
+   "end": 36.800340999999996,
+   "segment": "c104"
+  },
+  {
+   "text": "104,",
+   "start": 36.800340999999996,
+   "end": 37.100341,
+   "segment": "c104"
+  },
+  {
+   "text": "l'expo",
+   "start": 37.380341,
+   "end": 37.700341,
+   "segment": "c104"
+  },
+  {
+   "text": "de",
+   "start": 37.700341,
+   "end": 37.780341,
+   "segment": "c104"
+  },
+  {
+   "text": "Walid",
+   "start": 37.780341,
+   "end": 38.200341,
+   "segment": "c104"
+  },
+  {
+   "text": "Raad",
+   "start": 37.780341,
+   "end": 38.380341,
+   "segment": "c104"
+  },
+  {
+   "text": "est",
+   "start": 38.300340999999996,
+   "end": 38.380341,
+   "segment": "c104"
+  },
+  {
+   "text": "gratuite.",
+   "start": 38.380341,
+   "end": 38.700341,
+   "segment": "c104"
+  },
+  {
+   "text": "Mais",
+   "start": 39.000341,
+   "end": 39.340341,
+   "segment": "c104"
+  },
+  {
+   "text": "elle",
+   "start": 39.340341,
+   "end": 39.560341,
+   "segment": "c104"
+  },
+  {
+   "text": "ferme",
+   "start": 39.560341,
+   "end": 39.780341,
+   "segment": "c104"
+  },
+  {
+   "text": "dimanche.",
+   "start": 39.780341,
+   "end": 40.000341,
+   "segment": "c104"
+  },
+  {
+   "text": "Et",
+   "start": 40.502223,
+   "end": 40.622223,
+   "segment": "egouts"
+  },
+  {
+   "text": "donc,",
+   "start": 40.622223,
+   "end": 40.802223,
+   "segment": "egouts"
+  },
+  {
+   "text": "les",
+   "start": 41.162223,
+   "end": 41.382223,
+   "segment": "egouts"
+  },
+  {
+   "text": "égouts.",
+   "start": 41.382223,
+   "end": 41.642223,
+   "segment": "egouts"
+  },
+  {
+   "text": "Dès",
+   "start": 42.222223,
+   "end": 42.442223,
+   "segment": "egouts"
+  },
+  {
+   "text": "vendredi",
+   "start": 42.442223,
+   "end": 42.822223,
+   "segment": "egouts"
+  },
+  {
+   "text": "soir,",
+   "start": 42.822223,
+   "end": 43.002223,
+   "segment": "egouts"
+  },
+  {
+   "text": "le",
+   "start": 43.122223,
+   "end": 43.162223,
+   "segment": "egouts"
+  },
+  {
+   "text": "musée",
+   "start": 43.162223,
+   "end": 43.422223,
+   "segment": "egouts"
+  },
+  {
+   "text": "des",
+   "start": 43.422223,
+   "end": 43.522223000000004,
+   "segment": "egouts"
+  },
+  {
+   "text": "égouts",
+   "start": 43.522223000000004,
+   "end": 43.782223,
+   "segment": "egouts"
+  },
+  {
+   "text": "se",
+   "start": 43.782223,
+   "end": 43.922223,
+   "segment": "egouts"
+  },
+  {
+   "text": "visite",
+   "start": 43.922223,
+   "end": 44.242223,
+   "segment": "egouts"
+  },
+  {
+   "text": "à",
+   "start": 44.242223,
+   "end": 44.362223,
+   "segment": "egouts"
+  },
+  {
+   "text": "la",
+   "start": 44.362223,
+   "end": 44.442223,
+   "segment": "egouts"
+  },
+  {
+   "text": "lampe",
+   "start": 44.442223,
+   "end": 44.622223,
+   "segment": "egouts"
+  },
+  {
+   "text": "à",
+   "start": 44.622223,
+   "end": 44.622223,
+   "segment": "egouts"
+  },
+  {
+   "text": "carbure.",
+   "start": 44.622223,
+   "end": 44.962223,
+   "segment": "egouts"
+  },
+  {
+   "text": "Enregistre",
+   "start": 45.485352,
+   "end": 45.965351999999996,
+   "segment": "cta"
+  },
+  {
+   "text": "la",
+   "start": 45.965351999999996,
+   "end": 46.045352,
+   "segment": "cta"
+  },
+  {
+   "text": "vidéo",
+   "start": 46.045352,
+   "end": 46.245352,
+   "segment": "cta"
+  },
+  {
+   "text": "pour",
+   "start": 46.245352,
+   "end": 46.405352,
+   "segment": "cta"
+  },
+  {
+   "text": "ce",
+   "start": 46.405352,
+   "end": 46.525352,
+   "segment": "cta"
+  },
+  {
+   "text": "week-end.",
+   "start": 46.525352,
+   "end": 46.745352,
+   "segment": "cta"
+  },
+  {
+   "text": "Et",
+   "start": 46.965351999999996,
+   "end": 47.165352,
+   "segment": "cta"
+  },
+  {
+   "text": "un",
+   "start": 47.165352,
+   "end": 47.325352,
+   "segment": "cta"
+  },
+  {
+   "text": "nouvel",
+   "start": 47.325352,
+   "end": 47.505352,
+   "segment": "cta"
+  },
+  {
+   "text": "agenda",
+   "start": 47.505352,
+   "end": 47.765352,
+   "segment": "cta"
+  },
+  {
+   "text": "chaque",
+   "start": 47.905352,
+   "end": 47.985352,
+   "segment": "cta"
+  },
+  {
+   "text": "jeudi.",
+   "start": 47.985352,
+   "end": 48.225352,
+   "segment": "cta"
+  }
+ ]
+}

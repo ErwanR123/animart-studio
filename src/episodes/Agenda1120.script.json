@@ -1,0 +1,46 @@
+{
+  "voice": "Achird",
+  "style": "A young Parisian in their twenties sending a voice note to a friend about what to do this weekend, in French. Relaxed, smiling, natural, like talking not reading; no announcer tone, no advertising voice, no dramatic emphasis. A slight playful beat on the surprising bits.",
+  "segments": [
+    {
+      "id": "hook",
+      "text": "Ce week-end à Paris, il y a une expo qui se visite dans les égouts. À la lampe à carbure."
+    },
+    {
+      "id": "lock",
+      "text": "Je te la garde pour la fin. Avant, cinq autres, dont une qui ferme dimanche."
+    },
+    {
+      "id": "louvre",
+      "text": "Au Louvre, une expo photo… sur le Louvre. Plus de trois cents photos. Et il y a un concours : ta photo peut finir accrochée dedans."
+    },
+    {
+      "id": "orsay",
+      "text": "À Orsay, Mary Cassatt. Degas l'a fait entrer chez les impressionnistes, et c'est la seule Américaine à avoir exposé avec eux."
+    },
+    {
+      "id": "rehook",
+      "text": "La suivante, c'est l'histoire d'un viticulteur de Béziers."
+    },
+    {
+      "id": "fayet",
+      "text": "Gustave Fayet. Il avait dix Van Gogh et soixante-dix-huit Gauguin. Sa collection est à la Fondation Vuitton."
+    },
+    {
+      "id": "moreau",
+      "text": "Dans la maison-musée de Gustave Moreau, un peintre d'aujourd'hui, Ali Banisadr, expose au milieu de ses tableaux."
+    },
+    {
+      "id": "c104",
+      "text": "Au 104, l'expo de Walid Raad est gratuite. Mais elle ferme dimanche."
+    },
+    {
+      "id": "egouts",
+      "text": "Et donc, les égouts. Dès vendredi soir, le musée des égouts se visite à la lampe à carbure."
+    },
+    {
+      "id": "cta",
+      "text": "Enregistre la vidéo pour ce week-end. Et un nouvel agenda chaque jeudi."
+    }
+  ]
+}
