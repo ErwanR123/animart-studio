@@ -24,7 +24,7 @@ const LOOP = 14;
 const AD_HOLD = 20;
 /** The discreet follow call mid-video (2026-11-17 test: follow mid-video, beta sign-up at the end): its start in the
  * second detail's dwell, and how long it stays. */
-const MID_FOLLOW = { at: 100, len: 120 };
+const MID_FOLLOW = { at: 60, tap: 50, len: 100 };
 /** The row of portraits (a detail's `faces`): top edge, each one's size, the delay between two. */
 const FACES = { top: 245, w: 104, h: 128, every: 7 };
 /** The hand-drawn circles (a detail's `marks`): first one drawn this long after the text, then one every `every`. */
@@ -177,7 +177,28 @@ export function createDetailsReel(r: DetailsReel) {
     );
   };
 
-  const Caption: React.FC<{ d: Detail; f: number; frame: number; stay: number; hide?: number }> = ({ d, f, frame, stay, hide = 0 }) => {
+  const MidFollow: React.FC<{ f: number; hide: number }> = ({ f, hide }) => {
+    const { fps } = useVideoConfig();
+    const { at, tap, len } = MID_FOLLOW;
+    if (f < at - 2 || f > at + len) return null;
+    const k = spring({ frame: f - at, fps, config: { damping: 11, stiffness: 190 } });
+    const out = interpolate(f, [at + len - 10, at + len], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const press = interpolate(f, [at + tap - 4, at + tap, at + tap + 6], [1, 0.9, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const done = f >= at + tap;
+    return (
+      <div style={{ position: "absolute", left: 0, bottom: "100%", marginBottom: 30, display: "flex", alignItems: "center", gap: 20,
+        opacity: Math.min(1, k) * out * (1 - hide), transform: `scale(${0.6 + 0.4 * k})`, transformOrigin: "left center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "18px 34px 18px 26px", borderRadius: 999, fontSize: 40, fontWeight: 700,
+          letterSpacing: "-0.02em", whiteSpace: "nowrap", background: done ? "rgba(255,255,255,0.22)" : "#fff", color: done ? "#fff" : "#111",
+          transform: `scale(${press})` }}>
+          <span style={{ fontSize: 46, lineHeight: 1, marginTop: done ? 0 : -4 }}>{done ? "✓" : "+"}</span>{done ? "Abonné" : "Abonne-toi"}
+        </div>
+        <div style={{ fontSize: 32, fontWeight: 600, lineHeight: 1.15, letterSpacing: "-0.01em", color: "rgba(255,255,255,0.92)", width: 360 }}>{end.midFollow}</div>
+      </div>
+    );
+  };
+
+  const Caption: React.FC<{ d: Detail; f: number; frame: number; stay: number; hide?: number; follow?: boolean }> = ({ d, f, frame, stay, hide = 0, follow }) => {
     hide = Math.max(hide, interpolate(f, [stay - 8, stay], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
     const o = interpolate(f, [4, 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) * (1 - hide);
     const o2 = interpolate(f, [18, 24], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) * (1 - hide);
@@ -187,6 +208,7 @@ export function createDetailsReel(r: DetailsReel) {
         <Marks d={d} f={f} frame={frame} hide={hide} />
         <Faces d={d} f={f} hide={hide} />
         <div style={{ position: "absolute", left: 64, right: 150, bottom: TEXT_BOTTOM }}>
+          {follow && <MidFollow f={f} hide={hide} />}
           <Inset d={d} f={f} hide={hide} />
           <div style={{ opacity: o, fontSize: 66, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.035em", textWrap: "balance" }}>{d.title}</div>
           <div style={{ opacity: o2, fontSize: 36, lineHeight: 1.32, color: "rgba(255,255,255,0.8)", marginTop: 22, letterSpacing: "-0.01em" }}>{d.text}</div>
@@ -228,25 +250,11 @@ export function createDetailsReel(r: DetailsReel) {
   };
 
   const end = { lines: ["Un chef-d'œuvre.", "Ses secrets.", "Tous les jours."], follow: "Abonne-toi", sub: "L'app arrive bientôt · waitlist en bio",
-    midFollow: "Abonne-toi : un chef-d'œuvre décrypté chaque jour", beta: "Inscris-toi à la bêta · lien en bio", ...r.end };
+    midFollow: "Un chef-d'œuvre décrypté chaque jour", beta: "Inscris-toi à la bêta · lien en bio", ...r.end };
 
-  // Mid-video, a small follow call slides in under the progress squares for a few seconds (the ending is the app's).
-  const midAt = adLast && arrive.length > 1 ? arrive[1] + MID_FOLLOW.at : -1;
-  const MidFollow: React.FC<{ f: number }> = ({ f }) => {
-    const { fps } = useVideoConfig();
-    if (midAt < 0) return null;
-    const k = spring({ frame: f - midAt, fps, config: { damping: 16, stiffness: 170 } });
-    const out = interpolate(f, [midAt + MID_FOLLOW.len - 10, midAt + MID_FOLLOW.len], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-    if (f < midAt || f > midAt + MID_FOLLOW.len) return null;
-    return (
-      <div style={{ position: "absolute", left: 64, top: 366, display: "flex", alignItems: "center", gap: 10, padding: "12px 24px 12px 18px", borderRadius: 999,
-        background: "rgba(0,0,0,0.55)", border: "2px solid rgba(255,255,255,0.85)", fontSize: 28, fontWeight: 600, letterSpacing: "-0.01em",
-        opacity: k * out, transform: `translateX(${(1 - k) * -40}px)` }}>
-        <span style={{ fontSize: 34, fontWeight: 700, lineHeight: 1, marginTop: -3 }}>+</span>{end.midFollow}
-      </div>
-    );
-  };
-
+  // Mid-video, on the 2nd detail, a follow button pops just above the caption's title, where the eyes already are,
+  // then gets "tapped" and turns to « Abonné ✓ »: the change of state is what catches the eye. The ending is the app's.
+  const midIdx = adLast && arrive.length > 1 ? 1 : -1;
   // The progress squares step aside while a row of portraits takes their place.
   const facesOn = (f: number) => r.details.some((d, i) => d.faces && f >= arrive[i] + INSET_AT - 6 && f < arrive[i] + T.dwell);
 
@@ -270,7 +278,7 @@ export function createDetailsReel(r: DetailsReel) {
           const stay = T.dwell + (i === adIdx ? adLen : 0);
           return (
             <Sequence key={i} from={arrive[i]} durationInFrames={stay + (i === adIdx && adLast ? LOOP : 0)}>
-              <Caption d={d} f={f - arrive[i]} frame={f} stay={stay}
+              <Caption d={d} f={f - arrive[i]} frame={f} stay={stay} follow={i === midIdx}
                 hide={i === adIdx ? interpolate(f - arrive[i], [T.dwell - 16, T.dwell - 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0} />
               {i === adIdx && <Sequence from={T.dwell - 10} durationInFrames={adLen + 10 + (adLast ? LOOP : 0)}><AdOverlay f={f - adAt} /></Sequence>}
             </Sequence>
@@ -286,7 +294,6 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 30, color: "rgba(255,255,255,0.7)", marginTop: 26 }}>{end.sub}</div>
         </div>}
 
-        <MidFollow f={f} />
         {f >= arrive[0] && f < total - LOOP && !facesOn(f) && <Tracker f={f} left={interpolate(f, [adAt + 8, adAt + 18, adAt + adLen - 12, adAt + adLen], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
       </AbsoluteFill>
     );
