@@ -30,7 +30,7 @@ The two human gates hold for every format: **the texts, then the finished video*
 ## 3. Post
 
 The export gives `out/<id>.mp4`, a phone copy and `out/<id>.post.md` (one text per platform, the tracked links),
-and copies the phone copy and the text to iCloud Drive `Animart à poster/`. Tell the user:
+and copies the video and its text to the exports folder `~/Desktop/marketing_animart/`. Tell the user:
 Reels and TikTok from the phone with a trending sound; YouTube Shorts scheduled in Metricool.
 Then add the post's line to `strategie/journal.md` (date, id, format, account, platforms), and the video to
 `strategie/videos.json` (id, title, format; its platform ids are filled at the next `/bilan`). **The same caption on

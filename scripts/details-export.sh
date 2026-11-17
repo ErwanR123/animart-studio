@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Export a « Détails » reel ready to post: out/<id>.mp4 (full quality, silent stereo track so the platform's music
 # can be added), out/<id>-mobile.mp4 (< 30 MB, to send to a phone) and out/<id>.post.md (caption, hashtags,
-# YouTube title and tags, the tracked link, sources to check), all from src/formats/details/reels/*.json; then copies
-# the phone file and the text to iCloud Drive « Animart à poster ».
+# YouTube title and tags, sources to check), all from src/formats/details/reels/*.json; then copies the video and
+# its text to the exports folder (~/Desktop/marketing_animart).
 #   bash scripts/details-export.sh DetailsSacre
 set -euo pipefail
 ID="${1:?usage: details-export.sh <DetailsId>}"
@@ -40,11 +40,9 @@ fs.writeFileSync(`out/${process.argv[2]}.post.md`, out);
 
 ls -la "out/$SLUG.mp4" "out/$SLUG-mobile.mp4" "out/$SLUG.post.md"
 
-# To the phone: iCloud Drive « Animart à poster » (skipped on a Mac without iCloud Drive).
-ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
-if [ -d "$ICLOUD" ]; then
-  mkdir -p "$ICLOUD/Animart à poster"
-  cp "out/$SLUG-mobile.mp4" "$ICLOUD/Animart à poster/$SLUG.mp4"
-  cp "out/$SLUG.post.md" "$ICLOUD/Animart à poster/$SLUG.post.md"
-  echo "→ iCloud Drive/Animart à poster/$SLUG.mp4 + .post.md"
-fi
+# Into the team's exports folder (every finished video lives there); ANIMART_EXPORTS overrides it.
+EXPORTS="${ANIMART_EXPORTS:-$HOME/Desktop/marketing_animart}"
+mkdir -p "$EXPORTS"
+cp "out/$SLUG.mp4" "$EXPORTS/$SLUG.mp4"
+cp "out/$SLUG.post.md" "$EXPORTS/$SLUG.post.md"
+echo "→ $EXPORTS/$SLUG.mp4 + .post.md"

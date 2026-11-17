@@ -37,7 +37,7 @@ les pages vues et les clics. Alertes par email : une erreur d'inscription, un no
 | **Metricool** (offre gratuite) | programmer les posts et voir les stats des comptes au même endroit | une seule connexion par compte ; Claude lit les stats sur une capture du tableau de bord. L'offre Advanced (~45 €/mois) donne l'API et le MCP : à prendre quand on postera tous les jours sur plusieurs comptes |
 | **PostHog** (cloud UE) | les visites du site et les inscriptions, par source | gratuit à notre échelle, un serveur MCP officiel ; servira aussi pour l'app à sa sortie |
 | **Supabase** `public.waitlist` | la liste des emails (existe déjà) | rien à changer |
-| **iCloud Drive** `Animart à poster/` | l'export y dépose la vidéo et son texte, on les retrouve sur le téléphone | zéro AirDrop, zéro envoi |
+| **Dossier d'exports** `~/Desktop/marketing_animart/` | l'export y dépose chaque vidéo finie et son texte | toutes les vidéos au même endroit |
 
 PostHog tourne **sans cookie** (`cookieless_mode: "always"`) : pas de bandeau de consentement, donc pas
 d'inscrits perdus sur un bandeau. Le texte légal du site dit qu'on mesure l'audience sans cookie.
@@ -45,7 +45,7 @@ d'inscrits perdus sur un bandeau. Le texte légal du site dit qu'on mesure l'aud
 ## Publier
 
 - **Reels et TikTok : depuis le téléphone, avec le son tendance.** Aucune API ne permet de choisir un son
-  tendance, et c'est un levier de portée. Le fichier et le texte sont déjà dans iCloud : 1 minute par post.
+  tendance, et c'est un levier de portée. Le fichier et le texte sont dans le dossier d'exports : 1 minute par post.
 - **YouTube Shorts et carrousels : programmés dans Metricool** (pas de son tendance à ajouter).
 - Une vidéo part sur les 3 plateformes le même jour.
 
