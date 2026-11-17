@@ -9,7 +9,7 @@ import type { Detail, DetailsReel } from "./types";
 
 export const W = 1080, H = 1920, FPS = 30;
 /** Text blocks end this far above the bottom: just above the platform's account name and caption. */
-export const TEXT_BOTTOM = 380;
+export const TEXT_BOTTOM = 300;
 /** Frames: first shot (hook), camera move, dwell on a detail (time to read), ad, move back, end screen. */
 const T = { hook: 66, travel: 30, dwell: 165, ad: 150, back: 36, end: 120 };
 /** In the ad (frames from its start): the work recognised, its story opens, the waitlist button. */

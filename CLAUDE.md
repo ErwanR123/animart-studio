@@ -50,7 +50,7 @@ bash scripts/episode-master.sh <Ep>           # a Guide episode ready to post
 ## Rules for every format
 
 - **Never judge from code. Render and look**, and listen. A change is done when it was seen in a frame.
-- **9:16, 1080×1920, 30 fps, ~40 s.** Text sits low, its bottom ~380 px above the frame's bottom (just above the
+- **9:16, 1080×1920, 30 fps, ~40 s.** Text sits low, its bottom ~300 px above the frame's bottom (just above the
   account name); nothing in the top 220 px; the right margin stays clear of the platform's buttons.
 - **No music or sound effects baked in unless the format says so**: the trending sound is added when posting
   (exports carry a silent track so the platform's mixer keeps both).

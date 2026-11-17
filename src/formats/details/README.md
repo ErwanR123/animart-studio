@@ -21,7 +21,7 @@ camera arrives (hidden during the ad).
 - **The writing carries the video** (no big effects): every line opens a question the next one answers; the hook
   promises the details' mysteries; the strongest shock comes just before the ad so viewers sit through it.
 
-- **Text sits low**, its bottom ~380 px above the frame's bottom: just above the platform's account name
+- **Text sits low**, its bottom ~300 px above the frame's bottom: just above the platform's account name
   (`TEXT_BOTTOM` in `engine.tsx`). Nothing in the top 220 px, the right margin stays clear of the buttons.
 - **Time to read** every text: 5.5 s a detail. The first shot is short.
 - **One camera travelling through the painting**, slow zooms; no cuts between details, no numbers on the painting.
