@@ -50,6 +50,19 @@ Le but : devenir vraiment forts en marketing et en distribution. Une séance de 
       (YouTube). Choisir un seul nom si possible (décision à prendre : changer un nom casse les anciens liens).
 - [ ] Instagram : partager chaque Reel sur Facebook automatiquement (Paramètres → Partage).
 
+## 2 bis. Les réponses automatiques Instagram
+
+- [ ] **Commente WAITLIST → lien en DM** (Meta Business Suite sur ordinateur → Boîte de réception → automatisations ;
+      sinon ManyChat). Mots-clés `WAITLIST`, `waitlist`, `Waitlist` ; réponse publique « C'est envoyé en DM 📩 » ; le
+      DM : « Hello 👋 Merci pour ton intérêt ! Animart transforme le musée en chasse au trésor : tu trouves les
+      chefs-d'œuvre, tu les scannes, et l'app te raconte leurs secrets. L'app arrive bientôt, inscris-toi pour l'avoir
+      en premier 👉 https://animartai.com/?utm_source=instagram&utm_medium=dm »
+- [ ] **Message d'accueil** des nouveaux DM, avec le même lien.
+- [ ] **FAQ en boutons** dans les DM : c'est quoi, c'est gratuit, quand ça sort, quels musées (réponses à valider).
+- [ ] **Tester « Commente WAITLIST »** comme appel à l'action à la place de « lien en bio » sur quelques Détails ;
+      comparer commentaires et inscrits (`utm_medium=dm` vs `bio`).
+- [ ] **Stories** : sticker lien vers la waitlist ; « Réponds WAITLIST » qui déclenche le même DM.
+
 ## 3. Les formats
 
 - [ ] Faire le ménage : garder les formats qui marchent (d'après le dashboard « Vues par vidéo »), archiver le reste.
