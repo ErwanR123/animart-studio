@@ -20,6 +20,8 @@ const INSET_AT = 40;
 const LOOP = 14;
 
 type Cam = { cx: number; cy: number; wf: number; fy: number };
+/** A detail's centre sits this high on screen: its whole subject stays above the text (which starts near 62 %). */
+const DETAIL_Y = 0.34 * H;
 
 export function timeline(r: DetailsReel) {
   const adIdx = r.ad.afterDetail - 1;
@@ -44,8 +46,8 @@ export function createDetailsReel(r: DetailsReel) {
   const keys: [number, Cam, boolean][] = [[0, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]];
   r.details.forEach((d, i) => {
     const stay = T.dwell + (i === adIdx ? T.ad : 0);
-    keys.push([arrive[i], { cx: d.cx, cy: d.cy, wf: d.wf, fy: 0.4 * H }, false]);
-    keys.push([arrive[i] + stay, { cx: d.cx, cy: d.cy, wf: d.wf * (i === adIdx ? 0.86 : 0.93), fy: 0.4 * H }, true]);
+    keys.push([arrive[i], { cx: d.cx, cy: d.cy, wf: d.wf, fy: DETAIL_Y }, false]);
+    keys.push([arrive[i] + stay, { cx: d.cx, cy: d.cy, wf: d.wf * (i === adIdx ? 0.86 : 0.93), fy: DETAIL_Y }, true]);
   });
   // The end ends on the first frame's framing, so the replay follows on without a jump.
   keys.push([leaveLast + T.back, END_CAM, false], [total - LOOP, { ...END_CAM, wf: 0.97 }, true], [total, WHOLE, false]);
