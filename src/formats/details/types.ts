@@ -13,6 +13,10 @@ export type Detail = {
   text: string;
   /** Another work the text names: it pops in small a second after the text, with its label. */
   inset?: { image: string; size: [number, number]; title: string; artist: string };
+  /** Real faces of the people the text names (portraits), popping one after the other in a row above the subject. */
+  faces?: { image: string; name: string }[];
+  /** Circles drawn by hand around what the text points at (painting fractions; r = share of the width), in turn. */
+  marks?: { x: number; y: number; r: number }[];
 };
 
 export type DetailsReel = {
@@ -28,7 +32,8 @@ export type DetailsReel = {
   hook: string;
   details: Detail[];
   ad: {
-    /** The ad rises during this detail (1-based), after its text was read. */
+    /** The ad rises during this detail (1-based), after its text was read. The last detail (the default since
+     * 2026-11-17): the ad is the ending, with the waitlist and follow buttons on one screen, then the loop. */
     afterDetail: number;
     /** The work's colours in the app (WorkGround + accent). */
     palette: { ground: string; deep: string; accent: string };

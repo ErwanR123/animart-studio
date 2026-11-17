@@ -15,7 +15,8 @@
     {
       "cx": 0.51, "cy": 0.52, "wf": 0.2,
       "title": "Juste au-dessus de Jésus, un boucher découpe un agneau.",
-      "text": "C'est pas un hasard : l'agneau, c'est Jésus, qui va être sacrifié. Et à côté, sa mère porte déjà un voile noir."
+      "text": "C'est pas un hasard : l'agneau, c'est Jésus, qui va être sacrifié. Et à côté, sa mère porte déjà un voile noir.",
+      "marks": [{ "x": 0.505, "y": 0.44, "r": 0.025 }, { "x": 0.43, "y": 0.635, "r": 0.025 }]
     },
     {
       "cx": 0.07, "cy": 0.70, "wf": 0.15,
@@ -23,9 +24,15 @@
       "text": "C'est leur mariage, mais Véronèse les a collés dans le coin. La place d'honneur, au centre, il la donne à Jésus."
     },
     {
-      "cx": 0.48, "cy": 0.79, "wf": 0.22,
+      "cx": 0.48, "cy": 0.76, "wf": 0.24,
       "title": "Ces musiciens, ce sont des peintres.",
-      "text": "Selon la tradition, Véronèse s'est peint en blanc avec sa viole, entouré de Titien, Tintoret et Bassano."
+      "text": "Selon la tradition, Véronèse s'est peint en blanc avec sa viole, entouré de Bassano, Tintoret et Titien.",
+      "faces": [
+        { "image": "art/cana/veronese.jpg", "name": "Véronèse" },
+        { "image": "art/cana/bassano.jpg", "name": "Bassano" },
+        { "image": "art/cana/tintoret.jpg", "name": "Tintoret" },
+        { "image": "art/cana/titien.jpg", "name": "Titien" }
+      ]
     },
     {
       "cx": 0.5, "cy": 0.55, "wf": 0.55,

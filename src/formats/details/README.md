@@ -25,6 +25,12 @@ camera arrives (hidden during the ad).
   (`TEXT_BOTTOM` in `engine.tsx`). Nothing in the top 220 px, the right margin stays clear of the buttons.
 - **The subject sits above the text**: the camera puts a detail's centre at 34 % of the height (`DETAIL_Y`); a
   detail made of two things (a butcher above Jesus) gets a `cy`/`wf` that keeps both above ~60 %. Check every dwell.
+- **Simple effects that point** (2026-11-17, the user asked for more of these: light, natural, never flashy):
+  `faces` (the real people the text names, portraits popping one after the other with their names, above the
+  subject), `marks` (a white circle drawing itself around what the text points at, like a finger on a photo),
+  `inset` (another work the text names).
+- **The ad closes the video** (`afterDetail` = last detail): waitlist and « Abonne-toi pour la suite » on the same
+  screen, then the loop. No separate end screen: one long last shot lost viewers.
 - **Time to read** every text: 5.5 s a detail. The first shot is short.
 - **One camera travelling through the painting**, slow zooms; no cuts between details, no numbers on the painting.
 - **No sound effects** in the render (they read as AI slop); the music is the platform's trending sound, added when
