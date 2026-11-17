@@ -12,7 +12,7 @@ et zéro inscrit est un échec ; on garde ce qui amène des gens sur animartai.c
 
 | étape | où on le lit |
 |---|---|
-| 1. Vues, rétention, partages, enregistrements, abonnés gagnés | PostHog, dashboard « Animart · Réseaux » (Instagram et YouTube, synchro chaque jour) ; TikTok : Metricool |
+| 1. Vues, rétention, partages, enregistrements, abonnés gagnés | PostHog, dashboard « Animart · Réseaux » (Instagram chaque heure, YouTube toutes les 6 h) et « Progression jour par jour » ; TikTok : Metricool |
 | 2. Visites du site, par plateforme (et par post, d’après la date) | PostHog (`utm_source`, repères de posts) |
 | 3. Inscriptions à la waitlist, par plateforme et par post | PostHog (événement `waitlist_signup`) ; les emails restent dans Supabase `public.waitlist` |
 
@@ -24,9 +24,23 @@ quel post est quelle vidéo), abonnés, chaque post Instagram et YouTube, les me
 en bio et les inscrits. Tables : `instagram_media`, `instagram_media_insights`, `instagram_account_insights`
 (dont `profile_links_taps`), `youtubedata_videos`, `youtubedata_channels`.
 
+**Le jour par jour** est sur le dashboard **« Animart · Progression jour par jour »**
+(https://eu.posthog.com/project/351733/dashboard/1124859) : chaque jour en une ligne (posts publiés, vues, comptes
+touchés, likes, commentaires, partages, enregistrements, abonnés gagnés et perdus, clics sur le lien de bio,
+visiteurs, inscrits), la courbe des abonnés Instagram et YouTube, **ce que chaque post a gagné chaque jour** et les
+abonnés gagnés par vidéo. Il vit de deux choses :
+- **un relevé toutes les heures** (`scripts/stats-snapshot.mjs`, lancé par `bash scripts/stats-launchd.sh` sur le
+  Mac, journal `~/Library/Logs/animart-stats.log`) : il photographie les totaux de chaque post et les abonnés
+  (événements `stats_post`, `stats_account`) ; deux photos à un jour d'écart = ce que le post a gagné ce jour-là ;
+- **les CSV déposés** dans `~/Desktop/marketing_animart/stats/` (TikTok Studio → Analytique → télécharger les
+  données ; tout CSV avec une colonne date marche) : `node scripts/stats-import.mjs` les envoie (événements
+  `stats_day`, `stats_post`, sans doublon si on redépose) et les range dans `stats/importes/`.
+Les requêtes sont dans `strategie/posthog/*.sql` ; après une modification : `node --env-file=.env scripts/posthog-progression.mjs`.
+Instagram ne donne pas les abonnés par Reel : on attribue à chaque vidéo les abonnements des jours qui la suivent.
+
 Le site est sur le dashboard PostHog **« Animart · Waitlist »**
-(https://eu.posthog.com/project/351733/dashboard/1122659) : inscrits par plateforme et par post, conversion
-visite → inscription, visiteurs, clics vers la waitlist, erreurs, messages de contact. Événements envoyés par le
+(https://eu.posthog.com/project/351733/dashboard/1122659) : visiteurs → inscrits par source, chaque inscription et sa source
+(une inscription prend la source de la première visite de la personne ce jour-là), conversion visite → inscription, visiteurs, clics vers la waitlist, erreurs, messages de contact. Événements envoyés par le
 site : `waitlist_signup` (nouvel email), `waitlist_already`, `waitlist_error`, `contact_sent`, `contact_error`, plus
 les pages vues et les clics. Alertes par email : une erreur d'inscription, un nouveau message de contact.
 
