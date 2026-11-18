@@ -12,7 +12,7 @@
     "date": "vers 1594",
     "museum": "Louvre"
   },
-  "hook": "Pourquoi elle lui pince le téton ? Ce tableau est un message codé pour toute la cour.",
+  "hook": "Ce tableau cache une grossesse royale, la bague du roi… et un homme nu au-dessus du feu.",
   "details": [
     {
       "cx": 0.62,
@@ -72,7 +72,7 @@
     }
   ],
   "ad": {
-    "afterDetail": 4,
+    "afterDetail": 2,
     "palette": {
       "ground": "#5A2A26",
       "deep": "#140808",

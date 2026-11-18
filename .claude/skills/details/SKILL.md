@@ -21,7 +21,7 @@ things: the details' texts, then the finished video.**
    its size in `imageSize`, its source in `imageSource`.
 5. **Coordinates**: `uv run scripts/image-grid.py public/art/<slug>/<img>.jpg` → `cx`, `cy` of each detail; `wf`
    from 0.1 (a face, a crown) to 0.25 (a group). Check each with a still at the dwell's frame.
-6. **The ad**: at the end since 2026-11-17, `afterDetail` = the number of details, the work's `palette` (ground = a mid tone of the painting, deep =
+6. **The ad**: after the 2nd detail (`afterDetail: 2`, the Radeau's structure, best follows: see README), the ending is the follow screen; the work's `palette` (ground = a mid tone of the painting, deep =
    its darkest, accent = a light warm colour in it), `script` = 8 to 10 lines of the app's presentation that **do not
    reveal the details still to come**.
 7. **Post texts**: `post.caption` (« N détails de <œuvre> que presque personne ne remarque au <musée> 👀 »), exactly

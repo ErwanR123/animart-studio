@@ -12,7 +12,7 @@
     "date": "1830",
     "museum": "Louvre"
   },
-  "hook": "Ce tableau a été caché par l'État. Et lui-même cache Notre-Dame, Gavroche… et une botte disparue.",
+  "hook": "Ce tableau cache Gavroche, Notre-Dame… et une botte invisible pendant des décennies.",
   "details": [
     {
       "cx": 0.87,
@@ -65,7 +65,7 @@
     }
   ],
   "ad": {
-    "afterDetail": 4,
+    "afterDetail": 2,
     "palette": {
       "ground": "#4A4A44",
       "deep": "#0F0F0E",

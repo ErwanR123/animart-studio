@@ -12,7 +12,7 @@
     "date": "1863",
     "museum": "Orsay"
   },
-  "hook": "Dans ce tableau : un chat interdit, un bouquet de client… et un regard qui a choqué Paris.",
+  "hook": "Ce tableau cache une prostituée, la mère du peintre… et un chat qui n'avait rien à faire là.",
   "details": [
     {
       "cx": 0.89,
@@ -72,7 +72,7 @@
     }
   ],
   "ad": {
-    "afterDetail": 4,
+    "afterDetail": 2,
     "palette": {
       "ground": "#3B3A30",
       "deep": "#0D0E0B",

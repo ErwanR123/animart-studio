@@ -29,12 +29,15 @@ camera arrives (hidden during the ad).
   `faces` (the real people the text names, portraits popping one after the other with their names, above the
   subject), `marks` (a white circle drawing itself around what the text points at, like a finger on a photo),
   `inset` (another work the text names).
-- **Two calls, tested since 2026-11-17**: a follow button mid-video, 2 s into the second detail, just above the
-  caption's title where the eyes are: white « + Abonne-toi » with « Un chef-d'œuvre décrypté chaque jour » beside it,
-  « tapped » after 1.7 s into a grey « ✓ Abonné » (`MID_FOLLOW`; a small pill at the top was « trop discret »), then the app ad closes the video with
-  « Inscris-toi à la bêta · lien en bio », then the loop. Why: the Radeau lost ~15 % of viewers at its mid-video ad;
-  on Cana (ad at the end) only ~20 % were still there for an end follow call.
-- **The hook decides** (skip rate Radeau 45 % vs Cana 59 %): three concrete promises (« un cannibale, un peintre
+- **Structure: the Radeau's** (back to it on 2026-11-18): the app ad after the 2nd detail (`afterDetail: 2`), the
+  ending a follow screen only. Follows per 1,000 views: Radeau (ad mid, follow ending) 12; Cana (ad ending) 3.3;
+  Tricheur (follow button mid, ad ending) 4.4. The mid ad loses ~15 % of viewers, but whoever reaches the end liked
+  the video and is asked one thing: follow, for a daily series. (`MID_FOLLOW` and `end.beta` stay in the engine for an
+  ad-last reel; not used now.)
+- **The hook decides** — the Radeau's template: « Ce tableau cache X, Y… et Z », three concrete things you want to
+  look for in the painting, a shock word first (« un cannibale », « une prostituée »); never a riddle or an abstract line.
+  Cana (« tout le monde lui tourne le dos ») and the Tricheur (« trois arnaqueurs, une victime ») fell under 50 % retention fast.
+  Previous note: (skip rate Radeau 45 % vs Cana 59 %): three concrete promises (« un cannibale, un peintre
   célèbre… et un bateau ») beat a riddle (« tout le monde lui tourne le dos »).
 - **Time to read** every text: 5.5 s a detail. The first shot is short.
 - **One camera travelling through the painting**, slow zooms; no cuts between details, no numbers on the painting.
