@@ -58,15 +58,21 @@ export function createDetailsReel(r: DetailsReel) {
   const WHOLE: Cam = { cx: 0.5, cy: 0.5, wf: 1, fy: 860 };
   const END_CAM: Cam = { ...WHOLE, fy: 700 }; // painting higher: room for the end text
   // [frame, camera, eased move to the next key (else a slow linear push)]
-  const keys: [number, Cam, boolean][] = [[0, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]];
+  // With `open`, the first frame is a close-up on the hook's strongest point that pulls back to the whole painting:
+  // something to look at in the first second, not a slide (2026-11-19).
+  const OPEN: Cam | null = r.open ? { ...r.open, fy: DETAIL_Y } : null;
+  const OPEN_BACK = 36;
+  const keys: [number, Cam, boolean][] = OPEN
+    ? [[0, OPEN, true], [OPEN_BACK, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]]
+    : [[0, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]];
   r.details.forEach((d, i) => {
     const stay = T.dwell + (i === adIdx ? adLen : 0);
     keys.push([arrive[i], { cx: d.cx, cy: d.cy, wf: d.wf, fy: DETAIL_Y }, false]);
     keys.push([arrive[i] + stay, { cx: d.cx, cy: d.cy, wf: d.wf * (i === adIdx ? 0.86 : 0.93), fy: DETAIL_Y }, true]);
   });
   // The end ends on the first frame's framing, so the replay follows on without a jump.
-  if (adLast) keys.push([total, WHOLE, false]);
-  else keys.push([leaveLast + T.back, END_CAM, false], [total - LOOP, { ...END_CAM, wf: 0.97 }, true], [total, WHOLE, false]);
+  if (adLast) keys.push([total, OPEN ?? WHOLE, false]);
+  else keys.push([leaveLast + T.back, END_CAM, false], [total - LOOP, { ...END_CAM, wf: 0.97 }, true], [total, OPEN ?? WHOLE, false]);
   const camAt = (f: number): Cam => {
     let k = 0;
     while (k < keys.length - 2 && f >= keys[k + 1][0]) k++;
@@ -269,7 +275,7 @@ export function createDetailsReel(r: DetailsReel) {
         <Painting c={camAt(f)} />
 
         {/* First shot: the work's label above the painting, the hook under it */}
-        <div style={{ position: "absolute", left: 64, right: 64, top: 370, opacity: hookOut }}>
+        <div style={{ position: "absolute", left: 64, right: 64, top: 370, opacity: hookOut * (OPEN ? interpolate(f, [OPEN_BACK - 10, OPEN_BACK], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1) }}>
           <div style={{ fontSize: 46, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1.1 }}>{r.work.title}</div>
           <div style={{ fontSize: 34, fontWeight: 500, color: "rgba(255,255,255,0.7)", marginTop: 8 }}>{r.work.artist} · {r.work.date}</div>
         </div>

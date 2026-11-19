@@ -34,6 +34,11 @@ camera arrives (hidden during the ad).
   Tricheur (follow button mid, ad ending) 4.4. The mid ad loses ~15 % of viewers, but whoever reaches the end liked
   the video and is asked one thing: follow, for a daily series. (`MID_FOLLOW` and `end.beta` stay in the engine for an
   ad-last reel; not used now.)
+- **No nudity** (2026-11-19): no painting whose subject is a nude or shows bare breasts; Instagram can flag it and
+  the account is small. Olympia and Gabrielle d'Estrées were made, then dropped for that.
+- **Open on a close-up** (`open: {cx, cy, wf}`, 2026-11-19): the first frame is the hook's strongest point up close,
+  pulling back to the whole painting in 1.2 s, the work's label fading in once it is whole; the loop comes back to it.
+  The whole painting small under a label read as a slide.
 - **The hook decides** — the Radeau's template: « Ce tableau cache X, Y… et Z », three concrete things you want to
   look for in the painting, a shock word first (« un cannibale », « une prostituée »); never a riddle or an abstract line.
   Cana (« tout le monde lui tourne le dos ») and the Tricheur (« trois arnaqueurs, une victime ») fell under 50 % retention fast.

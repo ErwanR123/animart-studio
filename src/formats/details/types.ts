@@ -30,6 +30,7 @@ export type DetailsReel = {
   work: { title: string; artist: string; date: string; museum?: string; room?: string };
   /** First shot's line, over the whole painting. */
   hook: string;
+  open?: { cx: number; cy: number; wf: number }; // first frame: a close-up there, pulling back to the whole painting
   details: Detail[];
   ad: {
     /** The ad rises during this detail (1-based), after its text was read. The last detail (the default since

@@ -1,0 +1,137 @@
+{
+  "id": "DetailsArcadie",
+  "image": "art/arcadie/arcadie.jpg",
+  "imageSize": [
+    3840,
+    2737
+  ],
+  "imageSource": "Wikimedia Commons, « Nicolas Poussin - Et in Arcadia ego (deuxième version).jpg » (public domain)",
+  "work": {
+    "title": "Les Bergers d'Arcadie",
+    "artist": "Nicolas Poussin",
+    "date": "1637–1638",
+    "museum": "Louvre"
+  },
+  "hook": "Ce tableau cache la Mort, une ombre qui parle… et le code d'une chasse au trésor.",
+  "open": {
+    "cx": 0.47,
+    "cy": 0.57,
+    "wf": 0.24
+  },
+  "details": [
+    {
+      "cx": 0.49,
+      "cy": 0.54,
+      "wf": 0.36,
+      "title": "Sur le tombeau, une phrase : « Et in Arcadia ego ».",
+      "text": "« Moi aussi, je suis en Arcadie. » Celui qui parle, c'est la Mort : même au paradis des bergers, elle est là.",
+      "marks": [
+        {
+          "x": 0.5,
+          "y": 0.565,
+          "r": 0.055
+        }
+      ]
+    },
+    {
+      "cx": 0.42,
+      "cy": 0.55,
+      "wf": 0.4,
+      "title": "Ce berger ne lit pas : il suit une ombre du doigt.",
+      "text": "Il trace sur la pierre l'ombre de son compagnon. Dans sa première version, Poussin avait mis un crâne. Ici, c'est l'ombre qui joue la Mort.",
+      "marks": [
+        {
+          "x": 0.455,
+          "y": 0.575,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "cx": 0.66,
+      "cy": 0.42,
+      "wf": 0.4,
+      "title": "Elle, ce n'est pas une bergère comme les autres.",
+      "text": "Parée, immobile, de profil : elle représente l'Art. Poussin l'a copiée sur une statue antique de Junon.",
+      "marks": [
+        {
+          "x": 0.64,
+          "y": 0.275,
+          "r": 0.035
+        }
+      ]
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.5,
+      "wf": 0.62,
+      "title": "Et cette phrase a lancé une chasse au trésor.",
+      "text": "Des auteurs y ont lu l'anagramme de « Va ! Je cache les secrets de Dieu ». Le faux « prieuré de Sion », un canular, en a fait sa devise.",
+      "marks": [
+        {
+          "x": 0.5,
+          "y": 0.565,
+          "r": 0.06
+        }
+      ]
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#3F4A55",
+      "deep": "#0B0D10",
+      "accent": "#F0C766"
+    },
+    "found": "5/24",
+    "anecdotes": 4,
+    "script": [
+      "Nicolas Poussin peint ce tableau vers 1637-1638, à Rome.",
+      "Quatre bergers découvrent un tombeau au milieu de la campagne.",
+      "L'Arcadie, c'est une région de Grèce devenue le symbole d'un paradis simple.",
+      "Les figures sont posées comme des statues, dans un ordre très calme.",
+      "Poussin avait déjà peint ce sujet une première fois, vers 1627.",
+      "Cette première version est en Angleterre, à Chatsworth.",
+      "La toile mesure 85 centimètres sur 121."
+    ]
+  },
+  "post": {
+    "caption": "4 détails des Bergers d'Arcadie que presque personne ne remarque au Louvre 👀 Toi aussi, t'avais pas vu l'ombre ?",
+    "hashtags": [
+      "louvre",
+      "poussin",
+      "etinarcadiaego",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Le tableau du Louvre qui a lancé une chasse au trésor (Poussin) #shorts",
+    "youtubeTags": [
+      "les bergers d'arcadie",
+      "et in arcadia ego",
+      "nicolas poussin",
+      "poussin",
+      "louvre",
+      "musée du louvre",
+      "mystère",
+      "chasse au trésor",
+      "prieuré de sion",
+      "rennes-le-château",
+      "histoire de l'art",
+      "art",
+      "peinture",
+      "tableau",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "paris",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Inscription « Et in Arcadia ego », sans verbe ; lecture la plus acceptée : la Mort parle (« Moi aussi, je suis en Arcadie ») : https://fr.wikipedia.org/wiki/Et_in_Arcadia_ego_(Poussin) ; https://en.wikipedia.org/wiki/The_Arcadian_Shepherds",
+    "Un berger trace du doigt la silhouette de l'ombre de son compagnon ; dans la première version, un crâne sur le tombeau ; ici l'ombre symbolise la mort : mêmes articles",
+    "La jeune femme parée à droite symbolise l'Art ; basée sur la statue antique dite Junon Cesi ; profil grec : mêmes articles",
+    "Anagramme « I ! Tego arcana dei » (« Va ! je possède les secrets de Dieu ») proposée par Baigent, Leigh et Lincoln (1982) ; Pierre Plantard, auteur du canular du prieuré de Sion, en a fait la devise : mêmes articles",
+    "Première version vers 1627 (ou 1628-1630) à Chatsworth ; 85 × 121 cm : mêmes articles"
+  ]
+}

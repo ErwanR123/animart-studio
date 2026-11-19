@@ -9,7 +9,7 @@ Work from the repo root with Node 22. Read `src/formats/details/README.md` (the 
 then open `src/formats/details/reels/sacre.json`, the reference reel (posted 2026-11-16). **The user sees two
 things: the details' texts, then the finished video.**
 
-1. **Pick the painting**: famous enough that the title alone stops the scroll (Louvre, Orsay, Orangerie first: the
+1. **Pick the painting** (no nude: see README): famous enough that the title alone stops the scroll (Louvre, Orsay, Orangerie first: the
    app's museums), large and dense, so several details hold full-screen. Check the museum and room.
 2. **Find 4 details** (3 to 5) that are true, visible and surprising: a person who was not there, a hidden object,
    a price, a scandal, a trick of the painter. Sources: the museum's page, `../Animart/content/selection/*-texts/`
@@ -19,7 +19,7 @@ things: the details' texts, then the finished video.**
    surprise; `text` ≤ 25 words, why. **Show them to the user and wait for a go.**
 4. **The image** at full resolution in `public/art/<slug>/` (`uv run scripts/image-find.py get "<Commons file>"`),
    its size in `imageSize`, its source in `imageSource`.
-5. **Coordinates**: `uv run scripts/image-grid.py public/art/<slug>/<img>.jpg` → `cx`, `cy` of each detail; `wf`
+5. **Coordinates** (and `open`, the close-up the video starts on): `uv run scripts/image-grid.py public/art/<slug>/<img>.jpg` → `cx`, `cy` of each detail; `wf`
    from 0.1 (a face, a crown) to 0.25 (a group). Check each with a still at the dwell's frame.
 6. **The ad**: after the 2nd detail (`afterDetail: 2`, the Radeau's structure, best follows: see README), the ending is the follow screen; the work's `palette` (ground = a mid tone of the painting, deep =
    its darkest, accent = a light warm colour in it), `script` = 8 to 10 lines of the app's presentation that **do not
