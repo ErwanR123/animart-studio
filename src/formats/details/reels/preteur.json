@@ -1,0 +1,141 @@
+{
+  "id": "DetailsPreteur",
+  "image": "art/preteur/preteur.jpg",
+  "imageSize": [
+    3840,
+    4042
+  ],
+  "imageSource": "Wikimedia Commons, « Le prêteur et sa femme - Quentin Metsys - Musée du Louvre Peintures INV 1444 ; MR 821.jpg » (public domain)",
+  "work": {
+    "title": "Le Prêteur et sa femme",
+    "artist": "Quentin Metsys",
+    "date": "1514",
+    "museum": "Louvre"
+  },
+  "hook": "Qui se cache dans ce miroir ?",
+  "question": "Qui se cache\ndans ce miroir ?",
+  "open": {
+    "cx": 0.56,
+    "cy": 0.8,
+    "wf": 0.24
+  },
+  "details": [
+    {
+      "cx": 0.3,
+      "cy": 0.64,
+      "wf": 0.5,
+      "title": "Il pèse chaque pièce d'or.",
+      "text": "À l'époque, des petits malins rognaient le bord des pièces pour garder l'or. Une pièce trop légère, c'est une arnaque.",
+      "marks": [
+        {
+          "x": 0.36,
+          "y": 0.59,
+          "r": 0.05
+        },
+        {
+          "x": 0.24,
+          "y": 0.74,
+          "r": 0.07
+        }
+      ]
+    },
+    {
+      "cx": 0.56,
+      "cy": 0.8,
+      "wf": 0.3,
+      "title": "Dans le miroir : un client qui attend.",
+      "text": "Il est assis près de la fenêtre, en face d'eux, là où tu te tiens. Derrière la vitre, on voit même le clocher de la ville.",
+      "marks": [
+        {
+          "x": 0.56,
+          "y": 0.81,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.7,
+      "cy": 0.55,
+      "wf": 0.55,
+      "title": "Elle lit un livre de prières… ou pas.",
+      "text": "Sa page est restée en l'air : elle a complètement arrêté de lire pour regarder la balance.",
+      "marks": [
+        {
+          "x": 0.68,
+          "y": 0.37,
+          "r": 0.06
+        },
+        {
+          "x": 0.78,
+          "y": 0.69,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.36,
+      "cy": 0.57,
+      "wf": 0.36,
+      "title": "Cette petite balance a donné une expression.",
+      "text": "Elle s'appelle un trébuchet. Une pièce « trébuchante », c'est une pièce qui a le bon poids : d'où « des espèces sonnantes et trébuchantes ».",
+      "marks": [
+        {
+          "x": 0.36,
+          "y": 0.59,
+          "r": 0.05
+        }
+      ]
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#4E5A3A",
+      "deep": "#0D0F09",
+      "accent": "#D9A441"
+    },
+    "found": "9/24",
+    "anecdotes": 4,
+    "script": [
+      "Quentin Metsys peint ce tableau en 1514, à Anvers.",
+      "Anvers est alors l'une des villes les plus riches d'Europe.",
+      "Un couple est assis derrière une table, dans sa boutique.",
+      "Les objets sont peints avec une précision de miniature.",
+      "Le panneau mesure 71 centimètres sur 67."
+    ]
+  },
+  "post": {
+    "caption": "4 détails du Prêteur et sa femme que presque personne ne remarque au Louvre 👀 T'avais vu qui se cache dans le miroir ?",
+    "hashtags": [
+      "louvre",
+      "metsys",
+      "argent",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Il y a quelqu'un dans ce miroir (Metsys, Louvre) #shorts",
+    "youtubeTags": [
+      "quentin metsys",
+      "le prêteur et sa femme",
+      "louvre",
+      "musée du louvre",
+      "miroir",
+      "argent",
+      "espèces sonnantes et trébuchantes",
+      "peinture",
+      "tableau",
+      "histoire de l'art",
+      "art",
+      "détails cachés",
+      "culture générale",
+      "paris",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Il pèse les pièces au trébuchet pour vérifier poids et teneur en or, « il n'était pas rare de rogner les pièces » ; l'expression « espèces sonnantes et trébuchantes » vient de cette pratique : https://fr.wikipedia.org/wiki/Le_Prêteur_et_sa_Femme",
+    "Le miroir convexe reflète le client placé devant la table, le bras sur le bord de la fenêtre, une fenêtre à croisée et la flèche d'un beffroi : même article",
+    "La femme tient la page tournée du livre d'heures en l'air et « se laisse absorber par le trébuchet » : même article",
+    "1514, Anvers, huile sur panneau 71 × 67 cm, Louvre INV 1444 : même article"
+  ]
+}

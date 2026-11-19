@@ -1,0 +1,101 @@
+{
+  "id": "DetailsDentelliere",
+  "image": "art/dentelliere/dentelliere.jpg",
+  "imageSize": [
+    1995,
+    2500
+  ],
+  "imageSource": "Wikimedia Commons, « La Dentellière.jpg » (public domain)",
+  "work": {
+    "title": "La Dentellière",
+    "artist": "Johannes Vermeer",
+    "date": "vers 1669-1670",
+    "museum": "Louvre"
+  },
+  "hook": "Ce tableau fait 24 centimètres.",
+  "question": "Ce tableau fait\n24 centimètres.",
+  "open": {
+    "cx": 0.5,
+    "cy": 0.36,
+    "wf": 0.5
+  },
+  "details": [
+    {
+      "cx": 0.32,
+      "cy": 0.7,
+      "wf": 0.6,
+      "title": "Ces fils rouges sont flous exprès.",
+      "text": "Ses doigts et la dentelle sont nets, les fils devant elle coulent comme de la peinture : Vermeer peint ce que ton œil voit vraiment.",
+      "marks": [
+        {
+          "x": 0.34,
+          "y": 0.72,
+          "r": 0.12
+        }
+      ]
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.5,
+      "wf": 1,
+      "title": "24 cm sur 21 : son plus petit tableau.",
+      "text": "Plus petit qu'une feuille A4. Au musée, il faut presque coller son nez dessus pour voir tout ça."
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.42,
+      "wf": 0.7,
+      "title": "Et Dalí en a fait une version folle.",
+      "text": "En 1955, il la repeint à sa façon… puis il en fait une autre où elle explose en cornes de rhinocéros."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#6B6046",
+      "deep": "#0F0D09",
+      "accent": "#E8C25A"
+    },
+    "found": "11/24",
+    "anecdotes": 3,
+    "script": [
+      "Johannes Vermeer peint ce tableau vers 1670, à Delft.",
+      "Une jeune femme fait de la dentelle, penchée sur son ouvrage.",
+      "La lumière vient de la droite, ce qui est rare chez Vermeer.",
+      "Le Louvre l'achète en 1870."
+    ]
+  },
+  "post": {
+    "caption": "3 détails de La Dentellière de Vermeer que presque personne ne remarque au Louvre 👀 T'avais vu les fils rouges ?",
+    "hashtags": [
+      "vermeer",
+      "louvre",
+      "dali",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Le plus petit Vermeer du Louvre (24 cm) #shorts",
+    "youtubeTags": [
+      "vermeer",
+      "la dentellière",
+      "johannes vermeer",
+      "louvre",
+      "musée du louvre",
+      "salvador dalí",
+      "dali",
+      "peinture",
+      "tableau",
+      "histoire de l'art",
+      "art",
+      "détails cachés",
+      "culture générale",
+      "paris",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "24,5 × 21 cm, le plus petit tableau de Vermeer ; « Le flou des fils contraste fortement avec la précision de la dentelle » ; lumière venant de la droite, rare chez Vermeer : https://en.wikipedia.org/wiki/The_Lacemaker_(Vermeer) ; https://fr.wikipedia.org/wiki/La_Dentellière_(Vermeer)",
+    "Dalí peint sa propre version en 1955 et la « Paranoiac-Critical Study of Vermeer's Lacemaker » (cornes de rhinocéros : à vérifier sur la notice du tableau de Dalí avant de poster) : article EN",
+    "Acheté par le Louvre en 1870 : À VÉRIFIER sur la notice du Louvre"
+  ]
+}

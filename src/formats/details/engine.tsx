@@ -132,7 +132,7 @@ export function createDetailsReel(r: DetailsReel) {
             })}
           </mask>
         </defs>
-        <rect width={W} height={H} fill="#000" opacity={0.62 * dim} mask={`url(#${id})`} />
+        <rect width={W} height={H} fill="#000" opacity={0.5 * dim} mask={`url(#${id})`} />
       </svg>
     );
   };

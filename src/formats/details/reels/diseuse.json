@@ -1,0 +1,123 @@
+{
+  "id": "DetailsDiseuse",
+  "image": "art/diseuse/diseuse.jpg",
+  "imageSize": [
+    3840,
+    2902
+  ],
+  "imageSource": "Wikimedia Commons, « The Fortune Teller-Caravaggio (Louvre).jpg » (public domain)",
+  "work": {
+    "title": "La Diseuse de bonne aventure",
+    "artist": "Caravage",
+    "date": "vers 1595",
+    "museum": "Louvre"
+  },
+  "hook": "Regarde bien ses doigts.",
+  "question": "Regarde bien\nses doigts.",
+  "open": {
+    "cx": 0.43,
+    "cy": 0.73,
+    "wf": 0.3
+  },
+  "details": [
+    {
+      "cx": 0.68,
+      "cy": 0.5,
+      "wf": 0.55,
+      "title": "Lui, c'est le pigeon parfait.",
+      "text": "Jeune, riche, chapeau à plume et rapière à la ceinture. Il veut qu'on lui lise son avenir.",
+      "marks": [
+        {
+          "x": 0.82,
+          "y": 0.84,
+          "r": 0.07
+        }
+      ]
+    },
+    {
+      "cx": 0.43,
+      "cy": 0.73,
+      "wf": 0.32,
+      "title": "Elle lui retire sa bague.",
+      "text": "Elle lui caresse la main en lui souriant, et pendant ce temps, elle fait glisser sa bague vers elle. Il ne sent rien.",
+      "marks": [
+        {
+          "x": 0.42,
+          "y": 0.72,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.63,
+      "cy": 0.16,
+      "wf": 0.42,
+      "title": "Cette plume n'est pas de Caravage.",
+      "text": "Elle a été ajoutée cinquante ans plus tard, quand le tableau a été agrandi pour entrer chez Louis XIV.",
+      "marks": [
+        {
+          "x": 0.63,
+          "y": 0.11,
+          "r": 0.09
+        }
+      ]
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.5,
+      "wf": 1,
+      "title": "Et le peintre ? Un meurtrier.",
+      "text": "En 1606, Caravage tue un homme dans une bagarre. Condamné à mort, il doit fuir Rome."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#5A4A33",
+      "deep": "#100C08",
+      "accent": "#E3A44A"
+    },
+    "found": "6/24",
+    "anecdotes": 4,
+    "script": [
+      "Caravage peint ce tableau vers 1595, à Rome.",
+      "Il a une vingtaine d'années.",
+      "Deux personnages, à mi-corps, sur un fond presque vide.",
+      "C'est la deuxième version : la première est à Rome, aux musées du Capitole.",
+      "Le tableau est entré dans la collection de Louis XIV."
+    ]
+  },
+  "post": {
+    "caption": "4 détails de La Diseuse de bonne aventure que presque personne ne remarque au Louvre 👀 T'avais vu ce qu'elle fait avec ses doigts ?",
+    "hashtags": [
+      "caravage",
+      "louvre",
+      "arnaque",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Elle le vole pendant qu'il la regarde (Caravage) #shorts",
+    "youtubeTags": [
+      "caravage",
+      "la diseuse de bonne aventure",
+      "louvre",
+      "musée du louvre",
+      "arnaque",
+      "peinture",
+      "tableau",
+      "histoire de l'art",
+      "art",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "paris",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Elle retire la bague en caressant la main (« stealthily removing his ring as she strokes his hand » ; « que la gitane dérobe en le faisant glisser vers elle ») : https://en.wikipedia.org/wiki/The_Fortune_Teller_(Caravaggio) ; https://fr.wikipedia.org/wiki/La_Diseuse_de_bonne_aventure_(Le_Caravage)",
+    "Version du Louvre vers 1595, deuxième version (la première aux Musei Capitolini) ; rapière à la taille : mêmes articles",
+    "Plume ajoutée au chapeau au milieu du XVIIe siècle, quand le tableau a été agrandi et est entré chez Louis XIV (Chantelou) : article FR",
+    "Caravage tue Ranuccio Tomassoni dans une rixe en 1606, condamné à mort, fuit Rome pour Naples : https://en.wikipedia.org/wiki/Caravaggio"
+  ]
+}

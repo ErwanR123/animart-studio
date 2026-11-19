@@ -1,0 +1,131 @@
+{
+  "id": "DetailsNef",
+  "image": "art/nef/nef.jpg",
+  "imageSize": [
+    3840,
+    7128
+  ],
+  "imageSource": "Wikimedia Commons, « La Nef des fous - Jérôme Bosch - Musée du Louvre Peintures RF 2218.jpg » (public domain)",
+  "work": {
+    "title": "La Nef des fous",
+    "artist": "Jérôme Bosch",
+    "date": "vers 1500",
+    "museum": "Louvre"
+  },
+  "hook": "Pourquoi ils essaient de croquer ce truc ?",
+  "question": "Pourquoi ils essaient\nde croquer ce truc ?",
+  "open": {
+    "cx": 0.5,
+    "cy": 0.71,
+    "wf": 0.42
+  },
+  "details": [
+    {
+      "cx": 0.62,
+      "cy": 0.76,
+      "wf": 0.8,
+      "title": "Leur bateau n'a pas de voile.",
+      "text": "Le mât, c'est un arbre. La rame, une louche géante. Et personne ne rame.",
+      "marks": [
+        {
+          "x": 0.9,
+          "y": 0.89,
+          "r": 0.07
+        },
+        {
+          "x": 0.62,
+          "y": 0.62,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.72,
+      "wf": 0.45,
+      "title": "Une galette pendue à un fil.",
+      "text": "Un moine et une religieuse, bouche grande ouverte, essaient de la croquer sans les mains. Bosch peint la gourmandise.",
+      "marks": [
+        {
+          "x": 0.5,
+          "y": 0.69,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "cx": 0.78,
+      "cy": 0.66,
+      "wf": 0.46,
+      "title": "Pendant ce temps, ça part en vrille.",
+      "text": "Un fou boit perché sur une branche, un autre est penché par-dessus bord, et des nageurs tendent leur bol pour avoir du vin.",
+      "marks": [
+        {
+          "x": 0.78,
+          "y": 0.58,
+          "r": 0.07
+        },
+        {
+          "x": 0.88,
+          "y": 0.71,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.5,
+      "cy": 0.85,
+      "wf": 1,
+      "title": "Ce tableau a été découpé.",
+      "text": "C'est un morceau d'un grand panneau. Le bas est aux États-Unis, à l'université Yale. Un autre morceau est à Washington."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#5B6043",
+      "deep": "#0E0F0A",
+      "accent": "#D8B25A"
+    },
+    "found": "14/24",
+    "anecdotes": 4,
+    "script": [
+      "Jérôme Bosch peint ce panneau vers 1500.",
+      "Un bateau chargé de passagers dérive sur l'eau.",
+      "Le titre vient d'un livre à succès de l'époque, La Nef des fous.",
+      "Le panneau ne mesure que 58 centimètres de haut.",
+      "Il entre au Louvre en 1918."
+    ]
+  },
+  "post": {
+    "caption": "4 détails de La Nef des fous que presque personne ne remarque au Louvre 👀 T'avais vu la louche ?",
+    "hashtags": [
+      "bosch",
+      "louvre",
+      "nefdesfous",
+      "art",
+      "paris"
+    ],
+    "youtubeTitle": "Le tableau le plus n'importe quoi du Louvre (Bosch) #shorts",
+    "youtubeTags": [
+      "jérôme bosch",
+      "bosch",
+      "la nef des fous",
+      "louvre",
+      "musée du louvre",
+      "moine",
+      "peinture",
+      "tableau",
+      "histoire de l'art",
+      "art",
+      "détails cachés",
+      "culture générale",
+      "paris",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Fragment d'un triptyque découpé ; le tiers inférieur à la Yale University Art Gallery (Allegory of Gluttony) ; La Mort et l'Avare à Washington ; vers 1490-1500, 58 × 33 cm ; don Camille Benoit 1918 ; lien avec Das Narrenschiff de Brant (1494) ; le panneau représente la gourmandise : https://en.wikipedia.org/wiki/Ship_of_Fools_(painting)",
+    "Ce qu'on voit (moine et religieuse qui chantent autour d'une galette pendue, le fou sur la branche, l'homme penché par-dessus bord, les nageurs avec un bol, la louche-rame, l'arbre-mât) : lecture du tableau, à vérifier sur la notice du Louvre"
+  ]
+}
