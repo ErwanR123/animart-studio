@@ -12,7 +12,7 @@
     "date": "1503–1519",
     "museum": "Louvre"
   },
-  "hook": "Ce tableau cache des sourcils effacés, un horizon tordu… et il a été volé par un employé du Louvre.",
+  "hook": "Ce tableau cache des sourcils effacés, un horizon tordu… et il a été volé par l'homme qui avait posé sa vitre.",
   "open": {
     "cx": 0.48,
     "cy": 0.215,
@@ -69,7 +69,7 @@
       "cy": 0.4,
       "wf": 0.9,
       "title": "En 1911, elle disparaît pendant deux ans.",
-      "text": "Le voleur, Vincenzo Peruggia, était vitrier au Louvre. Apollinaire est arrêté, Picasso soupçonné. Ce vol l'a rendue mondialement célèbre."
+      "text": "Le voleur, Vincenzo Peruggia, avait lui-même installé sa vitre de protection. Apollinaire est arrêté, Picasso interrogé. Ce vol l'a rendue célèbre dans le monde entier."
     }
   ],
   "ad": {
@@ -127,7 +127,7 @@
     "Pas de sourcils ni de cils clairement visibles ; les scans de Pascal Cotte montrent qu'ils étaient peints ; disparus avec le temps ou au nettoyage : https://en.wikipedia.org/wiki/Mona_Lisa ; https://fr.wikipedia.org/wiki/La_Joconde",
     "La tête partage le paysage en deux parties dont l'horizon n'est pas au même niveau : article FR",
     "Commandé par Francesco del Giocondo ; Léonard ne l'a jamais livré, l'a gardé ; acquis par François Ier après sa mort en 1519 : articles",
-    "Volé le 21 août 1911 par Vincenzo Peruggia, vitrier ; Apollinaire arrêté, Picasso soupçonné ; retrouvé à Florence ; sa célébrité vient en partie du vol : articles (à revérifier sur la page)",
+    "Volé le 21 août 1911 par Vincenzo Peruggia, vitrier qui avait posé la vitre de protection de la Joconde ; Apollinaire arrêté, Picasso soupçonné ; retrouvé à Florence ; sa célébrité vient en partie du vol : articles (à revérifier sur la page)",
     "Panneau de peuplier, 77 × 53 cm ; regard qui semble suivre le spectateur ; sfumato : articles"
   ]
 }

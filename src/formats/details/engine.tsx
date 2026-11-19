@@ -2,6 +2,7 @@
 // painting with the hook and the work's label, then each detail (a move, a dwell long enough to read), the app ad
 // laid over one detail, back to the whole painting for the follow call. Rules: README.md (same folder).
 import React from "react";
+import { Audio } from "@remotion/media";
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Phone } from "./app";
 import { inter } from "./fonts";
@@ -48,6 +49,15 @@ export function timeline(r: DetailsReel) {
   const adAt = arrive[adIdx] + T.dwell - 10;
   return { adIdx, adLast, adLen, arrive, leaveLast, total, adAt };
 }
+
+/** Light sounds, one per visible event, under the music the platform adds (2026-11-19): the camera moving, a circle
+ * being drawn, a square filling, a button tapped, the phone recognising the painting. All CC0 (public/sfx/SOURCES.md). */
+const SFX = { swish: 0.22, pencil: 0.3, tick: 0.35, scan: 0.25 };
+const Sfx: React.FC<{ at: number; file: string; volume: number }> = ({ at, file, volume }) => (
+  <Sequence from={Math.max(0, Math.round(at))} durationInFrames={45} layout="none">
+    <Audio src={staticFile(`sfx/${file}`)} volume={volume} />
+  </Sequence>
+);
 
 export function createDetailsReel(r: DetailsReel) {
   const img = staticFile(r.image);
@@ -265,6 +275,21 @@ export function createDetailsReel(r: DetailsReel) {
   // The progress squares step aside while a row of portraits takes their place.
   const facesOn = (f: number) => r.details.some((d, i) => d.faces && f >= arrive[i] + INSET_AT - 6 && f < arrive[i] + T.dwell);
 
+  // Every sound's frame, from the same timeline as the pictures.
+  const sounds = (() => {
+    const out: [number, string, number][] = [];
+    if (OPEN) out.push([4, "accents/swish-1.wav", SFX.swish]);
+    r.details.forEach((d, i) => {
+      out.push([arrive[i] - T.travel + 2, `accents/swish-${(i % 3) + 2}.wav`, SFX.swish]);
+      out.push([arrive[i] + 12, "story/reel.wav", SFX.tick]);
+      (d.marks ?? []).forEach((_, k) => out.push([arrive[i] + MARK.at + k * MARK.every, `accents/pencil-${((i + k) % 4) + 1}.wav`, SFX.pencil]));
+      if (i === midIdx) out.push([arrive[i] + MID_FOLLOW.at + MID_FOLLOW.tap - 2, "story/reel.wav", SFX.tick]);
+    });
+    out.push([adAt, "accents/swish-4.wav", SFX.swish], [adAt + AD.recog, "story/scan-ping.wav", SFX.scan], [adAt + AD.cta, "story/reel.wav", SFX.tick]);
+    if (!adLast) out.push([leaveLast + T.back + 14, "story/reel.wav", SFX.tick]);
+    return out.map(([at, file, v], k) => <Sfx key={k} at={at} file={file} volume={v} />);
+  })();
+
   const Component: React.FC = () => {
     const f = useCurrentFrame();
     const hookOut = interpolate(f, [T.hook - 6, T.hook + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -301,6 +326,7 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 30, color: "rgba(255,255,255,0.7)", marginTop: 26 }}>{end.sub}</div>
         </div>}
 
+        {sounds}
         {f >= arrive[0] && f < total - LOOP && !facesOn(f) && <Tracker f={f} left={interpolate(f, [adAt + 8, adAt + 18, adAt + adLen - 12, adAt + adLen], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
       </AbsoluteFill>
     );

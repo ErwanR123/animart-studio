@@ -59,7 +59,7 @@ bash scripts/agenda-export.sh Agenda1120         # une vidéo Agenda prête à p
 
 Tout est dans [strategie/README.md](strategie/README.md) (« Publier », « Les liens », « Règles des posts »). En bref :
 
-1. Reels et TikTok **depuis le téléphone**, avec un son tendance (la piste des Détails est muette exprès) ; YouTube
+1. Reels et TikTok **depuis le téléphone**, avec un son tendance (les Détails n'ont que de petits bruitages : garde le son original et mets la musique par-dessus) ; YouTube
    Shorts le même jour. Le texte de chaque plateforme est dans le `.post.md`.
 2. **Juste après**, ajoute la vidéo dans [strategie/videos.json](strategie/videos.json) (id Instagram, id YouTube,
    durée, format), puis `node --env-file=.env scripts/posthog-videos.mjs`. Sans ça, la vidéo n'apparaît pas dans les

@@ -46,8 +46,10 @@ camera arrives (hidden during the ad).
   célèbre… et un bateau ») beat a riddle (« tout le monde lui tourne le dos »).
 - **Time to read** every text: 5.5 s a detail. The first shot is short.
 - **One camera travelling through the painting**, slow zooms; no cuts between details, no numbers on the painting.
-- **No sound effects** in the render (they read as AI slop); the music is the platform's trending sound, added when
-  posting (the file has a silent track so the platform's mixer keeps both).
+- **Light sound effects only** (2026-11-19, replaces « no sound effects »): one quiet sound per visible event, placed
+  by the engine (`SFX` in `engine.tsx`): a cloth swish when the camera moves, a pencil when a circle is drawn, a tick
+  when a square fills or a button is tapped, a scanner ping when the app recognises the painting. Nothing without a
+  visible cause, no whooshes on text, no booms. The music is the platform's trending sound, added on top when posting.
 - **The app screens are rebuilt from the app's code** (`app.tsx`, sources in its header). When the app changes,
   re-read the code; never draw the screen from memory. The app screen must not reveal a detail still to come.
 - The app is not out: the call is always **the waitlist**, never « l'app en bio ».

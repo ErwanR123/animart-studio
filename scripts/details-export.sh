@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Export a « Détails » reel ready to post: out/<id>.mp4 (full quality, silent stereo track so the platform's music
-# can be added), out/<id>-mobile.mp4 (< 30 MB, to send to a phone) and out/<id>.post.md (caption, hashtags,
+# Export a « Détails » reel ready to post: out/<id>.mp4 (full quality, with its light sound effects; the platform's
+# music goes on top), out/<id>-mobile.mp4 (< 30 MB, to send to a phone) and out/<id>.post.md (caption, hashtags,
 # YouTube title and tags, sources to check), all from src/formats/details/reels/*.json; then copies the video and
 # its text to the exports folder (~/Desktop/marketing_animart).
 #   bash scripts/details-export.sh DetailsSacre
@@ -10,10 +10,7 @@ cd "$(dirname "$0")/.."
 mkdir -p out
 SLUG=$(echo "$ID" | sed -E 's/([a-z])([A-Z])/\1-\2/g' | tr '[:upper:]' '[:lower:]')
 
-npx remotion render "$ID" "out/$SLUG.video.mp4" --crf=18 --muted
-ffmpeg -loglevel error -y -i "out/$SLUG.video.mp4" -f lavfi -i anullsrc=r=48000:cl=stereo \
-  -c:v copy -c:a aac -b:a 128k -shortest -movflags +faststart "out/$SLUG.mp4"
-rm "out/$SLUG.video.mp4"
+npx remotion render "$ID" "out/$SLUG.mp4" --crf=18
 ffmpeg -loglevel error -y -i "out/$SLUG.mp4" -c:v libx264 -crf 21 -preset slow -c:a copy -movflags +faststart "out/$SLUG-mobile.mp4"
 
 node -e '
@@ -31,7 +28,7 @@ const out = [
   "Description :", "", "```", body.replace("Lien de la waitlist en bio 🔗", "Lien de la waitlist sur la chaîne 🔗"), "```", "",
   "Tags :", "", "```", (p.youtubeTags ?? []).join(", "), "```", "",
   "## Avant de poster", "",
-  "- Ajouter le son tendance dans l’app du réseau (la piste de la vidéo est muette).",
+  "- Ajouter le son tendance dans l’app du réseau en gardant le son original activé : ce sont les petits bruitages, la musique va par-dessus.",
   "- Couverture : la première image (le tableau entier et l’accroche).",
   "- Vérifier chaque fait :", ...r.sources.map(s => `  - ${s}`), "",
 ].join("\n");
