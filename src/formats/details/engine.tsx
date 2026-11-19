@@ -29,7 +29,7 @@ const AD_HOLD = 20;
 const MID_FOLLOW = { at: 60, tap: 50, len: 100 };
 /** The row of portraits (a detail's `faces`): top edge, each one's size, the delay between two. */
 const FACES = { top: 245, w: 104, h: 128, every: 7 };
-/** The hand-drawn circles (a detail's `marks`): first one drawn this long after the text, then one every `every`. */
+/** The spotlight (a detail's `marks`): the painting dims this long after the text, each spot lit one every `every`. */
 const MARK = { at: 26, draw: 14, every: 45 };
 
 type Cam = { cx: number; cy: number; wf: number; fy: number };
@@ -106,25 +106,28 @@ export function createDetailsReel(r: DetailsReel) {
     return <Img src={img} style={{ position: "absolute", left, top, width: iw, height: ih }} />;
   };
 
-  // A circle drawn by hand around what the text points at: it traces itself, slightly open, like a finger on a photo.
+  // A spotlight on what the text points at (2026-11-19, replaces drawn circles): the rest of the painting dims, each
+  // marked spot stays lit, in turn, like a museum light. Nothing is drawn over the painting.
   const Marks: React.FC<{ d: Detail; f: number; frame: number; hide: number }> = ({ d, f, frame, hide }) => {
     if (!d.marks) return null;
     const { left, top, iw } = place(camAt(frame));
+    const dim = interpolate(f, [MARK.at, MARK.at + MARK.draw], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) }) * (1 - hide);
+    const id = `spot-${d.cx}-${d.cy}`;
     return (
-      <>
-        {d.marks.map((m, k) => {
-          const u = interpolate(f, [MARK.at + k * MARK.every, MARK.at + k * MARK.every + MARK.draw], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-          const R = m.r * iw, x = left + m.x * iw, y = top + m.y * iw / AR;
-          const len = 2 * Math.PI * R * 1.08;
-          return (
-            <svg key={k} style={{ position: "absolute", left: x - R * 1.3, top: y - R * 1.3, overflow: "visible", opacity: 1 - hide }} width={R * 2.6} height={R * 2.6}>
-              <ellipse cx={R * 1.3} cy={R * 1.3} rx={R * 1.12} ry={R} fill="none" stroke="#fff" strokeWidth={7} strokeLinecap="round"
-                strokeDasharray={len} strokeDashoffset={len * (1 - u * 0.96)} transform={`rotate(-70 ${R * 1.3} ${R * 1.3})`}
-                style={{ filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.6))" }} />
-            </svg>
-          );
-        })}
-      </>
+      <svg style={{ position: "absolute", left: 0, top: 0 }} width={W} height={H}>
+        <defs>
+          <filter id={`${id}-blur`} x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation={40} /></filter>
+          <mask id={id}>
+            <rect width={W} height={H} fill="#fff" />
+            {d.marks.map((m, k) => {
+              const u = interpolate(f, [MARK.at + k * MARK.every, MARK.at + k * MARK.every + MARK.draw], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+              const R = m.r * iw * 1.15, x = left + m.x * iw, y = top + m.y * iw / AR;
+              return <ellipse key={k} cx={x} cy={y} rx={R * 1.1 * (0.6 + 0.4 * u)} ry={R * (0.6 + 0.4 * u)} fill="#000" opacity={u} filter={`url(#${id}-blur)`} />;
+            })}
+          </mask>
+        </defs>
+        <rect width={W} height={H} fill="#000" opacity={0.62 * dim} mask={`url(#${id})`} />
+      </svg>
     );
   };
 

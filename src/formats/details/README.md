@@ -27,7 +27,7 @@ camera arrives (hidden during the ad).
   detail made of two things (a butcher above Jesus) gets a `cy`/`wf` that keeps both above ~60 %. Check every dwell.
 - **Simple effects that point** (2026-11-17, the user asked for more of these: light, natural, never flashy):
   `faces` (the real people the text names, portraits popping one after the other with their names, above the
-  subject), `marks` (a white circle drawing itself around what the text points at, like a finger on a photo),
+  subject), `marks` (a spotlight: the rest of the painting dims, each marked spot stays lit in turn; replaced the drawn white circles on 2026-11-19, « pas les bons »),
   `inset` (another work the text names).
 - **Structure: the Radeau's** (back to it on 2026-11-18): the app ad after the 2nd detail (`afterDetail: 2`), the
   ending a follow screen only. Follows per 1,000 views: Radeau (ad mid, follow ending) 12; Cana (ad ending) 3.3;

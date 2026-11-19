@@ -12,64 +12,75 @@
     "date": "1503–1519",
     "museum": "Louvre"
   },
-  "hook": "Ce tableau cache des sourcils effacés, un horizon tordu… et il a été volé par l'homme qui avait posé sa vitre.",
+  "hook": "Ce tableau cache un sourire qui disparaît, une pierre… et un voleur qui l'a gardée sous son lit.",
   "open": {
-    "cx": 0.48,
-    "cy": 0.215,
-    "wf": 0.32
+    "cx": 0.46,
+    "cy": 0.3,
+    "wf": 0.3
   },
   "details": [
     {
-      "cx": 0.48,
-      "cy": 0.22,
+      "cx": 0.46,
+      "cy": 0.27,
       "wf": 0.42,
+      "title": "Regarde ses yeux : elle sourit. Regarde sa bouche : plus de sourire.",
+      "text": "Léonard a noyé les coins de sa bouche dans l'ombre. Ton œil voit mieux les ombres du coin de l'œil : de face, le sourire s'efface.",
+      "marks": [
+        {
+          "x": 0.45,
+          "y": 0.31,
+          "r": 0.09
+        }
+      ]
+    },
+    {
+      "cx": 0.48,
+      "cy": 0.24,
+      "wf": 0.4,
       "title": "Elle n'a ni sourcils ni cils.",
-      "text": "Pourtant, Léonard les avait peints : un scan de la couche de peinture l'a montré. Ils ont disparu avec le temps et les nettoyages.",
+      "text": "Pourtant, un ingénieur qui l'a scannée en 2007 dit que Léonard les avait peints. Ils ont disparu avec le temps et les nettoyages.",
       "marks": [
         {
-          "x": 0.42,
-          "y": 0.205,
-          "r": 0.045
+          "x": 0.41,
+          "y": 0.215,
+          "r": 0.06
         },
         {
-          "x": 0.54,
-          "y": 0.208,
-          "r": 0.045
+          "x": 0.55,
+          "y": 0.215,
+          "r": 0.06
         }
       ]
     },
     {
-      "cx": 0.5,
-      "cy": 0.3,
-      "wf": 1,
-      "title": "Regarde l'horizon : à gauche et à droite, il n'est pas à la même hauteur.",
-      "text": "Sa tête coupe le paysage en deux, et les deux moitiés ne se raccordent pas.",
-      "marks": [
-        {
-          "x": 0.13,
-          "y": 0.355,
-          "r": 0.08
-        },
-        {
-          "x": 0.86,
-          "y": 0.3,
-          "r": 0.08
-        }
-      ]
-    },
-    {
-      "cx": 0.5,
+      "cx": 0.55,
       "cy": 0.76,
-      "wf": 0.75,
-      "title": "Le mari ne l'a jamais reçue.",
-      "text": "Francesco del Giocondo l'avait commandée pour sa femme, Lisa. Léonard l'a gardée jusqu'à sa mort en France : c'est pour ça qu'elle est au Louvre."
+      "wf": 0.9,
+      "title": "En 1956, un homme lui jette une pierre.",
+      "text": "La vitre casse et abîme son coude gauche. Depuis, une vitre blindée la protège : elle a pris un gâteau en 2022 et de la soupe en 2024.",
+      "marks": [
+        {
+          "x": 0.74,
+          "y": 0.78,
+          "r": 0.13
+        }
+      ]
     },
     {
       "cx": 0.5,
-      "cy": 0.4,
-      "wf": 0.9,
+      "cy": 0.5,
+      "wf": 1,
       "title": "En 1911, elle disparaît pendant deux ans.",
-      "text": "Le voleur, Vincenzo Peruggia, avait lui-même installé sa vitre de protection. Apollinaire est arrêté, Picasso interrogé. Ce vol l'a rendue célèbre dans le monde entier."
+      "text": "Le voleur avait aidé à fabriquer sa vitrine au Louvre. Il l'a gardée dans sa chambre, sous son lit, dans une valise.",
+      "inset": {
+        "image": "art/joconde/mur-vide.jpg",
+        "size": [
+          640,
+          887
+        ],
+        "title": "Le mur vide, le 22 août 1911",
+        "artist": "Louvre, salle Carré"
+      }
     }
   ],
   "ad": {
@@ -92,7 +103,7 @@
     ]
   },
   "post": {
-    "caption": "4 détails de La Joconde que presque personne ne remarque au Louvre 👀 Toi aussi, t'avais pas vu qu'elle avait pas de sourcils ?",
+    "caption": "4 secrets de La Joconde que presque personne ne connaît 👀 Fais le test : regarde ses yeux, puis sa bouche.",
     "hashtags": [
       "louvre",
       "joconde",
@@ -100,7 +111,7 @@
       "art",
       "paris"
     ],
-    "youtubeTitle": "4 détails cachés dans La Joconde (Louvre) #shorts",
+    "youtubeTitle": "Le sourire de la Joconde disparaît quand tu le regardes #shorts",
     "youtubeTags": [
       "la joconde",
       "mona lisa",
@@ -124,10 +135,9 @@
     ]
   },
   "sources": [
-    "Pas de sourcils ni de cils clairement visibles ; les scans de Pascal Cotte montrent qu'ils étaient peints ; disparus avec le temps ou au nettoyage : https://en.wikipedia.org/wiki/Mona_Lisa ; https://fr.wikipedia.org/wiki/La_Joconde",
-    "La tête partage le paysage en deux parties dont l'horizon n'est pas au même niveau : article FR",
-    "Commandé par Francesco del Giocondo ; Léonard ne l'a jamais livré, l'a gardé ; acquis par François Ier après sa mort en 1519 : articles",
-    "Volé le 21 août 1911 par Vincenzo Peruggia, vitrier qui avait posé la vitre de protection de la Joconde ; Apollinaire arrêté, Picasso soupçonné ; retrouvé à Florence ; sa célébrité vient en partie du vol : articles (à revérifier sur la page)",
-    "Panneau de peuplier, 77 × 53 cm ; regard qui semble suivre le spectateur ; sfumato : articles"
+    "Sourire qui disparaît en vision directe (fovéale), visible en vision périphérique, qui capte mieux les ombres (Margaret Livingstone) : https://en.wikipedia.org/wiki/Mona_Lisa ; https://fr.wikipedia.org/wiki/La_Joconde",
+    "Pas de sourcils ni de cils visibles ; Pascal Cotte (2007, scans très haute résolution) : peints à l'origine, disparus avec le temps, peut-être par des nettoyages : mêmes articles",
+    "1956 : une pierre brise la vitre, les éclats abîment le coude gauche (retouché par Goulinat) ; vitre blindée depuis ; gâteau le 29 mai 2022, soupe le 28 janvier 2024, tableau intact : mêmes articles",
+    "Vol le 21 août 1911 par Vincenzo Peruggia, vitrier qui avait participé à la mise sous verre des œuvres du Louvre ; gardée deux ans dans sa chambre à Paris, dans le double fond d'une valise sous son lit ; photo du mur vide (Commons « Mona Lisa stolen-1911.jpg ») : mêmes articles"
   ]
 }
