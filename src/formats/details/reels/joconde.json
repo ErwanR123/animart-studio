@@ -14,9 +14,9 @@
   },
   "hook": "Ce tableau cache un sourire qui disparaît, une pierre… et un voleur qui l'a gardée sous son lit.",
   "open": {
-    "cx": 0.46,
-    "cy": 0.3,
-    "wf": 0.3
+    "cx": 0.48,
+    "cy": 0.23,
+    "wf": 0.34
   },
   "details": [
     {
@@ -139,5 +139,6 @@
     "Pas de sourcils ni de cils visibles ; Pascal Cotte (2007, scans très haute résolution) : peints à l'origine, disparus avec le temps, peut-être par des nettoyages : mêmes articles",
     "1956 : une pierre brise la vitre, les éclats abîment le coude gauche (retouché par Goulinat) ; vitre blindée depuis ; gâteau le 29 mai 2022, soupe le 28 janvier 2024, tableau intact : mêmes articles",
     "Vol le 21 août 1911 par Vincenzo Peruggia, vitrier qui avait participé à la mise sous verre des œuvres du Louvre ; gardée deux ans dans sa chambre à Paris, dans le double fond d'une valise sous son lit ; photo du mur vide (Commons « Mona Lisa stolen-1911.jpg ») : mêmes articles"
-  ]
+  ],
+  "question": "Pourquoi elle n'a\npas de sourcils ?"
 }

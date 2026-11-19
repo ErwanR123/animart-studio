@@ -45,7 +45,13 @@ camera arrives (hidden during the ad).
 - **Open on a close-up** (`open: {cx, cy, wf}`, 2026-11-19): the first frame is the hook's strongest point up close,
   pulling back to the whole painting in 1.2 s, the work's label fading in once it is whole; the loop comes back to it.
   The whole painting small under a label read as a slide.
-- **The hook decides** — the Radeau's template: « Ce tableau cache X, Y… et Z », three concrete things you want to
+- **Open on one short question over a close-up** (`question` + `open`, 2026-11-19, replaces the long hook): the
+  Détails averaged 6–10 s watched out of 38 (Napoléon 6.4 s) against 14–17 s for the voiced Guide episodes: nobody
+  reads a 20-word hook while scrolling. The first frame is the strangest detail very close, with ONE line of ≤ 6
+  words in the platforms' white text boxes (« Pourquoi elle n'a pas de sourcils ? », « Napoléon n'a jamais monté ce
+  cheval. »), readable in one glance, answered by the 2nd detail just before the ad. No whole painting first, no
+  label. The user chose this over a split-screen contrast and a « test » line, and chose no voice (2026-11-19).
+- **The hook decides** (the older long hook, below, is kept for history) — the Radeau's template: « Ce tableau cache X, Y… et Z », three concrete things you want to
   look for in the painting, a shock word first (« un cannibale », « une prostituée »); never a riddle or an abstract line.
   Cana (« tout le monde lui tourne le dos ») and the Tricheur (« trois arnaqueurs, une victime ») fell under 50 % retention fast.
   Previous note: (skip rate Radeau 45 % vs Cana 59 %): three concrete promises (« un cannibale, un peintre

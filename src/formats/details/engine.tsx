@@ -35,6 +35,8 @@ const MARK = { at: 26, draw: 14, every: 45 };
 type Cam = { cx: number; cy: number; wf: number; fy: number };
 /** A detail's centre sits this high on screen: its whole subject stays above the text (which starts near 62 %). */
 const DETAIL_Y = 0.34 * H;
+/** The question's top edge: under the close-up's centre, clear of the platform's caption. */
+const QUESTION_Y = 1080;
 
 export function timeline(r: DetailsReel) {
   const adIdx = r.ad.afterDetail - 1;
@@ -72,7 +74,11 @@ export function createDetailsReel(r: DetailsReel) {
   // something to look at in the first second, not a slide (2026-11-19).
   const OPEN: Cam | null = r.open ? { ...r.open, fy: DETAIL_Y } : null;
   const OPEN_BACK = 36;
-  const keys: [number, Cam, boolean][] = OPEN
+  // With a `question` (2026-11-19, the long hook lost people in 2 s): the camera holds the close-up, pushing in a little,
+  // under one short question; it never shows the whole painting first.
+  const keys: [number, Cam, boolean][] = OPEN && r.question
+    ? [[0, OPEN, false], [T.hook, { ...OPEN, wf: OPEN.wf * 0.9 }, true]]
+    : OPEN
     ? [[0, OPEN, true], [OPEN_BACK, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]]
     : [[0, WHOLE, false], [T.hook, { ...WHOLE, wf: 0.94 }, true]];
   r.details.forEach((d, i) => {
@@ -302,6 +308,12 @@ export function createDetailsReel(r: DetailsReel) {
       <AbsoluteFill style={{ background: "#17110E", color: "#fff", fontFamily: inter }}>
         <Painting c={camAt(f)} />
 
+        {/* The question: the platforms' own white text boxes, one per line, readable in one glance */}
+        {r.question && <div style={{ position: "absolute", left: 0, right: 0, top: QUESTION_Y, display: "flex", flexDirection: "column", alignItems: "center", gap: 0, opacity: hookOut }}>
+          {r.question.split("\n").map((l, i) => <div key={i} style={{ background: "#fff", color: "#111", fontSize: 86, fontWeight: 700, lineHeight: 1.12,
+            letterSpacing: "-0.03em", padding: "6px 26px", borderRadius: 14, marginTop: i ? -4 : 0 }}>{l}</div>)}
+        </div>}
+        {!r.question && <>
         {/* A tall painting fills the frame: dark at the top and bottom so the label and hook stay readable */}
         <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 48%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%)", opacity: hookOut }} />
         {/* First shot: the work's label above the painting, the hook under it */}
@@ -310,6 +322,7 @@ export function createDetailsReel(r: DetailsReel) {
           <div style={{ fontSize: 34, fontWeight: 500, color: "rgba(255,255,255,0.7)", marginTop: 8 }}>{r.work.artist} · {r.work.date}</div>
         </div>
         <div style={{ position: "absolute", left: 64, right: 64, bottom: TEXT_BOTTOM, fontSize: 72, fontWeight: 700, lineHeight: 1.04, letterSpacing: "-0.04em", textWrap: "balance", opacity: hookOut }}>{r.hook}</div>
+        </>}
 
         {r.details.map((d, i) => {
           const stay = T.dwell + (i === adIdx ? adLen : 0);

@@ -11,12 +11,15 @@ things: the details' texts, then the finished video.**
 
 1. **Pick the painting** (no nude: see README): famous enough that the title alone stops the scroll (Louvre, Orsay, Orangerie first: the
    app's museums), large and dense, so several details hold full-screen. Check the museum and room.
-2. **Find 4 details** (3 to 5) that are true, visible and surprising: a person who was not there, a hidden object,
+2. **Find 4 details** (3 to 5) that are true, visible, surprising **and understood with no art culture** (a thing you
+   see + a concrete story; no symbol, no Latin: README « Understood with no art culture »): a person who was not there, a hidden object,
    a price, a scandal, a trick of the painter. Sources: the museum's page, `../Animart/content/selection/*-texts/`
    (the app's texts, not reviewed yet: verify), Wikipedia FR/EN, napoleon.org-type references. Every fact gets a
-   line in `sources`. Order them so a strong one opens and the strongest closes (it answers the hook); the ad follows it.
+   line in `sources`. Order them: the 2nd answers the opening question, the ad follows it; the strongest left closes.
 3. **Write the texts** (Gen Z, tutoiement, no AI tells such as « fascinant », « plongeons »): `title` ≤ 10 words, the
-   surprise; `text` ≤ 25 words, why. **Show them to the user and wait for a go.**
+   surprise; `text` ≤ 25 words, why. Then the `question`: ≤ 6 words, two lines split by `\n`, about the strangest
+   thing on the `open` close-up, answered by the 2nd detail (README « Open on one short question »). **Show them to
+   the user and wait for a go.**
 4. **The image** at full resolution in `public/art/<slug>/` (`uv run scripts/image-find.py get "<Commons file>"`),
    its size in `imageSize`, its source in `imageSource`.
 5. **Coordinates** (and `open`, the close-up the video starts on): `uv run scripts/image-grid.py public/art/<slug>/<img>.jpg` → `cx`, `cy` of each detail; `wf`

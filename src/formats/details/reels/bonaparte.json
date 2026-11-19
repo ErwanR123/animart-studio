@@ -14,9 +14,9 @@
   },
   "hook": "Ce tableau cache un mensonge, deux noms gravés… et le fils du peintre sur une échelle.",
   "open": {
-    "cx": 0.18,
-    "cy": 0.91,
-    "wf": 0.4
+    "cx": 0.5,
+    "cy": 0.3,
+    "wf": 0.62
   },
   "details": [
     {
@@ -140,5 +140,6 @@
     "Soldats et artillerie qui montent la montagne à l'arrière-plan : mêmes articles",
     "Refus de poser (« Poser ? à quoi bon ? ») ; David part d'un buste pour les traits et fait monter son fils sur une échelle pour la pose ; uniforme et bicorne de Marengo prêtés : mêmes articles",
     "Version de Versailles (MV 1567) : la 3e, peinte pour la bibliothèque des Invalides (1802), à Versailles depuis 1837 ; cinq versions ; consigne « calme sur un cheval fougueux » ; commande initiale du roi d'Espagne Charles IV (version Malmaison) : mêmes articles"
-  ]
+  ],
+  "question": "Napoléon n'a jamais\nmonté ce cheval."
 }

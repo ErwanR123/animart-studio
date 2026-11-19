@@ -28,8 +28,11 @@ export type DetailsReel = {
   imageSize: [number, number];
   imageSource: string;
   work: { title: string; artist: string; date: string; museum?: string; room?: string };
-  /** First shot's line, over the whole painting. */
+  /** First shot's line, over the whole painting (old opening; kept for the reels posted before 2026-11-19). */
   hook: string;
+  /** The opening since 2026-11-19: one short question (≤ 6 words, "\n" between its lines) in white boxes over the
+   * `open` close-up, answered by the 2nd detail, just before the ad. Replaces `hook` on screen. */
+  question?: string;
   open?: { cx: number; cy: number; wf: number }; // first frame: a close-up there, pulling back to the whole painting
   details: Detail[];
   ad: {
