@@ -299,6 +299,8 @@ export function createDetailsReel(r: DetailsReel) {
       <AbsoluteFill style={{ background: "#17110E", color: "#fff", fontFamily: inter }}>
         <Painting c={camAt(f)} />
 
+        {/* A tall painting fills the frame: dark at the top and bottom so the label and hook stay readable */}
+        <AbsoluteFill style={{ background: "linear-gradient(rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 48%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%)", opacity: hookOut }} />
         {/* First shot: the work's label above the painting, the hook under it */}
         <div style={{ position: "absolute", left: 64, right: 64, top: 370, opacity: hookOut * (OPEN ? interpolate(f, [OPEN_BACK - 10, OPEN_BACK], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1) }}>
           <div style={{ fontSize: 46, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1.1 }}>{r.work.title}</div>

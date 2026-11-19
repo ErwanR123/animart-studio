@@ -36,6 +36,12 @@ camera arrives (hidden during the ad).
   ad-last reel; not used now.)
 - **No nudity** (2026-11-19): no painting whose subject is a nude or shows bare breasts; Instagram can flag it and
   the account is small. Olympia and Gabrielle d'Estrées were made, then dropped for that.
+  Les Bergers d'Arcadie (`arcadie.json`) was made, then dropped: symbols, no story (rule below).
+- **Understood with no art culture** (2026-11-19, Les Bergers d'Arcadie dropped: « on comprend rien, on dit des
+  trucs trop chelous »): every detail is a thing you see + a concrete story (a person, an object, a lie, a trick, a
+  number). No symbols to decode (« elle représente l'Art », « l'ombre rappelle la Mort »), no Latin, no theory, no
+  painting whose interest is its meaning. Test: say the detail out loud to a friend who knows nothing about art; if
+  they say « et alors ? » or « hein ? », drop it.
 - **Open on a close-up** (`open: {cx, cy, wf}`, 2026-11-19): the first frame is the hook's strongest point up close,
   pulling back to the whole painting in 1.2 s, the work's label fading in once it is whole; the loop comes back to it.
   The whole painting small under a label read as a slide.

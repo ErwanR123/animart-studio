@@ -9,5 +9,6 @@ import liberte from "./liberte.json";
 import gabrielle from "./gabrielle.json";
 import joconde from "./joconde.json";
 import arcadie from "./arcadie.json";
+import bonaparte from "./bonaparte.json";
 
-export const reels: DetailsReel[] = [sacre as DetailsReel, radeau as DetailsReel, cana as DetailsReel, tricheur as DetailsReel, olympia as DetailsReel, liberte as DetailsReel, gabrielle as DetailsReel, joconde as DetailsReel, arcadie as DetailsReel];
+export const reels: DetailsReel[] = [sacre as DetailsReel, radeau as DetailsReel, cana as DetailsReel, tricheur as DetailsReel, olympia as DetailsReel, liberte as DetailsReel, gabrielle as DetailsReel, joconde as DetailsReel, arcadie as DetailsReel, bonaparte as DetailsReel];

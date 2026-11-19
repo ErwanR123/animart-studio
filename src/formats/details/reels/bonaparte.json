@@ -1,0 +1,144 @@
+{
+  "id": "DetailsBonaparte",
+  "image": "art/bonaparte/bonaparte.jpg",
+  "imageSize": [
+    3840,
+    4539
+  ],
+  "imageSource": "Wikimedia Commons, « Jacques Louis David - Bonaparte franchissant le Grand Saint-Bernard, 20 mai 1800 - Google Art Project.jpg » (public domain), version du château de Versailles (MV 1567)",
+  "work": {
+    "title": "Bonaparte franchissant le Grand-Saint-Bernard",
+    "artist": "Jacques-Louis David",
+    "date": "1802",
+    "museum": "Château de Versailles"
+  },
+  "hook": "Ce tableau cache un mensonge, deux noms gravés… et le fils du peintre sur une échelle.",
+  "open": {
+    "cx": 0.18,
+    "cy": 0.91,
+    "wf": 0.4
+  },
+  "details": [
+    {
+      "cx": 0.3,
+      "cy": 0.92,
+      "wf": 0.62,
+      "title": "Sur le rocher, il a gravé son nom.",
+      "text": "Juste à côté d'Hannibal et de Charlemagne, les deux conquérants qui ont passé les Alpes avant lui. Aucune modestie.",
+      "marks": [
+        {
+          "x": 0.13,
+          "y": 0.905,
+          "r": 0.075
+        },
+        {
+          "x": 0.09,
+          "y": 0.965,
+          "r": 0.05
+        },
+        {
+          "x": 0.42,
+          "y": 0.966,
+          "r": 0.1
+        }
+      ]
+    },
+    {
+      "cx": 0.52,
+      "cy": 0.42,
+      "wf": 0.8,
+      "title": "En vrai, il n'était pas sur ce cheval.",
+      "text": "Il a passé les Alpes sur une mule, tenue par un guide du coin. 50 ans plus tard, un autre peintre a montré la vraie scène.",
+      "inset": {
+        "image": "art/bonaparte/delaroche.jpg",
+        "size": [
+          960,
+          1235
+        ],
+        "title": "Bonaparte franchissant les Alpes",
+        "artist": "Paul Delaroche · 1850"
+      }
+    },
+    {
+      "cx": 0.2,
+      "cy": 0.69,
+      "wf": 0.46,
+      "title": "Ces petits bonshommes, c'est son armée.",
+      "text": "Ils hissent les canons à la main dans la montagne. Eux ont fait le vrai boulot, mais le peintre les a faits minuscules.",
+      "marks": [
+        {
+          "x": 0.3,
+          "y": 0.735,
+          "r": 0.07
+        },
+        {
+          "x": 0.12,
+          "y": 0.655,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "cx": 0.58,
+      "cy": 0.26,
+      "wf": 0.42,
+      "title": "Et il a refusé de poser.",
+      "text": "« Poser ? À quoi bon ? » Alors David a copié son visage sur un buste, et a fait grimper son propre fils sur une échelle pour la pose."
+    }
+  ],
+  "ad": {
+    "afterDetail": 2,
+    "palette": {
+      "ground": "#4A4A4E",
+      "deep": "#0D0D10",
+      "accent": "#E0563B"
+    },
+    "found": "3/24",
+    "anecdotes": 4,
+    "script": [
+      "Jacques-Louis David peint ce tableau en 1802.",
+      "Il montre Bonaparte, Premier consul, en mai 1800.",
+      "Il passe les Alpes pour surprendre l'armée autrichienne en Italie.",
+      "Bonaparte avait une seule consigne : calme, sur un cheval fougueux.",
+      "David en a peint cinq versions.",
+      "Celle-ci était faite pour les Invalides."
+    ]
+  },
+  "post": {
+    "caption": "4 détails cachés dans le Napoléon de David que presque personne ne remarque 👀 T'avais vu les noms sur le rocher ?",
+    "hashtags": [
+      "napoleon",
+      "versailles",
+      "jacqueslouisdavid",
+      "art",
+      "histoire"
+    ],
+    "youtubeTitle": "Ce tableau de Napoléon est un mensonge (David) #shorts",
+    "youtubeTags": [
+      "napoléon",
+      "bonaparte",
+      "jacques-louis david",
+      "bonaparte franchissant le grand-saint-bernard",
+      "napoléon franchissant les alpes",
+      "château de versailles",
+      "versailles",
+      "paul delaroche",
+      "histoire",
+      "histoire de l'art",
+      "art",
+      "peinture",
+      "tableau",
+      "détails cachés",
+      "secrets tableau",
+      "culture générale",
+      "shorts"
+    ]
+  },
+  "sources": [
+    "Noms gravés BONAPARTE, ANNIBAL et KAROLVS MAGNVS IMP. sur les rochers : https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard ; https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps",
+    "Le 20 mai 1800, Bonaparte monte une mule, escorté par le guide Dorsaz ; l'armée passe à partir du 15 mai ; Delaroche peint la scène réaliste (1850, version Walker Art Gallery ; une autre au Louvre) : mêmes articles",
+    "Soldats et artillerie qui montent la montagne à l'arrière-plan : mêmes articles",
+    "Refus de poser (« Poser ? à quoi bon ? ») ; David part d'un buste pour les traits et fait monter son fils sur une échelle pour la pose ; uniforme et bicorne de Marengo prêtés : mêmes articles",
+    "Version de Versailles (MV 1567) : la 3e, peinte pour la bibliothèque des Invalides (1802), à Versailles depuis 1837 ; cinq versions ; consigne « calme sur un cheval fougueux » ; commande initiale du roi d'Espagne Charles IV (version Malmaison) : mêmes articles"
+  ]
+}
