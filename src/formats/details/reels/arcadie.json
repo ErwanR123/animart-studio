@@ -12,7 +12,7 @@
     "date": "1637–1638",
     "museum": "Louvre"
   },
-  "hook": "Ce tableau cache la Mort, une ombre qui parle… et le code d'une chasse au trésor.",
+  "hook": "Ce tableau cache la Mort, un crâne disparu… et le code d'une chasse au trésor.",
   "open": {
     "cx": 0.47,
     "cy": 0.57,
@@ -37,8 +37,8 @@
       "cx": 0.42,
       "cy": 0.55,
       "wf": 0.4,
-      "title": "Ce berger ne lit pas : il suit une ombre du doigt.",
-      "text": "Il trace sur la pierre l'ombre de son compagnon. Dans sa première version, Poussin avait mis un crâne. Ici, c'est l'ombre qui joue la Mort.",
+      "title": "Ce berger suit une ombre du doigt.",
+      "text": "C'est l'ombre de son voisin. Dans la première version, Poussin avait mis un crâne sur le tombeau. Ici, c'est l'ombre qui rappelle la Mort.",
       "marks": [
         {
           "x": 0.455,
