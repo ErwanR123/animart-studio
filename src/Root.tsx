@@ -11,6 +11,7 @@ import { jour05 } from "./episodes/Jour05";
 import { lesson01 } from "./episodes/Lesson01";
 import { AgendaCompositions } from "./formats/agenda/compositions";
 import { DetailsCompositions } from "./formats/details/compositions";
+import { PubsCompositions } from "./formats/pubs/compositions";
 import { GuidePuppets, PUPPET_FRAMES } from "./lab/GuidePuppets";
 import { GuideVox, VOX_FRAMES } from "./lab/GuideVox";
 import { FPS, HEIGHT, WIDTH } from "./theme";
@@ -37,6 +38,7 @@ export const RemotionRoot: React.FC = () => {
       <DetailsCompositions />
       {/* « L'Agenda »: the weekend's exhibitions, real photos + voice (src/formats/agenda/). */}
       <AgendaCompositions />
+      <PubsCompositions />
       {/* The Vox paper register as real scenes (src/lab/GuideVox.tsx). */}
       <Composition id="GuidePuppets" component={GuidePuppets} durationInFrames={PUPPET_FRAMES} fps={FPS} width={WIDTH} height={HEIGHT} />
       <Composition id="GuideVox" component={GuideVox} durationInFrames={VOX_FRAMES} fps={FPS} width={WIDTH} height={HEIGHT} />
